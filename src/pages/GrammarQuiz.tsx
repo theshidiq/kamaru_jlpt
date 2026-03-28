@@ -13,8 +13,9 @@ type Phase = 'quiz' | 'results'
 export function GrammarQuiz() {
   const { user } = useAppStore()
   const navigate = useNavigate()
+  const level = user?.jlpt_level ?? 'N4'
   const [phase, setPhase] = useState<Phase>('quiz')
-  const [questions] = useState(() => generateGrammarQuiz(15))
+  const [questions] = useState(() => generateGrammarQuiz(15, undefined, level))
   const [results, setResults] = useState<QuizResult[]>([])
   const [elapsed, setElapsed] = useState(0)
 

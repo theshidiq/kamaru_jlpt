@@ -13,8 +13,9 @@ type Phase = 'quiz' | 'results'
 export function Reading() {
   const { user } = useAppStore()
   const navigate = useNavigate()
+  const level = user?.jlpt_level ?? 'N4'
   const [phase, setPhase] = useState<Phase>('quiz')
-  const [questions] = useState(() => generateReadingQuiz())
+  const [questions] = useState(() => generateReadingQuiz(undefined, undefined, level))
   const [results, setResults] = useState<QuizResult[]>([])
   const [elapsed, setElapsed] = useState(0)
 

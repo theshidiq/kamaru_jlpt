@@ -5,6 +5,7 @@ export interface UserProfile {
   display_name: string
   avatar_url: string | null
   target_exam_date: string
+  jlpt_level: 'N4' | 'N2' | null
   created_at: string
 }
 

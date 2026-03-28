@@ -1,8 +1,8 @@
 import type { QuizQuestion } from '@/types/quiz'
 import type { VocabWord } from '@/types/vocab'
 import { getChapterWords, getSection, shuffle } from '@/lib/vocab'
-import { GRAMMAR_QUESTIONS } from '@/lib/grammar'
-import { READING_PASSAGES } from '@/lib/reading'
+import { GRAMMAR_QUESTIONS, GRAMMAR_QUESTIONS_N2 } from '@/lib/grammar'
+import { READING_PASSAGES, READING_PASSAGES_N2 } from '@/lib/reading'
 
 let questionCounter = 0
 function nextId(prefix: string) {
@@ -154,10 +154,12 @@ export function generateVocabQuiz(
 export function generateGrammarQuiz(
   count: number,
   pattern?: string,
+  level: 'N4' | 'N2' = 'N4',
 ): QuizQuestion[] {
+  const bank = level === 'N2' ? GRAMMAR_QUESTIONS_N2 : GRAMMAR_QUESTIONS
   const pool = pattern
-    ? GRAMMAR_QUESTIONS.filter(q => q.pattern === pattern)
-    : GRAMMAR_QUESTIONS
+    ? bank.filter(q => q.pattern === pattern)
+    : bank
   return shuffle(pool)
     .slice(0, count)
     .map(q => ({
@@ -174,10 +176,12 @@ export function generateGrammarQuiz(
 export function generateReadingQuiz(
   type?: '短文' | '中文' | '情報検索',
   passageCount?: number,
+  level: 'N4' | 'N2' = 'N4',
 ): QuizQuestion[] {
+  const bank = level === 'N2' ? READING_PASSAGES_N2 : READING_PASSAGES
   const pool = type
-    ? READING_PASSAGES.filter(p => p.type === type)
-    : READING_PASSAGES
+    ? bank.filter(p => p.type === type)
+    : bank
   const passages = shuffle(pool).slice(0, passageCount ?? pool.length)
 
   return passages.flatMap(passage =>
@@ -192,24 +196,25 @@ export function generateReadingQuiz(
 }
 
 // Full mock exam question set
-export function generateMockExam(vocab: VocabWord[]): {
+export function generateMockExam(vocab: VocabWord[], level: 'N4' | 'N2' = 'N4'): {
   vocabQuestions: QuizQuestion[]
   grammarQuestions: QuizQuestion[]
   readingQuestions: QuizQuestion[]
 } {
   // Vocab: draw evenly across all chapters
-  const chapters = [1, 2, 3, 4, 5, 6, 7]
+  const chapCount = level === 'N2' ? 12 : 7
+  const chapters = Array.from({ length: chapCount }, (_, i) => i + 1)
   const perChapter = Math.ceil(25 / chapters.length)
   const vocabQuestions = shuffle(
     chapters.flatMap(ch => generateVocabQuiz(vocab, ch, null, perChapter))
   ).slice(0, 25)
 
-  const grammarQuestions = generateGrammarQuiz(20)
+  const grammarQuestions = generateGrammarQuiz(20, undefined, level)
 
   // Reading: mix of types
-  const readingShort = generateReadingQuiz('短文', 2)   // 4 questions
-  const readingMed = generateReadingQuiz('中文', 2)      // 6 questions
-  const readingInfo = generateReadingQuiz('情報検索', 1) // 2 questions (total ~12, round to 13)
+  const readingShort = generateReadingQuiz('短文', 2, level)   // 4 questions
+  const readingMed = generateReadingQuiz('中文', 2, level)      // 6 questions
+  const readingInfo = generateReadingQuiz('情報検索', 1, level) // 2 questions (total ~12, round to 13)
   const readingQuestions = shuffle([...readingShort, ...readingMed, ...readingInfo]).slice(0, 13)
 
   return { vocabQuestions, grammarQuestions, readingQuestions }

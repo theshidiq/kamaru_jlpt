@@ -17,6 +17,21 @@ const STATUS_LABELS: Record<WordStatus, string> = {
   learning: 'Learning',
   new: 'Unknown',
 }
+const STATUS_ORDER: WordStatus[] = ['new', 'learning', 'known']
+
+function StatusToggle({ status, onCycle }: { status: WordStatus; onCycle: () => void }) {
+  const icons: Record<WordStatus, string> = { known: '✓', learning: '~', new: '·' }
+  return (
+    <button
+      onClick={onCycle}
+      title="Click to cycle: Unknown → Learning → Known"
+      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold transition-all duration-150 active:scale-95 select-none ${STATUS_COLORS[status]}`}
+    >
+      <span className="font-bold leading-none">{icons[status]}</span>
+      {STATUS_LABELS[status]}
+    </button>
+  )
+}
 
 export function VocabSection() {
   const { chapter, section } = useParams<{ chapter: string; section: string }>()
@@ -88,6 +103,15 @@ export function VocabSection() {
 
       {/* Table view */}
       {view === 'table' && (
+        <>
+        <div className="flex items-center gap-3 mb-2 px-1 text-xs text-gray-400 dark:text-gray-500">
+          <span>Click status to cycle:</span>
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400 font-semibold">· Unknown</span>
+          <span>→</span>
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300 font-semibold">~ Learning</span>
+          <span>→</span>
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300 font-semibold">✓ Known</span>
+        </div>
         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-gray-50 dark:bg-gray-700">
@@ -102,25 +126,26 @@ export function VocabSection() {
             <tbody>
               {words.map((w, i) => {
                 const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
+                const nextStatus = STATUS_ORDER[(STATUS_ORDER.indexOf(status) + 1) % STATUS_ORDER.length]
                 return (
-                  <tr key={i} className="border-t border-gray-100 dark:border-gray-700">
-                    <td className="px-4 py-2 text-gray-400">{i + 1}</td>
-                    <td className="px-4 py-2">
-                      <span className="font-jp text-lg font-medium text-gray-900 dark:text-white">{w.wordClean}</span>
+                  <tr
+                    key={i}
+                    className={`border-t border-gray-100 dark:border-gray-700 transition-colors ${
+                      status === 'known' ? 'bg-green-50/40 dark:bg-green-900/10' : ''
+                    }`}
+                  >
+                    <td className="px-4 py-2.5 text-gray-400 text-xs">{i + 1}</td>
+                    <td className="px-4 py-2.5">
+                      <span className={`font-jp text-lg font-medium ${status === 'known' ? 'text-gray-400 dark:text-gray-500 line-through' : 'text-gray-900 dark:text-white'}`}>{w.wordClean}</span>
                       {w.isSuruVerb && <span className="ml-1 text-xs text-indigo-400">suru</span>}
                     </td>
-                    <td className="px-4 py-2 text-gray-500 dark:text-gray-400 hidden md:table-cell">{w.furigana ?? '—'}</td>
-                    <td className="px-4 py-2 text-gray-700 dark:text-gray-300">{w.meaning_en}</td>
-                    <td className="px-4 py-2">
-                      <select
-                        value={status}
-                        onChange={e => setWordStatus(w.wordClean, e.target.value as WordStatus, w.chapter, w.section)}
-                        className={`text-xs px-2 py-0.5 rounded-full border-0 ${STATUS_COLORS[status]}`}
-                      >
-                        {(Object.keys(STATUS_LABELS) as WordStatus[]).map(s => (
-                          <option key={s} value={s}>{STATUS_LABELS[s]}</option>
-                        ))}
-                      </select>
+                    <td className="px-4 py-2.5 text-gray-500 dark:text-gray-400 hidden md:table-cell">{w.furigana ?? '—'}</td>
+                    <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{w.meaning_en}</td>
+                    <td className="px-4 py-2.5">
+                      <StatusToggle
+                        status={status}
+                        onCycle={() => setWordStatus(w.wordClean, nextStatus, w.chapter, w.section)}
+                      />
                     </td>
                   </tr>
                 )
@@ -128,6 +153,7 @@ export function VocabSection() {
             </tbody>
           </table>
         </div>
+        </>
       )}
 
       {/* Flashcard view */}

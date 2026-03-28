@@ -361,3 +361,367 @@ export const GRAMMAR_QUESTIONS: GrammarQuestion[] = [
     pattern: '助詞（に・で）',
   },
 ]
+
+// ────────────────────────────────────────────────
+// N2 Grammar Questions
+// ────────────────────────────────────────────────
+export const GRAMMAR_QUESTIONS_N2: GrammarQuestion[] = [
+  // ～にもかかわらず
+  {
+    id: 'n2g001',
+    sentence: '雨が降っていた（　　）、試合は続けられた。',
+    options: ['にもかかわらず', 'にしたがって', 'にともなって', 'につれて'],
+    correctIndex: 0,
+    explanation: 'にもかかわらず = despite, in spite of. Despite the rain, the game continued.',
+    pattern: 'にもかかわらず',
+  },
+  {
+    id: 'n2g002',
+    sentence: '努力した（　　）、結果が出なかった。',
+    options: ['にもかかわらず', 'にとって', 'に対して', 'に関して'],
+    correctIndex: 0,
+    explanation: 'にもかかわらず = despite ~. Despite the effort, there were no results.',
+    pattern: 'にもかかわらず',
+  },
+  // ～に対して
+  {
+    id: 'n2g003',
+    sentence: '先生の質問（　　）、学生たちは黙っていた。',
+    options: ['に対して', 'について', 'にとって', 'によって'],
+    correctIndex: 0,
+    explanation: 'に対して = in response to, toward. The students were silent in response to the teacher\'s question.',
+    pattern: 'に対して',
+  },
+  // ～をはじめ
+  {
+    id: 'n2g004',
+    sentence: '東京（　　）、大阪や名古屋などの大都市で開催された。',
+    options: ['をはじめ', 'に対して', 'に加えて', 'はともかく'],
+    correctIndex: 0,
+    explanation: 'をはじめ = starting with, as well as. Starting with Tokyo, held in major cities.',
+    pattern: 'をはじめ',
+  },
+  // ～に加えて
+  {
+    id: 'n2g005',
+    sentence: '英語（　　）、フランス語も話せる。',
+    options: ['に加えて', 'をはじめ', 'に対して', 'に関して'],
+    correctIndex: 0,
+    explanation: 'に加えて = in addition to. In addition to English, can also speak French.',
+    pattern: 'に加えて',
+  },
+  // ～ばかりか
+  {
+    id: 'n2g006',
+    sentence: '彼は歌が上手な（　　）、ダンスもできる。',
+    options: ['ばかりか', 'だけに', 'からこそ', 'ものの'],
+    correctIndex: 0,
+    explanation: 'ばかりか = not only ~ but also. Not only is he good at singing, he can also dance.',
+    pattern: 'ばかりか',
+  },
+  // ～ものの
+  {
+    id: 'n2g007',
+    sentence: '薬を飲んだ（　　）、なかなかよくならない。',
+    options: ['ものの', 'から', 'ために', 'ので'],
+    correctIndex: 0,
+    explanation: 'ものの = although, but. Although I took medicine, I\'m not getting better.',
+    pattern: 'ものの',
+  },
+  // ～ざるを得ない
+  {
+    id: 'n2g008',
+    sentence: '上司に頼まれたので、引き受け（　　）。',
+    options: ['ざるを得ない', 'てたまらない', 'てならない', 'てしかたがない'],
+    correctIndex: 0,
+    explanation: 'ざるを得ない = cannot help but do, have no choice but to. Had to accept since the boss asked.',
+    pattern: 'ざるを得ない',
+  },
+  {
+    id: 'n2g009',
+    sentence: '証拠があるので、認め（　　）。',
+    options: ['ざるを得ない', 'ないわけにはいかない', 'てならない', 'てたまらない'],
+    correctIndex: 0,
+    explanation: 'ざるを得ない = have no choice but to admit (since there\'s evidence).',
+    pattern: 'ざるを得ない',
+  },
+  // ～てたまらない
+  {
+    id: 'n2g010',
+    sentence: '辛いものを食べたので、のどが渇い（　　）。',
+    options: ['てたまらない', 'てならない', 'てしかたがない', 'てしまった'],
+    correctIndex: 0,
+    explanation: 'てたまらない = unbearably ~, can\'t stand ~. I\'m unbearably thirsty from eating spicy food.',
+    pattern: 'てたまらない',
+  },
+  // ～てならない
+  {
+    id: 'n2g011',
+    sentence: '故郷の家族のことが気になっ（　　）。',
+    options: ['てならない', 'てたまらない', 'てしかたがない', 'てほしい'],
+    correctIndex: 0,
+    explanation: 'てならない = cannot help feeling, naturally feels ~. I can\'t help worrying about my family back home.',
+    pattern: 'てならない',
+  },
+  // ～上で
+  {
+    id: 'n2g012',
+    sentence: 'よく考えた（　　）、決めてください。',
+    options: ['上で', 'あとで', 'ことで', 'ために'],
+    correctIndex: 0,
+    explanation: '上で = after doing, having done. Please decide after thinking carefully.',
+    pattern: '上で',
+  },
+  // ～に際して
+  {
+    id: 'n2g013',
+    sentence: '入学（　　）、必要な書類を提出してください。',
+    options: ['に際して', 'にとって', 'に対して', 'によって'],
+    correctIndex: 0,
+    explanation: 'に際して = on the occasion of, when. When enrolling, please submit the necessary documents.',
+    pattern: 'に際して',
+  },
+  // ～にあたって
+  {
+    id: 'n2g014',
+    sentence: 'プロジェクト開始（　　）、チームの目標を確認した。',
+    options: ['にあたって', 'にとって', 'について', 'によって'],
+    correctIndex: 0,
+    explanation: 'にあたって = on the occasion of, when doing. When starting the project, confirmed team goals.',
+    pattern: 'にあたって',
+  },
+  // ～を通じて
+  {
+    id: 'n2g015',
+    sentence: 'インターネット（　　）、世界中の人と話せる。',
+    options: ['を通じて', 'に対して', 'によって', 'に関して'],
+    correctIndex: 0,
+    explanation: 'を通じて = through, via. Can talk to people all over the world via the internet.',
+    pattern: 'を通じて',
+  },
+  // ～にしたがって
+  {
+    id: 'n2g016',
+    sentence: '技術が進む（　　）、生活が便利になった。',
+    options: ['にしたがって', 'にもかかわらず', 'にとって', 'にとっては'],
+    correctIndex: 0,
+    explanation: 'にしたがって = as ~, following ~. As technology advances, life becomes more convenient.',
+    pattern: 'にしたがって',
+  },
+  // ～に伴って
+  {
+    id: 'n2g017',
+    sentence: '経済成長（　　）、環境問題も深刻になってきた。',
+    options: ['に伴って', 'につれて', 'にしたがって', 'にもかかわらず'],
+    correctIndex: 0,
+    explanation: 'に伴って = along with, as a result of. Along with economic growth, environmental problems have become serious.',
+    pattern: 'に伴って',
+  },
+  // ～次第
+  {
+    id: 'n2g018',
+    sentence: '準備ができ（　　）、ご連絡します。',
+    options: ['次第', 'たら', 'てから', 'ならば'],
+    correctIndex: 0,
+    explanation: '次第 = as soon as. As soon as preparations are ready, I will contact you.',
+    pattern: '次第',
+  },
+  // ～のみならず
+  {
+    id: 'n2g019',
+    sentence: '彼女は日本語の（　　）、中国語も話せる。',
+    options: ['のみならず', 'だけでなく', 'ばかりか', 'に加えて'],
+    correctIndex: 0,
+    explanation: 'のみならず = not only ~ but also. She can speak not only Japanese but also Chinese.',
+    pattern: 'のみならず',
+  },
+  // ～に限らず
+  {
+    id: 'n2g020',
+    sentence: '子供（　　）、大人もこのゲームを楽しんでいる。',
+    options: ['に限らず', 'だけでなく', 'のみならず', 'をはじめ'],
+    correctIndex: 0,
+    explanation: 'に限らず = not limited to. Not only children but also adults enjoy this game.',
+    pattern: 'に限らず',
+  },
+  // ～わけがない
+  {
+    id: 'n2g021',
+    sentence: 'そんな難しい問題、子供に解ける（　　）。',
+    options: ['わけがない', 'わけにはいかない', 'ざるを得ない', 'てたまらない'],
+    correctIndex: 0,
+    explanation: 'わけがない = there\'s no way ~. There\'s no way a child can solve such a difficult problem.',
+    pattern: 'わけがない',
+  },
+  // ～わけにはいかない
+  {
+    id: 'n2g022',
+    sentence: '試験があるから、今日は遊んでいる（　　）。',
+    options: ['わけにはいかない', 'わけがない', 'ざるを得ない', 'てならない'],
+    correctIndex: 0,
+    explanation: 'わけにはいかない = cannot (due to social/moral reasons). Can\'t play today because there\'s an exam.',
+    pattern: 'わけにはいかない',
+  },
+  // ～ないわけにはいかない
+  {
+    id: 'n2g023',
+    sentence: '彼に借りたお金を返さ（　　）。',
+    options: ['ないわけにはいかない', 'ざるを得ない', 'てたまらない', 'てならない'],
+    correctIndex: 0,
+    explanation: 'ないわけにはいかない = have to, must. I have to return the money I borrowed from him.',
+    pattern: 'ないわけにはいかない',
+  },
+  // ～とともに
+  {
+    id: 'n2g024',
+    sentence: '春が来る（　　）、花が咲き始めた。',
+    options: ['とともに', 'にしたがって', 'に伴って', 'につれて'],
+    correctIndex: 0,
+    explanation: 'とともに = along with, as, at the same time as. As spring came, flowers began to bloom.',
+    pattern: 'とともに',
+  },
+  // ～につれて
+  {
+    id: 'n2g025',
+    sentence: '年を取る（　　）、体力が落ちてきた。',
+    options: ['につれて', 'にしたがって', 'に伴って', 'とともに'],
+    correctIndex: 0,
+    explanation: 'につれて = as ~, in proportion to. As one gets older, physical strength declines.',
+    pattern: 'につれて',
+  },
+  // ～としても
+  {
+    id: 'n2g026',
+    sentence: '雨が降った（　　）、試合は中止にならない。',
+    options: ['としても', 'としたら', 'とすれば', 'ならば'],
+    correctIndex: 0,
+    explanation: 'としても = even if. Even if it rains, the game won\'t be cancelled.',
+    pattern: 'としても',
+  },
+  // ～ところが
+  {
+    id: 'n2g027',
+    sentence: '自信を持って試験を受けた。（　　）、結果は不合格だった。',
+    options: ['ところが', 'したがって', 'そのため', 'そこで'],
+    correctIndex: 0,
+    explanation: 'ところが = however, but (unexpectedly). I took the exam confidently. However, I failed.',
+    pattern: 'ところが',
+  },
+  // ～だけに
+  {
+    id: 'n2g028',
+    sentence: 'プロの料理人（　　）、この料理はおいしい。',
+    options: ['だけに', 'だから', 'にしては', 'にしても'],
+    correctIndex: 0,
+    explanation: 'だけに = just because, precisely because. Precisely because he\'s a professional chef, this dish is delicious.',
+    pattern: 'だけに',
+  },
+  // ～からこそ
+  {
+    id: 'n2g029',
+    sentence: '失敗を経験した（　　）、成功の大切さがわかる。',
+    options: ['からこそ', 'から', 'ために', 'ので'],
+    correctIndex: 0,
+    explanation: 'からこそ = precisely because. Precisely because I experienced failure, I understand the importance of success.',
+    pattern: 'からこそ',
+  },
+  // ～もかまわず
+  {
+    id: 'n2g030',
+    sentence: '彼は周りの目（　　）、大声で歌い始めた。',
+    options: ['もかまわず', 'にもかかわらず', 'に対して', 'をはじめ'],
+    correctIndex: 0,
+    explanation: 'もかまわず = without caring about. Without caring about others\' eyes, he started singing loudly.',
+    pattern: 'もかまわず',
+  },
+  // ～にほかならない
+  {
+    id: 'n2g031',
+    sentence: '成功の原因は、努力した（　　）。',
+    options: ['にほかならない', 'からにほかならない', 'だけにほかならない', 'ほかならない'],
+    correctIndex: 0,
+    explanation: 'にほかならない = nothing other than, is precisely. The reason for success is nothing other than effort.',
+    pattern: 'にほかならない',
+  },
+  // ～に反して
+  {
+    id: 'n2g032',
+    sentence: '予想（　　）、試合は引き分けに終わった。',
+    options: ['に反して', 'に対して', 'にもかかわらず', 'に加えて'],
+    correctIndex: 0,
+    explanation: 'に反して = contrary to. Contrary to expectations, the game ended in a draw.',
+    pattern: 'に反して',
+  },
+  // ～をきっかけに
+  {
+    id: 'n2g033',
+    sentence: '留学（　　）、日本語を本格的に勉強し始めた。',
+    options: ['をきっかけに', 'を通じて', 'にあたって', 'に際して'],
+    correctIndex: 0,
+    explanation: 'をきっかけに = triggered by, prompted by. Prompted by studying abroad, I started studying Japanese seriously.',
+    pattern: 'をきっかけに',
+  },
+  // ～わりに
+  {
+    id: 'n2g034',
+    sentence: '値段が安い（　　）、品質はいい。',
+    options: ['わりに', 'にしては', 'にもかかわらず', 'のに'],
+    correctIndex: 0,
+    explanation: 'わりに = for ~, considering. Considering the price is cheap, the quality is good.',
+    pattern: 'わりに',
+  },
+  // ～にしては
+  {
+    id: 'n2g035',
+    sentence: '初めて作った（　　）、上手にできた。',
+    options: ['にしては', 'わりに', 'にもかかわらず', 'のに'],
+    correctIndex: 0,
+    explanation: 'にしては = for, considering that. For a first attempt, it turned out well.',
+    pattern: 'にしては',
+  },
+  // ～ようがない
+  {
+    id: 'n2g036',
+    sentence: '地図もなく、道を聞く人もいないので、探し（　　）。',
+    options: ['ようがない', 'わけがない', 'ざるを得ない', 'にほかならない'],
+    correctIndex: 0,
+    explanation: 'ようがない = have no way to ~. No map, no one to ask, so there\'s no way to find it.',
+    pattern: 'ようがない',
+  },
+  // ～かねない
+  {
+    id: 'n2g037',
+    sentence: 'このままでは、失敗し（　　）。',
+    options: ['かねない', 'かねる', 'てならない', 'てたまらない'],
+    correctIndex: 0,
+    explanation: 'かねない = might well ~, there\'s a risk of. At this rate, there\'s a risk of failure.',
+    pattern: 'かねない',
+  },
+  // ～かねる
+  {
+    id: 'n2g038',
+    sentence: 'その件については、お答えし（　　）。',
+    options: ['かねます', 'かねない', 'てたまらない', 'てならない'],
+    correctIndex: 0,
+    explanation: 'かねる = be unable to, find it difficult to (polite). I\'m unable to answer regarding that matter.',
+    pattern: 'かねる',
+  },
+  // ～に応じて
+  {
+    id: 'n2g039',
+    sentence: '状況（　　）、計画を変更することもある。',
+    options: ['に応じて', 'に対して', 'にしたがって', 'によって'],
+    correctIndex: 0,
+    explanation: 'に応じて = according to, in response to. Plans may change according to the situation.',
+    pattern: 'に応じて',
+  },
+  // ～をもとに
+  {
+    id: 'n2g040',
+    sentence: 'アンケートの結果（　　）、新しいサービスを開発した。',
+    options: ['をもとに', 'を通じて', 'によって', 'に基づいて'],
+    correctIndex: 0,
+    explanation: 'をもとに = based on, using ~ as a basis. Developed a new service based on survey results.',
+    pattern: 'をもとに',
+  },
+]

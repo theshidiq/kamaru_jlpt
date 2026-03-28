@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useProgress } from '@/hooks/useProgress'
+import { RiBookMarkedLine, RiQuillPenLine, RiFileTextLine, RiTargetLine } from '@remixicon/react'
+import type { RemixiconComponentType } from '@remixicon/react'
 
 export function QuizHub() {
   const navigate = useNavigate()
@@ -12,13 +14,13 @@ export function QuizHub() {
     return Math.round((a.score / a.total_questions) * 100)
   }
 
-  const cards = [
+  const cards: { to: string; title: string; subtitle: string; description: string; Icon: RemixiconComponentType; color: string; type: string }[] = [
     {
       to: '/quiz/vocab',
       title: 'Vocabulary Quiz',
       subtitle: 'Mondai 1–5 format',
       description: 'Reading, meaning, and usage questions',
-      emoji: '📝',
+      Icon: RiBookMarkedLine,
       color: 'from-indigo-500 to-blue-500',
       type: 'vocab',
     },
@@ -27,7 +29,7 @@ export function QuizHub() {
       title: 'Grammar Quiz',
       subtitle: 'Mondai 1–3 format',
       description: '40 N4 grammar patterns',
-      emoji: '✏️',
+      Icon: RiQuillPenLine,
       color: 'from-purple-500 to-pink-500',
       type: 'grammar',
     },
@@ -36,7 +38,7 @@ export function QuizHub() {
       title: 'Reading Practice',
       subtitle: 'Short / Medium / Info search',
       description: '15 reading passages',
-      emoji: '📖',
+      Icon: RiFileTextLine,
       color: 'from-emerald-500 to-teal-500',
       type: 'reading',
     },
@@ -45,7 +47,7 @@ export function QuizHub() {
       title: 'Mock Exam',
       subtitle: 'Exam format',
       description: '25 vocab + 20 grammar + 13 reading = 58 questions',
-      emoji: '🎯',
+      Icon: RiTargetLine,
       color: 'from-orange-500 to-red-500',
       type: 'mock',
     },
@@ -66,7 +68,7 @@ export function QuizHub() {
               className="text-left bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 hover:shadow-md hover:border-indigo-300 transition-all p-5 min-h-[100px] flex gap-4 items-start md:block"
             >
               <div className={`flex-shrink-0 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${card.color} md:mb-3`}>
-                <span className="text-2xl">{card.emoji}</span>
+                <card.Icon size={24} className="text-white" />
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-gray-900 dark:text-white text-base">{card.title}</h3>

@@ -26,8 +26,10 @@ export function MockExam() {
   const [totalElapsed, setTotalElapsed] = useState(0)
   const [_sectionElapsed, setSectionElapsed] = useState(0)
 
+  const level = user?.jlpt_level ?? 'N4'
+
   function startExam() {
-    const { vocabQuestions, grammarQuestions, readingQuestions } = generateMockExam(vocab)
+    const { vocabQuestions, grammarQuestions, readingQuestions } = generateMockExam(vocab, level)
     setVocabQs(vocabQuestions)
     setGrammarQs(grammarQuestions)
     setReadingQs(readingQuestions)

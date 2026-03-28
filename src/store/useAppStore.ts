@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { loadVocab, getTodaySection, buildChapterMap } from '@/lib/vocab'
+import { loadVocab, getTodaySectionForLevel, buildChapterMap, LEVEL_CONFIG } from '@/lib/vocab'
 import type { VocabWord, ChapterInfo } from '@/types/vocab'
 import type { UserProfile, WordStatus } from '@/types/user'
 import { supabase } from '@/lib/supabase'
@@ -16,6 +16,7 @@ interface AppState {
   authReady: boolean
   setUser: (user: UserProfile | null) => void
   setAuthReady: () => void
+  setJlptLevel: (level: 'N4' | 'N2') => Promise<void>
 
   // Today's section
   todayChapter: number
@@ -31,6 +32,7 @@ interface AppState {
   wordStatuses: Record<string, WordStatus>
   setWordStatus: (word: string, status: WordStatus, chapter: number, section: number) => Promise<void>
   loadWordStatuses: (userId: string) => Promise<void>
+  resetWordStatuses: () => Promise<void>
 }
 
 const initDarkMode = () => {
@@ -39,7 +41,7 @@ const initDarkMode = () => {
   return window.matchMedia('(prefers-color-scheme: dark)').matches
 }
 
-const today = getTodaySection()
+const today = getTodaySectionForLevel('N4')
 
 export const useAppStore = create<AppState>((set, get) => ({
   vocab: [],
@@ -48,8 +50,44 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   user: null,
   authReady: false,
-  setUser: (user) => set({ user }),
+  setUser: (user) => {
+    const level = user?.jlpt_level ?? 'N4'
+    const t = getTodaySectionForLevel(level)
+    set({
+      user,
+      vocab: [],
+      chapters: [],
+      vocabLoaded: false,
+      todayChapter: t.chapter,
+      todaySection: t.section,
+      todaySectionIndex: t.sectionIndex,
+      todayDaysElapsed: t.daysElapsed,
+    })
+  },
   setAuthReady: () => set({ authReady: true }),
+
+  setJlptLevel: async (level: 'N4' | 'N2') => {
+    const { user } = get()
+    if (!user) return
+    await supabase.from('profiles').update({ jlpt_level: level }).eq('id', user.id)
+    const updatedUser = { ...user, jlpt_level: level }
+    const t = getTodaySectionForLevel(level)
+    // Reset vocab cache for the new level
+    set({
+      user: updatedUser,
+      vocab: [],
+      chapters: [],
+      vocabLoaded: false,
+      todayChapter: t.chapter,
+      todaySection: t.section,
+      todaySectionIndex: t.sectionIndex,
+      todayDaysElapsed: t.daysElapsed,
+    })
+    // Reload vocab for new level
+    const vocab = await loadVocab(level)
+    const chapters = buildChapterMap(vocab, LEVEL_CONFIG[level].sectionsPerChapter)
+    set({ vocab, chapters, vocabLoaded: true })
+  },
 
   todayChapter: today.chapter,
   todaySection: today.section,
@@ -68,8 +106,9 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   fetchVocab: async () => {
     if (get().vocabLoaded) return
-    const vocab = await loadVocab()
-    const chapters = buildChapterMap(vocab)
+    const level = get().user?.jlpt_level ?? 'N4'
+    const vocab = await loadVocab(level)
+    const chapters = buildChapterMap(vocab, LEVEL_CONFIG[level].sectionsPerChapter)
     set({ vocab, chapters, vocabLoaded: true })
   },
 
@@ -93,6 +132,13 @@ export const useAppStore = create<AppState>((set, get) => ({
       { user_id: user.id, word, status, chapter, section, updated_at: new Date().toISOString() },
       { onConflict: 'user_id,word' },
     )
+  },
+
+  resetWordStatuses: async () => {
+    const { user } = get()
+    if (!user) return
+    await supabase.from('word_status').delete().eq('user_id', user.id)
+    set({ wordStatuses: {} })
   },
 }))
 

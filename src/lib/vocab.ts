@@ -1,15 +1,24 @@
 import type { VocabWord, ChapterInfo } from '@/types/vocab'
 
-export const TOTAL_SECTIONS = 42 // 7 chapters × 6 sections
+export const TOTAL_SECTIONS = 42 // 7 chapters × 6 sections (N4 default)
 const START_DATE = new Date('2026-03-26')
 
-export function getTodaySection() {
-  const today = new Date()
-  const daysElapsed = Math.floor((today.getTime() - START_DATE.getTime()) / 86400000)
-  const sectionIndex = ((daysElapsed % TOTAL_SECTIONS) + TOTAL_SECTIONS) % TOTAL_SECTIONS
-  const chapter = Math.floor(sectionIndex / 6) + 1
-  const section = (sectionIndex % 6) + 1
+export const LEVEL_CONFIG = {
+  N4: { totalSections: 42, chapters: 7, sectionsPerChapter: 6, file: '/jtest_n4_vocab.json' },
+  N2: { totalSections: 60, chapters: 12, sectionsPerChapter: 5, file: '/jtest_n2_vocab.json' },
+} as const
+
+export function getTodaySectionForLevel(level: 'N4' | 'N2') {
+  const { totalSections, sectionsPerChapter } = LEVEL_CONFIG[level]
+  const daysElapsed = Math.floor((new Date().getTime() - START_DATE.getTime()) / 86400000)
+  const sectionIndex = ((daysElapsed % totalSections) + totalSections) % totalSections
+  const chapter = Math.floor(sectionIndex / sectionsPerChapter) + 1
+  const section = (sectionIndex % sectionsPerChapter) + 1
   return { chapter, section, sectionIndex, daysElapsed }
+}
+
+export function getTodaySection() {
+  return getTodaySectionForLevel('N4')
 }
 
 function decodeEntities(s: string): string {
@@ -292,12 +301,12 @@ export const FURIGANA_MAP: Record<string, string> = {
   '発見': 'はっけん',
 }
 
-let cachedVocab: VocabWord[] | null = null
+const vocabCache: Partial<Record<'N4' | 'N2', VocabWord[]>> = {}
 
-export async function loadVocab(): Promise<VocabWord[]> {
-  if (cachedVocab) return cachedVocab
+export async function loadVocab(level: 'N4' | 'N2' = 'N4'): Promise<VocabWord[]> {
+  if (vocabCache[level]) return vocabCache[level]!
 
-  const res = await fetch('/jtest_n4_vocab.json')
+  const res = await fetch(LEVEL_CONFIG[level].file)
   const raw: Array<{
     chapter: number
     chapter_title: string
@@ -308,14 +317,14 @@ export async function loadVocab(): Promise<VocabWord[]> {
     meaning_en: string
   }> = await res.json()
 
-  cachedVocab = raw.map(item => ({
+  vocabCache[level] = raw.map(item => ({
     ...item,
     wordClean: cleanWord(item.word),
     isSuruVerb: isSuruVerb(item.word),
     furigana: FURIGANA_MAP[cleanWord(item.word)],
   }))
 
-  return cachedVocab
+  return vocabCache[level]!
 }
 
 export function getSection(vocab: VocabWord[], chapter: number, section: number): VocabWord[] {
@@ -326,7 +335,7 @@ export function getChapterWords(vocab: VocabWord[], chapter: number): VocabWord[
   return vocab.filter(w => w.chapter === chapter)
 }
 
-export function buildChapterMap(vocab: VocabWord[]): ChapterInfo[] {
+export function buildChapterMap(vocab: VocabWord[], sectionsPerChapter = 6): ChapterInfo[] {
   const chapters: Map<number, ChapterInfo> = new Map()
 
   for (const word of vocab) {
@@ -343,7 +352,7 @@ export function buildChapterMap(vocab: VocabWord[]): ChapterInfo[] {
 
     let sec = ch.sections.find(s => s.section === word.section)
     if (!sec) {
-      const sectionIndex = (word.chapter - 1) * 6 + (word.section - 1)
+      const sectionIndex = (word.chapter - 1) * sectionsPerChapter + (word.section - 1)
       sec = {
         chapter: word.chapter,
         section: word.section,

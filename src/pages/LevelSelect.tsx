@@ -1,0 +1,108 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useAppStore } from '@/store/useAppStore'
+import { LEVEL_CONFIG } from '@/lib/vocab'
+
+export function LevelSelect() {
+  const navigate = useNavigate()
+  const { setJlptLevel, user } = useAppStore()
+  const [selected, setSelected] = useState<'N4' | 'N2' | null>(user?.jlpt_level ?? null)
+  const [loading, setLoading] = useState(false)
+
+  async function handleConfirm() {
+    if (!selected) return
+    setLoading(true)
+    await setJlptLevel(selected)
+    navigate('/', { replace: true })
+  }
+
+  const levels: Array<{
+    level: 'N4' | 'N2'
+    label: string
+    sub: string
+    color: string
+    bg: string
+    border: string
+  }> = [
+    {
+      level: 'N4',
+      label: 'JLPT N4',
+      sub: 'Beginner · Intermediate',
+      color: 'text-emerald-600 dark:text-emerald-400',
+      bg: 'bg-emerald-50 dark:bg-emerald-900/20',
+      border: 'border-emerald-300 dark:border-emerald-700',
+    },
+    {
+      level: 'N2',
+      label: 'JLPT N2',
+      sub: 'Upper Intermediate',
+      color: 'text-indigo-600 dark:text-indigo-400',
+      bg: 'bg-indigo-50 dark:bg-indigo-900/20',
+      border: 'border-indigo-300 dark:border-indigo-700',
+    },
+  ]
+
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4">
+      <div className="w-full max-w-md">
+        <div className="text-center mb-8">
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Choose your JLPT level</h1>
+          <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+            You can change this later from the Dashboard.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          {levels.map(({ level, label, sub, color, bg, border }) => {
+            const cfg = LEVEL_CONFIG[level]
+            const isSelected = selected === level
+            return (
+              <button
+                key={level}
+                onClick={() => setSelected(level)}
+                className={`w-full text-left rounded-2xl border-2 p-5 transition-all ${bg} ${
+                  isSelected
+                    ? `${border} ring-2 ring-offset-2 ring-indigo-400 dark:ring-indigo-500`
+                    : 'border-gray-200 dark:border-gray-700'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className={`text-xl font-bold ${color}`}>{label}</p>
+                    <p className="text-gray-500 dark:text-gray-400 text-sm mt-0.5">{sub}</p>
+                  </div>
+                  <div
+                    className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                      isSelected ? 'border-indigo-500 bg-indigo-500' : 'border-gray-300 dark:border-gray-600'
+                    }`}
+                  >
+                    {isSelected && (
+                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    )}
+                  </div>
+                </div>
+                <div className="mt-3 flex gap-4 text-xs text-gray-500 dark:text-gray-400">
+                  <span>{cfg.chapters} chapters</span>
+                  <span>·</span>
+                  <span>{cfg.totalSections} days</span>
+                  <span>·</span>
+                  <span>{level === 'N4' ? '894' : '1,546'} words</span>
+                </div>
+              </button>
+            )
+          })}
+        </div>
+
+        <button
+          onClick={handleConfirm}
+          disabled={!selected || loading}
+          className="mt-6 w-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold py-3.5 rounded-xl transition-colors"
+        >
+          {loading ? 'Setting up...' : 'Start studying →'}
+        </button>
+      </div>
+    </div>
+  )
+}

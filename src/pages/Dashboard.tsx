@@ -3,7 +3,9 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
 import { useProgress } from '@/hooks/useProgress'
+import { LEVEL_CONFIG } from '@/lib/vocab'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
+import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine } from '@remixicon/react'
 
 export function Dashboard() {
   const navigate = useNavigate()
@@ -11,7 +13,8 @@ export function Dashboard() {
   const { isLoading } = useVocab()
   const progress = useProgress()
 
-  const TOTAL_SECTIONS = 42
+  const level = user?.jlpt_level ?? 'N4'
+  const TOTAL_SECTIONS = LEVEL_CONFIG[level].totalSections
   const daysUntilExam = user?.target_exam_date
     ? Math.max(0, Math.ceil((new Date(user.target_exam_date).getTime() - Date.now()) / 86400000))
     : null
@@ -35,9 +38,7 @@ export function Dashboard() {
         <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
           Hey, {user?.display_name} 👋
         </h1>
-        <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">
-          Keep up the great work!
-        </p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Keep up the great work!</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -134,17 +135,17 @@ export function Dashboard() {
       {/* Quick links — 2-col on mobile, 4-col on desktop */}
       <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
         {[
-          { label: 'Vocabulary', to: '/vocab', emoji: '📖' },
-          { label: 'Quiz', to: '/quiz', emoji: '✏️' },
-          { label: 'Reading', to: '/reading', emoji: '📄' },
-          { label: 'Mock Exam', to: '/mock-exam', emoji: '🎯' },
+          { label: 'Vocabulary', to: '/vocab', Icon: RiBookOpenLine },
+          { label: 'Quiz', to: '/quiz', Icon: RiPencilLine },
+          { label: 'Reading', to: '/reading', Icon: RiFileTextLine },
+          { label: 'Mock Exam', to: '/mock-exam', Icon: RiTargetLine },
         ].map(q => (
           <button
             key={q.to}
             onClick={() => navigate(q.to)}
-            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 text-center hover:border-indigo-300 hover:shadow-sm transition-all min-h-[80px] flex flex-col items-center justify-center"
+            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 text-center hover:border-indigo-300 hover:shadow-sm transition-all min-h-[80px] flex flex-col items-center justify-center gap-1.5"
           >
-            <div className="text-2xl mb-1">{q.emoji}</div>
+            <q.Icon size={22} className="text-indigo-500 dark:text-indigo-400" />
             <div className="text-sm font-medium text-gray-700 dark:text-gray-300">{q.label}</div>
           </button>
         ))}
