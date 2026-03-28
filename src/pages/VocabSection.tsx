@@ -53,18 +53,19 @@ function SwipeableCard({
   const touchStartX = useRef<number | null>(null)
   const touchStartY = useRef<number | null>(null)
   const isDragging = useRef(false)
+  const touchHandled = useRef(false)
 
   function handleTouchStart(e: React.TouchEvent) {
     touchStartX.current = e.touches[0].clientX
     touchStartY.current = e.touches[0].clientY
     isDragging.current = false
+    touchHandled.current = false
   }
 
   function handleTouchMove(e: React.TouchEvent) {
     if (touchStartX.current === null || touchStartY.current === null) return
     const dx = e.touches[0].clientX - touchStartX.current
     const dy = e.touches[0].clientY - touchStartY.current
-    // Only treat as horizontal swipe if horizontal movement dominates
     if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
       isDragging.current = true
     }
@@ -79,6 +80,7 @@ function SwipeableCard({
       if (dx < 0 && canSwipeLeft) onSwipeLeft()
       else if (dx > 0 && canSwipeRight) onSwipeRight()
     } else if (!isDragging.current) {
+      touchHandled.current = true
       onFlip()
     }
 
@@ -94,7 +96,7 @@ function SwipeableCard({
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      onClick={() => { if (!isDragging.current) onFlip() }}
+      onClick={() => { if (!touchHandled.current) onFlip(); touchHandled.current = false }}
     >
       {children}
     </div>
