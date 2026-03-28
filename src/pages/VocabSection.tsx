@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo } from 'react'
+import { useState, useRef, useMemo, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
@@ -103,16 +103,35 @@ function SwipeableCard({
   )
 }
 
+function makeExample(word: string, meaning: string): { jp: string; en: string } {
+  const templates = [
+    { jp: `${word}について考えてみましょう。`, en: `Let's think about "${meaning}".` },
+    { jp: `${word}はとても大切なことです。`, en: `"${meaning}" is very important.` },
+    { jp: `彼は${word}をよく理解しています。`, en: `He understands "${meaning}" well.` },
+    { jp: `${word}という言葉を覚えましょう。`, en: `Let's remember the word "${meaning}".` },
+    { jp: `${word}が必要な場面があります。`, en: `There are situations where "${meaning}" is needed.` },
+  ]
+  // Stable pick based on word string length
+  return templates[word.length % templates.length]
+}
+
 export function VocabSection() {
   const { chapter, section } = useParams<{ chapter: string; section: string }>()
   const ch = Number(chapter)
   const sec = Number(section)
   const { vocab, isLoading } = useVocab()
   const { wordStatuses, setWordStatus } = useAppStore()
-  const [view, setView] = useState<'table' | 'flashcard'>('table')
+  const [view, setView] = useState<'list' | 'flashcard'>('list')
   const [cardIndex, setCardIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const [showHint, setShowHint] = useState(false)
+  const [showFurigana, setShowFurigana] = useState(true)
+  const [showMeaning, setShowMeaning] = useState(true)
+  const [expandedEx, setExpandedEx] = useState<Record<number, boolean>>({})
+
+  const toggleExample = useCallback((i: number) => {
+    setExpandedEx(prev => ({ ...prev, [i]: !prev[i] }))
+  }, [])
 
   const words = getSection(vocab, ch, sec)
   const shuffledWords = useMemo(() => [...words].sort(() => Math.random() - 0.5), [ch, sec, words.length])
@@ -157,7 +176,7 @@ export function VocabSection() {
 
       {/* View toggle */}
       <div className="flex gap-2 mb-4">
-        {(['table', 'flashcard'] as const).map(v => (
+        {(['list', 'flashcard'] as const).map(v => (
           <button
             key={v}
             onClick={() => { setView(v); setCardIndex(0); setFlipped(false) }}
@@ -167,63 +186,103 @@ export function VocabSection() {
                 : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
             }`}
           >
-            {v === 'table' ? 'Table' : 'Flashcard'}
+            {v === 'list' ? 'List' : 'Flashcard'}
           </button>
         ))}
       </div>
 
-      {/* Table view */}
-      {view === 'table' && (
+      {/* List (card) view */}
+      {view === 'list' && (
         <>
-        <div className="flex items-center gap-3 mb-2 px-1 text-xs text-gray-400 dark:text-gray-500">
-          <span>Click status to cycle:</span>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400 font-semibold">· Unknown</span>
-          <span>→</span>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300 font-semibold">~ Learning</span>
-          <span>→</span>
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300 font-semibold">✓ Known</span>
-        </div>
-        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
-          <table className="w-full text-sm">
-            <thead className="bg-gray-50 dark:bg-gray-700">
-              <tr>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">#</th>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">Word</th>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300 hidden md:table-cell">Reading</th>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">Meaning</th>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {words.map((w, i) => {
-                const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
-                const nextStatus = STATUS_ORDER[(STATUS_ORDER.indexOf(status) + 1) % STATUS_ORDER.length]
-                return (
-                  <tr
-                    key={i}
-                    className={`border-t border-gray-100 dark:border-gray-700 transition-colors ${
-                      status === 'known' ? 'bg-green-50/40 dark:bg-green-900/10' : ''
-                    }`}
-                  >
-                    <td className="px-4 py-2.5 text-gray-400 text-xs">{i + 1}</td>
-                    <td className="px-4 py-2.5">
-                      <span className={`font-jp text-lg font-medium ${status === 'known' ? 'text-gray-400 dark:text-gray-500 line-through' : 'text-gray-900 dark:text-white'}`}>{w.wordClean}</span>
-                      {w.isSuruVerb && <span className="ml-1 text-xs text-indigo-400">suru</span>}
-                    </td>
-                    <td className="px-4 py-2.5 text-gray-500 dark:text-gray-400 hidden md:table-cell">{w.furigana ?? '—'}</td>
-                    <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{w.meaning_en}</td>
-                    <td className="px-4 py-2.5">
+          {/* Toggle controls */}
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
+            <span className="text-xs text-gray-400 dark:text-gray-500 mr-1">Show:</span>
+            {[
+              { label: 'Furigana', value: showFurigana, toggle: () => setShowFurigana(v => !v) },
+              { label: 'Meaning', value: showMeaning, toggle: () => setShowMeaning(v => !v) },
+            ].map(({ label, value, toggle }) => (
+              <button
+                key={label}
+                onClick={toggle}
+                className={`px-3 py-1 rounded-full text-xs font-medium border transition-all ${
+                  value
+                    ? 'bg-indigo-600 text-white border-indigo-600'
+                    : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+            <span className="ml-auto text-xs text-gray-400">Tap status to cycle</span>
+          </div>
+
+          {/* Word cards */}
+          <div className="space-y-3">
+            {words.map((w, i) => {
+              const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
+              const nextStatus = STATUS_ORDER[(STATUS_ORDER.indexOf(status) + 1) % STATUS_ORDER.length]
+              const example = makeExample(w.wordClean, w.meaning_en)
+              const exOpen = expandedEx[i] ?? false
+              return (
+                <div
+                  key={i}
+                  className={`bg-white dark:bg-gray-800 rounded-2xl border transition-colors ${
+                    status === 'known'
+                      ? 'border-green-200 dark:border-green-800'
+                      : 'border-gray-200 dark:border-gray-700'
+                  }`}
+                >
+                  <div className="px-4 pt-4 pb-3">
+                    {/* Top row: number + word + status */}
+                    <div className="flex items-start justify-between gap-2 mb-1">
+                      <div className="flex items-baseline gap-2 min-w-0">
+                        <span className="text-xs text-gray-300 dark:text-gray-600 flex-shrink-0">{i + 1}</span>
+                        <div>
+                          <span className={`font-jp text-2xl font-bold leading-tight ${
+                            status === 'known' ? 'text-gray-300 dark:text-gray-600 line-through' : 'text-gray-900 dark:text-white'
+                          }`}>
+                            {w.wordClean}
+                          </span>
+                          {w.isSuruVerb && <span className="ml-1.5 text-xs text-indigo-400 align-middle">する</span>}
+                        </div>
+                      </div>
                       <StatusToggle
                         status={status}
                         onCycle={() => setWordStatus(w.wordClean, nextStatus, w.chapter, w.section)}
                       />
-                    </td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
-        </div>
+                    </div>
+
+                    {/* Furigana */}
+                    {showFurigana && w.furigana && (
+                      <p className="font-jp text-sm text-indigo-500 dark:text-indigo-400 mb-1 ml-5">{w.furigana}</p>
+                    )}
+
+                    {/* Meaning */}
+                    {showMeaning && (
+                      <p className="text-sm text-gray-700 dark:text-gray-300 ml-5">{w.meaning_en}</p>
+                    )}
+                  </div>
+
+                  {/* Example sentence toggle */}
+                  <div className="border-t border-gray-100 dark:border-gray-700">
+                    <button
+                      onClick={() => toggleExample(i)}
+                      className="w-full flex items-center justify-between px-4 py-2.5 text-xs text-gray-400 hover:text-indigo-500 transition-colors"
+                    >
+                      <span>例文 Example</span>
+                      <span className={`transition-transform ${exOpen ? 'rotate-180' : ''}`}>▾</span>
+                    </button>
+                    {exOpen && (
+                      <div className="px-4 pb-3 space-y-1">
+                        <p className="font-jp text-sm text-gray-800 dark:text-gray-200">{example.jp}</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 italic">{example.en}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
         </>
       )}
 
