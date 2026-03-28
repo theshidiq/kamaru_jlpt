@@ -141,6 +141,9 @@ export const useAppStore = create<AppState>((set, get) => ({
     const todayStr = new Date().toISOString().split('T')[0]
     await Promise.all([
       supabase.from('word_status').delete().eq('user_id', user.id),
+      supabase.from('quiz_attempts').delete().eq('user_id', user.id),
+      supabase.from('mock_exam_attempts').delete().eq('user_id', user.id),
+      supabase.from('daily_sessions').delete().eq('user_id', user.id),
       supabase.from('profiles').update({ study_start_date: todayStr }).eq('id', user.id),
     ])
     const updatedUser = { ...user, study_start_date: todayStr }
