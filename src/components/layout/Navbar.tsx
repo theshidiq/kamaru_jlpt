@@ -169,20 +169,20 @@ export function Navbar() {
 
       {/* Mobile bottom navigation */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 safe-area-bottom">
-        <div className="flex items-stretch h-16">
+        <div className="flex items-stretch h-20">
           {BOTTOM_NAV.map(link => {
             const isActive = location.pathname === link.to
             return (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative flex-1 flex flex-col items-center justify-center gap-0.5 text-xs font-medium transition-colors min-h-[44px] ${
+                className={`relative flex-1 flex flex-col items-center justify-center gap-1 py-3 text-xs font-medium transition-colors ${
                   isActive
                     ? 'text-indigo-600 dark:text-indigo-400'
                     : 'text-gray-500 dark:text-gray-400'
                 }`}
               >
-                <link.Icon size={20} />
+                <link.Icon size={22} />
                 <span className="leading-none">{link.label}</span>
                 {isActive && (
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-0.5 bg-indigo-600 dark:bg-indigo-400 rounded-full" />
