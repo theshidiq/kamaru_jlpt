@@ -17,6 +17,8 @@ export function Login() {
   const [password, setPassword] = useState('')
   const [displayName, setDisplayName] = useState('')
   const [loading, setLoading] = useState(false)
+  const [failCount, setFailCount] = useState(0)
+  const [lockUntil, setLockUntil] = useState<number | null>(null)
 
   // Redirect to dashboard if already logged in (handles PKCE OAuth callback)
   useEffect(() => {
@@ -62,22 +64,42 @@ export function Login() {
     if (error) toast.error(error.message)
   }
 
+  const isLocked = lockUntil !== null && Date.now() < lockUntil
+  const lockSecsLeft = lockUntil ? Math.ceil((lockUntil - Date.now()) / 1000) : 0
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    if (isLocked) return
+
+    if (mode === 'signup') {
+      const trimmed = displayName.trim()
+      if (trimmed.length < 2 || trimmed.length > 30) {
+        toast.error('Display name must be 2–30 characters.')
+        return
+      }
+    }
+
     setLoading(true)
     try {
       if (mode === 'signup') {
         const { error } = await supabase.auth.signUp({
           email,
           password,
-          options: { data: { display_name: displayName } },
+          options: { data: { display_name: displayName.trim().slice(0, 30) } },
         })
         if (error) throw error
         toast.success('Account created!')
         navigate('/')
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password })
-        if (error) throw error
+        if (error) {
+          const next = failCount + 1
+          setFailCount(next)
+          if (next >= 5) setLockUntil(Date.now() + 30_000)
+          throw error
+        }
+        setFailCount(0)
+        setLockUntil(null)
         navigate('/')
       }
     } catch (err: unknown) {
@@ -196,10 +218,13 @@ export function Login() {
 
           <button
             type="submit"
-            disabled={loading}
+            disabled={loading || isLocked}
             className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-60 text-white font-semibold py-2.5 rounded-lg transition-colors"
           >
-            {loading ? 'Loading...' : mode === 'login' ? 'Login' : 'Create Account'}
+            {isLocked
+              ? `Too many attempts — wait ${lockSecsLeft}s`
+              : loading ? 'Loading...'
+              : mode === 'login' ? 'Login' : 'Create Account'}
           </button>
         </form>
       </motion.div>

@@ -11,26 +11,25 @@ export function useAuth() {
     async function resolveSession(userId: string | undefined, userEmail?: string, userName?: string) {
       if (resolved) return
       resolved = true
-      console.log('[useAuth] resolveSession', { userId })
 
       if (userId) {
         let { data } = await supabase
           .from('profiles')
-          .select('*')
+          .select('id, display_name, avatar_url, jlpt_level, target_exam_date, created_at')
           .eq('id', userId)
           .single()
 
         if (!data) {
-          const displayName = userName ?? userEmail?.split('@')[0] ?? 'User'
+          const raw = userName ?? userEmail?.split('@')[0] ?? 'User'
+          const displayName = raw.trim().slice(0, 30)
           const { data: created } = await supabase
             .from('profiles')
             .insert({ id: userId, display_name: displayName })
-            .select('*')
+            .select('id, display_name, avatar_url, jlpt_level, target_exam_date, created_at')
             .single()
           data = created
         }
 
-        console.log('[useAuth] profile:', data)
         setUser(data ?? null)
         if (data) loadWordStatuses(data.id)
       } else {
@@ -39,9 +38,19 @@ export function useAuth() {
       setAuthReady()
     }
 
-    // onAuthStateChange MUST be registered first — it's what processes the hash token
+    // Try to resolve immediately from local storage before waiting for network
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (!resolved && session) {
+        resolveSession(
+          session.user.id,
+          session.user.email,
+          session.user.user_metadata?.full_name ?? session.user.user_metadata?.name,
+        )
+      }
+    })
+
+    // onAuthStateChange handles subsequent login/logout events
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      console.log('[useAuth] onAuthStateChange', _event, session?.user?.id)
       resolved = false // allow re-resolution on auth state changes
       resolveSession(
         session?.user.id,
@@ -52,7 +61,6 @@ export function useAuth() {
 
     // Fallback: if no auth event fires within 3s, mark as unauthenticated
     const timeout = setTimeout(() => {
-      console.log('[useAuth] timeout — no session found')
       if (!resolved) resolveSession(undefined)
     }, 3000)
 

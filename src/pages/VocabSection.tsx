@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
@@ -30,6 +30,74 @@ function StatusToggle({ status, onCycle }: { status: WordStatus; onCycle: () => 
       <span className="font-bold leading-none">{icons[status]}</span>
       {STATUS_LABELS[status]}
     </button>
+  )
+}
+
+const SWIPE_THRESHOLD = 60 // px
+
+function SwipeableCard({
+  children,
+  onFlip,
+  onSwipeLeft,
+  onSwipeRight,
+  canSwipeLeft,
+  canSwipeRight,
+}: {
+  children: React.ReactNode
+  onFlip: () => void
+  onSwipeLeft: () => void
+  onSwipeRight: () => void
+  canSwipeLeft: boolean
+  canSwipeRight: boolean
+}) {
+  const touchStartX = useRef<number | null>(null)
+  const touchStartY = useRef<number | null>(null)
+  const isDragging = useRef(false)
+
+  function handleTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX
+    touchStartY.current = e.touches[0].clientY
+    isDragging.current = false
+  }
+
+  function handleTouchMove(e: React.TouchEvent) {
+    if (touchStartX.current === null || touchStartY.current === null) return
+    const dx = e.touches[0].clientX - touchStartX.current
+    const dy = e.touches[0].clientY - touchStartY.current
+    // Only treat as horizontal swipe if horizontal movement dominates
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+      isDragging.current = true
+    }
+  }
+
+  function handleTouchEnd(e: React.TouchEvent) {
+    if (touchStartX.current === null) return
+    const dx = e.changedTouches[0].clientX - touchStartX.current
+    const dy = e.changedTouches[0].clientY - (touchStartY.current ?? 0)
+
+    if (isDragging.current && Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
+      if (dx < 0 && canSwipeLeft) onSwipeLeft()
+      else if (dx > 0 && canSwipeRight) onSwipeRight()
+    } else if (!isDragging.current) {
+      onFlip()
+    }
+
+    touchStartX.current = null
+    touchStartY.current = null
+    isDragging.current = false
+  }
+
+  return (
+    <div
+      className="relative w-full max-w-lg h-72 md:h-80 cursor-pointer select-none touch-pan-y"
+      style={{ perspective: 1000 }}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+      onClick={() => { if (!isDragging.current) onFlip() }}
+    >
+      {children}
+    </div>
   )
 }
 
@@ -159,13 +227,34 @@ export function VocabSection() {
       {/* Flashcard view */}
       {view === 'flashcard' && currentWord && (
         <div className="flex flex-col items-center">
-          <div className="text-sm text-gray-400 mb-4">{cardIndex + 1} / {words.length}</div>
+          {/* Progress dots */}
+          <div className="flex items-center gap-1.5 mb-4">
+            {words.map((_, i) => (
+              <span
+                key={i}
+                className={`rounded-full transition-all ${
+                  i === cardIndex
+                    ? 'w-4 h-2 bg-indigo-500'
+                    : (wordStatuses[words[i].wordClean] ?? 'new') === 'known'
+                    ? 'w-2 h-2 bg-green-400'
+                    : 'w-2 h-2 bg-gray-200 dark:bg-gray-700'
+                }`}
+              />
+            ))}
+          </div>
+          <div className="text-xs text-gray-400 mb-3">{cardIndex + 1} / {words.length} · swipe or tap ← →</div>
 
-          {/* Card */}
-          <div
-            className="relative w-full max-w-lg h-72 md:h-80 cursor-pointer"
-            style={{ perspective: 1000 }}
-            onClick={() => setFlipped(!flipped)}
+          {/* Swipeable card */}
+          <SwipeableCard
+            onFlip={() => setFlipped(f => !f)}
+            onSwipeLeft={() => {
+              if (cardIndex < words.length - 1) { setCardIndex(cardIndex + 1); setFlipped(false); setShowHint(false) }
+            }}
+            onSwipeRight={() => {
+              if (cardIndex > 0) { setCardIndex(cardIndex - 1); setFlipped(false); setShowHint(false) }
+            }}
+            canSwipeLeft={cardIndex < words.length - 1}
+            canSwipeRight={cardIndex > 0}
           >
             <AnimatePresence mode="wait">
               {!flipped ? (
@@ -206,7 +295,7 @@ export function VocabSection() {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </SwipeableCard>
 
           {/* Status selector */}
           {flipped && (
@@ -225,8 +314,8 @@ export function VocabSection() {
             </div>
           )}
 
-          {/* Navigation */}
-          <div className="flex items-center gap-3 mt-6 w-full max-w-sm">
+          {/* Navigation buttons */}
+          <div className="flex items-center gap-3 mt-5 w-full max-w-sm">
             <button
               onClick={() => { setCardIndex(Math.max(0, cardIndex - 1)); setFlipped(false); setShowHint(false) }}
               disabled={cardIndex === 0}

@@ -4,6 +4,7 @@ import { useAppStore } from '@/store/useAppStore'
 import { supabase } from '@/lib/supabase'
 
 interface LeaderboardEntry {
+  user_id: string
   display_name: string
   avatar_url: string | null
   known_words: number
@@ -20,7 +21,7 @@ export function Leaderboard() {
     async function fetch() {
       const { data } = await supabase
         .from('leaderboard_view')
-        .select('*')
+        .select('user_id, display_name, avatar_url, known_words, study_days, avg_quiz_score')
         .order('known_words', { ascending: false })
         .limit(20)
       setEntries(data ?? [])
@@ -54,7 +55,7 @@ export function Leaderboard() {
             </thead>
             <tbody>
               {entries.map((e, i) => {
-                const isMe = e.display_name === user?.display_name
+                const isMe = e.user_id === user?.id
                 return (
                   <tr
                     key={i}

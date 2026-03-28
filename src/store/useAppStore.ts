@@ -69,7 +69,8 @@ export const useAppStore = create<AppState>((set, get) => ({
   setJlptLevel: async (level: 'N4' | 'N2') => {
     const { user } = get()
     if (!user) return
-    await supabase.from('profiles').update({ jlpt_level: level }).eq('id', user.id)
+    const { error } = await supabase.from('profiles').update({ jlpt_level: level }).eq('id', user.id)
+    if (error) throw new Error('Failed to update level: ' + error.message)
     const updatedUser = { ...user, jlpt_level: level }
     const t = getTodaySectionForLevel(level)
     // Reset vocab cache for the new level
