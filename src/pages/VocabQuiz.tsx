@@ -76,7 +76,12 @@ export function VocabQuiz() {
                 return (
                   <button
                     key={ch.chapter}
-                    onClick={() => setChapter(ch.chapter)}
+                    onClick={() => {
+                      setChapter(ch.chapter)
+                      const qs = generateVocabQuiz(vocab, ch.chapter, null, 15)
+                      setQuestions(qs)
+                      setPhase('quiz')
+                    }}
                     className={`w-full flex items-center justify-between px-4 py-4 rounded-xl border-2 transition-all text-left min-h-[64px] ${
                       isSelected
                         ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-950'
