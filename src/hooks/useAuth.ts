@@ -15,7 +15,7 @@ export function useAuth() {
       if (userId) {
         let { data } = await supabase
           .from('profiles')
-          .select('id, display_name, avatar_url, jlpt_level, target_exam_date, created_at')
+          .select('id, display_name, avatar_url, jlpt_level, study_start_date, target_exam_date, created_at')
           .eq('id', userId)
           .single()
 
@@ -25,7 +25,7 @@ export function useAuth() {
           const { data: created } = await supabase
             .from('profiles')
             .insert({ id: userId, display_name: displayName })
-            .select('id, display_name, avatar_url, jlpt_level, target_exam_date, created_at')
+            .select('id, display_name, avatar_url, jlpt_level, study_start_date, target_exam_date, created_at')
             .single()
           data = created
         }

@@ -52,7 +52,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   authReady: false,
   setUser: (user) => {
     const level = user?.jlpt_level ?? 'N4'
-    const t = getTodaySectionForLevel(level)
+    const t = getTodaySectionForLevel(level, user?.study_start_date)
     set({
       user,
       vocab: [],
@@ -72,7 +72,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     const { error } = await supabase.from('profiles').update({ jlpt_level: level }).eq('id', user.id)
     if (error) throw new Error('Failed to update level: ' + error.message)
     const updatedUser = { ...user, jlpt_level: level }
-    const t = getTodaySectionForLevel(level)
+    const t = getTodaySectionForLevel(level, user.study_start_date)
     // Reset vocab cache for the new level
     set({
       user: updatedUser,
@@ -138,8 +138,22 @@ export const useAppStore = create<AppState>((set, get) => ({
   resetWordStatuses: async () => {
     const { user } = get()
     if (!user) return
-    await supabase.from('word_status').delete().eq('user_id', user.id)
-    set({ wordStatuses: {} })
+    const todayStr = new Date().toISOString().split('T')[0]
+    await Promise.all([
+      supabase.from('word_status').delete().eq('user_id', user.id),
+      supabase.from('profiles').update({ study_start_date: todayStr }).eq('id', user.id),
+    ])
+    const updatedUser = { ...user, study_start_date: todayStr }
+    const level = user.jlpt_level ?? 'N4'
+    const t = getTodaySectionForLevel(level, todayStr)
+    set({
+      wordStatuses: {},
+      user: updatedUser,
+      todayChapter: t.chapter,
+      todaySection: t.section,
+      todaySectionIndex: t.sectionIndex,
+      todayDaysElapsed: t.daysElapsed,
+    })
   },
 }))
 

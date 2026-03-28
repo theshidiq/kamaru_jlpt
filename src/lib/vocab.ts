@@ -1,16 +1,17 @@
 import type { VocabWord, ChapterInfo } from '@/types/vocab'
 
 export const TOTAL_SECTIONS = 42 // 7 chapters × 6 sections (N4 default)
-const START_DATE = new Date('2026-03-26')
+const DEFAULT_START_DATE = new Date('2026-03-26')
 
 export const LEVEL_CONFIG = {
   N4: { totalSections: 42, chapters: 7, sectionsPerChapter: 6, file: '/jtest_n4_vocab.json' },
   N2: { totalSections: 60, chapters: 12, sectionsPerChapter: 5, file: '/jtest_n2_vocab.json' },
 } as const
 
-export function getTodaySectionForLevel(level: 'N4' | 'N2') {
+export function getTodaySectionForLevel(level: 'N4' | 'N2', startDate?: string | null) {
   const { totalSections, sectionsPerChapter } = LEVEL_CONFIG[level]
-  const daysElapsed = Math.floor((new Date().getTime() - START_DATE.getTime()) / 86400000)
+  const base = startDate ? new Date(startDate) : DEFAULT_START_DATE
+  const daysElapsed = Math.max(0, Math.floor((new Date().getTime() - base.getTime()) / 86400000))
   const sectionIndex = ((daysElapsed % totalSections) + totalSections) % totalSections
   const chapter = Math.floor(sectionIndex / sectionsPerChapter) + 1
   const section = (sectionIndex % sectionsPerChapter) + 1
