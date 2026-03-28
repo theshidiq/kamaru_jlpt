@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
@@ -115,12 +115,13 @@ export function VocabSection() {
   const [showHint, setShowHint] = useState(false)
 
   const words = getSection(vocab, ch, sec)
+  const shuffledWords = useMemo(() => [...words].sort(() => Math.random() - 0.5), [ch, sec, words.length])
 
   if (isLoading) return <PageWrapper><div className="text-center py-10 text-gray-400">Loading...</div></PageWrapper>
   if (!words.length) return <PageWrapper><div className="text-center py-10 text-gray-400">No words in this section</div></PageWrapper>
 
   const known = words.filter(w => (wordStatuses[w.wordClean] ?? 'new') === 'known').length
-  const currentWord = words[cardIndex]
+  const currentWord = shuffledWords[cardIndex]
 
   return (
     <PageWrapper>
@@ -231,31 +232,31 @@ export function VocabSection() {
         <div className="flex flex-col items-center">
           {/* Progress dots */}
           <div className="flex items-center gap-1.5 mb-4">
-            {words.map((_, i) => (
+            {shuffledWords.map((_, i) => (
               <span
                 key={i}
                 className={`rounded-full transition-all ${
                   i === cardIndex
                     ? 'w-4 h-2 bg-indigo-500'
-                    : (wordStatuses[words[i].wordClean] ?? 'new') === 'known'
+                    : (wordStatuses[shuffledWords[i].wordClean] ?? 'new') === 'known'
                     ? 'w-2 h-2 bg-green-400'
                     : 'w-2 h-2 bg-gray-200 dark:bg-gray-700'
                 }`}
               />
             ))}
           </div>
-          <div className="text-xs text-gray-400 mb-3">{cardIndex + 1} / {words.length} · swipe or tap ← →</div>
+          <div className="text-xs text-gray-400 mb-3">{cardIndex + 1} / {shuffledWords.length} · swipe or tap ← →</div>
 
           {/* Swipeable card */}
           <SwipeableCard
             onFlip={() => setFlipped(f => !f)}
             onSwipeLeft={() => {
-              if (cardIndex < words.length - 1) { setCardIndex(cardIndex + 1); setFlipped(false); setShowHint(false) }
+              if (cardIndex < shuffledWords.length - 1) { setCardIndex(cardIndex + 1); setFlipped(false); setShowHint(false) }
             }}
             onSwipeRight={() => {
               if (cardIndex > 0) { setCardIndex(cardIndex - 1); setFlipped(false); setShowHint(false) }
             }}
-            canSwipeLeft={cardIndex < words.length - 1}
+            canSwipeLeft={cardIndex < shuffledWords.length - 1}
             canSwipeRight={cardIndex > 0}
           >
             <AnimatePresence mode="wait">
@@ -326,8 +327,8 @@ export function VocabSection() {
               ← Prev
             </button>
             <button
-              onClick={() => { setCardIndex(Math.min(words.length - 1, cardIndex + 1)); setFlipped(false); setShowHint(false) }}
-              disabled={cardIndex === words.length - 1}
+              onClick={() => { setCardIndex(Math.min(shuffledWords.length - 1, cardIndex + 1)); setFlipped(false); setShowHint(false) }}
+              disabled={cardIndex === shuffledWords.length - 1}
               className="flex-1 px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 disabled:opacity-40 min-h-[44px] font-medium"
             >
               Next →
