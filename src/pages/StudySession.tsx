@@ -12,6 +12,7 @@ import toast from 'react-hot-toast'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import type { WordStatus } from '@/types/user'
+import { RiCheckDoubleLine } from '@remixicon/react'
 
 type Stage = 'intro' | 'flashcards' | 'mini-quiz' | 'quiz-results' | 'self-rating' | 'complete'
 
@@ -255,17 +256,17 @@ export function StudySession() {
               <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">How was today's session?</h2>
               <p className="text-gray-500 text-sm mb-6 md:mb-8">Be honest!</p>
               <div className="flex justify-center gap-3 mb-6 md:mb-8">
-                {([['easy', '🟢', 'Easy'], ['okay', '🟡', 'Okay'], ['hard', '🔴', 'Hard']] as const).map(([val, emoji, label]) => (
+                {([['easy', 'bg-green-500', 'Easy'], ['okay', 'bg-blue-500', 'Okay'], ['hard', 'bg-red-500', 'Hard']] as const).map(([val, color, label]) => (
                   <button
                     key={val}
                     onClick={() => setSelfRating(val)}
-                    className={`flex flex-col items-center gap-1 flex-1 py-4 rounded-2xl border-2 transition-all min-h-[80px] ${
+                    className={`flex flex-col items-center gap-2 flex-1 py-4 rounded-2xl border-2 transition-all min-h-[80px] ${
                       selfRating === val
                         ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-950'
                         : 'border-gray-200 dark:border-gray-700 hover:border-indigo-300'
                     }`}
                   >
-                    <span className="text-3xl">{emoji}</span>
+                    <span className={`w-5 h-5 rounded-full ${color}`} />
                     <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{label}</span>
                   </button>
                 ))}
@@ -275,7 +276,7 @@ export function StudySession() {
                 onClick={handleComplete}
                 className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 text-white font-bold py-4 rounded-xl transition-colors min-h-[52px] text-base"
               >
-                {saving ? 'Saving...' : 'Complete! 🎉'}
+                {saving ? 'Saving...' : <span className="flex items-center justify-center gap-1.5"><RiCheckDoubleLine size={18} />Complete!</span>}
               </button>
             </div>
           </motion.div>

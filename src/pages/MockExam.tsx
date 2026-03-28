@@ -8,6 +8,7 @@ import { supabase } from '@/lib/supabase'
 import { useNavigate } from 'react-router-dom'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import confetti from 'canvas-confetti'
+import { RiTrophyLine, RiEmotionHappyLine, RiTargetLine, RiCheckLine, RiCloseLine } from '@remixicon/react'
 
 type Phase = 'intro' | 'vocab' | 'grammar' | 'reading' | 'results'
 
@@ -95,7 +96,9 @@ export function MockExam() {
     return (
       <PageWrapper>
         <div className="max-w-lg mx-auto text-center py-6 md:py-8">
-          <div className="text-6xl mb-4">{score.passed ? '🏆' : '💪'}</div>
+          <div className={`flex justify-center mb-4 ${score.passed ? 'text-amber-500' : 'text-indigo-500'}`}>
+            {score.passed ? <RiTrophyLine size={56} /> : <RiEmotionHappyLine size={56} />}
+          </div>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">
             Score: {score.scaled} / 180
           </h2>
@@ -116,7 +119,10 @@ export function MockExam() {
               }`}>
                 <p className="text-xs text-gray-500 mb-1">{label as string}</p>
                 <p className="font-bold text-lg text-gray-900 dark:text-white">{correct as number}/{total as number}</p>
-                <p className="text-xs">{passed ? '✅ Pass' : '❌ Fail'}</p>
+                <p className={`text-xs flex items-center justify-center gap-0.5 font-medium ${passed ? 'text-green-600' : 'text-red-500'}`}>
+                  {passed ? <RiCheckLine size={12} /> : <RiCloseLine size={12} />}
+                  {passed ? 'Pass' : 'Fail'}
+                </p>
               </div>
             ))}
           </div>
@@ -138,7 +144,7 @@ export function MockExam() {
     <PageWrapper>
       {phase === 'intro' && (
         <div className="max-w-lg mx-auto text-center py-6 md:py-8">
-          <div className="text-5xl mb-4">🎯</div>
+          <div className="flex justify-center mb-4 text-indigo-500"><RiTargetLine size={48} /></div>
           <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">JLPT N4 Mock Exam</h1>
           <p className="text-gray-500 dark:text-gray-400 mb-5">Practice in a real exam format</p>
           <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-4 md:p-5 text-left mb-5">

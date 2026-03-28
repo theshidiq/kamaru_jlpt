@@ -5,7 +5,7 @@ import { useVocab } from '@/hooks/useVocab'
 import { useProgress } from '@/hooks/useProgress'
 import { LEVEL_CONFIG } from '@/lib/vocab'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
-import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine } from '@remixicon/react'
+import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine } from '@remixicon/react'
 
 export function Dashboard() {
   const navigate = useNavigate()
@@ -65,7 +65,7 @@ export function Dashboard() {
           <div className="flex items-center justify-between gap-3">
             <div>
               <p className="text-sm text-white/80">Streak</p>
-              <p className="text-2xl font-bold">{progress.streak} days 🔥</p>
+              <p className="text-2xl font-bold flex items-center gap-1.5">{progress.streak} days <RiFireLine size={20} className="text-orange-400" /></p>
             </div>
             <button
               onClick={() => navigate('/study')}

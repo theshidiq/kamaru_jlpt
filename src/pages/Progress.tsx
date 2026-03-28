@@ -6,6 +6,8 @@ import {
   LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer,
   BarChart, Bar, Legend,
 } from 'recharts'
+import { RiFireLine, RiTrophyLine, RiBookOpenLine, RiBarChart2Line } from '@remixicon/react'
+import type { RemixiconComponentType } from '@remixicon/react'
 
 function HeatmapCalendar({ sessions }: { sessions: { session_date: string; self_rating: string | null }[] }) {
   const sessionMap = new Map(sessions.map(s => [s.session_date, s.self_rating]))
@@ -76,14 +78,14 @@ export function Progress() {
 
       {/* Streak + readiness — 2-col on mobile, 4-col on desktop */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
-        {[
-          { label: 'Streak', value: `${progress.streak} days`, icon: '🔥' },
-          { label: 'Best Streak', value: `${progress.longestStreak} days`, icon: '🏆' },
-          { label: 'Sessions', value: `${progress.totalSessions}`, icon: '📚' },
-          { label: 'Readiness', value: `${readiness}%`, icon: '🎯' },
-        ].map(s => (
+        {([
+          { label: 'Streak', value: `${progress.streak} days`, Icon: RiFireLine, color: 'text-orange-500' },
+          { label: 'Best Streak', value: `${progress.longestStreak} days`, Icon: RiTrophyLine, color: 'text-amber-500' },
+          { label: 'Sessions', value: `${progress.totalSessions}`, Icon: RiBookOpenLine, color: 'text-indigo-500' },
+          { label: 'Readiness', value: `${readiness}%`, Icon: RiBarChart2Line, color: 'text-green-500' },
+        ] as { label: string; value: string; Icon: RemixiconComponentType; color: string }[]).map(s => (
           <div key={s.label} className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-3 md:p-4 text-center">
-            <div className="text-2xl mb-1">{s.icon}</div>
+            <div className={`flex justify-center mb-1 ${s.color}`}><s.Icon size={24} /></div>
             <div className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">{s.value}</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">{s.label}</div>
           </div>

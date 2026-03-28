@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { supabase } from '@/lib/supabase'
+import { RiMedalLine } from '@remixicon/react'
 
 interface LeaderboardEntry {
   user_id: string
@@ -30,7 +31,7 @@ export function Leaderboard() {
     fetch()
   }, [])
 
-  const medals = ['🥇', '🥈', '🥉']
+  const medalColors = ['text-amber-500', 'text-gray-400', 'text-amber-700']
 
   return (
     <PageWrapper>
@@ -64,7 +65,10 @@ export function Leaderboard() {
                     }`}
                   >
                     <td className="px-3 md:px-4 py-3 text-center">
-                      {medals[i] ?? <span className="text-gray-500 text-xs">{i + 1}</span>}
+                      {i < 3
+                        ? <RiMedalLine size={18} className={medalColors[i]} />
+                        : <span className="text-gray-500 text-xs">{i + 1}</span>
+                      }
                     </td>
                     <td className="px-3 md:px-4 py-3">
                       <div className="flex items-center gap-2">
