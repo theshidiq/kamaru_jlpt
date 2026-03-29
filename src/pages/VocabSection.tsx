@@ -18,21 +18,6 @@ const STATUS_LABELS: Record<WordStatus, string> = {
   learning: 'Learning',
   new: 'Unknown',
 }
-const STATUS_ORDER: WordStatus[] = ['new', 'learning', 'known']
-
-function StatusToggle({ status, onCycle }: { status: WordStatus; onCycle: () => void }) {
-  const icons: Record<WordStatus, string> = { known: '✓', learning: '~', new: '·' }
-  return (
-    <button
-      onClick={onCycle}
-      title="Click to cycle: Unknown → Learning → Known"
-      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold transition-all duration-150 active:scale-95 select-none ${STATUS_COLORS[status]}`}
-    >
-      <span className="font-bold leading-none">{icons[status]}</span>
-      {STATUS_LABELS[status]}
-    </button>
-  )
-}
 
 const SWIPE_THRESHOLD = 60 // px
 
@@ -121,6 +106,25 @@ export function VocabSection() {
   const [showFurigana, setShowFurigana] = useState(true)
   const [showMeaning, setShowMeaning] = useState(true)
   const [showExample, setShowExample] = useState(true)
+  // Per-card revealed state: true = furigana+meaning visible (default), false = hidden (self-test)
+  const [revealedCards, setRevealedCards] = useState<Record<string, boolean>>({})
+
+  function handleCardTap(wordClean: string, currentStatus: WordStatus, chapter: number, section: number) {
+    const isRevealed = revealedCards[wordClean] !== false // default true
+    if (isRevealed) {
+      // Tap 1: hide furigana+meaning, advance to Learning
+      setRevealedCards(prev => ({ ...prev, [wordClean]: false }))
+      if (currentStatus === 'new') {
+        setWordStatus(wordClean, 'learning', chapter, section)
+      }
+    } else if (currentStatus === 'learning') {
+      // Tap 2 (hidden + Learning): advance to Known, stay hidden
+      setWordStatus(wordClean, 'known', chapter, section)
+    } else {
+      // Tap 3 (hidden + Known, or any other hidden state): reveal again
+      setRevealedCards(prev => ({ ...prev, [wordClean]: true }))
+    }
+  }
 
   const words = getSection(vocab, ch, sec)
   const shuffledWords = useMemo(() => [...words].sort(() => Math.random() - 0.5), [ch, sec, words.length])
@@ -203,31 +207,36 @@ export function VocabSection() {
                 {label}
               </button>
             ))}
-            <span className="ml-auto text-xs text-gray-400">Tap status to cycle</span>
+            <span className="ml-auto text-xs text-gray-400">Tap card to self-test</span>
           </div>
 
           {/* Word cards */}
           <div className="space-y-3">
             {words.map((w, i) => {
               const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
-              const nextStatus = STATUS_ORDER[(STATUS_ORDER.indexOf(status) + 1) % STATUS_ORDER.length]
+              const cardRevealed = revealedCards[w.wordClean] !== false // default true
               const example = makeExample(w.wordClean, w.meaning_en)
-              // Split example sentence into parts: before word, the word itself, after word
               const wordIdx = example.jp.indexOf(w.wordClean)
               const exParts = wordIdx >= 0
                 ? { before: example.jp.slice(0, wordIdx), word: w.wordClean, after: example.jp.slice(wordIdx + w.wordClean.length) }
                 : null
+              // furigana and meaning visible only when card is revealed AND global toggle is on
+              const furiganaVisible = cardRevealed && showFurigana
+              const meaningVisible = cardRevealed && showMeaning
               return (
                 <div
                   key={i}
-                  className={`bg-white dark:bg-gray-800 rounded-2xl border transition-colors ${
+                  onClick={() => handleCardTap(w.wordClean, status, w.chapter, w.section)}
+                  className={`bg-white dark:bg-gray-800 rounded-2xl border transition-colors cursor-pointer active:scale-[0.99] select-none ${
                     status === 'known'
                       ? 'border-green-200 dark:border-green-800'
+                      : status === 'learning'
+                      ? 'border-amber-200 dark:border-amber-800'
                       : 'border-gray-200 dark:border-gray-700'
                   }`}
                 >
                   <div className="px-4 pt-4 pb-3">
-                    {/* Top row: number + word + status */}
+                    {/* Top row: number + word + status badge */}
                     <div className="flex items-start justify-between gap-2 mb-1">
                       <div className="flex items-baseline gap-2 min-w-0">
                         <span className="text-xs text-gray-300 dark:text-gray-600 flex-shrink-0">{i + 1}</span>
@@ -240,28 +249,31 @@ export function VocabSection() {
                           {w.isSuruVerb && <span className="ml-1.5 text-xs text-indigo-400 align-middle">する</span>}
                         </div>
                       </div>
-                      <StatusToggle
-                        status={status}
-                        onCycle={() => setWordStatus(w.wordClean, nextStatus, w.chapter, w.section)}
-                      />
+                      {/* Status badge — display only, driven by card tap */}
+                      <span className={`text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 ${STATUS_COLORS[status]}`}>
+                        · {STATUS_LABELS[status]}
+                      </span>
                     </div>
 
-                    {/* Furigana */}
-                    {showFurigana && w.furigana && (
+                    {/* Furigana — hidden when card is in self-test mode */}
+                    {furiganaVisible && w.furigana && (
                       <p className="font-jp text-sm text-indigo-500 dark:text-indigo-400 mb-1 ml-5">{w.furigana}</p>
+                    )}
+                    {!cardRevealed && (
+                      <p className="text-xs text-gray-300 dark:text-gray-600 ml-5 mb-1 select-none">tap again to reveal →</p>
                     )}
 
                     {/* Meaning */}
-                    {showMeaning && (
+                    {meaningVisible && (
                       <p className="text-sm text-gray-700 dark:text-gray-300 ml-5">{w.meaning_en}</p>
                     )}
                   </div>
 
-                  {/* Example sentence — shown when toggle is on */}
+                  {/* Example sentence */}
                   {showExample && (
                     <div className="border-t border-gray-100 dark:border-gray-700 px-4 py-3 space-y-1">
                       <p className="font-jp text-sm text-gray-800 dark:text-gray-200 leading-loose">
-                        {exParts && showFurigana && w.furigana ? (
+                        {exParts && furiganaVisible && w.furigana ? (
                           <>
                             {exParts.before}
                             <ruby>
@@ -274,7 +286,7 @@ export function VocabSection() {
                           example.jp
                         )}
                       </p>
-                      {showMeaning && (
+                      {meaningVisible && (
                         <p className="text-xs text-gray-500 dark:text-gray-400 italic">{example.en}</p>
                       )}
                     </div>
