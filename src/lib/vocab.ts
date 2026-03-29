@@ -703,7 +703,7 @@ export const FURIGANA_MAP: Record<string, string> = {
 }
 
 // N2 furigana map
-const FURIGANA_MAP_N2: Record<string, string> = {
+export const FURIGANA_MAP_N2: Record<string, string> = {
   '一家': 'いっか',
   '向き合う': 'むきあう',
   '養う': 'やしなう',
