@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo, useCallback } from 'react'
+import { useState, useRef, useMemo } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
@@ -120,11 +120,7 @@ export function VocabSection() {
   const [showHint, setShowHint] = useState(false)
   const [showFurigana, setShowFurigana] = useState(true)
   const [showMeaning, setShowMeaning] = useState(true)
-  const [expandedEx, setExpandedEx] = useState<Record<number, boolean>>({})
-
-  const toggleExample = useCallback((i: number) => {
-    setExpandedEx(prev => ({ ...prev, [i]: !prev[i] }))
-  }, [])
+  const [showExample, setShowExample] = useState(true)
 
   const words = getSection(vocab, ch, sec)
   const shuffledWords = useMemo(() => [...words].sort(() => Math.random() - 0.5), [ch, sec, words.length])
@@ -193,6 +189,7 @@ export function VocabSection() {
             {[
               { label: 'Furigana', value: showFurigana, toggle: () => setShowFurigana(v => !v) },
               { label: 'Meaning', value: showMeaning, toggle: () => setShowMeaning(v => !v) },
+              { label: 'Example', value: showExample, toggle: () => setShowExample(v => !v) },
             ].map(({ label, value, toggle }) => (
               <button
                 key={label}
@@ -215,7 +212,11 @@ export function VocabSection() {
               const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
               const nextStatus = STATUS_ORDER[(STATUS_ORDER.indexOf(status) + 1) % STATUS_ORDER.length]
               const example = makeExample(w.wordClean, w.meaning_en)
-              const exOpen = expandedEx[i] ?? false
+              // Split example sentence into parts: before word, the word itself, after word
+              const wordIdx = example.jp.indexOf(w.wordClean)
+              const exParts = wordIdx >= 0
+                ? { before: example.jp.slice(0, wordIdx), word: w.wordClean, after: example.jp.slice(wordIdx + w.wordClean.length) }
+                : null
               return (
                 <div
                   key={i}
@@ -256,22 +257,28 @@ export function VocabSection() {
                     )}
                   </div>
 
-                  {/* Example sentence toggle */}
-                  <div className="border-t border-gray-100 dark:border-gray-700">
-                    <button
-                      onClick={() => toggleExample(i)}
-                      className="w-full flex items-center justify-between px-4 py-2.5 text-xs text-gray-400 hover:text-indigo-500 transition-colors"
-                    >
-                      <span>例文 Example</span>
-                      <span className={`transition-transform ${exOpen ? 'rotate-180' : ''}`}>▾</span>
-                    </button>
-                    {exOpen && (
-                      <div className="px-4 pb-3 space-y-1">
-                        <p className="font-jp text-sm text-gray-800 dark:text-gray-200">{example.jp}</p>
+                  {/* Example sentence — shown when toggle is on */}
+                  {showExample && (
+                    <div className="border-t border-gray-100 dark:border-gray-700 px-4 py-3 space-y-1">
+                      <p className="font-jp text-sm text-gray-800 dark:text-gray-200 leading-loose">
+                        {exParts && showFurigana && w.furigana ? (
+                          <>
+                            {exParts.before}
+                            <ruby>
+                              {exParts.word}
+                              <rt className="text-indigo-400 text-[10px]">{w.furigana}</rt>
+                            </ruby>
+                            {exParts.after}
+                          </>
+                        ) : (
+                          example.jp
+                        )}
+                      </p>
+                      {showMeaning && (
                         <p className="text-xs text-gray-500 dark:text-gray-400 italic">{example.en}</p>
-                      </div>
-                    )}
-                  </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               )
             })}
