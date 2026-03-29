@@ -6,6 +6,7 @@ import { useAppStore } from '@/store/useAppStore'
 import { getSection } from '@/lib/vocab'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
+import { EXAMPLE_MAP_N4 } from '@/lib/examples_n4'
 
 const STATUS_COLORS: Record<WordStatus, string> = {
   known: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
@@ -104,15 +105,7 @@ function SwipeableCard({
 }
 
 function makeExample(word: string, meaning: string): { jp: string; en: string } {
-  const templates = [
-    { jp: `${word}について考えてみましょう。`, en: `Let's think about "${meaning}".` },
-    { jp: `${word}はとても大切なことです。`, en: `"${meaning}" is very important.` },
-    { jp: `彼は${word}をよく理解しています。`, en: `He understands "${meaning}" well.` },
-    { jp: `${word}という言葉を覚えましょう。`, en: `Let's remember the word "${meaning}".` },
-    { jp: `${word}が必要な場面があります。`, en: `There are situations where "${meaning}" is needed.` },
-  ]
-  // Stable pick based on word string length
-  return templates[word.length % templates.length]
+  return EXAMPLE_MAP_N4[word] ?? { jp: `${word}を使います。`, en: `We use "${meaning}".` }
 }
 
 export function VocabSection() {
