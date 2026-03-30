@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
 import { useAppStore } from '@/store/useAppStore'
-import { getSection } from '@/lib/vocab'
+import { getSection, buildChapterMap } from '@/lib/vocab'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
 import { EXAMPLE_MAP_N4 } from '@/lib/examples_n4'
@@ -287,6 +287,47 @@ export function VocabSection() {
               )
             })}
           </div>
+
+          {/* Bottom actions */}
+          {(() => {
+            const chapterMap = buildChapterMap(vocab)
+            const currentChapter = chapterMap.find(c => c.chapter === ch)
+            const maxSection = currentChapter ? currentChapter.sections.length : sec
+            const maxChapter = chapterMap.length
+
+            let nextPath: string | null = null
+            if (sec < maxSection) {
+              nextPath = `/vocab/${ch}/${sec + 1}`
+            } else if (ch < maxChapter) {
+              nextPath = `/vocab/${ch + 1}/1`
+            }
+
+            return (
+              <div className="flex gap-3 mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
+                <button
+                  onClick={() => { setView('flashcard'); setCardIndex(0); setFlipped(false) }}
+                  className="flex-1 py-3.5 rounded-xl border-2 border-indigo-500 text-indigo-600 dark:text-indigo-400 font-semibold text-sm hover:bg-indigo-50 dark:hover:bg-indigo-950 transition-colors"
+                >
+                  Flashcard
+                </button>
+                {nextPath ? (
+                  <Link
+                    to={nextPath}
+                    className="flex-1 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm text-center transition-colors"
+                  >
+                    {sec < maxSection ? `Next Section →` : `Chapter ${ch + 1} →`}
+                  </Link>
+                ) : (
+                  <Link
+                    to="/vocab"
+                    className="flex-1 py-3.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-semibold text-sm text-center transition-colors"
+                  >
+                    All Done ✓
+                  </Link>
+                )}
+              </div>
+            )
+          })()}
         </>
       )}
 
