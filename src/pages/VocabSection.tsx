@@ -7,7 +7,6 @@ import { getSection } from '@/lib/vocab'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
 import { EXAMPLE_MAP_N4 } from '@/lib/examples_n4'
-import { annotate } from '@/lib/furigana'
 
 const STATUS_COLORS: Record<WordStatus, string> = {
   known: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
@@ -90,8 +89,8 @@ function SwipeableCard({
   )
 }
 
-function makeExample(word: string, meaning: string): { jp: string; en: string } {
-  return EXAMPLE_MAP_N4[word] ?? { jp: `${word}を使います。`, en: `We use "${meaning}".` }
+function makeExample(word: string, meaning: string) {
+  return EXAMPLE_MAP_N4[word] ?? { jp: `${word}を使います。`, en: `We use "${meaning}".`, seg: [{ t: word }, { t: 'を使います。' }] }
 }
 
 export function VocabSection() {
@@ -217,7 +216,6 @@ export function VocabSection() {
               const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
               const cardRevealed = revealedCards[w.wordClean] !== false // default true
               const example = makeExample(w.wordClean, w.meaning_en)
-              const exSegments = annotate(example.jp)
               // furigana and meaning visible only when card is revealed AND global toggle is on
               const furiganaVisible = cardRevealed && showFurigana
               const meaningVisible = cardRevealed && showMeaning
@@ -271,11 +269,11 @@ export function VocabSection() {
                   {showExample && (
                     <div className="border-t border-gray-100 dark:border-gray-700 px-4 py-3 space-y-1">
                       <p className="font-jp text-sm text-gray-800 dark:text-gray-200 leading-loose">
-                        {furiganaVisible
-                          ? exSegments.map((seg, si) =>
-                              seg.reading
-                                ? <ruby key={si}>{seg.text}<rt className="text-indigo-400 text-[10px]">{seg.reading}</rt></ruby>
-                                : <span key={si}>{seg.text}</span>
+                        {furiganaVisible && example.seg
+                          ? example.seg.map((seg, si) =>
+                              seg.r
+                                ? <ruby key={si}>{seg.t}<rt className="text-indigo-400 text-[10px]">{seg.r}</rt></ruby>
+                                : <span key={si}>{seg.t}</span>
                             )
                           : example.jp
                         }
