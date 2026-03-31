@@ -245,10 +245,23 @@ export function VocabSection() {
                           {w.isSuruVerb && <span className="ml-1.5 text-xs text-indigo-400 align-middle">する</span>}
                         </div>
                       </div>
-                      {/* Status badge — display only, driven by card tap */}
-                      <span className={`text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 ${STATUS_COLORS[status]}`}>
+                      {/* Status badge — tap to revert one step */}
+                      <button
+                        onClick={e => {
+                          e.stopPropagation()
+                          if (status === 'known') {
+                            setWordStatus(w.wordClean, 'learning', w.chapter, w.section)
+                          } else if (status === 'learning') {
+                            setWordStatus(w.wordClean, 'new', w.chapter, w.section)
+                            setRevealedCards(prev => ({ ...prev, [w.wordClean]: true }))
+                          }
+                        }}
+                        className={`text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 transition-opacity ${STATUS_COLORS[status]} ${
+                          status === 'new' ? 'cursor-default' : 'active:opacity-70'
+                        }`}
+                      >
                         · {STATUS_LABELS[status]}
-                      </span>
+                      </button>
                     </div>
 
                     {/* Furigana — hidden when card is in self-test mode */}
