@@ -8,7 +8,12 @@ export interface VocabWord {
   isSuruVerb: boolean
   meaning_vi: string
   meaning_en: string
-  furigana?: string   // hiragana reading, undefined if not in map
+  furigana?: string   // hiragana reading from dataset
+  example?: {
+    jp: string
+    en: string
+    seg: { t: string; r?: string }[]
+  }
 }
 
 export interface SectionInfo {

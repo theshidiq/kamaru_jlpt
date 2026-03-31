@@ -6,7 +6,6 @@ import { useAppStore } from '@/store/useAppStore'
 import { getSection, buildChapterMap } from '@/lib/vocab'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
-import { EXAMPLE_MAP_N4 } from '@/lib/examples_n4'
 
 const STATUS_COLORS: Record<WordStatus, string> = {
   known: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
@@ -89,9 +88,6 @@ function SwipeableCard({
   )
 }
 
-function makeExample(word: string, meaning: string) {
-  return EXAMPLE_MAP_N4[word] ?? { jp: `${word}を使います。`, en: `We use "${meaning}".`, seg: [{ t: word }, { t: 'を使います。' }] }
-}
 
 export function VocabSection() {
   const { chapter, section } = useParams<{ chapter: string; section: string }>()
@@ -215,7 +211,7 @@ export function VocabSection() {
             {words.map((w, i) => {
               const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
               const cardRevealed = revealedCards[w.wordClean] !== false // default true
-              const example = makeExample(w.wordClean, w.meaning_en)
+              const example = w.example ?? { jp: `${w.wordClean}を使います。`, en: `We use "${w.meaning_en}".`, seg: [{ t: w.wordClean }, { t: 'を使います。' }] }
               // furigana and meaning visible only when card is revealed AND global toggle is on
               const furiganaVisible = cardRevealed && showFurigana
               const meaningVisible = cardRevealed && showMeaning
