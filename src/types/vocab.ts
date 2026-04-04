@@ -8,10 +8,14 @@ export interface VocabWord {
   isSuruVerb: boolean
   meaning_vi: string
   meaning_en: string
+  meaning_id?: string
+  chapter_title_id?: string
+  section_title_id?: string
   furigana?: string   // hiragana reading from dataset
   example?: {
     jp: string
     en: string
+    id?: string
     seg: { t: string; r?: string }[]
   }
 }

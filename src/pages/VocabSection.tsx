@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
 import { useAppStore } from '@/store/useAppStore'
-import { getSection, buildChapterMap } from '@/lib/vocab'
+import { getSection, buildChapterMap, getMeaning } from '@/lib/vocab'
+import { t } from '@/lib/i18n'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
 
@@ -11,11 +12,6 @@ const STATUS_COLORS: Record<WordStatus, string> = {
   known: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
   learning: 'bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300',
   new: 'bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400',
-}
-const STATUS_LABELS: Record<WordStatus, string> = {
-  known: 'Known',
-  learning: 'Learning',
-  new: 'Unknown',
 }
 
 const SWIPE_THRESHOLD = 60 // px
@@ -94,7 +90,7 @@ export function VocabSection() {
   const ch = Number(chapter)
   const sec = Number(section)
   const { vocab, isLoading } = useVocab()
-  const { wordStatuses, setWordStatus } = useAppStore()
+  const { wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
   const [view, setView] = useState<'list' | 'flashcard'>('list')
   const [cardIndex, setCardIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
@@ -175,7 +171,7 @@ export function VocabSection() {
                 : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
             }`}
           >
-            {v === 'list' ? 'List' : 'Flashcard'}
+            {v === 'list' ? t('list', lang) : t('flashcard', lang)}
           </button>
         ))}
       </div>
@@ -211,7 +207,8 @@ export function VocabSection() {
             {words.map((w, i) => {
               const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
               const cardRevealed = revealedCards[w.wordClean] !== false // default true
-              const example = w.example ?? { jp: `${w.wordClean}を使います。`, en: `We use "${w.meaning_en}".`, seg: [{ t: w.wordClean }, { t: 'を使います。' }] }
+              const exMeaning = getMeaning(w, lang)
+              const example = w.example ?? { jp: `${w.wordClean}を使います。`, en: `We use "${exMeaning}".`, id: `Kami menggunakan "${exMeaning}".`, seg: [{ t: w.wordClean }, { t: 'を使います。' }] }
               // furigana and meaning visible only when card is revealed AND global toggle is on
               const furiganaVisible = cardRevealed && showFurigana
               const meaningVisible = cardRevealed && showMeaning
@@ -256,7 +253,7 @@ export function VocabSection() {
                           status === 'new' ? 'cursor-default' : 'active:opacity-70'
                         }`}
                       >
-                        · {STATUS_LABELS[status]}
+                        · {t(status, lang)}
                       </button>
                     </div>
 
@@ -270,7 +267,7 @@ export function VocabSection() {
 
                     {/* Meaning */}
                     {meaningVisible && (
-                      <p className="text-sm text-gray-700 dark:text-gray-300 ml-5">{w.meaning_en}</p>
+                      <p className="text-sm text-gray-700 dark:text-gray-300 ml-5">{getMeaning(w, lang)}</p>
                     )}
                   </div>
 
@@ -288,7 +285,9 @@ export function VocabSection() {
                         }
                       </p>
                       {meaningVisible && (
-                        <p className="text-xs text-gray-500 dark:text-gray-400 italic">{example.en}</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 italic">
+                          {lang === 'id' && example.id ? example.id : example.en}
+                        </p>
                       )}
                     </div>
                   )}
@@ -317,7 +316,7 @@ export function VocabSection() {
                   onClick={() => { setView('flashcard'); setCardIndex(0); setFlipped(false) }}
                   className="flex-1 py-3.5 rounded-xl border-2 border-indigo-500 text-indigo-600 dark:text-indigo-400 font-semibold text-sm hover:bg-indigo-50 dark:hover:bg-indigo-950 transition-colors"
                 >
-                  Flashcard
+                  {t('flashcard', lang)}
                 </button>
                 {nextPath ? (
                   <Link
@@ -407,7 +406,7 @@ export function VocabSection() {
                   {currentWord.furigana && (
                     <p className="text-indigo-200 text-lg mb-2 font-jp">{currentWord.furigana}</p>
                   )}
-                  <p className="text-white text-3xl font-bold text-center px-4">{currentWord.meaning_en}</p>
+                  <p className="text-white text-3xl font-bold text-center px-4">{getMeaning(currentWord, lang)}</p>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -416,7 +415,7 @@ export function VocabSection() {
           {/* Status selector */}
           {flipped && (
             <div className="flex gap-2 mt-4">
-              {(Object.keys(STATUS_LABELS) as WordStatus[]).map(s => (
+              {(['known', 'learning', 'new'] as WordStatus[]).map(s => (
                 <button
                   key={s}
                   onClick={() => setWordStatus(currentWord.wordClean, s, currentWord.chapter, currentWord.section)}
@@ -424,7 +423,7 @@ export function VocabSection() {
                     (wordStatuses[currentWord.wordClean] ?? 'new') === s ? 'ring-2 ring-offset-1 ring-indigo-500' : ''
                   }`}
                 >
-                  {STATUS_LABELS[s]}
+                  {t(s, lang)}
                 </button>
               ))}
             </div>

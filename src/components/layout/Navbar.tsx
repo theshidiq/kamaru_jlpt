@@ -25,7 +25,7 @@ const BOTTOM_NAV = [
 ]
 
 export function Navbar() {
-  const { user, darkMode, toggleDarkMode, resetWordStatuses } = useAppStore()
+  const { user, darkMode, toggleDarkMode, resetWordStatuses, preferredLanguage, setLanguage } = useAppStore()
   const navigate = useNavigate()
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -89,6 +89,17 @@ export function Navbar() {
 
           {/* Right controls */}
           <div className="flex items-center gap-2 shrink-0">
+            {/* Language toggle */}
+            <button
+              onClick={() => setLanguage(preferredLanguage === 'id' ? 'en' : 'id')}
+              className="px-2 py-1 rounded text-xs font-bold border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors h-9 flex items-center gap-0.5"
+              title="Toggle language"
+            >
+              <span className={preferredLanguage === 'id' ? 'text-gray-900 dark:text-white' : 'text-gray-400'}>ID</span>
+              <span className="text-gray-300 dark:text-gray-600 mx-0.5">|</span>
+              <span className={preferredLanguage === 'en' ? 'text-gray-900 dark:text-white' : 'text-gray-400'}>EN</span>
+            </button>
+
             {/* Dark mode toggle */}
             <button
               onClick={toggleDarkMode}

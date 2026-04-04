@@ -17,6 +17,8 @@ interface AppState {
   setUser: (user: UserProfile | null) => void
   setAuthReady: () => void
   setJlptLevel: (level: 'N4' | 'N2') => Promise<void>
+  preferredLanguage: 'id' | 'en'
+  setLanguage: (lang: 'id' | 'en') => Promise<void>
 
   // Today's section
   todayChapter: number
@@ -50,11 +52,13 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   user: null,
   authReady: false,
+  preferredLanguage: 'id',
   setUser: (user) => {
     const level = user?.jlpt_level ?? 'N4'
     const t = getTodaySectionForLevel(level, user?.study_start_date)
     set({
       user,
+      preferredLanguage: user?.preferred_language ?? 'id',
       vocab: [],
       chapters: [],
       vocabLoaded: false,
@@ -65,6 +69,15 @@ export const useAppStore = create<AppState>((set, get) => ({
     })
   },
   setAuthReady: () => set({ authReady: true }),
+
+  setLanguage: async (lang: 'id' | 'en') => {
+    set({ preferredLanguage: lang })
+    const { user } = get()
+    if (user) {
+      await supabase.from('profiles').update({ preferred_language: lang }).eq('id', user.id)
+      set({ user: { ...user, preferred_language: lang } })
+    }
+  },
 
   setJlptLevel: async (level: 'N4' | 'N2') => {
     const { user } = get()

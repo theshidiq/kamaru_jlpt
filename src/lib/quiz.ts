@@ -1,6 +1,6 @@
 import type { QuizQuestion } from '@/types/quiz'
 import type { VocabWord } from '@/types/vocab'
-import { getChapterWords, getSection, shuffle } from '@/lib/vocab'
+import { getChapterWords, getSection, shuffle, getMeaning } from '@/lib/vocab'
 import { GRAMMAR_QUESTIONS, GRAMMAR_QUESTIONS_N2 } from '@/lib/grammar'
 import { READING_PASSAGES, READING_PASSAGES_N2 } from '@/lib/reading'
 
@@ -66,12 +66,13 @@ export function generateMondai1(
     .filter((q): q is QuizQuestion => q !== null)
 }
 
-// 問題2: Japanese word → choose correct English meaning
+// 問題2: Japanese word → choose correct meaning
 export function generateMondai2(
   vocab: VocabWord[],
   chapter: number,
   section: number | null,
   count: number,
+  lang: 'id' | 'en' = 'en',
 ): QuizQuestion[] {
   const pool = section ? getSection(vocab, chapter, section) : getChapterWords(vocab, chapter)
   const chapterPool = getChapterWords(vocab, chapter)
@@ -80,18 +81,21 @@ export function generateMondai2(
   const mapped: (QuizQuestion | null)[] = shuffle(pool)
     .slice(0, count)
     .map(word => {
-      const distractors = pickDistractors(chapterPool, word, 'meaning_en', 3)
-      if (distractors.length < 3) return null
-      const options = shuffle([word.meaning_en, ...distractors])
+      const wordMeaning = getMeaning(word, lang)
+      const distractors = chapterPool
+        .filter(w => w.wordClean !== word.wordClean && getMeaning(w, lang) !== wordMeaning)
+      const distracted = shuffle(distractors).slice(0, 3).map(w => getMeaning(w, lang))
+      if (distracted.length < 3) return null
+      const options = shuffle([wordMeaning, ...distracted])
       const q: QuizQuestion = {
         id: nextId('m2'),
         type: 'mondai2',
         prompt: `What is the meaning of「${word.wordClean}」?`,
         options,
-        correctIndex: options.indexOf(word.meaning_en),
+        correctIndex: options.indexOf(wordMeaning),
         explanation: word.furigana
-          ? `${word.wordClean}（${word.furigana}）= ${word.meaning_en}`
-          : `${word.wordClean} = ${word.meaning_en}`,
+          ? `${word.wordClean}（${word.furigana}）= ${wordMeaning}`
+          : `${word.wordClean} = ${wordMeaning}`,
         furiganaHint: word.furigana,
         word: word.wordClean,
         chapter: word.chapter,
@@ -102,12 +106,13 @@ export function generateMondai2(
   return mapped.filter((q): q is QuizQuestion => q !== null)
 }
 
-// 問題4: paraphrase — given English meaning, choose correct Japanese word
+// 問題4: paraphrase — given meaning, choose correct Japanese word
 export function generateMondai4(
   vocab: VocabWord[],
   chapter: number,
   section: number | null,
   count: number,
+  lang: 'id' | 'en' = 'en',
 ): QuizQuestion[] {
   const pool = section ? getSection(vocab, chapter, section) : getChapterWords(vocab, chapter)
   const chapterPool = getChapterWords(vocab, chapter)
@@ -116,16 +121,17 @@ export function generateMondai4(
   const mapped4: (QuizQuestion | null)[] = shuffle(pool)
     .slice(0, count)
     .map(word => {
+      const wordMeaning = getMeaning(word, lang)
       const distractors = pickDistractors(chapterPool, word, 'wordClean', 3)
       if (distractors.length < 3) return null
       const options = shuffle([word.wordClean, ...distractors])
       const q: QuizQuestion = {
         id: nextId('m4'),
         type: 'mondai4',
-        prompt: `Which word means "${word.meaning_en}"?`,
+        prompt: `Which word means "${wordMeaning}"?`,
         options,
         correctIndex: options.indexOf(word.wordClean),
-        explanation: `${word.meaning_en} = ${word.wordClean}`,
+        explanation: `${wordMeaning} = ${word.wordClean}`,
         word: word.wordClean,
         chapter: word.chapter,
         section: word.section,
@@ -141,12 +147,13 @@ export function generateVocabQuiz(
   chapter: number,
   section: number | null,
   count: number,
+  lang: 'id' | 'en' = 'en',
 ): QuizQuestion[] {
   const half = Math.ceil(count / 2)
   const m1 = generateMondai1(vocab, chapter, section, half)
   // Fill remaining with mondai2 (also used as fallback if not enough furigana words)
   const remaining = count - m1.length
-  const m2 = generateMondai2(vocab, chapter, section, remaining > 0 ? remaining : Math.floor(count / 2))
+  const m2 = generateMondai2(vocab, chapter, section, remaining > 0 ? remaining : Math.floor(count / 2), lang)
   return shuffle([...m1, ...m2]).slice(0, count)
 }
 

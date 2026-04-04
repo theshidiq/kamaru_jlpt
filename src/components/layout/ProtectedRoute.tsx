@@ -14,5 +14,10 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
     return <Navigate to="/level-select" replace />
   }
 
+  // No language set: redirect to language selection
+  if (user.preferred_language === null && location.pathname !== '/language-select' && location.pathname !== '/level-select') {
+    return <Navigate to="/language-select" replace />
+  }
+
   return <>{children}</>
 }

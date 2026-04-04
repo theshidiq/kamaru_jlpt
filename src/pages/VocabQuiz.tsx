@@ -13,7 +13,7 @@ type Phase = 'setup' | 'quiz' | 'results'
 
 export function VocabQuiz() {
   const { vocab, chapters } = useVocab()
-  const { user, todayChapter } = useAppStore()
+  const { user, todayChapter, preferredLanguage: lang } = useAppStore()
   const progress = useProgress()
   const [phase, setPhase] = useState<Phase>('setup')
   const [chapter, setChapter] = useState(todayChapter)
@@ -29,7 +29,7 @@ export function VocabQuiz() {
   }
 
   function startQuiz() {
-    const qs = generateVocabQuiz(vocab, chapter, null, 15)
+    const qs = generateVocabQuiz(vocab, chapter, null, 15, lang)
     setQuestions(qs)
     setPhase('quiz')
   }
@@ -53,7 +53,7 @@ export function VocabQuiz() {
   }
 
   function retry() {
-    const qs = generateVocabQuiz(vocab, chapter, null, 15)
+    const qs = generateVocabQuiz(vocab, chapter, null, 15, lang)
     setQuestions(qs)
     setResults([])
     setPhase('quiz')
@@ -78,7 +78,7 @@ export function VocabQuiz() {
                     key={ch.chapter}
                     onClick={() => {
                       setChapter(ch.chapter)
-                      const qs = generateVocabQuiz(vocab, ch.chapter, null, 15)
+                      const qs = generateVocabQuiz(vocab, ch.chapter, null, 15, lang)
                       setQuestions(qs)
                       setPhase('quiz')
                     }}

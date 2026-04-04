@@ -51,6 +51,9 @@ export async function loadVocab(level: 'N4' | 'N2' = 'N4'): Promise<VocabWord[]>
     word: string
     meaning_vi: string
     meaning_en: string
+    meaning_id?: string
+    chapter_title_id?: string
+    section_title_id?: string
     furigana?: string
     example?: { jp: string; en: string; seg: { t: string; r?: string }[] }
   }> = await res.json()
@@ -116,12 +119,28 @@ export function getChapterTitle(vocab: VocabWord[], chapter: number): string {
   return w?.chapter_title ?? ''
 }
 
+export function getMeaning(word: VocabWord, lang: 'id' | 'en'): string {
+  if (lang === 'id' && word.meaning_id) return word.meaning_id
+  return word.meaning_en
+}
+
+export function getChapterTitleLang(item: VocabWord, lang: 'id' | 'en'): string {
+  if (lang === 'id' && item.chapter_title_id) return item.chapter_title_id
+  return item.chapter_title
+}
+
+export function getSectionTitleLang(item: VocabWord, lang: 'id' | 'en'): string {
+  if (lang === 'id' && item.section_title_id) return item.section_title_id
+  return item.section_title
+}
+
 export function filterVocab(
   vocab: VocabWord[],
   query: string,
   statusFilter: 'all' | 'new' | 'learning' | 'known',
   statuses: Record<string, string>,
   chapterFilter?: number,
+  lang: 'id' | 'en' = 'en',
 ): VocabWord[] {
   return vocab.filter(w => {
     if (chapterFilter && w.chapter !== chapterFilter) return false
@@ -134,7 +153,8 @@ export function filterVocab(
       return (
         w.wordClean.includes(q) ||
         w.meaning_en.toLowerCase().includes(q) ||
-        w.meaning_vi.toLowerCase().includes(q)
+        w.meaning_vi.toLowerCase().includes(q) ||
+        (lang === 'id' && !!w.meaning_id && w.meaning_id.toLowerCase().includes(q))
       )
     }
     return true

@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
-import { getSection } from '@/lib/vocab'
+import { getSection, getMeaning } from '@/lib/vocab'
+import { t } from '@/lib/i18n'
 import { generateVocabQuiz } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
 import { ResultsScreen } from '@/components/quiz/ResultsScreen'
@@ -25,7 +26,7 @@ const STATUS_COLORS: Record<WordStatus, string> = {
 export function StudySession() {
   const navigate = useNavigate()
   const { vocab } = useVocab()
-  const { user, todayChapter, todaySection, wordStatuses, setWordStatus } = useAppStore()
+  const { user, todayChapter, todaySection, wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
 
   const [stage, setStage] = useState<Stage>('intro')
   const [cardIndex, setCardIndex] = useState(0)
@@ -40,7 +41,7 @@ export function StudySession() {
 
   useEffect(() => {
     if (vocab.length > 0 && miniQuizQuestions.length === 0) {
-      setMiniQuizQuestions(generateVocabQuiz(vocab, todayChapter, todaySection, 5))
+      setMiniQuizQuestions(generateVocabQuiz(vocab, todayChapter, todaySection, 5, lang))
     }
   }, [vocab, todayChapter, todaySection])
 
@@ -135,7 +136,7 @@ export function StudySession() {
                     {words[cardIndex]?.furigana && (
                       <p className="text-indigo-200 text-sm mb-1">{words[cardIndex].furigana}</p>
                     )}
-                    <p className="text-white text-2xl md:text-2xl font-bold">{words[cardIndex]?.meaning_en}</p>
+                    <p className="text-white text-2xl md:text-2xl font-bold">{words[cardIndex] ? getMeaning(words[cardIndex], lang) : ''}</p>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -151,7 +152,7 @@ export function StudySession() {
                       (wordStatuses[words[cardIndex].wordClean] ?? 'new') === s ? 'ring-2 ring-indigo-500' : ''
                     }`}
                   >
-                    {s === 'known' ? 'Known' : s === 'learning' ? 'Learning' : 'New'}
+                    {t(s, lang)}
                   </button>
                 ))}
               </div>
@@ -220,7 +221,7 @@ export function StudySession() {
               elapsed={quizElapsed}
               quizType="vocab"
               onRetry={() => {
-                setMiniQuizQuestions(generateVocabQuiz(vocab, todayChapter, todaySection, 5))
+                setMiniQuizQuestions(generateVocabQuiz(vocab, todayChapter, todaySection, 5, lang))
                 setStage('mini-quiz')
               }}
               onSave={async () => {

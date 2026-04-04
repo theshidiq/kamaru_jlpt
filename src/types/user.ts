@@ -6,6 +6,7 @@ export interface UserProfile {
   avatar_url: string | null
   target_exam_date: string
   jlpt_level: 'N4' | 'N2' | null
+  preferred_language: 'id' | 'en' | null
   study_start_date: string | null
   created_at: string
 }

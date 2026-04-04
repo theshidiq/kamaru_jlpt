@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
 import { useAppStore } from '@/store/useAppStore'
-import { filterVocab } from '@/lib/vocab'
+import { filterVocab, getMeaning, getChapterTitleLang, getSectionTitleLang } from '@/lib/vocab'
+import { t } from '@/lib/i18n'
 import type { WordStatus } from '@/types/user'
 
 const STATUS_COLORS: Record<WordStatus, string> = {
@@ -12,21 +13,15 @@ const STATUS_COLORS: Record<WordStatus, string> = {
   new: 'bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-400',
 }
 
-const STATUS_LABELS: Record<WordStatus, string> = {
-  known: 'Known',
-  learning: 'Learning',
-  new: 'New',
-}
-
 export function VocabBrowser() {
   const { vocab, chapters, isLoading } = useVocab()
-  const { wordStatuses, setWordStatus } = useAppStore()
+  const { wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
   const [query, setQuery] = useState('')
   const [statusFilter, setStatusFilter] = useState<'all' | WordStatus>('all')
   const [chapterFilter, setChapterFilter] = useState<number | undefined>()
   const [expandedChapters, setExpandedChapters] = useState<Set<number>>(new Set([1]))
 
-  const filtered = filterVocab(vocab, query, statusFilter, wordStatuses, chapterFilter)
+  const filtered = filterVocab(vocab, query, statusFilter, wordStatuses, chapterFilter, lang)
 
   if (isLoading) {
     return (
@@ -38,13 +33,13 @@ export function VocabBrowser() {
 
   return (
     <PageWrapper>
-      <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">Vocabulary</h1>
+      <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">{t('vocabulary', lang)}</h1>
 
       {/* Filters — full-width search on mobile */}
       <div className="flex flex-col gap-2 mb-4">
         <input
           type="text"
-          placeholder="Search words or meanings..."
+          placeholder={t('search', lang)}
           value={query}
           onChange={e => setQuery(e.target.value)}
           className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2.5 text-base bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -55,19 +50,19 @@ export function VocabBrowser() {
             onChange={e => setStatusFilter(e.target.value as 'all' | WordStatus)}
             className="flex-1 min-w-[120px] border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2.5 text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
           >
-            <option value="all">All Status</option>
-            <option value="known">Known</option>
-            <option value="learning">Learning</option>
-            <option value="new">New</option>
+            <option value="all">All</option>
+            <option value="known">{t('known', lang)}</option>
+            <option value="learning">{t('learning', lang)}</option>
+            <option value="new">{t('new', lang)}</option>
           </select>
           <select
             value={chapterFilter ?? ''}
             onChange={e => setChapterFilter(e.target.value ? Number(e.target.value) : undefined)}
             className="flex-1 min-w-[140px] border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2.5 text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
           >
-            <option value="">All Chapters</option>
+            <option value="">{t('allChapters', lang)}</option>
             {chapters.map(ch => (
-              <option key={ch.chapter} value={ch.chapter}>Chapter {ch.chapter}</option>
+              <option key={ch.chapter} value={ch.chapter}>{t('chapter', lang)} {ch.chapter}</option>
             ))}
           </select>
           {(query || statusFilter !== 'all' || chapterFilter) && (
@@ -100,15 +95,15 @@ export function VocabBrowser() {
                     <td className="px-4 py-2 text-gray-500 dark:text-gray-400 hidden md:table-cell">
                       {w.furigana ?? '—'}
                     </td>
-                    <td className="px-4 py-2 text-gray-700 dark:text-gray-300">{w.meaning_en}</td>
+                    <td className="px-4 py-2 text-gray-700 dark:text-gray-300">{getMeaning(w, lang)}</td>
                     <td className="px-4 py-2">
                       <select
                         value={status}
                         onChange={e => setWordStatus(w.wordClean, e.target.value as WordStatus, w.chapter, w.section)}
                         className={`text-xs px-2 py-0.5 rounded-full border-0 ${STATUS_COLORS[status]}`}
                       >
-                        {(Object.keys(STATUS_LABELS) as WordStatus[]).map(s => (
-                          <option key={s} value={s}>{STATUS_LABELS[s]}</option>
+                        {(['known', 'learning', 'new'] as WordStatus[]).map(s => (
+                          <option key={s} value={s}>{t(s, lang)}</option>
                         ))}
                       </select>
                     </td>
@@ -142,7 +137,12 @@ export function VocabBrowser() {
                 >
                   <div>
                     <span className="font-semibold text-gray-900 dark:text-white">
-                      Chapter {ch.chapter}
+                      {t('chapter', lang)} {ch.chapter}
+                      {ch.sections[0] && (
+                        <span className="ml-2 font-normal text-gray-500 dark:text-gray-400 text-sm">
+                          {getChapterTitleLang(ch.sections[0].words[0], lang)}
+                        </span>
+                      )}
                     </span>
                     <span className="ml-2 text-xs text-gray-400">{ch.totalWords} words</span>
                   </div>
@@ -166,9 +166,11 @@ export function VocabBrowser() {
                           >
                             <div>
                               <div className="text-sm font-medium text-gray-800 dark:text-gray-200">
-                                Section {sec.section}
+                                {t('section', lang)} {sec.section}
                               </div>
-                              <div className="text-xs text-gray-500 dark:text-gray-400">{sec.words.length} words</div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">
+                                {sec.words[0] ? getSectionTitleLang(sec.words[0], lang) : ''} · {sec.words.length} words
+                              </div>
                             </div>
                             <div className="text-right">
                               <div className="text-xs text-green-600 dark:text-green-400 font-medium">

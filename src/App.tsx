@@ -7,6 +7,7 @@ import { ProtectedRoute } from '@/components/layout/ProtectedRoute'
 import { Dashboard } from '@/pages/Dashboard'
 import { Login } from '@/pages/Login'
 import { LevelSelect } from '@/pages/LevelSelect'
+import { LanguageSelect } from '@/pages/LanguageSelect'
 import { VocabBrowser } from '@/pages/VocabBrowser'
 import { VocabSection } from '@/pages/VocabSection'
 import { StudySession } from '@/pages/StudySession'
@@ -27,6 +28,7 @@ function AppInner() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/level-select" element={<ProtectedRoute><LevelSelect /></ProtectedRoute>} />
+        <Route path="/language-select" element={<ProtectedRoute><LanguageSelect /></ProtectedRoute>} />
         <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/vocab" element={<ProtectedRoute><VocabBrowser /></ProtectedRoute>} />
         <Route path="/vocab/:chapter/:section" element={<ProtectedRoute><VocabSection /></ProtectedRoute>} />

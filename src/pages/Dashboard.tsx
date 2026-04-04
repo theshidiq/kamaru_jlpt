@@ -3,13 +3,14 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
 import { useProgress } from '@/hooks/useProgress'
-import { LEVEL_CONFIG } from '@/lib/vocab'
+import { LEVEL_CONFIG, getSectionTitleLang, getChapterTitleLang } from '@/lib/vocab'
+import { t } from '@/lib/i18n'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine } from '@remixicon/react'
 
 export function Dashboard() {
   const navigate = useNavigate()
-  const { user, wordStatuses, todayChapter, todaySection, todayDaysElapsed, vocab } = useAppStore()
+  const { user, wordStatuses, todayChapter, todaySection, todayDaysElapsed, vocab, preferredLanguage: lang } = useAppStore()
   const { isLoading } = useVocab()
   const progress = useProgress()
 
@@ -26,10 +27,14 @@ export function Dashboard() {
   const newCount = vocab.length - known - learning
 
   const pieData = [
-    { name: 'Known', value: known, color: '#22c55e' },
-    { name: 'Learning', value: learning, color: '#f59e0b' },
-    { name: 'New', value: newCount, color: '#e5e7eb' },
+    { name: t('known', lang), value: known, color: '#22c55e' },
+    { name: t('learning', lang), value: learning, color: '#f59e0b' },
+    { name: t('new', lang), value: newCount, color: '#e5e7eb' },
   ]
+
+  const todayWord = vocab.find(v => v.chapter === todayChapter && v.section === todaySection)
+  const todaySectionTitle = todayWord ? getSectionTitleLang(todayWord, lang) : ''
+  const todayChapterTitle = todayWord ? getChapterTitleLang(todayWord, lang) : ''
 
 
   return (
@@ -51,8 +56,11 @@ export function Dashboard() {
             )}
           </div>
           <h2 className="text-lg md:text-xl font-bold mt-2">
-            Chapter {todayChapter} · Section {todaySection}
+            {t('chapter', lang)} {todayChapter} · {t('section', lang)} {todaySection}
           </h2>
+          {todaySectionTitle && (
+            <p className="text-sm text-white/80 mt-0.5">{todayChapterTitle} · {todaySectionTitle}</p>
+          )}
 
           {/* Progress bar */}
           <div className="w-full bg-white/20 rounded-full h-2 mb-4">
@@ -71,7 +79,7 @@ export function Dashboard() {
               onClick={() => navigate('/study')}
               className="bg-white text-indigo-700 font-semibold px-4 md:px-5 py-3 rounded-xl hover:bg-indigo-50 transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
             >
-              Start Today's Study →
+              {t('studyNow', lang)} →
             </button>
           </div>
         </div>
@@ -135,9 +143,9 @@ export function Dashboard() {
       {/* Quick links — 2-col on mobile, 4-col on desktop */}
       <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
         {[
-          { label: 'Vocabulary', to: '/vocab', Icon: RiBookOpenLine },
+          { label: t('vocabulary', lang), to: '/vocab', Icon: RiBookOpenLine },
           { label: 'Quiz', to: '/quiz', Icon: RiPencilLine },
-          { label: 'Reading', to: '/reading', Icon: RiFileTextLine },
+          { label: t('reading', lang), to: '/reading', Icon: RiFileTextLine },
           { label: 'Mock Exam', to: '/mock-exam', Icon: RiTargetLine },
         ].map(q => (
           <button

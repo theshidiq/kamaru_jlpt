@@ -6,14 +6,14 @@ import { LEVEL_CONFIG } from '@/lib/vocab'
 export function LevelSelect() {
   const navigate = useNavigate()
   const { setJlptLevel, user } = useAppStore()
-  const [selected, setSelected] = useState<'N4' | 'N2' | null>(user?.jlpt_level ?? null)
+  const [selected, setSelected] = useState<'N4' | 'N2' | null>(user?.jlpt_level ?? 'N4')
   const [loading, setLoading] = useState(false)
 
   async function handleConfirm() {
     if (!selected) return
     setLoading(true)
     await setJlptLevel(selected)
-    navigate('/', { replace: true })
+    navigate('/language-select', { replace: true })
   }
 
   const levels: Array<{
@@ -68,7 +68,14 @@ export function LevelSelect() {
               >
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className={`text-xl font-bold ${color}`}>{label}</p>
+                    <div className="flex items-center gap-2">
+                      <p className={`text-xl font-bold ${color}`}>{label}</p>
+                      {level === 'N4' && (
+                        <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
+                          Recommended
+                        </span>
+                      )}
+                    </div>
                     <p className="text-gray-500 dark:text-gray-400 text-sm mt-0.5">{sub}</p>
                   </div>
                   <div
