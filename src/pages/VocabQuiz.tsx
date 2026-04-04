@@ -7,6 +7,7 @@ import { generateVocabQuiz } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
 import { ResultsScreen } from '@/components/quiz/ResultsScreen'
 import { supabase } from '@/lib/supabase'
+import { t } from '@/lib/i18n'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 
 type Phase = 'setup' | 'quiz' | 'results'
@@ -63,8 +64,8 @@ export function VocabQuiz() {
     <PageWrapper>
       {phase === 'setup' && (
         <div className="flex flex-col h-full">
-          <h1 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Vocabulary Quiz</h1>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">問題1 (reading) + 問題2 (meaning) · 15 questions</p>
+          <h1 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{t('vocabQuizTitle', lang)}</h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{t('vocabQuizSub', lang)}</p>
 
           {/* Chapter list */}
           <div className="overflow-y-auto -mx-4 px-4">
@@ -96,9 +97,9 @@ export function VocabQuiz() {
                       </span>
                       <div>
                         <p className={`text-sm font-semibold ${isSelected ? 'text-indigo-700 dark:text-indigo-300' : 'text-gray-800 dark:text-gray-200'}`}>
-                          Chapter {ch.chapter}
+                          {t('chapter', lang)} {ch.chapter}
                         </p>
-                        <p className="text-xs text-gray-400">{ch.totalWords} words</p>
+                        <p className="text-xs text-gray-400">{ch.totalWords} {t('wordsCount', lang)}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 flex-shrink-0">
@@ -128,7 +129,7 @@ export function VocabQuiz() {
               disabled={!vocab.length}
               className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 text-white font-semibold py-4 rounded-xl transition-colors text-base"
             >
-              Start — Chapter {chapter}
+              {t('start', lang).replace('→', '').trim()} — {t('chapter', lang)} {chapter}
             </button>
           </div>
         </div>
@@ -137,8 +138,8 @@ export function VocabQuiz() {
       {phase === 'quiz' && (
         <>
           <div className="flex items-center justify-between mb-4 gap-3">
-            <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Vocab Quiz — Ch.{chapter}</h1>
-            <button onClick={() => setPhase('setup')} className="text-sm text-gray-400 hover:text-gray-600 min-h-[44px] px-2 flex items-center">Cancel</button>
+            <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">{t('vocab', lang)} — {t('chapter', lang)} {chapter}</h1>
+            <button onClick={() => setPhase('setup')} className="text-sm text-gray-400 hover:text-gray-600 min-h-[44px] px-2 flex items-center">{t('cancel', lang)}</button>
           </div>
           <QuizRunner questions={questions} onComplete={handleComplete} />
         </>

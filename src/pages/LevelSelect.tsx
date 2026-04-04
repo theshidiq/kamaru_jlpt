@@ -2,10 +2,11 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '@/store/useAppStore'
 import { LEVEL_CONFIG } from '@/lib/vocab'
+import { t } from '@/lib/i18n'
 
 export function LevelSelect() {
   const navigate = useNavigate()
-  const { setJlptLevel, user } = useAppStore()
+  const { setJlptLevel, user, preferredLanguage: lang } = useAppStore()
   const [selected, setSelected] = useState<'N4' | 'N2' | null>(user?.jlpt_level ?? 'N4')
   const [loading, setLoading] = useState(false)
 
@@ -27,7 +28,7 @@ export function LevelSelect() {
     {
       level: 'N4',
       label: 'JLPT N4',
-      sub: 'Beginner · Intermediate',
+      sub: lang === 'id' ? 'Pemula · Menengah' : 'Beginner · Intermediate',
       color: 'text-emerald-600 dark:text-emerald-400',
       bg: 'bg-emerald-50 dark:bg-emerald-900/20',
       border: 'border-emerald-300 dark:border-emerald-700',
@@ -35,7 +36,7 @@ export function LevelSelect() {
     {
       level: 'N2',
       label: 'JLPT N2',
-      sub: 'Upper Intermediate',
+      sub: lang === 'id' ? 'Menengah Atas' : 'Upper Intermediate',
       color: 'text-indigo-600 dark:text-indigo-400',
       bg: 'bg-indigo-50 dark:bg-indigo-900/20',
       border: 'border-indigo-300 dark:border-indigo-700',
@@ -46,9 +47,9 @@ export function LevelSelect() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Choose your JLPT level</h1>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('chooseLevel', lang)}</h1>
           <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
-            You can change this later from the Dashboard.
+            {t('levelSubtitle', lang)}
           </p>
         </div>
 
@@ -72,7 +73,7 @@ export function LevelSelect() {
                       <p className={`text-xl font-bold ${color}`}>{label}</p>
                       {level === 'N4' && (
                         <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
-                          Recommended
+                          {t('recommended', lang)}
                         </span>
                       )}
                     </div>
@@ -91,9 +92,9 @@ export function LevelSelect() {
                   </div>
                 </div>
                 <div className="mt-3 flex gap-4 text-xs text-gray-500 dark:text-gray-400">
-                  <span>{cfg.chapters} chapters</span>
+                  <span>{cfg.chapters} {lang === 'id' ? 'bab' : 'chapters'}</span>
                   <span>·</span>
-                  <span>{cfg.totalSections} days</span>
+                  <span>{cfg.totalSections} {lang === 'id' ? 'hari' : 'days'}</span>
                   <span>·</span>
                   <span>{level === 'N4' ? '894' : '1,546'} words</span>
                 </div>
@@ -107,7 +108,7 @@ export function LevelSelect() {
           disabled={!selected || loading}
           className="mt-6 w-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold py-3.5 rounded-xl transition-colors"
         >
-          {loading ? 'Setting up...' : 'Start studying →'}
+          {loading ? t('settingUp', lang) : (lang === 'id' ? 'Mulai belajar →' : 'Start studying →')}
         </button>
       </div>
     </div>

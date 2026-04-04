@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import confetti from 'canvas-confetti'
+import { useAppStore } from '@/store/useAppStore'
+import { t } from '@/lib/i18n'
 
 interface Props {
   questions: QuizQuestion[]
@@ -14,6 +16,7 @@ interface Props {
 
 export function ResultsScreen({ questions, results, elapsed, onRetry, onSave }: Props) {
   const navigate = useNavigate()
+  const { preferredLanguage: lang } = useAppStore()
   const correct = results.filter(r => r.isCorrect).length
   const total = results.length
   const pct = Math.round((correct / total) * 100)
@@ -36,13 +39,13 @@ export function ResultsScreen({ questions, results, elapsed, onRetry, onSave }: 
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">
         {correct} / {total}
       </h2>
-      <p className="text-lg text-gray-500 dark:text-gray-400 mb-2">{pct}% correct</p>
+      <p className="text-lg text-gray-500 dark:text-gray-400 mb-2">{pct}% {t('correct', lang).toLowerCase()}</p>
       <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-4 ${
         passed ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
       }`}>
-        {passed ? 'Passed!' : 'Not passed'}
+        {passed ? t('passedBadge', lang) : t('notPassedBadge', lang)}
       </span>
-      <p className="text-sm text-gray-400 mb-6">Time: {minutes}m {seconds}s</p>
+      <p className="text-sm text-gray-400 mb-6">{lang === 'id' ? 'Waktu' : 'Time'}: {minutes}m {seconds}s</p>
 
       {/* Buttons — full-width stacked on mobile */}
       <div className="flex flex-col sm:flex-row justify-center gap-3 mb-6 md:mb-8">
@@ -50,20 +53,20 @@ export function ResultsScreen({ questions, results, elapsed, onRetry, onSave }: 
           onClick={onRetry}
           className="w-full sm:w-auto px-5 py-3.5 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 font-semibold transition-colors min-h-[48px]"
         >
-          Try Again
+          {t('tryAgain', lang)}
         </button>
         <button
           onClick={() => navigate('/quiz')}
           className="w-full sm:w-auto px-5 py-3.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 font-semibold transition-colors min-h-[48px]"
         >
-          Back to Quiz
+          {t('backToQuiz', lang)}
         </button>
       </div>
 
       {/* Answer review */}
       <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden text-left">
         <h3 className="px-4 md:px-5 py-3 font-semibold text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700">
-          Review Answers
+          {t('reviewAnswers', lang)}
         </h3>
         <div className="divide-y divide-gray-100 dark:divide-gray-700">
           {questions.map((q, i) => {
@@ -81,9 +84,9 @@ export function ResultsScreen({ questions, results, elapsed, onRetry, onSave }: 
                 </div>
                 {!r.isCorrect && (
                   <div className="ml-5 text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-                    Your answer: <span className="text-red-500">{q.options[r.selectedIndex]}</span>
+                    {lang === 'id' ? 'Jawabanmu' : 'Your answer'}: <span className="text-red-500">{q.options[r.selectedIndex]}</span>
                     {' → '}
-                    Correct: <span className="text-green-600">{q.options[q.correctIndex]}</span>
+                    {lang === 'id' ? 'Benar' : 'Correct'}: <span className="text-green-600">{q.options[q.correctIndex]}</span>
                   </div>
                 )}
                 {q.explanation && !r.isCorrect && (

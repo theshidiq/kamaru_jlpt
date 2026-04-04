@@ -43,7 +43,7 @@ export function Dashboard() {
         <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
           Hey, {user?.display_name} 👋
         </h1>
-        <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Keep up the great work!</p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">{t('keepUpWork', lang)}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -52,7 +52,7 @@ export function Dashboard() {
           <div className="flex items-center gap-2 mb-1 flex-wrap">
             <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">Day {todayDaysElapsed + 1} / {TOTAL_SECTIONS}</span>
             {daysUntilExam !== null && (
-              <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">{daysUntilExam} days to exam</span>
+              <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">{daysUntilExam} {lang === 'id' ? 'hari lagi' : 'days to exam'}</span>
             )}
           </div>
           <h2 className="text-lg md:text-xl font-bold mt-2">
@@ -72,7 +72,7 @@ export function Dashboard() {
 
           <div className="flex items-center justify-between gap-3">
             <div>
-              <p className="text-sm text-white/80">Streak</p>
+              <p className="text-sm text-white/80">{t('streak', lang)}</p>
               <p className="text-2xl font-bold flex items-center gap-1.5">{progress.streak} days <RiFireLine size={20} className="text-orange-400" /></p>
             </div>
             <button
@@ -86,9 +86,9 @@ export function Dashboard() {
 
         {/* Mastery stats */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700">
-          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Word Mastery</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">{t('wordMastery', lang)}</h3>
           {isLoading ? (
-            <div className="h-32 flex items-center justify-center text-gray-400">Loading...</div>
+            <div className="h-32 flex items-center justify-center text-gray-400">{t('loading', lang)}</div>
           ) : (
             <>
               <ResponsiveContainer width="100%" height={120}>
@@ -98,7 +98,7 @@ export function Dashboard() {
                       <Cell key={i} fill={entry.color} />
                     ))}
                   </Pie>
-                  <Tooltip formatter={(v) => [`${v} words`]} />
+                  <Tooltip formatter={(v) => [`${v} ${lang === 'id' ? 'kata' : 'words'}`]} />
                 </PieChart>
               </ResponsiveContainer>
               <div className="space-y-1 mt-2">
@@ -108,7 +108,7 @@ export function Dashboard() {
                       <span className="w-2.5 h-2.5 rounded-full" style={{ background: d.color }} />
                       <span className="text-gray-600 dark:text-gray-400">{d.name}</span>
                     </span>
-                    <span className="font-medium text-gray-900 dark:text-white">{d.value} words</span>
+                    <span className="font-medium text-gray-900 dark:text-white">{d.value} {lang === 'id' ? 'kata' : 'words'}</span>
                   </div>
                 ))}
               </div>
@@ -120,14 +120,14 @@ export function Dashboard() {
       {/* Recent quiz attempts */}
       {progress.recentAttempts.length > 0 && (
         <div className="mt-4 bg-white dark:bg-gray-800 rounded-2xl p-4 md:p-5 border border-gray-200 dark:border-gray-700">
-          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Recent Quizzes</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">{t('recentQuizzes', lang)}</h3>
           <div className="space-y-2">
             {progress.recentAttempts.slice(0, 5).map(a => {
               const pct = Math.round((a.score / a.total_questions) * 100)
               return (
                 <div key={a.id} className="flex items-center justify-between py-1 text-sm">
                   <span className="text-gray-600 dark:text-gray-400 capitalize">
-                    {a.quiz_type === 'vocab' ? 'Vocab' : a.quiz_type === 'grammar' ? 'Grammar' : a.quiz_type === 'reading' ? 'Reading' : 'Mock'}
+                    {a.quiz_type === 'vocab' ? t('vocab', lang) : a.quiz_type === 'grammar' ? t('grammar', lang) : a.quiz_type === 'reading' ? t('reading', lang) : t('mockExam', lang)}
                     {a.chapter ? ` Ch.${a.chapter}` : ''}
                   </span>
                   <span className={`font-semibold ${pct >= 67 ? 'text-green-600' : 'text-red-500'}`}>
@@ -144,9 +144,9 @@ export function Dashboard() {
       <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
         {[
           { label: t('vocabulary', lang), to: '/vocab', Icon: RiBookOpenLine },
-          { label: 'Quiz', to: '/quiz', Icon: RiPencilLine },
+          { label: t('quiz', lang), to: '/quiz', Icon: RiPencilLine },
           { label: t('reading', lang), to: '/reading', Icon: RiFileTextLine },
-          { label: 'Mock Exam', to: '/mock-exam', Icon: RiTargetLine },
+          { label: t('mockExam', lang), to: '/mock-exam', Icon: RiTargetLine },
         ].map(q => (
           <button
             key={q.to}

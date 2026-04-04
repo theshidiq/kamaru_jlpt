@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
+import { t } from '@/lib/i18n'
 import { generateGrammarQuiz } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
 import { ResultsScreen } from '@/components/quiz/ResultsScreen'
@@ -11,7 +12,7 @@ import { useNavigate } from 'react-router-dom'
 type Phase = 'quiz' | 'results'
 
 export function GrammarQuiz() {
-  const { user } = useAppStore()
+  const { user, preferredLanguage: lang } = useAppStore()
   const navigate = useNavigate()
   const level = user?.jlpt_level ?? 'N4'
   const [phase, setPhase] = useState<Phase>('quiz')
@@ -45,8 +46,8 @@ export function GrammarQuiz() {
       {phase === 'quiz' && (
         <>
           <div className="flex items-center justify-between mb-4 gap-3">
-            <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Grammar Quiz</h1>
-            <button onClick={() => navigate('/quiz')} className="text-sm text-gray-400 hover:text-gray-600 min-h-[44px] px-2 flex items-center">Cancel</button>
+            <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">{t('grammarQuizPage', lang)}</h1>
+            <button onClick={() => navigate('/quiz')} className="text-sm text-gray-400 hover:text-gray-600 min-h-[44px] px-2 flex items-center">{t('cancel', lang)}</button>
           </div>
           <QuizRunner questions={questions} onComplete={handleComplete} />
         </>

@@ -60,27 +60,27 @@ export function StudySession() {
         },
         { onConflict: 'user_id,session_date' },
       )
-      toast.success('Session complete! Well done 🎉')
+      toast.success(lang === 'id' ? 'Sesi selesai! Hebat 🎉' : 'Session complete! Well done 🎉')
       navigate('/')
     } catch {
-      toast.error('Failed to save')
+      toast.error(lang === 'id' ? 'Gagal menyimpan' : 'Failed to save')
     } finally {
       setSaving(false)
     }
   }
 
-  if (!vocab.length) return <PageWrapper><div className="text-center py-10 text-gray-400">Loading...</div></PageWrapper>
-  if (!words.length) return <PageWrapper><div className="text-center py-10 text-gray-400">No words in today's section</div></PageWrapper>
+  if (!vocab.length) return <PageWrapper><div className="text-center py-10 text-gray-400">{t('loading', lang)}</div></PageWrapper>
+  if (!words.length) return <PageWrapper><div className="text-center py-10 text-gray-400">{t('noWordsSection', lang)}</div></PageWrapper>
 
   return (
     <PageWrapper>
       {/* Header */}
       <div className="flex items-center justify-between mb-5 gap-3">
         <div>
-          <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Chapter {todayChapter} · Section {todaySection}</h1>
-          <p className="text-sm text-gray-500">{words.length} words</p>
+          <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">{t('chapter', lang)} {todayChapter} · {t('section', lang)} {todaySection}</h1>
+          <p className="text-sm text-gray-500">{words.length} {t('wordsCount', lang)}</p>
         </div>
-        <button onClick={() => navigate('/')} className="text-sm text-gray-400 hover:text-gray-600 min-h-[44px] px-2 flex items-center">← Back</button>
+        <button onClick={() => navigate('/')} className="text-sm text-gray-400 hover:text-gray-600 min-h-[44px] px-2 flex items-center">{t('back', lang)}</button>
       </div>
 
       <AnimatePresence mode="wait">
@@ -88,14 +88,14 @@ export function StudySession() {
         {stage === 'intro' && (
           <motion.div key="intro" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 md:p-8 text-white text-center mb-4">
-              <p className="text-indigo-200 text-sm mb-1">Today's Study</p>
-              <h2 className="text-xl md:text-2xl font-bold mb-2">Chapter {todayChapter} · Section {todaySection}</h2>
-              <p className="text-indigo-200 mb-6">{words.length} flashcards + 5-question mini quiz</p>
+              <p className="text-indigo-200 text-sm mb-1">{t('todayStudyLink', lang)}</p>
+              <h2 className="text-xl md:text-2xl font-bold mb-2">{t('chapter', lang)} {todayChapter} · {t('section', lang)} {todaySection}</h2>
+              <p className="text-indigo-200 mb-6">{words.length} {t('flashcardsQuiz', lang)}</p>
               <button
                 onClick={() => setStage('flashcards')}
                 className="bg-white text-indigo-700 font-semibold px-8 py-3.5 rounded-xl hover:bg-indigo-50 transition-colors min-h-[48px] text-base"
               >
-                Start →
+                {t('start', lang)}
               </button>
             </div>
           </motion.div>
@@ -124,8 +124,8 @@ export function StudySession() {
                     className="bg-white dark:bg-gray-800 rounded-2xl border-2 border-indigo-300 dark:border-indigo-700 p-8 md:p-10 text-center shadow-lg min-h-[200px] md:min-h-[180px] flex flex-col items-center justify-center"
                   >
                     <p className="font-jp text-4xl md:text-4xl font-bold text-gray-900 dark:text-white">{words[cardIndex]?.wordClean}</p>
-                    {words[cardIndex]?.isSuruVerb && <span className="mt-2 text-xs text-indigo-400">suru verb</span>}
-                    <p className="mt-4 text-sm text-gray-400">Tap to flip</p>
+                    {words[cardIndex]?.isSuruVerb && <span className="mt-2 text-xs text-indigo-400">{t('suruVerb', lang)}</span>}
+                    <p className="mt-4 text-sm text-gray-400">{t('tapToFlip', lang)}</p>
                   </motion.div>
                 ) : (
                   <motion.div
@@ -164,21 +164,21 @@ export function StudySession() {
                 disabled={cardIndex === 0}
                 className="px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-600 disabled:opacity-40 min-h-[48px] font-medium"
               >
-                ← Prev
+                {t('prev', lang)}
               </button>
               {cardIndex < words.length - 1 ? (
                 <button
                   onClick={() => { setCardIndex(cardIndex + 1); setFlipped(false) }}
                   className="px-5 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 min-h-[48px] font-medium"
                 >
-                  Next →
+                  {t('next', lang)}
                 </button>
               ) : (
                 <button
                   onClick={() => setStage('mini-quiz')}
                   className="px-5 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 min-h-[48px] font-medium"
                 >
-                  Mini Quiz →
+                  {t('miniQuizNext', lang)}
                 </button>
               )}
             </div>
@@ -189,8 +189,8 @@ export function StudySession() {
         {stage === 'mini-quiz' && (
           <motion.div key="mini-quiz" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <div className="mb-4">
-              <h2 className="text-lg font-bold text-gray-900 dark:text-white">Mini Quiz</h2>
-              <p className="text-sm text-gray-500">5 questions from today's words</p>
+              <h2 className="text-lg font-bold text-gray-900 dark:text-white">{t('miniQuiz', lang)}</h2>
+              <p className="text-sm text-gray-500">{t('miniQuizSub', lang)}</p>
             </div>
             {miniQuizQuestions.length > 0 ? (
               <QuizRunner
@@ -203,9 +203,9 @@ export function StudySession() {
               />
             ) : (
               <div className="text-center py-8 text-gray-400">
-                <p>Not enough words in this section — skipping quiz</p>
+                <p>{t('notEnoughWords', lang)}</p>
                 <button onClick={() => setStage('self-rating')} className="mt-4 px-5 py-2 bg-indigo-600 text-white rounded-xl">
-                  Next
+                  {t('next', lang)}
                 </button>
               </div>
             )}
@@ -244,7 +244,7 @@ export function StudySession() {
                 onClick={() => setStage('self-rating')}
                 className="px-6 py-2.5 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 font-semibold"
               >
-                Finish Session →
+                {t('finishSession', lang)}
               </button>
             </div>
           </motion.div>
@@ -254,10 +254,10 @@ export function StudySession() {
         {stage === 'self-rating' && (
           <motion.div key="self-rating" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <div className="max-w-md mx-auto text-center py-6 md:py-8">
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">How was today's session?</h2>
-              <p className="text-gray-500 text-sm mb-6 md:mb-8">Be honest!</p>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{t('howWasSession', lang)}</h2>
+              <p className="text-gray-500 text-sm mb-6 md:mb-8">{t('beHonest', lang)}</p>
               <div className="flex justify-center gap-3 mb-6 md:mb-8">
-                {([['easy', 'bg-green-500', 'Easy'], ['okay', 'bg-blue-500', 'Okay'], ['hard', 'bg-red-500', 'Hard']] as const).map(([val, color, label]) => (
+                {([['easy', 'bg-green-500'], ['okay', 'bg-blue-500'], ['hard', 'bg-red-500']] as const).map(([val, color]) => (
                   <button
                     key={val}
                     onClick={() => setSelfRating(val)}
@@ -268,7 +268,7 @@ export function StudySession() {
                     }`}
                   >
                     <span className={`w-5 h-5 rounded-full ${color}`} />
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{label}</span>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t(val, lang)}</span>
                   </button>
                 ))}
               </div>
@@ -277,7 +277,7 @@ export function StudySession() {
                 onClick={handleComplete}
                 className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 text-white font-bold py-4 rounded-xl transition-colors min-h-[52px] text-base"
               >
-                {saving ? 'Saving...' : <span className="flex items-center justify-center gap-1.5"><RiCheckDoubleLine size={18} />Complete!</span>}
+                {saving ? t('saving', lang) : <span className="flex items-center justify-center gap-1.5"><RiCheckDoubleLine size={18} />{t('complete', lang)}</span>}
               </button>
             </div>
           </motion.div>

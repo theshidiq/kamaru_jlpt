@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useAppStore } from '@/store/useAppStore'
+import { t } from '@/lib/i18n'
 
 interface Props {
   questions: QuizQuestion[]
@@ -12,6 +14,7 @@ interface Props {
 type Phase = 'active' | 'reviewing' | 'complete'
 
 export function QuizRunner({ questions, onComplete, timeLimit, showExplanations = true }: Props) {
+  const { preferredLanguage: lang } = useAppStore()
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
   const [results, setResults] = useState<QuizResult[]>([])
@@ -100,7 +103,7 @@ export function QuizRunner({ questions, onComplete, timeLimit, showExplanations 
                 {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, '0')}
               </span>
             )}
-            <span className="text-sm text-green-600 dark:text-green-400 font-medium">{correctCount} correct</span>
+            <span className="text-sm text-green-600 dark:text-green-400 font-medium">{correctCount} {t('correct', lang).toLowerCase()}</span>
           </div>
         </div>
         <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
@@ -129,7 +132,7 @@ export function QuizRunner({ questions, onComplete, timeLimit, showExplanations 
                 onClick={() => setShowFurigana(v => !v)}
                 className="mt-2 text-xs text-indigo-400 dark:text-indigo-300 underline underline-offset-2 block"
               >
-                {showFurigana ? `読み方: ${current.furiganaHint}` : 'Show reading'}
+                {showFurigana ? `読み方: ${current.furiganaHint}` : t('showReading', lang)}
               </button>
             )}
           </div>
@@ -183,7 +186,7 @@ export function QuizRunner({ questions, onComplete, timeLimit, showExplanations 
                 onClick={() => advance()}
                 className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 rounded-xl transition-colors min-h-[52px] text-base"
               >
-                {index + 1 < questions.length ? 'Next →' : 'See Results'}
+                {index + 1 < questions.length ? t('next', lang) : (lang === 'id' ? 'Lihat Hasil' : 'See Results')}
               </button>
             </motion.div>
           )}

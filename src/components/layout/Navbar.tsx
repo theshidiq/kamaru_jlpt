@@ -3,34 +3,35 @@ import { useAppStore } from '@/store/useAppStore'
 import { supabase } from '@/lib/supabase'
 import { useState, useRef, useEffect } from 'react'
 import { RiHome4Line, RiBookOpenLine, RiPencilLine, RiBarChart2Line, RiTargetLine, RiSunLine, RiMoonLine } from '@remixicon/react'
-
-const NAV_LINKS = [
-  { to: '/', label: 'Dashboard' },
-  { to: '/study', label: "Today's Study" },
-  { to: '/vocab', label: 'Vocabulary' },
-  { to: '/quiz', label: 'Quiz' },
-  { to: '/reading', label: 'Reading' },
-  { to: '/mock-exam', label: 'Mock Exam' },
-  { to: '/progress', label: 'Progress' },
-  { to: '/leaderboard', label: 'Leaderboard' },
-]
-
-// Bottom nav shows 5 items on mobile
-const BOTTOM_NAV = [
-  { to: '/', label: 'Home', Icon: RiHome4Line },
-  { to: '/vocab', label: 'Vocab', Icon: RiBookOpenLine },
-  { to: '/quiz', label: 'Quiz', Icon: RiPencilLine },
-  { to: '/progress', label: 'Progress', Icon: RiBarChart2Line },
-  { to: '/study', label: 'Study', Icon: RiTargetLine },
-]
+import { t } from '@/lib/i18n'
 
 export function Navbar() {
   const { user, darkMode, toggleDarkMode, resetWordStatuses, preferredLanguage, setLanguage } = useAppStore()
+  const lang = preferredLanguage
   const navigate = useNavigate()
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
   const [resetting, setResetting] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
+
+  const NAV_LINKS = [
+    { to: '/', label: t('dashboard', lang) },
+    { to: '/study', label: t('todayStudy', lang) },
+    { to: '/vocab', label: t('vocabulary', lang) },
+    { to: '/quiz', label: t('quiz', lang) },
+    { to: '/reading', label: t('reading', lang) },
+    { to: '/mock-exam', label: t('mockExam', lang) },
+    { to: '/progress', label: t('progress', lang) },
+    { to: '/leaderboard', label: t('leaderboard', lang) },
+  ]
+
+  const BOTTOM_NAV = [
+    { to: '/', label: t('home', lang), Icon: RiHome4Line },
+    { to: '/vocab', label: t('vocab', lang), Icon: RiBookOpenLine },
+    { to: '/quiz', label: t('quiz', lang), Icon: RiPencilLine },
+    { to: '/progress', label: t('progress', lang), Icon: RiBarChart2Line },
+    { to: '/study', label: t('study', lang), Icon: RiTargetLine },
+  ]
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -50,7 +51,7 @@ export function Navbar() {
   }
 
   async function handleResetScore() {
-    if (!confirm('Reset all word scores? This cannot be undone.')) return
+    if (!confirm(lang === 'id' ? 'Reset semua skor kata? Tidak bisa dibatalkan.' : 'Reset all word scores? This cannot be undone.')) return
     setResetting(true)
     await resetWordStatuses()
     setResetting(false)
@@ -93,7 +94,7 @@ export function Navbar() {
             <button
               onClick={() => setLanguage(preferredLanguage === 'id' ? 'en' : 'id')}
               className="px-2 py-1 rounded text-xs font-bold border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors h-9 flex items-center gap-0.5"
-              title="Toggle language"
+              title={t('language', lang)}
             >
               <span className={preferredLanguage === 'id' ? 'text-gray-900 dark:text-white' : 'text-gray-400'}>ID</span>
               <span className="text-gray-300 dark:text-gray-600 mx-0.5">|</span>
@@ -104,7 +105,7 @@ export function Navbar() {
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-500 dark:text-gray-400 w-9 h-9 flex items-center justify-center"
-              title="Toggle dark mode"
+              title={darkMode ? (lang === 'id' ? 'Mode terang' : 'Light mode') : (lang === 'id' ? 'Mode gelap' : 'Dark mode')}
             >
               {darkMode ? <RiSunLine size={18} /> : <RiMoonLine size={18} />}
             </button>
@@ -145,7 +146,7 @@ export function Navbar() {
                       <svg className="w-4 h-4 text-indigo-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
-                      Change Level
+                      {t('changeLevel', lang)}
                     </button>
 
                     <button
@@ -156,7 +157,7 @@ export function Navbar() {
                       <svg className="w-4 h-4 text-amber-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                       </svg>
-                      {resetting ? 'Resetting...' : 'Reset Score'}
+                      {resetting ? t('resetting', lang) : t('resetScore', lang)}
                     </button>
                   </div>
 
@@ -168,7 +169,7 @@ export function Navbar() {
                       <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                       </svg>
-                      Sign Out
+                      {t('signOut', lang)}
                     </button>
                   </div>
                 </div>

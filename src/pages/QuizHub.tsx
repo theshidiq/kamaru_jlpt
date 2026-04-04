@@ -1,12 +1,15 @@
 import { useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useProgress } from '@/hooks/useProgress'
+import { useAppStore } from '@/store/useAppStore'
+import { t } from '@/lib/i18n'
 import { RiBookMarkedLine, RiQuillPenLine, RiFileTextLine, RiTargetLine } from '@remixicon/react'
 import type { RemixiconComponentType } from '@remixicon/react'
 
 export function QuizHub() {
   const navigate = useNavigate()
   const { recentAttempts } = useProgress()
+  const { preferredLanguage: lang } = useAppStore()
 
   const lastScore = (type: string) => {
     const a = recentAttempts.find(x => x.quiz_type === type)
@@ -17,36 +20,36 @@ export function QuizHub() {
   const cards: { to: string; title: string; subtitle: string; description: string; Icon: RemixiconComponentType; color: string; type: string }[] = [
     {
       to: '/quiz/vocab',
-      title: 'Vocabulary Quiz',
-      subtitle: 'Mondai 1–5 format',
-      description: 'Reading, meaning, and usage questions',
+      title: t('vocabQuizTitle', lang),
+      subtitle: t('vocabQuizFmt', lang),
+      description: t('vocabQuizDesc', lang),
       Icon: RiBookMarkedLine,
       color: 'from-indigo-500 to-blue-500',
       type: 'vocab',
     },
     {
       to: '/quiz/grammar',
-      title: 'Grammar Quiz',
-      subtitle: 'Mondai 1–3 format',
-      description: '40 N4 grammar patterns',
+      title: t('grammarQuizTitle', lang),
+      subtitle: t('grammarQuizFmt', lang),
+      description: t('grammarQuizDesc', lang),
       Icon: RiQuillPenLine,
       color: 'from-purple-500 to-pink-500',
       type: 'grammar',
     },
     {
       to: '/reading',
-      title: 'Reading Practice',
-      subtitle: 'Short / Medium / Info search',
-      description: '15 reading passages',
+      title: t('readingTitle', lang),
+      subtitle: t('readingFmt', lang),
+      description: t('readingDesc', lang),
       Icon: RiFileTextLine,
       color: 'from-emerald-500 to-teal-500',
       type: 'reading',
     },
     {
       to: '/mock-exam',
-      title: 'Mock Exam',
-      subtitle: 'Exam format',
-      description: '25 vocab + 20 grammar + 13 reading = 58 questions',
+      title: t('mockExamTitle', lang),
+      subtitle: t('mockExamFmt', lang),
+      description: t('mockExamDesc', lang),
       Icon: RiTargetLine,
       color: 'from-orange-500 to-red-500',
       type: 'mock',
@@ -55,8 +58,8 @@ export function QuizHub() {
 
   return (
     <PageWrapper>
-      <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">Quiz</h1>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-5">Choose a category to practice</p>
+      <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">{t('quizPageTitle', lang)}</h1>
+      <p className="text-gray-500 dark:text-gray-400 text-sm mb-5">{t('quizPageSub', lang)}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         {cards.map(card => {
@@ -78,7 +81,7 @@ export function QuizHub() {
                   <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
                     score >= 67 ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'
                   }`}>
-                    Last: {score}%
+                    {t('lastScore', lang)}: {score}%
                   </span>
                 )}
               </div>

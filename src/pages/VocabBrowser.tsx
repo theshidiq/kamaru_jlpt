@@ -26,7 +26,7 @@ export function VocabBrowser() {
   if (isLoading) {
     return (
       <PageWrapper>
-        <div className="flex items-center justify-center h-40 text-gray-400">Loading vocabulary...</div>
+        <div className="flex items-center justify-center h-40 text-gray-400">{t('loadingVocab', lang)}</div>
       </PageWrapper>
     )
   }
@@ -50,7 +50,7 @@ export function VocabBrowser() {
             onChange={e => setStatusFilter(e.target.value as 'all' | WordStatus)}
             className="flex-1 min-w-[120px] border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2.5 text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
           >
-            <option value="all">All</option>
+            <option value="all">{t('allStatus', lang)}</option>
             <option value="known">{t('known', lang)}</option>
             <option value="learning">{t('learning', lang)}</option>
             <option value="new">{t('new', lang)}</option>
@@ -77,10 +77,10 @@ export function VocabBrowser() {
           <table className="w-full text-sm">
             <thead className="bg-gray-50 dark:bg-gray-700">
               <tr>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">Word</th>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300 hidden md:table-cell">Reading</th>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">Meaning</th>
-                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">Status</th>
+                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">{t('wordCol', lang)}</th>
+                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300 hidden md:table-cell">{t('readingCol', lang)}</th>
+                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">{t('meaningCol', lang)}</th>
+                <th className="text-left px-4 py-2 text-gray-600 dark:text-gray-300">{t('statusCol', lang)}</th>
               </tr>
             </thead>
             <tbody>
@@ -114,7 +114,7 @@ export function VocabBrowser() {
           </table>
           {filtered.length > 100 && (
             <div className="px-4 py-2 text-sm text-gray-400 text-center">
-              Narrow your search to show more results
+              {t('narrowSearch', lang)}
             </div>
           )}
         </div>
@@ -148,7 +148,7 @@ export function VocabBrowser() {
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-xs text-green-600 dark:text-green-400">
-                      {chKnown}/{ch.totalWords} known
+                      {chKnown}/{ch.totalWords} {t('known', lang).toLowerCase()}
                     </span>
                     <span className="text-gray-400">{isOpen ? '▲' : '▼'}</span>
                   </div>

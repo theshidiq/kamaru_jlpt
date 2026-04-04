@@ -131,23 +131,23 @@ export function VocabSection() {
     <PageWrapper>
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-4">
-        <Link to="/vocab" className="hover:text-indigo-600">Vocabulary</Link>
+        <Link to="/vocab" className="hover:text-indigo-600">{t('vocabulary', lang)}</Link>
         <span>›</span>
-        <span>Chapter {ch}</span>
+        <span>{t('chapter', lang)} {ch}</span>
         <span>›</span>
-        <span>Section {sec}</span>
+        <span>{t('section', lang)} {sec}</span>
       </div>
 
       <div className="flex items-start justify-between mb-4 gap-3">
         <div>
-          <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">Chapter {ch} · Section {sec}</h1>
-          <p className="text-sm text-gray-500 dark:text-gray-400">{words.length} words · {known}/{words.length} known</p>
+          <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">{t('chapter', lang)} {ch} · {t('section', lang)} {sec}</h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400">{words.length} {t('wordsCount', lang)} · {known}/{words.length} {t('known', lang).toLowerCase()}</p>
         </div>
         <Link
           to={`/study`}
           className="text-sm bg-indigo-600 text-white px-4 py-2.5 rounded-lg hover:bg-indigo-700 transition-colors whitespace-nowrap min-h-[44px] flex items-center"
         >
-          Today's Study
+          {t('todayStudyLink', lang)}
         </Link>
       </div>
 
@@ -183,9 +183,9 @@ export function VocabSection() {
           <div className="flex items-center gap-2 mb-3 flex-wrap">
             <span className="text-xs text-gray-400 dark:text-gray-500 mr-1">Show:</span>
             {[
-              { label: 'Furigana', value: showFurigana, toggle: () => setShowFurigana(v => !v) },
-              { label: 'Meaning', value: showMeaning, toggle: () => setShowMeaning(v => !v) },
-              { label: 'Example', value: showExample, toggle: () => setShowExample(v => !v) },
+              { label: t('furigana', lang), value: showFurigana, toggle: () => setShowFurigana(v => !v) },
+              { label: t('meaning', lang), value: showMeaning, toggle: () => setShowMeaning(v => !v) },
+              { label: t('example', lang), value: showExample, toggle: () => setShowExample(v => !v) },
             ].map(({ label, value, toggle }) => (
               <button
                 key={label}
@@ -199,7 +199,7 @@ export function VocabSection() {
                 {label}
               </button>
             ))}
-            <span className="ml-auto text-xs text-gray-400">Tap card to self-test</span>
+            <span className="ml-auto text-xs text-gray-400">{t('tapToReveal', lang)}</span>
           </div>
 
           {/* Word cards */}
@@ -262,7 +262,7 @@ export function VocabSection() {
                       <p className="font-jp text-sm text-indigo-500 dark:text-indigo-400 mb-1 ml-5">{w.furigana}</p>
                     )}
                     {!cardRevealed && (
-                      <p className="text-xs text-gray-300 dark:text-gray-600 ml-5 mb-1 select-none">tap again to reveal →</p>
+                      <p className="text-xs text-gray-300 dark:text-gray-600 ml-5 mb-1 select-none">{t('tapToReveal', lang)}</p>
                     )}
 
                     {/* Meaning */}
@@ -323,14 +323,14 @@ export function VocabSection() {
                     to={nextPath}
                     className="flex-1 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm text-center transition-colors"
                   >
-                    {sec < maxSection ? `Next Section →` : `Chapter ${ch + 1} →`}
+                    {sec < maxSection ? t('nextSection', lang) : `${t('chapter', lang)} ${ch + 1} →`}
                   </Link>
                 ) : (
                   <Link
                     to="/vocab"
                     className="flex-1 py-3.5 rounded-xl bg-green-600 hover:bg-green-700 text-white font-semibold text-sm text-center transition-colors"
                   >
-                    All Done ✓
+                    {t('allDone', lang)}
                   </Link>
                 )}
               </div>
@@ -357,7 +357,7 @@ export function VocabSection() {
               />
             ))}
           </div>
-          <div className="text-xs text-gray-400 mb-3">{cardIndex + 1} / {shuffledWords.length} · swipe or tap ← →</div>
+          <div className="text-xs text-gray-400 mb-3">{cardIndex + 1} / {shuffledWords.length} · {t('swipeInstruction', lang)}</div>
 
           {/* Swipeable card */}
           <SwipeableCard
@@ -381,17 +381,17 @@ export function VocabSection() {
                   className="absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border-2 border-indigo-300 dark:border-indigo-700 flex flex-col items-center justify-center p-6 shadow-lg"
                 >
                   <p className="font-jp text-5xl font-bold text-gray-900 dark:text-white">{currentWord.wordClean}</p>
-                  {currentWord.isSuruVerb && <span className="mt-2 text-xs text-indigo-400">suru verb</span>}
+                  {currentWord.isSuruVerb && <span className="mt-2 text-xs text-indigo-400">{t('suruVerb', lang)}</span>}
                   {showHint && currentWord.furigana && (
                     <p className="mt-2 text-sm text-indigo-500 dark:text-indigo-400 font-jp">{currentWord.furigana}</p>
                   )}
-                  <p className="mt-4 text-xs text-gray-400">Tap to flip</p>
+                  <p className="mt-4 text-xs text-gray-400">{t('tapToFlip', lang)}</p>
                   {currentWord.furigana && (
                     <button
                       onClick={e => { e.stopPropagation(); setShowHint(v => !v) }}
                       className="absolute bottom-3 right-3 text-xs text-gray-400 hover:text-indigo-500 underline underline-offset-2"
                     >
-                      {showHint ? 'hide' : 'reading?'}
+                      {showHint ? t('hideReading', lang) : (lang === 'id' ? 'cara baca?' : 'reading?')}
                     </button>
                   )}
                 </motion.div>
@@ -436,14 +436,14 @@ export function VocabSection() {
               disabled={cardIndex === 0}
               className="flex-1 px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 disabled:opacity-40 min-h-[44px] font-medium"
             >
-              ← Prev
+              {t('prev', lang)}
             </button>
             <button
               onClick={() => { setCardIndex(Math.min(shuffledWords.length - 1, cardIndex + 1)); setFlipped(false); setShowHint(false) }}
               disabled={cardIndex === shuffledWords.length - 1}
               className="flex-1 px-4 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 disabled:opacity-40 min-h-[44px] font-medium"
             >
-              Next →
+              {t('next', lang)}
             </button>
           </div>
         </div>

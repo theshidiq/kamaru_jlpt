@@ -2,6 +2,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
 import { useProgress } from '@/hooks/useProgress'
+import { t } from '@/lib/i18n'
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer,
   BarChart, Bar, Legend,
@@ -9,7 +10,7 @@ import {
 import { RiFireLine, RiTrophyLine, RiBookOpenLine, RiBarChart2Line } from '@remixicon/react'
 import type { RemixiconComponentType } from '@remixicon/react'
 
-function HeatmapCalendar({ sessions }: { sessions: { session_date: string; self_rating: string | null }[] }) {
+function HeatmapCalendar({ sessions, lang }: { sessions: { session_date: string; self_rating: string | null }[]; lang: 'id' | 'en' }) {
   const sessionMap = new Map(sessions.map(s => [s.session_date, s.self_rating]))
   const today = new Date()
   const days: { date: string; rating: string | null }[] = []
@@ -38,16 +39,16 @@ function HeatmapCalendar({ sessions }: { sessions: { session_date: string; self_
         ))}
       </div>
       <div className="flex gap-3 mt-2 text-xs text-gray-400">
-        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-green-400 rounded-sm inline-block" /> Easy</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-blue-400 rounded-sm inline-block" /> Okay</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-amber-400 rounded-sm inline-block" /> Hard</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-green-400 rounded-sm inline-block" /> {t('easy', lang)}</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-blue-400 rounded-sm inline-block" /> {t('okay', lang)}</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-amber-400 rounded-sm inline-block" /> {t('hard', lang)}</span>
       </div>
     </div>
   )
 }
 
 export function Progress() {
-  const { wordStatuses, vocab } = useAppStore()
+  const { wordStatuses, vocab, preferredLanguage: lang } = useAppStore()
   const { chapters } = useVocab()
   const progress = useProgress()
 
@@ -74,15 +75,15 @@ export function Progress() {
 
   return (
     <PageWrapper>
-      <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-5">Progress</h1>
+      <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-5">{t('progress', lang)}</h1>
 
       {/* Streak + readiness — 2-col on mobile, 4-col on desktop */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         {([
-          { label: 'Streak', value: `${progress.streak} days`, Icon: RiFireLine, color: 'text-orange-500' },
-          { label: 'Best Streak', value: `${progress.longestStreak} days`, Icon: RiTrophyLine, color: 'text-amber-500' },
-          { label: 'Sessions', value: `${progress.totalSessions}`, Icon: RiBookOpenLine, color: 'text-indigo-500' },
-          { label: 'Readiness', value: `${readiness}%`, Icon: RiBarChart2Line, color: 'text-green-500' },
+          { label: t('streak', lang), value: `${progress.streak} ${lang === 'id' ? 'hari' : 'days'}`, Icon: RiFireLine, color: 'text-orange-500' },
+          { label: t('bestStreak', lang), value: `${progress.longestStreak} ${lang === 'id' ? 'hari' : 'days'}`, Icon: RiTrophyLine, color: 'text-amber-500' },
+          { label: t('sessions', lang), value: `${progress.totalSessions}`, Icon: RiBookOpenLine, color: 'text-indigo-500' },
+          { label: t('readiness', lang), value: `${readiness}%`, Icon: RiBarChart2Line, color: 'text-green-500' },
         ] as { label: string; value: string; Icon: RemixiconComponentType; color: string }[]).map(s => (
           <div key={s.label} className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-3 md:p-4 text-center">
             <div className={`flex justify-center mb-1 ${s.color}`}><s.Icon size={24} /></div>
@@ -95,7 +96,7 @@ export function Progress() {
       {/* Readiness bar */}
       <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-5 mb-4">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="font-semibold text-gray-900 dark:text-white">N4 Readiness</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-white">{t('n4Readiness', lang)}</h3>
           <span className="text-sm font-bold text-indigo-600">{readiness}%</span>
         </div>
         <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
@@ -104,19 +105,19 @@ export function Progress() {
             style={{ width: `${readiness}%` }}
           />
         </div>
-        <p className="text-xs text-gray-400 mt-1">{totalKnown} / {vocab.length} words mastered</p>
+        <p className="text-xs text-gray-400 mt-1">{totalKnown} / {vocab.length} {lang === 'id' ? 'kata dikuasai' : 'words mastered'}</p>
       </div>
 
       {/* Study heatmap */}
       <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-5 mb-4">
-        <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Study Calendar (last 42 days)</h3>
-        <HeatmapCalendar sessions={progress.sessions} />
+        <h3 className="font-semibold text-gray-900 dark:text-white mb-3">{t('studyCalendar', lang)}</h3>
+        <HeatmapCalendar sessions={progress.sessions} lang={lang} />
       </div>
 
       {/* Chapter mastery */}
       {chapterData.length > 0 && (
         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-5 mb-4">
-          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Mastery by Chapter</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">{t('masteryByChapter', lang)}</h3>
           <ResponsiveContainer width="100%" height={200}>
             <BarChart data={chapterData} layout="vertical">
               <XAxis type="number" tick={{ fontSize: 11 }} />
@@ -134,7 +135,7 @@ export function Progress() {
       {/* Quiz score history */}
       {scoreData.length > 0 && (
         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-5">
-          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Quiz Score History</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-white mb-3">{t('quizHistory', lang)}</h3>
           <ResponsiveContainer width="100%" height={160}>
             <LineChart data={scoreData}>
               <XAxis dataKey="name" tick={{ fontSize: 11 }} />
@@ -145,7 +146,7 @@ export function Progress() {
           </ResponsiveContainer>
           <div className="mt-2 flex items-center gap-1">
             <div className="w-3 h-0.5 bg-indigo-600" />
-            <span className="text-xs text-gray-400">Accuracy (%) — 67%+ to pass</span>
+            <span className="text-xs text-gray-400">{t('accuracy', lang)}</span>
           </div>
         </div>
       )}
