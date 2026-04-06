@@ -1735,21 +1735,25 @@
     "meaning_vi": "Làm cho (lo lắng), gây (lo lắng)",
     "meaning_en": "to cause (worry), to make (someone) worry",
     "example": {
-      "jp": "いすに腰をかけてください。",
-      "en": "Please sit down in the chair.",
+      "jp": "親に心配をかけてしまいました。",
+      "en": "I ended up worrying my parents.",
+      "id": "Saya membuat orang tua saya khawatir.",
       "seg": [
         {
-          "t": "いすに"
+          "t": "親",
+          "r": "おや"
         },
         {
-          "t": "腰",
-          "r": "こし"
+          "t": "に"
         },
         {
-          "t": "をかけてください。"
+          "t": "心配",
+          "r": "しんぱい"
+        },
+        {
+          "t": "をかけてしまいました。"
         }
-      ],
-      "id": "Silakan duduk di kursi."
+      ]
     },
     "meaning_id": "menimbulkan kekhawatiran",
     "chapter_title_id": "Kehidupan Sehari-hari Kita",
@@ -2637,21 +2641,25 @@
     "meaning_vi": "Khóa (cửa)",
     "meaning_en": "to lock (a door)",
     "example": {
-      "jp": "いすに腰をかけてください。",
-      "en": "Please sit down in the chair.",
+      "jp": "出かける前に、ドアにかぎをかけてください。",
+      "en": "Please lock the door before you go out.",
+      "id": "Tolong kunci pintunya sebelum pergi.",
       "seg": [
         {
-          "t": "いすに"
+          "t": "出",
+          "r": "で"
         },
         {
-          "t": "腰",
-          "r": "こし"
+          "t": "かける"
         },
         {
-          "t": "をかけてください。"
+          "t": "前",
+          "r": "まえ"
+        },
+        {
+          "t": "に、ドアにかぎをかけてください。"
         }
-      ],
-      "id": "Silakan duduk di kursi."
+      ]
     },
     "meaning_id": "mengunci (pintu)",
     "chapter_title_id": "Kehidupan Sehari-hari Kita",
@@ -3640,21 +3648,25 @@
     "meaning_vi": "Treo (tranh)",
     "meaning_en": "to hang (a picture)",
     "example": {
-      "jp": "いすに腰をかけてください。",
-      "en": "Please sit down in the chair.",
+      "jp": "壁に絵をかけました。",
+      "en": "I hung a picture on the wall.",
+      "id": "Saya menggantung gambar di dinding.",
       "seg": [
         {
-          "t": "いすに"
+          "t": "壁",
+          "r": "かべ"
         },
         {
-          "t": "腰",
-          "r": "こし"
+          "t": "に"
         },
         {
-          "t": "をかけてください。"
+          "t": "絵",
+          "r": "え"
+        },
+        {
+          "t": "をかけました。"
         }
-      ],
-      "id": "Silakan duduk di kursi."
+      ]
     },
     "meaning_id": "menggantung (gambar)",
     "chapter_title_id": "Kehidupan Sehari-hari Kita",
@@ -3669,25 +3681,18 @@
     "meaning_vi": "(Lịch) được treo, có treo",
     "meaning_en": "calendar hung up",
     "example": {
-      "jp": "壁に絵がかかっています。",
-      "en": "A picture is hanging on the wall.",
+      "jp": "壁にカレンダーがかかっています。",
+      "en": "A calendar is hanging on the wall.",
+      "id": "Ada kalender yang tergantung di dinding.",
       "seg": [
         {
           "t": "壁",
           "r": "かべ"
         },
         {
-          "t": "に"
-        },
-        {
-          "t": "絵",
-          "r": "え"
-        },
-        {
-          "t": "がかかっています。"
+          "t": "にカレンダーがかかっています。"
         }
-      ],
-      "id": "Ada lukisan yang tergantung di dinding."
+      ]
     },
     "meaning_id": "kalender tergantung",
     "chapter_title_id": "Kehidupan Sehari-hari Kita",
@@ -3826,14 +3831,25 @@
     "meaning_vi": "Bật (điện), mở (đèn)",
     "meaning_en": "to turn on (lights/electricity)",
     "example": {
-      "jp": "エアコンをつけました。",
-      "en": "I turned on the air conditioner.",
+      "jp": "暗いので、電気をつけてください。",
+      "en": "Please turn on the light because it is dark.",
+      "id": "Tolong nyalakan lampunya karena gelap.",
       "seg": [
         {
-          "t": "エアコンをつけました。"
+          "t": "暗",
+          "r": "くら"
+        },
+        {
+          "t": "いので、"
+        },
+        {
+          "t": "電気",
+          "r": "でんき"
+        },
+        {
+          "t": "をつけてください。"
         }
-      ],
-      "id": "Saya menyalakan AC."
+      ]
     },
     "meaning_id": "menyalakan (lampu/listrik)",
     "chapter_title_id": "Kehidupan Sehari-hari Kita",
@@ -4662,18 +4678,14 @@
     "meaning_vi": "(Khăn) khô",
     "meaning_en": "dry (towel/cloth)",
     "example": {
-      "jp": "洗濯物がかわきました。",
-      "en": "The laundry dried.",
+      "jp": "タオルがよくかわきました。",
+      "en": "The towel dried well.",
+      "id": "Handuknya sudah kering dengan baik.",
       "seg": [
         {
-          "t": "洗濯物",
-          "r": "せんたくもの"
-        },
-        {
-          "t": "がかわきました。"
+          "t": "タオルがよくかわきました。"
         }
-      ],
-      "id": "Cuciannya sudah kering."
+      ]
     },
     "meaning_id": "kering (handuk/kain)",
     "chapter_title_id": "Kehidupan Sehari-hari Kita",
@@ -11106,14 +11118,21 @@
     "meaning_vi": "Chấm ( nước tương)",
     "meaning_en": "to dip (in soy sauce)",
     "example": {
-      "jp": "エアコンをつけました。",
-      "en": "I turned on the air conditioner.",
+      "jp": "さしみにしょうゆをつけて食べます。",
+      "en": "I dip sashimi in soy sauce and eat it.",
+      "id": "Saya mencelupkan sashimi ke kecap asin lalu memakannya.",
       "seg": [
         {
-          "t": "エアコンをつけました。"
+          "t": "さしみにしょうゆをつけて"
+        },
+        {
+          "t": "食",
+          "r": "た"
+        },
+        {
+          "t": "べます。"
         }
-      ],
-      "id": "Saya mencelupkannya ke kecap asin."
+      ]
     },
     "meaning_id": "mencelupkan",
     "chapter_title_id": "Hal-hal yang Menyenangkan",
@@ -16462,25 +16481,43 @@
     "meaning_en": "open (door)",
     "furigana": "ひらく",
     "example": {
-      "jp": "教科書を開いてください。",
-      "en": "Please open your textbook.",
+      "jp": "この店は朝九時に開きます。",
+      "en": "This shop opens at nine in the morning.",
+      "id": "Toko ini buka pada pukul sembilan pagi.",
       "seg": [
         {
-          "t": "教科書",
-          "r": "きょうかしょ"
+          "t": "この"
         },
         {
-          "t": "を"
+          "t": "店",
+          "r": "みせ"
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "朝",
+          "r": "あさ"
+        },
+        {
+          "t": "九",
+          "r": "く"
+        },
+        {
+          "t": "時",
+          "r": "じ"
+        },
+        {
+          "t": "に"
         },
         {
           "t": "開",
           "r": "ひら"
         },
         {
-          "t": "いてください。"
+          "t": "きます。"
         }
-      ],
-      "id": "Tolong buka buku teks Anda."
+      ]
     },
     "meaning_id": "terbuka",
     "chapter_title_id": "Ayo Keluar Rumah!",
@@ -20988,14 +21025,32 @@
     "meaning_vi": "Việc câu (cá)",
     "meaning_en": "fishing",
     "example": {
-      "jp": "おつりをもらいました。",
-      "en": "I received the change.",
+      "jp": "休みの日は川でつりをします。",
+      "en": "On my days off, I go fishing in the river.",
+      "id": "Di hari libur saya memancing di sungai.",
       "seg": [
         {
-          "t": "おつりをもらいました。"
+          "t": "休",
+          "r": "やす"
+        },
+        {
+          "t": "みの"
+        },
+        {
+          "t": "日",
+          "r": "ひ"
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "川",
+          "r": "かわ"
+        },
+        {
+          "t": "でつりをします。"
         }
-      ],
-      "id": "Saya menerima uang kembalian."
+      ]
     },
     "meaning_id": "memancing",
     "chapter_title_id": "Hubungan Antar Manusia",
@@ -23609,18 +23664,18 @@
     "meaning_vi": "Khát, (cổ họng) khô",
     "meaning_en": "to be thirsty, (throat) to be dry",
     "example": {
-      "jp": "洗濯物がかわきました。",
-      "en": "The laundry dried.",
+      "jp": "運動してのどがかわきました。",
+      "en": "I exercised and got thirsty.",
+      "id": "Saya berolahraga dan menjadi haus.",
       "seg": [
         {
-          "t": "洗濯物",
-          "r": "せんたくもの"
+          "t": "運動",
+          "r": "うんどう"
         },
         {
-          "t": "がかわきました。"
+          "t": "してのどがかわきました。"
         }
-      ],
-      "id": "Cucian sudah kering."
+      ]
     },
     "meaning_id": "haus",
     "chapter_title_id": "Kesehatan & Kondisi",
@@ -23635,25 +23690,25 @@
     "meaning_vi": "Đói (bụng)",
     "meaning_en": "to be hungry, (stomach) to be empty",
     "example": {
-      "jp": "早朝は電車がすいています。",
-      "en": "The train is uncrowded in the early morning.",
+      "jp": "昼ごはんを食べなかったので、おなかがすきました。",
+      "en": "I didn't eat lunch, so I got hungry.",
+      "id": "Saya tidak makan siang, jadi perut saya lapar.",
       "seg": [
         {
-          "t": "早朝",
-          "r": "そうちょう"
+          "t": "昼",
+          "r": "ひる"
         },
         {
-          "t": "は"
+          "t": "ごはんを"
         },
         {
-          "t": "電車",
-          "r": "でんしゃ"
+          "t": "食",
+          "r": "た"
         },
         {
-          "t": "がすいています。"
+          "t": "べなかったので、おなかがすきました。"
         }
-      ],
-      "id": "Kereta tidak ramai di pagi-pagi sekali."
+      ]
     },
     "meaning_id": "lapar",
     "chapter_title_id": "Kesehatan & Kondisi",
@@ -27384,18 +27439,25 @@
     "meaning_vi": "Thất (hứa)",
     "meaning_en": "to break (a promise)",
     "example": {
-      "jp": "紙をやぶりました。",
-      "en": "I tore the paper.",
+      "jp": "彼は約束をやぶりました。",
+      "en": "He broke his promise.",
+      "id": "Dia mengingkari janjinya.",
       "seg": [
         {
-          "t": "紙",
-          "r": "かみ"
+          "t": "彼",
+          "r": "かれ"
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "約束",
+          "r": "やくそく"
         },
         {
           "t": "をやぶりました。"
         }
-      ],
-      "id": "Saya merobek kertasnya."
+      ]
     },
     "meaning_id": "mengingkari (janji)",
     "chapter_title_id": "Kapan? Di Mana?",
