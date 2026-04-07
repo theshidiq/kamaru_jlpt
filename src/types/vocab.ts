@@ -11,6 +11,8 @@ export interface VocabWord {
   meaning_id?: string
   chapter_title_id?: string
   section_title_id?: string
+  chapter_title_en?: string
+  section_title_en?: string
   furigana?: string   // hiragana reading from dataset
   example?: {
     jp: string

@@ -54,6 +54,8 @@ export async function loadVocab(level: 'N4' | 'N2' = 'N4'): Promise<VocabWord[]>
     meaning_id?: string
     chapter_title_id?: string
     section_title_id?: string
+    chapter_title_en?: string
+    section_title_en?: string
     furigana?: string
     example?: { jp: string; en: string; seg: { t: string; r?: string }[] }
   }> = await res.json()
@@ -126,11 +128,13 @@ export function getMeaning(word: VocabWord, lang: 'id' | 'en'): string {
 
 export function getChapterTitleLang(item: VocabWord, lang: 'id' | 'en'): string {
   if (lang === 'id' && item.chapter_title_id) return item.chapter_title_id
+  if (lang === 'en' && item.chapter_title_en) return item.chapter_title_en
   return item.chapter_title
 }
 
 export function getSectionTitleLang(item: VocabWord, lang: 'id' | 'en'): string {
   if (lang === 'id' && item.section_title_id) return item.section_title_id
+  if (lang === 'en' && item.section_title_en) return item.section_title_en
   return item.section_title
 }
 
