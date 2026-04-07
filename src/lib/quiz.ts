@@ -192,13 +192,16 @@ export function generateReadingQuiz(
   const passages = shuffle(pool).slice(0, passageCount ?? pool.length)
 
   return passages.flatMap(passage =>
-    passage.questions.map((q, _qi) => ({
+    passage.questions.map((q, qi) => ({
       id: nextId('r'),
       type: 'reading' as const,
-      prompt: `[${passage.title}]\n\n${passage.text}\n\n---\n${q.prompt}`,
+      prompt: qi === 0
+        ? `[${passage.title}]\n\n${passage.text}\n\n---\n${q.prompt}`
+        : `---\n${q.prompt}`,
       options: q.options,
       correctIndex: q.correctIndex,
       passageFuriganaMap: passage.furiganaMap,
+      passageId: passage.id,
     }))
   )
 }

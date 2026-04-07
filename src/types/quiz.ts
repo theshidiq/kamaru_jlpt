@@ -10,6 +10,7 @@ export interface QuizQuestion {
   explanation?: string
   furiganaHint?: string
   passageFuriganaMap?: Array<{ kanji: string; reading: string }>
+  passageId?: string
   word?: string
   chapter?: number
   section?: number

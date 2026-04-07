@@ -123,12 +123,24 @@ export function QuizRunner({ questions, onComplete, timeLimit, showExplanations 
   const hasFuriganaMap = isReading && !!current.passageFuriganaMap?.length
   let passageText = ''
   let questionText = current.prompt
+
   if (isReading) {
-    const sep = '\n\n---\n'
-    const sepIdx = current.prompt.indexOf(sep)
-    if (sepIdx !== -1) {
-      passageText = current.prompt.slice(0, sepIdx)
-      questionText = current.prompt.slice(sepIdx + sep.length)
+    if (current.prompt.startsWith('---\n')) {
+      // Follow-up question for same passage — find previous passage text
+      questionText = current.prompt.slice(4)
+      const prev = questions.slice(0, index).reverse().find(q => q.passageId === current.passageId)
+      if (prev) {
+        const sep = '\n\n---\n'
+        const sepIdx = prev.prompt.indexOf(sep)
+        if (sepIdx !== -1) passageText = prev.prompt.slice(0, sepIdx)
+      }
+    } else {
+      const sep = '\n\n---\n'
+      const sepIdx = current.prompt.indexOf(sep)
+      if (sepIdx !== -1) {
+        passageText = current.prompt.slice(0, sepIdx)
+        questionText = current.prompt.slice(sepIdx + sep.length)
+      }
     }
   }
 
