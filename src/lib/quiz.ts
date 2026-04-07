@@ -191,19 +191,18 @@ export function generateReadingQuiz(
     : bank
   const passages = shuffle(pool).slice(0, passageCount ?? pool.length)
 
-  return passages.flatMap(passage =>
-    passage.questions.map((q, qi) => ({
+  return passages.map(passage => {
+    const q = passage.questions[Math.floor(Math.random() * passage.questions.length)]
+    return {
       id: nextId('r'),
       type: 'reading' as const,
-      prompt: qi === 0
-        ? `[${passage.title}]\n\n${passage.text}\n\n---\n${q.prompt}`
-        : `---\n${q.prompt}`,
+      prompt: `[${passage.title}]\n\n${passage.text}\n\n---\n${q.prompt}`,
       options: q.options,
       correctIndex: q.correctIndex,
       passageFuriganaMap: passage.furiganaMap,
       passageId: passage.id,
-    }))
-  )
+    }
+  })
 }
 
 // Full mock exam question set
