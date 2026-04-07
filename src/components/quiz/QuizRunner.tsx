@@ -13,6 +13,35 @@ interface Props {
 
 type Phase = 'active' | 'reviewing' | 'complete'
 
+function renderWithFurigana(
+  text: string,
+  map: Array<{ kanji: string; reading: string }>,
+): React.ReactNode {
+  const sorted = [...map].sort((a, b) => b.kanji.length - a.kanji.length)
+  const escaped = sorted.map(e => e.kanji.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  if (!escaped.length) return text
+  const regex = new RegExp(`(${escaped.join('|')})`, 'g')
+  const parts = text.split(regex)
+
+  return parts.map((part, i) => {
+    const entry = map.find(e => e.kanji === part)
+    if (entry) {
+      return (
+        <ruby key={i} className="ruby-reading">
+          {part}
+          <rt className="text-indigo-500 dark:text-indigo-400 text-[0.6em] font-normal">{entry.reading}</rt>
+        </ruby>
+      )
+    }
+    const lines = part.split('\n')
+    return lines.map((line, j) => (
+      j < lines.length - 1
+        ? <span key={`${i}-${j}`}>{line}<br /></span>
+        : <span key={`${i}-${j}`}>{line}</span>
+    ))
+  })
+}
+
 export function QuizRunner({ questions, onComplete, timeLimit, showExplanations = true }: Props) {
   const { preferredLanguage: lang } = useAppStore()
   const [index, setIndex] = useState(0)
@@ -89,6 +118,20 @@ export function QuizRunner({ questions, onComplete, timeLimit, showExplanations 
   const correctCount = results.filter(r => r.isCorrect).length
   const progress = ((index + (isAnswered ? 1 : 0)) / questions.length) * 100
 
+  // For reading questions: split prompt into passage + question
+  const isReading = current.type === 'reading'
+  const hasFuriganaMap = isReading && !!current.passageFuriganaMap?.length
+  let passageText = ''
+  let questionText = current.prompt
+  if (isReading) {
+    const sep = '\n\n---\n'
+    const sepIdx = current.prompt.indexOf(sep)
+    if (sepIdx !== -1) {
+      passageText = current.prompt.slice(0, sepIdx)
+      questionText = current.prompt.slice(sepIdx + sep.length)
+    }
+  }
+
   return (
     <div className="max-w-2xl mx-auto">
       {/* Sticky header — always visible during quiz */}
@@ -124,16 +167,54 @@ export function QuizRunner({ questions, onComplete, timeLimit, showExplanations 
           transition={{ duration: 0.2 }}
         >
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-5 md:p-6 border border-gray-200 dark:border-gray-700 mb-4">
-            <p className="font-jp text-base md:text-lg text-gray-900 dark:text-white whitespace-pre-wrap leading-relaxed">
-              {current.prompt}
-            </p>
-            {current.type === 'mondai2' && current.furiganaHint && !isAnswered && (
-              <button
-                onClick={() => setShowFurigana(v => !v)}
-                className="mt-2 text-xs text-indigo-400 dark:text-indigo-300 underline underline-offset-2 block"
-              >
-                {showFurigana ? `読み方: ${current.furiganaHint}` : t('showReading', lang)}
-              </button>
+            {isReading && passageText ? (
+              <>
+                {/* Passage block */}
+                <div className="relative">
+                  {hasFuriganaMap && (
+                    <button
+                      onClick={() => setShowFurigana(v => !v)}
+                      className={`absolute top-0 right-0 text-xs px-2 py-0.5 rounded-full border transition-colors ${
+                        showFurigana
+                          ? 'bg-indigo-100 dark:bg-indigo-900 border-indigo-300 dark:border-indigo-700 text-indigo-600 dark:text-indigo-300'
+                          : 'bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:border-indigo-300'
+                      }`}
+                    >
+                      ふ {showFurigana ? t('hideReading', lang) : t('furigana', lang)}
+                    </button>
+                  )}
+                  <p className="font-jp text-base md:text-lg text-gray-900 dark:text-white leading-relaxed pr-24">
+                    {showFurigana && hasFuriganaMap
+                      ? renderWithFurigana(passageText, current.passageFuriganaMap!)
+                      : passageText.split('\n').map((line, i, arr) => (
+                          i < arr.length - 1
+                            ? <span key={i}>{line}<br /></span>
+                            : <span key={i}>{line}</span>
+                        ))
+                    }
+                  </p>
+                </div>
+                {/* Divider + question */}
+                <div className="border-t border-gray-200 dark:border-gray-600 mt-4 pt-3">
+                  <p className="font-jp text-base md:text-lg text-gray-900 dark:text-white leading-relaxed">
+                    {questionText}
+                  </p>
+                </div>
+              </>
+            ) : (
+              <>
+                <p className="font-jp text-base md:text-lg text-gray-900 dark:text-white whitespace-pre-wrap leading-relaxed">
+                  {current.prompt}
+                </p>
+                {current.type === 'mondai2' && current.furiganaHint && !isAnswered && (
+                  <button
+                    onClick={() => setShowFurigana(v => !v)}
+                    className="mt-2 text-xs text-indigo-400 dark:text-indigo-300 underline underline-offset-2 block"
+                  >
+                    {showFurigana ? `読み方: ${current.furiganaHint}` : t('showReading', lang)}
+                  </button>
+                )}
+              </>
             )}
           </div>
 

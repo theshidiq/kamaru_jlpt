@@ -9,6 +9,7 @@ export interface QuizQuestion {
   correctIndex: number
   explanation?: string
   furiganaHint?: string
+  passageFuriganaMap?: Array<{ kanji: string; reading: string }>
   word?: string
   chapter?: number
   section?: number

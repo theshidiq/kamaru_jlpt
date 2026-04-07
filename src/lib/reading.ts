@@ -10,6 +10,7 @@ export interface ReadingPassage {
   title: string
   text: string
   questions: ReadingQuestion[]
+  furiganaMap?: Array<{ kanji: string; reading: string }>
 }
 
 export const READING_PASSAGES: ReadingPassage[] = [
@@ -25,6 +26,15 @@ export const READING_PASSAGES: ReadingPassage[] = [
 明日の午後2時に図書館の前で会いましょう。もし変更があれば、今夜中に連絡してください。
 
 山田より`,
+    furiganaMap: [
+      { kanji: '昨日', reading: 'きのう' },
+      { kanji: '電話', reading: 'でんわ' },
+      { kanji: '図書館', reading: 'としょかん' },
+      { kanji: '変更', reading: 'へんこう' },
+      { kanji: '今夜中', reading: 'こんやじゅう' },
+      { kanji: '連絡', reading: 'れんらく' },
+      { kanji: '午後', reading: 'ごご' },
+    ],
     questions: [
       {
         prompt: '山田さんはなぜメモを書きましたか。',
@@ -56,6 +66,17 @@ export const READING_PASSAGES: ReadingPassage[] = [
 その間は階段をご利用ください。ご不便をおかけして申し訳ありません。
 
 管理組合`,
+    furiganaMap: [
+      { kanji: '来週', reading: 'らいしゅう' },
+      { kanji: '月曜日', reading: 'げつようび' },
+      { kanji: '点検', reading: 'てんけん' },
+      { kanji: '午前', reading: 'ごぜん' },
+      { kanji: '午後', reading: 'ごご' },
+      { kanji: '階段', reading: 'かいだん' },
+      { kanji: '利用', reading: 'りよう' },
+      { kanji: '申し訳', reading: 'もうしわけ' },
+      { kanji: '管理組合', reading: 'かんりくみあい' },
+    ],
     questions: [
       {
         prompt: 'エレベーターが使えないのはいつですか。',
@@ -85,6 +106,14 @@ export const READING_PASSAGES: ReadingPassage[] = [
     title: '日記',
     text: `今日は友達のアキコと一緒に映画を見に行った。映画が終わったあと、近くのレストランで夕食を食べた。
 料理はおいしかったが、少し値段が高かった。次回はもう少し安いところを選ぼうと思う。`,
+    furiganaMap: [
+      { kanji: '友達', reading: 'ともだち' },
+      { kanji: '映画', reading: 'えいが' },
+      { kanji: '夕食', reading: 'ゆうしょく' },
+      { kanji: '料理', reading: 'りょうり' },
+      { kanji: '値段', reading: 'ねだん' },
+      { kanji: '次回', reading: 'じかい' },
+    ],
     questions: [
       {
         prompt: 'この人は今日、映画の後で何をしましたか。',
@@ -122,6 +151,15 @@ export const READING_PASSAGES: ReadingPassage[] = [
 ご都合をお知らせください。
 
 山本`,
+    furiganaMap: [
+      { kanji: '件名', reading: 'けんめい' },
+      { kanji: '週末', reading: 'しゅうまつ' },
+      { kanji: '予定', reading: 'よてい' },
+      { kanji: '土曜日', reading: 'どようび' },
+      { kanji: '天気予報', reading: 'てんきよほう' },
+      { kanji: '室内', reading: 'しつない' },
+      { kanji: '都合', reading: 'つごう' },
+    ],
     questions: [
       {
         prompt: '山本さんがメールを送った理由は何ですか。',
@@ -152,6 +190,14 @@ export const READING_PASSAGES: ReadingPassage[] = [
     text: `来月から日本語のクラスが変わります。今まで週2回でしたが、週3回になります。
 曜日は月・水・金です。時間は変わりません。
 授業料は来月から少し高くなりますので、詳しくは受付でご確認ください。`,
+    furiganaMap: [
+      { kanji: '来月', reading: 'らいげつ' },
+      { kanji: '日本語', reading: 'にほんご' },
+      { kanji: '曜日', reading: 'ようび' },
+      { kanji: '授業料', reading: 'じゅぎょうりょう' },
+      { kanji: '受付', reading: 'うけつけ' },
+      { kanji: '確認', reading: 'かくにん' },
+    ],
     questions: [
       {
         prompt: '来月から何が変わりますか。',
@@ -188,6 +234,22 @@ export const READING_PASSAGES: ReadingPassage[] = [
 燃えるごみには、野菜くずや残り物の食べ物などが含まれます。空き缶やびん、新聞紙などは資源ごみとして出します。大きな家具や電化製品は粗大ごみとして、事前に市に連絡してから出す必要があります。
 
 地域によってルールが違うので、引越しをしたら、まず市役所や町内会に確認することをおすすめします。正しいごみの出し方を守ることで、環境を守ることができます。`,
+    furiganaMap: [
+      { kanji: '分別', reading: 'ぶんべつ' },
+      { kanji: '市区町村', reading: 'しくちょうそん' },
+      { kanji: '燃えるごみ', reading: 'もえるごみ' },
+      { kanji: '燃えないごみ', reading: 'もえないごみ' },
+      { kanji: '資源', reading: 'しげん' },
+      { kanji: '粗大ごみ', reading: 'そだいごみ' },
+      { kanji: '野菜', reading: 'やさい' },
+      { kanji: '家具', reading: 'かぐ' },
+      { kanji: '電化製品', reading: 'でんかせいひん' },
+      { kanji: '事前', reading: 'じぜん' },
+      { kanji: '市役所', reading: 'しやくしょ' },
+      { kanji: '町内会', reading: 'ちょうないかい' },
+      { kanji: '環境', reading: 'かんきょう' },
+      { kanji: '引越し', reading: 'ひっこし' },
+    ],
     questions: [
       {
         prompt: '大きな家具を捨てたいとき、どうすればいいですか。',
@@ -230,6 +292,18 @@ export const READING_PASSAGES: ReadingPassage[] = [
 コンビニでは食べ物や飲み物だけでなく、公共料金の支払い、宅配便の受け取り、コピーやプリントなど、さまざまなサービスが利用できます。ATMが設置されている店も多く、銀行が閉まっている夜間でも現金を引き出すことができます。
 
 観光客にも人気で、特に外国人旅行者はコンビニのおにぎりやお弁当を「日本の食文化」として楽しんでいます。最近は英語や中国語など多言語対応のサービスも増えてきています。`,
+    furiganaMap: [
+      { kanji: '便利', reading: 'べんり' },
+      { kanji: '存在', reading: 'そんざい' },
+      { kanji: '公共料金', reading: 'こうきょうりょうきん' },
+      { kanji: '支払い', reading: 'しはらい' },
+      { kanji: '宅配便', reading: 'たくはいびん' },
+      { kanji: '現金', reading: 'げんきん' },
+      { kanji: '観光客', reading: 'かんこうきゃく' },
+      { kanji: '食文化', reading: 'しょくぶんか' },
+      { kanji: '多言語', reading: 'たげんご' },
+      { kanji: '設置', reading: 'せっち' },
+    ],
     questions: [
       {
         prompt: 'コンビニで「公共料金の支払い」ができるとはどういう意味ですか。',
@@ -272,6 +346,16 @@ export const READING_PASSAGES: ReadingPassage[] = [
 お辞儀の角度は状況によって違います。軽い挨拶では15度くらい頭を下げますが、ビジネスの場面では30度、深く謝るときは45度以上になることもあります。
 
 外国人の多くは最初、どれくらい頭を下げればいいのかわからないと感じるようです。しかし、心を込めて挨拶しようとする気持ちが伝われば、角度が少し違っても問題ありません。大切なのは、相手を大切に思う気持ちです。`,
+    furiganaMap: [
+      { kanji: '挨拶', reading: 'あいさつ' },
+      { kanji: '敬意', reading: 'けいい' },
+      { kanji: '感謝', reading: 'かんしゃ' },
+      { kanji: '角度', reading: 'かくど' },
+      { kanji: '状況', reading: 'じょうきょう' },
+      { kanji: '外国人', reading: 'がいこくじん' },
+      { kanji: '相手', reading: 'あいて' },
+      { kanji: '動作', reading: 'どうさ' },
+    ],
     questions: [
       {
         prompt: 'ビジネスの場面では、何度くらいお辞儀をしますか。',
@@ -314,6 +398,16 @@ export const READING_PASSAGES: ReadingPassage[] = [
 次に、優先席のそばでは心臓ペースメーカーなど医療機器への影響を考えて、スマートフォンの電源を切るか、マナーモードにするよう求められています。
 
 また、リュックサックは背中に背負ったままにせず、前に抱えるか棚の上に置くことが求められています。混んでいる電車では、荷物が他の乗客の邪魔になることがあるからです。これらのマナーを守ることで、みんなが快適に電車を利用できます。`,
+    furiganaMap: [
+      { kanji: '携帯電話', reading: 'けいたいでんわ' },
+      { kanji: '通話', reading: 'つうわ' },
+      { kanji: '優先席', reading: 'ゆうせんせき' },
+      { kanji: '心臓', reading: 'しんぞう' },
+      { kanji: '医療機器', reading: 'いりょうきき' },
+      { kanji: '電源', reading: 'でんげん' },
+      { kanji: '乗客', reading: 'じょうきゃく' },
+      { kanji: '快適', reading: 'かいてき' },
+    ],
     questions: [
       {
         prompt: '電車の中でスマートフォンを使ってゲームをするとき、どうすればいいですか。',
@@ -356,6 +450,16 @@ export const READING_PASSAGES: ReadingPassage[] = [
 料理を趣味にする理由はいくつかあります。まず、自分で作ることで食材や栄養管理ができ、健康的な食生活につながります。また、料理を通じて友人や家族とのコミュニケーションが増えるという面もあります。さらに、複雑なレシピに挑戦することで、達成感を得ることができます。
 
 インターネットやSNSの普及により、料理のレシピや動画が簡単に手に入るようになったことも、料理人口が増えた理由のひとつと考えられています。`,
+    furiganaMap: [
+      { kanji: '趣味', reading: 'しゅみ' },
+      { kanji: '世代', reading: 'せだい' },
+      { kanji: '食材', reading: 'しょくざい' },
+      { kanji: '栄養管理', reading: 'えいようかんり' },
+      { kanji: '健康', reading: 'けんこう' },
+      { kanji: '達成感', reading: 'たっせいかん' },
+      { kanji: '普及', reading: 'ふきゅう' },
+      { kanji: '料理人口', reading: 'りょうりじんこう' },
+    ],
     questions: [
       {
         prompt: '料理を趣味にする理由として述べられていないものはどれですか。',
@@ -409,6 +513,17 @@ export const READING_PASSAGES: ReadingPassage[] = [
 
 ※ 体験レッスンは初回のみ無料
 ※ 申し込みは電話またはホームページから`,
+    furiganaMap: [
+      { kanji: '講座', reading: 'こうざ' },
+      { kanji: '初級', reading: 'しょきゅう' },
+      { kanji: '生け花', reading: 'いけばな' },
+      { kanji: '料理', reading: 'りょうり' },
+      { kanji: '書道', reading: 'しょどう' },
+      { kanji: '月謝', reading: 'げっしゃ' },
+      { kanji: '定員', reading: 'ていいん' },
+      { kanji: '体験', reading: 'たいけん' },
+      { kanji: '申し込み', reading: 'もうしこみ' },
+    ],
     questions: [
       {
         prompt: '週2回通える講座はどれですか。',
@@ -448,6 +563,13 @@ export const READING_PASSAGES: ReadingPassage[] = [
 18:00  →  18:12  →  18:25
 
 ※ 土・日・祝日は10:30、14:00、16:30 発のみ`,
+    furiganaMap: [
+      { kanji: '時刻表', reading: 'じこくひょう' },
+      { kanji: '平日', reading: 'へいじつ' },
+      { kanji: '図書館', reading: 'としょかん' },
+      { kanji: '市役所', reading: 'しやくしょ' },
+      { kanji: '祝日', reading: 'しゅくじつ' },
+    ],
     questions: [
       {
         prompt: '土曜日の朝9時に駅前から図書館に行きたいです。何時のバスに乗ればいいですか。',
@@ -488,6 +610,18 @@ export const READING_PASSAGES: ReadingPassage[] = [
 
 ※ スイムキャップ着用必須。販売あり（300円）
 ※ 毎月第1・第3月曜日は清掃のため14:00閉館`,
+    furiganaMap: [
+      { kanji: '市民', reading: 'しみん' },
+      { kanji: '開館', reading: 'かいかん' },
+      { kanji: '定休日', reading: 'ていきゅうび' },
+      { kanji: '年末年始', reading: 'ねんまつねんし' },
+      { kanji: '料金', reading: 'りょうきん' },
+      { kanji: '高校生', reading: 'こうこうせい' },
+      { kanji: '中学生', reading: 'ちゅうがくせい' },
+      { kanji: '着用', reading: 'ちゃくよう' },
+      { kanji: '清掃', reading: 'せいそう' },
+      { kanji: '閉館', reading: 'へいかん' },
+    ],
     questions: [
       {
         prompt: '17歳の高校生が1回利用するとき、料金はいくらですか。',
@@ -528,6 +662,20 @@ export const READING_PASSAGES: ReadingPassage[] = [
 
 応募方法：電話またはメール
 連絡先：📞 03-1234-5678 / 📧 jobs@sample.com`,
+    furiganaMap: [
+      { kanji: '募集', reading: 'ぼしゅう' },
+      { kanji: '深夜', reading: 'しんや' },
+      { kanji: '早朝', reading: 'そうちょう' },
+      { kanji: '品出し', reading: 'しなだし' },
+      { kanji: '清掃', reading: 'せいそう' },
+      { kanji: '勤務', reading: 'きんむ' },
+      { kanji: '時給', reading: 'じきゅう' },
+      { kanji: '交通費', reading: 'こうつうひ' },
+      { kanji: '支給', reading: 'しきゅう' },
+      { kanji: '応募', reading: 'おうぼ' },
+      { kanji: '資格', reading: 'しかく' },
+      { kanji: '採用', reading: 'さいよう' },
+    ],
     questions: [
       {
         prompt: '17歳の高校生はこのアルバイトに応募できますか。',
@@ -569,6 +717,18 @@ export const READING_PASSAGES: ReadingPassage[] = [
 【返却について】
 　閉館中も、入口そばの返却ポストをご利用いただけます。
 　返却期限を過ぎた場合は、延滞した日数分、次回の貸し出しができなくなります。`,
+    furiganaMap: [
+      { kanji: '市立図書館', reading: 'しりつとしょかん' },
+      { kanji: '臨時', reading: 'りんじ' },
+      { kanji: '閉館', reading: 'へいかん' },
+      { kanji: '日程', reading: 'にってい' },
+      { kanji: '貸し出し', reading: 'かしだし' },
+      { kanji: '延長', reading: 'えんちょう' },
+      { kanji: '返却', reading: 'へんきゃく' },
+      { kanji: '入口', reading: 'いりぐち' },
+      { kanji: '返却期限', reading: 'へんきゃくきげん' },
+      { kanji: '延滞', reading: 'えんたい' },
+    ],
     questions: [
       {
         prompt: '4月11日（土）に本を返したい場合、どうすればいいですか。',

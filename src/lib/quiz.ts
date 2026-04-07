@@ -198,6 +198,7 @@ export function generateReadingQuiz(
       prompt: `[${passage.title}]\n\n${passage.text}\n\n---\n${q.prompt}`,
       options: q.options,
       correctIndex: q.correctIndex,
+      passageFuriganaMap: passage.furiganaMap,
     }))
   )
 }
