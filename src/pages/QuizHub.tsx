@@ -3,7 +3,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useProgress } from '@/hooks/useProgress'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
-import { RiBookMarkedLine, RiQuillPenLine, RiFileTextLine, RiTargetLine } from '@remixicon/react'
+import { RiBookMarkedLine, RiQuillPenLine, RiFileTextLine, RiTargetLine, RiFlashlightLine } from '@remixicon/react'
 import type { RemixiconComponentType } from '@remixicon/react'
 
 export function QuizHub() {
@@ -18,6 +18,15 @@ export function QuizHub() {
   }
 
   const cards: { to: string; title: string; subtitle: string; description: string; Icon: RemixiconComponentType; color: string; type: string }[] = [
+    {
+      to: '/flashcard',
+      title: t('flashcard', lang),
+      subtitle: t('flashcardFmt', lang),
+      description: t('flashcardDesc', lang),
+      Icon: RiFlashlightLine,
+      color: 'from-cyan-500 to-sky-500',
+      type: 'flashcard',
+    },
     {
       to: '/quiz/vocab',
       title: t('vocabQuizTitle', lang),

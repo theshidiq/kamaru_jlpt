@@ -18,6 +18,7 @@ import { Reading } from '@/pages/Reading'
 import { MockExam } from '@/pages/MockExam'
 import { Progress } from '@/pages/Progress'
 import { Leaderboard } from '@/pages/Leaderboard'
+import { FlashcardPicker } from '@/pages/FlashcardPicker'
 
 function AppInner() {
   useAuth()
@@ -40,6 +41,7 @@ function AppInner() {
         <Route path="/mock-exam" element={<ProtectedRoute><MockExam /></ProtectedRoute>} />
         <Route path="/progress" element={<ProtectedRoute><Progress /></ProtectedRoute>} />
         <Route path="/leaderboard" element={<ProtectedRoute><Leaderboard /></ProtectedRoute>} />
+        <Route path="/flashcard" element={<ProtectedRoute><FlashcardPicker /></ProtectedRoute>} />
       </Routes>
       <Toaster position="bottom-center" />
     </>

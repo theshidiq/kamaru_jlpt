@@ -1,5 +1,5 @@
 import { useState, useRef, useMemo } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useSearchParams } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
 import { useAppStore } from '@/store/useAppStore'
@@ -91,7 +91,10 @@ export function VocabSection() {
   const sec = Number(section)
   const { vocab, isLoading } = useVocab()
   const { wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
-  const [view, setView] = useState<'list' | 'flashcard'>('list')
+  const [searchParams] = useSearchParams()
+  const [view, setView] = useState<'list' | 'flashcard'>(
+    searchParams.get('view') === 'flashcard' ? 'flashcard' : 'list'
+  )
   const [cardIndex, setCardIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const [showHint, setShowHint] = useState(false)
