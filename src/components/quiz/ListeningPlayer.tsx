@@ -146,7 +146,10 @@ export function ListeningPlayer({ question, index, total, onAnswer, onNext, auto
             src={question.audioUrl}
             preload="auto"
             onLoadedMetadata={() => {
-              if (audioRef.current) setDuration(audioRef.current.duration)
+              const d = audioRef.current?.duration; if (d && isFinite(d)) setDuration(d)
+            }}
+            onDurationChange={() => {
+              const d = audioRef.current?.duration; if (d && isFinite(d)) setDuration(d)
             }}
             onTimeUpdate={() => {
               if (audioRef.current) setCurrentTime(audioRef.current.currentTime)

@@ -136,7 +136,8 @@ export function ListeningQuiz() {
             ref={introRef}
             src="/audio/listening/intro-instructions.mp3"
             preload="auto"
-            onLoadedMetadata={() => introRef.current && setInstrDuration(introRef.current.duration)}
+            onLoadedMetadata={() => { const d = introRef.current?.duration; if (d && isFinite(d)) setInstrDuration(d) }}
+            onDurationChange={() => { const d = introRef.current?.duration; if (d && isFinite(d)) setInstrDuration(d) }}
             onTimeUpdate={() => introRef.current && setInstrTime(introRef.current.currentTime)}
             onPlay={() => setInstrPlaying(true)}
             onPause={() => setInstrPlaying(false)}
@@ -215,7 +216,8 @@ export function ListeningQuiz() {
             ref={exampleRef}
             src="/audio/listening/intro-example.mp3"
             preload="auto"
-            onLoadedMetadata={() => exampleRef.current && setExDuration(exampleRef.current.duration)}
+            onLoadedMetadata={() => { const d = exampleRef.current?.duration; if (d && isFinite(d)) setExDuration(d) }}
+            onDurationChange={() => { const d = exampleRef.current?.duration; if (d && isFinite(d)) setExDuration(d) }}
             onTimeUpdate={() => exampleRef.current && setExTime(exampleRef.current.currentTime)}
             onEnded={() => { setStartTime(Date.now()); setPhase('quiz') }}
           />
