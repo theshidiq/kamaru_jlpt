@@ -3,7 +3,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useProgress } from '@/hooks/useProgress'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
-import { RiBookMarkedLine, RiQuillPenLine, RiFileTextLine, RiTargetLine, RiFlashlightLine } from '@remixicon/react'
+import { RiBookMarkedLine, RiQuillPenLine, RiFileTextLine, RiTargetLine, RiFlashlightLine, RiHeadphoneLine } from '@remixicon/react'
 import type { RemixiconComponentType } from '@remixicon/react'
 
 export function QuizHub() {
@@ -62,6 +62,15 @@ export function QuizHub() {
       Icon: RiTargetLine,
       color: 'from-orange-500 to-red-500',
       type: 'mock',
+    },
+    {
+      to: '/quiz/listening',
+      title: t('listeningTitle', lang),
+      subtitle: t('listeningFmt', lang),
+      description: t('listeningDesc', lang),
+      Icon: RiHeadphoneLine,
+      color: 'from-rose-500 to-pink-500',
+      type: 'listening',
     },
   ]
 

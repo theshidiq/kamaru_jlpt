@@ -138,6 +138,16 @@ const strings = {
     // GrammarQuiz / Reading
     grammarQuizPage: 'Grammar Quiz',
     readingPage: 'Reading Practice',
+    // Listening
+    listeningTitle: 'Listening Quiz',
+    listeningFmt: 'Mondai 1 — Task comprehension',
+    listeningDesc: '25 original dialogues with audio',
+    listeningQuizPage: 'Listening — 問題1',
+    playAudio: 'Play',
+    replayAudio: 'Replay',
+    waitingForAudio: 'Press play to start',
+    audioPlaying: 'Playing...',
+    audioDone: 'Choose your answer',
   },
   id: {
     // Word statuses
@@ -278,6 +288,16 @@ const strings = {
     // GrammarQuiz / Reading
     grammarQuizPage: 'Kuis Tata Bahasa',
     readingPage: 'Latihan Membaca',
+    // Listening
+    listeningTitle: 'Kuis Mendengarkan',
+    listeningFmt: 'Mondai 1 — Pemahaman tugas',
+    listeningDesc: '25 dialog original dengan audio',
+    listeningQuizPage: 'Mendengarkan — 問題1',
+    playAudio: 'Putar',
+    replayAudio: 'Putar Ulang',
+    waitingForAudio: 'Tekan putar untuk mulai',
+    audioPlaying: 'Memutar...',
+    audioDone: 'Pilih jawabanmu',
   },
 } as const
 
