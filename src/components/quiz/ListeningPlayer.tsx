@@ -188,7 +188,7 @@ export function ListeningPlayer({ question, index, total, onAnswer, onNext, auto
               </div>
               <div className="flex justify-between text-xs text-gray-400">
                 <span>{formatTime(currentTime)}</span>
-                <span>{duration > 0 ? formatTime(duration) : '--:--'}</span>
+                <span>{duration > 1 ? formatTime(duration) : '--:--'}</span>
               </div>
             </div>
 

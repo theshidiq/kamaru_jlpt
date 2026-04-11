@@ -162,21 +162,23 @@ export function ListeningQuiz() {
             </p>
           </div>
 
-          {/* Progress bar */}
-          {instrDuration > 0 && (
+          {/* Progress bar — shown once playing starts */}
+          {instrPlaying && (
             <div className="w-full max-w-sm space-y-1.5">
               <div className="flex justify-between text-xs text-gray-400">
                 <span>再生中...</span>
-                <span>
-                  {Math.floor(instrTime / 60)}:{String(Math.floor(instrTime % 60)).padStart(2, '0')}
-                  {' / '}
-                  {Math.floor(instrDuration / 60)}:{String(Math.floor(instrDuration % 60)).padStart(2, '0')}
-                </span>
+                {instrDuration > 0 && (
+                  <span>
+                    {Math.floor(instrTime / 60)}:{String(Math.floor(instrTime % 60)).padStart(2, '0')}
+                    {' / '}
+                    {Math.floor(instrDuration / 60)}:{String(Math.floor(instrDuration % 60)).padStart(2, '0')}
+                  </span>
+                )}
               </div>
               <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-rose-500 rounded-full transition-all duration-300"
-                  style={{ width: `${(instrTime / instrDuration) * 100}%` }}
+                  style={{ width: instrDuration > 0 ? `${(instrTime / instrDuration) * 100}%` : '100%' }}
                 />
               </div>
             </div>
@@ -254,21 +256,23 @@ export function ListeningQuiz() {
             ))}
           </div>
 
-          {/* Progress bar */}
-          {exDuration > 0 && (
+          {/* Progress bar — shown once playing starts */}
+          {exTime > 0 && (
             <div className="w-full max-w-sm space-y-1.5">
               <div className="flex justify-between text-xs text-gray-400">
                 <span>再生中...</span>
-                <span>
-                  {Math.floor(exTime / 60)}:{String(Math.floor(exTime % 60)).padStart(2, '0')}
-                  {' / '}
-                  {Math.floor(exDuration / 60)}:{String(Math.floor(exDuration % 60)).padStart(2, '0')}
-                </span>
+                {exDuration > 0 && (
+                  <span>
+                    {Math.floor(exTime / 60)}:{String(Math.floor(exTime % 60)).padStart(2, '0')}
+                    {' / '}
+                    {Math.floor(exDuration / 60)}:{String(Math.floor(exDuration % 60)).padStart(2, '0')}
+                  </span>
+                )}
               </div>
               <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-rose-500 rounded-full transition-all duration-300"
-                  style={{ width: `${(exTime / exDuration) * 100}%` }}
+                  style={{ width: exDuration > 0 ? `${(exTime / exDuration) * 100}%` : '100%' }}
                 />
               </div>
             </div>
