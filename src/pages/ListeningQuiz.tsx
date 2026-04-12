@@ -44,16 +44,16 @@ export function ListeningQuiz() {
   const [elapsed, setElapsed] = useState(0)
   const [startTime, setStartTime] = useState(0)
 
-  // intro-instructions audio state (28.4s hardcoded as Safari fallback)
+  // intro-instructions audio state (27.8s hardcoded as Safari fallback)
   const introRef = useRef<HTMLAudioElement>(null)
   const [instrTime, setInstrTime] = useState(0)
-  const [instrDuration, setInstrDuration] = useState(28.4)
+  const [instrDuration, setInstrDuration] = useState(27.8)
   const [instrPlaying, setInstrPlaying] = useState(false)
 
-  // intro-example audio state (54.0s hardcoded as Safari fallback)
+  // intro-example audio state (52.1s hardcoded as Safari fallback)
   const exampleRef = useRef<HTMLAudioElement>(null)
   const [exTime, setExTime] = useState(0)
-  const [exDuration, setExDuration] = useState(54.0)
+  const [exDuration, setExDuration] = useState(52.1)
 
   useEffect(() => {
     loadListeningQuestions()
