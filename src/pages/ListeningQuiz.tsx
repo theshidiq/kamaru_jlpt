@@ -44,16 +44,16 @@ export function ListeningQuiz() {
   const [elapsed, setElapsed] = useState(0)
   const [startTime, setStartTime] = useState(0)
 
-  // intro-instructions audio state
+  // intro-instructions audio state (28.4s hardcoded as Safari fallback)
   const introRef = useRef<HTMLAudioElement>(null)
   const [instrTime, setInstrTime] = useState(0)
-  const [instrDuration, setInstrDuration] = useState(0)
+  const [instrDuration, setInstrDuration] = useState(28.4)
   const [instrPlaying, setInstrPlaying] = useState(false)
 
-  // intro-example audio state
+  // intro-example audio state (54.0s hardcoded as Safari fallback)
   const exampleRef = useRef<HTMLAudioElement>(null)
   const [exTime, setExTime] = useState(0)
-  const [exDuration, setExDuration] = useState(0)
+  const [exDuration, setExDuration] = useState(54.0)
 
   useEffect(() => {
     loadListeningQuestions()
@@ -167,18 +167,16 @@ export function ListeningQuiz() {
             <div className="w-full max-w-sm space-y-1.5">
               <div className="flex justify-between text-xs text-gray-400">
                 <span>再生中...</span>
-                {instrDuration > 0 && (
-                  <span>
-                    {Math.floor(instrTime / 60)}:{String(Math.floor(instrTime % 60)).padStart(2, '0')}
-                    {' / '}
-                    {Math.floor(instrDuration / 60)}:{String(Math.floor(instrDuration % 60)).padStart(2, '0')}
-                  </span>
-                )}
+                <span>
+                  {Math.floor(instrTime / 60)}:{String(Math.floor(instrTime % 60)).padStart(2, '0')}
+                  {' / '}
+                  {Math.floor(instrDuration / 60)}:{String(Math.floor(instrDuration % 60)).padStart(2, '0')}
+                </span>
               </div>
               <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-rose-500 rounded-full transition-all duration-300"
-                  style={{ width: instrDuration > 0 ? `${(instrTime / instrDuration) * 100}%` : '100%' }}
+                  style={{ width: `${(instrTime / instrDuration) * 100}%` }}
                 />
               </div>
             </div>
@@ -261,18 +259,16 @@ export function ListeningQuiz() {
             <div className="w-full max-w-sm space-y-1.5">
               <div className="flex justify-between text-xs text-gray-400">
                 <span>再生中...</span>
-                {exDuration > 0 && (
-                  <span>
-                    {Math.floor(exTime / 60)}:{String(Math.floor(exTime % 60)).padStart(2, '0')}
-                    {' / '}
-                    {Math.floor(exDuration / 60)}:{String(Math.floor(exDuration % 60)).padStart(2, '0')}
-                  </span>
-                )}
+                <span>
+                  {Math.floor(exTime / 60)}:{String(Math.floor(exTime % 60)).padStart(2, '0')}
+                  {' / '}
+                  {Math.floor(exDuration / 60)}:{String(Math.floor(exDuration % 60)).padStart(2, '0')}
+                </span>
               </div>
               <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-rose-500 rounded-full transition-all duration-300"
-                  style={{ width: exDuration > 0 ? `${(exTime / exDuration) * 100}%` : '100%' }}
+                  style={{ width: `${(exTime / exDuration) * 100}%` }}
                 />
               </div>
             </div>
