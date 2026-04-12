@@ -55,15 +55,6 @@ export function QuizHub() {
       type: 'reading',
     },
     {
-      to: '/mock-exam',
-      title: t('mockExamTitle', lang),
-      subtitle: t('mockExamFmt', lang),
-      description: t('mockExamDesc', lang),
-      Icon: RiTargetLine,
-      color: 'from-orange-500 to-red-500',
-      type: 'mock',
-    },
-    {
       to: '/quiz/listening',
       title: t('listeningTitle', lang),
       subtitle: t('listeningFmt', lang),
@@ -71,6 +62,15 @@ export function QuizHub() {
       Icon: RiHeadphoneLine,
       color: 'from-rose-500 to-pink-500',
       type: 'listening',
+    },
+    {
+      to: '/mock-exam',
+      title: t('mockExamTitle', lang),
+      subtitle: t('mockExamFmt', lang),
+      description: t('mockExamDesc', lang),
+      Icon: RiTargetLine,
+      color: 'from-orange-500 to-red-500',
+      type: 'mock',
     },
   ]
 
