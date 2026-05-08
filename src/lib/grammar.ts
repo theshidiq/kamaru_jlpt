@@ -107,7 +107,7 @@ export const GRAMMAR_QUESTIONS: GrammarQuestion[] = [
   {
     id: 'g012',
     sentence: '健康（　　）毎日運動しています。',
-    options: ['のために', 'のように', 'のために', 'のばかり'],
+    options: ['のために', 'のように', 'のばかり', 'のせいで'],
     correctIndex: 0,
     explanation: 'ために after a noun expresses purpose or cause. 健康のために = for one\'s health.',
     pattern: 'ために',
@@ -346,7 +346,7 @@ export const GRAMMAR_QUESTIONS: GrammarQuestion[] = [
   {
     id: 'g039',
     sentence: '朝ご飯を食べ（　　）、学校に来てしまった。',
-    options: ['ないで', 'なくて', 'ずに', 'ないで'],
+    options: ['ないで', 'なくて', 'ずに', 'なければ'],
     correctIndex: 0,
     explanation: 'ないで = without doing (same as ずに). Came to school without eating breakfast.',
     pattern: 'ないで',

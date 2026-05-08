@@ -169,14 +169,18 @@ export function generateGrammarQuiz(
     : bank
   return shuffle(pool)
     .slice(0, count)
-    .map(q => ({
-      id: nextId('g'),
-      type: 'grammar' as const,
-      prompt: q.sentence,
-      options: q.options,
-      correctIndex: q.correctIndex,
-      explanation: q.explanation,
-    }))
+    .map(q => {
+      const correct = q.options[q.correctIndex]
+      const shuffled = shuffle([...q.options])
+      return {
+        id: nextId('g'),
+        type: 'grammar' as const,
+        prompt: q.sentence,
+        options: shuffled,
+        correctIndex: shuffled.indexOf(correct),
+        explanation: q.explanation,
+      }
+    })
 }
 
 // Reading quiz — draw from READING_PASSAGES bank
@@ -193,12 +197,14 @@ export function generateReadingQuiz(
 
   return passages.map(passage => {
     const q = passage.questions[Math.floor(Math.random() * passage.questions.length)]
+    const correct = q.options[q.correctIndex]
+    const shuffled = shuffle([...q.options])
     return {
       id: nextId('r'),
       type: 'reading' as const,
       prompt: `[${passage.title}]\n\n${passage.text}\n\n---\n${q.prompt}`,
-      options: q.options,
-      correctIndex: q.correctIndex,
+      options: shuffled,
+      correctIndex: shuffled.indexOf(correct),
       passageFuriganaMap: passage.furiganaMap,
       passageId: passage.id,
     }
