@@ -40945,11 +40945,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "くもる",
   "meaning_vi": "Mây mù, trời mây",
-  "meaning_en": "Mây mù, trời mây",
+  "meaning_en": "become cloudy, cloud over",
   "example": {
    "jp": "今（いま）はくもっているが、すぐに晴（は）れるだろう。",
    "vi": "Bây giờ trời đang mây nhưng có lẽ sẽ ngắng ngay thôi.",
-   "en": "Bây giờ trời đang mây nhưng có lẽ sẽ ngắng ngay thôi.",
+   "en": "It's cloudy now, but it will probably clear up soon.",
    "seg": [
     {
      "t": "今",
@@ -40977,12 +40977,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "嵐",
   "meaning_vi": "Bão, giông tố",
-  "meaning_en": "Bão, giông tố",
+  "meaning_en": "storm",
   "furigana": "あらし",
   "example": {
    "jp": "嵐（あらし）になりそうなので、早（はや）めに家（いえ）に帰（かえ）ろう。",
    "vi": "Có lẽ sẽ có bão nên nhanh chóng về nhà thôi!",
-   "en": "Có lẽ sẽ có bão nên nhanh chóng về nhà thôi!",
+   "en": "It looks like a storm is coming, so let's head home early.",
    "seg": [
     {
      "t": "嵐",
@@ -41024,12 +41024,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "強風",
   "meaning_vi": "gió to",
-  "meaning_en": "gió to",
+  "meaning_en": "strong wind, gale",
   "furigana": "きょうふう",
   "example": {
    "jp": "強風（きょうふう）で木（き）が倒（たお）れた。",
    "vi": "Gió to làm đổ cây.",
-   "en": "Gió to làm đổ cây.",
+   "en": "A tree fell in the strong wind.",
    "seg": [
     {
      "t": "強風",
@@ -41064,12 +41064,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "大雨",
   "meaning_vi": "Mưa to",
-  "meaning_en": "Mưa to",
+  "meaning_en": "heavy rain",
   "furigana": "おおあめ",
   "example": {
    "jp": "昨日（きのう）は大雨（おおあめ）で出（で）かけられなかった。",
    "vi": "Hôm qua mưa to nên tôi không thể đi ra ngoài được.",
-   "en": "Hôm qua mưa to nên tôi không thể đi ra ngoài được.",
+   "en": "It rained heavily yesterday, so I couldn't go out.",
    "seg": [
     {
      "t": "昨日",
@@ -41104,12 +41104,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "折りたたみ傘",
   "meaning_vi": "Ô gấp, dù xếp",
-  "meaning_en": "Ô gấp, dù xếp",
+  "meaning_en": "folding umbrella",
   "furigana": "おりたたみがさ",
   "example": {
    "jp": "折（お）りたたみ傘（がさ）をバッグに入（い）れて、出（で）かける。",
    "vi": "Tôi bỏ chiếc ô gấp vào túi xách và đi ra ngoài",
-   "en": "Tôi bỏ chiếc ô gấp vào túi xách và đi ra ngoài",
+   "en": "I put a folding umbrella in my bag and head out.",
    "seg": [
     {
      "t": "折",
@@ -41151,12 +41151,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "（傘を）さす",
   "meaning_vi": "Che (ô)",
-  "meaning_en": "Che (ô)",
+  "meaning_en": "put up (an umbrella)",
   "furigana": "さす",
   "example": {
    "jp": "雨（あめ）の中（なか）、傘（かさ）をさしていない人（ひと）もいる。",
    "vi": "Trong mưa cũng có người không che ô.",
-   "en": "Trong mưa cũng có người không che ô.",
+   "en": "Even in the rain, some people don't put up an umbrella.",
    "seg": [
     {
      "t": "雨",
@@ -41198,12 +41198,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "にわか雨",
   "meaning_vi": "Mưa rào",
-  "meaning_en": "Mưa rào",
+  "meaning_en": "shower, sudden rain",
   "furigana": "にわかあめ",
   "example": {
    "jp": "にわか雨が降（お）りそうなので、傘（かさ）を持（も）って行（い）く。",
    "vi": "Có vẻ sẽ có mưa rào nên tôi mang ô đi.",
-   "en": "Có vẻ sẽ có mưa rào nên tôi mang ô đi.",
+   "en": "It looks like there might be a shower, so I'll take an umbrella.",
    "seg": [
     {
      "t": "にわか雨が"
@@ -41248,12 +41248,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "突然",
   "meaning_vi": "Bỗng nhiên",
-  "meaning_en": "Bỗng nhiên",
+  "meaning_en": "suddenly, all at once",
   "furigana": "とつぜん",
   "example": {
    "jp": "突然（とつぜん）、空（そら）が暗（くら）くなった。",
    "vi": "Bỗng nhiên trời tối.",
-   "en": "Bỗng nhiên trời tối.",
+   "en": "Suddenly, the sky went dark.",
    "seg": [
     {
      "t": "突然",
@@ -41288,11 +41288,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "とたん[に]",
   "meaning_vi": "Vừa mới",
-  "meaning_en": "Vừa mới",
+  "meaning_en": "the moment (that), just as",
   "example": {
    "jp": "家（いえ）に帰（かえ）ると、とたんに雨（あめ）が降（ふ）ってきた。",
    "vi": "Vừa mới về đến nhà thì trời đổ mưa.",
-   "en": "Vừa mới về đến nhà thì trời đổ mưa.",
+   "en": "The moment I got home, it started to rain.",
    "seg": [
     {
      "t": "家",
@@ -41334,11 +41334,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "ぬれる",
   "meaning_vi": "Bị ướt, ướt",
-  "meaning_en": "Bị ướt, ướt",
+  "meaning_en": "get wet",
   "example": {
    "jp": "傘（かさ）がなくて、雨（あめ）にぬれた。",
    "vi": "Không có ô, bị mưa ướt.",
-   "en": "Không có ô, bị mưa ướt.",
+   "en": "I didn't have an umbrella and got soaked in the rain.",
    "seg": [
     {
      "t": "傘",
@@ -41366,12 +41366,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "あっという間",
   "meaning_vi": "Chẳng mấy chốc, loáng một cái",
-  "meaning_en": "Chẳng mấy chốc, loáng một cái",
+  "meaning_en": "in an instant, in no time",
   "furigana": "あっというま",
   "example": {
    "jp": "雨（あめ）はあっという間に、はげしくなった。",
    "vi": "Mưa chẳng mấy chốc trở nên dữ dội.",
-   "en": "Mưa chẳng mấy chốc trở nên dữ dội.",
+   "en": "The rain grew heavy in no time.",
    "seg": [
     {
      "t": "雨",
@@ -41392,12 +41392,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "止む",
   "meaning_vi": "Tạnh, ngớt",
-  "meaning_en": "Tạnh, ngớt",
+  "meaning_en": "stop, let up (of rain)",
   "furigana": "やむ",
   "example": {
    "jp": "にわか雨なので、すぐに止（や）むだろう。",
    "vi": "Mưa rào nên chắc là sẽ tạnh ngay thôi.",
-   "en": "Mưa rào nên chắc là sẽ tạnh ngay thôi.",
+   "en": "It's just a shower, so it'll probably stop soon.",
    "seg": [
     {
      "t": "にわか雨なので、すぐに"
@@ -41421,11 +41421,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "ところどころ",
   "meaning_vi": "Chỗ này chỗ kia",
-  "meaning_en": "Chỗ này chỗ kia",
+  "meaning_en": "here and there, in places",
   "example": {
    "jp": "昨日（きのう）降（ふ）った雪（ゆき）が、ところどころにのこっている。",
    "vi": "Tuyết rơi ngày hôm qua vẫn còn ở chỗ này chỗ kia.",
-   "en": "Tuyết rơi ngày hôm qua vẫn còn ở chỗ này chỗ kia.",
+   "en": "The snow that fell yesterday is still lying in places.",
    "seg": [
     {
      "t": "昨日",
@@ -41457,12 +41457,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "積もる",
   "meaning_vi": "Tích tụ, chất đống, phủ",
-  "meaning_en": "Tích tụ, chất đống, phủ",
+  "meaning_en": "pile up, accumulate",
   "furigana": "つもる",
   "example": {
    "jp": "雪（ゆき）が積（つ）もっているので、気（き）をつけて歩（ある）こう。",
    "vi": "Tuyết phủ đầy nên đi cẩn thận nhé!",
-   "en": "Tuyết phủ đầy nên đi cẩn thận nhé!",
+   "en": "The snow has piled up, so let's walk carefully.",
    "seg": [
     {
      "t": "雪",
@@ -41504,12 +41504,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "快晴",
   "meaning_vi": "Trời trong xanh",
-  "meaning_en": "Trời trong xanh",
+  "meaning_en": "perfectly clear weather",
   "furigana": "かいせい",
   "example": {
    "jp": "今日（きょう）は快晴（かいせい）で、雲（くも）が一（ひと）つもない。",
    "vi": "Hôm nay trời trong xanh, không có một đám mây nào.",
-   "en": "Hôm nay trời trong xanh, không có một đám mây nào.",
+   "en": "Today is perfectly clear, without a single cloud.",
    "seg": [
     {
      "t": "今日",
@@ -41551,11 +41551,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "かがやく",
   "meaning_vi": "Sáng lung linh, sáng lấp lánh",
-  "meaning_en": "Sáng lung linh, sáng lấp lánh",
+  "meaning_en": "shine, sparkle, glitter",
   "example": {
    "jp": "今夜（こんや）は、月（つき）がかがやいている。",
    "vi": "Đêm nay, trang sáng lung linh.",
-   "en": "Đêm nay, trang sáng lung linh.",
+   "en": "Tonight, the moon is shining brightly.",
    "seg": [
     {
      "t": "今夜",
@@ -41583,11 +41583,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "まぶしい",
   "meaning_vi": "Chói, chói lóa",
-  "meaning_en": "Chói, chói lóa",
+  "meaning_en": "dazzling, glaring",
   "example": {
    "jp": "急（きゅう）に天気（てんき）がよくなって、太陽（たいよう）がまぶしい。",
    "vi": "Đột nhiên trời nắng, mặt trời chói chang.",
-   "en": "Đột nhiên trời nắng, mặt trời chói chang.",
+   "en": "The weather cleared up suddenly and the sun is dazzling.",
    "seg": [
     {
      "t": "急",
@@ -41622,11 +41622,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "のち",
   "meaning_vi": "Sau",
-  "meaning_en": "Sau",
+  "meaning_en": "later, followed by",
   "example": {
    "jp": "明日（あした）の天気（てんき）は、雨（あめ）のち晴（は）れだそうだ。",
    "vi": "Thời tiết ngày mai sau mưa trời nắng.",
-   "en": "Thời tiết ngày mai sau mưa trời nắng.",
+   "en": "Tomorrow's weather is supposed to be rain, later clearing.",
    "seg": [
     {
      "t": "明日",
@@ -41668,12 +41668,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "当たる",
   "meaning_vi": "Trúng, đúng",
-  "meaning_en": "Trúng, đúng",
+  "meaning_en": "be right, hit the mark",
   "furigana": "あたる",
   "example": {
    "jp": "この番組（ばんぐみ）の天気（てんき）予報（よほう）は、よく当（あ）たる。",
    "vi": "Dự báo thời tiết của chương trình này hay đúng.",
-   "en": "Dự báo thời tiết của chương trình này hay đúng.",
+   "en": "The weather forecast on this program is often right.",
    "seg": [
     {
      "t": "この"
@@ -41715,11 +41715,11 @@
   "section_title": "Thời tiết ngày mai",
   "word": "ふるさと",
   "meaning_vi": "Quê, quê hương",
-  "meaning_en": "Quê, quê hương",
+  "meaning_en": "hometown, native place",
   "example": {
    "jp": "私（わたし）のふるさとでは、雪（ゆき）がたくさん降（ふ）る。",
    "vi": "Quê tôi tuyết rơi nhiều.",
-   "en": "Quê tôi tuyết rơi nhiều.",
+   "en": "In my hometown, it snows a lot.",
    "seg": [
     {
      "t": "私",
@@ -41754,12 +41754,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "蒸し暑い",
   "meaning_vi": "Nóng ẩm, oi bức",
-  "meaning_en": "Nóng ẩm, oi bức",
+  "meaning_en": "humid and hot, muggy",
   "furigana": "むしあつい",
   "example": {
    "jp": "今日（きょう）は湿度（しつど）が高（たか）くて、蒸し暑（むしあつ）い。",
    "vi": "Hôm nay độ ẩm cao, trời oi bức.",
-   "en": "Hôm nay độ ẩm cao, trời oi bức.",
+   "en": "The humidity is high today and it's muggy.",
    "seg": [
     {
      "t": "今日",
@@ -41801,12 +41801,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "温度計",
   "meaning_vi": "Nhiệt kế",
-  "meaning_en": "Nhiệt kế",
+  "meaning_en": "thermometer",
   "furigana": "おんどけい",
   "example": {
    "jp": "この温度（おんど）計（けい）は湿度（しつど）も測（はか）れる。",
    "vi": "Nhiệt kế này có thể đo cả độ ẩm.",
-   "en": "Nhiệt kế này có thể đo cả độ ẩm.",
+   "en": "This thermometer can measure humidity too.",
    "seg": [
     {
      "t": "この"
@@ -41848,11 +41848,11 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "プラス",
   "meaning_vi": "Dương, tăng",
-  "meaning_en": "Dương, tăng",
+  "meaning_en": "plus, above zero",
   "example": {
    "jp": "明日（あした）の気温（きおん）は、今日（きょう）と比（くら）べてプラス3度（ど）らしい。",
    "vi": "Nghe nói nhiệt độ ngày mai tăng 3 độ so với hôm nay.",
-   "en": "Nghe nói nhiệt độ ngày mai tăng 3 độ so với hôm nay.",
+   "en": "Tomorrow's temperature is apparently three degrees higher than today's.",
    "seg": [
     {
      "t": "明日",
@@ -41901,11 +41901,11 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "マイナス",
   "meaning_vi": "Âm, giảm",
-  "meaning_en": "Âm, giảm",
+  "meaning_en": "minus, below zero",
   "example": {
    "jp": "①今日（きょう）の気温（きおん）は、昨日（きのう）と比（くら）べてマイナス10たった。 ②明日（あした）の朝（あさ）の気温（きおん）は、マイナスになるだろう。",
    "vi": "①Nhiệt độ ngày hôm nay giảm 10 độ so với ngày hôm qua. ②Nhiệt độ buổi sáng ngày mai có lẽ sẽ xuống âm.",
-   "en": "①Nhiệt độ ngày hôm nay giảm 10 độ so với ngày hôm qua. ②Nhiệt độ buổi sáng ngày mai có lẽ sẽ xuống âm.",
+   "en": "(1) Today's temperature was ten degrees lower than yesterday's. (2) Tomorrow morning's temperature will probably be below zero.",
    "seg": [
     {
      "t": "①"
@@ -41971,12 +41971,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "凍る",
   "meaning_vi": "Đóng băng",
-  "meaning_en": "Đóng băng",
+  "meaning_en": "freeze",
   "furigana": "こおる",
   "example": {
    "jp": "道（みち）が凍（こお）っていて、とても危（あぶ）ない。",
    "vi": "Đường đóng băng, rất nguy hiểm.",
-   "en": "Đường đóng băng, rất nguy hiểm.",
+   "en": "The road is frozen and it's very dangerous.",
    "seg": [
     {
      "t": "道",
@@ -42011,12 +42011,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "氷",
   "meaning_vi": "Băng, đá",
-  "meaning_en": "Băng, đá",
+  "meaning_en": "ice",
   "furigana": "こおり",
   "example": {
    "jp": "夏（なつ）、冷凍庫（れいとうこ）で氷（こおり）を作（つく）っておく。",
    "vi": "Mùa hè, tôi làm sẵn đá bằng tủ đông.",
-   "en": "Mùa hè, tôi làm sẵn đá bằng tủ đông.",
+   "en": "In summer, I make ice in the freezer ahead of time.",
    "seg": [
     {
      "t": "夏",
@@ -42058,12 +42058,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "冷える",
   "meaning_vi": "Lạnh, cóng",
-  "meaning_en": "Lạnh, cóng",
+  "meaning_en": "get cold, cool down",
   "furigana": "ひえる",
   "example": {
    "jp": "天気（てんき）予報（よほう）によると、夕方（ゆうがた）から冷（ひ）えるらしい。",
    "vi": "Theo dự báo thời tiết, từ chiều tối trời sẽ lạnh.",
-   "en": "Theo dự báo thời tiết, từ chiều tối trời sẽ lạnh.",
+   "en": "According to the forecast, it will get cold from the evening.",
    "seg": [
     {
      "t": "天気",
@@ -42102,11 +42102,11 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "けっこう",
   "meaning_vi": "Khá",
-  "meaning_en": "Khá",
+  "meaning_en": "quite, fairly, rather",
   "example": {
    "jp": "今週（こんしゅう）、けっこう寒（さむ）い日（ひ）が続（つづ）いている。",
    "vi": "Tuần này, những ngày khá lạnh sẽ kéo dài.",
-   "en": "Tuần này, những ngày khá lạnh sẽ kéo dài.",
+   "en": "This week, quite cold days have been continuing.",
    "seg": [
     {
      "t": "今週",
@@ -42148,12 +42148,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "非常な",
   "meaning_vi": "Rất",
-  "meaning_en": "Rất",
+  "meaning_en": "extreme, exceedingly",
   "furigana": "ひじょうな",
   "example": {
    "jp": "今年（ことし）の夏（なつ）は、非常（ひじょう）に暑（あつ）くなりそうだ。",
    "vi": "Mùa hè năm nay có vẻ sẽ rất nóng.",
-   "en": "Mùa hè năm nay có vẻ sẽ rất nóng.",
+   "en": "This summer looks like it will be extremely hot.",
    "seg": [
     {
      "t": "今年",
@@ -42195,12 +42195,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "夏日",
   "meaning_vi": "Ngày hè nhiệt độ trên 25 độ",
-  "meaning_en": "Ngày hè nhiệt độ trên 25 độ",
+  "meaning_en": "summer day (with a high of 25°C or above)",
   "furigana": "なつび",
   "example": {
    "jp": "今日（きょう）は、今年（ことし）初（はじ）めての夏（なつ）日（び）になった。",
    "vi": "Hôm nay là ngày hè đầu tiên trong năm nhiệt độ trên 25 độ.",
-   "en": "Hôm nay là ngày hè đầu tiên trong năm nhiệt độ trên 25 độ.",
+   "en": "Today was the first summer day of the year.",
    "seg": [
     {
      "t": "今日",
@@ -42243,12 +42243,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "真夏日",
   "meaning_vi": "Ngày hè nóng trên 30 độ",
-  "meaning_en": "Ngày hè nóng trên 30 độ",
+  "meaning_en": "midsummer day (with a high of 30°C or above)",
   "furigana": "まなつび",
   "example": {
    "jp": "今年（ことし）は、真夏（まなつ）日（び）が多（おお）いそうだ。",
    "vi": "Nghe nói năm nay những ngày hè nóng trên 30 độ nhiều.",
-   "en": "Nghe nói năm nay những ngày hè nóng trên 30 độ nhiều.",
+   "en": "Apparently there will be a lot of midsummer days this year.",
    "seg": [
     {
      "t": "今年",
@@ -42287,12 +42287,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "猛暑日",
   "meaning_vi": "Ngày hè cực nóng trên 35 độ",
-  "meaning_en": "Ngày hè cực nóng trên 35 độ",
+  "meaning_en": "extremely hot day (with a high of 35°C or above)",
   "furigana": "もうしょび",
   "example": {
    "jp": "猛暑（もうしょ）日（び）が続（つづ）いているので、体（からだ）に気（き）をつけている。",
    "vi": "Những ngày hè cực nóng trên 35 độ kéo dài nên chú ý giữ gìn sức khỏe.",
-   "en": "Những ngày hè cực nóng trên 35 độ kéo dài nên chú ý giữ gìn sức khỏe.",
+   "en": "Extremely hot days have been continuing, so I'm looking after my health.",
    "seg": [
     {
      "t": "猛暑",
@@ -42338,12 +42338,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "冬日",
   "meaning_vi": "Ngày đông nhiệt độ thấp nhất dưới âm",
-  "meaning_en": "Ngày đông nhiệt độ thấp nhất dưới âm",
+  "meaning_en": "winter day (with a low below 0°C)",
   "furigana": "ふゆび",
   "example": {
    "jp": "冬日（ふゆび）には、手袋（てぶくろ）もマフラーを必要（ひつよう）だ。",
    "vi": "Trong ngày đông nhiệt độ thấp nhất dưới 0 độ cần cả găng tay và khăn quàng cổ.",
-   "en": "Trong ngày đông nhiệt độ thấp nhất dưới 0 độ cần cả găng tay và khăn quàng cổ.",
+   "en": "On winter days, you need both gloves and a scarf.",
    "seg": [
     {
      "t": "冬日",
@@ -42378,12 +42378,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "真冬日",
   "meaning_vi": "Ngày đông hàn nhiệt độ cao nhất dưới âm",
-  "meaning_en": "Ngày đông hàn nhiệt độ cao nhất dưới âm",
+  "meaning_en": "midwinter day (with a high below 0°C)",
   "furigana": "まふゆび",
   "example": {
    "jp": "東京（とうきょう）で、真冬（まふゆ）日（び）はとても珍（めずら）しい。",
    "vi": "Ở Tokyo rất hiếm những ngày đông nhiệt độ cao nhất dưới 0 độ.",
-   "en": "Ở Tokyo rất hiếm những ngày đông nhiệt độ cao nhất dưới 0 độ.",
+   "en": "Midwinter days are very rare in Tokyo.",
    "seg": [
     {
      "t": "東京",
@@ -42422,12 +42422,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "暖冬",
   "meaning_vi": "Mùa đông ấm",
-  "meaning_en": "Mùa đông ấm",
+  "meaning_en": "mild winter, warm winter",
   "furigana": "だんとう",
   "example": {
    "jp": "今年（ことし）は暖冬（だんとう）で、雪（ゆき）が少（すく）ない。",
    "vi": "Năm nay mùa đông ấm, tuyết rơi ít.",
-   "en": "Năm nay mùa đông ấm, tuyết rơi ít.",
+   "en": "It's a mild winter this year, and there's little snow.",
    "seg": [
     {
      "t": "今年",
@@ -42469,12 +42469,12 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "冷夏",
   "meaning_vi": "Mùa hè mát",
-  "meaning_en": "Mùa hè mát",
+  "meaning_en": "cool summer",
   "furigana": "れいか",
   "example": {
    "jp": "冷夏（れいか）になると、海（うみ）に行（い）く人（ひと）が減（へ）る。",
    "vi": "Khi mùa hè mát hơn mọi năm, những người đi biển giảm.",
-   "en": "Khi mùa hè mát hơn mọi năm, những người đi biển giảm.",
+   "en": "When there's a cool summer, fewer people go to the beach.",
    "seg": [
     {
      "t": "冷夏",
@@ -42523,11 +42523,11 @@
   "section_title": "Ngày nóng và ngày lạnh",
   "word": "せっかく",
   "meaning_vi": "Chẳng mấy khi, được",
-  "meaning_en": "Chẳng mấy khi, được",
+  "meaning_en": "after all the trouble, precious (opportunity)",
   "example": {
    "jp": "せっかくの休（やす）みなのに、天気（てんき）が悪（わる）くて寒（さむ）い。",
    "vi": "Được ngày nghỉ mà thời tiết vừa xấu vừa lạnh.",
-   "en": "Được ngày nghỉ mà thời tiết vừa xấu vừa lạnh.",
+   "en": "It's my precious day off, and the weather is bad and cold.",
    "seg": [
     {
      "t": "せっかくの"
@@ -42572,12 +42572,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "状態",
   "meaning_vi": "Trạng thái, tình trạng",
-  "meaning_en": "Trạng thái, tình trạng",
+  "meaning_en": "state, condition",
   "furigana": "じょうたい",
   "example": {
    "jp": "大雨（おおあめ）で、この川（かわ）は危険（きけん）な状態（じょうたい）だ。",
    "vi": "Trời mưa lớn, con sông này trong tình trạng nguy hiểm.",
-   "en": "Trời mưa lớn, con sông này trong tình trạng nguy hiểm.",
+   "en": "Because of the heavy rain, this river is in a dangerous state.",
    "seg": [
     {
      "t": "大雨",
@@ -42619,12 +42619,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "変化＜する＞",
   "meaning_vi": "Sự thay đổi",
-  "meaning_en": "Sự thay đổi",
+  "meaning_en": "change",
   "furigana": "へんか",
   "example": {
    "jp": "旅行（りょこう）中（ちゅう）、天気（てんき）の変化（へんか）がとても気（き）になる。",
    "vi": "Trong thời gian du lịch tô rất bận tâm về sự thay đổi của thời tiết.",
-   "en": "Trong thời gian du lịch tô rất bận tâm về sự thay đổi của thời tiết.",
+   "en": "While traveling, I pay close attention to changes in the weather.",
    "seg": [
     {
      "t": "旅行",
@@ -42670,12 +42670,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "一定＜する＞",
   "meaning_vi": "Sự ổn định",
-  "meaning_en": "Sự ổn định",
+  "meaning_en": "constant, steady, fixed",
   "furigana": "いってい",
   "example": {
    "jp": "最近（さいきん）、気温（きおん）が一定（いってい）している。",
    "vi": "Gần đây nhiệt độ ổn định.",
-   "en": "Gần đây nhiệt độ ổn định.",
+   "en": "Lately the temperature has been steady.",
    "seg": [
     {
      "t": "最近",
@@ -42710,12 +42710,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "観察＜する＞",
   "meaning_vi": "Sự quan sát",
-  "meaning_en": "Sự quan sát",
+  "meaning_en": "observe, observation",
   "furigana": "かんさつ",
   "example": {
    "jp": "弟（おとうと）とは、雲（くも）の形（かたち）を観察（かんさつ）している。",
    "vi": "Em trai tôi đang quan sát hình dáng đám mây.",
-   "en": "Em trai tôi đang quan sát hình dáng đám mây.",
+   "en": "My younger brother and I are observing the shapes of the clouds.",
    "seg": [
     {
      "t": "弟",
@@ -42757,12 +42757,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "次第に",
   "meaning_vi": "Dần dần",
-  "meaning_en": "Dần dần",
+  "meaning_en": "gradually, by degrees",
   "furigana": "しだいに",
   "example": {
    "jp": "今日（きょう）の夜（よる）から、次第（しだい）に天気（てんき）が悪（わる）くなるらしい。",
    "vi": "Có vẻ từ đêm nay thời tiết sẽ xấu dần.",
-   "en": "Có vẻ từ đêm nay thời tiết sẽ xấu dần.",
+   "en": "From tonight, the weather will apparently gradually worsen.",
    "seg": [
     {
      "t": "今日",
@@ -42811,11 +42811,11 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "じょじょに",
   "meaning_vi": "Dần dần, từ từ",
-  "meaning_en": "Dần dần, từ từ",
+  "meaning_en": "gradually, little by little",
   "example": {
    "jp": "朝（あさ）から、気温（きおん）がじょじょに上（あ）がってきた。",
    "vi": "Từ sáng, nhiệt độ từ từ tăng.",
-   "en": "Từ sáng, nhiệt độ từ từ tăng.",
+   "en": "Since morning, the temperature has been gradually rising.",
    "seg": [
     {
      "t": "朝",
@@ -42850,11 +42850,11 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "だんだん[と]",
   "meaning_vi": "Dần dần",
-  "meaning_en": "Dần dần",
+  "meaning_en": "gradually, more and more",
   "example": {
    "jp": "空（そら）がだんだん暗（くら）くなってきた。",
    "vi": "Trời dần dần tối.",
-   "en": "Trời dần dần tối.",
+   "en": "The sky has gradually grown dark.",
    "seg": [
     {
      "t": "空",
@@ -42882,11 +42882,11 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "ますます",
   "meaning_vi": "Càng ngày càng, càng hơn",
-  "meaning_en": "Càng ngày càng, càng hơn",
+  "meaning_en": "increasingly, more and more",
   "example": {
    "jp": "今週（こんしゅう）になって、ますます暑（あつ）くなってきた。",
    "vi": "Sang tuần này, trời càng nóng hơn.",
-   "en": "Sang tuần này, trời càng nóng hơn.",
+   "en": "Now that it's this week, it's gotten even hotter.",
    "seg": [
     {
      "t": "今週",
@@ -42914,11 +42914,11 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "すっかり",
   "meaning_vi": "Hẳn, thực sự, hoàn toàn",
-  "meaning_en": "Hẳn, thực sự, hoàn toàn",
+  "meaning_en": "completely, entirely",
   "example": {
    "jp": "最近（さいきん）、暖（あたた）かい日（ひ）が多（おお）い。すっかり春（はる）だ。",
    "vi": "Gần đây những ngày ấm áp nhiều. Mùa xuân thực sự đã đến rồi.",
-   "en": "Gần đây những ngày ấm áp nhiều. Mùa xuân thực sự đã đến rồi.",
+   "en": "Lately there have been many warm days. It's fully spring now.",
    "seg": [
     {
      "t": "最近",
@@ -42967,12 +42967,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "一気に",
   "meaning_vi": "Bỗng, một lèo",
-  "meaning_en": "Bỗng, một lèo",
+  "meaning_en": "all at once, in one go",
   "furigana": "いっきに",
   "example": {
    "jp": "12月（がつ）になって、一気（いっき）に寒（さむ）くなった。",
    "vi": "Sang tháng 12, trời bỗng đổ lạnh.",
-   "en": "Sang tháng 12, trời bỗng đổ lạnh.",
+   "en": "Once December came, it got cold all at once.",
    "seg": [
     {
      "t": "12"
@@ -43010,12 +43010,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "一度に",
   "meaning_vi": "Cùng một lúc, đồng loạt",
-  "meaning_en": "Cùng một lúc, đồng loạt",
+  "meaning_en": "at once, at the same time",
   "furigana": "いちどに",
   "example": {
    "jp": "今日（きょう）は、夏（なつ）と冬（ふゆ）が一（いち）度（ど）に来（き）たようだった。",
    "vi": "Ngày hôm nay cứ như là mùa hè với mùa đông đến cùng một lúc vậy.",
-   "en": "Ngày hôm nay cứ như là mùa hè với mùa đông đến cùng một lúc vậy.",
+   "en": "Today felt as though summer and winter had arrived at the same time.",
    "seg": [
     {
      "t": "今日",
@@ -43068,11 +43068,11 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "いっぺんに",
   "meaning_vi": "Cùng một lúc, đồng loạt",
-  "meaning_en": "Cùng một lúc, đồng loạt",
+  "meaning_en": "all at once, simultaneously",
   "example": {
    "jp": "2つの台風（たいふう）がいっぺんに来（き）た。",
    "vi": "2 cơn bão đến cũng một lúc.",
-   "en": "2 cơn bão đến cũng một lúc.",
+   "en": "Two typhoons arrived at the same time.",
    "seg": [
     {
      "t": "2つの"
@@ -43103,12 +43103,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "いつの間にか",
   "meaning_vi": "Lúc nào không hay",
-  "meaning_en": "Lúc nào không hay",
+  "meaning_en": "before one knows it, without noticing",
   "furigana": "いつのまにか",
   "example": {
    "jp": "雪（ゆき）がいつの間にか止（や）んでいた。",
    "vi": "Tuyết ngừng rơi lúc nào không hay.",
-   "en": "Tuyết ngừng rơi lúc nào không hay.",
+   "en": "The snow had stopped before I knew it.",
    "seg": [
     {
      "t": "雪",
@@ -43136,12 +43136,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "温暖化",
   "meaning_vi": "Hiện tượng trái đất ấm dần",
-  "meaning_en": "Hiện tượng trái đất ấm dần",
+  "meaning_en": "global warming",
   "furigana": "おんだんか",
   "example": {
    "jp": "世界中（せかいじゅう）で、温暖（おんだん）化（か）が進（すす）んでいるようだ。",
    "vi": "Hiện tượng trái đất ấm dần dường như đang diễn ra trên khắp thế giới.",
-   "en": "Hiện tượng trái đất ấm dần dường như đang diễn ra trên khắp thế giới.",
+   "en": "Global warming seems to be advancing all over the world.",
    "seg": [
     {
      "t": "世界中",
@@ -43180,11 +43180,11 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "えいきょう＜する＞",
   "meaning_vi": "Sự ảnh hưởng",
-  "meaning_en": "Sự ảnh hưởng",
+  "meaning_en": "influence, effect",
   "example": {
    "jp": "温暖（おんだん）化（か）は、いろいろなえいきょうを与（あた）えている。",
    "vi": "Hiện tượng trái đất ấm dần lên đang gây nhiều ảnh hưởng.",
-   "en": "Hiện tượng trái đất ấm dần lên đang gây nhiều ảnh hưởng.",
+   "en": "Global warming is having all sorts of effects.",
    "seg": [
     {
      "t": "温暖",
@@ -43216,12 +43216,12 @@
   "section_title": "Thay đổi như thế nào?",
   "word": "変な",
   "meaning_vi": "Lạ, bất thường",
-  "meaning_en": "Lạ, bất thường",
+  "meaning_en": "strange, odd",
   "furigana": "へんな",
   "example": {
    "jp": "最近（さいきん）ずっと、変（へん）な天気（てんき）が続（つづ）いている。",
    "vi": "Gần đây thời tiết bất thường kéo dài suốt.",
-   "en": "Gần đây thời tiết bất thường kéo dài suốt.",
+   "en": "Lately, strange weather has been continuing without a break.",
    "seg": [
     {
      "t": "最近",
@@ -43263,12 +43263,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "祝日",
   "meaning_vi": "Ngày nghỉ lễ",
-  "meaning_en": "Ngày nghỉ lễ",
+  "meaning_en": "public holiday",
   "furigana": "しゅくじつ",
   "example": {
    "jp": "日本（にほん）の祝日（しゅくじつ）を、カレンダーで確認（かくにん）する。",
    "vi": "Tôi xác nhận ngày nghỉ lễ của Nhật Bản qua lịch.",
-   "en": "Tôi xác nhận ngày nghỉ lễ của Nhật Bản qua lịch.",
+   "en": "I check Japan's public holidays on the calendar.",
    "seg": [
     {
      "t": "日本",
@@ -43303,12 +43303,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "年末年始",
   "meaning_vi": "Đầu năm cuối năm",
-  "meaning_en": "Đầu năm cuối năm",
+  "meaning_en": "the New Year period, year-end and New Year",
   "furigana": "ねんまつねんし",
   "example": {
    "jp": "年末年始（ねんまつねんし）に海外（かいがい）旅行（りょこう）をする人（ひと）が多（おお）い。",
    "vi": "Vào dịp đầu năm cuối năm nhiều người đi du lịch nước ngoài.",
-   "en": "Vào dịp đầu năm cuối năm nhiều người đi du lịch nước ngoài.",
+   "en": "Many people travel abroad over the New Year period.",
    "seg": [
     {
      "t": "年末年始",
@@ -43354,12 +43354,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "元日",
   "meaning_vi": "Ngày mùng một tết",
-  "meaning_en": "Ngày mùng một tết",
+  "meaning_en": "New Year's Day",
   "furigana": "がんじつ",
   "example": {
    "jp": "元日（がんじつ）に友（とも）だちと神社（じんじゃ）に行（い）った。",
    "vi": "Ngày mùng một tết, tôi cùng bạn đến đền thờ Thần đạo.",
-   "en": "Ngày mùng một tết, tôi cùng bạn đến đền thờ Thần đạo.",
+   "en": "On New Year's Day, I went to a shrine with a friend.",
    "seg": [
     {
      "t": "元日",
@@ -43401,12 +43401,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "迎える",
   "meaning_vi": "Đón",
-  "meaning_en": "Đón",
+  "meaning_en": "greet, welcome, see in",
   "furigana": "むかえる",
   "example": {
    "jp": "来年（らいねん）は、富士山（ふじさん）で新年（しんねん）を迎（むか）えたい。",
    "vi": "Sang năm, tôi muốn đón năm mới trên núi Phú Sỹ.",
-   "en": "Sang năm, tôi muốn đón năm mới trên núi Phú Sỹ.",
+   "en": "Next year, I want to see in the New Year on Mount Fuji.",
    "seg": [
     {
      "t": "来年",
@@ -43448,12 +43448,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "年賀状",
   "meaning_vi": "Thiếp chúc mừng năm mới",
-  "meaning_en": "Thiếp chúc mừng năm mới",
+  "meaning_en": "New Year's card",
   "furigana": "ねんがじょう",
   "example": {
    "jp": "年賀状（ねんがじょう）が届（とど）くのを楽（たの）しみにしている。",
    "vi": "Tôi đang mong đợi thiếp chúc mừng năm mới gửi đến.",
-   "en": "Tôi đang mong đợi thiếp chúc mừng năm mới gửi đến.",
+   "en": "I'm looking forward to my New Year's cards arriving.",
    "seg": [
     {
      "t": "年賀状",
@@ -43488,12 +43488,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "お年玉",
   "meaning_vi": "Tiền mừng tuổi",
-  "meaning_en": "Tiền mừng tuổi",
+  "meaning_en": "New Year's money gift (given to children)",
   "furigana": "おとしだま",
   "example": {
    "jp": "就職（しゅうしょく）してから、親（おや）にお年玉をあげている。",
    "vi": "Từ khi đi làm, tôi tặng tiền mừng tuổi cho bố mẹ.",
-   "en": "Từ khi đi làm, tôi tặng tiền mừng tuổi cho bố mẹ.",
+   "en": "Since starting work, I've been giving New Year's money to my parents.",
    "seg": [
     {
      "t": "就職",
@@ -43521,12 +43521,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "成人の日",
   "meaning_vi": "Ngày lễ trưởng thành",
-  "meaning_en": "Ngày lễ trưởng thành",
+  "meaning_en": "Coming of Age Day",
   "furigana": "せいじんのひ",
   "example": {
    "jp": "成人の日（せいじんのひ）に、20歳（はたち）の若者（わかもの）が会場（かいじょう）に集（あつ）まった。",
    "vi": "Vào ngày lễ trưởng thành, các nam thanh niên 20 tuổi đã tập trung ở hội trường.",
-   "en": "Vào ngày lễ trưởng thành, các nam thanh niên 20 tuổi đã tập trung ở hội trường.",
+   "en": "On Coming of Age Day, twenty-year-olds gathered at the venue.",
    "seg": [
     {
      "t": "成人の日",
@@ -43575,12 +43575,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "ひな祭り",
   "meaning_vi": "Ngày lễ búp bê Hina",
-  "meaning_en": "Ngày lễ búp bê Hina",
+  "meaning_en": "Doll Festival, Girls' Day (March 3)",
   "furigana": "ひなまつり",
   "example": {
    "jp": "ひな祭りは女の子（おんなのこ）のお祝いだ。",
    "vi": "Ngày lễ búp bê Hina là ngày lễ mừng cho các bé gái.",
-   "en": "Ngày lễ búp bê Hina là ngày lễ mừng cho các bé gái.",
+   "en": "The Doll Festival is a celebration for girls.",
    "seg": [
     {
      "t": "ひな祭りは"
@@ -43604,11 +43604,11 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "ゴールデンウィーク",
   "meaning_vi": "Tuần lễ vàng",
-  "meaning_en": "Tuần lễ vàng",
+  "meaning_en": "Golden Week",
   "example": {
    "jp": "4月（がつ）下旬（げじゅん）から5月（がつ）の初（はじ）めに、ゴールデンウィークという連休（れんきゅう）がある。",
    "vi": "Từ hạ tuần tháng 4 đến đầu tháng 5 có ngày nghỉ dài gọi là Tuần lễ vàng.",
-   "en": "Từ hạ tuần tháng 4 đến đầu tháng 5 có ngày nghỉ dài gọi là Tuần lễ vàng.",
+   "en": "From late April into early May there's a run of holidays called Golden Week.",
    "seg": [
     {
      "t": "4"
@@ -43657,12 +43657,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "子どもの日",
   "meaning_vi": "Ngày trẻ em",
-  "meaning_en": "Ngày trẻ em",
+  "meaning_en": "Children's Day (May 5)",
   "furigana": "こどものひ",
   "example": {
    "jp": "子（こ）どもの日（ひ）に、家族（かぞく）で遊園（ゆうえん）地（ち）に行（い）くつもりだ。",
    "vi": "Vào ngày trẻ em tôi định cả nhà sẽ đi đến khu vui chơi giải trí.",
-   "en": "Vào ngày trẻ em tôi định cả nhà sẽ đi đến khu vui chơi giải trí.",
+   "en": "On Children's Day, I plan to go to an amusement park with my family.",
    "seg": [
     {
      "t": "子",
@@ -43715,12 +43715,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "母の日",
   "meaning_vi": "Ngày của Mẹ",
-  "meaning_en": "Ngày của Mẹ",
+  "meaning_en": "Mother's Day",
   "furigana": "ははのひ",
   "example": {
    "jp": "今年（ことし）の母（はは）の日（ひ）に、スカーフをプレゼントした。",
    "vi": "Ngày của Mẹ năm nay tôi đã tặng mẹ cái khăn choàng.",
-   "en": "Ngày của Mẹ năm nay tôi đã tặng mẹ cái khăn choàng.",
+   "en": "For Mother's Day this year, I gave her a scarf.",
    "seg": [
     {
      "t": "今年",
@@ -43755,12 +43755,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "父の日",
   "meaning_vi": "Ngày của Bố",
-  "meaning_en": "Ngày của Bố",
+  "meaning_en": "Father's Day",
   "furigana": "ちちのひ",
   "example": {
    "jp": "父（ちち）の日（ひ）には、ネクタイを贈（おく）ることにしている。",
    "vi": "Ngày của Bố tôi quyết định gửi cho bố một cái cà vạt.",
-   "en": "Ngày của Bố tôi quyết định gửi cho bố một cái cà vạt.",
+   "en": "For Father's Day, I make a point of sending a necktie.",
    "seg": [
     {
      "t": "父",
@@ -43795,12 +43795,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "海の日",
   "meaning_vi": "Ngày của Biển",
-  "meaning_en": "Ngày của Biển",
+  "meaning_en": "Marine Day",
   "furigana": "うみのひ",
   "example": {
    "jp": "去年（きょねん）の海の日（うみのひ）は、朝（あさ）から大雨（おおあめ）だった。",
    "vi": "Ngày của Biển năm ngoái, mưa to từ sáng.",
-   "en": "Ngày của Biển năm ngoái, mưa to từ sáng.",
+   "en": "Last year on Marine Day, it rained heavily from the morning.",
    "seg": [
     {
      "t": "去年",
@@ -43842,12 +43842,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "敬老の日",
   "meaning_vi": "Ngày Kính lão",
-  "meaning_en": "Ngày Kính lão",
+  "meaning_en": "Respect for the Aged Day",
   "furigana": "けいろうのひ",
   "example": {
    "jp": "デパートで、敬老（けいろう）の日（ひ）のための贈り物（おくりもの）を探（さが）した。",
    "vi": "Tôi đã tìm quà tặng cho Ngày Kính lão trong trung tâm thương mại.",
-   "en": "Tôi đã tìm quà tặng cho Ngày Kính lão trong trung tâm thương mại.",
+   "en": "I looked for a gift for Respect for the Aged Day at the department store.",
    "seg": [
     {
      "t": "デパートで、"
@@ -43892,12 +43892,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "体育の日",
   "meaning_vi": "Ngày Thể dục thể thao",
-  "meaning_en": "Ngày Thể dục thể thao",
+  "meaning_en": "Health and Sports Day",
   "furigana": "たいいくのひ",
   "example": {
    "jp": "体育（たいいく）の日（ひ）は、学校（がっこう）で運動会（うんどうかい）が開（ひら）かれる。",
    "vi": "Vào Ngày Thể dục thể thao, ở các trường học tổ chức ngày hội thể thao.",
-   "en": "Vào Ngày Thể dục thể thao, ở các trường học tổ chức ngày hội thể thao.",
+   "en": "On Health and Sports Day, schools hold their sports days.",
    "seg": [
     {
      "t": "体育",
@@ -43946,11 +43946,11 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "もともと",
   "meaning_vi": "Vốn dĩ",
-  "meaning_en": "Vốn dĩ",
+  "meaning_en": "originally, from the start",
   "example": {
    "jp": "体育（たいいく）の日（ひ）は、もともと10月（がつ）10日（にち）だった。",
    "vi": "Ngày thể dục thể thao vốn dĩ là ngày mùng 10 tháng 10.",
-   "en": "Ngày thể dục thể thao vốn dĩ là ngày mùng 10 tháng 10.",
+   "en": "Health and Sports Day was originally October 10.",
    "seg": [
     {
      "t": "体育",
@@ -43992,12 +43992,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "七五三",
   "meaning_vi": "Ngày lễ Shichi-go-san",
-  "meaning_en": "Ngày lễ Shichi-go-san",
+  "meaning_en": "Shichi-Go-San (festival for children aged 7, 5 and 3)",
   "furigana": "しちごさん",
   "example": {
    "jp": "七（なな）五（ご）三（さん）のお祝いに、神社（じんじゃ）で記念（きねん）写真（しゃしん）を撮（と）る。",
    "vi": "Chụp ảnh kỷ niệm ở đền thờ Thần đạo mừng ngày lễ Shichi-go-san.",
-   "en": "Chụp ảnh kỷ niệm ở đền thờ Thần đạo mừng ngày lễ Shichi-go-san.",
+   "en": "We take commemorative photos at the shrine for the Shichi-Go-San celebration.",
    "seg": [
     {
      "t": "七",
@@ -44051,12 +44051,12 @@
   "section_title": "Một năm của Nhật Bản",
   "word": "大みそか",
   "meaning_vi": "Đêm giao thừa",
-  "meaning_en": "Đêm giao thừa",
+  "meaning_en": "New Year's Eve",
   "furigana": "おおみそか",
   "example": {
    "jp": "日本（にほん）では大（おお）みそかに、そばを食（た）べる習慣（しゅうかん）がある。",
    "vi": "Ở Nhật Bản có tập quán ăn mì Soba vào đêm giao thừa.",
-   "en": "Ở Nhật Bản có tập quán ăn mì Soba vào đêm giao thừa.",
+   "en": "In Japan there's a custom of eating soba on New Year's Eve.",
    "seg": [
     {
      "t": "日本",
@@ -44098,12 +44098,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "伝わる",
   "meaning_vi": "Được truyền đi",
-  "meaning_en": "Được truyền đi",
+  "meaning_en": "be transmitted, spread, be conveyed",
   "furigana": "つたわる",
   "example": {
    "jp": "インターネットで、世界（せかい）にニュースが伝（つた）わる。",
    "vi": "Tin thời sự được truyền đi thế giới qua mạng internet.",
-   "en": "Tin thời sự được truyền đi thế giới qua mạng internet.",
+   "en": "News spreads to the world over the internet.",
    "seg": [
     {
      "t": "インターネットで、"
@@ -44134,11 +44134,11 @@
   "section_title": "Truyền thông đại chúng",
   "word": "うわさ＜する＞",
   "meaning_vi": "Đồn đại, lời đồn, tin đồn",
-  "meaning_en": "Đồn đại, lời đồn, tin đồn",
+  "meaning_en": "rumor, gossip",
   "example": {
    "jp": "悪（わる）いうわさは、あっという間に伝（つた）わる。",
    "vi": "Tin đồn xấu chẳng mấy chốc được truyền đi.",
-   "en": "Tin đồn xấu chẳng mấy chốc được truyền đi.",
+   "en": "Bad rumors spread in no time.",
    "seg": [
     {
      "t": "悪",
@@ -44166,12 +44166,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "記事",
   "meaning_vi": "Bài, bài báo",
-  "meaning_en": "Bài, bài báo",
+  "meaning_en": "article",
   "furigana": "きじ",
   "example": {
    "jp": "新聞（しんぶん）で、興味（きょうみ）のある記事（きじ）だけを読（よ）んでいる。",
    "vi": "Tôi chỉ đọc các bài mà tôi quan tâm trên báo.",
-   "en": "Tôi chỉ đọc các bài mà tôi quan tâm trên báo.",
+   "en": "In the newspaper, I only read the articles that interest me.",
    "seg": [
     {
      "t": "新聞",
@@ -44213,12 +44213,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "週刊誌",
   "meaning_vi": "Tuần báo",
-  "meaning_en": "Tuần báo",
+  "meaning_en": "weekly magazine",
   "furigana": "しゅうかんし",
   "example": {
    "jp": "この週刊（しゅうかん）誌（し）は、経済（けいざい）の専門（せんもん）雑誌（ざっし）だ。",
    "vi": "Tuần báo này là tạp chí chuyên về kinh tế.",
-   "en": "Tuần báo này là tạp chí chuyên về kinh tế.",
+   "en": "This weekly is a specialist magazine on economics.",
    "seg": [
     {
      "t": "この"
@@ -44264,12 +44264,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "政治家",
   "meaning_vi": "Chính trị gia",
-  "meaning_en": "Chính trị gia",
+  "meaning_en": "politician",
   "furigana": "せいじか",
   "example": {
    "jp": "政治（せいじ）家（か）のインタビュー記事（きじ）を読（よ）む。",
    "vi": "Tôi đọc bài phỏng vấn một chính trị gia.",
-   "en": "Tôi đọc bài phỏng vấn một chính trị gia.",
+   "en": "I read an interview article with a politician.",
    "seg": [
     {
      "t": "政治",
@@ -44308,12 +44308,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "政府",
   "meaning_vi": "Chính phủ",
-  "meaning_en": "Chính phủ",
+  "meaning_en": "government",
   "furigana": "せいふ",
   "example": {
    "jp": "政府（せいふ）から大切（たいせつ）な発表（はっぴょう）があった。",
    "vi": "Có một công bố quan trọng từ chính phủ.",
-   "en": "Có một công bố quan trọng từ chính phủ.",
+   "en": "There was an important announcement from the government.",
    "seg": [
     {
      "t": "政府",
@@ -44348,12 +44348,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "市民",
   "meaning_vi": "Người dân, công dân",
-  "meaning_en": "Người dân, công dân",
+  "meaning_en": "citizen, resident",
   "furigana": "しみん",
   "example": {
    "jp": "広場（ひろば）に多（おお）くの市民（しみん）が集（あつ）まった。",
    "vi": "Nhiều người dân đã tập trung ở quảng trường.",
-   "en": "Nhiều người dân đã tập trung ở quảng trường.",
+   "en": "Many citizens gathered in the plaza.",
    "seg": [
     {
      "t": "広場",
@@ -44395,12 +44395,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "立場",
   "meaning_vi": "Lập trường",
-  "meaning_en": "Lập trường",
+  "meaning_en": "position, standpoint",
   "furigana": "たちば",
   "example": {
    "jp": "あの政治（せいじ）家（か）は、国民（こくみん）の立場（たちば）で話（はなし）をする。",
    "vi": "Chính trị gia ấy nói chuyện trên lập trường của người dân.",
-   "en": "Chính trị gia ấy nói chuyện trên lập trường của người dân.",
+   "en": "That politician speaks from the standpoint of the people.",
    "seg": [
     {
      "t": "あの"
@@ -44449,12 +44449,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "世の中",
   "meaning_vi": "Thế gian, xã hội",
-  "meaning_en": "Thế gian, xã hội",
+  "meaning_en": "society, the world",
   "furigana": "よのなか",
   "example": {
    "jp": "みんなが暮（く）らしやすい世の中（よのなか）になってほしい。",
    "vi": "Tôi mong trở thành một xã hội mà ở đó tất cả mọi người đều dễ sống.",
-   "en": "Tôi mong trở thành một xã hội mà ở đó tất cả mọi người đều dễ sống.",
+   "en": "I hope it becomes a world where everyone can live comfortably.",
    "seg": [
     {
      "t": "みんなが"
@@ -44485,12 +44485,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "重大な",
   "meaning_vi": "Rất quan trọng, trọng đại",
-  "meaning_en": "Rất quan trọng, trọng đại",
+  "meaning_en": "grave, serious, momentous",
   "furigana": "じゅうだいな",
   "example": {
    "jp": "車（くるま）の会社（かいしゃ）が重大（じゅうだい）な発表（はっぴょう）をした。",
    "vi": "Công ty xe hơi đã ra một công bố rất quan trọng.",
-   "en": "Công ty xe hơi đã ra một công bố rất quan trọng.",
+   "en": "The car company made a momentous announcement.",
    "seg": [
     {
      "t": "車",
@@ -44532,12 +44532,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "重要な",
   "meaning_vi": "Quan trọng",
-  "meaning_en": "Quan trọng",
+  "meaning_en": "important",
   "furigana": "じゅうような",
   "example": {
    "jp": "今日（きょう）は重要（じゅうよう）なニュースが多（おお）かった。",
    "vi": "Hôm nay có nhiều tin thời sự quan trọng.",
-   "en": "Hôm nay có nhiều tin thời sự quan trọng.",
+   "en": "There was a lot of important news today.",
    "seg": [
     {
      "t": "今日",
@@ -44572,12 +44572,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "大して",
   "meaning_vi": "Đặc biệt, to tát",
-  "meaning_en": "Đặc biệt, to tát",
+  "meaning_en": "(not) particularly, (not) much",
   "furigana": "たいして",
   "example": {
    "jp": "この番組（ばんぐみ）は、日本語（にほんご）の勉強（べんきょう）に大（たい）して役に立（やくにた）たない。",
    "vi": "Chương trình này không giúp ích gì đặc biệt trong việc học tiếng Nhất.",
-   "en": "Chương trình này không giúp ích gì đặc biệt trong việc học tiếng Nhất.",
+   "en": "This program isn't much help for studying Japanese.",
    "seg": [
     {
      "t": "この"
@@ -44629,11 +44629,11 @@
   "section_title": "Truyền thông đại chúng",
   "word": "くだらない",
   "meaning_vi": "Vớ vẩn, tầm thường, chẳng ra gì",
-  "meaning_en": "Vớ vẩn, tầm thường, chẳng ra gì",
+  "meaning_en": "worthless, trivial, silly",
   "example": {
    "jp": "くだらない番組（ばんぐみ）を、つい見（み）てしまう。",
    "vi": "Biết mà vẫn cứ xem cái chương trình vớ vẩn.",
-   "en": "Biết mà vẫn cứ xem cái chương trình vớ vẩn.",
+   "en": "I end up watching silly programs in spite of myself.",
    "seg": [
     {
      "t": "くだらない"
@@ -44664,12 +44664,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "司会者",
   "meaning_vi": "Người dẫn chương trình, MC",
-  "meaning_en": "Người dẫn chương trình, MC",
+  "meaning_en": "host, presenter, MC",
   "furigana": "しかいしゃ",
   "example": {
    "jp": "春（はる）から、番組（ばんぐみ）の司会（しかい）者（しゃ）がかわった。",
    "vi": "Từ màu xuân người dẫn chương trình đã thay đổi.",
-   "en": "Từ màu xuân người dẫn chương trình đã thay đổi.",
+   "en": "From spring, the program's host changed.",
    "seg": [
     {
      "t": "春",
@@ -44708,12 +44708,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "生放送",
   "meaning_vi": "Truyền hình trực tiếp, phát sóng trực tiếp",
-  "meaning_en": "Truyền hình trực tiếp, phát sóng trực tiếp",
+  "meaning_en": "live broadcast",
   "furigana": "なまほうそう",
   "example": {
    "jp": "生放送（なまほうそう）の途中（とちゅう）で、何（なに）か問題（もんだい）が起（お）きたらしい。",
    "vi": "Hình như đã xảy ra vấn đề gì đó khi đang truyền hình trực tiếp.",
-   "en": "Hình như đã xảy ra vấn đề gì đó khi đang truyền hình trực tiếp.",
+   "en": "Apparently some problem occurred in the middle of the live broadcast.",
    "seg": [
     {
      "t": "生放送",
@@ -44762,12 +44762,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "商品",
   "meaning_vi": "Sản phẩm",
-  "meaning_en": "Sản phẩm",
+  "meaning_en": "product, merchandise",
   "furigana": "しょうひん",
   "example": {
    "jp": "この商品（しょうひん）は、とても売（う）れている。",
    "vi": "Sản phẩm này bán rất chạy.",
-   "en": "Sản phẩm này bán rất chạy.",
+   "en": "This product is selling very well.",
    "seg": [
     {
      "t": "この"
@@ -44798,12 +44798,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "発売＜する＞",
   "meaning_vi": "Bán ra, bắt đầu bán",
-  "meaning_en": "Bán ra, bắt đầu bán",
+  "meaning_en": "go on sale, release",
   "furigana": "はつばい",
   "example": {
    "jp": "明日（あした）、新（あたら）しいゲームが発売（はつばい）される。",
    "vi": "Ngày mai, game mới sẽ bắt đầu được bán.",
-   "en": "Ngày mai, game mới sẽ bắt đầu được bán.",
+   "en": "Tomorrow, a new game goes on sale.",
    "seg": [
     {
      "t": "明日",
@@ -44838,12 +44838,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "評判",
   "meaning_vi": "Đánh giá",
-  "meaning_en": "Đánh giá",
+  "meaning_en": "reputation, review",
   "furigana": "ひょうばん",
   "example": {
    "jp": "新（あたら）しく出版（しゅっぱん）された雑誌（ざっし）は、評判（ひょうばん）がいい。",
    "vi": "Tạp chí mới xuất bản được đánh giá tốt.",
-   "en": "Tạp chí mới xuất bản được đánh giá tốt.",
+   "en": "The newly published magazine has a good reputation.",
    "seg": [
     {
      "t": "新",
@@ -44885,12 +44885,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "注目＜する＞",
   "meaning_vi": "Dồn sự chú ý",
-  "meaning_en": "Dồn sự chú ý",
+  "meaning_en": "pay attention to, focus on",
   "furigana": "ちゅうもく",
   "example": {
    "jp": "世界中（せかいじゅう）の人（ひと）が、その女優（じょゆう）に注目（ちゅうもく）している。",
    "vi": "Mọi người trên thế giới đang dồn sự chú ý đến nữ diễn viên ấy.",
-   "en": "Mọi người trên thế giới đang dồn sự chú ý đến nữ diễn viên ấy.",
+   "en": "People all over the world have their eyes on that actress.",
    "seg": [
     {
      "t": "世界中",
@@ -44932,11 +44932,11 @@
   "section_title": "Truyền thông đại chúng",
   "word": "ヒット＜する＞",
   "meaning_vi": "Hót, gây sốt, nhiều người thích",
-  "meaning_en": "Hót, gây sốt, nhiều người thích",
+  "meaning_en": "hit, be a hit",
   "example": {
    "jp": "今（いま）一番（いちばん）ヒットしている曲（きょく）をダウンロードした。",
    "vi": "Tôi đã tải ca khúc đang được nhiều người thích nhất hiện nay.",
-   "en": "Tôi đã tải ca khúc đang được nhiều người thích nhất hiện nay.",
+   "en": "I downloaded the song that's the biggest hit right now.",
    "seg": [
     {
      "t": "今",
@@ -44968,11 +44968,11 @@
   "section_title": "Truyền thông đại chúng",
   "word": "やっぱり",
   "meaning_vi": "Quả là, đúng là",
-  "meaning_en": "Quả là, đúng là",
+  "meaning_en": "as expected, sure enough, after all",
   "example": {
    "jp": "A「あの二人（ふたり）は結婚（けっこん）するそうですね。」 B「やっぱり二人（ふたり）は付き合（つきあ）っていたんですね。」",
    "vi": "A: Nghe nói 2 người đó sẽ kết hôn nhỉ! / B : Đúng là 2 người này từ trước tới giờ yêu nhau nhỉ!",
-   "en": "A: Nghe nói 2 người đó sẽ kết hôn nhỉ! / B : Đúng là 2 người này từ trước tới giờ yêu nhau nhỉ!",
+   "en": "A: \"I hear those two are getting married.\" B: \"So they had been seeing each other after all.\"",
    "seg": [
     {
      "t": "A「あの"
@@ -45017,11 +45017,11 @@
   "section_title": "Truyền thông đại chúng",
   "word": "まさか",
   "meaning_vi": "Lẽ nào lại vậy",
-  "meaning_en": "Lẽ nào lại vậy",
+  "meaning_en": "surely not, you can't be serious",
   "example": {
    "jp": "A「あの番組（ばんぐみ）の司会（しかい）者（しゃ）が、昨日（きのう）入院（にゅういん）したって。」 B「まさか。あんなに元気（げんき）だったのに。」",
    "vi": "A : Nghe nói MC chương trình đó nhập viện ngày hôm qua. / B: Lẽ nào lại vậy! Anh ấy trông khỏe thế kia mà!",
-   "en": "A : Nghe nói MC chương trình đó nhập viện ngày hôm qua. / B: Lẽ nào lại vậy! Anh ấy trông khỏe thế kia mà!",
+   "en": "A: \"They say the host of that program was hospitalized yesterday.\" B: \"No way. And he seemed so well.\"",
    "seg": [
     {
      "t": "A「あの"
@@ -45074,11 +45074,11 @@
   "section_title": "Truyền thông đại chúng",
   "word": "やっと",
   "meaning_vi": "Cuối cùng, mãi cùng",
-  "meaning_en": "Cuối cùng, mãi cùng",
+  "meaning_en": "finally, at last",
   "example": {
    "jp": "A国（こく）とB国（こく）の問題（もんだい）が、やっと解決（かいけつ）された。",
    "vi": "Vấn đề của nước A và nước B cuối cùng cũng được giải quyết xong.",
-   "en": "Vấn đề của nước A và nước B cuối cùng cũng được giải quyết xong.",
+   "en": "The problem between Country A and Country B has finally been resolved.",
    "seg": [
     {
      "t": "A"
@@ -45123,12 +45123,12 @@
   "section_title": "Truyền thông đại chúng",
   "word": "結局",
   "meaning_vi": "Kết cục, cuối cùng",
-  "meaning_en": "Kết cục, cuối cùng",
+  "meaning_en": "in the end, after all",
   "furigana": "けっきょく",
   "example": {
    "jp": "結局（けっきょく）、この記事（きじ）はうそだった。",
    "vi": "Kết cục hóa ra là bài báo này đã nói dối.",
-   "en": "Kết cục hóa ra là bài báo này đã nói dối.",
+   "en": "In the end, this article turned out to be false.",
    "seg": [
     {
      "t": "結局",
@@ -45156,12 +45156,12 @@
   "section_title": "Vụ việc",
   "word": "怪しい",
   "meaning_vi": "Khả nghi",
-  "meaning_en": "Khả nghi",
+  "meaning_en": "suspicious, dubious",
   "furigana": "あやしい",
   "example": {
    "jp": "怪（あや）しい人（ひと）を見（み）たら、警察（けいさつ）に連絡（れんらく）してください。",
    "vi": "Nếu nhìn thấy người khả nghi, hãy liên lạc với cảnh sát.",
-   "en": "Nếu nhìn thấy người khả nghi, hãy liên lạc với cảnh sát.",
+   "en": "If you see a suspicious person, please contact the police.",
    "seg": [
     {
      "t": "怪",
@@ -45210,12 +45210,12 @@
   "section_title": "Vụ việc",
   "word": "恐ろしい",
   "meaning_vi": "Sợ, đáng sợ",
-  "meaning_en": "Sợ, đáng sợ",
+  "meaning_en": "terrifying, dreadful",
   "furigana": "おそろしい",
   "example": {
    "jp": "最近（さいきん）は、恐（おそ）ろしい事件（じけん）が多（おお）い。",
    "vi": "Gần đây có nhiều vụ việc đáng sợ.",
-   "en": "Gần đây có nhiều vụ việc đáng sợ.",
+   "en": "Lately there have been many terrifying incidents.",
    "seg": [
     {
      "t": "最近",
@@ -45257,12 +45257,12 @@
   "section_title": "Vụ việc",
   "word": "暴れる",
   "meaning_vi": "Đập phá, quậy phá",
-  "meaning_en": "Đập phá, quậy phá",
+  "meaning_en": "rampage, act violently",
   "furigana": "あばれる",
   "example": {
    "jp": "この近（ちか）くで、男（おとこ）が暴（あば）れていたらしい。",
    "vi": "Nghe nói, ở gần đây có người đàn ông quậy phá.",
-   "en": "Nghe nói, ở gần đây có người đàn ông quậy phá.",
+   "en": "Apparently a man was rampaging near here.",
    "seg": [
     {
      "t": "この"
@@ -45300,12 +45300,12 @@
   "section_title": "Vụ việc",
   "word": "争う",
   "meaning_vi": "Tranh cãi, đấu tranh",
-  "meaning_en": "Tranh cãi, đấu tranh",
+  "meaning_en": "quarrel, fight, compete",
   "furigana": "あらそう",
   "example": {
    "jp": "夜中（よなか）に、男性（だんせい）と女性（じょせい）が争（あらそ）う声（こえ）が聞（き）こえた。",
    "vi": "Nửa đêm tôi nghe thấy tiếng người đàn ông và người đàn bà tranh cãi.",
-   "en": "Nửa đêm tôi nghe thấy tiếng người đàn ông và người đàn bà tranh cãi.",
+   "en": "In the middle of the night, I heard a man and a woman arguing.",
    "seg": [
     {
      "t": "夜中",
@@ -45361,12 +45361,12 @@
   "section_title": "Vụ việc",
   "word": "犯罪",
   "meaning_vi": "Tội phạm",
-  "meaning_en": "Tội phạm",
+  "meaning_en": "crime",
   "furigana": "はんざい",
   "example": {
    "jp": "あの町（まち）は犯罪（はんざい）が多（おお）い。",
    "vi": "Thành phố đó có nhiều tội phạm.",
-   "en": "Thành phố đó có nhiều tội phạm.",
+   "en": "That town has a lot of crime.",
    "seg": [
     {
      "t": "あの"
@@ -45404,12 +45404,12 @@
   "section_title": "Vụ việc",
   "word": "発見者",
   "meaning_vi": "Người phát hiện",
-  "meaning_en": "Người phát hiện",
+  "meaning_en": "discoverer, person who found it",
   "furigana": "はっけんしゃ",
   "example": {
    "jp": "警察（けいさつ）は、怪（あや）しいかばんの発見（はっけん）者（しゃ）に話（はなし）を聞（き）いている。",
    "vi": "Cảnh sát hỏi chuyện người phát hiện ra chiếc cặp khả nghi.",
-   "en": "Cảnh sát hỏi chuyện người phát hiện ra chiếc cặp khả nghi.",
+   "en": "The police are questioning the person who found the suspicious bag.",
    "seg": [
     {
      "t": "警察",
@@ -45462,12 +45462,12 @@
   "section_title": "Vụ việc",
   "word": "疑う",
   "meaning_vi": "Nghi ngờ",
-  "meaning_en": "Nghi ngờ",
+  "meaning_en": "doubt, suspect",
   "furigana": "うたがう",
   "example": {
    "jp": "警察（けいさつ）に、第（だい）一（いち）発見（はっけん）者（しゃ）が疑（うたが）われているようだ。",
    "vi": "Dường như người phát hiện đầu tiên bị cảnh sát nghi ngờ.",
-   "en": "Dường như người phát hiện đầu tiên bị cảnh sát nghi ngờ.",
+   "en": "It seems the police suspect the person who first found it.",
    "seg": [
     {
      "t": "警察",
@@ -45514,11 +45514,11 @@
   "section_title": "Vụ việc",
   "word": "うそつき",
   "meaning_vi": "Kẻ nói dối, sự nói dối",
-  "meaning_en": "Kẻ nói dối, sự nói dối",
+  "meaning_en": "liar, lying",
   "example": {
    "jp": "だれも彼（かれ）をうそつきとは思（おも）わなかった。",
    "vi": "Không ai nghĩ anh ta là kẻ nói dối.",
-   "en": "Không ai nghĩ anh ta là kẻ nói dối.",
+   "en": "Nobody thought he was a liar.",
    "seg": [
     {
      "t": "だれも"
@@ -45549,12 +45549,12 @@
   "section_title": "Vụ việc",
   "word": "犯人",
   "meaning_vi": "Phạm nhân, thủ phạm",
-  "meaning_en": "Phạm nhân, thủ phạm",
+  "meaning_en": "criminal, culprit",
   "furigana": "はんにん",
   "example": {
    "jp": "犯人（はんにん）は、20歳（さい）くらいの男（おとこ）らしい。",
    "vi": "Nghe nói thủ phạm là nam giới khoảng 20 tuổi.",
-   "en": "Nghe nói thủ phạm là nam giới khoảng 20 tuổi.",
+   "en": "The culprit is apparently a man of about twenty.",
    "seg": [
     {
      "t": "犯人",
@@ -45589,11 +45589,11 @@
   "section_title": "Vụ việc",
   "word": "いたずら＜な/する＞",
   "meaning_vi": "Trò nghịch ngợm (nghịch ngợm)",
-  "meaning_en": "Trò nghịch ngợm (nghịch ngợm)",
+  "meaning_en": "mischief, prank; mischievous",
   "example": {
    "jp": "子（こ）どものいたずらが、大（おお）きな事件（じけん）になった。 いたずらな子（こ）どもが、線路（せんろ）に石（いし）を置（お）いた。",
    "vi": "Trò nghịch ngợm của trẻ con đã trở thành một vụ án lớn. / Đứa trẻ nghịch ngợm kê hòn đá trên đường tàu.",
-   "en": "Trò nghịch ngợm của trẻ con đã trở thành một vụ án lớn. / Đứa trẻ nghịch ngợm kê hòn đá trên đường tàu.",
+   "en": "A child's prank turned into a major incident. A mischievous child put a stone on the railway track.",
    "seg": [
     {
      "t": "子",
@@ -45656,11 +45656,11 @@
   "section_title": "Vụ việc",
   "word": "さけぶ",
   "meaning_vi": "Gào, thét",
-  "meaning_en": "Gào, thét",
+  "meaning_en": "shout, scream",
   "example": {
    "jp": "外（そと）で女性（じょせい）が大（おお）きな声（こえ）でさけんでいる。",
    "vi": "Người phụ nữ đang gào thét to ở bên ngoài.",
-   "en": "Người phụ nữ đang gào thét to ở bên ngoài.",
+   "en": "A woman is screaming loudly outside.",
    "seg": [
     {
      "t": "外",
@@ -45702,11 +45702,11 @@
   "section_title": "Vụ việc",
   "word": "たたく",
   "meaning_vi": "Gõ",
-  "meaning_en": "Gõ",
+  "meaning_en": "hit, knock, bang",
   "example": {
    "jp": "だれかがドアをたたいている。",
    "vi": "Có ai đó đang gõ cửa.",
-   "en": "Có ai đó đang gõ cửa.",
+   "en": "Someone is banging on the door.",
    "seg": [
     {
      "t": "だれかがドアをたたいている。"
@@ -45723,12 +45723,12 @@
   "section_title": "Vụ việc",
   "word": "盗む",
   "meaning_vi": "Lấy trộm",
-  "meaning_en": "Lấy trộm",
+  "meaning_en": "steal",
   "furigana": "ぬすむ",
   "example": {
    "jp": "泥棒（どろぼう）に指輪（ゆびわ）を盗（ぬす）まれた。",
    "vi": "Tôi bị kẻ trộm lấy trộm chiếc nhẫn.",
-   "en": "Tôi bị kẻ trộm lấy trộm chiếc nhẫn.",
+   "en": "A thief stole my ring.",
    "seg": [
     {
      "t": "泥棒",
@@ -45763,11 +45763,11 @@
   "section_title": "Vụ việc",
   "word": "うばう",
   "meaning_vi": "Cướp",
-  "meaning_en": "Cướp",
+  "meaning_en": "snatch, rob, take by force",
   "example": {
    "jp": "道（みち）を歩（ある）いていて、ハンドバッグをうばわれた。",
    "vi": "Đang đi đường thì bị cướp túi xách.",
-   "en": "Đang đi đường thì bị cướp túi xách.",
+   "en": "I was walking down the street and my handbag was snatched.",
    "seg": [
     {
      "t": "道",
@@ -45795,12 +45795,12 @@
   "section_title": "Vụ việc",
   "word": "捜す",
   "meaning_vi": "Tìm",
-  "meaning_en": "Tìm",
+  "meaning_en": "search for, hunt for",
   "furigana": "さがす",
   "example": {
    "jp": "警察（けいさつ）が犯人（はんにん）を捜（さが）している。",
    "vi": "Cảnh sát đang truy tìm thủ phạm.",
-   "en": "Cảnh sát đang truy tìm thủ phạm.",
+   "en": "The police are searching for the culprit.",
    "seg": [
     {
      "t": "警察",
@@ -45835,12 +45835,12 @@
   "section_title": "Vụ việc",
   "word": "追う",
   "meaning_vi": "Đuổi theo",
-  "meaning_en": "Đuổi theo",
+  "meaning_en": "chase, pursue",
   "furigana": "おう",
   "example": {
    "jp": "警察（けいさつ）が犯人（はんにん）を追（お）っている。",
    "vi": "Cảnh sát đang đuổi theo thủ phạm.",
-   "en": "Cảnh sát đang đuổi theo thủ phạm.",
+   "en": "The police are pursuing the culprit.",
    "seg": [
     {
      "t": "警察",
@@ -45875,12 +45875,12 @@
   "section_title": "Vụ việc",
   "word": "捕まえる",
   "meaning_vi": "Bắt, tóm",
-  "meaning_en": "Bắt, tóm",
+  "meaning_en": "catch, capture",
   "furigana": "つかまえる",
   "example": {
    "jp": "警察（けいさつ）が犯人（はんにん）をやっと捕（つか）まえた。",
    "vi": "Cuối cùng cảnh sát cũng đã bắt được đối tượng.",
-   "en": "Cuối cùng cảnh sát cũng đã bắt được đối tượng.",
+   "en": "The police finally caught the culprit.",
    "seg": [
     {
      "t": "警察",
@@ -45915,12 +45915,12 @@
   "section_title": "Vụ việc",
   "word": "捕まる",
   "meaning_vi": "Bị bắt",
-  "meaning_en": "Bị bắt",
+  "meaning_en": "be caught, be captured",
   "furigana": "つかまる",
   "example": {
    "jp": "家（いえ）の近（ちか）くで、犯人（はんにん）が捕（つか）まった。",
    "vi": "Thủ phạm bị bắt gần nhà tôi.",
-   "en": "Thủ phạm bị bắt gần nhà tôi.",
+   "en": "The culprit was caught near my house.",
    "seg": [
     {
      "t": "家",
@@ -45962,12 +45962,12 @@
   "section_title": "Vụ việc",
   "word": "逮捕＜する＞",
   "meaning_vi": "Bị bắt",
-  "meaning_en": "Bị bắt",
+  "meaning_en": "arrest",
   "furigana": "たいほ",
   "example": {
    "jp": "犯人（はんにん）が逮捕（たいほ）されて、市民（しみん）は安心（あんしん）した。",
    "vi": "Tên thủ phạm đã bị bắt khiến người dân an tâm.",
-   "en": "Tên thủ phạm đã bị bắt khiến người dân an tâm.",
+   "en": "The culprit was arrested, and the citizens were relieved.",
    "seg": [
     {
      "t": "犯人",
@@ -46009,12 +46009,12 @@
   "section_title": "Vụ việc",
   "word": "気味が悪い",
   "meaning_vi": "Cảm thấy ghê ghê, cảm thấy sợ sợ",
-  "meaning_en": "Cảm thấy ghê ghê, cảm thấy sợ sợ",
+  "meaning_en": "creepy, eerie, unsettling",
   "furigana": "きみがわるい",
   "example": {
    "jp": "知（し）らない人（ひと）から電話（でんわ）がかかってきて、気味が悪（きみがわる）い。",
    "vi": "Có người lạ gọi điện đến, cảm thấy sợ sợ.",
-   "en": "Có người lạ gọi điện đến, cảm thấy sợ sợ.",
+   "en": "I got a phone call from a stranger, and it was unsettling.",
    "seg": [
     {
      "t": "知",
@@ -46056,11 +46056,11 @@
   "section_title": "Vụ việc",
   "word": "パトカー",
   "meaning_vi": "Xe cảnh sát",
-  "meaning_en": "Xe cảnh sát",
+  "meaning_en": "police car",
   "example": {
    "jp": "昨日（きのう）、深夜（しんや）までパトカーの音（おと）が聞（き）こえた。",
    "vi": "Hôm qua, tôi nghe thấy tiếng xe cảnh sát đến tận nửa đêm.",
-   "en": "Hôm qua, tôi nghe thấy tiếng xe cảnh sát đến tận nửa đêm.",
+   "en": "Yesterday I could hear police car sirens until late at night.",
    "seg": [
     {
      "t": "昨日",
@@ -46102,12 +46102,12 @@
   "section_title": "Hãy chú ý!",
   "word": "（事故に）あう",
   "meaning_vi": "Gặp (tai nạn)",
-  "meaning_en": "Gặp (tai nạn)",
+  "meaning_en": "have (an accident), meet with",
   "furigana": "あう",
   "example": {
    "jp": "子（こ）どものころ、交通（こうつう）事故（じこ）にあったことがある。",
    "vi": "Hồi bé, tôi từng bị gặp tai nạn giao thông.",
-   "en": "Hồi bé, tôi từng bị gặp tai nạn giao thông.",
+   "en": "When I was a child, I was once in a traffic accident.",
    "seg": [
     {
      "t": "子",
@@ -46139,12 +46139,12 @@
   "section_title": "Hãy chú ý!",
   "word": "発生＜する＞",
   "meaning_vi": "Sự phát sinh, xảy ra",
-  "meaning_en": "Sự phát sinh, xảy ra",
+  "meaning_en": "occur, happen, break out",
   "furigana": "はっせい",
   "example": {
    "jp": "あの交差点（こうさてん）では、毎日（まいにち）事故（じこ）が発生（はっせい）している。",
    "vi": "Ở giao lộ ấy tai nạn xảy ra hàng ngày.",
-   "en": "Ở giao lộ ấy tai nạn xảy ra hàng ngày.",
+   "en": "Accidents happen at that intersection every day.",
    "seg": [
     {
      "t": "あの"
@@ -46186,12 +46186,12 @@
   "section_title": "Hãy chú ý!",
   "word": "命",
   "meaning_vi": "Sinh mạng",
-  "meaning_en": "Sinh mạng",
+  "meaning_en": "life",
   "furigana": "いのち",
   "example": {
    "jp": "命（いのち）は何（なに）よりも大切（たいせつ）だ。",
    "vi": "Sinh mạng quan trọng hơn bất cứ thứ gì.",
-   "en": "Sinh mạng quan trọng hơn bất cứ thứ gì.",
+   "en": "Life is more precious than anything.",
    "seg": [
     {
      "t": "命",
@@ -46226,12 +46226,12 @@
   "section_title": "Hãy chú ý!",
   "word": "救う",
   "meaning_vi": "Cứu",
-  "meaning_en": "Cứu",
+  "meaning_en": "save, rescue",
   "furigana": "すくう",
   "example": {
    "jp": "知（し）らない人（ひと）に、命（いのち）を救（すく）ってもらった。",
    "vi": "Tôi được một người không quen biết cứu mạng.",
-   "en": "Tôi được một người không quen biết cứu mạng.",
+   "en": "A stranger saved my life.",
    "seg": [
     {
      "t": "知",
@@ -46273,11 +46273,11 @@
   "section_title": "Hãy chú ý!",
   "word": "そうぞうしい",
   "meaning_vi": "Ồn ào",
-  "meaning_en": "Ồn ào",
+  "meaning_en": "noisy, clamorous",
   "example": {
    "jp": "信号（しんごう）の近（ちか）くが、ずいぶんそうぞうしい。",
    "vi": "Gần đèn xanh đèn đỏ quá là ồn ào.",
-   "en": "Gần đèn xanh đèn đỏ quá là ồn ào.",
+   "en": "It's terribly noisy near the traffic light.",
    "seg": [
     {
      "t": "信号",
@@ -46305,11 +46305,11 @@
   "section_title": "Hãy chú ý!",
   "word": "さわぐ",
   "meaning_vi": "Làm ầm ĩ, kêu ầm ĩ",
-  "meaning_en": "Làm ầm ĩ, kêu ầm ĩ",
+  "meaning_en": "make a racket, make a fuss",
   "example": {
    "jp": "交差点（こうさてん）でさわいでいる人（ひと）がいる。",
    "vi": "Có người đang kêu ầm ĩ ở giao lộ.",
-   "en": "Có người đang kêu ầm ĩ ở giao lộ.",
+   "en": "There's someone making a racket at the intersection.",
    "seg": [
     {
      "t": "交差点",
@@ -46337,12 +46337,12 @@
   "section_title": "Hãy chú ý!",
   "word": "現場",
   "meaning_vi": "Hiện trường, chỗ đó",
-  "meaning_en": "Hiện trường, chỗ đó",
+  "meaning_en": "scene, site",
   "furigana": "げんば",
   "example": {
    "jp": "大（おお）きな音（おと）がしたので、現場（げんば）に行（い）ってみた。",
    "vi": "Có tiếng động lớn nên tôi thử ra chỗ đó coi.",
-   "en": "Có tiếng động lớn nên tôi thử ra chỗ đó coi.",
+   "en": "There was a loud noise, so I went to the scene to look.",
    "seg": [
     {
      "t": "大",
@@ -46384,12 +46384,12 @@
   "section_title": "Hãy chú ý!",
   "word": "混乱＜する＞",
   "meaning_vi": "Sự hỗn loạn, náo loạn",
-  "meaning_en": "Sự hỗn loạn, náo loạn",
+  "meaning_en": "confusion, chaos",
   "furigana": "こんらん",
   "example": {
    "jp": "現場（げんば）は、警察（けいさつ）と多（おお）くの人（ひと）で混乱（こんらん）している。",
    "vi": "Hiện trường đang náo loạn bởi cảnh sát và nhiều người.",
-   "en": "Hiện trường đang náo loạn bởi cảnh sát và nhiều người.",
+   "en": "The scene is chaotic with police and a lot of people.",
    "seg": [
     {
      "t": "現場",
@@ -46438,11 +46438,11 @@
   "section_title": "Hãy chú ý!",
   "word": "パニック",
   "meaning_vi": "Hoảng loạn",
-  "meaning_en": "Hoảng loạn",
+  "meaning_en": "panic",
   "example": {
    "jp": "大（おお）きな事故（じこ）の現場（げんば）を見（み）て、パニックになった。",
    "vi": "Nhìn hiện trường vụ tai nạn lớn mà bị hoảng loạn.",
-   "en": "Nhìn hiện trường vụ tai nạn lớn mà bị hoảng loạn.",
+   "en": "I saw the scene of the major accident and panicked.",
    "seg": [
     {
      "t": "大",
@@ -46484,12 +46484,12 @@
   "section_title": "Hãy chú ý!",
   "word": "無事＜な＞",
   "meaning_vi": "Sự an toàn, bình an vô sự (an toàn, bình an)",
-  "meaning_en": "Sự an toàn, bình an vô sự (an toàn, bình an)",
+  "meaning_en": "safe, unharmed, safe and sound",
   "furigana": "ぶじ",
   "example": {
    "jp": "事故（じこ）にあった人（ひと）の無事（ぶじ）が確認（かくにん）された。（名） いなくなった男の子（おとこのこ）が、無事（ぶじ）に発見（はっけん）された。（ナ形）",
    "vi": "Đã xác nhận được người gặp nạn an toàn. / Đứa bé trai mất tích đã được phát hiện an toàn.",
-   "en": "Đã xác nhận được người gặp nạn an toàn. / Đứa bé trai mất tích đã được phát hiện an toàn.",
+   "en": "It was confirmed that the person in the accident was unharmed. The missing boy was found safe and sound.",
    "seg": [
     {
      "t": "事故",
@@ -46552,12 +46552,12 @@
   "section_title": "Hãy chú ý!",
   "word": "防ぐ",
   "meaning_vi": "Phòng, đề phòng",
-  "meaning_en": "Phòng, đề phòng",
+  "meaning_en": "prevent, guard against",
   "furigana": "ふせぐ",
   "example": {
    "jp": "警察（けいさつ）は、犯罪（はんざい）を防（ふせ）ぐことができなかった。",
    "vi": "Cảnh sát đã không thể đề phòng được tội phạm.",
-   "en": "Cảnh sát đã không thể đề phòng được tội phạm.",
+   "en": "The police were unable to prevent the crime.",
    "seg": [
     {
      "t": "警察",
@@ -46592,12 +46592,12 @@
   "section_title": "Hãy chú ý!",
   "word": "再び",
   "meaning_vi": "Lại, một lần nữa lại",
-  "meaning_en": "Lại, một lần nữa lại",
+  "meaning_en": "again, once more",
   "furigana": "ふたたび",
   "example": {
    "jp": "ひどい事故（じこ）が再（ふたた）び起（お）きてしまった。",
    "vi": "Vụ tai nạn thảm khốc một lần nữa lại xảy ra.",
-   "en": "Vụ tai nạn thảm khốc một lần nữa lại xảy ra.",
+   "en": "A terrible accident has happened again.",
    "seg": [
     {
      "t": "ひどい"
@@ -46635,11 +46635,11 @@
   "section_title": "Hãy chú ý!",
   "word": "わざと",
   "meaning_vi": "Cố tình",
-  "meaning_en": "Cố tình",
+  "meaning_en": "on purpose, deliberately",
   "example": {
    "jp": "運転（うんてん）手（しゅ）は、わざと事故（じこ）を起（お）こしたのかもしれない。",
    "vi": "Có thể người lái xe đã cố tình để xảy ra tai nạn.",
-   "en": "Có thể người lái xe đã cố tình để xảy ra tai nạn.",
+   "en": "The driver may have caused the accident on purpose.",
    "seg": [
     {
      "t": "運転",
@@ -46678,12 +46678,12 @@
   "section_title": "Hãy chú ý!",
   "word": "被害者",
   "meaning_vi": "Người bị nạn, nạn nhân",
-  "meaning_en": "Người bị nạn, nạn nhân",
+  "meaning_en": "victim",
   "furigana": "ひがいしゃ",
   "example": {
    "jp": "事故（じこ）の被害（ひがい）者（しゃ）は、大（おお）けがをしたらしい。",
    "vi": "Nghe nói nạn nhân trong vụ tai nạn bị thương nặng.",
-   "en": "Nghe nói nạn nhân trong vụ tai nạn bị thương nặng.",
+   "en": "The victim of the accident was apparently badly injured.",
    "seg": [
     {
      "t": "事故",
@@ -46722,12 +46722,12 @@
   "section_title": "Hãy chú ý!",
   "word": "[お]互いに",
   "meaning_vi": "Nhau, cùng nhau",
-  "meaning_en": "Nhau, cùng nhau",
+  "meaning_en": "each other, mutually",
   "furigana": "[お]たがいに",
   "example": {
    "jp": "自転車（じてんしゃ）に乗（の）っている人（ひと）も、歩（ある）いている人（ひと）も互（たが）いに注意（ちゅうい）が必要（ひつよう）だ。",
    "vi": "Cả người đi xe đạp lẫn người đi bộ cần chú ý nhau.",
-   "en": "Cả người đi xe đạp lẫn người đi bộ cần chú ý nhau.",
+   "en": "Both cyclists and pedestrians need to watch out for each other.",
    "seg": [
     {
      "t": "自転車",
@@ -46797,12 +46797,12 @@
   "section_title": "Hãy chú ý!",
   "word": "疑問",
   "meaning_vi": "Nghi vấn",
-  "meaning_en": "Nghi vấn",
+  "meaning_en": "doubt, question",
   "furigana": "ぎもん",
   "example": {
    "jp": "この事故（じこ）には、いくつかの疑問（ぎもん）がある。",
    "vi": "Vụ tai nạn này có một vài nghi vấn.",
-   "en": "Vụ tai nạn này có một vài nghi vấn.",
+   "en": "There are several unanswered questions about this accident.",
    "seg": [
     {
      "t": "この"
@@ -46833,12 +46833,12 @@
   "section_title": "Hãy chú ý!",
   "word": "飛び込む",
   "meaning_vi": "Nhảy xuống, nhảy vào",
-  "meaning_en": "Nhảy xuống, nhảy vào",
+  "meaning_en": "jump in, dive in",
   "furigana": "とびこむ",
   "example": {
    "jp": "準備（じゅんび）運動（うんどう）をしないで、海（うみ）に飛び込（とびこ）んではいけない。",
    "vi": "Không được nhảy xuống biển mà không khởi động trước.",
-   "en": "Không được nhảy xuống biển mà không khởi động trước.",
+   "en": "You mustn't dive into the sea without warming up first.",
    "seg": [
     {
      "t": "準備",
@@ -46877,11 +46877,11 @@
   "section_title": "Hãy chú ý!",
   "word": "おぼれる",
   "meaning_vi": "Đuối nước",
-  "meaning_en": "Đuối nước",
+  "meaning_en": "drown",
   "example": {
    "jp": "一人（ひとり）の男性（だんせい）が、お酒（さけ）を飲（の）んで泳（およ）いでおぼれた。",
    "vi": "Một người đàn ông bị đuối nước do uống rượu rồi bơi.",
-   "en": "Một người đàn ông bị đuối nước do uống rượu rồi bơi.",
+   "en": "One man drank alcohol, went swimming, and drowned.",
    "seg": [
     {
      "t": "一人",
@@ -46930,12 +46930,12 @@
   "section_title": "Hãy chú ý!",
   "word": "飛び出す",
   "meaning_vi": "Phi ra, lao ra",
-  "meaning_en": "Phi ra, lao ra",
+  "meaning_en": "rush out, dash out",
   "furigana": "とびだす",
   "example": {
    "jp": "子（こ）どもが道（みち）に、飛び出（とびだ）さないようにしてください。",
    "vi": "Đừng để trẻ con lao ra đường!",
-   "en": "Đừng để trẻ con lao ra đường!",
+   "en": "Please make sure children don't dash out into the road.",
    "seg": [
     {
      "t": "子",
@@ -46970,12 +46970,12 @@
   "section_title": "Hãy chú ý!",
   "word": "行方不明",
   "meaning_vi": "Mất tích",
-  "meaning_en": "Mất tích",
+  "meaning_en": "missing, whereabouts unknown",
   "furigana": "ゆくえふめい",
   "example": {
    "jp": "山（やま）で、3人（にん）の男女（だんじょ）が行方（ゆくえ）不明（ふめい）になっている。",
    "vi": "Có ba người nam nữ mất tích trên núi.",
-   "en": "Có ba người nam nữ mất tích trên núi.",
+   "en": "Three men and women have gone missing in the mountains.",
    "seg": [
     {
      "t": "山",
@@ -47021,12 +47021,12 @@
   "section_title": "Hãy chú ý!",
   "word": "亡くなる",
   "meaning_vi": "Mất, chết",
-  "meaning_en": "Mất, chết",
+  "meaning_en": "pass away, die",
   "furigana": "なくなる",
   "example": {
    "jp": "毎年（まいとし）、登山（とざん）中（ちゅう）に亡（な）くなる人（ひと）がいる。",
    "vi": "Hàng năm có người chết khi đang leo núi.",
-   "en": "Hàng năm có người chết khi đang leo núi.",
+   "en": "Every year there are people who die while mountain climbing.",
    "seg": [
     {
      "t": "毎年",
@@ -47072,12 +47072,12 @@
   "section_title": "Hãy chú ý!",
   "word": "偶然",
   "meaning_vi": "Ngẫu nhiên, tình cờ",
-  "meaning_en": "Ngẫu nhiên, tình cờ",
+  "meaning_en": "by chance, coincidence",
   "furigana": "ぐうぜん",
   "example": {
    "jp": "それは偶然（ぐうぜん）の事故（じこ）だった。 高校（こうこう）の友（とも）だちに偶然（ぐうぜん）会（あ）った。",
    "vi": "Đó là một vụ tai nạn ngẫu nhiên. / Tôi tình cờ gặp lại bạn hồi cấp ba.",
-   "en": "Đó là một vụ tai nạn ngẫu nhiên. / Tôi tình cờ gặp lại bạn hồi cấp ba.",
+   "en": "It was an accidental coincidence. I ran into a high school friend by chance.",
    "seg": [
     {
      "t": "それは"
@@ -47133,12 +47133,12 @@
   "section_title": "Rắc rối",
   "word": "苦情",
   "meaning_vi": "Kêu ca, phàn nàn",
-  "meaning_en": "Kêu ca, phàn nàn",
+  "meaning_en": "complaint",
   "furigana": "くじょう",
   "example": {
    "jp": "近所（きんじょ）から苦情（くじょう）があったので、謝（あやま）った。",
    "vi": "Bị hàng xóm kêu ca, tôi đã xin lỗi.",
-   "en": "Bị hàng xóm kêu ca, tôi đã xin lỗi.",
+   "en": "There was a complaint from the neighbors, so I apologized.",
    "seg": [
     {
      "t": "近所",
@@ -47173,11 +47173,11 @@
   "section_title": "Rắc rối",
   "word": "あわただしい",
   "meaning_vi": "Tất bật",
-  "meaning_en": "Tất bật",
+  "meaning_en": "hectic, busy, flustered",
   "example": {
    "jp": "ゆうべ社長（しゃちょう）が亡（な）くなり、今日（きょう）はーち日（ひ）あわただしい。",
    "vi": "Giám đốc đột ngột mất tối qua, hôm nay tất bật cả 1 ngày.",
-   "en": "Giám đốc đột ngột mất tối qua, hôm nay tất bật cả 1 ngày.",
+   "en": "The president passed away last night, and today has been hectic all day.",
    "seg": [
     {
      "t": "ゆうべ"
@@ -47222,11 +47222,11 @@
   "section_title": "Rắc rối",
   "word": "あわてる",
   "meaning_vi": "Cuống lên",
-  "meaning_en": "Cuống lên",
+  "meaning_en": "panic, get flustered",
   "example": {
    "jp": "バッグの中（なか）に財布（さいふ）が見（み）つからず、あわてた。",
    "vi": "Tôi đã cuống lên vì không nhìn thấy ví trong túi đâu.",
-   "en": "Tôi đã cuống lên vì không nhìn thấy ví trong túi đâu.",
+   "en": "I couldn't find my wallet in my bag and got flustered.",
    "seg": [
     {
      "t": "バッグの"
@@ -47264,11 +47264,11 @@
   "section_title": "Rắc rối",
   "word": "いきなり",
   "meaning_vi": "Bỗng nhiên",
-  "meaning_en": "Bỗng nhiên",
+  "meaning_en": "suddenly, abruptly, out of the blue",
   "example": {
    "jp": "アパートの前（まえ）で、いきなり名前（なまえ）を呼（よ）ばれた。",
    "vi": "Tôi bỗng nhiên bị gọi tên trước căn hộ.",
-   "en": "Tôi bỗng nhiên bị gọi tên trước căn hộ.",
+   "en": "In front of my apartment, someone suddenly called my name.",
    "seg": [
     {
      "t": "アパートの"
@@ -47306,11 +47306,11 @@
   "section_title": "Rắc rối",
   "word": "いじめ",
   "meaning_vi": "Sự trêu chọc, bắt nạt",
-  "meaning_en": "Sự trêu chọc, bắt nạt",
+  "meaning_en": "bullying",
   "example": {
    "jp": "いじめは社会（しゃかい）の問題（もんだい）だ。",
    "vi": "Bắt nạt là một vấn đề của xã hội.",
-   "en": "Bắt nạt là một vấn đề của xã hội.",
+   "en": "Bullying is a problem for society.",
    "seg": [
     {
      "t": "いじめは"
@@ -47341,11 +47341,11 @@
   "section_title": "Rắc rối",
   "word": "いじめる",
   "meaning_vi": "Trêu chọc, bắt nạt",
-  "meaning_en": "Trêu chọc, bắt nạt",
+  "meaning_en": "bully, pick on",
   "example": {
    "jp": "友（とも）だちをいじめるなんて、最低（さいてい）だ。",
    "vi": "Bắt nạt bạn bè thật là tệ.",
-   "en": "Bắt nạt bạn bè thật là tệ.",
+   "en": "Bullying your friends is despicable.",
    "seg": [
     {
      "t": "友",
@@ -47373,12 +47373,12 @@
   "section_title": "Rắc rối",
   "word": "迷子",
   "meaning_vi": "Trẻ lạc, sự đi lạc",
-  "meaning_en": "Trẻ lạc, sự đi lạc",
+  "meaning_en": "lost child, getting lost",
   "furigana": "まいご",
   "example": {
    "jp": "日本（にほん）へ来（き）たころ、よく迷子（まいご）になった。",
    "vi": "Hồi đến Nhật, tôi hay bị lạc đường.",
-   "en": "Hồi đến Nhật, tôi hay bị lạc đường.",
+   "en": "When I first came to Japan, I often got lost.",
    "seg": [
     {
      "t": "日本",
@@ -47413,12 +47413,12 @@
   "section_title": "Rắc rối",
   "word": "場合",
   "meaning_vi": "Trường hợp",
-  "meaning_en": "Trường hợp",
+  "meaning_en": "case, situation",
   "furigana": "ばあい",
   "example": {
    "jp": "迷子（まいご）になった場合（ばあい）は、交番（こうばん）で聞（き）いてください。",
    "vi": "Trường hợp bị lạc, hãy đến đồn cản sát hỏi đường.",
-   "en": "Trường hợp bị lạc, hãy đến đồn cản sát hỏi đường.",
+   "en": "If you get lost, please ask at a police box.",
    "seg": [
     {
      "t": "迷子",
@@ -47460,12 +47460,12 @@
   "section_title": "Rắc rối",
   "word": "落とす",
   "meaning_vi": "Đánh rơi",
-  "meaning_en": "Đánh rơi",
+  "meaning_en": "drop, lose",
   "furigana": "おとす",
   "example": {
    "jp": "駅（えき）で定期（ていき）券（けん）を落（お）としたが、戻（もど）ってきた。",
    "vi": "Tôi đánh rơi vé tháng ở ga nhưng đã được trả lại.",
-   "en": "Tôi đánh rơi vé tháng ở ga nhưng đã được trả lại.",
+   "en": "I dropped my commuter pass at the station, but it came back to me.",
    "seg": [
     {
      "t": "駅",
@@ -47511,11 +47511,11 @@
   "section_title": "Rắc rối",
   "word": "なくす",
   "meaning_vi": "Đánh mất, làm mất",
-  "meaning_en": "Đánh mất, làm mất",
+  "meaning_en": "lose, misplace",
   "example": {
    "jp": "大切（たいせつ）な書類（しょるい）をなくして、部長（ぶちょう）にひどく叱（しか）られた。",
    "vi": "Tôi làm mất giấy tờ quan trọng, bị trưởng phòng mắng thậm tệ.",
-   "en": "Tôi làm mất giấy tờ quan trọng, bị trưởng phòng mắng thậm tệ.",
+   "en": "I lost some important documents and was severely scolded by the department manager.",
    "seg": [
     {
      "t": "大切",
@@ -47557,12 +47557,12 @@
   "section_title": "Rắc rối",
   "word": "借金＜する＞",
   "meaning_vi": "Sự vay tiền, tiền nợ",
-  "meaning_en": "Sự vay tiền, tiền nợ",
+  "meaning_en": "debt, borrow money",
   "furigana": "しゃっきん",
   "example": {
    "jp": "親（おや）に借金（しゃっきん）をしたが、まだ半分（はんぶん）も返（かえ）していない。",
    "vi": "Tôi vay tiền của bố mẹ nhưng vẫn chưa trả được một nửa.",
-   "en": "Tôi vay tiền của bố mẹ nhưng vẫn chưa trả được một nửa.",
+   "en": "I borrowed money from my parents, but I haven't paid back even half yet.",
    "seg": [
     {
      "t": "親",
@@ -47604,11 +47604,11 @@
   "section_title": "Rắc rối",
   "word": "ずるい",
   "meaning_vi": "Gian dối, khôn lỏi",
-  "meaning_en": "Gian dối, khôn lỏi",
+  "meaning_en": "sly, cunning, unfair",
   "example": {
    "jp": "彼（かれ）はずるい人（ひと）だから、信（しん）じないほうがいい。",
    "vi": "Anh ta là một người gian dối, vì vậy không nên tin.",
-   "en": "Anh ta là một người gian dối, vì vậy không nên tin.",
+   "en": "He's a sly person, so it's better not to trust him.",
    "seg": [
     {
      "t": "彼",
@@ -47643,12 +47643,12 @@
   "section_title": "Rắc rối",
   "word": "倒れる",
   "meaning_vi": "Đổ, đổ bệnh",
-  "meaning_en": "Đổ, đổ bệnh",
+  "meaning_en": "fall over, collapse; fall ill",
   "furigana": "たおれる",
   "example": {
    "jp": "①地震（じしん）でビルが倒（たお）れた。 ②仕事（しごと）のしすぎで、倒（たお）れてしまった。",
    "vi": "①Tòa nhà bị đổ vì động đất. ②Làm việc nhiều quá bị đổ bệnh.",
-   "en": "①Tòa nhà bị đổ vì động đất. ②Làm việc nhiều quá bị đổ bệnh.",
+   "en": "(1) A building collapsed in the earthquake. (2) I worked too hard and collapsed.",
    "seg": [
     {
      "t": "①"
@@ -47693,12 +47693,12 @@
   "section_title": "Rắc rối",
   "word": "転ぶ",
   "meaning_vi": "Bị ngã",
-  "meaning_en": "Bị ngã",
+  "meaning_en": "fall down, tumble",
   "furigana": "ころぶ",
   "example": {
    "jp": "雪（ゆき）の日（ひ）に転（ころ）んで、足（あし）の骨（ほね）を折（お）った。",
    "vi": "Vào hôm tuyết rơi, tôi bị ngã gãy xương chân.",
-   "en": "Vào hôm tuyết rơi, tôi bị ngã gãy xương chân.",
+   "en": "I fell over on a snowy day and broke a bone in my leg.",
    "seg": [
     {
      "t": "雪",
@@ -47754,12 +47754,12 @@
   "section_title": "Rắc rối",
   "word": "（会社が）つぶれる",
   "meaning_vi": "(Công ty) bị phá sản, bị dập",
-  "meaning_en": "(Công ty) bị phá sản, bị dập",
+  "meaning_en": "be crushed; go bankrupt",
   "furigana": "つぶれる",
   "example": {
    "jp": "①箱（ばこ）を落（お）として、ケーキがつぶれてしまった。 ②友（とも）だちの会社（かいしゃ）がつぶれたそうだ。",
    "vi": "①Tôi đánh rơi hộp khiến bánh ga-tô bị dập. ②Công ty của bạn tôi nghe nói bị phá sản.",
-   "en": "①Tôi đánh rơi hộp khiến bánh ga-tô bị dập. ②Công ty của bạn tôi nghe nói bị phá sản.",
+   "en": "(1) I dropped the box and the cake got crushed. (2) I hear my friend's company went bankrupt.",
    "seg": [
     {
      "t": "①"
@@ -47804,12 +47804,12 @@
   "section_title": "Rắc rối",
   "word": "次々[と]",
   "meaning_vi": "Liên tiếp",
-  "meaning_en": "Liên tiếp",
+  "meaning_en": "one after another, in succession",
   "furigana": "つぎつぎ [と]",
   "example": {
    "jp": "会社（かいしゃ）で、次々（つぎつぎ）と問題（もんだい）が発生（はっせい）した。",
    "vi": "Trong công ty các vấn đề liên tiếp phát sinh.",
-   "en": "Trong công ty các vấn đề liên tiếp phát sinh.",
+   "en": "Problems arose one after another at the company.",
    "seg": [
     {
      "t": "会社",
@@ -47851,12 +47851,12 @@
   "section_title": "Rắc rối",
   "word": "停電＜する＞",
   "meaning_vi": "Sự mất điện, cúp điện",
-  "meaning_en": "Sự mất điện, cúp điện",
+  "meaning_en": "power outage, blackout",
   "furigana": "ていでん",
   "example": {
    "jp": "地域（ちいき）で停電（ていでん）があり、2時間（じかん）も回復（かいふく）しなかった。",
    "vi": "Tại khu vực đã xảy ra tình trạng mất điện và mãi không phục hồi được trong vòng hai tiếng.",
-   "en": "Tại khu vực đã xảy ra tình trạng mất điện và mãi không phục hồi được trong vòng hai tiếng.",
+   "en": "There was a power outage in the area, and it wasn't restored for two whole hours.",
    "seg": [
     {
      "t": "地域",
@@ -47898,12 +47898,12 @@
   "section_title": "Rắc rối",
   "word": "断水＜する＞",
   "meaning_vi": "Sự mất nước, cúp nước",
-  "meaning_en": "Sự mất nước, cúp nước",
+  "meaning_en": "water outage, water supply cut",
   "furigana": "だんすい",
   "example": {
    "jp": "この地域（ちいき）は地震（じしん）で断水（だんすい）した。",
    "vi": "Khu vực này bị mất nước do động đất.",
-   "en": "Khu vực này bị mất nước do động đất.",
+   "en": "This area had its water cut off by the earthquake.",
    "seg": [
     {
      "t": "この"
@@ -47941,11 +47941,11 @@
   "section_title": "Rắc rối",
   "word": "ゆれる",
   "meaning_vi": "Rung lắc",
-  "meaning_en": "Rung lắc",
+  "meaning_en": "shake, sway",
   "example": {
    "jp": "このマンションは、地震（じしん）のとき、けっこうゆれる。",
    "vi": "Tòa nhà chung cư này bị rung lắc khá mạnh khi động đất.",
-   "en": "Tòa nhà chung cư này bị rung lắc khá mạnh khi động đất.",
+   "en": "This apartment building shakes quite a bit during an earthquake.",
    "seg": [
     {
      "t": "このマンションは、"
@@ -47969,11 +47969,11 @@
   "section_title": "Rắc rối",
   "word": "ぐらぐら＜する＞",
   "meaning_vi": "Bần bật",
-  "meaning_en": "Bần bật",
+  "meaning_en": "wobbling, shaking unsteadily",
   "example": {
    "jp": "地震（じしん）で家具（かぐ）がぐらぐら揺（ゆ）れた。",
    "vi": "Đồ đạc trong nhà rung bần bật vì động đất.",
-   "en": "Đồ đạc trong nhà rung bần bật vì động đất.",
+   "en": "The furniture shook violently in the earthquake.",
    "seg": [
     {
      "t": "地震",
@@ -48008,12 +48008,12 @@
   "section_title": "Rắc rối",
   "word": "非常口",
   "meaning_vi": "Lối thoát hiểm",
-  "meaning_en": "Lối thoát hiểm",
+  "meaning_en": "emergency exit",
   "furigana": "ひじょうぐち",
   "example": {
    "jp": "非常口（ひじょうぐち）は必（かなら）ず確認（かくにん）しておきましょう。",
    "vi": "Chúng ta nhất định phải kiểm tra sẵn xem lối thoát hiểm ở đâu!",
-   "en": "Chúng ta nhất định phải kiểm tra sẵn xem lối thoát hiểm ở đâu!",
+   "en": "Let's always make sure we know where the emergency exit is.",
    "seg": [
     {
      "t": "非常口",
@@ -48048,12 +48048,12 @@
   "section_title": "Dữ liệu",
   "word": "増加＜する＞",
   "meaning_vi": "Sự gia tăng, tăng lên",
-  "meaning_en": "Sự gia tăng, tăng lên",
+  "meaning_en": "increase",
   "furigana": "ぞうか",
   "example": {
    "jp": "海外（かいがい）からの観光（かんこう）客（きゃく）が増加（ぞうか）している。",
    "vi": "Khách du lịch đến từ nước ngoài tăng lên.",
-   "en": "Khách du lịch đến từ nước ngoài tăng lên.",
+   "en": "The number of tourists from overseas is increasing.",
    "seg": [
     {
      "t": "海外",
@@ -48092,12 +48092,12 @@
   "section_title": "Dữ liệu",
   "word": "減少＜する＞",
   "meaning_vi": "Sự giảm thiểu, giảm đi",
-  "meaning_en": "Sự giảm thiểu, giảm đi",
+  "meaning_en": "decrease, decline",
   "furigana": "げんしょう",
   "example": {
    "jp": "子（こ）どもの数（かず）は、相変（あいか）わらず減少（げんしょう）している。",
    "vi": "Số trẻ em vẫn bị giảm đi.",
-   "en": "Số trẻ em vẫn bị giảm đi.",
+   "en": "The number of children is declining as ever.",
    "seg": [
     {
      "t": "子",
@@ -48139,12 +48139,12 @@
   "section_title": "Dữ liệu",
   "word": "超える",
   "meaning_vi": "Vượt",
-  "meaning_en": "Vượt",
+  "meaning_en": "exceed, surpass",
   "furigana": "こえる",
   "example": {
    "jp": "アンケートで「はい」と答（こた）えた人（ひと）が、半分（はんぶん）を超（こ）えた。",
    "vi": "Số người trả lời 'có' trong phiếu thăm dò khảo sát đã vượt một nữa.",
-   "en": "Số người trả lời 'có' trong phiếu thăm dò khảo sát đã vượt một nữa.",
+   "en": "The number of people answering \"yes\" in the survey exceeded half.",
    "seg": [
     {
      "t": "アンケートで「はい」と"
@@ -48189,11 +48189,11 @@
   "section_title": "Dữ liệu",
   "word": "ピーク",
   "meaning_vi": "Đỉnh điểm, cao nhất",
-  "meaning_en": "Đỉnh điểm, cao nhất",
+  "meaning_en": "peak",
   "example": {
    "jp": "今日（きょう）の暑（あつ）さが、今年（ことし）のピークと言（い）えるだろう。",
    "vi": "Cái nóng ngày hôm nay có thể nói là cao nhất năm nay.",
-   "en": "Cái nóng ngày hôm nay có thể nói là cao nhất năm nay.",
+   "en": "Today's heat can probably be called this year's peak.",
    "seg": [
     {
      "t": "今日",
@@ -48235,12 +48235,12 @@
   "section_title": "Dữ liệu",
   "word": "越える",
   "meaning_vi": "Qua",
-  "meaning_en": "Qua",
+  "meaning_en": "go over, get past, cross",
   "furigana": "こえる",
   "example": {
    "jp": "インフルエンザはピークを越（こ）えたようだ。",
    "vi": "Dịch cúm dường như là đã vượt qua giai đoạn đỉnh điểm.",
-   "en": "Dịch cúm dường như là đã vượt qua giai đoạn đỉnh điểm.",
+   "en": "The flu seems to have passed its peak.",
    "seg": [
     {
      "t": "インフルエンザはピークを"
@@ -48264,12 +48264,12 @@
   "section_title": "Dữ liệu",
   "word": "全体",
   "meaning_vi": "Toàn bộ",
-  "meaning_en": "Toàn bộ",
+  "meaning_en": "the whole, entirety",
   "furigana": "ぜんたい",
   "example": {
    "jp": "全体（ぜんたい）の80パーセントの人（ひと）が、反対（はんたい）だと答（こた）えた。",
    "vi": "80 % toàn bộ số người trả lời phản đối.",
-   "en": "80 % toàn bộ số người trả lời phản đối.",
+   "en": "Eighty percent of the whole answered that they were opposed.",
    "seg": [
     {
      "t": "全体",
@@ -48311,11 +48311,11 @@
   "section_title": "Dữ liệu",
   "word": "かなり",
   "meaning_vi": "Đáng kể",
-  "meaning_en": "Đáng kể",
+  "meaning_en": "considerably, quite a lot",
   "example": {
    "jp": "かなりの人（ひと）が賛成（さんせい）していないことがわかった。",
    "vi": "Ta thấy rằng, một số người đáng kể không tán thành.",
-   "en": "Ta thấy rằng, một số người đáng kể không tán thành.",
+   "en": "It turned out that quite a lot of people were not in favor.",
    "seg": [
     {
      "t": "かなりの"
@@ -48346,12 +48346,12 @@
   "section_title": "Dữ liệu",
   "word": "信用＜する＞",
   "meaning_vi": "Sự tin tưởng",
-  "meaning_en": "Sự tin tưởng",
+  "meaning_en": "trust, credit",
   "furigana": "しんよう",
   "example": {
    "jp": "このデータは信用（しんよう）できる。",
    "vi": "Dữ liệu này có thể tin tưởng được.",
-   "en": "Dữ liệu này có thể tin tưởng được.",
+   "en": "This data can be trusted.",
    "seg": [
     {
      "t": "このデータは"
@@ -48375,12 +48375,12 @@
   "section_title": "Dữ liệu",
   "word": "失う",
   "meaning_vi": "Đánh mất",
-  "meaning_en": "Đánh mất",
+  "meaning_en": "lose",
   "furigana": "うしなう",
   "example": {
    "jp": "彼（かれ）は重要（じゅうよう）なデータを消（け）してしまい、信用（しんよう）を失（うしな）った。",
    "vi": "Anh ta lỡ xóa mất dữ liệu quan trọng nên đã đánh mất sự tin tưởng.",
-   "en": "Anh ta lỡ xóa mất dữ liệu quan trọng nên đã đánh mất sự tin tưởng.",
+   "en": "He deleted important data and lost people's trust.",
    "seg": [
     {
      "t": "彼",
@@ -48429,12 +48429,12 @@
   "section_title": "Dữ liệu",
   "word": "正常＜な＞",
   "meaning_vi": "Bình thường",
-  "meaning_en": "Bình thường",
+  "meaning_en": "normal, functioning properly",
   "furigana": "せいじょう",
   "example": {
    "jp": "このパソコンは正常（せいじょう）に動（うご）いている。（ナ形）",
    "vi": "Cái máy vi tính này hoạt động bình thường.",
-   "en": "Cái máy vi tính này hoạt động bình thường.",
+   "en": "This computer is working normally.",
    "seg": [
     {
      "t": "このパソコンは"
@@ -48465,12 +48465,12 @@
   "section_title": "Dữ liệu",
   "word": "不景気＜な＞",
   "meaning_vi": "Tình trạng kinh tế trì trệ",
-  "meaning_en": "Tình trạng kinh tế trì trệ",
+  "meaning_en": "recession, bad economy",
   "furigana": "ふけいき",
   "example": {
    "jp": "もう何（なん）年（ねん）も不景気（ふけいき）が続（つづ）いている。 不景気（ふけいき）な社会（しゃかい）を変（か）えたい。",
    "vi": "Tình trạng kinh tế trì trệ đã kéo dài nhiều năm nay. / Tôi muốn thay đổi xã hội kinh tế trì trệ.",
-   "en": "Tình trạng kinh tế trì trệ đã kéo dài nhiều năm nay. / Tôi muốn thay đổi xã hội kinh tế trì trệ.",
+   "en": "The recession has already gone on for years. I want to change a society in recession.",
    "seg": [
     {
      "t": "もう"
@@ -48533,12 +48533,12 @@
   "section_title": "Dữ liệu",
   "word": "円高",
   "meaning_vi": "Đồng yên tăng gía",
-  "meaning_en": "Đồng yên tăng gía",
+  "meaning_en": "strong yen, appreciation of the yen",
   "furigana": "えんだか",
   "example": {
    "jp": "円（えん）高（だか）で、損（そん）をする人（ひと）も得（とく）をする人（ひと）もいる。",
    "vi": "Có người bị thiệt và cũng có người được lợi từ đồng yên tăng giá.",
-   "en": "Có người bị thiệt và cũng có người được lợi từ đồng yên tăng giá.",
+   "en": "With a strong yen, there are people who lose out and people who gain.",
    "seg": [
     {
      "t": "円",
@@ -48591,12 +48591,12 @@
   "section_title": "Dữ liệu",
   "word": "平均＜する＞",
   "meaning_vi": "Bình quân",
-  "meaning_en": "Bình quân",
+  "meaning_en": "average",
   "furigana": "へいきん",
   "example": {
    "jp": "今回（こんかい）のテストの平均（へいきん）点（てん）は、75点（てん）だった。",
    "vi": "Điểm bình quân của kỳ thi đợt này là 75 điểm.",
-   "en": "Điểm bình quân của kỳ thi đợt này là 75 điểm.",
+   "en": "The average score on this test was 75.",
    "seg": [
     {
      "t": "今回",
@@ -48635,11 +48635,11 @@
   "section_title": "Dữ liệu",
   "word": "およそ",
   "meaning_vi": "Khoảng, khoảng chừng",
-  "meaning_en": "Khoảng, khoảng chừng",
+  "meaning_en": "approximately, about",
   "example": {
    "jp": "合格（ごうかく）者（しゃ）は、およそ20パーセントだ。",
    "vi": "Người thi đỗ khoảng chừng 20%.",
-   "en": "Người thi đỗ khoảng chừng 20%.",
+   "en": "About twenty percent passed.",
    "seg": [
     {
      "t": "合格",
@@ -48664,11 +48664,11 @@
   "section_title": "Dữ liệu",
   "word": "めちゃくちゃ＜な＞",
   "meaning_vi": "Sự vớ vẩn, sự lung tung (vớ vẩn, lung tung)",
-  "meaning_en": "Sự vớ vẩn, sự lung tung (vớ vẩn, lung tung)",
+  "meaning_en": "absurd, a mess, all over the place",
   "example": {
    "jp": "この結果（けっか）は、だれが見（み）てもめちゃくちゃだ。（ナ形）",
    "vi": "Kết quả này ai nhìn vào cũng thấy là vớ vẩn.",
-   "en": "Kết quả này ai nhìn vào cũng thấy là vớ vẩn.",
+   "en": "Anyone looking at this result would say it's a mess.",
    "seg": [
     {
      "t": "この"
@@ -48699,12 +48699,12 @@
   "section_title": "Dữ liệu",
   "word": "最も",
   "meaning_vi": "Nhất",
-  "meaning_en": "Nhất",
+  "meaning_en": "most, the most",
   "furigana": "もっとも",
   "example": {
    "jp": "今年（ことし）、最（もっと）もヒットした映画（えいが）が発表（はっぴょう）された。",
    "vi": "Năm nay bộ phim hot nhất đã được công bố.",
-   "en": "Năm nay bộ phim hot nhất đã được công bố.",
+   "en": "This year's biggest hit film was announced.",
    "seg": [
     {
      "t": "今年",
@@ -48746,11 +48746,11 @@
   "section_title": "Dữ liệu",
   "word": "ついに",
   "meaning_vi": "Cuối cùng thì, mãi thì cũng, rồi thì",
-  "meaning_en": "Cuối cùng thì, mãi thì cũng, rồi thì",
+  "meaning_en": "finally, in the end, at last",
   "example": {
    "jp": "ついに、日本（にほん）の人口（じんこう）が減（へ）り始（はじ）めた。",
    "vi": "Rồi thì dân số của Nhật đã bắt đầu giảm.",
-   "en": "Rồi thì dân số của Nhật đã bắt đầu giảm.",
+   "en": "At last, Japan's population has begun to decline.",
    "seg": [
     {
      "t": "ついに、"
@@ -48795,11 +48795,11 @@
   "section_title": "Dữ liệu",
   "word": "とうとう",
   "meaning_vi": "Cuối cùng thì, mãi thì cũng",
-  "meaning_en": "Cuối cùng thì, mãi thì cũng",
+  "meaning_en": "finally, in the end",
   "example": {
    "jp": "とうとう、東京（とうきょう）の平均（へいきん）気温（きおん）が16度（ど）を超（こ）えた。",
    "vi": "Cuối cùng thì nhiệt độ trung bình ở Tokyo đã vượt qua 16 độ.",
-   "en": "Cuối cùng thì nhiệt độ trung bình ở Tokyo đã vượt qua 16 độ.",
+   "en": "In the end, Tokyo's average temperature exceeded 16 degrees.",
    "seg": [
     {
      "t": "とうとう、"
@@ -48848,12 +48848,12 @@
   "section_title": "Tính cách",
   "word": "個性",
   "meaning_vi": "Cá tính",
-  "meaning_en": "Cá tính",
+  "meaning_en": "individuality, personality",
   "furigana": "こせい",
   "example": {
    "jp": "一人（ひとり）ひとりの個性（こせい）を大切（たいせつ）にしよう。",
    "vi": "Hãy coi trọng cá tính của mỗi người!",
-   "en": "Hãy coi trọng cá tính của mỗi người!",
+   "en": "Let's value each person's individuality.",
    "seg": [
     {
      "t": "一人",
@@ -48888,11 +48888,11 @@
   "section_title": "Tính cách",
   "word": "まじめ＜な＞",
   "meaning_vi": "Sự nghiêm túc (nghiêm túc)",
-  "meaning_en": "Sự nghiêm túc (nghiêm túc)",
+  "meaning_en": "serious, earnest, diligent",
   "example": {
    "jp": "彼（かれ）は、とてもまじめな会社（かいしゃ）員（いん）だ。",
    "vi": "Anh ấy là một nhân viên rất nghiêm túc.",
-   "en": "Anh ấy là một nhân viên rất nghiêm túc.",
+   "en": "He's a very diligent company employee.",
    "seg": [
     {
      "t": "彼",
@@ -48924,12 +48924,12 @@
   "section_title": "Tính cách",
   "word": "働き者",
   "meaning_vi": "Người chăm làm, người hay lam hay làm",
-  "meaning_en": "Người chăm làm, người hay lam hay làm",
+  "meaning_en": "hard worker",
   "furigana": "はたらきもの",
   "example": {
    "jp": "私（わたし）の母（はは）は働き者（はたらきもの）だ。",
    "vi": "Mẹ tôi là một người hay lam hay làm.",
-   "en": "Mẹ tôi là một người hay lam hay làm.",
+   "en": "My mother is a hard worker.",
    "seg": [
     {
      "t": "私",
@@ -48964,12 +48964,12 @@
   "section_title": "Tính cách",
   "word": "正直＜な＞",
   "meaning_vi": "Sự thật (thật thà, thẳng thắn)",
-  "meaning_en": "Sự thật (thật thà, thẳng thắn)",
+  "meaning_en": "honest, frank",
   "furigana": "しょうじき",
   "example": {
    "jp": "うそはいけません。正直（しょうじき）に言（い）いなさい。（ナ形）",
    "vi": "Không được nói dối. Hãy nói thật đi!",
-   "en": "Không được nói dối. Hãy nói thật đi!",
+   "en": "Lying is not allowed. Tell the truth.",
    "seg": [
     {
      "t": "うそはいけません。"
@@ -49000,12 +49000,12 @@
   "section_title": "Tính cách",
   "word": "素直な",
   "meaning_vi": "Dễ bảo, hiền",
-  "meaning_en": "Dễ bảo, hiền",
+  "meaning_en": "obedient, docile, straightforward",
   "furigana": "すなおな",
   "example": {
    "jp": "弟（おとうと）は、とても素直（すなお）な性格（せいかく）だ。",
    "vi": "Em trai tôi tính cách hiền lành dễ bảo.",
-   "en": "Em trai tôi tính cách hiền lành dễ bảo.",
+   "en": "My younger brother has a very easygoing, obedient nature.",
    "seg": [
     {
      "t": "弟",
@@ -49040,12 +49040,12 @@
   "section_title": "Tính cách",
   "word": "積極的な",
   "meaning_vi": "Tích cực",
-  "meaning_en": "Tích cực",
+  "meaning_en": "proactive, positive, active",
   "furigana": "せっきょくてきな",
   "example": {
    "jp": "会社（かいしゃ）では、積極（せっきょく）的（てき）に仕事（しごと）をしている。",
    "vi": "Trong công ty tôi tích cực làm việc.",
-   "en": "Trong công ty tôi tích cực làm việc.",
+   "en": "At the company, I work proactively.",
    "seg": [
     {
      "t": "会社",
@@ -49084,12 +49084,12 @@
   "section_title": "Tính cách",
   "word": "消極的な",
   "meaning_vi": "Tiêu cực",
-  "meaning_en": "Tiêu cực",
+  "meaning_en": "passive, unenthusiastic",
   "furigana": "しょうきょくてきな",
   "example": {
    "jp": "彼（かれ）は消極（しょうきょく）的（てき）なタイプだ。",
    "vi": "Anh ấy là típ người tiêu cực.",
-   "en": "Anh ấy là típ người tiêu cực.",
+   "en": "He's the passive type.",
    "seg": [
     {
      "t": "彼",
@@ -49121,11 +49121,11 @@
   "section_title": "Tính cách",
   "word": "ほがらかな",
   "meaning_vi": "Hồ hởi, vui tính",
-  "meaning_en": "Hồ hởi, vui tính",
+  "meaning_en": "cheerful, bright",
   "example": {
    "jp": "ほがらかな人（ひと）と一緒（いっしょ）にいると、楽（たの）しくなる。",
    "vi": "Ở bên người vui tính sẽ trở nên vui vẻ.",
-   "en": "Ở bên người vui tính sẽ trở nên vui vẻ.",
+   "en": "When you're with cheerful people, you become cheerful too.",
    "seg": [
     {
      "t": "ほがらかな"
@@ -49163,12 +49163,12 @@
   "section_title": "Tính cách",
   "word": "人なつこい",
   "meaning_vi": "Dễ làm thân, dễ mến, thân thiện",
-  "meaning_en": "Dễ làm thân, dễ mến, thân thiện",
+  "meaning_en": "friendly, sociable, easy to warm to",
   "furigana": "ひとなつこい",
   "example": {
    "jp": "彼女（かのじょ）は人（ひと）なつこいので、先輩（せんぱい）にかわいがられる。",
    "vi": "Cô ấy thân thiện nên được đàn anh quý.",
-   "en": "Cô ấy thân thiện nên được đàn anh quý.",
+   "en": "She's friendly, so her senior colleagues are fond of her.",
    "seg": [
     {
      "t": "彼女",
@@ -49203,11 +49203,11 @@
   "section_title": "Tính cách",
   "word": "おだやかな",
   "meaning_vi": "Điềm đạm, ôn hòa",
-  "meaning_en": "Điềm đạm, ôn hòa",
+  "meaning_en": "calm, gentle, mild",
   "example": {
    "jp": "彼（かれ）はおだやかなので、みんなに好（す）かれる。",
    "vi": "Anh ấy điềm đạm, được mọi người quý mến.",
-   "en": "Anh ấy điềm đạm, được mọi người quý mến.",
+   "en": "He's mild-mannered, so everyone likes him.",
    "seg": [
     {
      "t": "彼",
@@ -49235,12 +49235,12 @@
   "section_title": "Tính cách",
   "word": "のん気な",
   "meaning_vi": "Ung dung, đủng đỉnh",
-  "meaning_en": "Ung dung, đủng đỉnh",
+  "meaning_en": "carefree, easygoing, happy-go-lucky",
   "furigana": "のんきな",
   "example": {
    "jp": "のん気（き）に遊（あそ）んでいないで、勉強（べんきょう）しなさい。",
    "vi": "Đừng có đủng đỉnh chơi nữa, hãy học đi!",
-   "en": "Đừng có đủng đỉnh chơi nữa, hãy học đi!",
+   "en": "Don't just laze about playing — study.",
    "seg": [
     {
      "t": "のん"
@@ -49278,11 +49278,11 @@
   "section_title": "Tính cách",
   "word": "おとなしい",
   "meaning_vi": "Hiền lành, trầm tính",
-  "meaning_en": "Hiền lành, trầm tính",
+  "meaning_en": "quiet, gentle, well-behaved",
   "example": {
    "jp": "姉（あね）は、会社（かいしゃ）ではおとなしいらしい。",
    "vi": "Chị gái tôi có vẻ trầm tính khi ở công ty.",
-   "en": "Chị gái tôi có vẻ trầm tính khi ở công ty.",
+   "en": "My older sister is apparently quiet at work.",
    "seg": [
     {
      "t": "姉",
@@ -49310,11 +49310,11 @@
   "section_title": "Tính cách",
   "word": "そそっかしい",
   "meaning_vi": "Hậu đậu, bất cẩn, hấp tấp",
-  "meaning_en": "Hậu đậu, bất cẩn, hấp tấp",
+  "meaning_en": "careless, scatterbrained, hasty",
   "example": {
    "jp": "田中（たなか）さんはそそっかしくて、1日（にち）に3回（かい）はミスする。",
    "vi": "Anh Tanaka hậu đậu, một ngày 3 lần mắc lỗi.",
-   "en": "Anh Tanaka hậu đậu, một ngày 3 lần mắc lỗi.",
+   "en": "Mr. Tanaka is careless and makes about three mistakes a day.",
    "seg": [
     {
      "t": "田中",
@@ -49349,11 +49349,11 @@
   "section_title": "Tính cách",
   "word": "いいかげんな",
   "meaning_vi": "Lấy lệ, qua loa, đại khái",
-  "meaning_en": "Lấy lệ, qua loa, đại khái",
+  "meaning_en": "half-hearted, irresponsible, sloppy",
   "example": {
    "jp": "いいかげんな返事（へんじ）をしてはいけません。",
    "vi": "Không được trả lời lấy lệ!",
-   "en": "Không được trả lời lấy lệ!",
+   "en": "You mustn't give a half-hearted answer.",
    "seg": [
     {
      "t": "いいかげんな"
@@ -49377,12 +49377,12 @@
   "section_title": "Tính cách",
   "word": "意地悪＜な＞",
   "meaning_vi": "Sự ác ý (ác ý)",
-  "meaning_en": "Sự ác ý (ác ý)",
+  "meaning_en": "spiteful, mean, malicious",
   "furigana": "いじわる",
   "example": {
    "jp": "意地悪（いじわる）をするのは、やめなさい。（名） 意地悪（いじわる）な人（ひと）は嫌（きら）われる。（ナ形）",
    "vi": "Hãy thôi ngay những việc làm ác ý! / Người độc ác sẽ bị ghét bỏ.",
-   "en": "Hãy thôi ngay những việc làm ác ý! / Người độc ác sẽ bị ghét bỏ.",
+   "en": "Stop being mean. Spiteful people end up disliked.",
    "seg": [
     {
      "t": "意地悪",
@@ -49424,11 +49424,11 @@
   "section_title": "Tính cách",
   "word": "わがまま＜な＞",
   "meaning_vi": "Sự đòi hỏi, bướng bỉnh, ích kỷ",
-  "meaning_en": "Sự đòi hỏi, bướng bỉnh, ích kỷ",
+  "meaning_en": "selfish, self-centered",
   "example": {
    "jp": "わがままを言（い）わないでください。 彼女（かのじょ）はわがままな性格（せいかく）だ。",
    "vi": "Đừng có đòi hỏi bướng bỉnh. / Cô ấy có tính cách bướng bỉnh.",
-   "en": "Đừng có đòi hỏi bướng bỉnh. / Cô ấy có tính cách bướng bỉnh.",
+   "en": "Please don't be selfish. She has a self-centered personality.",
    "seg": [
     {
      "t": "わがままを"
@@ -49466,12 +49466,12 @@
   "section_title": "Tính cách",
   "word": "勝手＜な＞",
   "meaning_vi": "Sự tùy tiện, tự tiện",
-  "meaning_en": "Sự tùy tiện, tự tiện",
+  "meaning_en": "arbitrary, without permission, as one pleases",
   "furigana": "かって",
   "example": {
    "jp": "勝手（かって）に人（ひと）のノートを見（み）ないでください。（ナ形）",
    "vi": "Không được tự tiện xem vở của người khác.",
-   "en": "Không được tự tiện xem vở của người khác.",
+   "en": "Please don't look at other people's notebooks without permission.",
    "seg": [
     {
      "t": "勝手",
@@ -49506,12 +49506,12 @@
   "section_title": "Tính cách",
   "word": "図々しい",
   "meaning_vi": "Vô tư, vô duyên",
-  "meaning_en": "Vô tư, vô duyên",
+  "meaning_en": "shameless, brazen, cheeky",
   "furigana": "ずうずうしい",
   "example": {
    "jp": "彼（かれ）は、勝手（かって）に人（ひと）の辞書（じしょ）を使（つか）う。図々（ずうずう）しい人（ひと）だ。",
    "vi": "Anh ấy tự tiện dùng từ điển của người khác. Thật là người vô tư.",
-   "en": "Anh ấy tự tiện dùng từ điển của người khác. Thật là người vô tư.",
+   "en": "He uses other people's dictionaries without asking. He's a brazen person.",
    "seg": [
     {
      "t": "彼",
@@ -49574,12 +49574,12 @@
   "section_title": "Tính cách",
   "word": "生意気＜な＞",
   "meaning_vi": "Sự xấc láo, hỗn láo (xấc láo, hỗn)",
-  "meaning_en": "Sự xấc láo, hỗn láo (xấc láo, hỗn)",
+  "meaning_en": "impudent, cheeky",
   "furigana": "なまいき",
   "example": {
    "jp": "彼女（かのじょ）は生意気（なまいき）だが、嫌（きら）いじゃない。（ナ形）",
    "vi": "Cô ta xấc láo nhưng tôi không ghét.",
-   "en": "Cô ta xấc láo nhưng tôi không ghét.",
+   "en": "She's cheeky, but I don't dislike her.",
    "seg": [
     {
      "t": "彼女",
@@ -49614,11 +49614,11 @@
   "section_title": "Tính cách",
   "word": "けち＜な＞",
   "meaning_vi": "Sự hà tiện, keo kiệt (hà tiện, keo kiệt)",
-  "meaning_en": "Sự hà tiện, keo kiệt (hà tiện, keo kiệt)",
+  "meaning_en": "stingy, miserly",
   "example": {
    "jp": "彼（かれ）はけちだから、ごちそうしてくれない。（ナ形）",
    "vi": "Anh ta keo kiệt nên không đãi tôi.",
-   "en": "Anh ta keo kiệt nên không đãi tôi.",
+   "en": "He's stingy, so he never treats me.",
    "seg": [
     {
      "t": "彼",
@@ -49639,11 +49639,11 @@
   "section_title": "Tính cách",
   "word": "しつこい",
   "meaning_vi": "Dai dẳng, bền bỉ, cố chấp",
-  "meaning_en": "Dai dẳng, bền bỉ, cố chấp",
+  "meaning_en": "persistent, insistent, pushy",
   "example": {
    "jp": "彼（かれ）はしつこいから、きっとあきらめないだろう。",
    "vi": "Anh ta là người bền bỉ nên chắc chắn sẽ không bỏ cuộc.",
-   "en": "Anh ta là người bền bỉ nên chắc chắn sẽ không bỏ cuộc.",
+   "en": "He's persistent, so I'm sure he won't give up.",
    "seg": [
     {
      "t": "彼",
@@ -49664,12 +49664,12 @@
   "section_title": "Tính cách",
   "word": "鋭い",
   "meaning_vi": "Sắc, nhạy bén, tinh tường",
-  "meaning_en": "Sắc, nhạy bén, tinh tường",
+  "meaning_en": "sharp, keen",
   "furigana": "するどい",
   "example": {
    "jp": "①彼（かれ）は鋭（するど）いナイフを探（さが）している。 ②母（はは）は鋭（するど）いので、私（わたし）のうそに気（き）づく。",
    "vi": "①Anh ấy đang tìm con do bén. ②Mẹ tôi là người nhạy bén nên nhận ra tôi nói dối.",
-   "en": "①Anh ấy đang tìm con do bén. ②Mẹ tôi là người nhạy bén nên nhận ra tôi nói dối.",
+   "en": "(1) He's looking for a sharp knife. (2) My mother is sharp, so she notices when I lie.",
    "seg": [
     {
      "t": "①"
@@ -49735,12 +49735,12 @@
   "section_title": "Tính cách",
   "word": "鈍い",
   "meaning_vi": "Cùn, chậm chạp",
-  "meaning_en": "Cùn, chậm chạp",
+  "meaning_en": "dull, slow (on the uptake)",
   "furigana": "にぶい",
   "example": {
    "jp": "父（ちち）は鈍（にぶ）いから、はっきり言（い）わないとわからない。",
    "vi": "Bố tôi chậm chạp nên không nói rõ là ông không hiểu.",
-   "en": "Bố tôi chậm chạp nên không nói rõ là ông không hiểu.",
+   "en": "My father is slow on the uptake, so he won't get it unless you say it clearly.",
    "seg": [
     {
      "t": "父",
