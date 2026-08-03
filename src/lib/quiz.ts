@@ -1,8 +1,24 @@
 import type { QuizQuestion } from '@/types/quiz'
 import type { VocabWord } from '@/types/vocab'
-import { getChapterWords, getSection, shuffle, getMeaning } from '@/lib/vocab'
+import type { JlptLevel } from '@/types/user'
+import { getChapterWords, getSection, shuffle, getMeaning, LEVEL_CONFIG, DEFAULT_LEVEL } from '@/lib/vocab'
 import { GRAMMAR_QUESTIONS, GRAMMAR_QUESTIONS_N2 } from '@/lib/grammar'
 import { READING_PASSAGES, READING_PASSAGES_N2 } from '@/lib/reading'
+
+// N3 has no dedicated grammar/reading bank yet, so it falls back to the N4
+// banks. Swap these entries once GRAMMAR_QUESTIONS_N3 / READING_PASSAGES_N3
+// exist — nothing else needs to change.
+const GRAMMAR_BANK: Record<JlptLevel, typeof GRAMMAR_QUESTIONS> = {
+  N4: GRAMMAR_QUESTIONS,
+  N3: GRAMMAR_QUESTIONS, // TODO: GRAMMAR_QUESTIONS_N3
+  N2: GRAMMAR_QUESTIONS_N2,
+}
+
+const READING_BANK: Record<JlptLevel, typeof READING_PASSAGES> = {
+  N4: READING_PASSAGES,
+  N3: READING_PASSAGES, // TODO: READING_PASSAGES_N3
+  N2: READING_PASSAGES_N2,
+}
 
 let questionCounter = 0
 function nextId(prefix: string) {
@@ -161,9 +177,9 @@ export function generateVocabQuiz(
 export function generateGrammarQuiz(
   count: number,
   pattern?: string,
-  level: 'N4' | 'N2' = 'N4',
+  level: JlptLevel = DEFAULT_LEVEL,
 ): QuizQuestion[] {
-  const bank = level === 'N2' ? GRAMMAR_QUESTIONS_N2 : GRAMMAR_QUESTIONS
+  const bank = GRAMMAR_BANK[level]
   const pool = pattern
     ? bank.filter(q => q.pattern === pattern)
     : bank
@@ -187,9 +203,9 @@ export function generateGrammarQuiz(
 export function generateReadingQuiz(
   type?: '短文' | '中文' | '情報検索',
   passageCount?: number,
-  level: 'N4' | 'N2' = 'N4',
+  level: JlptLevel = DEFAULT_LEVEL,
 ): QuizQuestion[] {
-  const bank = level === 'N2' ? READING_PASSAGES_N2 : READING_PASSAGES
+  const bank = READING_BANK[level]
   const pool = type
     ? bank.filter(p => p.type === type)
     : bank
@@ -212,13 +228,13 @@ export function generateReadingQuiz(
 }
 
 // Full mock exam question set
-export function generateMockExam(vocab: VocabWord[], level: 'N4' | 'N2' = 'N4'): {
+export function generateMockExam(vocab: VocabWord[], level: JlptLevel = DEFAULT_LEVEL): {
   vocabQuestions: QuizQuestion[]
   grammarQuestions: QuizQuestion[]
   readingQuestions: QuizQuestion[]
 } {
   // Vocab: draw evenly across all chapters
-  const chapCount = level === 'N2' ? 12 : 7
+  const chapCount = LEVEL_CONFIG[level].chapters
   const chapters = Array.from({ length: chapCount }, (_, i) => i + 1)
   const perChapter = Math.ceil(25 / chapters.length)
   const vocabQuestions = shuffle(

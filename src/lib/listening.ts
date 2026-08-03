@@ -1,4 +1,7 @@
 import type { ListeningQuestion, ListeningSceneType, ListeningSpeaker, DialogueLine } from '@/types/listening'
+import type { JlptLevel } from '@/types/user'
+import { JLPT_LEVELS } from '@/types/user'
+import { DEFAULT_LEVEL } from '@/lib/vocab'
 
 const VOICE = {
   N: 'Japanese_DependableWoman',    // NARRATOR
@@ -19,7 +22,7 @@ interface RawLine {
 
 interface RawQuestion {
   id: string
-  level: 'N4' | 'N2'
+  level: JlptLevel
   scene: string
   lines: RawLine[]
   question: string
@@ -63,9 +66,12 @@ export async function loadListeningQuestions(): Promise<ListeningQuestion[]> {
 
 export function generateListeningQuiz(
   questions: ListeningQuestion[],
-  level: 'N4' | 'N2' = 'N4',
+  level: JlptLevel = DEFAULT_LEVEL,
   count = 10,
 ): ListeningQuestion[] {
-  const pool = level === 'N2' ? questions : questions.filter(q => q.level === 'N4')
+  // Include everything at or below the learner's level (JLPT_LEVELS is ordered
+  // easiest first), so higher levels still drill easier comprehension.
+  const ceiling = JLPT_LEVELS.indexOf(level)
+  const pool = questions.filter(q => JLPT_LEVELS.indexOf(q.level) <= ceiling)
   return pool.slice(0, Math.min(count, pool.length))
 }

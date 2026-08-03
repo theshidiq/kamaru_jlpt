@@ -5,11 +5,13 @@ import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { RiBookMarkedLine, RiQuillPenLine, RiFileTextLine, RiTargetLine, RiFlashlightLine, RiHeadphoneLine } from '@remixicon/react'
 import type { RemixiconComponentType } from '@remixicon/react'
+import { DEFAULT_LEVEL } from '@/lib/vocab'
 
 export function QuizHub() {
   const navigate = useNavigate()
   const { recentAttempts } = useProgress()
-  const { preferredLanguage: lang } = useAppStore()
+  const { preferredLanguage: lang, user } = useAppStore()
+  const level = user?.jlpt_level ?? DEFAULT_LEVEL
 
   const lastScore = (type: string) => {
     const a = recentAttempts.find(x => x.quiz_type === type)
@@ -40,7 +42,7 @@ export function QuizHub() {
       to: '/quiz/grammar',
       title: t('grammarQuizTitle', lang),
       subtitle: t('grammarQuizFmt', lang),
-      description: t('grammarQuizDesc', lang),
+      description: t('grammarQuizDesc', lang, { level }),
       Icon: RiQuillPenLine,
       color: 'from-purple-500 to-pink-500',
       type: 'grammar',

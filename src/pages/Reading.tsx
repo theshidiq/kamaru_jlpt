@@ -8,13 +8,14 @@ import { ResultsScreen } from '@/components/quiz/ResultsScreen'
 import { supabase } from '@/lib/supabase'
 import type { QuizResult } from '@/types/quiz'
 import { useNavigate } from 'react-router-dom'
+import { DEFAULT_LEVEL } from '@/lib/vocab'
 
 type Phase = 'quiz' | 'results'
 
 export function Reading() {
   const { user, preferredLanguage: lang } = useAppStore()
   const navigate = useNavigate()
-  const level = user?.jlpt_level ?? 'N4'
+  const level = user?.jlpt_level ?? DEFAULT_LEVEL
   const [phase, setPhase] = useState<Phase>('quiz')
   const [questions] = useState(() => generateReadingQuiz(undefined, undefined, level))
   const [results, setResults] = useState<QuizResult[]>([])

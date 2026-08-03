@@ -3,7 +3,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
 import { useProgress } from '@/hooks/useProgress'
-import { LEVEL_CONFIG, getSectionTitleLang, getChapterTitleLang } from '@/lib/vocab'
+import { LEVEL_CONFIG, getSectionTitleLang, getChapterTitleLang, DEFAULT_LEVEL } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine } from '@remixicon/react'
@@ -14,7 +14,7 @@ export function Dashboard() {
   const { isLoading } = useVocab()
   const progress = useProgress()
 
-  const level = user?.jlpt_level ?? 'N4'
+  const level = user?.jlpt_level ?? DEFAULT_LEVEL
   const TOTAL_SECTIONS = LEVEL_CONFIG[level].totalSections
   const daysUntilExam = user?.target_exam_date
     ? Math.max(0, Math.ceil((new Date(user.target_exam_date).getTime() - Date.now()) / 86400000))

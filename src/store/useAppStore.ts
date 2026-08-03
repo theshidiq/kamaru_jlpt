@@ -1,7 +1,7 @@
 import { create } from 'zustand'
-import { loadVocab, getTodaySectionForLevel, buildChapterMap, LEVEL_CONFIG } from '@/lib/vocab'
+import { loadVocab, getTodaySectionForLevel, buildChapterMap, LEVEL_CONFIG, DEFAULT_LEVEL } from '@/lib/vocab'
 import type { VocabWord, ChapterInfo } from '@/types/vocab'
-import type { UserProfile, WordStatus } from '@/types/user'
+import type { UserProfile, WordStatus, JlptLevel } from '@/types/user'
 import { supabase } from '@/lib/supabase'
 
 interface AppState {
@@ -16,7 +16,7 @@ interface AppState {
   authReady: boolean
   setUser: (user: UserProfile | null) => void
   setAuthReady: () => void
-  setJlptLevel: (level: 'N4' | 'N2') => Promise<void>
+  setJlptLevel: (level: JlptLevel) => Promise<void>
   preferredLanguage: 'id' | 'en'
   setLanguage: (lang: 'id' | 'en') => Promise<void>
 
@@ -43,7 +43,7 @@ const initDarkMode = () => {
   return window.matchMedia('(prefers-color-scheme: dark)').matches
 }
 
-const today = getTodaySectionForLevel('N4')
+const today = getTodaySectionForLevel(DEFAULT_LEVEL)
 
 export const useAppStore = create<AppState>((set, get) => ({
   vocab: [],
@@ -54,7 +54,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   authReady: false,
   preferredLanguage: 'id',
   setUser: (user) => {
-    const level = user?.jlpt_level ?? 'N4'
+    const level = user?.jlpt_level ?? DEFAULT_LEVEL
     const t = getTodaySectionForLevel(level, user?.study_start_date)
     set({
       user,
@@ -79,7 +79,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
 
-  setJlptLevel: async (level: 'N4' | 'N2') => {
+  setJlptLevel: async (level: JlptLevel) => {
     const { user } = get()
     if (!user) return
     const { error } = await supabase.from('profiles').update({ jlpt_level: level }).eq('id', user.id)
@@ -120,7 +120,7 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   fetchVocab: async () => {
     if (get().vocabLoaded) return
-    const level = get().user?.jlpt_level ?? 'N4'
+    const level = get().user?.jlpt_level ?? DEFAULT_LEVEL
     const vocab = await loadVocab(level)
     const chapters = buildChapterMap(vocab, LEVEL_CONFIG[level].sectionsPerChapter)
     set({ vocab, chapters, vocabLoaded: true })
@@ -160,7 +160,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       supabase.from('profiles').update({ study_start_date: todayStr }).eq('id', user.id),
     ])
     const updatedUser = { ...user, study_start_date: todayStr }
-    const level = user.jlpt_level ?? 'N4'
+    const level = user.jlpt_level ?? DEFAULT_LEVEL
     const t = getTodaySectionForLevel(level, todayStr)
     set({
       wordStatuses: {},

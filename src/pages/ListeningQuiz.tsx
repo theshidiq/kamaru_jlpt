@@ -11,6 +11,7 @@ import { loadListeningQuestions, generateListeningQuiz } from '@/lib/listening'
 import { supabase } from '@/lib/supabase'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import type { ListeningQuestion } from '@/types/listening'
+import { DEFAULT_LEVEL } from '@/lib/vocab'
 
 type Phase = 'loading' | 'intro-instructions' | 'intro-example' | 'quiz' | 'results'
 
@@ -35,7 +36,7 @@ function toQuizQuestion(q: ListeningQuestion): QuizQuestion {
 export function ListeningQuiz() {
   const { user, preferredLanguage: lang } = useAppStore()
   const navigate = useNavigate()
-  const level = user?.jlpt_level ?? 'N4'
+  const level = user?.jlpt_level ?? DEFAULT_LEVEL
 
   const [questions, setQuestions] = useState<ListeningQuestion[]>([])
   const [phase, setPhase] = useState<Phase>('loading')
@@ -149,7 +150,7 @@ export function ListeningQuiz() {
             <div className="w-16 h-16 rounded-full bg-rose-500 flex items-center justify-center animate-pulse">
               <RiHeadphoneLine size={28} className="text-white" />
             </div>
-            <p className="text-xs font-semibold tracking-widest text-rose-500 uppercase">日本語能力試験 N4</p>
+            <p className="text-xs font-semibold tracking-widest text-rose-500 uppercase">日本語能力試験 {level}</p>
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white">聴解</h1>
           </div>
 

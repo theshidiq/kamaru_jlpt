@@ -1,3 +1,5 @@
+import type { JlptLevel } from '@/types/user'
+
 export type ListeningSceneType = 'office' | 'station' | 'restaurant' | 'home' | 'store' | 'classroom'
 
 export type ListeningSpeaker = 'NARRATOR' | 'MALE' | 'FEMALE'
@@ -13,7 +15,7 @@ export interface DialogueLine {
 export interface ListeningQuestion {
   id: string
   mondaiType: 'mondai1'
-  level: 'N4' | 'N2'
+  level: JlptLevel
   sceneType: ListeningSceneType
   sceneProps?: Record<string, unknown>
   script: DialogueLine[]

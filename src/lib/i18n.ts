@@ -98,7 +98,7 @@ const strings = {
     vocabQuizDesc: 'Reading, meaning, and usage questions',
     grammarQuizTitle: 'Grammar Quiz',
     grammarQuizFmt: 'Mondai 1–3 format',
-    grammarQuizDesc: '40 N4 grammar patterns',
+    grammarQuizDesc: '40 {level} grammar patterns',
     readingTitle: 'Reading Practice',
     readingFmt: 'Short / Medium / Info search',
     readingDesc: '15 reading passages',
@@ -117,19 +117,19 @@ const strings = {
     allStatus: 'All',
     narrowSearch: 'Narrow your search to show more results',
     // Progress
-    n4Readiness: 'N4 Readiness',
+    n4Readiness: '{level} Readiness',
     studyCalendar: 'Study Calendar (last 42 days)',
     masteryByChapter: 'Mastery by Chapter',
     quizHistory: 'Quiz Score History',
     accuracy: 'Accuracy (%) — 67%+ to pass',
     // MockExam
-    mockExamPageTitle: 'JLPT N4 Mock Exam',
+    mockExamPageTitle: 'JLPT {level} Mock Exam',
     mockExamPageSub: 'Practice in a real exam format',
     sectionCol: 'Section',
     questionsCol: 'Questions',
     timeCol: 'Time',
     passCondition: 'Pass: 90/180 points and ≥38% in each section',
-    passed: 'Passed! N4 Clear!',
+    passed: 'Passed! {level} Clear!',
     notPassed: 'Not passed — keep going!',
     // ResultsScreen
     passedBadge: 'Passed!',
@@ -248,7 +248,7 @@ const strings = {
     vocabQuizDesc: 'Soal baca, arti, dan penggunaan',
     grammarQuizTitle: 'Kuis Tata Bahasa',
     grammarQuizFmt: 'Format Mondai 1–3',
-    grammarQuizDesc: '40 pola tata bahasa N4',
+    grammarQuizDesc: '40 pola tata bahasa {level}',
     readingTitle: 'Latihan Membaca',
     readingFmt: 'Pendek / Sedang / Pencarian info',
     readingDesc: '15 teks bacaan',
@@ -267,19 +267,19 @@ const strings = {
     allStatus: 'Semua',
     narrowSearch: 'Persempit pencarian untuk menampilkan lebih banyak hasil',
     // Progress
-    n4Readiness: 'Kesiapan N4',
+    n4Readiness: 'Kesiapan {level}',
     studyCalendar: 'Kalender Belajar (42 hari terakhir)',
     masteryByChapter: 'Penguasaan per Bab',
     quizHistory: 'Riwayat Skor Kuis',
     accuracy: 'Akurasi (%) — ≥67% untuk lulus',
     // MockExam
-    mockExamPageTitle: 'Ujian Tiruan JLPT N4',
+    mockExamPageTitle: 'Ujian Tiruan JLPT {level}',
     mockExamPageSub: 'Latihan dalam format ujian nyata',
     sectionCol: 'Bagian',
     questionsCol: 'Soal',
     timeCol: 'Waktu',
     passCondition: 'Lulus: 90/180 poin dan ≥38% di setiap bagian',
-    passed: 'Lulus! N4 Clear!',
+    passed: 'Lulus! {level} Clear!',
     notPassed: 'Belum lulus — terus semangat!',
     // ResultsScreen
     passedBadge: 'Lulus!',
@@ -303,6 +303,12 @@ const strings = {
 
 export type I18nKey = keyof typeof strings.en
 
-export function t(key: I18nKey, lang: 'id' | 'en'): string {
-  return strings[lang]?.[key] ?? strings.en[key] ?? key
+export function t(
+  key: I18nKey,
+  lang: 'id' | 'en',
+  vars?: Record<string, string | number>,
+): string {
+  const raw = strings[lang]?.[key] ?? strings.en[key] ?? key
+  if (!vars) return raw
+  return raw.replace(/\{(\w+)\}/g, (m, k) => String(vars[k] ?? m))
 }

@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import confetti from 'canvas-confetti'
 import { RiTrophyLine, RiEmotionHappyLine, RiTargetLine, RiCheckLine, RiCloseLine } from '@remixicon/react'
+import { DEFAULT_LEVEL } from '@/lib/vocab'
 
 type Phase = 'intro' | 'vocab' | 'grammar' | 'reading' | 'results'
 
@@ -28,7 +29,7 @@ export function MockExam() {
   const [totalElapsed, setTotalElapsed] = useState(0)
   const [_sectionElapsed, setSectionElapsed] = useState(0)
 
-  const level = user?.jlpt_level ?? 'N4'
+  const level = user?.jlpt_level ?? DEFAULT_LEVEL
 
   function startExam() {
     const { vocabQuestions, grammarQuestions, readingQuestions } = generateMockExam(vocab, level)
@@ -106,7 +107,7 @@ export function MockExam() {
           <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-semibold mb-6 ${
             score.passed ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
           }`}>
-            {score.passed ? t('passed', lang) : t('notPassed', lang)}
+            {score.passed ? t('passed', lang, { level }) : t('notPassed', lang)}
           </span>
 
           <div className="grid grid-cols-3 gap-2 md:gap-3 mb-6 md:mb-8">
@@ -146,7 +147,7 @@ export function MockExam() {
       {phase === 'intro' && (
         <div className="max-w-lg mx-auto text-center py-6 md:py-8">
           <div className="flex justify-center mb-4 text-indigo-500"><RiTargetLine size={48} /></div>
-          <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">{t('mockExamPageTitle', lang)}</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">{t('mockExamPageTitle', lang, { level })}</h1>
           <p className="text-gray-500 dark:text-gray-400 mb-5">{t('mockExamPageSub', lang)}</p>
           <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-4 md:p-5 text-left mb-5">
             <table className="w-full text-sm">

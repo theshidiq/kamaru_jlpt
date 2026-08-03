@@ -9,6 +9,7 @@ import {
 } from 'recharts'
 import { RiFireLine, RiTrophyLine, RiBookOpenLine, RiBarChart2Line } from '@remixicon/react'
 import type { RemixiconComponentType } from '@remixicon/react'
+import { DEFAULT_LEVEL } from '@/lib/vocab'
 
 function HeatmapCalendar({ sessions, lang }: { sessions: { session_date: string; self_rating: string | null }[]; lang: 'id' | 'en' }) {
   const sessionMap = new Map(sessions.map(s => [s.session_date, s.self_rating]))
@@ -48,7 +49,8 @@ function HeatmapCalendar({ sessions, lang }: { sessions: { session_date: string;
 }
 
 export function Progress() {
-  const { wordStatuses, vocab, preferredLanguage: lang } = useAppStore()
+  const { wordStatuses, vocab, preferredLanguage: lang, user } = useAppStore()
+  const level = user?.jlpt_level ?? DEFAULT_LEVEL
   const { chapters } = useVocab()
   const progress = useProgress()
 
@@ -96,7 +98,7 @@ export function Progress() {
       {/* Readiness bar */}
       <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-5 mb-4">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="font-semibold text-gray-900 dark:text-white">{t('n4Readiness', lang)}</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-white">{t('n4Readiness', lang, { level })}</h3>
           <span className="text-sm font-bold text-indigo-600">{readiness}%</span>
         </div>
         <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">

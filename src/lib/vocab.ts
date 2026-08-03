@@ -1,14 +1,20 @@
 import type { VocabWord, ChapterInfo } from '@/types/vocab'
+import type { JlptLevel } from '@/types/user'
 
 export const TOTAL_SECTIONS = 42 // 7 chapters × 6 sections (N4 default)
+export const DEFAULT_LEVEL: JlptLevel = 'N4'
 const DEFAULT_START_DATE = new Date('2026-03-26')
 
-export const LEVEL_CONFIG = {
-  N4: { totalSections: 42, chapters: 7, sectionsPerChapter: 6, file: '/jtest_n4_vocab.json' },
-  N2: { totalSections: 60, chapters: 12, sectionsPerChapter: 5, file: '/jtest_n2_vocab.json' },
-} as const
+export const LEVEL_CONFIG: Record<
+  JlptLevel,
+  { totalSections: number; chapters: number; sectionsPerChapter: number; file: string; words: number }
+> = {
+  N4: { totalSections: 42, chapters: 7, sectionsPerChapter: 6, file: '/jtest_n4_vocab.json', words: 894 },
+  N3: { totalSections: 60, chapters: 12, sectionsPerChapter: 5, file: '/jtest_n3_vocab.json', words: 1390 },
+  N2: { totalSections: 60, chapters: 12, sectionsPerChapter: 5, file: '/jtest_n2_vocab.json', words: 1546 },
+}
 
-export function getTodaySectionForLevel(level: 'N4' | 'N2', startDate?: string | null) {
+export function getTodaySectionForLevel(level: JlptLevel, startDate?: string | null) {
   const { totalSections, sectionsPerChapter } = LEVEL_CONFIG[level]
   const base = startDate ? new Date(startDate) : DEFAULT_START_DATE
   const daysElapsed = Math.max(0, Math.floor((new Date().getTime() - base.getTime()) / 86400000))
@@ -19,7 +25,7 @@ export function getTodaySectionForLevel(level: 'N4' | 'N2', startDate?: string |
 }
 
 export function getTodaySection() {
-  return getTodaySectionForLevel('N4')
+  return getTodaySectionForLevel(DEFAULT_LEVEL)
 }
 
 function decodeEntities(s: string): string {
@@ -37,9 +43,9 @@ export function isSuruVerb(raw: string): boolean {
 }
 
 
-const vocabCache: Partial<Record<'N4' | 'N2', VocabWord[]>> = {}
+const vocabCache: Partial<Record<JlptLevel, VocabWord[]>> = {}
 
-export async function loadVocab(level: 'N4' | 'N2' = 'N4'): Promise<VocabWord[]> {
+export async function loadVocab(level: JlptLevel = DEFAULT_LEVEL): Promise<VocabWord[]> {
   if (vocabCache[level]) return vocabCache[level]!
 
   const res = await fetch(LEVEL_CONFIG[level].file)

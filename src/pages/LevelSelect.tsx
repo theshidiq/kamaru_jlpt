@@ -1,13 +1,38 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '@/store/useAppStore'
-import { LEVEL_CONFIG } from '@/lib/vocab'
+import { LEVEL_CONFIG, DEFAULT_LEVEL } from '@/lib/vocab'
+import { JLPT_LEVELS, type JlptLevel } from '@/types/user'
 import { t } from '@/lib/i18n'
+
+const LEVEL_STYLE: Record<
+  JlptLevel,
+  { sub: { id: string; en: string }; color: string; bg: string; border: string }
+> = {
+  N4: {
+    sub: { id: 'Pemula · Menengah', en: 'Beginner · Intermediate' },
+    color: 'text-emerald-600 dark:text-emerald-400',
+    bg: 'bg-emerald-50 dark:bg-emerald-900/20',
+    border: 'border-emerald-300 dark:border-emerald-700',
+  },
+  N3: {
+    sub: { id: 'Menengah', en: 'Intermediate' },
+    color: 'text-amber-600 dark:text-amber-400',
+    bg: 'bg-amber-50 dark:bg-amber-900/20',
+    border: 'border-amber-300 dark:border-amber-700',
+  },
+  N2: {
+    sub: { id: 'Menengah Atas', en: 'Upper Intermediate' },
+    color: 'text-indigo-600 dark:text-indigo-400',
+    bg: 'bg-indigo-50 dark:bg-indigo-900/20',
+    border: 'border-indigo-300 dark:border-indigo-700',
+  },
+}
 
 export function LevelSelect() {
   const navigate = useNavigate()
   const { setJlptLevel, user, preferredLanguage: lang } = useAppStore()
-  const [selected, setSelected] = useState<'N4' | 'N2' | null>(user?.jlpt_level ?? 'N4')
+  const [selected, setSelected] = useState<JlptLevel | null>(user?.jlpt_level ?? DEFAULT_LEVEL)
   const [loading, setLoading] = useState(false)
 
   async function handleConfirm() {
@@ -17,31 +42,14 @@ export function LevelSelect() {
     navigate('/language-select', { replace: true })
   }
 
-  const levels: Array<{
-    level: 'N4' | 'N2'
-    label: string
-    sub: string
-    color: string
-    bg: string
-    border: string
-  }> = [
-    {
-      level: 'N4',
-      label: 'JLPT N4',
-      sub: lang === 'id' ? 'Pemula · Menengah' : 'Beginner · Intermediate',
-      color: 'text-emerald-600 dark:text-emerald-400',
-      bg: 'bg-emerald-50 dark:bg-emerald-900/20',
-      border: 'border-emerald-300 dark:border-emerald-700',
-    },
-    {
-      level: 'N2',
-      label: 'JLPT N2',
-      sub: lang === 'id' ? 'Menengah Atas' : 'Upper Intermediate',
-      color: 'text-indigo-600 dark:text-indigo-400',
-      bg: 'bg-indigo-50 dark:bg-indigo-900/20',
-      border: 'border-indigo-300 dark:border-indigo-700',
-    },
-  ]
+  const levels = JLPT_LEVELS.map(level => ({
+    level,
+    label: `JLPT ${level}`,
+    sub: LEVEL_STYLE[level].sub[lang],
+    color: LEVEL_STYLE[level].color,
+    bg: LEVEL_STYLE[level].bg,
+    border: LEVEL_STYLE[level].border,
+  }))
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4">
@@ -71,7 +79,7 @@ export function LevelSelect() {
                   <div>
                     <div className="flex items-center gap-2">
                       <p className={`text-xl font-bold ${color}`}>{label}</p>
-                      {level === 'N4' && (
+                      {level === DEFAULT_LEVEL && (
                         <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
                           {t('recommended', lang)}
                         </span>
@@ -96,7 +104,7 @@ export function LevelSelect() {
                   <span>·</span>
                   <span>{cfg.totalSections} {lang === 'id' ? 'hari' : 'days'}</span>
                   <span>·</span>
-                  <span>{level === 'N4' ? '894' : '1,546'} words</span>
+                  <span>{cfg.words.toLocaleString()} words</span>
                 </div>
               </button>
             )
