@@ -30898,11 +30898,11 @@
   "section_title": "Du lịch",
   "word": "ツアー",
   "meaning_vi": "Chuyến du lịch",
-  "meaning_en": "Chuyến du lịch",
+  "meaning_en": "tour",
   "example": {
    "jp": "母（はは）と日帰（ひがえ）りのバスツアーに参加（さんか）した。",
    "vi": "Tôi tham gia chuyến du lịch bằng xe buýt đi về trong ngày cùng mẹ.",
-   "en": "Tôi tham gia chuyến du lịch bằng xe buýt đi về trong ngày cùng mẹ.",
+   "en": "I went on a day-trip bus tour with my mother.",
    "seg": [
     {
      "t": "母",
@@ -30937,11 +30937,11 @@
   "section_title": "Du lịch",
   "word": "あちこち",
   "meaning_vi": "Đó đây, khắp nơi",
-  "meaning_en": "Đó đây, khắp nơi",
+  "meaning_en": "here and there, all over",
   "example": {
    "jp": "留学（りゅうがく）中（ちゅう）、日本（にほん）のあちこちを旅行（りょこう）した。",
    "vi": "Trong thời gian du học tôi đã đi khắp đó đây trong nước Nhật.",
-   "en": "Trong thời gian du học tôi đã đi khắp đó đây trong nước Nhật.",
+   "en": "While studying abroad, I traveled all over Japan.",
    "seg": [
     {
      "t": "留学",
@@ -30980,12 +30980,12 @@
   "section_title": "Du lịch",
   "word": "観光＜する＞",
   "meaning_vi": "Sự du lịch, tham quan",
-  "meaning_en": "Sự du lịch, tham quan",
+  "meaning_en": "sightseeing, tourism",
   "furigana": "かんこう",
   "example": {
    "jp": "出張（しゅっちょう）ではなく、観光（かんこう）でヨーロッパに行（い）きたい。",
    "vi": "Tôi muốn đến châu Âu không phải là đi công tác mà là đi du lịch.",
-   "en": "Tôi muốn đến châu Âu không phải là đi công tác mà là đi du lịch.",
+   "en": "I want to go to Europe for sightseeing, not on business.",
    "seg": [
     {
      "t": "出張",
@@ -31020,12 +31020,12 @@
   "section_title": "Du lịch",
   "word": "費用",
   "meaning_vi": "Phí, chi phí",
-  "meaning_en": "Phí, chi phí",
+  "meaning_en": "cost, expense",
   "furigana": "ひよう",
   "example": {
    "jp": "家族（かぞく）みんなで旅行（りょこう）すると、費用（ひよう）がかかる。",
    "vi": "Nếu đi du lịch cả gia đình thì chi phí tốn kém.",
-   "en": "Nếu đi du lịch cả gia đình thì chi phí tốn kém.",
+   "en": "Traveling as a whole family costs a lot.",
    "seg": [
     {
      "t": "家族",
@@ -31060,12 +31060,12 @@
   "section_title": "Du lịch",
   "word": "予算",
   "meaning_vi": "Kinh phí, ngân sách",
-  "meaning_en": "Kinh phí, ngân sách",
+  "meaning_en": "budget",
   "furigana": "よさん",
   "example": {
    "jp": "一人（ひとり）10万（まん）円（えん）の予算（よさん）で、海外（かいがい）旅行（りょこう）を考（かんが）えている。",
    "vi": "Tôi đang tính đi du lịch nước ngoài với kinh phí 100 nghìn yên một người.",
-   "en": "Tôi đang tính đi du lịch nước ngoài với kinh phí 100 nghìn yên một người.",
+   "en": "I'm thinking about an overseas trip on a budget of 100,000 yen per person.",
    "seg": [
     {
      "t": "一人",
@@ -31122,12 +31122,12 @@
   "section_title": "Du lịch",
   "word": "集合＜する＞",
   "meaning_vi": "Sự tập trung, tập hợp",
-  "meaning_en": "Sự tập trung, tập hợp",
+  "meaning_en": "gather, assemble",
   "furigana": "しゅうごう",
   "example": {
    "jp": "空港（くうこう）のロビーに、10時（じ）に集合（しゅうごう）してください。",
    "vi": "Hãy tập trung tại sảnh sân bay lúc 10 giờ!",
-   "en": "Hãy tập trung tại sảnh sân bay lúc 10 giờ!",
+   "en": "Please gather in the airport lobby at ten o'clock.",
    "seg": [
     {
      "t": "空港",
@@ -31162,12 +31162,12 @@
   "section_title": "Du lịch",
   "word": "解散＜する＞",
   "meaning_vi": "Sự giải tán",
-  "meaning_en": "Sự giải tán",
+  "meaning_en": "disband, break up",
   "furigana": "かいさん",
   "example": {
    "jp": "帰（かえ）りは空港（くうこう）で解散（かいさん）する。",
    "vi": "Lúc về chúng tôi giải tán ở sân bay.",
-   "en": "Lúc về chúng tôi giải tán ở sân bay.",
+   "en": "On the way back, we part ways at the airport.",
    "seg": [
     {
      "t": "帰",
@@ -31202,12 +31202,12 @@
   "section_title": "Du lịch",
   "word": "旅館",
   "meaning_vi": "Lữ quán (nhà trọ kiểu Nhật)",
-  "meaning_en": "Lữ quán (nhà trọ kiểu Nhật)",
+  "meaning_en": "ryokan, Japanese-style inn",
   "furigana": "りょかん",
   "example": {
    "jp": "あの旅館（りょかん）に、ぜひ泊（と）まってみたい。",
    "vi": "Tôi rất muốn thử nghỉ ở lữ quán đó.",
-   "en": "Tôi rất muốn thử nghỉ ở lữ quán đó.",
+   "en": "I'd really like to stay at that inn.",
    "seg": [
     {
      "t": "あの"
@@ -31238,12 +31238,12 @@
   "section_title": "Du lịch",
   "word": "五つ星ホテル",
   "meaning_vi": "Khách sạn 5 sao",
-  "meaning_en": "Khách sạn 5 sao",
+  "meaning_en": "five-star hotel",
   "furigana": "いつつぼしホテル",
   "example": {
    "jp": "初（はじ）めて五（いつ）つ星（ぼし）ホテルに泊（と）まる。",
    "vi": "Lần đầu tiên nghỉ ở khách sạn 5 sao.",
-   "en": "Lần đầu tiên nghỉ ở khách sạn 5 sao.",
+   "en": "I'm staying at a five-star hotel for the first time.",
    "seg": [
     {
      "t": "初",
@@ -31285,12 +31285,12 @@
   "section_title": "Du lịch",
   "word": "満室",
   "meaning_vi": "Hết phòng",
-  "meaning_en": "Hết phòng",
+  "meaning_en": "fully booked, no vacancies",
   "furigana": "まんしつ",
   "example": {
    "jp": "あのホテルは満室（まんしつ）で、予約（よやく）できなかった。",
    "vi": "Khách sạn ấy hết phòng nên không thể đặt được.",
-   "en": "Khách sạn ấy hết phòng nên không thể đặt được.",
+   "en": "That hotel was fully booked, so I couldn't make a reservation.",
    "seg": [
     {
      "t": "あのホテルは"
@@ -31321,11 +31321,11 @@
   "section_title": "Du lịch",
   "word": "チェックイン＜する＞",
   "meaning_vi": "Thủ tục nhận phòng",
-  "meaning_en": "Thủ tục nhận phòng",
+  "meaning_en": "check in",
   "example": {
    "jp": "この旅館（りょかん）は、3時（じ）以降（いこう）にチェックインできる。",
    "vi": "Lữ quán này có thể làm thủ tục nhận phòng từ 3 giờ trở đi.",
-   "en": "Lữ quán này có thể làm thủ tục nhận phòng từ 3 giờ trở đi.",
+   "en": "At this inn you can check in from three o'clock onward.",
    "seg": [
     {
      "t": "この"
@@ -31360,12 +31360,12 @@
   "section_title": "Du lịch",
   "word": "近づく",
   "meaning_vi": "Đến gần",
-  "meaning_en": "Đến gần",
+  "meaning_en": "approach, draw near",
   "furigana": "ちかづく",
   "example": {
    "jp": "帰（かえ）る日（ひ）が近（ちか）づくと、さびしくなる。",
    "vi": "Ngày về đến gần, tôi trở nên buồn.",
-   "en": "Ngày về đến gần, tôi trở nên buồn.",
+   "en": "As the day to go home draws near, I get sad.",
    "seg": [
     {
      "t": "帰",
@@ -31400,12 +31400,12 @@
   "section_title": "Du lịch",
   "word": "取り消す",
   "meaning_vi": "Hủy, hủy bỏ",
-  "meaning_en": "Hủy, hủy bỏ",
+  "meaning_en": "cancel, call off",
   "furigana": "とりけす",
   "example": {
    "jp": "体（からだ）の具合（ぐあい）がよくないので、予約（よやく）を取り消（とりけ）した。",
    "vi": "Cơ thể không được khỏe nên tôi đã hủy đặt chỗ.",
-   "en": "Cơ thể không được khỏe nên tôi đã hủy đặt chỗ.",
+   "en": "I wasn't feeling well, so I canceled the reservation.",
    "seg": [
     {
      "t": "体",
@@ -31447,12 +31447,12 @@
   "section_title": "Du lịch",
   "word": "追加＜する＞",
   "meaning_vi": "Sự bổ sung, thêm",
-  "meaning_en": "Sự bổ sung, thêm",
+  "meaning_en": "add, add on",
   "furigana": "ついか",
   "example": {
    "jp": "東京（とうきょう）行（い）きの切符（きっぷ）を、1枚（まい）追加（ついか）できますか。",
    "vi": "Có thể thêm một vé đi Tokyo nữa không?",
-   "en": "Có thể thêm một vé đi Tokyo nữa không?",
+   "en": "Could I add one more ticket to Tokyo?",
    "seg": [
     {
      "t": "東京",
@@ -31495,12 +31495,12 @@
   "section_title": "Du lịch",
   "word": "持ち物",
   "meaning_vi": "Đồ mang đi, đồ đạc cá nhân",
-  "meaning_en": "Đồ mang đi, đồ đạc cá nhân",
+  "meaning_en": "belongings, things one is carrying",
   "furigana": "もちもの",
   "example": {
    "jp": "忘れ物（わすれもの）がないか、持ち物（もちもの）をチェックする。",
    "vi": "Tôi kiểm tra đồ mang đi xem có quên gì không.",
-   "en": "Tôi kiểm tra đồ mang đi xem có quên gì không.",
+   "en": "I check my belongings to make sure I haven't forgotten anything.",
    "seg": [
     {
      "t": "忘れ物",
@@ -31528,12 +31528,12 @@
   "section_title": "Du lịch",
   "word": "足りる",
   "meaning_vi": "Đủ",
-  "meaning_en": "Đủ",
+  "meaning_en": "be enough, suffice",
   "furigana": "たりる",
   "example": {
    "jp": "行（い）きたい場所（ばしょ）が多（おお）くて、4日（よっか）では足（た）りない。",
    "vi": "Có nhiều nơi tôi muốn đi nên 4 ngày là không đủ.",
-   "en": "Có nhiều nơi tôi muốn đi nên 4 ngày là không đủ.",
+   "en": "There are so many places I want to go that four days isn't enough.",
    "seg": [
     {
      "t": "行",
@@ -31582,11 +31582,11 @@
   "section_title": "Du lịch",
   "word": "スーツケース",
   "meaning_vi": "Vali",
-  "meaning_en": "Vali",
+  "meaning_en": "suitcase",
   "example": {
    "jp": "お土産（みやげ）をたくさん買（か）って、スーツケースが重（おも）い。",
    "vi": "Tôi mua nhiều quà nên vali nặng.",
-   "en": "Tôi mua nhiều quà nên vali nặng.",
+   "en": "I bought a lot of souvenirs and my suitcase is heavy.",
    "seg": [
     {
      "t": "お"
@@ -31624,12 +31624,12 @@
   "section_title": "Du lịch",
   "word": "使用＜する＞",
   "meaning_vi": "Việc sử dụng",
-  "meaning_en": "Việc sử dụng",
+  "meaning_en": "use",
   "furigana": "しよう",
   "example": {
    "jp": "このカードは、日本（にほん）では使用（しよう）できない。",
    "vi": "Thẻ này không sử dụng được ở Nhật Bản.",
-   "en": "Thẻ này không sử dụng được ở Nhật Bản.",
+   "en": "This card can't be used in Japan.",
    "seg": [
     {
      "t": "このカードは、"
@@ -31660,12 +31660,12 @@
   "section_title": "Du lịch",
   "word": "船旅",
   "meaning_vi": "Du lịch tàu thủy",
-  "meaning_en": "Du lịch tàu thủy",
+  "meaning_en": "voyage, sea travel",
   "furigana": "ふなたび",
   "example": {
    "jp": "私（わたし）は一（いち）度（ど）も船旅（ふなたび）をしたことがない。",
    "vi": "Tôi chưa từng đi du lịch tàu thủy bao giờ.",
-   "en": "Tôi chưa từng đi du lịch tàu thủy bao giờ.",
+   "en": "I've never once traveled by ship.",
    "seg": [
     {
      "t": "私",
@@ -31704,12 +31704,12 @@
   "section_title": "Du lịch",
   "word": "時差",
   "meaning_vi": "Chênh lệch múi giờ",
-  "meaning_en": "Chênh lệch múi giờ",
+  "meaning_en": "time difference, jet lag",
   "furigana": "じさ",
   "example": {
    "jp": "日本（にほん）に戻（もど）ってから、時差（じさ）でずっと眠（ねむ）い。",
    "vi": "Sau khi quay lại Nhật Bản, do chênh lệch múi giờ tôi cứ buồn ngủ suốt.",
-   "en": "Sau khi quay lại Nhật Bản, do chênh lệch múi giờ tôi cứ buồn ngủ suốt.",
+   "en": "Since returning to Japan, I've been sleepy the whole time from jet lag.",
    "seg": [
     {
      "t": "日本",
@@ -31751,12 +31751,12 @@
   "section_title": "Du lịch",
   "word": "両替＜する＞",
   "meaning_vi": "Sự đổi tiền",
-  "meaning_en": "Sự đổi tiền",
+  "meaning_en": "currency exchange",
   "furigana": "りょうがえ",
   "example": {
    "jp": "両替（りょうがえ）は、空港（くうこう）でもホテルでもできる。",
    "vi": "Có thể đổi tiền ở sân bay hoặc ở khách sạn đều được.",
-   "en": "Có thể đổi tiền ở sân bay hoặc ở khách sạn đều được.",
+   "en": "You can exchange money at the airport or at the hotel.",
    "seg": [
     {
      "t": "両替",
@@ -31784,11 +31784,11 @@
   "section_title": "Du lịch",
   "word": "ドル",
   "meaning_vi": "Đô la",
-  "meaning_en": "Đô la",
+  "meaning_en": "dollar",
   "example": {
    "jp": "日本円（にほんえん）をドルに両替（りょうがえ）して、海外（かいがい）へ持（も）って行（い）く。",
    "vi": "Tôi đổi tiền yên ra đô la để đem đi nước ngoài.",
-   "en": "Tôi đổi tiền yên ra đô la để đem đi nước ngoài.",
+   "en": "I exchange Japanese yen for dollars to take abroad.",
    "seg": [
     {
      "t": "日本円",
@@ -31837,12 +31837,12 @@
   "section_title": "Du lịch",
   "word": "来日＜する＞",
   "meaning_vi": "Đến Nhật Bản",
-  "meaning_en": "Đến Nhật Bản",
+  "meaning_en": "come to Japan",
   "furigana": "らいにち",
   "example": {
    "jp": "来月（らいげつ）、友（とも）だちが初（はじ）めて来日（らいにち）する。",
    "vi": "Tháng sau, bạn tôi lần đầu tiên đến Nhật Bản.",
-   "en": "Tháng sau, bạn tôi lần đầu tiên đến Nhật Bản.",
+   "en": "Next month, my friend is coming to Japan for the first time.",
    "seg": [
     {
      "t": "来月",
@@ -31884,12 +31884,12 @@
   "section_title": "Thể thao",
   "word": "競争＜する＞",
   "meaning_vi": "Sự cạnh tranh",
-  "meaning_en": "Sự cạnh tranh",
+  "meaning_en": "competition, compete",
   "furigana": "きょうそう",
   "example": {
    "jp": "子（こ）どものころから競争（きょうそう）が好（す）きだった。",
    "vi": "Từ hồi bé tôi đã thích cạnh tranh.",
-   "en": "Từ hồi bé tôi đã thích cạnh tranh.",
+   "en": "I've liked competing since I was a child.",
    "seg": [
     {
      "t": "子",
@@ -31924,12 +31924,12 @@
   "section_title": "Thể thao",
   "word": "活躍＜する＞",
   "meaning_vi": "Hoạt động tích cực",
-  "meaning_en": "Hoạt động tích cực",
+  "meaning_en": "be active, play an active role",
   "furigana": "かつやく",
   "example": {
    "jp": "有名（ゆうめい）なサッカーチームにはいって活躍（かつやく）したい。",
    "vi": "Tôi muốn vào đội bóng đá nổi tiếng để hoạt động tích cực.",
-   "en": "Tôi muốn vào đội bóng đá nổi tiếng để hoạt động tích cực.",
+   "en": "I want to join a famous soccer team and make my mark.",
    "seg": [
     {
      "t": "有名",
@@ -31957,11 +31957,11 @@
   "section_title": "Thể thao",
   "word": "ウェア",
   "meaning_vi": "Quần áo, trang phục",
-  "meaning_en": "Quần áo, trang phục",
+  "meaning_en": "sportswear, gear",
   "example": {
    "jp": "スポーツを始（はじ）めるなら、まずウェアが必要（ひつよう）だ。",
    "vi": "Nếu muốn bắt đầu chơi thể thao thì trước tiên cần phải có trang phục.",
-   "en": "Nếu muốn bắt đầu chơi thể thao thì trước tiên cần phải có trang phục.",
+   "en": "If you're taking up a sport, the first thing you need is the gear.",
    "seg": [
     {
      "t": "スポーツを"
@@ -31992,11 +31992,11 @@
   "section_title": "Thể thao",
   "word": "ける",
   "meaning_vi": "Đá",
-  "meaning_en": "Đá",
+  "meaning_en": "kick",
   "example": {
    "jp": "試合（しあい）に出（で）たが、ボールをけるチャンスがなかった。",
    "vi": "Tôi đã tham gia trận đấu nhưng không có cơ hội đá bóng.",
-   "en": "Tôi đã tham gia trận đấu nhưng không có cơ hội đá bóng.",
+   "en": "I played in the match, but I never got a chance to kick the ball.",
    "seg": [
     {
      "t": "試合",
@@ -32024,11 +32024,11 @@
   "section_title": "Thể thao",
   "word": "ホームラン",
   "meaning_vi": "Cú đánh bóng chạy hết vòng (home run)",
-  "meaning_en": "Cú đánh bóng chạy hết vòng (home run)",
+  "meaning_en": "home run",
   "example": {
    "jp": "これで、今日（きょう）3本（ほん）目（め）のホームランだ。",
    "vi": "Đây là cú home run thứ ba trong ngày hôm nay.",
-   "en": "Đây là cú home run thứ ba trong ngày hôm nay.",
+   "en": "That makes three home runs today.",
    "seg": [
     {
      "t": "これで、"
@@ -32063,12 +32063,12 @@
   "section_title": "Thể thao",
   "word": "打つ",
   "meaning_vi": "Đánh",
-  "meaning_en": "Đánh",
+  "meaning_en": "hit, strike",
   "furigana": "うつ",
   "example": {
    "jp": "兄（あに）が初（はじ）めてのヒットを打（う）った。",
    "vi": "Anh trai tôi lần đầu tiên đánh trúng bóng.",
-   "en": "Anh trai tôi lần đầu tiên đánh trúng bóng.",
+   "en": "My older brother got his first hit.",
    "seg": [
     {
      "t": "兄",
@@ -32103,12 +32103,12 @@
   "section_title": "Thể thao",
   "word": "前半",
   "meaning_vi": "Hiệp đầu, nửa đầu",
-  "meaning_en": "Hiệp đầu, nửa đầu",
+  "meaning_en": "first half",
   "furigana": "ぜんはん",
   "example": {
    "jp": "サッカーの試合（しあい）の前半（ぜんはん）は、0点（れいてん）で終（お）わった。",
    "vi": "Hiệp đầu trận đấu bóng đá đã kết thúc mà không có bàn thắng nào.",
-   "en": "Hiệp đầu trận đấu bóng đá đã kết thúc mà không có bàn thắng nào.",
+   "en": "The first half of the soccer match ended nil-nil.",
    "seg": [
     {
      "t": "サッカーの"
@@ -32153,11 +32153,11 @@
   "section_title": "Thể thao",
   "word": "ポイント",
   "meaning_vi": "Điểm",
-  "meaning_en": "Điểm",
+  "meaning_en": "point",
   "example": {
    "jp": "両（りょう）チーム、どちらも強（つよ）くて、なかなかポイントが入（はい）らない。",
    "vi": "Cả hai đội đều mạnh nên mãi không ghi được điểm nào.",
-   "en": "Cả hai đội đều mạnh nên mãi không ghi được điểm nào.",
+   "en": "Both teams are strong, so points just aren't being scored.",
    "seg": [
     {
      "t": "両",
@@ -32192,12 +32192,12 @@
   "section_title": "Thể thao",
   "word": "引き分け",
   "meaning_vi": "Hòa",
-  "meaning_en": "Hòa",
+  "meaning_en": "draw, tie",
   "furigana": "ひきわけ",
   "example": {
    "jp": "昨日（きのう）のサッカーの試合（しあい）は、引き分（ひきわ）けだった。",
    "vi": "Trận bóng đá hôm qua có tỷ số hòa.",
-   "en": "Trận bóng đá hôm qua có tỷ số hòa.",
+   "en": "Yesterday's soccer match was a draw.",
    "seg": [
     {
      "t": "昨日",
@@ -32232,12 +32232,12 @@
   "section_title": "Thể thao",
   "word": "運動会",
   "meaning_vi": "Ngày hội thể thao",
-  "meaning_en": "Ngày hội thể thao",
+  "meaning_en": "sports day, athletic meet",
   "furigana": "うんどうかい",
   "example": {
    "jp": "10月（がつ）に、学校（がっこう）で運動会（うんどうかい）がある。",
    "vi": "Vào tháng 10, tại trường học có ngày hội thể thao.",
-   "en": "Vào tháng 10, tại trường học có ngày hội thể thao.",
+   "en": "In October there's a sports day at school.",
    "seg": [
     {
      "t": "10"
@@ -32275,12 +32275,12 @@
   "section_title": "Thể thao",
   "word": "大声",
   "meaning_vi": "Tiếng to, hô to, hò hét",
-  "meaning_en": "Tiếng to, hô to, hò hét",
+  "meaning_en": "loud voice, shouting",
   "furigana": "おおごえ",
   "example": {
    "jp": "大声（おおごえ）で、兄（あに）のチームを応援（おうえん）した。",
    "vi": "Tôi hò hét để cổ vũ đội của anh trai.",
-   "en": "Tôi hò hét để cổ vũ đội của anh trai.",
+   "en": "I cheered on my brother's team at the top of my voice.",
    "seg": [
     {
      "t": "大声",
@@ -32315,12 +32315,12 @@
   "section_title": "Thể thao",
   "word": "思い切り",
   "meaning_vi": "Hết sức, hết mình",
-  "meaning_en": "Hết sức, hết mình",
+  "meaning_en": "with all one's might, to one's heart's content",
   "furigana": "おもいきり",
   "example": {
    "jp": "（）今日（きょう）は思い切（おもいき）りやって、優勝（ゆうしょう）しよう。",
    "vi": "Hôm nay hãy cố gắng hết mình để vô địch nào!",
-   "en": "Hôm nay hãy cố gắng hết mình để vô địch nào!",
+   "en": "Let's give it everything today and win the championship.",
    "seg": [
     {
      "t": "",
@@ -32359,11 +32359,11 @@
   "section_title": "Thể thao",
   "word": "ペース",
   "meaning_vi": "Tốc độ",
-  "meaning_en": "Tốc độ",
+  "meaning_en": "pace",
   "example": {
    "jp": "あの選手（せんしゅ）は30キロ走（はし）っても、ペースが落（お）ちない。",
    "vi": "Vận động viên ấy chạy 30km cũng không bị giảm tốc độ.",
-   "en": "Vận động viên ấy chạy 30km cũng không bị giảm tốc độ.",
+   "en": "That athlete's pace doesn't drop even after running 30 kilometers.",
    "seg": [
     {
      "t": "あの"
@@ -32401,11 +32401,11 @@
   "section_title": "Thể thao",
   "word": "ゴール＜する＞",
   "meaning_vi": "Đích",
-  "meaning_en": "Đích",
+  "meaning_en": "goal, finish line",
   "example": {
    "jp": "マラソンで、5時間（じかん）かかってゴールした。",
    "vi": "Trong cuộc chạy marathon, tôi đã mất 5 tiếng để chạy về tới đích.",
-   "en": "Trong cuộc chạy marathon, tôi đã mất 5 tiếng để chạy về tới đích.",
+   "en": "It took me five hours to reach the finish line in the marathon.",
    "seg": [
     {
      "t": "マラソンで、5"
@@ -32429,12 +32429,12 @@
   "section_title": "Thể thao",
   "word": "拍手＜する＞",
   "meaning_vi": "Vỗ tay",
-  "meaning_en": "Vỗ tay",
+  "meaning_en": "applause, clap",
   "furigana": "はくしゅ",
   "example": {
    "jp": "最後（さいご）の選手（せんしゅ）がゴールしたとき、みんなが大（おお）きな拍手（はくしゅ）を送（おく）った。",
    "vi": "Khi vận động viên cuối cùng về đến đích, mọi người đã vỗ tay nhiệt liệt cổ vũ.",
-   "en": "Khi vận động viên cuối cùng về đến đích, mọi người đã vỗ tay nhiệt liệt cổ vũ.",
+   "en": "When the last runner crossed the finish line, everyone gave a big round of applause.",
    "seg": [
     {
      "t": "最後",
@@ -32483,11 +32483,11 @@
   "section_title": "Thể thao",
   "word": "ライバル",
   "meaning_vi": "Đối thủ",
-  "meaning_en": "Đối thủ",
+  "meaning_en": "rival",
   "example": {
    "jp": "ライバルには、ぜったいに負（ま）けたくない。",
    "vi": "Tôi tuyệt đối không muốn thua đối thủ.",
-   "en": "Tôi tuyệt đối không muốn thua đối thủ.",
+   "en": "I absolutely don't want to lose to my rival.",
    "seg": [
     {
      "t": "ライバルには、ぜったいに"
@@ -32511,12 +32511,12 @@
   "section_title": "Thể thao",
   "word": "握手＜する＞",
   "meaning_vi": "Bắt tay",
-  "meaning_en": "Bắt tay",
+  "meaning_en": "handshake, shake hands",
   "furigana": "あくしゅ",
   "example": {
    "jp": "試合（しあい）のあとで、相手（あいて）の選手（せんしゅ）と握手（あくしゅ）した。",
    "vi": "Sau trận đấu, tôi đã bắt tay vận động viên đối phương.",
-   "en": "Sau trận đấu, tôi đã bắt tay vận động viên đối phương.",
+   "en": "After the match, I shook hands with the opposing player.",
    "seg": [
     {
      "t": "試合",
@@ -32558,12 +32558,12 @@
   "section_title": "Thể thao",
   "word": "惜しい",
   "meaning_vi": "Tiếc, đáng tiếc",
-  "meaning_en": "Tiếc, đáng tiếc",
+  "meaning_en": "regrettable, a shame, so close",
   "furigana": "おしい",
   "example": {
    "jp": "1秒（びょう）の違（ちが）いで負（ま）けるなんて、本当（ほんとう）に惜（お）しい。",
    "vi": "Chênh nhau có một giây thôi mà thua, thật là tiếc.",
-   "en": "Chênh nhau có một giây thôi mà thua, thật là tiếc.",
+   "en": "To lose by one second — what a shame.",
    "seg": [
     {
      "t": "1"
@@ -32615,11 +32615,11 @@
   "section_title": "Thể thao",
   "word": "すばやい",
   "meaning_vi": "Nhanh nhẹn",
-  "meaning_en": "Nhanh nhẹn",
+  "meaning_en": "quick, nimble",
   "example": {
    "jp": "弟（おとうと）はすばやくて、サッカーが得意（とくい）だ。",
    "vi": "Em trai tôi nhanh nhẹn, giỏi bóng đá.",
-   "en": "Em trai tôi nhanh nhẹn, giỏi bóng đá.",
+   "en": "My younger brother is quick and good at soccer.",
    "seg": [
     {
      "t": "弟",
@@ -32647,12 +32647,12 @@
   "section_title": "Thể thao",
   "word": "体操＜する＞",
   "meaning_vi": "Thể dục",
-  "meaning_en": "Thể dục",
+  "meaning_en": "gymnastics, calisthenics",
   "furigana": "たいそう",
   "example": {
    "jp": "小学生（しょうがくせい）のときは、体操（たいそう）クラブに入（はい）っていた。",
    "vi": "Hồi học tiểu học, tôi tham gia câu lạc bộ thể dục.",
-   "en": "Hồi học tiểu học, tôi tham gia câu lạc bộ thể dục.",
+   "en": "When I was in elementary school, I was in the gymnastics club.",
    "seg": [
     {
      "t": "小学生",
@@ -32687,11 +32687,11 @@
   "section_title": "Thể thao",
   "word": "トレーニング＜する＞",
   "meaning_vi": "Luyện tập",
-  "meaning_en": "Luyện tập",
+  "meaning_en": "training",
   "example": {
    "jp": "毎日（まいにち）授業（じゅぎょう）のあと、3時間（じかん）トレーニングしている。",
    "vi": "Hàng ngày sau buổi học trên lớp, tôi luyện tập 3 tiếng.",
-   "en": "Hàng ngày sau buổi học trên lớp, tôi luyện tập 3 tiếng.",
+   "en": "I train for three hours every day after class.",
    "seg": [
     {
      "t": "毎日",
@@ -32723,12 +32723,12 @@
   "section_title": "Thể thao",
   "word": "日課",
   "meaning_vi": "Việc thường làm hàng ngày",
-  "meaning_en": "Việc thường làm hàng ngày",
+  "meaning_en": "daily routine",
   "furigana": "にっか",
   "example": {
    "jp": "私（わたし）の日課（にっか）は、朝（あさ）のジョギングだ。",
    "vi": "Việc thường làm hàng ngày của tôi là chạy bộ buổi sáng.",
-   "en": "Việc thường làm hàng ngày của tôi là chạy bộ buổi sáng.",
+   "en": "My daily routine is jogging in the morning.",
    "seg": [
     {
      "t": "私",
@@ -32763,11 +32763,11 @@
   "section_title": "Thể thao",
   "word": "キャプテン",
   "meaning_vi": "Đội trưởng",
-  "meaning_en": "Đội trưởng",
+  "meaning_en": "captain",
   "example": {
    "jp": "高校（こうこう）3年（ねん）のとき、キャプテンだった。",
    "vi": "Hồi năm lớp 12 cấp ba, tôi là đội trưởng.",
-   "en": "Hồi năm lớp 12 cấp ba, tôi là đội trưởng.",
+   "en": "In my third year of high school, I was the captain.",
    "seg": [
     {
      "t": "高校",
@@ -32795,11 +32795,11 @@
   "section_title": "Thể thao",
   "word": "プロ",
   "meaning_vi": "Chuyên nghiệp",
-  "meaning_en": "Chuyên nghiệp",
+  "meaning_en": "professional, pro",
   "example": {
    "jp": "弟（おとうと）は、プロのスポーツ選手（せんしゅ）になるのが夢（ゆめ）だ。",
    "vi": "Em trai tôi mơ ước trở thành vận động viên thể thao chuyên nghiệp.",
-   "en": "Em trai tôi mơ ước trở thành vận động viên thể thao chuyên nghiệp.",
+   "en": "My younger brother's dream is to become a professional athlete.",
    "seg": [
     {
      "t": "弟",
@@ -32834,11 +32834,11 @@
   "section_title": "Thể thao",
   "word": "プレー＜する＞",
   "meaning_vi": "Chơi, thi đấu",
-  "meaning_en": "Chơi, thi đấu",
+  "meaning_en": "play (a sport)",
   "example": {
    "jp": "大好（だいす）きな選手（せんしゅ）が、アメリカでプレーしている。",
    "vi": "Vận động viên mà tôi yêu thích đang thi đấu ở Mỹ.",
-   "en": "Vận động viên mà tôi yêu thích đang thi đấu ở Mỹ.",
+   "en": "The player I love is playing in America.",
    "seg": [
     {
      "t": "大好",
@@ -32866,11 +32866,11 @@
   "section_title": "Thể thao",
   "word": "ファン",
   "meaning_vi": "Người hâm mộ",
-  "meaning_en": "Người hâm mộ",
+  "meaning_en": "fan",
   "example": {
    "jp": "私（わたし）は彼（かれ）の大（だい）ファンで、ずっと応援（おうえん）している。",
    "vi": "Tôi là một người hâm mộ cuồng nhiệt của anh ấy, luôn ủng hộ anh ấy.",
-   "en": "Tôi là một người hâm mộ cuồng nhiệt của anh ấy, luôn ủng hộ anh ấy.",
+   "en": "I'm a huge fan of his and have always supported him.",
    "seg": [
     {
      "t": "私",
@@ -32912,12 +32912,12 @@
   "section_title": "Thể thao",
   "word": "引退＜する＞",
   "meaning_vi": "Sự giải nghệ, rút lui",
-  "meaning_en": "Sự giải nghệ, rút lui",
+  "meaning_en": "retire (from a sport or career)",
   "furigana": "いんたい",
   "example": {
    "jp": "好（す）きなラグビー選手（せんしゅ）が引退（いんたい）してしまった。",
    "vi": "Vận động viên bóng bầu dục tôi yêu thích đã giải nghệ mất rồi.",
-   "en": "Vận động viên bóng bầu dục tôi yêu thích đã giải nghệ mất rồi.",
+   "en": "The rugby player I liked has retired.",
    "seg": [
     {
      "t": "好",
@@ -32952,12 +32952,12 @@
   "section_title": "Thể thao",
   "word": "水着",
   "meaning_vi": "Quần áo tắm, quần áo bơi",
-  "meaning_en": "Quần áo tắm, quần áo bơi",
+  "meaning_en": "swimsuit",
   "furigana": "みずぎ",
   "example": {
    "jp": "新（あたら）しい水着（みずぎ）を旅行（りょこう）に持（も）っていった。",
    "vi": "Tôi đã đem bộ đồ bơi mới đi du lịch.",
-   "en": "Tôi đã đem bộ đồ bơi mới đi du lịch.",
+   "en": "I took my new swimsuit on the trip.",
    "seg": [
     {
      "t": "新",
@@ -32999,11 +32999,11 @@
   "section_title": "Thời trang",
   "word": "おしゃれ（な / する）",
   "meaning_vi": "Sự ăn diện, sành điệu (diện, sang trọng)",
-  "meaning_en": "Sự ăn diện, sành điệu (diện, sang trọng)",
+  "meaning_en": "stylish, fashionable, dressing up",
   "example": {
    "jp": "学生（がくせい）時代（じだい）からおしゃれが大好（だいす）きだった。 渋谷（しぶや）はおしゃれな街（まち）だ。",
    "vi": "Tôi thích ăn diện từ hồi sinh viên. / Shibuya là khu phố sành điệu.",
-   "en": "Tôi thích ăn diện từ hồi sinh viên. / Shibuya là khu phố sành điệu.",
+   "en": "I've loved dressing up since my student days. Shibuya is a stylish neighborhood.",
    "seg": [
     {
      "t": "学生",
@@ -33049,12 +33049,12 @@
   "section_title": "Thời trang",
   "word": "好む",
   "meaning_vi": "Thích, chuộng",
-  "meaning_en": "Thích, chuộng",
+  "meaning_en": "like, prefer",
   "furigana": "このむ",
   "example": {
    "jp": "姉（あね）はイタリアのバッグを好（この）んで買（か）っている。",
    "vi": "Chị gái tôi thích mua túi xách của Ý.",
-   "en": "Chị gái tôi thích mua túi xách của Ý.",
+   "en": "My older sister likes buying Italian bags.",
    "seg": [
     {
      "t": "姉",
@@ -33089,12 +33089,12 @@
   "section_title": "Thời trang",
   "word": "好み",
   "meaning_vi": "Sở thích, gu",
-  "meaning_en": "Sở thích, gu",
+  "meaning_en": "taste, preference",
   "furigana": "このみ",
   "example": {
    "jp": "このコートは、色（いろ）もデザインも私（わたし）の好（この）みだ。",
    "vi": "Chiếc áo khoác này màu sắc cũng như thiết kế đều đúng gu của tôi.",
-   "en": "Chiếc áo khoác này màu sắc cũng như thiết kế đều đúng gu của tôi.",
+   "en": "This coat is exactly to my taste in both color and design.",
    "seg": [
     {
      "t": "このコートは、"
@@ -33132,12 +33132,12 @@
   "section_title": "Thời trang",
   "word": "流行＜する＞",
   "meaning_vi": "Sự thịnh hành, lưu hành, mốt",
-  "meaning_en": "Sự thịnh hành, lưu hành, mốt",
+  "meaning_en": "be in fashion, trend",
   "furigana": "りゅうこう",
   "example": {
    "jp": "雑誌（ざっし）を読（よ）むと、今年（ことし）の流行（りゅうこう）がよくわかる。",
    "vi": "Nếu đọc tạp chí thì hiểu được rõ mốt năm nay.",
-   "en": "Nếu đọc tạp chí thì hiểu được rõ mốt năm nay.",
+   "en": "If you read magazines, you get a good sense of this year's trends.",
    "seg": [
     {
      "t": "雑誌",
@@ -33179,11 +33179,11 @@
   "section_title": "Thời trang",
   "word": "はやり",
   "meaning_vi": "Thịnh hành, mốt",
-  "meaning_en": "Thịnh hành, mốt",
+  "meaning_en": "fashion, what's popular",
   "example": {
    "jp": "今年（ことし）はグリーンが、はやりのようだ。",
    "vi": "Năm nay, màu xanh lá hình như là mốt.",
-   "en": "Năm nay, màu xanh lá hình như là mốt.",
+   "en": "Green seems to be in fashion this year.",
    "seg": [
     {
      "t": "今年",
@@ -33204,11 +33204,11 @@
   "section_title": "Thời trang",
   "word": "カタログ",
   "meaning_vi": "Sách mẫu (hàng hóa, quần áo)",
-  "meaning_en": "Sách mẫu (hàng hóa, quần áo)",
+  "meaning_en": "catalog",
   "example": {
    "jp": "買い物（かいもの）に行（い）けないので、カタログで洋服（ようふく）を買（か）う。",
    "vi": "Tôi không đi mua sắm được nên mua quần áo qua catalogue.",
-   "en": "Tôi không đi mua sắm được nên mua quần áo qua catalogue.",
+   "en": "I can't get out to shop, so I buy clothes from a catalog.",
    "seg": [
     {
      "t": "買い物",
@@ -33250,11 +33250,11 @@
   "section_title": "Thời trang",
   "word": "サンプル",
   "meaning_vi": "Mẫu",
-  "meaning_en": "Mẫu",
+  "meaning_en": "sample",
   "example": {
    "jp": "デパートで、化粧（けしょう）品（ひん）のサンプルをもらった。",
    "vi": "Ở trung tâm thương mại, tôi được cho mẫu mỹ phẩm dùng thử.",
-   "en": "Ở trung tâm thương mại, tôi được cho mẫu mỹ phẩm dùng thử.",
+   "en": "I got a cosmetics sample at the department store.",
    "seg": [
     {
      "t": "デパートで、"
@@ -33282,12 +33282,12 @@
   "section_title": "Thời trang",
   "word": "探す",
   "meaning_vi": "Tìm, tìm kiếm",
-  "meaning_en": "Tìm, tìm kiếm",
+  "meaning_en": "look for, search for",
   "furigana": "さがす",
   "example": {
    "jp": "ずっと、こんなバッグを探（さが）していた。",
    "vi": "Tôi đã tìm kiếm suốt một chiếc túi như thế này.",
-   "en": "Tôi đã tìm kiếm suốt một chiếc túi như thế này.",
+   "en": "I've been looking for a bag like this for ages.",
    "seg": [
     {
      "t": "ずっと、こんなバッグを"
@@ -33311,12 +33311,12 @@
   "section_title": "Thời trang",
   "word": "似合う",
   "meaning_vi": "Hợp, phù hợp",
-  "meaning_en": "Hợp, phù hợp",
+  "meaning_en": "suit, look good on",
   "furigana": "にあう",
   "example": {
    "jp": "彼（かれ）にグリーンが似合（にあ）うと言（い）われた。",
    "vi": "Anh ấy nói màu xanh lá hợp với tôi.",
-   "en": "Anh ấy nói màu xanh lá hợp với tôi.",
+   "en": "He told me that green suits me.",
    "seg": [
     {
      "t": "彼",
@@ -33351,11 +33351,11 @@
   "section_title": "Thời trang",
   "word": "ぴったり＜する＞",
   "meaning_vi": "Sự vừa khít, phù hợp",
-  "meaning_en": "Sự vừa khít, phù hợp",
+  "meaning_en": "perfectly, just right, a perfect fit",
   "example": {
    "jp": "①このスカートは、私（わたし）にぴったりのサイズだ。 ②このバッグは、私（わたし）のコートにぴったりだ。",
    "vi": "①Cái váy này vừa khít cỡ của tôi. ②Cái túi này rất hợp với cái áo khoác của tôi.",
-   "en": "①Cái váy này vừa khít cỡ của tôi. ②Cái túi này rất hợp với cái áo khoác của tôi.",
+   "en": "(1) This skirt is a perfect fit for me. (2) This bag goes perfectly with my coat.",
    "seg": [
     {
      "t": "①このスカートは、"
@@ -33386,12 +33386,12 @@
   "section_title": "Thời trang",
   "word": "高級＜な＞",
   "meaning_vi": "Sự cao cấp (cao cấp)",
-  "meaning_en": "Sự cao cấp (cao cấp)",
+  "meaning_en": "high-class, luxury",
   "furigana": "こうきゅう",
   "example": {
    "jp": "友（とも）だちは、いくつも高級（こうきゅう）なバッグを持（も）っている。",
    "vi": "Bạn tôi có rất nhiều túi xách cao cấp.",
-   "en": "Bạn tôi có rất nhiều túi xách cao cấp.",
+   "en": "My friend has several luxury bags.",
    "seg": [
     {
      "t": "友",
@@ -33426,11 +33426,11 @@
   "section_title": "Thời trang",
   "word": "ブランド",
   "meaning_vi": "Hàng hiệu",
-  "meaning_en": "Hàng hiệu",
+  "meaning_en": "brand, designer label",
   "example": {
    "jp": "ボーナスで、ブランドのバッグを買（か）った。",
    "vi": "Tôi mua chiếc túi hàng hiệu bằng tiền thưởng.",
-   "en": "Tôi mua chiếc túi hàng hiệu bằng tiền thưởng.",
+   "en": "I bought a designer bag with my bonus.",
    "seg": [
     {
      "t": "ボーナスで、ブランドのバッグを"
@@ -33454,12 +33454,12 @@
   "section_title": "Thời trang",
   "word": "本物",
   "meaning_vi": "Đồ thật, hàng thật",
-  "meaning_en": "Đồ thật, hàng thật",
+  "meaning_en": "the real thing, genuine article",
   "furigana": "ほんもの",
   "example": {
    "jp": "あの店（みせ）で売（う）っている時計（とけい）は、本物（ほんもの）だ。",
    "vi": "Đồng hồ bán ở cửa hàng đấy là hàng thật.",
-   "en": "Đồng hồ bán ở cửa hàng đấy là hàng thật.",
+   "en": "The watches sold at that shop are genuine.",
    "seg": [
     {
      "t": "あの"
@@ -33504,12 +33504,12 @@
   "section_title": "Thời trang",
   "word": "にせ物",
   "meaning_vi": "Hàng giả",
-  "meaning_en": "Hàng giả",
+  "meaning_en": "fake, counterfeit",
   "furigana": "にせもの",
   "example": {
    "jp": "本物（ほんもの）にそっくりのにせ物（ぶつ）に注意（ちゅうい）してください。",
    "vi": "Hãy cẩn thận với hàng giả giống hệt hàng thật.",
-   "en": "Hãy cẩn thận với hàng giả giống hệt hàng thật.",
+   "en": "Please watch out for fakes that look just like the real thing.",
    "seg": [
     {
      "t": "本物",
@@ -33544,12 +33544,12 @@
   "section_title": "Thời trang",
   "word": "保証＜する＞",
   "meaning_vi": "Sự bảo đảm, bảo hành",
-  "meaning_en": "Sự bảo đảm, bảo hành",
+  "meaning_en": "guarantee, warranty",
   "furigana": "ほしょう",
   "example": {
    "jp": "この商品（しょうひん）は、100パーセント本物（ほんもの）だと保証（ほしょう）します。",
    "vi": "Sản phẩm này bảo đảm là hàng thật 100%.",
-   "en": "Sản phẩm này bảo đảm là hàng thật 100%.",
+   "en": "We guarantee this product is 100 percent genuine.",
    "seg": [
     {
      "t": "この"
@@ -33587,11 +33587,11 @@
   "section_title": "Thời trang",
   "word": "バーゲンセール",
   "meaning_vi": "Bán hạ giá",
-  "meaning_en": "Bán hạ giá",
+  "meaning_en": "bargain sale",
   "example": {
    "jp": "このくつは、バーゲンセールで半額（はんがく）だった。",
    "vi": "Đôi giày này được bán nửa giá trong đợt hạ giá.",
-   "en": "Đôi giày này được bán nửa giá trong đợt hạ giá.",
+   "en": "These shoes were half price in the bargain sale.",
    "seg": [
     {
      "t": "このくつは、バーゲンセールで"
@@ -33615,12 +33615,12 @@
   "section_title": "Thời trang",
   "word": "取り替える",
   "meaning_vi": "Thay, đổi",
-  "meaning_en": "Thay, đổi",
+  "meaning_en": "exchange, replace",
   "furigana": "とりかえる",
   "example": {
    "jp": "このシャツは汚（よご）れているので、取り替（とりか）えてください。",
    "vi": "Chiếc áo sơ mi này bị bẩn nên hãy đổi cho tôi cái khác!",
-   "en": "Chiếc áo sơ mi này bị bẩn nên hãy đổi cho tôi cái khác!",
+   "en": "This shirt is dirty, so please exchange it.",
    "seg": [
     {
      "t": "このシャツは"
@@ -33651,11 +33651,11 @@
   "section_title": "Thời trang",
   "word": "はめる",
   "meaning_vi": "Đeo, xỏ",
-  "meaning_en": "Đeo, xỏ",
+  "meaning_en": "put on, slip on (a ring or gloves)",
   "example": {
    "jp": "結婚（けっこん）指輪（ゆびわ）は左（ひだり）の薬指（くすりゆび）にはめる。",
    "vi": "Xỏ nhẫn cưới vào ngón áp út của tay trái.",
-   "en": "Xỏ nhẫn cưới vào ngón áp út của tay trái.",
+   "en": "You put a wedding ring on the ring finger of your left hand.",
    "seg": [
     {
      "t": "結婚",
@@ -33694,12 +33694,12 @@
   "section_title": "Thời trang",
   "word": "外す",
   "meaning_vi": "Tháo, rời",
-  "meaning_en": "Tháo, rời",
+  "meaning_en": "take off, remove; step away",
   "furigana": "はずす",
   "example": {
    "jp": "①指輪（ゆびわ）を外（はず）して、なくさないように箱（はこ）に入（い）れる。 ②田中（たなか）部長（ぶちょう）は、席（せき）を外（はず）しています。",
    "vi": "①Tôi tháo nhẫn, bỏ vào hộp để khỏi mất. ②Trưởng phòng Tanaka rời chỗ đi ra ngoài.",
-   "en": "①Tôi tháo nhẫn, bỏ vào hộp để khỏi mất. ②Trưởng phòng Tanaka rời chỗ đi ra ngoài.",
+   "en": "(1) I take off my ring and put it in a box so I don't lose it. (2) Department manager Tanaka has stepped away from his desk.",
    "seg": [
     {
      "t": "①"
@@ -33769,11 +33769,11 @@
   "section_title": "Thời trang",
   "word": "カット＜する＞",
   "meaning_vi": "Việc cắt (tóc)",
-  "meaning_en": "Việc cắt (tóc)",
+  "meaning_en": "cut (hair)",
   "example": {
    "jp": "夏（なつ）になったら、髪（かみ）をカットしたい。",
    "vi": "Đến hè tôi muốn cắt tóc.",
-   "en": "Đến hè tôi muốn cắt tóc.",
+   "en": "When summer comes, I want to get my hair cut.",
    "seg": [
     {
      "t": "夏",
@@ -33801,11 +33801,11 @@
   "section_title": "Thời trang",
   "word": "パーマ",
   "meaning_vi": "Uốn (tóc)",
-  "meaning_en": "Uốn (tóc)",
+  "meaning_en": "perm",
   "example": {
    "jp": "たまにはパーマをかけて、気分（きぶん）を変（か）えよう。",
    "vi": "Thi thoảng hãy uốn tóc để thay đổi tâm trạng.",
-   "en": "Thi thoảng hãy uốn tóc để thay đổi tâm trạng.",
+   "en": "Let's get a perm once in a while for a change of mood.",
    "seg": [
     {
      "t": "たまにはパーマをかけて、"
@@ -33836,12 +33836,12 @@
   "section_title": "Thời trang",
   "word": "染める",
   "meaning_vi": "Nhuộm",
-  "meaning_en": "Nhuộm",
+  "meaning_en": "dye",
   "furigana": "そめる",
   "example": {
    "jp": "髪（かみ）を明（あか）るい色（いろ）に染（そ）めた。",
    "vi": "Tôi đã nhuộm tóc sang màu sáng.",
-   "en": "Tôi đã nhuộm tóc sang màu sáng.",
+   "en": "I dyed my hair a lighter color.",
    "seg": [
     {
      "t": "髪",
@@ -33883,11 +33883,11 @@
   "section_title": "Thời trang",
   "word": "サイズ",
   "meaning_vi": "Cỡ, kích cỡ",
-  "meaning_en": "Cỡ, kích cỡ",
+  "meaning_en": "size",
   "example": {
    "jp": "このデザインの、ほかのサイズはありますか。",
    "vi": "Còn cỡ khác của mẫu mã này không?",
-   "en": "Còn cỡ khác của mẫu mã này không?",
+   "en": "Do you have this design in other sizes?",
    "seg": [
     {
      "t": "このデザインの、ほかのサイズはありますか。"
@@ -33904,12 +33904,12 @@
   "section_title": "Ăn diện",
   "word": "夏物",
   "meaning_vi": "Đồ mùa hè",
-  "meaning_en": "Đồ mùa hè",
+  "meaning_en": "summer clothing",
   "furigana": "なつもの",
   "example": {
    "jp": "暖（あたた）かくなってきたので、そろそろ夏物（なつもの）を出（だ）そう。",
    "vi": "Trời bắt đầu ấm áp nên chuẩn bị lấy đồ mùa hè ra thôi.",
-   "en": "Trời bắt đầu ấm áp nên chuẩn bị lấy đồ mùa hè ra thôi.",
+   "en": "It's getting warmer, so it's about time to get out the summer clothes.",
    "seg": [
     {
      "t": "暖",
@@ -33944,12 +33944,12 @@
   "section_title": "Ăn diện",
   "word": "冬物",
   "meaning_vi": "Đồ mùa đông",
-  "meaning_en": "Đồ mùa đông",
+  "meaning_en": "winter clothing",
   "furigana": "ふゆもの",
   "example": {
    "jp": "暖（あたた）かくなってきたので、冬物（ふゆもの）をしまおう。",
    "vi": "Đã ấm lên rồi, cất đồ mùa đông đi thôi.",
-   "en": "Đã ấm lên rồi, cất đồ mùa đông đi thôi.",
+   "en": "It's warmed up, so let's put the winter clothes away.",
    "seg": [
     {
      "t": "暖",
@@ -33977,12 +33977,12 @@
   "section_title": "Ăn diện",
   "word": "上着",
   "meaning_vi": "Áo khoác",
-  "meaning_en": "Áo khoác",
+  "meaning_en": "jacket, outer garment",
   "furigana": "うわぎ",
   "example": {
    "jp": "もう春（はる）だ。うすい上着（うわぎ）がほしい。",
    "vi": "Đã sang mùa xuân rồi. Tôi muốn có cái áo khoác mỏng.",
-   "en": "Đã sang mùa xuân rồi. Tôi muốn có cái áo khoác mỏng.",
+   "en": "It's spring already. I want a light jacket.",
    "seg": [
     {
      "t": "もう"
@@ -34013,12 +34013,12 @@
   "section_title": "Ăn diện",
   "word": "婦人服",
   "meaning_vi": "Quần áo nữ",
-  "meaning_en": "Quần áo nữ",
+  "meaning_en": "women's clothing",
   "furigana": "ふじんふく",
   "example": {
    "jp": "婦人（ふじん）服（ふく）売り場（うりば）は3階（かい）だ。",
    "vi": "Quầy bán quần áo nữ ở tầng 3.",
-   "en": "Quầy bán quần áo nữ ở tầng 3.",
+   "en": "The women's clothing department is on the third floor.",
    "seg": [
     {
      "t": "婦人",
@@ -34054,12 +34054,12 @@
   "section_title": "Ăn diện",
   "word": "紳士服",
   "meaning_vi": "Quần áo nam",
-  "meaning_en": "Quần áo nam",
+  "meaning_en": "men's clothing",
   "furigana": "しんしふく",
   "example": {
    "jp": "最近（さいきん）は、おしゃれな紳士（しんし）服（ふく）が増（ふ）えた。",
    "vi": "Gần đây quần áo nam sành điệu tăng lên.",
-   "en": "Gần đây quần áo nam sành điệu tăng lên.",
+   "en": "Lately there's more stylish men's clothing available.",
    "seg": [
     {
      "t": "最近",
@@ -34098,11 +34098,11 @@
   "section_title": "Ăn diện",
   "word": "ジーンズ",
   "meaning_vi": "Quần bò, quần jeans",
-  "meaning_en": "Quần bò, quần jeans",
+  "meaning_en": "jeans",
   "example": {
    "jp": "私（わたし）の会社（かいしゃ）では、ジーンズは禁止（きんし）されている。",
    "vi": "Ở công ty tôi, quần bò bị cấm.",
-   "en": "Ở công ty tôi, quần bò bị cấm.",
+   "en": "At my company, jeans are not allowed.",
    "seg": [
     {
      "t": "私",
@@ -34137,11 +34137,11 @@
   "section_title": "Ăn diện",
   "word": "パンツ",
   "meaning_vi": "Quần",
-  "meaning_en": "Quần",
+  "meaning_en": "trousers, pants",
   "example": {
    "jp": "スカートより、パンツのスーツが好（す）きだ。",
    "vi": "Tôi thích bộ vest quần hơn là váy.",
-   "en": "Tôi thích bộ vest quần hơn là váy.",
+   "en": "I prefer a trouser suit to a skirt.",
    "seg": [
     {
      "t": "スカートより、パンツのスーツが"
@@ -34165,11 +34165,11 @@
   "section_title": "Ăn diện",
   "word": "イヤリング",
   "meaning_vi": "Hoa tai kẹp",
-  "meaning_en": "Hoa tai kẹp",
+  "meaning_en": "earring (clip-on)",
   "example": {
    "jp": "会社（かいしゃ）に、小（ちい）さいイヤリングをして行（い）く。",
    "vi": "Tôi đeo hoa tai nhỏ đến công ty.",
-   "en": "Tôi đeo hoa tai nhỏ đến công ty.",
+   "en": "I wear small earrings to work.",
    "seg": [
     {
      "t": "会社",
@@ -34204,11 +34204,11 @@
   "section_title": "Ăn diện",
   "word": "ネックレス",
   "meaning_vi": "Dây chuyền",
-  "meaning_en": "Dây chuyền",
+  "meaning_en": "necklace",
   "example": {
    "jp": "パーティーに、ダイヤのネックレスをして行（い）く。",
    "vi": "Tôi đeo dây chuyền kim cương đi dự tiệc.",
-   "en": "Tôi đeo dây chuyền kim cương đi dự tiệc.",
+   "en": "I wear a diamond necklace to the party.",
    "seg": [
     {
      "t": "パーティーに、ダイヤのネックレスをして"
@@ -34232,12 +34232,12 @@
   "section_title": "Ăn diện",
   "word": "宝石",
   "meaning_vi": "Đá quý",
-  "meaning_en": "Đá quý",
+  "meaning_en": "jewel, gemstone",
   "furigana": "ほうせき",
   "example": {
    "jp": "宝石（ほうせき）は高（たか）くて買（か）えない。",
    "vi": "Đá quý đắt quá nên không mua được.",
-   "en": "Đá quý đắt quá nên không mua được.",
+   "en": "Jewels are too expensive for me to buy.",
    "seg": [
     {
      "t": "宝石",
@@ -34272,11 +34272,11 @@
   "section_title": "Ăn diện",
   "word": "スカーフ",
   "meaning_vi": "Khăn quàng mỏng",
-  "meaning_en": "Khăn quàng mỏng",
+  "meaning_en": "scarf",
   "example": {
    "jp": "ブランドのスカーフを何（なん）枚（まい）か持（も）っている。",
    "vi": "Tôi có mấy cái khăn quàng hàng hiệu.",
-   "en": "Tôi có mấy cái khăn quàng hàng hiệu.",
+   "en": "I have several designer scarves.",
    "seg": [
     {
      "t": "ブランドのスカーフを"
@@ -34311,12 +34311,12 @@
   "section_title": "Ăn diện",
   "word": "手袋",
   "meaning_vi": "Găng tay",
-  "meaning_en": "Găng tay",
+  "meaning_en": "gloves",
   "furigana": "てぶくろ",
   "example": {
    "jp": "今年（ことし）、新（あたら）しい手袋（てぶくろ）を買（か）った。",
    "vi": "Năm nay tôi mua găng tay mới.",
-   "en": "Năm nay tôi mua găng tay mới.",
+   "en": "I bought new gloves this year.",
    "seg": [
     {
      "t": "今年",
@@ -34358,11 +34358,11 @@
   "section_title": "Ăn diện",
   "word": "マフラー",
   "meaning_vi": "Khăn choàng cổ",
-  "meaning_en": "Khăn choàng cổ",
+  "meaning_en": "muffler, winter scarf",
   "example": {
    "jp": "寒（さむ）い日（ひ）でも、マフラーがあれば暖（あたた）かい。",
    "vi": "Cho dù là ngày lạnh nhưng nếu có khăn choàng cổ thì sẽ ấm.",
-   "en": "Cho dù là ngày lạnh nhưng nếu có khăn choàng cổ thì sẽ ấm.",
+   "en": "Even on a cold day, you'll be warm if you have a scarf.",
    "seg": [
     {
      "t": "寒",
@@ -34397,12 +34397,12 @@
   "section_title": "Ăn diện",
   "word": "[お]化粧＜する＞",
   "meaning_vi": "Trang điểm",
-  "meaning_en": "Trang điểm",
+  "meaning_en": "makeup, put on makeup",
   "furigana": "[お]けしょう",
   "example": {
    "jp": "出（で）かけるときは、必（かなら）ず化粧（けしょう）をする。",
    "vi": "Khi đi ra ngoài, tôi luôn luôn trang điểm.",
-   "en": "Khi đi ra ngoài, tôi luôn luôn trang điểm.",
+   "en": "I always put on makeup when I go out.",
    "seg": [
     {
      "t": "出",
@@ -34437,12 +34437,12 @@
   "section_title": "Ăn diện",
   "word": "口紅",
   "meaning_vi": "Son môi",
-  "meaning_en": "Son môi",
+  "meaning_en": "lipstick",
   "furigana": "くちべに",
   "example": {
    "jp": "季節（きせつ）によって口紅（くちべに）を変（か）えている。",
    "vi": "Tôi thay đổi son môi tùy theo mùa.",
-   "en": "Tôi thay đổi son môi tùy theo mùa.",
+   "en": "I change my lipstick depending on the season.",
    "seg": [
     {
      "t": "季節",
@@ -34477,12 +34477,12 @@
   "section_title": "Ăn diện",
   "word": "まつ毛",
   "meaning_vi": "Lông mi",
-  "meaning_en": "Lông mi",
+  "meaning_en": "eyelashes",
   "furigana": "まつげ",
   "example": {
    "jp": "彼女（かのじょ）はまつ毛が長（なが）くて、かわいい。",
    "vi": "Cô ấy có lông mi dài, dễ thương.",
-   "en": "Cô ấy có lông mi dài, dễ thương.",
+   "en": "She has long eyelashes and is lovely.",
    "seg": [
     {
      "t": "彼女",
@@ -34510,11 +34510,11 @@
   "section_title": "Ăn diện",
   "word": "ほほ",
   "meaning_vi": "Má",
-  "meaning_en": "Má",
+  "meaning_en": "cheek",
   "example": {
    "jp": "彼女（かのじょ）のほほは、ピンクでかわいい。",
    "vi": "Má của cô ấy hồng hồng, dễ thương.",
-   "en": "Má của cô ấy hồng hồng, dễ thương.",
+   "en": "Her cheeks are pink and lovely.",
    "seg": [
     {
      "t": "彼女",
@@ -34535,11 +34535,11 @@
   "section_title": "Ăn diện",
   "word": "つめ",
   "meaning_vi": "Móng tay",
-  "meaning_en": "Móng tay",
+  "meaning_en": "fingernail, nail",
   "example": {
    "jp": "つめの色（いろ）を変（か）えると、気分（きぶん）が変（か）わる。",
    "vi": "Khi thay đổi màu móng tay, tâm trạng cũng thay đổi.",
-   "en": "Khi thay đổi màu móng tay, tâm trạng cũng thay đổi.",
+   "en": "Changing my nail color changes my mood.",
    "seg": [
     {
      "t": "つめの"
@@ -34584,12 +34584,12 @@
   "section_title": "Ăn diện",
   "word": "香水",
   "meaning_vi": "Nước hoa",
-  "meaning_en": "Nước hoa",
+  "meaning_en": "perfume",
   "furigana": "こうすい",
   "example": {
    "jp": "この香水（こうすい）は少（すこ）し匂（にお）いが強（つよ）い。",
    "vi": "Nước hoa này mùi hơi nồng.",
-   "en": "Nước hoa này mùi hơi nồng.",
+   "en": "This perfume has a slightly strong scent.",
    "seg": [
     {
      "t": "この"
@@ -34634,12 +34634,12 @@
   "section_title": "Ăn diện",
   "word": "古着",
   "meaning_vi": "Quần áo cũ",
-  "meaning_en": "Quần áo cũ",
+  "meaning_en": "secondhand clothing, vintage clothes",
   "furigana": "ふるぎ",
   "example": {
    "jp": "古着（ふるぎ）が好（す）きで、よくこの店（みせ）に寄（よ）る。",
    "vi": "Tôi thích quần áo cũ nên hay ghé vào cửa hàng này.",
-   "en": "Tôi thích quần áo cũ nên hay ghé vào cửa hàng này.",
+   "en": "I like vintage clothes, so I often stop by this shop.",
    "seg": [
     {
      "t": "古着",
@@ -34681,12 +34681,12 @@
   "section_title": "Ăn diện",
   "word": "革",
   "meaning_vi": "Da (thuộc da)",
-  "meaning_en": "Da (thuộc da)",
+  "meaning_en": "leather",
   "furigana": "かわ",
   "example": {
    "jp": "このくつは、とてもいい革（かわ）でできている。",
    "vi": "Đôi giày này làm bằng loại da rất tốt.",
-   "en": "Đôi giày này làm bằng loại da rất tốt.",
+   "en": "These shoes are made of very good leather.",
    "seg": [
     {
      "t": "このくつは、とてもいい"
@@ -34710,11 +34710,11 @@
   "section_title": "Ăn diện",
   "word": "ベルト",
   "meaning_vi": "Thắt lưng, dây lưng",
-  "meaning_en": "Thắt lưng, dây lưng",
+  "meaning_en": "belt",
   "example": {
    "jp": "ブランドのベルトを、父（ちち）にプレゼントした。",
    "vi": "Tôi tặng bố một cái thắt lưng hàng hiệu.",
-   "en": "Tôi tặng bố một cái thắt lưng hàng hiệu.",
+   "en": "I gave my father a designer belt as a present.",
    "seg": [
     {
      "t": "ブランドのベルトを、"
@@ -34738,11 +34738,11 @@
   "section_title": "Ăn diện",
   "word": "そで",
   "meaning_vi": "Tay áo",
-  "meaning_en": "Tay áo",
+  "meaning_en": "sleeve",
   "example": {
    "jp": "会社（かいしゃ）の冷房（れいぼう）が強（つよ）いので、長（なが）そでを着（き）ている。",
    "vi": "Máy lạnh ở công ty mạnh nên tôi mặc áo dài tay.",
-   "en": "Máy lạnh ở công ty mạnh nên tôi mặc áo dài tay.",
+   "en": "The air conditioning at work is strong, so I wear long sleeves.",
    "seg": [
     {
      "t": "会社",
@@ -34791,11 +34791,11 @@
   "section_title": "Ăn diện",
   "word": "ショップ",
   "meaning_vi": "Cửa hàng",
-  "meaning_en": "Cửa hàng",
+  "meaning_en": "shop, store",
   "example": {
    "jp": "近（ちか）くに、とてもおしゃれなショップができた。",
    "vi": "Gần đây mới mở một cửa hàng rất sành điệu.",
-   "en": "Gần đây mới mở một cửa hàng rất sành điệu.",
+   "en": "A very stylish shop has opened nearby.",
    "seg": [
     {
      "t": "近",
@@ -34816,12 +34816,12 @@
   "section_title": "Sở thích",
   "word": "気に入る",
   "meaning_vi": "Thích, ưa thích",
-  "meaning_en": "Thích, ưa thích",
+  "meaning_en": "like, be fond of, take a liking to",
   "furigana": "きにいる",
   "example": {
    "jp": "私（わたし）は、この画家（がか）の絵（え）が気に入（きにい）っている。",
    "vi": "Tôi thích tranh của họa sĩ này.",
-   "en": "Tôi thích tranh của họa sĩ này.",
+   "en": "I'm fond of this painter's work.",
    "seg": [
     {
      "t": "私",
@@ -34863,12 +34863,12 @@
   "section_title": "Sở thích",
   "word": "お気に入り",
   "meaning_vi": "Đồ yêu thích, người yêu thích",
-  "meaning_en": "Đồ yêu thích, người yêu thích",
+  "meaning_en": "favorite",
   "furigana": "おきにいり",
   "example": {
    "jp": "ドラマで見（み）てから、この俳優（はいゆう）がお気に入りだ。",
    "vi": "Sau khi xem trên phim truyền hình, diễn viên này trở thành người yêu thích của tôi.",
-   "en": "Sau khi xem trên phim truyền hình, diễn viên này trở thành người yêu thích của tôi.",
+   "en": "Ever since I saw him in a drama, this actor has been my favorite.",
    "seg": [
     {
      "t": "ドラマで"
@@ -34899,12 +34899,12 @@
   "section_title": "Sở thích",
   "word": "芸術",
   "meaning_vi": "Nghệ thuật",
-  "meaning_en": "Nghệ thuật",
+  "meaning_en": "art, the arts",
   "furigana": "げいじゅつ",
   "example": {
    "jp": "日本（にほん）の芸術（げいじゅつ）に興味（きょうみ）がある。",
    "vi": "Tôi có hứng thú với nghệ thuật của Nhật Bản.",
-   "en": "Tôi có hứng thú với nghệ thuật của Nhật Bản.",
+   "en": "I'm interested in Japanese art.",
    "seg": [
     {
      "t": "日本",
@@ -34939,12 +34939,12 @@
   "section_title": "Sở thích",
   "word": "絵画",
   "meaning_vi": "Hội họa, tranh vẽ",
-  "meaning_en": "Hội họa, tranh vẽ",
+  "meaning_en": "painting, picture",
   "furigana": "かいが",
   "example": {
    "jp": "来年（らいねん）は、絵画（かいが）教室（きょうしつ）に通（かよ）うつもりだ。",
    "vi": "Sang năm tôi định sẽ đến lớp học hội họa.",
-   "en": "Sang năm tôi định sẽ đến lớp học hội họa.",
+   "en": "Next year I plan to attend a painting class.",
    "seg": [
     {
      "t": "来年",
@@ -34983,12 +34983,12 @@
   "section_title": "Sở thích",
   "word": "才能",
   "meaning_vi": "Tài năng, năng khiếu",
-  "meaning_en": "Tài năng, năng khiếu",
+  "meaning_en": "talent, ability",
   "furigana": "さいのう",
   "example": {
    "jp": "先生（せんせい）から、絵（え）の才能（さいのう）があると言（い）われた。",
    "vi": "Thầy giáo nói rằng tôi có năng khiếu vẽ tranh.",
-   "en": "Thầy giáo nói rằng tôi có năng khiếu vẽ tranh.",
+   "en": "My teacher told me I have a talent for drawing.",
    "seg": [
     {
      "t": "先生",
@@ -35030,11 +35030,11 @@
   "section_title": "Sở thích",
   "word": "けいこ＜する＞",
   "meaning_vi": "Luyện tập, tập luyện (thường chỉ các môn nghệ thuật truyền thống)",
-  "meaning_en": "Luyện tập, tập luyện (thường chỉ các môn nghệ thuật truyền thống)",
+  "meaning_en": "practice, lessons (in a traditional art)",
   "example": {
    "jp": "お茶のけいこを始（はじ）めた。",
    "vi": "Tôi bắt đầu học trà đạo.",
-   "en": "Tôi bắt đầu học trà đạo.",
+   "en": "I started taking tea ceremony lessons.",
    "seg": [
     {
      "t": "お茶のけいこを"
@@ -35058,11 +35058,11 @@
   "section_title": "Sở thích",
   "word": "アニメ",
   "meaning_vi": "Phim hoạt hình anime",
-  "meaning_en": "Phim hoạt hình anime",
+  "meaning_en": "anime, animation",
   "example": {
    "jp": "日本（にほん）のアニメは、世界中（せかいじゅう）で見（み）られている。",
    "vi": "Phim hoạt hình anime Nhật Bản được xem trên khắp thế giới.",
-   "en": "Phim hoạt hình anime Nhật Bản được xem trên khắp thế giới.",
+   "en": "Japanese anime is watched all over the world.",
    "seg": [
     {
      "t": "日本",
@@ -35097,12 +35097,12 @@
   "section_title": "Sở thích",
   "word": "読書＜する＞",
   "meaning_vi": "Việc đọc sách",
-  "meaning_en": "Việc đọc sách",
+  "meaning_en": "reading (books)",
   "furigana": "どくしょ",
   "example": {
    "jp": "通勤（つうきん）時間（じかん）に読書（どくしょ）をしている。",
    "vi": "Tôi đọc sách trong thời gian di chuyển đến nơi làm.",
-   "en": "Tôi đọc sách trong thời gian di chuyển đến nơi làm.",
+   "en": "I read during my commute.",
    "seg": [
     {
      "t": "通勤",
@@ -35134,11 +35134,11 @@
   "section_title": "Sở thích",
   "word": "おすすめ",
   "meaning_vi": "Sự giới thiệu, gợi ý",
-  "meaning_en": "Sự giới thiệu, gợi ý",
+  "meaning_en": "recommendation",
   "example": {
    "jp": "何（なに）かおすすめの本（ほん）は、ありませんか。",
    "vi": "Có cuốn sách nào bạn muốn giới thiệu không?",
-   "en": "Có cuốn sách nào bạn muốn giới thiệu không?",
+   "en": "Do you have any books you'd recommend?",
    "seg": [
     {
      "t": "何",
@@ -35166,11 +35166,11 @@
   "section_title": "Sở thích",
   "word": "ストーリー",
   "meaning_vi": "Câu chuyện, cốt truyện",
-  "meaning_en": "Câu chuyện, cốt truyện",
+  "meaning_en": "story, plot",
   "example": {
    "jp": "この小説（しょうせつ）のストーリーは、おもしろい。",
    "vi": "Cốt truyện của cuốn tiểu thuyết này thú vị.",
-   "en": "Cốt truyện của cuốn tiểu thuyết này thú vị.",
+   "en": "The plot of this novel is interesting.",
    "seg": [
     {
      "t": "この"
@@ -35194,11 +35194,11 @@
   "section_title": "Sở thích",
   "word": "シリーズ",
   "meaning_vi": "Loạt phim, sê-ri",
-  "meaning_en": "Loạt phim, sê-ri",
+  "meaning_en": "series",
   "example": {
    "jp": "[スーパーマン］のシリーズは、全部（ぜんぶ）見（み）た。",
    "vi": "Tôi đã xem toàn bộ sê-ri phim Superman.",
-   "en": "Tôi đã xem toàn bộ sê-ri phim Superman.",
+   "en": "I've watched the entire Superman series.",
    "seg": [
     {
      "t": "[スーパーマン］のシリーズは、"
@@ -35226,12 +35226,12 @@
   "section_title": "Sở thích",
   "word": "名作",
   "meaning_vi": "Tác phẩm nổi tiếng, kiệt tác",
-  "meaning_en": "Tác phẩm nổi tiếng, kiệt tác",
+  "meaning_en": "masterpiece, great work",
   "furigana": "めいさく",
   "example": {
    "jp": "この映画（えいが）は名作（めいさく）だから、ぜひ見（み）てください。",
    "vi": "Bộ phim này là một kiệt tác nên nhất định hãy xem nhé!",
-   "en": "Bộ phim này là một kiệt tác nên nhất định hãy xem nhé!",
+   "en": "This film is a masterpiece, so please do watch it.",
    "seg": [
     {
      "t": "この"
@@ -35269,12 +35269,12 @@
   "section_title": "Sở thích",
   "word": "登場＜する＞",
   "meaning_vi": "Sự xuất hiện, sự ra mắt",
-  "meaning_en": "Sự xuất hiện, sự ra mắt",
+  "meaning_en": "appear, make an entrance",
   "furigana": "とうじょう",
   "example": {
    "jp": "この映画（えいが）の最後（さいご）のほうで、人気（にんき）俳優（はいゆう）が登場（とうじょう）する。",
    "vi": "Gần cuối bộ phim này, diễn viên nổi tiếng xuất hiện.",
-   "en": "Gần cuối bộ phim này, diễn viên nổi tiếng xuất hiện.",
+   "en": "A popular actor appears near the end of this film.",
    "seg": [
     {
      "t": "この"
@@ -35323,12 +35323,12 @@
   "section_title": "Sở thích",
   "word": "好奇心",
   "meaning_vi": "Sự tò mò, lòng hiếu kỳ",
-  "meaning_en": "Sự tò mò, lòng hiếu kỳ",
+  "meaning_en": "curiosity",
   "furigana": "こうきしん",
   "example": {
    "jp": "彼（かれ）は好奇（こうき）心（しん）が強（つよ）くて、趣味（しゅみ）が多（おお）い。",
    "vi": "Anh ấy rất tò mò và có nhiều sở thích.",
-   "en": "Anh ấy rất tò mò và có nhiều sở thích.",
+   "en": "He has a strong sense of curiosity and lots of hobbies.",
    "seg": [
     {
      "t": "彼",
@@ -35381,11 +35381,11 @@
   "section_title": "Sở thích",
   "word": "コンクール",
   "meaning_vi": "Cuộc thi (thường về âm nhạc, hội họa, điện ảnh)",
-  "meaning_en": "Cuộc thi (thường về âm nhạc, hội họa, điện ảnh)",
+  "meaning_en": "competition, contest (in the arts)",
   "example": {
    "jp": "来年（らいねん）の絵画（かいが）コンクールに、チャレンジするつもりだ。",
    "vi": "Tôi định thử tham gia cuộc thi sáng tác tranh năm tới.",
-   "en": "Tôi định thử tham gia cuộc thi sáng tác tranh năm tới.",
+   "en": "I intend to have a go at next year's painting competition.",
    "seg": [
     {
      "t": "来年",
@@ -35413,12 +35413,12 @@
   "section_title": "Sở thích",
   "word": "出品＜する＞",
   "meaning_vi": "Đưa tác phẩm đi dự thi, trưng bày",
-  "meaning_en": "Đưa tác phẩm đi dự thi, trưng bày",
+  "meaning_en": "exhibit, submit (a work)",
   "furigana": "しゅっぴん",
   "example": {
    "jp": "コンクールに出品（しゅっぴん）する絵（え）を選（えら）ぶ。",
    "vi": "Chọn tranh để đưa đi dự thi.",
-   "en": "Chọn tranh để đưa đi dự thi.",
+   "en": "I choose which painting to submit to the competition.",
    "seg": [
     {
      "t": "コンクールに"
@@ -35456,12 +35456,12 @@
   "section_title": "Sở thích",
   "word": "演奏＜する＞",
   "meaning_vi": "Sự biểu diễn âm nhạc, sự trình tấu",
-  "meaning_en": "Sự biểu diễn âm nhạc, sự trình tấu",
+  "meaning_en": "musical performance, play (an instrument)",
   "furigana": "えんそう",
   "example": {
    "jp": "月（つき）に1回（かい）、ピアノの演奏（えんそう）を聞（き）きに行（い）く。",
    "vi": "Mỗi tháng một lần tôi đi nghe biểu diễn piano.",
-   "en": "Mỗi tháng một lần tôi đi nghe biểu diễn piano.",
+   "en": "Once a month I go to hear a piano performance.",
    "seg": [
     {
      "t": "月",
@@ -35510,11 +35510,11 @@
   "section_title": "Sở thích",
   "word": "イヤホン",
   "meaning_vi": "Tai nghe",
-  "meaning_en": "Tai nghe",
+  "meaning_en": "earphones",
   "example": {
    "jp": "ジョギング中（ちゅう）に、イヤホンで音楽（おんがく）を聞（き）いている。",
    "vi": "Tôi nghe nhạc qua tai nghe trong lúc chạy bộ.",
-   "en": "Tôi nghe nhạc qua tai nghe trong lúc chạy bộ.",
+   "en": "I listen to music on earphones while jogging.",
    "seg": [
     {
      "t": "ジョギング"
@@ -35552,12 +35552,12 @@
   "section_title": "Sở thích",
   "word": "講演会",
   "meaning_vi": "Buổi diễn thuyết, buổi thuyết trình",
-  "meaning_en": "Buổi diễn thuyết, buổi thuyết trình",
+  "meaning_en": "lecture, talk",
   "furigana": "こうえんかい",
   "example": {
    "jp": "興味（きょうみ）があるテーマの講演（こうえん）会（かい）を聞（き）きに行（い）った。",
    "vi": "Tôi đã đi nghe một buổi diễn thuyết có chủ đề mà tôi quan tâm.",
-   "en": "Tôi đã đi nghe một buổi diễn thuyết có chủ đề mà tôi quan tâm.",
+   "en": "I went to hear a lecture on a topic I'm interested in.",
    "seg": [
     {
      "t": "興味",
@@ -35603,11 +35603,11 @@
   "section_title": "Sở thích",
   "word": "サークル",
   "meaning_vi": "Câu lạc bộ",
-  "meaning_en": "Câu lạc bộ",
+  "meaning_en": "club, circle",
   "example": {
    "jp": "大学（だいがく）時代（じだい）から、音楽（おんがく）のサークルに入（はい）っている。",
    "vi": "Tôi tham gia câu lạc bộ âm nhạc từ thời sinh viên.",
-   "en": "Tôi tham gia câu lạc bộ âm nhạc từ thời sinh viên.",
+   "en": "I've been in a music club since my university days.",
    "seg": [
     {
      "t": "大学",
@@ -35646,12 +35646,12 @@
   "section_title": "Cơ thể",
   "word": "身長",
   "meaning_vi": "Chiều cao",
-  "meaning_en": "Chiều cao",
+  "meaning_en": "height (of a person)",
   "furigana": "しんちょう",
   "example": {
    "jp": "妹（いもうと）は、私（わたし）より身長（しんちょう）が3センチ高（たか）い。",
    "vi": "Em gái tôi cao hơn tôi 3cm.",
-   "en": "Em gái tôi cao hơn tôi 3cm.",
+   "en": "My younger sister is three centimeters taller than me.",
    "seg": [
     {
      "t": "妹",
@@ -35693,12 +35693,12 @@
   "section_title": "Cơ thể",
   "word": "伸びる",
   "meaning_vi": "Phát triển",
-  "meaning_en": "Phát triển",
+  "meaning_en": "grow, extend, stretch",
   "furigana": "のびる",
   "example": {
    "jp": "弟（おとうと）は高校生（こうこうせい）で、まだ身長（しんちょう）が伸（の）びている。",
    "vi": "Em trai là học sinh cấp 3 nên vẫn còn phát triển chiều cao.",
-   "en": "Em trai là học sinh cấp 3 nên vẫn còn phát triển chiều cao.",
+   "en": "My younger brother is in high school and still growing taller.",
    "seg": [
     {
      "t": "弟",
@@ -35740,12 +35740,12 @@
   "section_title": "Cơ thể",
   "word": "測る",
   "meaning_vi": "Đo",
-  "meaning_en": "Đo",
+  "meaning_en": "measure",
   "furigana": "はかる",
   "example": {
    "jp": "身長（しんちょう）を測（はか）ったら、1年（ねん）前（まえ）より2センチ伸（の）びていた。",
    "vi": "Khi đo chiều cao thì nhận ra đã cao hơn 2cm so với 1 năm trước.",
-   "en": "Khi đo chiều cao thì nhận ra đã cao hơn 2cm so với 1 năm trước.",
+   "en": "When I measured my height, I'd grown two centimeters since a year ago.",
    "seg": [
     {
      "t": "身長",
@@ -35791,12 +35791,12 @@
   "section_title": "Cơ thể",
   "word": "体重",
   "meaning_vi": "Cân nặng, thể trọng",
-  "meaning_en": "Cân nặng, thể trọng",
+  "meaning_en": "body weight",
   "furigana": "たいじゅう",
   "example": {
    "jp": "朝（あさ）と夜（よる）、体重（たいじゅう）をチェックしている。",
    "vi": "Tôi kiểm tra cân nặng vào buổi sáng và buổi tối.",
-   "en": "Tôi kiểm tra cân nặng vào buổi sáng và buổi tối.",
+   "en": "I check my weight in the morning and at night.",
    "seg": [
     {
      "t": "朝",
@@ -35831,12 +35831,12 @@
   "section_title": "Cơ thể",
   "word": "体重計",
   "meaning_vi": "Cân, cân sức khỏe",
-  "meaning_en": "Cân, cân sức khỏe",
+  "meaning_en": "bathroom scale",
   "furigana": "たいじゅうけい",
   "example": {
    "jp": "新（あたら）しい体重（たいじゅう）計（けい）で、家族（かぞく）の健康（けんこう）をチェックする。",
    "vi": "Tôi kiểm tra sức khỏe của gia đình bằng cân sức khỏe mới.",
-   "en": "Tôi kiểm tra sức khỏe của gia đình bằng cân sức khỏe mới.",
+   "en": "I check my family's health with the new scale.",
    "seg": [
     {
      "t": "新",
@@ -35882,12 +35882,12 @@
   "section_title": "Cơ thể",
   "word": "体温",
   "meaning_vi": "Thân nhiệt",
-  "meaning_en": "Thân nhiệt",
+  "meaning_en": "body temperature",
   "furigana": "たいおん",
   "example": {
    "jp": "私（わたし）の体温（たいおん）は、ふだん36度（ど）ちょっとです。",
    "vi": "Thân nhiệt tôi bình thường là hơn 36 độ một chút.",
-   "en": "Thân nhiệt tôi bình thường là hơn 36 độ một chút.",
+   "en": "My body temperature is normally just over 36 degrees.",
    "seg": [
     {
      "t": "私",
@@ -35922,12 +35922,12 @@
   "section_title": "Cơ thể",
   "word": "額",
   "meaning_vi": "Trán",
-  "meaning_en": "Trán",
+  "meaning_en": "forehead",
   "furigana": "ひたい",
   "example": {
    "jp": "彼（かれ）の額（ひたい）をさわったら、とても熱（あつ）かった。",
    "vi": "Sờ trán cậu ta thấy rất nóng.",
-   "en": "Sờ trán cậu ta thấy rất nóng.",
+   "en": "When I touched his forehead, it was very hot.",
    "seg": [
     {
      "t": "彼",
@@ -35962,12 +35962,12 @@
   "section_title": "Cơ thể",
   "word": "血液",
   "meaning_vi": "Máu",
-  "meaning_en": "Máu",
+  "meaning_en": "blood",
   "furigana": "けつえき",
   "example": {
    "jp": "血液（けつえき）を調（しら）べると、病気（びょうき）がわかる。",
    "vi": "Kiểm tra máu sẽ biết bệnh.",
-   "en": "Kiểm tra máu sẽ biết bệnh.",
+   "en": "If you test the blood, you can identify the illness.",
    "seg": [
     {
      "t": "血液",
@@ -36002,12 +36002,12 @@
   "section_title": "Cơ thể",
   "word": "血液型",
   "meaning_vi": "Nhóm máu",
-  "meaning_en": "Nhóm máu",
+  "meaning_en": "blood type",
   "furigana": "けつえきがた",
   "example": {
    "jp": "私（わたし）の血液（けつえき）型（がた）はB型（がた）、彼（かれ）はＯ（おー）型（かた）です。",
    "vi": "Nhóm máu của tôi là nhóm máu B, còn của anh ấy là nhóm máu O.",
-   "en": "Nhóm máu của tôi là nhóm máu B, còn của anh ấy là nhóm máu O.",
+   "en": "My blood type is B, and his is O.",
    "seg": [
     {
      "t": "私",
@@ -36064,12 +36064,12 @@
   "section_title": "Cơ thể",
   "word": "心臓",
   "meaning_vi": "Tim",
-  "meaning_en": "Tim",
+  "meaning_en": "heart",
   "furigana": "しんぞう",
   "example": {
    "jp": "運動（うんどう）すると、心臓（しんぞう）の動（うご）きが速（はや）くなる。",
    "vi": "Khi vận động, tim sẽ đập nhanh.",
-   "en": "Khi vận động, tim sẽ đập nhanh.",
+   "en": "When you exercise, your heart beats faster.",
    "seg": [
     {
      "t": "運動",
@@ -36111,12 +36111,12 @@
   "section_title": "Cơ thể",
   "word": "汗",
   "meaning_vi": "Mồ hôi",
-  "meaning_en": "Mồ hôi",
+  "meaning_en": "sweat",
   "furigana": "あせ",
   "example": {
    "jp": "スポーツで汗（あせ）をかくのは気持（きも）ちがいい。",
    "vi": "Việc ra mồ hôi khi tập thể thao rất dễ chịu.",
-   "en": "Việc ra mồ hôi khi tập thể thao rất dễ chịu.",
+   "en": "Working up a sweat playing sports feels good.",
    "seg": [
     {
      "t": "スポーツで"
@@ -36147,12 +36147,12 @@
   "section_title": "Cơ thể",
   "word": "息",
   "meaning_vi": "Hơi thở",
-  "meaning_en": "Hơi thở",
+  "meaning_en": "breath",
   "furigana": "いき",
   "example": {
    "jp": "ゆっくり息（いき）をしてください。",
    "vi": "Hãy thở chậm rãi!",
-   "en": "Hãy thở chậm rãi!",
+   "en": "Please breathe slowly.",
    "seg": [
     {
      "t": "ゆっくり"
@@ -36176,12 +36176,12 @@
   "section_title": "Cơ thể",
   "word": "ため息",
   "meaning_vi": "Thở dài",
-  "meaning_en": "Thở dài",
+  "meaning_en": "sigh",
   "furigana": "ためいき",
   "example": {
    "jp": "また体重（たいじゅう）が増（ふ）えて、ため息が出（で）た。",
    "vi": "Cân nặng lại tăng khiến tôi thở dài.",
-   "en": "Cân nặng lại tăng khiến tôi thở dài.",
+   "en": "My weight went up again, and I let out a sigh.",
    "seg": [
     {
      "t": "また"
@@ -36219,12 +36219,12 @@
   "section_title": "Cơ thể",
   "word": "皮ふ",
   "meaning_vi": "Da",
-  "meaning_en": "Da",
+  "meaning_en": "skin",
   "furigana": "ひふ",
   "example": {
    "jp": "皮（ひ）ふが弱（よわ）いので、クリームを使（つか）っている。",
    "vi": "Da yếu nên tôi dùng kem bôi.",
-   "en": "Da yếu nên tôi dùng kem bôi.",
+   "en": "My skin is delicate, so I use cream.",
    "seg": [
     {
      "t": "皮",
@@ -36259,12 +36259,12 @@
   "section_title": "Cơ thể",
   "word": "顔色",
   "meaning_vi": "Sắc mặt",
-  "meaning_en": "Sắc mặt",
+  "meaning_en": "complexion, facial color",
   "furigana": "かおいろ",
   "example": {
    "jp": "今日（きょう）、彼（かれ）は顔色（かおいろ）が悪（わる）い。",
    "vi": "Hôm nay, sắc mặt anh ta trông xấu.",
-   "en": "Hôm nay, sắc mặt anh ta trông xấu.",
+   "en": "He looks pale today.",
    "seg": [
     {
      "t": "今日",
@@ -36306,12 +36306,12 @@
   "section_title": "Cơ thể",
   "word": "睡眠",
   "meaning_vi": "giấc ngủ",
-  "meaning_en": "giấc ngủ",
+  "meaning_en": "sleep",
   "furigana": "すいみん",
   "example": {
    "jp": "健康（けんこう）のために、睡眠（すいみん）に気（き）をつけている。",
    "vi": "Vì sức khỏe, hãy chú ý đến giấc ngủ!",
-   "en": "Vì sức khỏe, hãy chú ý đến giấc ngủ!",
+   "en": "For my health, I pay attention to my sleep.",
    "seg": [
     {
      "t": "健康",
@@ -36346,11 +36346,11 @@
   "section_title": "Cơ thể",
   "word": "まぶた",
   "meaning_vi": "Mí mắt",
-  "meaning_en": "Mí mắt",
+  "meaning_en": "eyelid",
   "example": {
    "jp": "花粉（かふん）症（しょう）で、まぶたが赤（あか）くなった。",
    "vi": "Mí mắt bị đỏ vì dị ứng phấn hoa.",
-   "en": "Mí mắt bị đỏ vì dị ứng phấn hoa.",
+   "en": "My eyelids turned red from hay fever.",
    "seg": [
     {
      "t": "花粉",
@@ -36382,12 +36382,12 @@
   "section_title": "Cơ thể",
   "word": "丈夫な",
   "meaning_vi": "Khỏe, dẻo dai",
-  "meaning_en": "Khỏe, dẻo dai",
+  "meaning_en": "healthy, sturdy, robust",
   "furigana": "じょうぶな",
   "example": {
    "jp": "子（こ）どものころから、体（からだ）が丈夫（じょうぶ）です。",
    "vi": "Cơ thể tôi dẻo dai từ hồi bé.",
-   "en": "Cơ thể tôi dẻo dai từ hồi bé.",
+   "en": "I've had a sturdy constitution since childhood.",
    "seg": [
     {
      "t": "子",
@@ -36422,12 +36422,12 @@
   "section_title": "Cơ thể",
   "word": "歯科医",
   "meaning_vi": "Nha sỹ",
-  "meaning_en": "Nha sỹ",
+  "meaning_en": "dentist",
   "furigana": "しかい",
   "example": {
    "jp": "1年（ねん）に1回（かい）、歯科（しか）医（い）に診（み）てもらう。",
    "vi": "1 năm 1 lần, tôi đi nha sỹ.",
-   "en": "1 năm 1 lần, tôi đi nha sỹ.",
+   "en": "I get checked by the dentist once a year.",
    "seg": [
     {
      "t": "1"
@@ -36476,12 +36476,12 @@
   "section_title": "Cơ thể",
   "word": "虫歯",
   "meaning_vi": "Răng sâu",
-  "meaning_en": "Răng sâu",
+  "meaning_en": "cavity, decayed tooth",
   "furigana": "むしば",
   "example": {
    "jp": "虫歯（むしば）が見（み）つかったので、歯医者（はいしゃ）に通（かよ）っている。",
    "vi": "Phát hiện ra răng sâu nên tôi đang đi đến bác sỹ răng để điều trị.",
-   "en": "Phát hiện ra răng sâu nên tôi đang đi đến bác sỹ răng để điều trị.",
+   "en": "They found a cavity, so I've been going to the dentist.",
    "seg": [
     {
      "t": "虫歯",
@@ -36523,12 +36523,12 @@
   "section_title": "Cơ thể",
   "word": "裸",
   "meaning_vi": "Cởi truồng, trần truồng",
-  "meaning_en": "Cởi truồng, trần truồng",
+  "meaning_en": "naked, bare",
   "furigana": "はだか",
   "example": {
    "jp": "私（わたし）は子（こ）どものころ、裸（はだか）で泳（およ）いでいた。",
    "vi": "Lúc nhỏ, tôi đã cởi trần bơi lội.",
-   "en": "Lúc nhỏ, tôi đã cởi trần bơi lội.",
+   "en": "When I was a child, I used to swim with nothing on.",
    "seg": [
     {
      "t": "私",
@@ -36570,12 +36570,12 @@
   "section_title": "Cơ thể",
   "word": "裸足",
   "meaning_vi": "Chân trần, chân đất",
-  "meaning_en": "Chân trần, chân đất",
+  "meaning_en": "barefoot",
   "furigana": "はだし",
   "example": {
    "jp": "夏休（なつやす）みに、裸足（はだし）で海岸（かいがん）を走（はし）った。",
    "vi": "Kỳ nghỉ hè, tôi đã chạy chân trần trên bãi biển.",
-   "en": "Kỳ nghỉ hè, tôi đã chạy chân trần trên bãi biển.",
+   "en": "During summer vacation, I ran barefoot along the shore.",
    "seg": [
     {
      "t": "夏休",
@@ -36617,12 +36617,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "調子",
   "meaning_vi": "Tình trạng, cảm giác",
-  "meaning_en": "Tình trạng, cảm giác",
+  "meaning_en": "condition, form",
   "furigana": "ちょうし",
   "example": {
    "jp": "ゆうべワインを飲（の）みすぎて、今日（きょう）は調子（ちょうし）がよくない。",
    "vi": "Tối qua, tôi uống quá nhiều rượu vang khiền hôm nay cảm giác không tốt.",
-   "en": "Tối qua, tôi uống quá nhiều rượu vang khiền hôm nay cảm giác không tốt.",
+   "en": "I drank too much wine last night, so I'm not in good shape today.",
    "seg": [
     {
      "t": "ゆうべワインを"
@@ -36660,11 +36660,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "あくび＜する＞",
   "meaning_vi": "Ngáp",
-  "meaning_en": "Ngáp",
+  "meaning_en": "yawn",
   "example": {
    "jp": "彼（かれ）は大（おお）きなあくびをした。",
    "vi": "Anh ta ngáp to.",
-   "en": "Anh ta ngáp to.",
+   "en": "He gave a big yawn.",
    "seg": [
     {
      "t": "彼",
@@ -36692,11 +36692,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "しゃっくり＜する＞",
   "meaning_vi": "Nấc",
-  "meaning_en": "Nấc",
+  "meaning_en": "hiccup",
   "example": {
    "jp": "しゃっくりが止（と）まらなくなった。",
    "vi": "Nấc không ngừng.",
-   "en": "Nấc không ngừng.",
+   "en": "My hiccups wouldn't stop.",
    "seg": [
     {
      "t": "しゃっくりが"
@@ -36720,11 +36720,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "よだれ",
   "meaning_vi": "Dớt dãi, nước miếng",
-  "meaning_en": "Dớt dãi, nước miếng",
+  "meaning_en": "drool, saliva",
   "example": {
    "jp": "いい匂（にお）いだ。よだれが出（で）てきた。",
    "vi": "Thơm quá! Nước miếng chảy ra.",
-   "en": "Thơm quá! Nước miếng chảy ra.",
+   "en": "That smells good. My mouth is watering.",
    "seg": [
     {
      "t": "いい"
@@ -36755,11 +36755,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "にきび",
   "meaning_vi": "Mụn trứng cá",
-  "meaning_en": "Mụn trứng cá",
+  "meaning_en": "pimple, acne",
   "example": {
    "jp": "睡眠（すいみん）不足（ふそく）で、にきびができた。",
    "vi": "Tôi mọc mụn trứng cá vì thiếu ngủ.",
-   "en": "Tôi mọc mụn trứng cá vì thiếu ngủ.",
+   "en": "I broke out in pimples from lack of sleep.",
    "seg": [
     {
      "t": "睡眠",
@@ -36784,12 +36784,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "気になる",
   "meaning_vi": "Bận tâm",
-  "meaning_en": "Bận tâm",
+  "meaning_en": "be on one's mind, be bothered by",
   "furigana": "きになる",
   "example": {
    "jp": "最近（さいきん）、健康（けんこう）のことが気（き）になっている。",
    "vi": "Gần đây tôi bận tâm đến vấn đề sức khỏe.",
-   "en": "Gần đây tôi bận tâm đến vấn đề sức khỏe.",
+   "en": "Lately my health has been on my mind.",
    "seg": [
     {
      "t": "最近",
@@ -36824,12 +36824,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "気にする",
   "meaning_vi": "Bận tâm, lo lắng",
-  "meaning_en": "Bận tâm, lo lắng",
+  "meaning_en": "worry about, let (something) bother one",
   "furigana": "きにする",
   "example": {
    "jp": "健康（けんこう）は大切（たいせつ）だが、気（き）にしすぎるのはよくない。",
    "vi": "Sức khỏe là quan trọng nhưng bận tâm quá thì lại không tốt.",
-   "en": "Sức khỏe là quan trọng nhưng bận tâm quá thì lại không tốt.",
+   "en": "Health is important, but worrying about it too much isn't good.",
    "seg": [
     {
      "t": "健康",
@@ -36864,12 +36864,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "白髪",
   "meaning_vi": "Tóc bạc",
-  "meaning_en": "Tóc bạc",
+  "meaning_en": "gray hair, white hair",
   "furigana": "しらが",
   "example": {
    "jp": "最近（さいきん）、白髪（しらが）が急（きゅう）に増（ふ）えてきた。",
    "vi": "Gần đây tóc bạc bỗng tăng nhiều.",
-   "en": "Gần đây tóc bạc bỗng tăng nhiều.",
+   "en": "Lately my gray hairs have suddenly increased.",
    "seg": [
     {
      "t": "最近",
@@ -36911,12 +36911,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "抜く",
   "meaning_vi": "Nhổ",
-  "meaning_en": "Nhổ",
+  "meaning_en": "pull out, extract",
   "furigana": "ぬく",
   "example": {
    "jp": "娘（むすめ）に白髪（しらが）を抜（ぬ）いてもらった。",
    "vi": "Tôi được con gái nhổ tóc bạc.",
-   "en": "Tôi được con gái nhổ tóc bạc.",
+   "en": "I had my daughter pull out my gray hairs.",
    "seg": [
     {
      "t": "娘",
@@ -36951,12 +36951,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "生える",
   "meaning_vi": "Mọc",
-  "meaning_en": "Mọc",
+  "meaning_en": "grow, come in (of teeth or plants)",
   "furigana": "はえる",
   "example": {
    "jp": "息子（むすこ）に歯（は）が生（は）えてきた。",
    "vi": "Con trai tôi mọc răng.",
-   "en": "Con trai tôi mọc răng.",
+   "en": "My son's teeth have started coming in.",
    "seg": [
     {
      "t": "息子",
@@ -36991,11 +36991,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "しみ",
   "meaning_vi": "Vết nám",
-  "meaning_en": "Vết nám",
+  "meaning_en": "spot, blemish, stain",
   "example": {
    "jp": "ほほに小（ちい）さなしみができた。",
    "vi": "Trên má có một vết nám nhỏ.",
-   "en": "Trên má có một vết nám nhỏ.",
+   "en": "A small spot has appeared on my cheek.",
    "seg": [
     {
      "t": "ほほに"
@@ -37019,11 +37019,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "しわ",
   "meaning_vi": "Nếp nhăn",
-  "meaning_en": "Nếp nhăn",
+  "meaning_en": "wrinkle, crease",
   "example": {
    "jp": "おでこのしわが気（き）になる。",
    "vi": "Tôi tận tâm với nếp nhăn trên trán.",
-   "en": "Tôi tận tâm với nếp nhăn trên trán.",
+   "en": "The wrinkles on my forehead bother me.",
    "seg": [
     {
      "t": "おでこのしわが"
@@ -37047,12 +37047,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "日焼け＜する＞",
   "meaning_vi": "Cháy nắng",
-  "meaning_en": "Cháy nắng",
+  "meaning_en": "sunburn, get a tan",
   "furigana": "ひやけ",
   "example": {
    "jp": "海（うみ）に行（い）ったら、日焼（ひや）けした。",
    "vi": "Tôi đi biển thế là bị cháy nắng.",
-   "en": "Tôi đi biển thế là bị cháy nắng.",
+   "en": "I went to the beach and got sunburned.",
    "seg": [
     {
      "t": "海",
@@ -37087,12 +37087,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "傷",
   "meaning_vi": "Vết thương",
-  "meaning_en": "Vết thương",
+  "meaning_en": "wound, injury, cut",
   "furigana": "きず",
   "example": {
    "jp": "転（ころ）んで、ひざに傷（きず）ができた。",
    "vi": "Tôi ngã nên bị vết thương ở đầu gối.",
-   "en": "Tôi ngã nên bị vết thương ở đầu gối.",
+   "en": "I fell over and got a cut on my knee.",
    "seg": [
     {
      "t": "転",
@@ -37120,12 +37120,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "酔っぱらう",
   "meaning_vi": "Say, say rượu",
-  "meaning_en": "Say, say rượu",
+  "meaning_en": "get drunk",
   "furigana": "よっぱらう",
   "example": {
    "jp": "最近（さいきん）、ビール1杯（いっぱい）で醉（よ）っぱらう。",
    "vi": "Gần đây, tôi uống một cốc bia là say.",
-   "en": "Gần đây, tôi uống một cốc bia là say.",
+   "en": "Lately, one glass of beer gets me drunk.",
    "seg": [
     {
      "t": "最近",
@@ -37160,12 +37160,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "酔っぱらい",
   "meaning_vi": "Kẻ say rượu",
-  "meaning_en": "Kẻ say rượu",
+  "meaning_en": "drunk person",
   "furigana": "よっぱらい",
   "example": {
    "jp": "忘年会（ぼうねんかい）の季節（きせつ）は、酔（よ）っぱらいが増（ふ）える。",
    "vi": "Mùa liên hoan cuối năm, những kẻ say rượu tăng lên.",
-   "en": "Mùa liên hoan cuối năm, những kẻ say rượu tăng lên.",
+   "en": "During year-end party season, the number of drunks goes up.",
    "seg": [
     {
      "t": "忘年会",
@@ -37207,11 +37207,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "ぺこぺこな",
   "meaning_vi": "Cồn cào",
-  "meaning_en": "Cồn cào",
+  "meaning_en": "famished, starving",
   "example": {
    "jp": "ジョギングのあとなので、おなかがぺこぺこだ。",
    "vi": "Vừa chạy bộ xong nên bụng đói cồn cào.",
-   "en": "Vừa chạy bộ xong nên bụng đói cồn cào.",
+   "en": "I've just been jogging, so I'm famished.",
    "seg": [
     {
      "t": "ジョギングのあとなので、おなかがぺこぺこだ。"
@@ -37228,11 +37228,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "からからな",
   "meaning_vi": "Khát khô",
-  "meaning_en": "Khát khô",
+  "meaning_en": "parched, bone dry",
   "example": {
    "jp": "今日（きょう）は暑（あつ）くて、のどがからからになった。",
    "vi": "Hôm nay trời nóng nên cổ họng khát khô.",
-   "en": "Hôm nay trời nóng nên cổ họng khát khô.",
+   "en": "It was hot today and my throat got completely parched.",
    "seg": [
     {
      "t": "今日",
@@ -37260,11 +37260,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "ダイエット",
   "meaning_vi": "Ăn kiêng",
-  "meaning_en": "Ăn kiêng",
+  "meaning_en": "diet",
   "example": {
    "jp": "太（ふと）ったので、ダイエットを始（はじ）めようと思（おも）う。",
    "vi": "Tôi béo nên định bắt đầu ăn kiêng.",
-   "en": "Tôi béo nên định bắt đầu ăn kiêng.",
+   "en": "I've put on weight, so I think I'll start a diet.",
    "seg": [
     {
      "t": "太",
@@ -37299,11 +37299,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "カロリー",
   "meaning_vi": "Ca-lo, lượng ca-lo",
-  "meaning_en": "Ca-lo, lượng ca-lo",
+  "meaning_en": "calorie",
   "example": {
    "jp": "食品（しょくひん）のカロリーが、とても気（き）になる。",
    "vi": "Tôi rất bận tâm đến lượng ca-lo của đồ ăn.",
-   "en": "Tôi rất bận tâm đến lượng ca-lo của đồ ăn.",
+   "en": "I'm very conscious of the calories in food.",
    "seg": [
     {
      "t": "食品",
@@ -37331,12 +37331,12 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "控える",
   "meaning_vi": "Tránh",
-  "meaning_en": "Tránh",
+  "meaning_en": "refrain from, cut back on",
   "furigana": "ひかえる",
   "example": {
    "jp": "カロリーが高（たか）い物（もの）は、できるだけ控（ひか）えている。",
    "vi": "Tôi hết sức tránh những đồ có lượng ca-lo cao.",
-   "en": "Tôi hết sức tránh những đồ có lượng ca-lo cao.",
+   "en": "I cut back on high-calorie foods as much as I can.",
    "seg": [
     {
      "t": "カロリーが"
@@ -37374,11 +37374,11 @@
   "section_title": "Có dấu hiệu gì?",
   "word": "つい",
   "meaning_vi": "Biết thế mà cứ",
-  "meaning_en": "Biết thế mà cứ",
+  "meaning_en": "unintentionally, in spite of oneself",
   "example": {
    "jp": "食事（しょくじ）のあとに、つい甘（あま）い物（もの）を食（た）べてしまう。",
    "vi": "Biết thế mà sau bữa ăn cứ ăn đồ ngọt.",
-   "en": "Biết thế mà sau bữa ăn cứ ăn đồ ngọt.",
+   "en": "After a meal, I end up eating something sweet in spite of myself.",
    "seg": [
     {
      "t": "食事",
@@ -37420,11 +37420,11 @@
   "section_title": "Triệu chứng",
   "word": "アレルギー",
   "meaning_vi": "Dị ứng",
-  "meaning_en": "Dị ứng",
+  "meaning_en": "allergy",
   "example": {
    "jp": "病院（びょういん）で、猫（ねこ）アレルギーだと言（い）われた。",
    "vi": "Ở bệnh viện người ta nói tôi bị dị ứng mèo.",
-   "en": "Ở bệnh viện người ta nói tôi bị dị ứng mèo.",
+   "en": "At the hospital they told me I'm allergic to cats.",
    "seg": [
     {
      "t": "病院",
@@ -37459,12 +37459,12 @@
   "section_title": "Triệu chứng",
   "word": "花粉症",
   "meaning_vi": "Dị ứng phấn hoa",
-  "meaning_en": "Dị ứng phấn hoa",
+  "meaning_en": "hay fever, pollen allergy",
   "furigana": "かふんしょう",
   "example": {
    "jp": "くしゃみが止（と）まらない。花粉（かふん）症（しょう）かもしれない。",
    "vi": "Bị hắt xì hơi mãi không dứt. Có lẽ tôi bị dị ứng phấn hoa.",
-   "en": "Bị hắt xì hơi mãi không dứt. Có lẽ tôi bị dị ứng phấn hoa.",
+   "en": "I can't stop sneezing. It might be hay fever.",
    "seg": [
     {
      "t": "くしゃみが"
@@ -37499,11 +37499,11 @@
   "section_title": "Triệu chứng",
   "word": "うがい＜する＞",
   "meaning_vi": "Súc miệng, súc họng",
-  "meaning_en": "Súc miệng, súc họng",
+  "meaning_en": "gargle",
   "example": {
    "jp": "家（いえ）に帰（かえ）ったら、必（かなら）ずうがいをしている。",
    "vi": "Về đến nhà là tôi nhất định phải súc miệng.",
-   "en": "Về đến nhà là tôi nhất định phải súc miệng.",
+   "en": "I always gargle when I get home.",
    "seg": [
     {
      "t": "家",
@@ -37538,12 +37538,12 @@
   "section_title": "Triệu chứng",
   "word": "手洗い",
   "meaning_vi": "Rửa tay",
-  "meaning_en": "Rửa tay",
+  "meaning_en": "handwashing",
   "furigana": "てあらい",
   "example": {
    "jp": "いつも、しっかり手洗（てあら）いをしよう。",
    "vi": "Hãy luôn luôn rửa tay thật kỹ!",
-   "en": "Hãy luôn luôn rửa tay thật kỹ!",
+   "en": "Let's always wash our hands thoroughly.",
    "seg": [
     {
      "t": "いつも、しっかり"
@@ -37567,11 +37567,11 @@
   "section_title": "Triệu chứng",
   "word": "くしゃみ＜する＞",
   "meaning_vi": "Hắt xì hơi",
-  "meaning_en": "Hắt xì hơi",
+  "meaning_en": "sneeze",
   "example": {
    "jp": "彼（かれ）は朝（あさ）からずっと、くしゃみをしている。",
    "vi": "Anh ấy hắt xì hơi suốt từ sáng.",
-   "en": "Anh ấy hắt xì hơi suốt từ sáng.",
+   "en": "He's been sneezing all morning.",
    "seg": [
     {
      "t": "彼",
@@ -37599,12 +37599,12 @@
   "section_title": "Triệu chứng",
   "word": "鼻水",
   "meaning_vi": "Nước mũi",
-  "meaning_en": "Nước mũi",
+  "meaning_en": "runny nose, nasal mucus",
   "furigana": "はなみず",
   "example": {
    "jp": "くしゃみと鼻水（はなみず）が止（と）まらない。",
    "vi": "Bị hắt xì hơi và chảy nước mũi liên tục.",
-   "en": "Bị hắt xì hơi và chảy nước mũi liên tục.",
+   "en": "My sneezing and runny nose won't stop.",
    "seg": [
     {
      "t": "くしゃみと"
@@ -37635,11 +37635,11 @@
   "section_title": "Triệu chứng",
   "word": "マスク",
   "meaning_vi": "Khẩu trang",
-  "meaning_en": "Khẩu trang",
+  "meaning_en": "face mask",
   "example": {
    "jp": "花粉（かふん）症（しょう）の季節（きせつ）は、マスクをする。",
    "vi": "Mùa dị ứng phấn hoa tôi đeo khẩu trang.",
-   "en": "Mùa dị ứng phấn hoa tôi đeo khẩu trang.",
+   "en": "During hay fever season, I wear a mask.",
    "seg": [
     {
      "t": "花粉",
@@ -37671,11 +37671,11 @@
   "section_title": "Triệu chứng",
   "word": "つらい",
   "meaning_vi": "Mệt mỏi, khó chịu",
-  "meaning_en": "Mệt mỏi, khó chịu",
+  "meaning_en": "painful, hard to bear, rough",
   "example": {
    "jp": "今朝（けさ）から熱（ねつ）があって、つらい。",
    "vi": "Từ sáng đến giờ sốt, khó chịu.",
-   "en": "Từ sáng đến giờ sốt, khó chịu.",
+   "en": "I've had a fever since this morning and feel rough.",
    "seg": [
     {
      "t": "今朝",
@@ -37703,11 +37703,11 @@
   "section_title": "Triệu chứng",
   "word": "かゆい",
   "meaning_vi": "Ngứa",
-  "meaning_en": "Ngứa",
+  "meaning_en": "itchy",
   "example": {
    "jp": "花粉（かふん）が多（おお）い日（ひ）は、目（め）がかゆくなる。",
    "vi": "Những ngày nhiều phấn hoa, mắt bị ngứa.",
-   "en": "Những ngày nhiều phấn hoa, mắt bị ngứa.",
+   "en": "On days with a lot of pollen, my eyes get itchy.",
    "seg": [
     {
      "t": "花粉",
@@ -37749,11 +37749,11 @@
   "section_title": "Triệu chứng",
   "word": "かゆみ",
   "meaning_vi": "Sự ngứa ngáy",
-  "meaning_en": "Sự ngứa ngáy",
+  "meaning_en": "itchiness, itch",
   "example": {
    "jp": "かゆみが、だんだんひどくなってきた。",
    "vi": "Sự ngứa ngáy dần dần nặng lên.",
-   "en": "Sự ngứa ngáy dần dần nặng lên.",
+   "en": "The itching has gradually gotten worse.",
    "seg": [
     {
      "t": "かゆみが、だんだんひどくなってきた。"
@@ -37770,11 +37770,11 @@
   "section_title": "Triệu chứng",
   "word": "かく",
   "meaning_vi": "Gãi",
-  "meaning_en": "Gãi",
+  "meaning_en": "scratch",
   "example": {
    "jp": "かゆくても、かかないでください。",
    "vi": "Ngứa cũng đừng gãi!",
-   "en": "Ngứa cũng đừng gãi!",
+   "en": "Even if it itches, please don't scratch.",
    "seg": [
     {
      "t": "かゆくても、かかないでください。"
@@ -37791,11 +37791,11 @@
   "section_title": "Triệu chứng",
   "word": "こする",
   "meaning_vi": "Dụi",
-  "meaning_en": "Dụi",
+  "meaning_en": "rub",
   "example": {
    "jp": "目（め）をこすりすぎて、赤（あか）くなった。",
    "vi": "Dụi mắt nhiều đâm đỏ.",
-   "en": "Dụi mắt nhiều đâm đỏ.",
+   "en": "I rubbed my eyes too much and they turned red.",
    "seg": [
     {
      "t": "目",
@@ -37823,12 +37823,12 @@
   "section_title": "Triệu chứng",
   "word": "（肩が）こる",
   "meaning_vi": "(Vai) đau mỏi",
-  "meaning_en": "(Vai) đau mỏi",
+  "meaning_en": "get stiff (of shoulders)",
   "furigana": "こる",
   "example": {
    "jp": "ずっと勉強（べんきょう）していて、肩（かた）がこった。",
    "vi": "Ngồi học mãi bị đau mỏi vai.",
-   "en": "Ngồi học mãi bị đau mỏi vai.",
+   "en": "I've been studying nonstop and my shoulders got stiff.",
    "seg": [
     {
      "t": "ずっと"
@@ -37859,12 +37859,12 @@
   "section_title": "Triệu chứng",
   "word": "肩こり",
   "meaning_vi": "Chứng đau mỏi vai",
-  "meaning_en": "Chứng đau mỏi vai",
+  "meaning_en": "stiff shoulders",
   "furigana": "かたこり",
   "example": {
    "jp": "肩（かた）こりがひどいと、気持（きも）ちが悪（わる）くなる。",
    "vi": "Chứng đau mỏi vai mà nặng lên thì cảm giác cũng trở nên khó chịu.",
-   "en": "Chứng đau mỏi vai mà nặng lên thì cảm giác cũng trở nên khó chịu.",
+   "en": "When my shoulders get badly stiff, I start to feel unwell.",
    "seg": [
     {
      "t": "肩",
@@ -37899,11 +37899,11 @@
   "section_title": "Triệu chứng",
   "word": "だるい",
   "meaning_vi": "Uể oải",
-  "meaning_en": "Uể oải",
+  "meaning_en": "sluggish, listless, heavy",
   "example": {
    "jp": "体（からだ）がだるい。かぜかもしれない。",
    "vi": "Người uể oải. Có lẽ bị cảm cũng nên.",
-   "en": "Người uể oải. Có lẽ bị cảm cũng nên.",
+   "en": "My body feels heavy. It might be a cold.",
    "seg": [
     {
      "t": "体",
@@ -37924,11 +37924,11 @@
   "section_title": "Triệu chứng",
   "word": "だるさ",
   "meaning_vi": "Sự uể oải",
-  "meaning_en": "Sự uể oải",
+  "meaning_en": "sluggishness, listlessness",
   "example": {
    "jp": "少（すこ）し寝（ね）たら、体（からだ）のだるさが少（すこ）しとれた。",
    "vi": "Ngủ một chút người cũng đỡ uể oải.",
-   "en": "Ngủ một chút người cũng đỡ uể oải.",
+   "en": "After a short sleep, the heaviness in my body eased a little.",
    "seg": [
     {
      "t": "少",
@@ -37970,11 +37970,11 @@
   "section_title": "Triệu chứng",
   "word": "マッサージ＜する＞",
   "meaning_vi": "Sự xoa bóp, đấm bóp, mát-xa",
-  "meaning_en": "Sự xoa bóp, đấm bóp, mát-xa",
+  "meaning_en": "massage",
   "example": {
    "jp": "肩（かた）こりがひどいので、マッサージしてもらった。",
    "vi": "Đau mỏi vai nặng nên tôi nhờ massage.",
-   "en": "Đau mỏi vai nặng nên tôi nhờ massage.",
+   "en": "My shoulders were badly stiff, so I got a massage.",
    "seg": [
     {
      "t": "肩",
@@ -37995,12 +37995,12 @@
   "section_title": "Không sao chứ?",
   "word": "痛み",
   "meaning_vi": "Cơn đau, sự đau đớn",
-  "meaning_en": "Cơn đau, sự đau đớn",
+  "meaning_en": "pain, ache",
   "furigana": "いたみ",
   "example": {
    "jp": "体（からだ）の痛（いた）みは、何（なに）かのサインだ。",
    "vi": "Đau người là một dấu hiệu gì đó.",
-   "en": "Đau người là một dấu hiệu gì đó.",
+   "en": "Pain in the body is a sign of something.",
    "seg": [
     {
      "t": "体",
@@ -38035,12 +38035,12 @@
   "section_title": "Không sao chứ?",
   "word": "頭痛",
   "meaning_vi": "Đau đầu",
-  "meaning_en": "Đau đầu",
+  "meaning_en": "headache",
   "furigana": "ずつう",
   "example": {
    "jp": "頭痛（ずつう）がひどいので、今日（きょう）は会社（かいしゃ）を休（やす）みます。",
    "vi": "Vì đau đầu quá nên hôm nay tôi nghỉ làm.",
-   "en": "Vì đau đầu quá nên hôm nay tôi nghỉ làm.",
+   "en": "My headache is bad, so I'm taking the day off work.",
    "seg": [
     {
      "t": "頭痛",
@@ -38082,12 +38082,12 @@
   "section_title": "Không sao chứ?",
   "word": "腹痛",
   "meaning_vi": "Đau bụng",
-  "meaning_en": "Đau bụng",
+  "meaning_en": "stomachache, abdominal pain",
   "furigana": "ふくつう",
   "example": {
    "jp": "腹痛（ふくつう）がひどくて、学校（がっこう）に行（い）けなかった。",
    "vi": "Đau bụng nặng khiến tôi không thể đến trường được.",
-   "en": "Đau bụng nặng khiến tôi không thể đến trường được.",
+   "en": "My stomachache was so bad that I couldn't go to school.",
    "seg": [
     {
      "t": "腹痛",
@@ -38122,11 +38122,11 @@
   "section_title": "Không sao chứ?",
   "word": "はげしい",
   "meaning_vi": "Dữ dội",
-  "meaning_en": "Dữ dội",
+  "meaning_en": "intense, violent, severe",
   "example": {
    "jp": "はげしい頭痛（ずつう）がしたので、病院（びょういん）で診（み）てもらった。",
    "vi": "Đau đầu dữ dội nên tôi đi khám ở bệnh viện.",
-   "en": "Đau đầu dữ dội nên tôi đi khám ở bệnh viện.",
+   "en": "I had a severe headache, so I went to the hospital to be examined.",
    "seg": [
     {
      "t": "はげしい"
@@ -38164,12 +38164,12 @@
   "section_title": "Không sao chứ?",
   "word": "異常＜な＞",
   "meaning_vi": "Sự bất thường (bất thường)",
-  "meaning_en": "Sự bất thường (bất thường)",
+  "meaning_en": "abnormality, abnormal",
   "furigana": "いじょう",
   "example": {
    "jp": "医者（いしゃ）に診（み）てもらったが、異常（いじょう）はなかった。 この痛（いた）みは異常（いじょう）だ。",
    "vi": "Bác sỹ đã khám cho tôi nhưng không có gì bất thường. Cơn đau này không bình thường.",
-   "en": "Bác sỹ đã khám cho tôi nhưng không có gì bất thường. Cơn đau này không bình thường.",
+   "en": "The doctor examined me, but there was nothing abnormal. This pain isn't normal.",
    "seg": [
     {
      "t": "医者",
@@ -38218,11 +38218,11 @@
   "section_title": "Không sao chứ?",
   "word": "めまい",
   "meaning_vi": "Chóng mặt",
-  "meaning_en": "Chóng mặt",
+  "meaning_en": "dizziness",
   "example": {
    "jp": "急（きゅう）に立ち上（たちあ）がったら、めまいがした。",
    "vi": "Tự dưng đứng phắt dậy là bị chóng mặt.",
-   "en": "Tự dưng đứng phắt dậy là bị chóng mặt.",
+   "en": "I stood up suddenly and felt dizzy.",
    "seg": [
     {
      "t": "急",
@@ -38250,11 +38250,11 @@
   "section_title": "Không sao chứ?",
   "word": "やけど＜する＞",
   "meaning_vi": "Bỏng",
-  "meaning_en": "Bỏng",
+  "meaning_en": "burn, scald",
   "example": {
    "jp": "なべのお湯でやけどした。",
    "vi": "Bị bỏng vì nước sôi trong nồi.",
-   "en": "Bị bỏng vì nước sôi trong nồi.",
+   "en": "I burned myself on the hot water in the pot.",
    "seg": [
     {
      "t": "なべのお湯でやけどした。"
@@ -38271,12 +38271,12 @@
   "section_title": "Không sao chứ?",
   "word": "吐く",
   "meaning_vi": "Nôn",
-  "meaning_en": "Nôn",
+  "meaning_en": "vomit, throw up",
   "furigana": "はく",
   "example": {
    "jp": "晩（ばん）ごはんに食（た）べた物（もの）を吐（は）いてしまった。",
    "vi": "Tôi nôn ra những thứ đã ăn trong bữa tối.",
-   "en": "Tôi nôn ra những thứ đã ăn trong bữa tối.",
+   "en": "I threw up what I'd eaten for dinner.",
    "seg": [
     {
      "t": "晩",
@@ -38318,12 +38318,12 @@
   "section_title": "Không sao chứ?",
   "word": "吐き気",
   "meaning_vi": "Buồn nôn",
-  "meaning_en": "Buồn nôn",
+  "meaning_en": "nausea",
   "furigana": "はきけ",
   "example": {
    "jp": "吐き気（はきけ）がするので、何（なに）も食（た）べられない。",
    "vi": "Buồn nôn nên chẳng ăn được gì.",
-   "en": "Buồn nôn nên chẳng ăn được gì.",
+   "en": "I feel nauseous, so I can't eat anything.",
    "seg": [
     {
      "t": "吐き気",
@@ -38358,12 +38358,12 @@
   "section_title": "Không sao chứ?",
   "word": "（痛みが）とれる",
   "meaning_vi": "Hết (đau)",
-  "meaning_en": "Hết (đau)",
+  "meaning_en": "go away, subside (of pain)",
   "furigana": "とれる",
   "example": {
    "jp": "薬（くすり）を飲（の）んでも、なかなか痛（いた）みがとれない。",
    "vi": "Uống thuốc rồi mà mãi không hết đau.",
-   "en": "Uống thuốc rồi mà mãi không hết đau.",
+   "en": "Even after taking medicine, the pain just won't go away.",
    "seg": [
     {
      "t": "薬",
@@ -38398,11 +38398,11 @@
   "section_title": "Không sao chứ?",
   "word": "インフルエンザ",
   "meaning_vi": "Cúm",
-  "meaning_en": "Cúm",
+  "meaning_en": "influenza, the flu",
   "example": {
    "jp": "全国（ぜんこく）で、インフルエンザが流行（りゅうこう）している。",
    "vi": "Dịch cúm đã lan tràn trên khắp cả nước.",
-   "en": "Dịch cúm đã lan tràn trên khắp cả nước.",
+   "en": "The flu is going around across the country.",
    "seg": [
     {
      "t": "全国",
@@ -38430,11 +38430,11 @@
   "section_title": "Không sao chứ?",
   "word": "ウイルス",
   "meaning_vi": "Vi rút",
-  "meaning_en": "Vi rút",
+  "meaning_en": "virus",
   "example": {
    "jp": "今年（ことし）のインフルエンザのウイルスは、とても強（つよ）いようだ。",
    "vi": "Vi rút cúm năm nay có vẻ rất mạnh.",
-   "en": "Vi rút cúm năm nay có vẻ rất mạnh.",
+   "en": "This year's flu virus seems to be very strong.",
    "seg": [
     {
      "t": "今年",
@@ -38462,11 +38462,11 @@
   "section_title": "Không sao chứ?",
   "word": "ふるえる",
   "meaning_vi": "Run",
-  "meaning_en": "Run",
+  "meaning_en": "shiver, tremble",
   "example": {
    "jp": "寒（さむ）くて、体（からだ）がふるえた。",
    "vi": "Lạnh run cả người.",
-   "en": "Lạnh run cả người.",
+   "en": "It was cold and my body was shivering.",
    "seg": [
     {
      "t": "寒",
@@ -38494,11 +38494,11 @@
   "section_title": "Không sao chứ?",
   "word": "うなる",
   "meaning_vi": "Rên rỉ",
-  "meaning_en": "Rên rỉ",
+  "meaning_en": "groan, moan",
   "example": {
    "jp": "ゆうべは39度（ど）の熱（ねつ）があって、ずっとうなっていた。",
    "vi": "Tối qua tôi sốt đến 39 độ nên rên rỉ suốt.",
-   "en": "Tối qua tôi sốt đến 39 độ nên rên rỉ suốt.",
+   "en": "Last night I had a fever of 39 degrees and was groaning the whole time.",
    "seg": [
     {
      "t": "ゆうべは39"
@@ -38529,12 +38529,12 @@
   "section_title": "Không sao chứ?",
   "word": "苦しむ",
   "meaning_vi": "Khổ sở",
-  "meaning_en": "Khổ sở",
+  "meaning_en": "suffer, be in distress",
   "furigana": "くるしむ",
   "example": {
    "jp": "早（はや）く病院（びょういん）に行（い）けば、こんなに苦（くる）しまなかったのに。",
    "vi": "Nếu đi bệnh viện sớm đã không đến nỗi khổ sở như thế này.",
-   "en": "Nếu đi bệnh viện sớm đã không đến nỗi khổ sở như thế này.",
+   "en": "If I'd gone to the hospital sooner, I wouldn't have suffered this much.",
    "seg": [
     {
      "t": "早",
@@ -38576,11 +38576,11 @@
   "section_title": "Không sao chứ?",
   "word": "しびれる",
   "meaning_vi": "Tê",
-  "meaning_en": "Tê",
+  "meaning_en": "go numb, tingle",
   "example": {
    "jp": "手（て）と足（あし）が少（すこ）ししびれている。",
    "vi": "Tay và chân hơi tê.",
-   "en": "Tay và chân hơi tê.",
+   "en": "My hands and feet are a little numb.",
    "seg": [
     {
      "t": "手",
@@ -38615,12 +38615,12 @@
   "section_title": "Không sao chứ?",
   "word": "部分",
   "meaning_vi": "Bộ phận, chỗ",
-  "meaning_en": "Bộ phận, chỗ",
+  "meaning_en": "part, section, area",
   "furigana": "ぶぶん",
   "example": {
    "jp": "頭（あたま）の、どの部分（ぶぶん）が痛（いた）いですか。",
    "vi": "Bị đau đầu chỗ nào ?",
-   "en": "Bị đau đầu chỗ nào ?",
+   "en": "Which part of your head hurts?",
    "seg": [
     {
      "t": "頭",
@@ -38655,12 +38655,12 @@
   "section_title": "Không sao chứ?",
   "word": "骨折＜する＞",
   "meaning_vi": "Gãy xương",
-  "meaning_en": "Gãy xương",
+  "meaning_en": "bone fracture, break a bone",
   "furigana": "こっせつ",
   "example": {
    "jp": "バレーボールで、右手（みぎて）の中指（なかゆび）を骨折（こっせつ）した。",
    "vi": "Tôi bị gãy ngón giữa tay phải vì chơi bóng chuyền.",
-   "en": "Tôi bị gãy ngón giữa tay phải vì chơi bóng chuyền.",
+   "en": "I broke the middle finger of my right hand playing volleyball.",
    "seg": [
     {
      "t": "バレーボールで、"
@@ -38698,11 +38698,11 @@
   "section_title": "Không sao chứ?",
   "word": "さわる",
   "meaning_vi": "Sờ",
-  "meaning_en": "Sờ",
+  "meaning_en": "touch",
   "example": {
    "jp": "そこは痛（いた）いから、さわらないで。",
    "vi": "Chỗ đó đau lắm, đừng đụng vào.",
-   "en": "Chỗ đó đau lắm, đừng đụng vào.",
+   "en": "That spot hurts, so don't touch it.",
    "seg": [
     {
      "t": "そこは"
@@ -38726,12 +38726,12 @@
   "section_title": "Bệnh viện",
   "word": "患者",
   "meaning_vi": "Bệnh nhân",
-  "meaning_en": "Bệnh nhân",
+  "meaning_en": "patient",
   "furigana": "かんじゃ",
   "example": {
    "jp": "この病院（びょういん）は、高齢（こうれい）の患者（かんじゃ）が多（おお）い。",
    "vi": "Bệnh viện này có nhiều bệnh nhân cao tuổi.",
-   "en": "Bệnh viện này có nhiều bệnh nhân cao tuổi.",
+   "en": "This hospital has many elderly patients.",
    "seg": [
     {
      "t": "この"
@@ -38776,12 +38776,12 @@
   "section_title": "Bệnh viện",
   "word": "診察＜する＞",
   "meaning_vi": "Khám",
-  "meaning_en": "Khám",
+  "meaning_en": "medical examination, consultation",
   "furigana": "しんさつ",
   "example": {
    "jp": "鈴木（すずき）先生（せんせい）は診察（しんさつ）中（ちゅう）です。",
    "vi": "Bác sỹ Suzuki đang khám bệnh.",
-   "en": "Bác sỹ Suzuki đang khám bệnh.",
+   "en": "Dr. Suzuki is with a patient at the moment.",
    "seg": [
     {
      "t": "鈴木",
@@ -38817,12 +38817,12 @@
   "section_title": "Bệnh viện",
   "word": "検査＜する＞",
   "meaning_vi": "Sự xét nghiệm",
-  "meaning_en": "Sự xét nghiệm",
+  "meaning_en": "examination, test (medical)",
   "furigana": "けんさ",
   "example": {
    "jp": "大（おお）きな病院（びょういん）で検査（けんさ）したほうがいいですよ。",
    "vi": "Nên làm xét nghiệm ở bệnh viện lớn thì tốt hơn đấy.",
-   "en": "Nên làm xét nghiệm ở bệnh viện lớn thì tốt hơn đấy.",
+   "en": "You'd be better off getting tested at a big hospital.",
    "seg": [
     {
      "t": "大",
@@ -38857,12 +38857,12 @@
   "section_title": "Bệnh viện",
   "word": "治療＜する＞",
   "meaning_vi": "Điều trị, chữa",
-  "meaning_en": "Điều trị, chữa",
+  "meaning_en": "treatment, medical care",
   "furigana": "ちりょう",
   "example": {
    "jp": "兄（あに）は、けがの治療（ちりょう）のために入院（にゅういん）している。",
    "vi": "Anh trai nhập viện để điều trị vết thương.",
-   "en": "Anh trai nhập viện để điều trị vết thương.",
+   "en": "My older brother is in hospital for treatment of an injury.",
    "seg": [
     {
      "t": "兄",
@@ -38897,12 +38897,12 @@
   "section_title": "Bệnh viện",
   "word": "健康診断",
   "meaning_vi": "Khám sức khỏe",
-  "meaning_en": "Khám sức khỏe",
+  "meaning_en": "health checkup",
   "furigana": "けんこうしんだん",
   "example": {
    "jp": "毎年（まいとし）、健康（けんこう）診断（しんだん）を受（う）けている。",
    "vi": "Tôi khám sức khoẻ hàng năm.",
-   "en": "Tôi khám sức khoẻ hàng năm.",
+   "en": "I have a health checkup every year.",
    "seg": [
     {
      "t": "毎年",
@@ -38941,12 +38941,12 @@
   "section_title": "Bệnh viện",
   "word": "内科",
   "meaning_vi": "Khoa nội, nội khoa",
-  "meaning_en": "Khoa nội, nội khoa",
+  "meaning_en": "internal medicine",
   "furigana": "ないか",
   "example": {
    "jp": "かぜをひいたら、内科（ないか）に行（い）く。",
    "vi": "Nếu bị cảm thì đi khám nội khoa.",
-   "en": "Nếu bị cảm thì đi khám nội khoa.",
+   "en": "If I catch a cold, I go to the internal medicine department.",
    "seg": [
     {
      "t": "かぜをひいたら、"
@@ -38977,12 +38977,12 @@
   "section_title": "Bệnh viện",
   "word": "外科",
   "meaning_vi": "Khoa ngoại, ngoại khoa",
-  "meaning_en": "Khoa ngoại, ngoại khoa",
+  "meaning_en": "surgery, surgical department",
   "furigana": "げか",
   "example": {
    "jp": "けがをしたので、外科（げか）で診（み）てもらった。",
    "vi": "Tôi bị thương nên khám ngoại khoa.",
-   "en": "Tôi bị thương nên khám ngoại khoa.",
+   "en": "I was injured, so I was seen in the surgical department.",
    "seg": [
     {
      "t": "けがをしたので、"
@@ -39013,12 +39013,12 @@
   "section_title": "Bệnh viện",
   "word": "小児科",
   "meaning_vi": "Khoa nhi, nhi khoa",
-  "meaning_en": "Khoa nhi, nhi khoa",
+  "meaning_en": "pediatrics",
   "furigana": "しょうにか",
   "example": {
    "jp": "小児科（しょうにか）から、子（こ）どもの泣き声（なきごえ）が聞（き）こえてきた。",
    "vi": "Nghe thấy tiếng khóc của trẻ con từ khoa nhi.",
-   "en": "Nghe thấy tiếng khóc của trẻ con từ khoa nhi.",
+   "en": "I could hear a child crying from the pediatrics department.",
    "seg": [
     {
      "t": "小児科",
@@ -39060,12 +39060,12 @@
   "section_title": "Bệnh viện",
   "word": "保険",
   "meaning_vi": "Bảo hiểm",
-  "meaning_en": "Bảo hiểm",
+  "meaning_en": "insurance",
   "furigana": "ほけん",
   "example": {
    "jp": "病気（びょうき）やけがのために、保険（ほけん）に入（はい）った。",
    "vi": "Tôi đã tham gia bảo hiểm ốm đau và thương tật.",
-   "en": "Tôi đã tham gia bảo hiểm ốm đau và thương tật.",
+   "en": "I took out insurance in case of illness or injury.",
    "seg": [
     {
      "t": "病気",
@@ -39100,12 +39100,12 @@
   "section_title": "Bệnh viện",
   "word": "保険証",
   "meaning_vi": "Thẻ bảo hiểm",
-  "meaning_en": "Thẻ bảo hiểm",
+  "meaning_en": "health insurance card",
   "furigana": "ほけんしょう",
   "example": {
    "jp": "病院（びょういん）に、保険（ほけん）証（しょう）を持（も）っていくのを忘（わす）れた。",
    "vi": "Tôi quên không mang thẻ bảo hiểm đến bệnh viện.",
-   "en": "Tôi quên không mang thẻ bảo hiểm đến bệnh viện.",
+   "en": "I forgot to bring my insurance card to the hospital.",
    "seg": [
     {
      "t": "病院",
@@ -39151,12 +39151,12 @@
   "section_title": "Bệnh viện",
   "word": "効く",
   "meaning_vi": "Hiệu lực, có tác dụng",
-  "meaning_en": "Hiệu lực, có tác dụng",
+  "meaning_en": "be effective, work (of medicine)",
   "furigana": "きく",
   "example": {
    "jp": "この薬（くすり）は、かぜによく効（き）く。",
    "vi": "Thuốc có tác dụng tốt lên bệnh cảm.",
-   "en": "Thuốc có tác dụng tốt lên bệnh cảm.",
+   "en": "This medicine works well on colds.",
    "seg": [
     {
      "t": "この"
@@ -39187,12 +39187,12 @@
   "section_title": "Bệnh viện",
   "word": "注射＜する＞",
   "meaning_vi": "Tiêm",
-  "meaning_en": "Tiêm",
+  "meaning_en": "injection, shot",
   "furigana": "ちゅうしゃ",
   "example": {
    "jp": "注射（ちゅうしゃ）をしてもらったら、すぐに熱（ねつ）が下（さ）がった。",
    "vi": "Được tiêm cái là hạ sốt liền.",
-   "en": "Được tiêm cái là hạ sốt liền.",
+   "en": "After I got the injection, my fever came down right away.",
    "seg": [
     {
      "t": "注射",
@@ -39227,11 +39227,11 @@
   "section_title": "Bệnh viện",
   "word": "おんぶ＜する＞",
   "meaning_vi": "Cõng",
-  "meaning_en": "Cõng",
+  "meaning_en": "carry on one's back, piggyback",
   "example": {
    "jp": "娘（むすめ）をおんぶして、病院（びょういん）に行（い）った。",
    "vi": "Tôi cõng con gái đến bệnh viện.",
-   "en": "Tôi cõng con gái đến bệnh viện.",
+   "en": "I carried my daughter on my back to the hospital.",
    "seg": [
     {
      "t": "娘",
@@ -39266,11 +39266,11 @@
   "section_title": "Bệnh viện",
   "word": "だっこ＜する＞",
   "meaning_vi": "Bế",
-  "meaning_en": "Bế",
+  "meaning_en": "hold in one's arms, cuddle",
   "example": {
    "jp": "夫（おっと）が初（はじ）めて娘（むすめ）をだっこした。",
    "vi": "Chống tôi lần đầu tiên bế con gái.",
-   "en": "Chống tôi lần đầu tiên bế con gái.",
+   "en": "My husband held our daughter for the first time.",
    "seg": [
     {
      "t": "夫",
@@ -39305,12 +39305,12 @@
   "section_title": "Bệnh viện",
   "word": "栄養",
   "meaning_vi": "Dinh dưỡng, bổ dưỡng",
-  "meaning_en": "Dinh dưỡng, bổ dưỡng",
+  "meaning_en": "nutrition, nourishment",
   "furigana": "えいよう",
   "example": {
    "jp": "栄養（えいよう）のある物（もの）を食（た）べてください。",
    "vi": "Hãy ăn những thứ bổ dưỡng.",
-   "en": "Hãy ăn những thứ bổ dưỡng.",
+   "en": "Please eat nourishing food.",
    "seg": [
     {
      "t": "栄養",
@@ -39345,12 +39345,12 @@
   "section_title": "Bệnh viện",
   "word": "回復＜する＞",
   "meaning_vi": "Sự hồi phục",
-  "meaning_en": "Sự hồi phục",
+  "meaning_en": "recover, recovery",
   "furigana": "かいふく",
   "example": {
    "jp": "薬（くすり）が効（き）いて、翌日（よくじつ）には体調（たいちょう）が回復（かいふく）した。",
    "vi": "Thuốc có tác dụng khiến ngày hôm sau cơ thể hồi phục.",
-   "en": "Thuốc có tác dụng khiến ngày hôm sau cơ thể hồi phục.",
+   "en": "The medicine worked and by the next day my condition had recovered.",
    "seg": [
     {
      "t": "薬",
@@ -39399,12 +39399,12 @@
   "section_title": "Bệnh viện",
   "word": "証明＜する＞",
   "meaning_vi": "Sự chứng minh",
-  "meaning_en": "Sự chứng minh",
+  "meaning_en": "prove, certify",
   "furigana": "しょうめい",
   "example": {
    "jp": "インフルエンザを証明（しょうめい）するために、診断（しんだん）書（しょ）を書（か）いてもらった。",
    "vi": "Để chứng minh bị cúm, tôi đã xin giấy chuẩn đoán.",
-   "en": "Để chứng minh bị cúm, tôi đã xin giấy chuẩn đoán.",
+   "en": "To prove I had the flu, I had a medical certificate written.",
    "seg": [
     {
      "t": "インフルエンザを"
@@ -39446,11 +39446,11 @@
   "section_title": "Bệnh viện",
   "word": "そっと＜する＞",
   "meaning_vi": "Khẽ khàng, nhẹ nhàng",
-  "meaning_en": "Khẽ khàng, nhẹ nhàng",
+  "meaning_en": "softly, quietly, gently",
   "example": {
    "jp": "子（こ）どもが起（お）きないように、そっとドアを閉（し）めた。",
    "vi": "Tôi nhẹ nhàng khép cửa sao cho con không bị thức giấc.",
-   "en": "Tôi nhẹ nhàng khép cửa sao cho con không bị thức giấc.",
+   "en": "I closed the door softly so the child wouldn't wake up.",
    "seg": [
     {
      "t": "子",
@@ -39485,11 +39485,11 @@
   "section_title": "Bệnh viện",
   "word": "じっと＜する＞",
   "meaning_vi": "Đứng im, im tư thế",
-  "meaning_en": "Đứng im, im tư thế",
+  "meaning_en": "still, motionless",
   "example": {
    "jp": "動（うご）かないで、じっとしてください。",
    "vi": "Đừng động đậy, hãy đứng im!",
-   "en": "Đừng động đậy, hãy đứng im!",
+   "en": "Don't move — please stay still.",
    "seg": [
     {
      "t": "動",
@@ -39510,12 +39510,12 @@
   "section_title": "Bệnh viện",
   "word": "手術＜する＞",
   "meaning_vi": "Phẫu thuật, mổ",
-  "meaning_en": "Phẫu thuật, mổ",
+  "meaning_en": "operation, surgery",
   "furigana": "しゅじゅつ",
   "example": {
    "jp": "母（はは）は足（あし）を手術（しゅじゅつ）した。",
    "vi": "Mẹ tôi đã phẫu thuật chân.",
-   "en": "Mẹ tôi đã phẫu thuật chân.",
+   "en": "My mother had surgery on her leg.",
    "seg": [
     {
      "t": "母",
@@ -39550,12 +39550,12 @@
   "section_title": "Bệnh viện",
   "word": "包帯",
   "meaning_vi": "Băng bó",
-  "meaning_en": "Băng bó",
+  "meaning_en": "bandage",
   "furigana": "ほうたい",
   "example": {
    "jp": "退院（たいいん）したとき、まだ包帯（ほうたい）をしていた。",
    "vi": "Khi ra viện tôi vẫn còn băng bó.",
-   "en": "Khi ra viện tôi vẫn còn băng bó.",
+   "en": "When I was discharged, I still had a bandage on.",
    "seg": [
     {
      "t": "退院",
@@ -39583,12 +39583,12 @@
   "section_title": "Bệnh viện",
   "word": "巻く",
   "meaning_vi": "Quấn",
-  "meaning_en": "Quấn",
+  "meaning_en": "wind, wrap around",
   "furigana": "まく",
   "example": {
    "jp": "自分（じぶん）で包帯（ほうたい）を巻（ま）くのは難（むずか）しい。",
    "vi": "Tự mình quấn băng thật là khó.",
-   "en": "Tự mình quấn băng thật là khó.",
+   "en": "Wrapping a bandage yourself is difficult.",
    "seg": [
     {
      "t": "自分",
@@ -39630,12 +39630,12 @@
   "section_title": "Bệnh viện",
   "word": "長生き＜する＞",
   "meaning_vi": "Sự sống lâu",
-  "meaning_en": "Sự sống lâu",
+  "meaning_en": "live long, longevity",
   "furigana": "ながいき",
   "example": {
    "jp": "できるだけ長生（ながい）きしたいと思（おも）っている。",
    "vi": "Tôi muốn sống càng lâu càng tốt.",
-   "en": "Tôi muốn sống càng lâu càng tốt.",
+   "en": "I hope to live as long as I can.",
    "seg": [
     {
      "t": "できるだけ"
@@ -39666,12 +39666,12 @@
   "section_title": "Tự nhiên",
   "word": "豊かな",
   "meaning_vi": "Phong phú",
-  "meaning_en": "Phong phú",
+  "meaning_en": "abundant, rich",
   "furigana": "ゆたかな",
   "example": {
    "jp": "日本（にほん）は、自然（しぜん）が豊（ゆた）かな国（くに）だ。",
    "vi": "Nhật Bản là đất nước có thiên nhiên phong phú.",
-   "en": "Nhật Bản là đất nước có thiên nhiên phong phú.",
+   "en": "Japan is a country rich in nature.",
    "seg": [
     {
      "t": "日本",
@@ -39713,12 +39713,12 @@
   "section_title": "Tự nhiên",
   "word": "資源",
   "meaning_vi": "Nguồn tài nguyên",
-  "meaning_en": "Nguồn tài nguyên",
+  "meaning_en": "resources",
   "furigana": "しげん",
   "example": {
    "jp": "資源（しげん）は大切（たいせつ）に使（つか）わなければならない。",
    "vi": "Nguồn tài nguyên phải được sử dụng trân trọng.",
-   "en": "Nguồn tài nguyên phải được sử dụng trân trọng.",
+   "en": "We must use resources carefully.",
    "seg": [
     {
      "t": "資源",
@@ -39753,12 +39753,12 @@
   "section_title": "Tự nhiên",
   "word": "種類",
   "meaning_vi": "Loài, chủng loại",
-  "meaning_en": "Loài, chủng loại",
+  "meaning_en": "kind, type, species",
   "furigana": "しゅるい",
   "example": {
    "jp": "いろいろな種類（しゅるい）の花（はな）が咲（さ）いている。",
    "vi": "Rất nhiều loài hoa đang nở.",
-   "en": "Rất nhiều loài hoa đang nở.",
+   "en": "All sorts of different flowers are in bloom.",
    "seg": [
     {
      "t": "いろいろな"
@@ -39796,12 +39796,12 @@
   "section_title": "Tự nhiên",
   "word": "枯れる",
   "meaning_vi": "Héo, tàn",
-  "meaning_en": "Héo, tàn",
+  "meaning_en": "wither, die (of plants)",
   "furigana": "かれる",
   "example": {
    "jp": "庭（にわ）のチューリップが枯（か）れてしまった。",
    "vi": "Hoa tuy líp trong vườn hoa đã héo tàn.",
-   "en": "Hoa tuy líp trong vườn hoa đã héo tàn.",
+   "en": "The tulips in the garden have withered.",
    "seg": [
     {
      "t": "庭",
@@ -39829,12 +39829,12 @@
   "section_title": "Tự nhiên",
   "word": "散る",
   "meaning_vi": "Rơi, rụng",
-  "meaning_en": "Rơi, rụng",
+  "meaning_en": "fall, scatter (of blossoms)",
   "furigana": "ちる",
   "example": {
    "jp": "入学（にゅうがく）式（しき）の前（まえ）に、さくらが散（ち）った。",
    "vi": "Hoa anh đào đã rụng trước thời gian nhập học.",
-   "en": "Hoa anh đào đã rụng trước thời gian nhập học.",
+   "en": "The cherry blossoms fell before the entrance ceremony.",
    "seg": [
     {
      "t": "入学",
@@ -39873,12 +39873,12 @@
   "section_title": "Tự nhiên",
   "word": "草",
   "meaning_vi": "Cỏ",
-  "meaning_en": "Cỏ",
+  "meaning_en": "grass, weed",
   "furigana": "くさ",
   "example": {
    "jp": "草（くさ）の名前（なまえ）を本（ほん）で調（しら）べた。",
    "vi": "Tôi tra tên cỏ trong sách.",
-   "en": "Tôi tra tên cỏ trong sách.",
+   "en": "I looked up the name of the plant in a book.",
    "seg": [
     {
      "t": "草",
@@ -39920,12 +39920,12 @@
   "section_title": "Tự nhiên",
   "word": "種",
   "meaning_vi": "Hạt",
-  "meaning_en": "Hạt",
+  "meaning_en": "seed",
   "furigana": "たね",
   "example": {
    "jp": "春（はる）になって、庭（にわ）に花（はな）の種（たね）を植（う）えた。",
    "vi": "Mùa xuân đến, tôi gieo hạt hoa trong vườn.",
-   "en": "Mùa xuân đến, tôi gieo hạt hoa trong vườn.",
+   "en": "Spring came, and I planted flower seeds in the garden.",
    "seg": [
     {
      "t": "春",
@@ -39974,12 +39974,12 @@
   "section_title": "Tự nhiên",
   "word": "浮かぶ",
   "meaning_vi": "Nổi, trôi",
-  "meaning_en": "Nổi, trôi",
+  "meaning_en": "float",
   "furigana": "うかぶ",
   "example": {
    "jp": "湖（みずうみ）に小（ちい）さな舟（ふね）が浮（う）かんでいる。",
    "vi": "Một con thuyền nhỏ trôi trên hồ nước.",
-   "en": "Một con thuyền nhỏ trôi trên hồ nước.",
+   "en": "A small boat is floating on the lake.",
    "seg": [
     {
      "t": "湖",
@@ -40021,12 +40021,12 @@
   "section_title": "Tự nhiên",
   "word": "太陽",
   "meaning_vi": "Mặt trời",
-  "meaning_en": "Mặt trời",
+  "meaning_en": "sun",
   "furigana": "たいよう",
   "example": {
    "jp": "窓（まど）から太陽（たいよう）の光（ひかり）が入（はい）ってきた。",
    "vi": "Ánh sáng mặt trời chiếu qua khung cửa sổ.",
-   "en": "Ánh sáng mặt trời chiếu qua khung cửa sổ.",
+   "en": "Sunlight came in through the window.",
    "seg": [
     {
      "t": "窓",
@@ -40068,12 +40068,12 @@
   "section_title": "Tự nhiên",
   "word": "現れる",
   "meaning_vi": "Xuất hiện",
-  "meaning_en": "Xuất hiện",
+  "meaning_en": "appear, come into view",
   "furigana": "あらわれる",
   "example": {
    "jp": "東（ひがし）の空（そら）から太陽（たいよう）が現（あらわ）れた。",
    "vi": "Mặt trời xuất hiện từ bầu trời phía đông.",
-   "en": "Mặt trời xuất hiện từ bầu trời phía đông.",
+   "en": "The sun appeared from the eastern sky.",
    "seg": [
     {
      "t": "東",
@@ -40115,12 +40115,12 @@
   "section_title": "Tự nhiên",
   "word": "沈む",
   "meaning_vi": "Chìm, lặn",
-  "meaning_en": "Chìm, lặn",
+  "meaning_en": "sink, set",
   "furigana": "しずむ",
   "example": {
    "jp": "太陽（たいよう）が海（うみ）に沈（しず）むとき、美（うつく）しくて感動（かんどう）する。",
    "vi": "Mặt trời lặn xuống biển, đẹp nên cảm động.",
-   "en": "Mặt trời lặn xuống biển, đẹp nên cảm động.",
+   "en": "When the sun sinks into the sea, it's beautiful and moving.",
    "seg": [
     {
      "t": "太陽",
@@ -40169,12 +40169,12 @@
   "section_title": "Tự nhiên",
   "word": "薄暗い",
   "meaning_vi": "Tối mờ, nhập nhoạng tối",
-  "meaning_en": "Tối mờ, nhập nhoạng tối",
+  "meaning_en": "dim, gloomy, dusky",
   "furigana": "うすぐらい",
   "example": {
    "jp": "太陽（たいよう）が沈（しず）み、薄暗（うすぐら）くなった。",
    "vi": "Mặt trời lặn, mọi thứ trở nên nhập ngoạng tối.",
-   "en": "Mặt trời lặn, mọi thứ trở nên nhập ngoạng tối.",
+   "en": "The sun set and it grew dusky.",
    "seg": [
     {
      "t": "太陽",
@@ -40209,12 +40209,12 @@
   "section_title": "Tự nhiên",
   "word": "穴",
   "meaning_vi": "Lỗ, hốc hang, hố",
-  "meaning_en": "Lỗ, hốc hang, hố",
+  "meaning_en": "hole, cave, den",
   "furigana": "あな",
   "example": {
    "jp": "冬（ふゆ）の間（あいだ）、クマは穴（あな）の中（なか）で暮（く）らす。",
    "vi": "Trong thời gian mùa đông gấu sống trong hang.",
-   "en": "Trong thời gian mùa đông gấu sống trong hang.",
+   "en": "During the winter, bears live in dens.",
    "seg": [
     {
      "t": "冬",
@@ -40263,11 +40263,11 @@
   "section_title": "Tự nhiên",
   "word": "ほる",
   "meaning_vi": "Đào",
-  "meaning_en": "Đào",
+  "meaning_en": "dig",
   "example": {
    "jp": "うちの犬（いぬ）が、庭（にわ）に穴（あな）をほった。",
    "vi": "Con chó nhà tôi đã đào một cái hố trong vườn.",
-   "en": "Con chó nhà tôi đã đào một cái hố trong vườn.",
+   "en": "Our dog dug a hole in the garden.",
    "seg": [
     {
      "t": "うちの"
@@ -40305,11 +40305,11 @@
   "section_title": "Tự nhiên",
   "word": "うめる",
   "meaning_vi": "Lấp, chôn",
-  "meaning_en": "Lấp, chôn",
+  "meaning_en": "bury, fill in",
   "example": {
    "jp": "庭（にわ）に穴（あな）をほって、生（なま）ごみをうめた。",
    "vi": "Tôi đào hố ở vườn rồi chôn rác hữu cơ xuống đấy.",
-   "en": "Tôi đào hố ở vườn rồi chôn rác hữu cơ xuống đấy.",
+   "en": "I dug a hole in the garden and buried the food waste.",
    "seg": [
     {
      "t": "庭",
@@ -40344,12 +40344,12 @@
   "section_title": "Tự nhiên",
   "word": "土",
   "meaning_vi": "Đất",
-  "meaning_en": "Đất",
+  "meaning_en": "soil, earth",
   "furigana": "つち",
   "example": {
    "jp": "この皿（さら）は、この山（やま）の土（つち）で、できている。",
    "vi": "Cái đĩa này làm bằng đất của ngọn núi này.",
-   "en": "Cái đĩa này làm bằng đất của ngọn núi này.",
+   "en": "This plate is made from the soil of this mountain.",
    "seg": [
     {
      "t": "この"
@@ -40387,12 +40387,12 @@
   "section_title": "Tự nhiên",
   "word": "岩",
   "meaning_vi": "Đá",
-  "meaning_en": "Đá",
+  "meaning_en": "rock, boulder",
   "furigana": "いわ",
   "example": {
    "jp": "大（おお）きな岩（いわ）の上（うえ）に座（すわ）って、海（うみ）を見（み）た。",
    "vi": "Tôi đã ngồi lên một tảng đá lớn và ngắm biển.",
-   "en": "Tôi đã ngồi lên một tảng đá lớn và ngắm biển.",
+   "en": "I sat on a large rock and looked at the sea.",
    "seg": [
     {
      "t": "大",
@@ -40448,12 +40448,12 @@
   "section_title": "Tự nhiên",
   "word": "丘",
   "meaning_vi": "Đồi",
-  "meaning_en": "Đồi",
+  "meaning_en": "hill",
   "furigana": "おか",
   "example": {
    "jp": "向（む）こうの丘（おか）の上（うえ）に、小（ちい）さな家（いえ）が見（み）える。",
    "vi": "Tôi nhìn thấy một ngôi nhà nhỏ nằm trên ngọn đồi đối diện.",
-   "en": "Tôi nhìn thấy một ngôi nhà nhỏ nằm trên ngọn đồi đối diện.",
+   "en": "I can see a small house on the hill over there.",
    "seg": [
     {
      "t": "向",
@@ -40509,12 +40509,12 @@
   "section_title": "Tự nhiên",
   "word": "火山",
   "meaning_vi": "Núi lửa",
-  "meaning_en": "Núi lửa",
+  "meaning_en": "volcano",
   "furigana": "かざん",
   "example": {
    "jp": "日本（にほん）には、火山（かざん）がたくさんある。",
    "vi": "Ở Nhật Bản có nhiều núi lửa.",
-   "en": "Ở Nhật Bản có nhiều núi lửa.",
+   "en": "There are many volcanoes in Japan.",
    "seg": [
     {
      "t": "日本",
@@ -40542,12 +40542,12 @@
   "section_title": "Tự nhiên",
   "word": "想像＜する＞",
   "meaning_vi": "Sự tưởng tượng",
-  "meaning_en": "Sự tưởng tượng",
+  "meaning_en": "imagine, imagination",
   "furigana": "そうぞう",
   "example": {
    "jp": "ここが昔（むかし）は海（うみ）だったなんて、想像（そうぞう）できない。",
    "vi": "Tôi không thể tưởng tượng được ở đây ngày xưa là biển.",
-   "en": "Tôi không thể tưởng tượng được ở đây ngày xưa là biển.",
+   "en": "I can't imagine that this place used to be the sea.",
    "seg": [
     {
      "t": "ここが"
@@ -40585,12 +40585,12 @@
   "section_title": "Tự nhiên",
   "word": "見上げる",
   "meaning_vi": "Nhìn lên",
-  "meaning_en": "Nhìn lên",
+  "meaning_en": "look up at",
   "furigana": "みあげる",
   "example": {
    "jp": "空（そら）を見上（みあ）げると、星（ほし）がいっぱいだった。",
    "vi": "Nhìn bầu trời thấy trời đầy sao.",
-   "en": "Nhìn bầu trời thấy trời đầy sao.",
+   "en": "When I looked up at the sky, it was full of stars.",
    "seg": [
     {
      "t": "空",
@@ -40625,12 +40625,12 @@
   "section_title": "Tự nhiên",
   "word": "見下ろす",
   "meaning_vi": "Nhìn xuống",
-  "meaning_en": "Nhìn xuống",
+  "meaning_en": "look down on, overlook",
   "furigana": "みおろす",
   "example": {
    "jp": "山の上（やまのうえ）から、町（まち）を見下（みお）ろす。",
    "vi": "Từ đỉnh núi tôi nhìn xuống thành phố.",
-   "en": "Từ đỉnh núi tôi nhìn xuống thành phố.",
+   "en": "From the top of the mountain, I look down on the town.",
    "seg": [
     {
      "t": "山の上",
@@ -40665,11 +40665,11 @@
   "section_title": "Tự nhiên",
   "word": "ほえる",
   "meaning_vi": "Sủa, kêu",
-  "meaning_en": "Sủa, kêu",
+  "meaning_en": "bark, howl, roar",
   "example": {
    "jp": "夜（よる）、動物（どうぶつ）がほえるのが聞（き）こえた。",
    "vi": "Ban đêm, nghe thấy tiếng thú kêu.",
-   "en": "Ban đêm, nghe thấy tiếng thú kêu.",
+   "en": "At night, I heard an animal howling.",
    "seg": [
     {
      "t": "夜",
@@ -40704,11 +40704,11 @@
   "section_title": "Tự nhiên",
   "word": "しっぽ",
   "meaning_vi": "Đuôi",
-  "meaning_en": "Đuôi",
+  "meaning_en": "tail",
   "example": {
    "jp": "うちの猫（ねこ）のしっぽは長（なが）い。",
    "vi": "Đuôi con mèo nhà tôi dài.",
-   "en": "Đuôi con mèo nhà tôi dài.",
+   "en": "Our cat's tail is long.",
    "seg": [
     {
      "t": "うちの"
@@ -40739,11 +40739,11 @@
   "section_title": "Tự nhiên",
   "word": "さびる",
   "meaning_vi": "Han gỉ",
-  "meaning_en": "Han gỉ",
+  "meaning_en": "rust",
   "example": {
    "jp": "海（うみ）のそばに引っ越（ひっこ）したら、車（くるま）がさびた。",
    "vi": "Tôi chuyển nhà đến cạnh biển, thế là ô tô bị han gỉ.",
-   "en": "Tôi chuyển nhà đến cạnh biển, thế là ô tô bị han gỉ.",
+   "en": "After I moved near the sea, my car rusted.",
    "seg": [
     {
      "t": "海",
@@ -40778,12 +40778,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "予想＜する＞",
   "meaning_vi": "Dự đoán",
-  "meaning_en": "Dự đoán",
+  "meaning_en": "predict, expect",
   "furigana": "よそう",
   "example": {
    "jp": "明日（あした）は雨（あめ）だと予想（よそう）している。",
    "vi": "Dự đoán, ngày mai trời mưa.",
-   "en": "Dự đoán, ngày mai trời mưa.",
+   "en": "It's predicted that it will rain tomorrow.",
    "seg": [
     {
      "t": "明日",
@@ -40818,12 +40818,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "予報＜する＞",
   "meaning_vi": "Dự báo",
-  "meaning_en": "Dự báo",
+  "meaning_en": "forecast",
   "furigana": "よほう",
   "example": {
    "jp": "明日（あした）の予報（よほう）は大雨（おおあめ）だ。",
    "vi": "Dự báo ngày mai trời mưa to.",
-   "en": "Dự báo ngày mai trời mưa to.",
+   "en": "Tomorrow's forecast is heavy rain.",
    "seg": [
     {
      "t": "明日",
@@ -40858,12 +40858,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "湿度",
   "meaning_vi": "Độ ẩm",
-  "meaning_en": "Độ ẩm",
+  "meaning_en": "humidity",
   "furigana": "しつど",
   "example": {
    "jp": "今日（きょう）は、とても湿度（しつど）が高（たか）くなりそうだ。",
    "vi": "Hôm nay độ ẩm có lẽ sẽ cao.",
-   "en": "Hôm nay độ ẩm có lẽ sẽ cao.",
+   "en": "The humidity looks like it will be very high today.",
    "seg": [
     {
      "t": "今日",
@@ -40898,12 +40898,12 @@
   "section_title": "Thời tiết ngày mai",
   "word": "湿気",
   "meaning_vi": "Hơi ẩm, độ ẩm, ẩm ướt",
-  "meaning_en": "Hơi ẩm, độ ẩm, ẩm ướt",
+  "meaning_en": "moisture, dampness, humidity",
   "furigana": "しっけ",
   "example": {
    "jp": "日本（にほん）の夏（なつ）は湿気（しっけ）が多（おお）い。",
    "vi": "Mùa hè Nhật Bản nhiều hơi ẩm.",
-   "en": "Mùa hè Nhật Bản nhiều hơi ẩm.",
+   "en": "Japanese summers are very humid.",
    "seg": [
     {
      "t": "日本",
