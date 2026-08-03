@@ -49775,12 +49775,12 @@
   "section_title": "Tính cách",
   "word": "単純＜な＞",
   "meaning_vi": "Đơn giản, chất phác",
-  "meaning_en": "Đơn giản, chất phác",
+  "meaning_en": "simple; simple-minded",
   "furigana": "たんじゅん",
   "example": {
    "jp": "①彼（かれ）は単純（たんじゅん）な計算（けいさん）ミスをした。 ②彼（かれ）は単純（たんじゅん）なところがある。",
    "vi": "①Anh ta nhầm những tính toán đơn giản. ②Anh ta có chỗ chất phác.",
-   "en": "①Anh ta nhầm những tính toán đơn giản. ②Anh ta có chỗ chất phác.",
+   "en": "(1) He made a simple calculation error. (2) There's a simple-minded side to him.",
    "seg": [
     {
      "t": "①"
@@ -49832,11 +49832,11 @@
   "section_title": "Tính cách",
   "word": "オーバーな",
   "meaning_vi": "Quá, thái quá",
-  "meaning_en": "Quá, thái quá",
+  "meaning_en": "exaggerated, over the top",
   "example": {
    "jp": "あの人（ひと）は何（なん）でもオーバーに言（い）う。",
    "vi": "Người âý cái gì cũng nói quá lên.",
-   "en": "Người âý cái gì cũng nói quá lên.",
+   "en": "That person exaggerates everything.",
    "seg": [
     {
      "t": "あの"
@@ -49874,12 +49874,12 @@
   "section_title": "Tính cách",
   "word": "欠点",
   "meaning_vi": "Khuyết điểm",
-  "meaning_en": "Khuyết điểm",
+  "meaning_en": "fault, shortcoming",
   "furigana": "けってん",
   "example": {
    "jp": "だれにでも欠点（けってん）がある。",
    "vi": "Ai cũng có khuyết điểm.",
-   "en": "Ai cũng có khuyết điểm.",
+   "en": "Everyone has faults.",
    "seg": [
     {
      "t": "だれにでも"
@@ -49903,11 +49903,11 @@
   "section_title": "Tính cách",
   "word": "くせ",
   "meaning_vi": "Tật",
-  "meaning_en": "Tật",
+  "meaning_en": "habit, quirk",
   "example": {
    "jp": "話（はな）しているときに髪（かみ）にさわるのが私（わたし）のくせです。",
    "vi": "Tôi có tật vuốt tóc khi nói chuyện.",
-   "en": "Tôi có tật vuốt tóc khi nói chuyện.",
+   "en": "Touching my hair while talking is a habit of mine.",
    "seg": [
     {
      "t": "話",
@@ -49942,12 +49942,12 @@
   "section_title": "Tính cách",
   "word": "器用な",
   "meaning_vi": "Khéo léo, khéo tay",
-  "meaning_en": "Khéo léo, khéo tay",
+  "meaning_en": "skillful, dexterous, good with one's hands",
   "furigana": "きような",
   "example": {
    "jp": "姉（あね）は器用（きよう）で、料理（りょうり）も上手（じょうず）だ。",
    "vi": "Chị gái tôi khéo tay, nấu ăn giỏi.",
-   "en": "Chị gái tôi khéo tay, nấu ăn giỏi.",
+   "en": "My older sister is dexterous and a good cook too.",
    "seg": [
     {
      "t": "姉",
@@ -49989,12 +49989,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "感情",
   "meaning_vi": "Cảm xúc",
-  "meaning_en": "Cảm xúc",
+  "meaning_en": "emotion, feelings",
   "furigana": "かんじょう",
   "example": {
    "jp": "彼女（かのじょ）は感情（かんじょう）を人（ひと）に見（み）せない。",
    "vi": "Cô ấy không cho ai biết cảm xúc của mình.",
-   "en": "Cô ấy không cho ai biết cảm xúc của mình.",
+   "en": "She doesn't show her feelings to others.",
    "seg": [
     {
      "t": "彼女",
@@ -50036,11 +50036,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "あこがれる",
   "meaning_vi": "Ngưỡng mộ",
-  "meaning_en": "Ngưỡng mộ",
+  "meaning_en": "admire, long for, look up to",
   "example": {
    "jp": "この女優（じょゆう）に、ずっとあこがれている。",
    "vi": "Tôi ngưỡng mộ nữ diễn viên này suốt lâu nay.",
-   "en": "Tôi ngưỡng mộ nữ diễn viên này suốt lâu nay.",
+   "en": "I've long admired this actress.",
    "seg": [
     {
      "t": "この"
@@ -50064,11 +50064,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "うらやましい",
   "meaning_vi": "Ghen tị, thèm muốn",
-  "meaning_en": "Ghen tị, thèm muốn",
+  "meaning_en": "enviable, jealous",
   "example": {
    "jp": "彼（かれ）には欠点（けってん）がない。本当（ほんとう）にうらやましい。",
    "vi": "Anh ta không có khuyết điểm. Thật là ghen tị với anh ta.",
-   "en": "Anh ta không có khuyết điểm. Thật là ghen tị với anh ta.",
+   "en": "He has no faults. I'm really quite envious.",
    "seg": [
     {
      "t": "彼",
@@ -50103,12 +50103,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "落ち着く",
   "meaning_vi": "Tĩnh tâm, bình yên",
-  "meaning_en": "Tĩnh tâm, bình yên",
+  "meaning_en": "calm down, feel at ease, settle",
   "furigana": "おちつく",
   "example": {
    "jp": "彼（かれ）としゃべっていると、とても落ち着（おちつ）く。",
    "vi": "Nói chuyện với anh ta cảm thấy rất bình yên.",
-   "en": "Nói chuyện với anh ta cảm thấy rất bình yên.",
+   "en": "When I chat with him, I feel very much at ease.",
    "seg": [
     {
      "t": "彼",
@@ -50136,12 +50136,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "感激＜する＞",
   "meaning_vi": "Sự cảm kích, xúc động",
-  "meaning_en": "Sự cảm kích, xúc động",
+  "meaning_en": "be deeply moved, be touched",
   "furigana": "かんげき",
   "example": {
    "jp": "彼（かれ）に婚約（こんやく）指輪（ゆびわ）をもらって、感激（かんげき）した。",
    "vi": "Tôi xúc động vì nhận được nhẫn đính hôn từ anh ấy.",
-   "en": "Tôi xúc động vì nhận được nhẫn đính hôn từ anh ấy.",
+   "en": "I was deeply moved to receive an engagement ring from him.",
    "seg": [
     {
      "t": "彼",
@@ -50180,12 +50180,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "感動＜する＞",
   "meaning_vi": "Sự cảm động",
-  "meaning_en": "Sự cảm động",
+  "meaning_en": "be moved, be touched",
   "furigana": "かんどう",
   "example": {
    "jp": "この映画（えいが）に、みんなが感動（かんどう）するだろう。",
    "vi": "Có lẽ tất cả mọi người cảm động với bộ phim này.",
-   "en": "Có lẽ tất cả mọi người cảm động với bộ phim này.",
+   "en": "Everyone will surely be moved by this film.",
    "seg": [
     {
      "t": "この"
@@ -50216,12 +50216,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "感心＜する＞",
   "meaning_vi": "Sự cảm phục, phục",
-  "meaning_en": "Sự cảm phục, phục",
+  "meaning_en": "be impressed, admire",
   "furigana": "かんしん",
   "example": {
    "jp": "アインさん、日本語（にほんご）が上手（じょうず）になりましたね。感心（かんしん）しました。",
    "vi": "Chị Ánh, tiếng Nhật đã giỏi lên nhỉ. Thật đáng phục.",
-   "en": "Chị Ánh, tiếng Nhật đã giỏi lên nhỉ. Thật đáng phục.",
+   "en": "Anh, your Japanese has gotten so good. I'm impressed.",
    "seg": [
     {
      "t": "アインさん、"
@@ -50259,11 +50259,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "なつかしい",
   "meaning_vi": "Nhớ",
-  "meaning_en": "Nhớ",
+  "meaning_en": "nostalgic, dearly missed",
   "example": {
    "jp": "高校（こうこう）時代（じだい）が、とてもなつかしい。",
    "vi": "Tôi rất nhớ hồi học cấp ba.",
-   "en": "Tôi rất nhớ hồi học cấp ba.",
+   "en": "I feel very nostalgic about my high school days.",
    "seg": [
     {
      "t": "高校",
@@ -50288,12 +50288,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "気軽な",
   "meaning_vi": "Thoải mái, không dè dặt",
-  "meaning_en": "Thoải mái, không dè dặt",
+  "meaning_en": "casual, without hesitation, freely",
   "furigana": "きがるな",
   "example": {
    "jp": "何（なん）でも気軽（きがる）に相談（そうだん）してください。",
    "vi": "Bạn hãy thoải mái đến trao đổi bất cứ điều gì!",
-   "en": "Bạn hãy thoải mái đến trao đổi bất cứ điều gì!",
+   "en": "Please feel free to consult me about anything.",
    "seg": [
     {
      "t": "何",
@@ -50328,12 +50328,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "気楽な",
   "meaning_vi": "Thoải mái, thanh thản",
-  "meaning_en": "Thoải mái, thanh thản",
+  "meaning_en": "carefree, easy, relaxed",
   "furigana": "きらくな",
   "example": {
    "jp": "ストレスのない気楽（きらく）な生活（せいかつ）がしたい。",
    "vi": "Tôi muốn sống thanh thản, không phải chịu áp lực.",
-   "en": "Tôi muốn sống thanh thản, không phải chịu áp lực.",
+   "en": "I want to live a relaxed life without stress.",
    "seg": [
     {
      "t": "ストレスのない"
@@ -50364,12 +50364,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "幸せ＜な＞",
   "meaning_vi": "Hạnh phúc",
-  "meaning_en": "Hạnh phúc",
+  "meaning_en": "happiness, happy",
   "furigana": "しあわせ",
   "example": {
    "jp": "幸（しあわ）せは、人（ひと）によって違（ちが）う。（名） いろいろあったが、今（いま）は幸（しあわ）せな毎日（まいにち）だ。（ナ形）",
    "vi": "Hạnh phúc tùy theo mỗi người mà khác nhau. / Đã có nhiều chuyện xảy ra nhưng bây giờ thì mỗi ngày tôi đều cảm thấy hạnh phúc.",
-   "en": "Hạnh phúc tùy theo mỗi người mà khác nhau. / Đã có nhiều chuyện xảy ra nhưng bây giờ thì mỗi ngày tôi đều cảm thấy hạnh phúc.",
+   "en": "Happiness means different things to different people. A lot has happened, but now my days are happy.",
    "seg": [
     {
      "t": "幸",
@@ -50425,12 +50425,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "冗談",
   "meaning_vi": "Đùa, nói đùa",
-  "meaning_en": "Đùa, nói đùa",
+  "meaning_en": "joke",
   "furigana": "じょうだん",
   "example": {
    "jp": "彼（かれ）の冗談（じょうだん）は、おもしろい。",
    "vi": "Kiểu nói đùa của anh ấy thú vị.",
-   "en": "Kiểu nói đùa của anh ấy thú vị.",
+   "en": "His jokes are funny.",
    "seg": [
     {
      "t": "彼",
@@ -50458,11 +50458,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "ユーモア",
   "meaning_vi": "Hài hước",
-  "meaning_en": "Hài hước",
+  "meaning_en": "humor",
   "example": {
    "jp": "ユーモアのない人（ひと）と話（はな）しても、おもしろくない。",
    "vi": "Nói chuyện với người không có tính hài hước chẳng thú vị.",
-   "en": "Nói chuyện với người không có tính hài hước chẳng thú vị.",
+   "en": "Talking with someone who has no sense of humor isn't much fun.",
    "seg": [
     {
      "t": "ユーモアのない"
@@ -50493,11 +50493,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "ゆかいな",
   "meaning_vi": "Vui vẻ, dễ chịu",
-  "meaning_en": "Vui vẻ, dễ chịu",
+  "meaning_en": "pleasant, cheerful, amusing",
   "example": {
    "jp": "彼（かれ）はゆかいな人（ひと）だ。",
    "vi": "Anh ta là người vui vẻ dễ chịu.",
-   "en": "Anh ta là người vui vẻ dễ chịu.",
+   "en": "He's a cheerful person.",
    "seg": [
     {
      "t": "彼",
@@ -50525,12 +50525,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "愛する",
   "meaning_vi": "Yêu",
-  "meaning_en": "Yêu",
+  "meaning_en": "love",
   "furigana": "あいする",
   "example": {
    "jp": "あの歌手（かしゅ）は世界中（せかいじゅう）で愛（あい）されている。",
    "vi": "Ca sỹ đó được cả thế giới yêu mến.",
-   "en": "Ca sỹ đó được cả thế giới yêu mến.",
+   "en": "That singer is loved all over the world.",
    "seg": [
     {
      "t": "あの"
@@ -50568,12 +50568,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "真剣な",
   "meaning_vi": "Nghiêm túc",
-  "meaning_en": "Nghiêm túc",
+  "meaning_en": "serious, earnest",
   "furigana": "しんけんな",
   "example": {
    "jp": "彼（かれ）は彼女（かのじょ）を真剣（しんけん）に愛（あい）しているらしい。",
    "vi": "Dường như anh ta yêu cô ấy nghiêm túc.",
-   "en": "Dường như anh ta yêu cô ấy nghiêm túc.",
+   "en": "It seems he seriously loves her.",
    "seg": [
     {
      "t": "彼",
@@ -50615,11 +50615,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "どきどき＜する＞",
   "meaning_vi": "Tim đập rộn ràng, xốn xang, hồi hộp",
-  "meaning_en": "Tim đập rộn ràng, xốn xang, hồi hộp",
+  "meaning_en": "heart pounding, nervous, excited",
   "example": {
    "jp": "大好（だいす）きな人（ひと）が近（ちか）くにいると、どきどきする。",
    "vi": "Hễ có người mình thích ở bên cạnh là tim tôi đập rộn ràng.",
-   "en": "Hễ có người mình thích ở bên cạnh là tim tôi đập rộn ràng.",
+   "en": "When the person I love is nearby, my heart pounds.",
    "seg": [
     {
      "t": "大好",
@@ -50654,11 +50654,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "わくわく＜する＞",
   "meaning_vi": "Sự phấn chấn, hồi hộp",
-  "meaning_en": "Sự phấn chấn, hồi hộp",
+  "meaning_en": "excited, thrilled",
   "example": {
    "jp": "来週（らいしゅう）、日本（にほん）に留学（りゅうがく）するので、わくわくしている。",
    "vi": "Tuần sau tôi đi du học ở Nhật Bản nên cảm thấy hồi hộp.",
-   "en": "Tuần sau tôi đi du học ở Nhật Bản nên cảm thấy hồi hộp.",
+   "en": "I'm going to study in Japan next week, so I'm excited.",
    "seg": [
     {
      "t": "来週",
@@ -50693,11 +50693,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "ほっと＜する＞",
   "meaning_vi": "Sự an tâm, nhẹ người",
-  "meaning_en": "Sự an tâm, nhẹ người",
+  "meaning_en": "relieved, feel relief",
   "example": {
    "jp": "試験（しけん）に合格（ごうかく）して、ほっとした。",
    "vi": "Cảm thấy nhẹ nhõm khi biết mình thi đỗ.",
-   "en": "Cảm thấy nhẹ nhõm khi biết mình thi đỗ.",
+   "en": "I passed the exam and felt relieved.",
    "seg": [
     {
      "t": "試験",
@@ -50725,11 +50725,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "のんびり＜する＞",
   "meaning_vi": "Sự thong thả, ung dung",
-  "meaning_en": "Sự thong thả, ung dung",
+  "meaning_en": "leisurely, at a relaxed pace",
   "example": {
    "jp": "将来（しょうらい）は、いなかでのんびり暮（く）らしたい。",
    "vi": "Trong tương lai, tôi muốn sống thong thả ở chốn quê.",
-   "en": "Trong tương lai, tôi muốn sống thong thả ở chốn quê.",
+   "en": "In the future, I want to live at a relaxed pace in the countryside.",
    "seg": [
     {
      "t": "将来",
@@ -50757,11 +50757,11 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "ほほえむ",
   "meaning_vi": "Mỉm cười",
-  "meaning_en": "Mỉm cười",
+  "meaning_en": "smile",
   "example": {
    "jp": "彼女（かのじょ）がほほえむと、みんなが幸（しあわ）せな気持（きも）ちになる。",
    "vi": "Khi cô ấy mỉm cười, mọi người đều cảm thấy hạnh phúc.",
-   "en": "Khi cô ấy mỉm cười, mọi người đều cảm thấy hạnh phúc.",
+   "en": "When she smiles, everyone feels happy.",
    "seg": [
     {
      "t": "彼女",
@@ -50796,12 +50796,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "夢中＜な＞",
   "meaning_vi": "Sự say mê, say sưa",
-  "meaning_en": "Sự say mê, say sưa",
+  "meaning_en": "absorbed in, crazy about",
   "furigana": "むちゅう",
   "example": {
    "jp": "妹（いもうと）はおしゃれに夢中（むちゅう）だ。（ナ形）",
    "vi": "Em gái tôi say sưa ăn diện.",
-   "en": "Em gái tôi say sưa ăn diện.",
+   "en": "My younger sister is crazy about fashion.",
    "seg": [
     {
      "t": "妹",
@@ -50829,12 +50829,12 @@
   "section_title": "Tâm trạng vui mừng",
   "word": "勇気",
   "meaning_vi": "Lòng dũng cảm",
-  "meaning_en": "Lòng dũng cảm",
+  "meaning_en": "courage",
   "furigana": "ゆうき",
   "example": {
    "jp": "勇気（ゆうき）を持（も）って、チャレンジしよう。",
    "vi": "Hãy dũng cảm thử sức nào!",
-   "en": "Hãy dũng cảm thử sức nào!",
+   "en": "Let's have courage and give it a try.",
    "seg": [
     {
      "t": "勇気",
@@ -50862,11 +50862,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "あきる",
   "meaning_vi": "Chán",
-  "meaning_en": "Chán",
+  "meaning_en": "get tired of, get bored with",
   "example": {
    "jp": "このドラマには、もうあきてしまった。",
    "vi": "Tôi đã chán bộ phim này rồi.",
-   "en": "Tôi đã chán bộ phim này rồi.",
+   "en": "I've already gotten tired of this drama.",
    "seg": [
     {
      "t": "このドラマには、もうあきてしまった。"
@@ -50883,12 +50883,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "嫌がる",
   "meaning_vi": "Ghét",
-  "meaning_en": "Ghét",
+  "meaning_en": "dislike, be reluctant, hate",
   "furigana": "いやがる",
   "example": {
    "jp": "息子（むすこ）は家（いえ）の手伝（てつだ）いを嫌（いや）がる。",
    "vi": "Con trai ghét giúp đỡ việc nhà.",
-   "en": "Con trai ghét giúp đỡ việc nhà.",
+   "en": "My son hates helping around the house.",
    "seg": [
     {
      "t": "息子",
@@ -50930,12 +50930,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "落ち込む",
   "meaning_vi": "Buồn, thất vọng",
-  "meaning_en": "Buồn, thất vọng",
+  "meaning_en": "feel down, be depressed",
   "furigana": "おちこむ",
   "example": {
    "jp": "友（とも）だちに悪口（わるぐち）を言（い）われて落ち込（おちこ）んだ。",
    "vi": "Tôi buồn vì bị bạn nói xấu.",
-   "en": "Tôi buồn vì bị bạn nói xấu.",
+   "en": "My friend said something nasty about me and I felt down.",
    "seg": [
     {
      "t": "友",
@@ -50977,11 +50977,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "がっかり＜する＞",
   "meaning_vi": "Sự thất vọng",
-  "meaning_en": "Sự thất vọng",
+  "meaning_en": "be disappointed",
   "example": {
    "jp": "試験（しけん）の結果（けっか）が悪（わる）くて、がっかりした。",
    "vi": "Tôi thất vọng vì kết quả kỳ thi kém.",
-   "en": "Tôi thất vọng vì kết quả kỳ thi kém.",
+   "en": "My exam results were poor and I was disappointed.",
    "seg": [
     {
      "t": "試験",
@@ -51016,12 +51016,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "悲しむ",
   "meaning_vi": "Đau buồn",
-  "meaning_en": "Đau buồn",
+  "meaning_en": "grieve, be saddened",
   "furigana": "かなしむ",
   "example": {
    "jp": "大（おお）きな事故（じこ）が起（お）きて、国（くに）中（じゅう）が悲（かな）しんでいる。",
    "vi": "Tai nạn lớn xảy ra, cả nước đau buồn.",
-   "en": "Tai nạn lớn xảy ra, cả nước đau buồn.",
+   "en": "A major accident occurred, and the whole country is grieving.",
    "seg": [
     {
      "t": "大",
@@ -51074,11 +51074,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "かわいそうな",
   "meaning_vi": "Đáng thương, tội nghiệp",
-  "meaning_en": "Đáng thương, tội nghiệp",
+  "meaning_en": "pitiful, poor, sad",
   "example": {
    "jp": "この地域（ちいき）の子（こ）どもたちは学校（がっこう）に行（い）けない。かわいそうだ。",
    "vi": "Bọ trẻ con ở khu vực này không được đến trường. Thật đáng thương.",
-   "en": "Bọ trẻ con ở khu vực này không được đến trường. Thật đáng thương.",
+   "en": "The children in this area can't go to school. It's heartbreaking.",
    "seg": [
     {
      "t": "この"
@@ -51123,12 +51123,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "気の毒な",
   "meaning_vi": "Tội nghiệp, kém may mắn",
-  "meaning_en": "Tội nghiệp, kém may mắn",
+  "meaning_en": "unfortunate, pitiable, to be felt sorry for",
   "furigana": "きのどくな",
   "example": {
    "jp": "気の毒（きのどく）な人（ひと）たちに、元気（げんき）を与（あた）えたい。",
    "vi": "Tôi muốn mang lại niềm vui cho những con người tội nghiệp.",
-   "en": "Tôi muốn mang lại niềm vui cho những con người tội nghiệp.",
+   "en": "I want to bring some cheer to people who are badly off.",
    "seg": [
     {
      "t": "気の毒",
@@ -51170,11 +51170,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "キつい",
   "meaning_vi": "Chật, vất vả, cực nhọc",
-  "meaning_en": "Chật, vất vả, cực nhọc",
+  "meaning_en": "tight; tough, demanding",
   "example": {
    "jp": "①このくつはきつくて、はけない。 ②このバイトはきつい。",
    "vi": "①Đôi giày này chật không đi được. ②Việc làm thêm này vất vả.",
-   "en": "①Đôi giày này chật không đi được. ②Việc làm thêm này vất vả.",
+   "en": "(1) These shoes are too tight to wear. (2) This part-time job is tough.",
    "seg": [
     {
      "t": "①このくつはきつくて、はけない。 ②このバイトはきつい。"
@@ -51191,12 +51191,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "恐怖",
   "meaning_vi": "Nỗi sợ",
-  "meaning_en": "Nỗi sợ",
+  "meaning_en": "fear, terror",
   "furigana": "きょうふ",
   "example": {
    "jp": "こんな恐怖（きょうふ）は経験（けいけん）したことがない。",
    "vi": "Tôi chưa từng trải qua nỗi sợ hãi như thế này bao giờ.",
-   "en": "Tôi chưa từng trải qua nỗi sợ hãi như thế này bao giờ.",
+   "en": "I've never experienced terror like this.",
    "seg": [
     {
      "t": "こんな"
@@ -51227,11 +51227,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "ショック",
   "meaning_vi": "Cú sốc",
-  "meaning_en": "Cú sốc",
+  "meaning_en": "shock",
   "example": {
    "jp": "親友（しんゆう）の言葉（ことば）に、ひどいショックを受（う）けた。",
    "vi": "Tôi bị sốc nặng bởi câu nói của người bạn thân.",
-   "en": "Tôi bị sốc nặng bởi câu nói của người bạn thân.",
+   "en": "I was badly shocked by my close friend's words.",
    "seg": [
     {
      "t": "親友",
@@ -51266,12 +51266,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "後悔＜する＞",
   "meaning_vi": "Sự ân hận",
-  "meaning_en": "Sự ân hận",
+  "meaning_en": "regret",
   "furigana": "こうかい",
   "example": {
    "jp": "高（たか）いバッグを買（か）って、後悔（こうかい）している。",
    "vi": "Tôi đang ân hận vì mua cái túi đắt tiền.",
-   "en": "Tôi đang ân hận vì mua cái túi đắt tiền.",
+   "en": "I bought an expensive bag and I'm regretting it.",
    "seg": [
     {
      "t": "高",
@@ -51306,12 +51306,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "悩む",
   "meaning_vi": "Trăn trở",
-  "meaning_en": "Trăn trở",
+  "meaning_en": "worry, agonize, be troubled",
   "furigana": "なやむ",
   "example": {
    "jp": "一人（ひとり）で悩（なや）んでいないで、話（はなし）を聞（き）かせてください。",
    "vi": "Đừng trăn trở một mình nữa mà hãy nói cho tôi nghe!",
-   "en": "Đừng trăn trở một mình nữa mà hãy nói cho tôi nghe!",
+   "en": "Don't worry about it alone — please tell me what's going on.",
    "seg": [
     {
      "t": "一人",
@@ -51353,12 +51353,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "悩み",
   "meaning_vi": "Điều trăn trở",
-  "meaning_en": "Điều trăn trở",
+  "meaning_en": "worry, trouble, problem",
   "furigana": "なやみ",
   "example": {
    "jp": "悩（なや）みがあるなら、私（わたし）に相談（そうだん）してほしい。",
    "vi": "Tôi muốn anh tâm sự với tôi nếu có điều gì trăn trở.",
-   "en": "Tôi muốn anh tâm sự với tôi nếu có điều gì trăn trở.",
+   "en": "If something is troubling you, I'd like you to talk to me about it.",
    "seg": [
     {
      "t": "悩",
@@ -51393,12 +51393,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "不安＜な＞",
   "meaning_vi": "Sự bất an (bất an, lo lắng)",
-  "meaning_en": "Sự bất an (bất an, lo lắng)",
+  "meaning_en": "anxiety, uneasy",
   "furigana": "ふあん",
   "example": {
    "jp": "明日（あした）入学（にゅうがく）試験（しけん）を受（う）ける。不安（ふあん）でいっぱいだ。 不安（ふあん）なときは、私（わたし）に話（はな）してください。",
    "vi": "Ngày mai tôi sẽ dự kỳ thi vào trường. Tôi lo quá. / Nếu có điều gì đo lo lắng hãy nói cho tôi biết!",
-   "en": "Ngày mai tôi sẽ dự kỳ thi vào trường. Tôi lo quá. / Nếu có điều gì đo lo lắng hãy nói cho tôi biết!",
+   "en": "I take the entrance exam tomorrow. I'm full of anxiety. When you're feeling uneasy, please talk to me.",
    "seg": [
     {
      "t": "明日",
@@ -51462,12 +51462,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "迷惑＜な/する＞",
   "meaning_vi": "Sự phiền phức, phiền toái",
-  "meaning_en": "Sự phiền phức, phiền toái",
+  "meaning_en": "trouble, nuisance, inconvenience",
   "furigana": "めいわく",
   "example": {
    "jp": "いろいろと、ご迷惑（めいわく）をおかけしました。（名） 近所（きんじょ）に迷惑（めいわく）な人（ひと）がいる。（ナ形）",
    "vi": "Tôi đã gây ra nhiều điều phiền toái. / Gần nhà có một người phiền phức.",
-   "en": "Tôi đã gây ra nhiều điều phiền toái. / Gần nhà có một người phiền phức.",
+   "en": "I've caused you all sorts of trouble. There's a troublesome person in the neighborhood.",
    "seg": [
     {
      "t": "いろいろと、ご"
@@ -51512,12 +51512,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "面倒＜な＞",
   "meaning_vi": "Sự chăm sóc, trông nom, sự phiền phức, khó khăn (phiền)",
-  "meaning_en": "Sự chăm sóc, trông nom, sự phiền phức, khó khăn (phiền)",
+  "meaning_en": "trouble, bother; looking after",
   "furigana": "めんどう",
   "example": {
    "jp": "小（ちい）さい妹（いもうと）の面倒（めんどう）をみている。 面倒（めんどう）なことは、先（さき）にやったほうがいい。",
    "vi": "Tôi đang trông đứa em gái nhỏ. / Những việc khó thì nên làm trước.",
-   "en": "Tôi đang trông đứa em gái nhỏ. / Những việc khó thì nên làm trước.",
+   "en": "I look after my little sister. It's better to do the troublesome things first.",
    "seg": [
     {
      "t": "小",
@@ -51566,12 +51566,12 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "面倒くさい",
   "meaning_vi": "Phiền phức",
-  "meaning_en": "Phiền phức",
+  "meaning_en": "troublesome, a pain, bothersome",
   "furigana": "めんどうくさい",
   "example": {
    "jp": "この仕事（しごと）は時間（じかん）がかかって、面倒（めんどう）くさい。",
    "vi": "Công việc này mất rất nhiều thời gian và phiền phức.",
-   "en": "Công việc này mất rất nhiều thời gian và phiền phức.",
+   "en": "This job takes a lot of time and is a real pain.",
    "seg": [
     {
      "t": "この"
@@ -51609,11 +51609,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "ぶつぶつ",
   "meaning_vi": "Lầm bầm",
-  "meaning_en": "Lầm bầm",
+  "meaning_en": "grumbling, muttering",
   "example": {
    "jp": "彼（かれ）は、いつもぶつぶつ言（い）っている。",
    "vi": "Anh ta lúc nào cũng lầm bầm.",
-   "en": "Anh ta lúc nào cũng lầm bầm.",
+   "en": "He's always muttering about something.",
    "seg": [
     {
      "t": "彼",
@@ -51641,11 +51641,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "いちいち",
   "meaning_vi": "Hơi một tí là",
-  "meaning_en": "Hơi một tí là",
+  "meaning_en": "one by one, over every little thing",
   "example": {
    "jp": "父（ちち）は、細（こま）かいことをいちいち私（わたし）に注意（ちゅうい）する。",
    "vi": "Bố tôi hơi một tí là nhắc nhở tôi những việc nhỏ nhặt.",
-   "en": "Bố tôi hơi một tí là nhắc nhở tôi những việc nhỏ nhặt.",
+   "en": "My father nags me about every little detail.",
    "seg": [
     {
      "t": "父",
@@ -51687,11 +51687,11 @@
   "section_title": "Tâm trạng buồn chán",
   "word": "やかましい",
   "meaning_vi": "Ầm ĩ, rát tai",
-  "meaning_en": "Ầm ĩ, rát tai",
+  "meaning_en": "noisy, loud; fussy, nagging",
   "example": {
    "jp": "①外（がい）で、工事（こうじ）の音（おと）がやかましい。 ②父（ちち）は私（わたし）の生活（せいかつ）について、やかましく言（い）う。",
    "vi": "①Tiếng công trường xây dựng bên ngoài ầm ĩ. ②Bố tôi nói rát cả tai về cuộc sống của tôi.",
-   "en": "①Tiếng công trường xây dựng bên ngoài ầm ĩ. ②Bố tôi nói rát cả tai về cuộc sống của tôi.",
+   "en": "(1) The noise of the construction outside is loud. (2) My father nags me about how I live.",
    "seg": [
     {
      "t": "①"
@@ -51757,12 +51757,12 @@
   "section_title": "Có cảm giác gì?",
   "word": "心から",
   "meaning_vi": "Tự đáy lòng, chân thành",
-  "meaning_en": "Tự đáy lòng, chân thành",
+  "meaning_en": "from the heart, sincerely",
   "furigana": "こころから",
   "example": {
    "jp": "先生（せんせい）には、心（こころ）から感謝（かんしゃ）しています。",
    "vi": "Tự đáy lòng tôi vô cùng biết ơn thầy (cô).",
-   "en": "Tự đáy lòng tôi vô cùng biết ơn thầy (cô).",
+   "en": "I'm sincerely grateful to my teacher.",
    "seg": [
     {
      "t": "先生",
@@ -51797,12 +51797,12 @@
   "section_title": "Có cảm giác gì?",
   "word": "祈る",
   "meaning_vi": "Chúc",
-  "meaning_en": "Chúc",
+  "meaning_en": "pray, wish",
   "furigana": "いのる",
   "example": {
    "jp": "みんなの無事（ぶじ）を、心（こころ）から祈（いの）っている。",
    "vi": "Tự đáy lòng tôi xin chúc cho tất cả mọi người bình an vô sự!",
-   "en": "Tự đáy lòng tôi xin chúc cho tất cả mọi người bình an vô sự!",
+   "en": "I pray from the bottom of my heart that everyone is safe.",
    "seg": [
     {
      "t": "みんなの"
@@ -51840,12 +51840,12 @@
   "section_title": "Có cảm giác gì?",
   "word": "希望＜する＞",
   "meaning_vi": "Niềm hi vọng, sự hi sinh",
-  "meaning_en": "Niềm hi vọng, sự hi sinh",
+  "meaning_en": "hope, wish for",
   "furigana": "きぼう",
   "example": {
    "jp": "彼（かれ）は海外（かいがい）勤務（きんむ）を希望（きぼう）している。",
    "vi": "Anh ấy hi vọng được làm việc ở nước ngoài.",
-   "en": "Anh ấy hi vọng được làm việc ở nước ngoài.",
+   "en": "He hopes to work overseas.",
    "seg": [
     {
      "t": "彼",
@@ -51884,12 +51884,12 @@
   "section_title": "Có cảm giác gì?",
   "word": "願う",
   "meaning_vi": "Cầu mong, cầu nguyện",
-  "meaning_en": "Cầu mong, cầu nguyện",
+  "meaning_en": "wish, pray for, request",
   "furigana": "ねがう",
   "example": {
    "jp": "合格（ごうかく）を願（ねが）って、有名（ゆうめい）な神社（じんじゃ）に行（い）った。",
    "vi": "Tôi đến ngôi đền nổi tiếng để cầu mong thi đỗ.",
-   "en": "Tôi đến ngôi đền nổi tiếng để cầu mong thi đỗ.",
+   "en": "I went to a famous shrine to pray that I would pass.",
    "seg": [
     {
      "t": "合格",
@@ -51938,12 +51938,12 @@
   "section_title": "Có cảm giác gì?",
   "word": "願い",
   "meaning_vi": "lời cầu nguyện",
-  "meaning_en": "lời cầu nguyện",
+  "meaning_en": "wish, request, prayer",
   "furigana": "ねがい",
   "example": {
    "jp": "この願（ねが）いが彼女（かのじょ）に届（とど）きますように。",
    "vi": "Mong sao lời cầu nguyện nãy sẽ đến cô ấy.",
-   "en": "Mong sao lời cầu nguyện nãy sẽ đến cô ấy.",
+   "en": "I hope this wish reaches her.",
    "seg": [
     {
      "t": "この"
@@ -51981,12 +51981,12 @@
   "section_title": "Có cảm giác gì?",
   "word": "感じる",
   "meaning_vi": "Cảm nhận",
-  "meaning_en": "Cảm nhận",
+  "meaning_en": "feel, sense",
   "furigana": "かんじる",
   "example": {
    "jp": "彼女（かのじょ）の言葉（ことば）に愛情（あいじょう）を感（かん）じた。",
    "vi": "Tôi cảm nhận được tình yêu trong câu nói của cô ấy.",
-   "en": "Tôi cảm nhận được tình yêu trong câu nói của cô ấy.",
+   "en": "I sensed affection in her words.",
    "seg": [
     {
      "t": "彼女",
@@ -52028,11 +52028,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "あいまいな",
   "meaning_vi": "Mập mờ, mơ hồ",
-  "meaning_en": "Mập mờ, mơ hồ",
+  "meaning_en": "vague, ambiguous",
   "example": {
    "jp": "日本語（にほんご）には、あいまいな表現（ひょうげん）が多（おお）い。",
    "vi": "Trong tiếng Nhật, cách nói mập mờ thì nhiều.",
-   "en": "Trong tiếng Nhật, cách nói mập mờ thì nhiều.",
+   "en": "Japanese has a lot of ambiguous expressions.",
    "seg": [
     {
      "t": "日本語",
@@ -52067,12 +52067,12 @@
   "section_title": "Có cảm giác gì?",
   "word": "案外",
   "meaning_vi": "Không ngờ, ngoài dự tưởng",
-  "meaning_en": "Không ngờ, ngoài dự tưởng",
+  "meaning_en": "unexpectedly, contrary to expectations",
   "furigana": "あんがい",
   "example": {
    "jp": "彼（かれ）はいい人（ひと）そうだが、案外（あんがい）わがままだ。",
    "vi": "Anh ấy có vẻ là người tốt nhưng không ngờ cũng bướng bỉnh ra phết.",
-   "en": "Anh ấy có vẻ là người tốt nhưng không ngờ cũng bướng bỉnh ra phết.",
+   "en": "He seems like a nice person, but he's unexpectedly selfish.",
    "seg": [
     {
      "t": "彼",
@@ -52107,11 +52107,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "うっかリ＜する＞",
   "meaning_vi": "Đãng trí",
-  "meaning_en": "Đãng trí",
+  "meaning_en": "carelessly, absent-mindedly",
   "example": {
    "jp": "うっかり玄関（げんかん）のかぎをかけるのを忘（わす）れた。",
    "vi": "Tôi đãng trí không khóa cửa nhà.",
-   "en": "Tôi đãng trí không khóa cửa nhà.",
+   "en": "I absent-mindedly forgot to lock the front door.",
    "seg": [
     {
      "t": "うっかり"
@@ -52142,11 +52142,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "どうか",
   "meaning_vi": "Mong sao",
-  "meaning_en": "Mong sao",
+  "meaning_en": "please, somehow (in a plea)",
   "example": {
    "jp": "どうかＮ（えぬ）3の試験（しけん）に合格（ごうかく）できますように。",
    "vi": "Tôi cầu mong tôi thi đỗ được kỳ thi N3.",
-   "en": "Tôi cầu mong tôi thi đỗ được kỳ thi N3.",
+   "en": "Please, let me pass the N3 exam.",
    "seg": [
     {
      "t": "どうか"
@@ -52184,11 +52184,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "なんとか",
   "meaning_vi": "Cố hết sức, bằng cách nào đó",
-  "meaning_en": "Cố hết sức, bằng cách nào đó",
+  "meaning_en": "somehow, one way or another",
   "example": {
    "jp": "レポートを締め切（しめき）りになんとか間に合（まにあ）わせたい。",
    "vi": "Tôi muốn cố hết sức để kịp thời hạn nộp báo cáo.",
-   "en": "Tôi muốn cố hết sức để kịp thời hạn nộp báo cáo.",
+   "en": "I want to make the report deadline somehow.",
    "seg": [
     {
      "t": "レポートを"
@@ -52219,11 +52219,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "なんとなく",
   "meaning_vi": "Có vẻ, có cảm giác là",
-  "meaning_en": "Có vẻ, có cảm giác là",
+  "meaning_en": "somehow, for some reason",
   "example": {
    "jp": "あの映画（えいが）は、なんとなくおもしろそうだ。",
    "vi": "Có cảm giác bộ phim đó có vẻ hay.",
-   "en": "Có cảm giác bộ phim đó có vẻ hay.",
+   "en": "That film somehow looks interesting.",
    "seg": [
     {
      "t": "あの"
@@ -52247,11 +52247,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "ものすごい",
   "meaning_vi": "Rất ghê, rất hay",
-  "meaning_en": "Rất ghê, rất hay",
+  "meaning_en": "terrific, tremendous, incredible",
   "example": {
    "jp": "九州（きゅうしゅう）で、ものすごい雨（あめ）が降（ふ）っているようだ。",
    "vi": "Hình như ở Kyushu cũng có mưa rất ghê.",
-   "en": "Hình như ở Kyushu cũng có mưa rất ghê.",
+   "en": "It seems it's raining tremendously in Kyushu.",
    "seg": [
     {
      "t": "九州",
@@ -52286,11 +52286,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "わざわざ",
   "meaning_vi": "Có nhã ý, cất công",
-  "meaning_en": "Có nhã ý, cất công",
+  "meaning_en": "go out of one's way, take the trouble",
   "example": {
    "jp": "わざわざお見舞（みま）いに来（き）てくれて、ありがとう。",
    "vi": "Cám ơn anh đã cất công đến thăm bệnh tôi.",
-   "en": "Cám ơn anh đã cất công đến thăm bệnh tôi.",
+   "en": "Thank you for going out of your way to visit me.",
    "seg": [
     {
      "t": "わざわざお"
@@ -52321,11 +52321,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "こっそり",
   "meaning_vi": "Trộm, lén",
-  "meaning_en": "Trộm, lén",
+  "meaning_en": "secretly, stealthily",
   "example": {
    "jp": "姉（あね）のバッグをこっそり借（か）りた。",
    "vi": "Tôi mượn trộm cái túi của chị gái.",
-   "en": "Tôi mượn trộm cái túi của chị gái.",
+   "en": "I secretly borrowed my older sister's bag.",
    "seg": [
     {
      "t": "姉",
@@ -52353,11 +52353,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "ふと",
   "meaning_vi": "Bỗng, bỗng nhiên",
-  "meaning_en": "Bỗng, bỗng nhiên",
+  "meaning_en": "suddenly, casually, by chance",
   "example": {
    "jp": "昔（むかし）のことを、ふと思い出（おもいだ）した。",
    "vi": "Tôi bỗng nhớ lại chuyện ngày xưa.",
-   "en": "Tôi bỗng nhớ lại chuyện ngày xưa.",
+   "en": "I suddenly remembered something from long ago.",
    "seg": [
     {
      "t": "昔",
@@ -52385,11 +52385,11 @@
   "section_title": "Có cảm giác gì?",
   "word": "いったい",
   "meaning_vi": "Cái quái gì không biết",
-  "meaning_en": "Cái quái gì không biết",
+  "meaning_en": "on earth, in the world (emphatic question)",
   "example": {
    "jp": "あの人（ひと）は、いったい何（なに）を考（かんが）えているんだろう。",
    "vi": "Anh ta đang nghĩ cái quái gì không biết?",
-   "en": "Anh ta đang nghĩ cái quái gì không biết?",
+   "en": "What on earth is that person thinking?",
    "seg": [
     {
      "t": "あの"
@@ -52427,12 +52427,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "表現＜する＞",
   "meaning_vi": "Sự diễn đạt, thể hiện, cách nói",
-  "meaning_en": "Sự diễn đạt, thể hiện, cách nói",
+  "meaning_en": "express, expression",
   "furigana": "ひょうげん",
   "example": {
    "jp": "私（わたし）は、気持（きも）ちをうまく表現（ひょうげん）できない。",
    "vi": "Tôi không thể diễn đạt tốt tâm trạng của mình.",
-   "en": "Tôi không thể diễn đạt tốt tâm trạng của mình.",
+   "en": "I can't express my feelings well.",
    "seg": [
     {
      "t": "私",
@@ -52467,11 +52467,11 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "あがる",
   "meaning_vi": "Căng thẳng, hồi hộp",
-  "meaning_en": "Căng thẳng, hồi hộp",
+  "meaning_en": "get nervous, freeze up",
   "example": {
    "jp": "スピーチであがって、内容（ないよう）を忘（わす）れてしまった。",
    "vi": "Tôi căng thẳng vì bài phát biểu nên quên mất nội dung.",
-   "en": "Tôi căng thẳng vì bài phát biểu nên quên mất nội dung.",
+   "en": "I froze up during the speech and forgot what I was going to say.",
    "seg": [
     {
      "t": "スピーチであがって、"
@@ -52502,11 +52502,11 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "あせる",
   "meaning_vi": "Cuống, rối trí",
-  "meaning_en": "Cuống, rối trí",
+  "meaning_en": "be flustered, rush, be impatient",
   "example": {
    "jp": "あせらないで、ゆっくり話（はな）してください。",
    "vi": "Đừng cuống lên mà hãy nói từ từ!",
-   "en": "Đừng cuống lên mà hãy nói từ từ!",
+   "en": "Don't rush — please speak slowly.",
    "seg": [
     {
      "t": "あせらないで、ゆっくり"
@@ -52530,11 +52530,11 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "そわそわ＜する＞",
   "meaning_vi": "Sự bồn chồn, thấp thỏm, sốt ruột",
-  "meaning_en": "Sự bồn chồn, thấp thỏm, sốt ruột",
+  "meaning_en": "restless, fidgety, on edge",
   "example": {
    "jp": "兄（あに）は朝（あさ）から、そわそわしている。",
    "vi": "Anh trai tôi từ sáng cứ đứng ngồi không yên.",
-   "en": "Anh trai tôi từ sáng cứ đứng ngồi không yên.",
+   "en": "My older brother has been restless since this morning.",
    "seg": [
     {
      "t": "兄",
@@ -52562,12 +52562,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "我慢＜する＞",
   "meaning_vi": "Sự chịu đựng",
-  "meaning_en": "Sự chịu đựng",
+  "meaning_en": "endure, put up with",
   "furigana": "がまん",
   "example": {
    "jp": "おなかがすいて、もう我慢（がまん）できない。",
    "vi": "Đói không thể chịu được nữa.",
-   "en": "Đói không thể chịu được nữa.",
+   "en": "I'm so hungry I can't stand it anymore.",
    "seg": [
     {
      "t": "おなかがすいて、もう"
@@ -52591,12 +52591,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "自慢＜する＞",
   "meaning_vi": "Sự tự hào, hãnh diện",
-  "meaning_en": "Sự tự hào, hãnh diện",
+  "meaning_en": "boast, be proud of",
   "furigana": "じまん",
   "example": {
    "jp": "彼（かれ）は家族（かぞく）のことを、よく自慢（じまん）している。",
    "vi": "Anh ấy hay hãnh diện về gia đình mình.",
-   "en": "Anh ấy hay hãnh diện về gia đình mình.",
+   "en": "He often boasts about his family.",
    "seg": [
     {
      "t": "彼",
@@ -52631,12 +52631,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "関心",
   "meaning_vi": "Quan tâm",
-  "meaning_en": "Quan tâm",
+  "meaning_en": "interest, concern",
   "furigana": "かんしん",
   "example": {
    "jp": "私（わたし）は政治（せいじ）に、全然（ぜんぜん）関心（かんしん）がない。",
    "vi": "Tôi hoàn toàn không quan tâm đến chính trị.",
-   "en": "Tôi hoàn toàn không quan tâm đến chính trị.",
+   "en": "I have no interest at all in politics.",
    "seg": [
     {
      "t": "私",
@@ -52675,12 +52675,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "機嫌",
   "meaning_vi": "Tâm trạng",
-  "meaning_en": "Tâm trạng",
+  "meaning_en": "mood, humor",
   "furigana": "きげん",
   "example": {
    "jp": "今日（きょう）、部長（ぶちょう）は機嫌（きげん）がいい。",
    "vi": "Hôm nay, trưởng phòng tâm trạng vui vẻ.",
-   "en": "Hôm nay, trưởng phòng tâm trạng vui vẻ.",
+   "en": "The department manager is in a good mood today.",
    "seg": [
     {
      "t": "今日",
@@ -52715,12 +52715,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "平気＜な＞",
   "meaning_vi": "Sự bình thản (bình thản)",
-  "meaning_en": "Sự bình thản (bình thản)",
+  "meaning_en": "unconcerned, calm, fine",
   "furigana": "へいき",
   "example": {
    "jp": "彼（かれ）は平気（へいき）そうな顔（かお）をしているが、本当（ほんとう）の気持（きも）ちはわからない。（ナ形）",
    "vi": "Anh ta trông mặt thì bình thản nhưng tâm trạng thực sự thì không biết thế nào.",
-   "en": "Anh ta trông mặt thì bình thản nhưng tâm trạng thực sự thì không biết thế nào.",
+   "en": "He looks unconcerned, but I don't know how he really feels.",
    "seg": [
     {
      "t": "彼",
@@ -52769,12 +52769,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "本気＜な＞",
   "meaning_vi": "Sự thật lòng (thật lòng)",
-  "meaning_en": "Sự thật lòng (thật lòng)",
+  "meaning_en": "serious, in earnest",
   "furigana": "ほんき",
   "example": {
    "jp": "その人（ひと）が本気（ほんき）かどうか、目（め）を見（み）ればわかる。（ナ形）",
    "vi": "Con người ấy có thật lòng hay không nhìn vào mắt là biết.",
-   "en": "Con người ấy có thật lòng hay không nhìn vào mắt là biết.",
+   "en": "You can tell whether someone is serious by looking them in the eye.",
    "seg": [
     {
      "t": "その"
@@ -52819,12 +52819,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "迷う",
   "meaning_vi": "Lạc",
-  "meaning_en": "Lạc",
+  "meaning_en": "get lost, be unsure",
   "furigana": "まよう",
   "example": {
    "jp": "映画館（えいがかん）に行（い）きたいが、道（みち）に迷（まよ）ってしまった。",
    "vi": "Tôi muốn đi đến rạp chiếu phim nhưng đã bị lạc mất đường.",
-   "en": "Tôi muốn đi đến rạp chiếu phim nhưng đã bị lạc mất đường.",
+   "en": "I wanted to get to the cinema, but I got lost.",
    "seg": [
     {
      "t": "映画館",
@@ -52866,12 +52866,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "迷い",
   "meaning_vi": "Phân vân",
-  "meaning_en": "Phân vân",
+  "meaning_en": "hesitation, indecision",
   "furigana": "まよい",
   "example": {
    "jp": "留学（りゅうがく）したいと思（おも）っているが、気持（きも）ちに迷（まよ）いがある。",
    "vi": "Tôi muốn đi du học nhưng trong lòng đang phân vân.",
-   "en": "Tôi muốn đi du học nhưng trong lòng đang phân vân.",
+   "en": "I want to study abroad, but I have some hesitation about it.",
    "seg": [
     {
      "t": "留学",
@@ -52913,12 +52913,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "微妙な",
   "meaning_vi": "Khó tả",
-  "meaning_en": "Khó tả",
+  "meaning_en": "subtle, delicate, hard to say",
   "furigana": "びみょうな",
   "example": {
    "jp": "うれしいのか、さびしいのか微妙（びみょう）な気持（きも）ちだ。",
    "vi": "Tâm trạng khó tả không biết vui hay buồn.",
-   "en": "Tâm trạng khó tả không biết vui hay buồn.",
+   "en": "It's a subtle feeling — I'm not sure if I'm happy or sad.",
    "seg": [
     {
      "t": "うれしいのか、さびしいのか"
@@ -52949,12 +52949,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "魅力",
   "meaning_vi": "Vẻ hấp dẫn",
-  "meaning_en": "Vẻ hấp dẫn",
+  "meaning_en": "charm, appeal, attractiveness",
   "furigana": "みりょく",
   "example": {
    "jp": "彼女（かのじょ）のきれいな目（め）に、魅力（みりょく）を感（かん）じた。",
    "vi": "Tôi đã cảm nhận được vẻ hấp dẫn trong đôi mắt đẹp của cô ấy.",
-   "en": "Tôi đã cảm nhận được vẻ hấp dẫn trong đôi mắt đẹp của cô ấy.",
+   "en": "I found her beautiful eyes captivating.",
    "seg": [
     {
      "t": "彼女",
@@ -52996,12 +52996,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "本音",
   "meaning_vi": "Suy nghĩ thực, lòng dạ",
-  "meaning_en": "Suy nghĩ thực, lòng dạ",
+  "meaning_en": "true feelings, real intentions",
   "furigana": "ほんね",
   "example": {
    "jp": "日本人（にほんじん）は、なかなか本音（ほんね）を言（い）わない。",
    "vi": "Người Nhật không hay nói suy nghĩ thực của mình.",
-   "en": "Người Nhật không hay nói suy nghĩ thực của mình.",
+   "en": "Japanese people rarely say what they really think.",
    "seg": [
     {
      "t": "日本人",
@@ -53036,11 +53036,11 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "ましな",
   "meaning_vi": "Còn tốt hơn",
-  "meaning_en": "Còn tốt hơn",
+  "meaning_en": "better, preferable",
   "example": {
    "jp": "あんな人（ひと）の下（した）で働（はたら）くくらいなら、辞（や）めるほうがましだ。",
    "vi": "Nếu làm việc dưới trướng của người đó thì thả bỏ việc còn tốt hơn.",
-   "en": "Nếu làm việc dưới trướng của người đó thì thả bỏ việc còn tốt hơn.",
+   "en": "If it means working under someone like that, I'd rather quit.",
    "seg": [
     {
      "t": "あんな"
@@ -53085,12 +53085,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "涙",
   "meaning_vi": "Nước mắt",
-  "meaning_en": "Nước mắt",
+  "meaning_en": "tears",
   "furigana": "なみだ",
   "example": {
    "jp": "家族（かぞく）を思い出（おもいだ）して、ときどき涙（なみだ）が出（で）る。",
    "vi": "Thỉnh thoảng tôi chảy nước mắt vì nhớ gia đình.",
-   "en": "Thỉnh thoảng tôi chảy nước mắt vì nhớ gia đình.",
+   "en": "Sometimes tears come when I think of my family.",
    "seg": [
     {
      "t": "家族",
@@ -53132,12 +53132,12 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "憎む",
   "meaning_vi": "Hận, căm thù",
-  "meaning_en": "Hận, căm thù",
+  "meaning_en": "hate, detest",
   "furigana": "にくむ",
   "example": {
    "jp": "彼（かれ）を愛（あい）していたが、今（いま）は憎（にく）んでいる。",
    "vi": "Tôi đã từng yêu anh ta nhưng bây giờ thì hận.",
-   "en": "Tôi đã từng yêu anh ta nhưng bây giờ thì hận.",
+   "en": "I used to love him, but now I hate him.",
    "seg": [
     {
      "t": "彼",
@@ -53179,11 +53179,11 @@
   "section_title": "Tâm trạng phức tạp",
   "word": "カウンセリング＜する＞",
   "meaning_vi": "Sự tư vấn, tư vấn tâm lý",
-  "meaning_en": "Sự tư vấn, tư vấn tâm lý",
+  "meaning_en": "counseling",
   "example": {
    "jp": "カウンセリングを受（う）けると、気持（きも）ちが楽（らく）になる。",
    "vi": "Được tư vấn tâm lý, tâm trạng tôi trở nên nhẹ nhõm.",
-   "en": "Được tư vấn tâm lý, tâm trạng tôi trở nên nhẹ nhõm.",
+   "en": "When I have counseling, my mind feels lighter.",
    "seg": [
     {
      "t": "カウンセリングを"
@@ -53221,12 +53221,12 @@
   "section_title": "Thiết kế",
   "word": "模様",
   "meaning_vi": "Hoa văn, họa tiết",
-  "meaning_en": "Hoa văn, họa tiết",
+  "meaning_en": "pattern, design",
   "furigana": "もよう",
   "example": {
    "jp": "今年（ことし）は、どんな模様（もよう）の服（ふく）がはやりですか。",
    "vi": "Năm nay trang phục có họa tiết như thế nào thịnh hành nhỉ?",
-   "en": "Năm nay trang phục có họa tiết như thế nào thịnh hành nhỉ?",
+   "en": "What sort of patterns are in fashion for clothes this year?",
    "seg": [
     {
      "t": "今年",
@@ -53261,12 +53261,12 @@
   "section_title": "Thiết kế",
   "word": "特徴",
   "meaning_vi": "Đặc điểm, đặc trưng",
-  "meaning_en": "Đặc điểm, đặc trưng",
+  "meaning_en": "characteristic, distinguishing feature",
   "furigana": "とくちょう",
   "example": {
    "jp": "彼女（かのじょ）のデザインには、特徴（とくちょう）がある。",
    "vi": "Có đặc trưng trong thiết kế của cô ấy.",
-   "en": "Có đặc trưng trong thiết kế của cô ấy.",
+   "en": "Her designs have a distinctive character.",
    "seg": [
     {
      "t": "彼女",
@@ -53294,12 +53294,12 @@
   "section_title": "Thiết kế",
   "word": "特色",
   "meaning_vi": "Điểm đặc sắc",
-  "meaning_en": "Điểm đặc sắc",
+  "meaning_en": "distinctive feature, individuality",
   "furigana": "とくしょく",
   "example": {
    "jp": "兄（あに）はいつも特色（とくしょく）のない服装（ふくそう）をしている。",
    "vi": "Anh tôi lúc nào cũng dùng trang phục không có gì đặc sắc.",
-   "en": "Anh tôi lúc nào cũng dùng trang phục không có gì đặc sắc.",
+   "en": "My older brother always wears clothes with no distinctive character.",
    "seg": [
     {
      "t": "兄",
@@ -53334,12 +53334,12 @@
   "section_title": "Thiết kế",
   "word": "柄",
   "meaning_vi": "Hoa văn, họa tiết",
-  "meaning_en": "Hoa văn, họa tiết",
+  "meaning_en": "pattern, design (on fabric)",
   "furigana": "がら",
   "example": {
    "jp": "このT（てぃー）シャツは10種類（じゅっしゅるい）の柄（がら）から選（えら）べます。",
    "vi": "Loại áo phông này có 10 kiểu hoa văn bạn có thể lựa chọn.",
-   "en": "Loại áo phông này có 10 kiểu hoa văn bạn có thể lựa chọn.",
+   "en": "This T-shirt comes in ten patterns to choose from.",
    "seg": [
     {
      "t": "この"
@@ -53384,12 +53384,12 @@
   "section_title": "Thiết kế",
   "word": "花柄",
   "meaning_vi": "Họa tiết hoa",
-  "meaning_en": "Họa tiết hoa",
+  "meaning_en": "floral pattern",
   "furigana": "はながら",
   "example": {
    "jp": "花（はな）柄（がら）のスカートがほしい。",
    "vi": "Tôi muốn có cái váy hoa.",
-   "en": "Tôi muốn có cái váy hoa.",
+   "en": "I want a floral-patterned skirt.",
    "seg": [
     {
      "t": "花",
@@ -53414,12 +53414,12 @@
   "section_title": "Thiết kế",
   "word": "水玉",
   "meaning_vi": "Chấm bi",
-  "meaning_en": "Chấm bi",
+  "meaning_en": "polka dots",
   "furigana": "みずたま",
   "example": {
    "jp": "この水玉（みずたま）のワンピースは、とてもかわいい。",
    "vi": "Cái đầm chấm bi này trông rất dễ thương.",
-   "en": "Cái đầm chấm bi này trông rất dễ thương.",
+   "en": "This polka-dot dress is very cute.",
    "seg": [
     {
      "t": "この"
@@ -53443,11 +53443,11 @@
   "section_title": "Thiết kế",
   "word": "しま",
   "meaning_vi": "Kẻ sọc",
-  "meaning_en": "Kẻ sọc",
+  "meaning_en": "stripes",
   "example": {
    "jp": "しまのシャツを着（き）ると、やせて見（み）える。",
    "vi": "Mặc cái áo kẻ sọc trông gầy đi.",
-   "en": "Mặc cái áo kẻ sọc trông gầy đi.",
+   "en": "Wearing a striped shirt makes you look slimmer.",
    "seg": [
     {
      "t": "しまのシャツを"
@@ -53478,11 +53478,11 @@
   "section_title": "Thiết kế",
   "word": "たて",
   "meaning_vi": "Chiều dọc",
-  "meaning_en": "Chiều dọc",
+  "meaning_en": "vertical, lengthwise",
   "example": {
    "jp": "たての方向（ほうこう）に線（せん）を書（か）いてください。",
    "vi": "Hãy viết một đường thẳng theo chiều dọc.",
-   "en": "Hãy viết một đường thẳng theo chiều dọc.",
+   "en": "Please draw a line in the vertical direction.",
    "seg": [
     {
      "t": "たての"
@@ -53520,12 +53520,12 @@
   "section_title": "Thiết kế",
   "word": "横",
   "meaning_vi": "Chiều ngang",
-  "meaning_en": "Chiều ngang",
+  "meaning_en": "horizontal, sideways, width",
   "furigana": "よこ",
   "example": {
    "jp": "英語（えいご）は横（よこ）に書（か）く。",
    "vi": "Tiếng Anh thì viết ngang.",
-   "en": "Tiếng Anh thì viết ngang.",
+   "en": "English is written horizontally.",
    "seg": [
     {
      "t": "英語",
@@ -53560,11 +53560,11 @@
   "section_title": "Thiết kế",
   "word": "ななめ＜な＞",
   "meaning_vi": "Đường chéo, góc chéo chéo, ngang",
-  "meaning_en": "Đường chéo, góc chéo chéo, ngang",
+  "meaning_en": "diagonal, at an angle, slanted",
   "example": {
    "jp": "このイラストは、ななめから見（み）ると、おもしろい。（名） 絵（え）がななめにかかっている。（ナ形）",
    "vi": "Hình ảnh này nếu nhìn theo góc chéo sẽ thấy thú vị. / Bức tranh bị treo nghiêng.",
-   "en": "Hình ảnh này nếu nhìn theo góc chéo sẽ thấy thú vị. / Bức tranh bị treo nghiêng.",
+   "en": "This illustration is interesting when viewed from an angle. The picture is hanging crooked.",
    "seg": [
     {
      "t": "このイラストは、ななめから"
@@ -53595,12 +53595,12 @@
   "section_title": "Thiết kế",
   "word": "幅",
   "meaning_vi": "Bề ngang",
-  "meaning_en": "Bề ngang",
+  "meaning_en": "width, breadth",
   "furigana": "はば",
   "example": {
    "jp": "このテーブルの幅（はば）は、90センチだ。",
    "vi": "Bề ngang của cái bàn này rộng 90 cm.",
-   "en": "Bề ngang của cái bàn này rộng 90 cm.",
+   "en": "The width of this table is 90 centimeters.",
    "seg": [
     {
      "t": "このテーブルの"
@@ -53624,11 +53624,11 @@
   "section_title": "Thiết kế",
   "word": "ストライプ",
   "meaning_vi": "Kẻ sọc",
-  "meaning_en": "Kẻ sọc",
+  "meaning_en": "stripe",
   "example": {
    "jp": "細（ほそ）いストライプのT（てぃー）シャツを買（か）った。",
    "vi": "Tôi đã mua một cái áo phông có kẻ sọc nhỏ.",
-   "en": "Tôi đã mua một cái áo phông có kẻ sọc nhỏ.",
+   "en": "I bought a T-shirt with thin stripes.",
    "seg": [
     {
      "t": "細",
@@ -53663,12 +53663,12 @@
   "section_title": "Thiết kế",
   "word": "無地",
   "meaning_vi": "Trơn, không có họa tiết",
-  "meaning_en": "Trơn, không có họa tiết",
+  "meaning_en": "plain, solid color, without a pattern",
   "furigana": "むじ",
   "example": {
    "jp": "無地（むじ）のシャツは、柄（がら）のスカートと合（あ）わせやすい。",
    "vi": "Áo trơn dễ phối với váy có họa tiết.",
-   "en": "Áo trơn dễ phối với váy có họa tiết.",
+   "en": "A plain shirt is easy to pair with a patterned skirt.",
    "seg": [
     {
      "t": "無地",
@@ -53703,11 +53703,11 @@
   "section_title": "Thiết kế",
   "word": "シンプルな",
   "meaning_vi": "Đơn giản, giản dị",
-  "meaning_en": "Đơn giản, giản dị",
+  "meaning_en": "simple, plain",
   "example": {
    "jp": "今日（きょう）はシンプルなファッションで出（で）かけよう。",
    "vi": "Hôm nay, mình hãy ra đường với thời trang đơn giản!",
-   "en": "Hôm nay, mình hãy ra đường với thời trang đơn giản!",
+   "en": "Let's go out in simple fashion today.",
    "seg": [
     {
      "t": "今日",
@@ -53735,12 +53735,12 @@
   "section_title": "Thiết kế",
   "word": "真っ赤な",
   "meaning_vi": "Đỏ rực",
-  "meaning_en": "Đỏ rực",
+  "meaning_en": "bright red, crimson",
   "furigana": "まっかな",
   "example": {
    "jp": "真っ赤（まっか）な服（ふく）を着（き）て、パーティーに行（い）った。",
    "vi": "Tôi mặc bộ quần áo đỏ rực đi dự tiệc.",
-   "en": "Tôi mặc bộ quần áo đỏ rực đi dự tiệc.",
+   "en": "I wore bright red clothes to the party.",
    "seg": [
     {
      "t": "真っ赤",
@@ -53782,11 +53782,11 @@
   "section_title": "Thiết kế",
   "word": "ばらばらな",
   "meaning_vi": "Lung tung, rời rạc",
-  "meaning_en": "Lung tung, rời rạc",
+  "meaning_en": "mismatched, scattered, all different",
   "example": {
    "jp": "このシャツのボタンは、色（いろ）もデザインもばらばらだ。",
    "vi": "Nút áo sơ mi này kiểu cọ lẫn màu sắc lung tung cả lên.",
-   "en": "Nút áo sơ mi này kiểu cọ lẫn màu sắc lung tung cả lên.",
+   "en": "The buttons on this shirt are all different in color and design.",
    "seg": [
     {
      "t": "このシャツのボタンは、"
@@ -53810,11 +53810,11 @@
   "section_title": "Thiết kế",
   "word": "すっきり[と]＜する＞",
   "meaning_vi": "Sự thanh thoát, gọn gàng",
-  "meaning_en": "Sự thanh thoát, gọn gàng",
+  "meaning_en": "neat, tidy, refreshed",
   "example": {
    "jp": "彼（かれ）のスーツは細（ほそ）めで、すっきりしている。",
    "vi": "Bộ vest của anh ấy thanh mảnh, trông gọn gàng.",
-   "en": "Bộ vest của anh ấy thanh mảnh, trông gọn gàng.",
+   "en": "His suit is slim-cut and looks sharp.",
    "seg": [
     {
      "t": "彼",
@@ -53842,12 +53842,12 @@
   "section_title": "Thiết kế",
   "word": "素敵な",
   "meaning_vi": "Tuyệt, đẹp",
-  "meaning_en": "Tuyệt, đẹp",
+  "meaning_en": "wonderful, lovely, splendid",
   "furigana": "すてきな",
   "example": {
    "jp": "このスカーフは、とても素敵（すてき）です。",
    "vi": "Cái khăn quàng cổ này trông rất tuyệt.",
-   "en": "Cái khăn quàng cổ này trông rất tuyệt.",
+   "en": "This scarf is absolutely lovely.",
    "seg": [
     {
      "t": "このスカーフは、とても"
@@ -53871,12 +53871,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "印象",
   "meaning_vi": "Ấn tượng",
-  "meaning_en": "Ấn tượng",
+  "meaning_en": "impression",
   "furigana": "いんしょう",
   "example": {
    "jp": "彼（かれ）に初（はじ）めて会（あ）ったとき、あまり印象（いんしょう）がよくなかった。",
    "vi": "Lần đầu tiên gặp anh ấy, tôi không có ấn tượng tốt lắm.",
-   "en": "Lần đầu tiên gặp anh ấy, tôi không có ấn tượng tốt lắm.",
+   "en": "When I first met him, my impression wasn't very good.",
    "seg": [
     {
      "t": "彼",
@@ -53918,12 +53918,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "外見",
   "meaning_vi": "Ngoại hình, vẻ bề ngoài, mã",
-  "meaning_en": "Ngoại hình, vẻ bề ngoài, mã",
+  "meaning_en": "outward appearance, looks",
   "furigana": "がいけん",
   "example": {
    "jp": "彼（かれ）は外見（がいけん）はいいが、性格（せいかく）に問題（もんだい）が削（けず）そうだ。",
    "vi": "Anh ta đẹp mã nhưng tính cách có vấn đề.",
-   "en": "Anh ta đẹp mã nhưng tính cách có vấn đề.",
+   "en": "He's good-looking, but there seems to be a problem with his personality.",
    "seg": [
     {
      "t": "彼",
@@ -53972,12 +53972,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "様子",
   "meaning_vi": "Bộ dạng",
-  "meaning_en": "Bộ dạng",
+  "meaning_en": "appearance, state, look",
   "furigana": "ようす",
   "example": {
    "jp": "彼女（かのじょ）は疲（つか）れた様子（ようす）を、だれにも見（み）せない。",
    "vi": "Cô ấy không cho ai biết bộ dạng mệt mỏi của mình.",
-   "en": "Cô ấy không cho ai biết bộ dạng mệt mỏi của mình.",
+   "en": "She never lets anyone see her looking tired.",
    "seg": [
     {
      "t": "彼女",
@@ -54019,12 +54019,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "表情",
   "meaning_vi": "Biểu lộ cảm xúc, nét mặt",
-  "meaning_en": "Biểu lộ cảm xúc, nét mặt",
+  "meaning_en": "facial expression",
   "furigana": "ひょうじょう",
   "example": {
    "jp": "あの子（こ）は表情（ひょうじょう）が豊（ゆた）かだ。",
    "vi": "Biểu lộ cảm xúc của đứa bé ấy rất phong phú.",
-   "en": "Biểu lộ cảm xúc của đứa bé ấy rất phong phú.",
+   "en": "That child is very expressive.",
    "seg": [
     {
      "t": "あの"
@@ -54062,12 +54062,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "姿",
   "meaning_vi": "Dáng, bóng dáng",
-  "meaning_en": "Dáng, bóng dáng",
+  "meaning_en": "figure, form, sight of someone",
   "furigana": "すがた",
   "example": {
    "jp": "今日（きょう）、田中（たなか）さんの姿（すがた）を見（み）ていない。",
    "vi": "Hôm nay, tôi không thấy bóng dáng của anh Tanaka đâu.",
-   "en": "Hôm nay, tôi không thấy bóng dáng của anh Tanaka đâu.",
+   "en": "I haven't seen any sign of Mr. Tanaka today.",
    "seg": [
     {
      "t": "今日",
@@ -54109,12 +54109,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "雰囲気",
   "meaning_vi": "Bầu không khí, phong thái",
-  "meaning_en": "Bầu không khí, phong thái",
+  "meaning_en": "atmosphere, air, vibe",
   "furigana": "ふんいき",
   "example": {
    "jp": "彼（かれ）には特別（とくべつ）な雰囲気（ふんいき）がある。",
    "vi": "Ở anh ta có một phong thái đặc biệt.",
-   "en": "Ở anh ta có một phong thái đặc biệt.",
+   "en": "He has a special air about him.",
    "seg": [
     {
      "t": "彼",
@@ -54149,12 +54149,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "幼い",
   "meaning_vi": "Thơ, ngây thơ, thơ dại, dại khờ",
-  "meaning_en": "Thơ, ngây thơ, thơ dại, dại khờ",
+  "meaning_en": "young, infant; immature, childish",
   "furigana": "おさない",
   "example": {
    "jp": "①彼女（かのじょ）には幼（おさな）い子（こ）どもがいる。 ②何（なん）歳（さい）になっても、あの人（ひと）の考（かんが）えは幼（おさな）いままだ。",
    "vi": "①Cô ấy có con thơ. ②Bao nhiêu tuổi đi nữa, suy nghĩ của người kia vẫn cứ ngây thơ.",
-   "en": "①Cô ấy có con thơ. ②Bao nhiêu tuổi đi nữa, suy nghĩ của người kia vẫn cứ ngây thơ.",
+   "en": "(1) She has a young child. (2) No matter how old he gets, that person's thinking stays childish.",
    "seg": [
     {
      "t": "①"
@@ -54224,11 +54224,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "かっこいい",
   "meaning_vi": "Đẹp trai, lịch thiệp, có phong cách",
-  "meaning_en": "Đẹp trai, lịch thiệp, có phong cách",
+  "meaning_en": "cool, good-looking, stylish",
   "example": {
    "jp": "彼（かれ）はおしゃれで、とてもかっこいい。",
    "vi": "Anh ấy mặc diện, trông rất đẹp trai.",
-   "en": "Anh ấy mặc diện, trông rất đẹp trai.",
+   "en": "He dresses well and looks really cool.",
    "seg": [
     {
      "t": "彼",
@@ -54249,12 +54249,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "言葉づかい",
   "meaning_vi": "Cách ăn nói, cách dùng từ ngữ",
-  "meaning_en": "Cách ăn nói, cách dùng từ ngữ",
+  "meaning_en": "way of speaking, choice of words",
   "furigana": "ことばづかい",
   "example": {
    "jp": "彼（かれ）は言葉（ことば）づかいが悪（わる）い。",
    "vi": "Anh ta có cách ăn nói tồi tệ.",
-   "en": "Anh ta có cách ăn nói tồi tệ.",
+   "en": "His language is coarse.",
    "seg": [
     {
      "t": "彼",
@@ -54289,12 +54289,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "上品な",
   "meaning_vi": "Thanh lịch, nhã nhặn",
-  "meaning_en": "Thanh lịch, nhã nhặn",
+  "meaning_en": "elegant, refined",
   "furigana": "じょうひんな",
   "example": {
    "jp": "この女優（じょゆう）は、言葉（ことば）づかいがとても上品（じょうひん）だ。",
    "vi": "Nữ diễn viên này có cách ăn nói rất thanh lịch.",
-   "en": "Nữ diễn viên này có cách ăn nói rất thanh lịch.",
+   "en": "This actress's way of speaking is very refined.",
    "seg": [
     {
      "t": "この"
@@ -54332,12 +54332,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "下品な",
   "meaning_vi": "Thô tục",
-  "meaning_en": "Thô tục",
+  "meaning_en": "vulgar, crude",
   "furigana": "げひんな",
   "example": {
    "jp": "彼（かれ）は下品（げひん）な食（た）べ方（かた）をする。",
    "vi": "Anh ta ăn uống thô tục.",
-   "en": "Anh ta ăn uống thô tục.",
+   "en": "He eats in a crude way.",
    "seg": [
     {
      "t": "彼",
@@ -54379,12 +54379,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "地味な",
   "meaning_vi": "Đơn điệu",
-  "meaning_en": "Đơn điệu",
+  "meaning_en": "plain, sober, understated",
   "furigana": "じみな",
   "example": {
    "jp": "この服（ふく）は大学生（だいがくせい）の妹（いもうと）には、ちょっと地味（じみ）だ。",
    "vi": "Bộ quần áo này đối với em gái tôi là sinh viên đại học thì hơi đơn điệu.",
-   "en": "Bộ quần áo này đối với em gái tôi là sinh viên đại học thì hơi đơn điệu.",
+   "en": "These clothes are a bit plain for my younger sister, who's a university student.",
    "seg": [
     {
      "t": "この"
@@ -54429,12 +54429,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "派手な",
   "meaning_vi": "Lòe loẹt, sặc sỡ",
-  "meaning_en": "Lòe loẹt, sặc sỡ",
+  "meaning_en": "flashy, showy, loud",
   "furigana": "はでな",
   "example": {
    "jp": "彼女（かのじょ）は派手（はで）に見（み）えるが、本当（ほんとう）はおとなしい。",
    "vi": "Cô ấy trông thì loè loẹt thế thôi nhưng thực sự thì trầm tính.",
-   "en": "Cô ấy trông thì loè loẹt thế thôi nhưng thực sự thì trầm tính.",
+   "en": "She looks flashy, but she's actually quiet.",
    "seg": [
     {
      "t": "彼女",
@@ -54476,11 +54476,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "スマートな",
   "meaning_vi": "Thanh mảnh, lịch sự",
-  "meaning_en": "Thanh mảnh, lịch sự",
+  "meaning_en": "slim; refined, classy (in manner)",
   "example": {
    "jp": "①彼女（かのじょ）はモデルみたいにスマートだ。 ②彼（かれ）は女性（じょせい）に対して、いつもスマートだ。",
    "vi": "①Cô ấy thanh mảnh như người mẫu. ②Anh ta đối với cô ấy lúc nào cũng lịch sự.",
-   "en": "①Cô ấy thanh mảnh như người mẫu. ②Anh ta đối với cô ấy lúc nào cũng lịch sự.",
+   "en": "(1) She's as slim as a model. (2) He's always classy in how he treats women.",
    "seg": [
     {
      "t": "①"
@@ -54518,12 +54518,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "美人",
   "meaning_vi": "Người đẹp",
-  "meaning_en": "Người đẹp",
+  "meaning_en": "beautiful woman",
   "furigana": "びじん",
   "example": {
    "jp": "あんな美人（びじん）は、今（いま）まで見（み）たことがない。",
    "vi": "Từ trước tới giờ tôi chưa bao giờ nhìn thấy người đẹp như thế.",
-   "en": "Từ trước tới giờ tôi chưa bao giờ nhìn thấy người đẹp như thế.",
+   "en": "I've never seen such a beautiful woman before.",
    "seg": [
     {
      "t": "あんな"
@@ -54561,11 +54561,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "ハンサムな",
   "meaning_vi": "Đẹp trai",
-  "meaning_en": "Đẹp trai",
+  "meaning_en": "handsome",
   "example": {
    "jp": "娘（むすめ）は父（ちち）に「パパはハンサムだね。」と言（い）う。",
    "vi": "Con gái nói với bố 'papa đẹp trai nhỉ'.",
-   "en": "Con gái nói với bố 'papa đẹp trai nhỉ'.",
+   "en": "My daughter tells her father, \"Daddy, you're handsome.\"",
    "seg": [
     {
      "t": "娘",
@@ -54600,12 +54600,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "不思議＜な＞",
   "meaning_vi": "Sự kỳ lạ (kỳ lạ)",
-  "meaning_en": "Sự kỳ lạ (kỳ lạ)",
+  "meaning_en": "strange, mysterious, wondrous",
   "furigana": "ふしぎ",
   "example": {
    "jp": "彼女（かのじょ）には不思議（ふしぎ）な魅力（みりょく）がある。",
    "vi": "Ở cô ấy có một sự lôi cuốn kỳ lạ.",
-   "en": "Ở cô ấy có một sự lôi cuốn kỳ lạ.",
+   "en": "She has a mysterious charm about her.",
    "seg": [
     {
      "t": "彼女",
@@ -54640,12 +54640,12 @@
   "section_title": "Ấn tượng về con người",
   "word": "普通＜な＞",
   "meaning_vi": "Sự bình thường (bình thường)",
-  "meaning_en": "Sự bình thường (bình thường)",
+  "meaning_en": "ordinary, normal",
   "furigana": "ふつう",
   "example": {
    "jp": "彼（かれ）は普通（ふつう）の成績（せいせき）だったが、今（いま）は教授（きょうじゅ）になった。 あの店（みせ）のラーメンの味（あじ）は普通（ふつう）だ。",
    "vi": "Anh ấy có có thành tích học tập bình thường nhưng giờ đã trở thành giáo sư. / Vị mì ramen của cửa hàng đó bình thường.",
-   "en": "Anh ấy có có thành tích học tập bình thường nhưng giờ đã trở thành giáo sư. / Vị mì ramen của cửa hàng đó bình thường.",
+   "en": "His grades were ordinary, but now he's become a professor. The ramen at that place tastes ordinary.",
    "seg": [
     {
      "t": "彼",
@@ -54715,11 +54715,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "さわやかな",
   "meaning_vi": "Thanh thoát dễ chịu, mát mẻ dễ chịu",
-  "meaning_en": "Thanh thoát dễ chịu, mát mẻ dễ chịu",
+  "meaning_en": "refreshing, fresh, pleasant",
   "example": {
    "jp": "彼（かれ）のさわやかな笑顔（えがお）が大好（だいす）きだ。",
    "vi": "Tôi rất thích nụ cười thanh thoát dễ chịu của anh ấy.",
-   "en": "Tôi rất thích nụ cười thanh thoát dễ chịu của anh ấy.",
+   "en": "I love his refreshing smile.",
    "seg": [
     {
      "t": "彼",
@@ -54754,11 +54754,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "さっぱり＜する＞",
   "meaning_vi": "Sự sảng khoái, dễ tính, thoáng",
-  "meaning_en": "Sự sảng khoái, dễ tính, thoáng",
+  "meaning_en": "refreshed; frank, easygoing",
   "example": {
    "jp": "①朝（あさ）、シャワーを浴（あ）びたら、さっぱりした。 ②姉（あね）はさっぱりした性格（せいかく）だ。",
    "vi": "①Buổi sáng tắm vòi hoa sen xong cảm thấy sảng khoái. ②Chị gái tôi tính thoáng.",
-   "en": "①Buổi sáng tắm vòi hoa sen xong cảm thấy sảng khoái. ②Chị gái tôi tính thoáng.",
+   "en": "(1) I took a shower in the morning and felt refreshed. (2) My older sister has an easygoing personality.",
    "seg": [
     {
      "t": "①"
@@ -54803,11 +54803,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "にっこり[と] ＜する＞",
   "meaning_vi": "Mỉm cười",
-  "meaning_en": "Mỉm cười",
+  "meaning_en": "with a smile, beaming",
   "example": {
    "jp": "先生（せんせい）は会（あ）うと、にっこリ笑（わら）ってくれる。",
    "vi": "Mỗi khi gặp, thầy giáo lại mỉm cười với tôi.",
-   "en": "Mỗi khi gặp, thầy giáo lại mỉm cười với tôi.",
+   "en": "Whenever we meet, my teacher gives me a warm smile.",
    "seg": [
     {
      "t": "先生",
@@ -54842,11 +54842,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "にこにこ＜する＞",
   "meaning_vi": "Tươi cười, vui vẻ",
-  "meaning_en": "Tươi cười, vui vẻ",
+  "meaning_en": "smiling, all smiles",
   "example": {
    "jp": "彼女（かのじょ）は、いつもにこにこしている。",
    "vi": "Cô ấy lúc nào cũng tươi cười.",
-   "en": "Cô ấy lúc nào cũng tươi cười.",
+   "en": "She is always smiling.",
    "seg": [
     {
      "t": "彼女",
@@ -54867,11 +54867,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "にやにや＜する＞",
   "meaning_vi": "Cười nhếch mép, cười khẩy",
-  "meaning_en": "Cười nhếch mép, cười khẩy",
+  "meaning_en": "smirking, grinning",
   "example": {
    "jp": "彼（かれ）は、いつもこやにやしていて気持（きも）ち悪（わる）い。",
    "vi": "Anh ta lúc nào cũng cười nhếch mép, thật khó chịu.",
-   "en": "Anh ta lúc nào cũng cười nhếch mép, thật khó chịu.",
+   "en": "He's always smirking, and it's off-putting.",
    "seg": [
     {
      "t": "彼",
@@ -54906,11 +54906,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "いきいき「と]＜する＞",
   "meaning_vi": "Vui vẻ hoạt bát",
-  "meaning_en": "Vui vẻ hoạt bát",
+  "meaning_en": "lively, full of life, animated",
   "example": {
    "jp": "あの人（ひと）は、いつもいきいきとしている。",
    "vi": "Con người ấy lúc nào cũng vui vẻ hoạt bát.",
-   "en": "Con người ấy lúc nào cũng vui vẻ hoạt bát.",
+   "en": "That person is always full of life.",
    "seg": [
     {
      "t": "あの"
@@ -54934,11 +54934,11 @@
   "section_title": "Ấn tượng về con người",
   "word": "ぺらぺら[と]",
   "meaning_vi": "Lưu loát",
-  "meaning_en": "Lưu loát",
+  "meaning_en": "fluently",
   "example": {
    "jp": "彼女（かのじょ）は5か国語（ごかこくご）を、ぺらぺらと話（はな）す。",
    "vi": "Cô ấy nói lưu loát 5 thứ tiếng.",
-   "en": "Cô ấy nói lưu loát 5 thứ tiếng.",
+   "en": "She speaks five languages fluently.",
    "seg": [
     {
      "t": "彼女",
@@ -54973,12 +54973,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "表面",
   "meaning_vi": "Bề mặt, bề ngoài",
-  "meaning_en": "Bề mặt, bề ngoài",
+  "meaning_en": "surface, exterior",
   "furigana": "ひょうめん",
   "example": {
    "jp": "この果物（くだもの）の表面（ひょうめん）は固（かた）いが、中（なか）はやわらかい。",
    "vi": "Bề ngoài của loại quả này cứng nhưng bên trong lại mềm.",
-   "en": "Bề ngoài của loại quả này cứng nhưng bên trong lại mềm.",
+   "en": "The surface of this fruit is hard, but the inside is soft.",
    "seg": [
     {
      "t": "この"
@@ -55023,12 +55023,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "立派な",
   "meaning_vi": "Hoành tráng, xuất sắc",
-  "meaning_en": "Hoành tráng, xuất sắc",
+  "meaning_en": "splendid, fine, magnificent",
   "furigana": "りっぱな",
   "example": {
    "jp": "①リビングに、立派（りっぱ）なテーブルが置（お）いてある。 ②彼（かれ）は立派（りっぱ）な学者（がくしゃ）になった。",
    "vi": "①Ở phòng khách có kê một chiếc bàn trông khá hoành tráng. ②Ông ấy đã trở thành một học giả xuất sắc.",
-   "en": "①Ở phòng khách có kê một chiếc bàn trông khá hoành tráng. ②Ông ấy đã trở thành một học giả xuất sắc.",
+   "en": "(1) There's a magnificent table in the living room. (2) He became a distinguished scholar.",
    "seg": [
     {
      "t": "①リビングに、"
@@ -55080,12 +55080,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "目立つ",
   "meaning_vi": "Nổi bật",
-  "meaning_en": "Nổi bật",
+  "meaning_en": "stand out, be conspicuous",
   "furigana": "めだつ",
   "example": {
    "jp": "彼女（かのじょ）の服（ふく）は、派手（はで）で目立（めだ）つ。",
    "vi": "Bộ quần áo của cô ấy sặc sỡ, trông nổi bật.",
-   "en": "Bộ quần áo của cô ấy sặc sỡ, trông nổi bật.",
+   "en": "Her clothes are flashy and stand out.",
    "seg": [
     {
      "t": "彼女",
@@ -55127,11 +55127,11 @@
   "section_title": "Ấn tượng về vật",
   "word": "きらきら＜する＞",
   "meaning_vi": "Lấp lánh",
-  "meaning_en": "Lấp lánh",
+  "meaning_en": "sparkling, glittering",
   "example": {
    "jp": "このダイヤは小（ちい）さいけれど、きらきらしている。",
    "vi": "Hạt kim cương này nhỏ nhưng lấp lánh.",
-   "en": "Hạt kim cương này nhỏ nhưng lấp lánh.",
+   "en": "This diamond is small, but it sparkles.",
    "seg": [
     {
      "t": "このダイヤは"
@@ -55155,11 +55155,11 @@
   "section_title": "Ấn tượng về vật",
   "word": "ぴかぴか[と]",
   "meaning_vi": "Nhấp nháy",
-  "meaning_en": "Nhấp nháy",
+  "meaning_en": "glittering, twinkling, shiny",
   "example": {
    "jp": "クリスマスツリーがぴかぴかと光（ひか）っている。",
    "vi": "Cây thông nô-en đèn sáng nhấp nháy.",
-   "en": "Cây thông nô-en đèn sáng nhấp nháy.",
+   "en": "The Christmas tree is twinkling with lights.",
    "seg": [
     {
      "t": "クリスマスツリーがぴかぴかと"
@@ -55183,12 +55183,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "異なる",
   "meaning_vi": "Khác",
-  "meaning_en": "Khác",
+  "meaning_en": "differ, be different",
   "furigana": "ことなる",
   "example": {
    "jp": "AとBは似（に）ているが、微妙（びみょう）に異（こと）なる。",
    "vi": "A và B giống nhau nhưng hơi khác nhau tí tẹo.",
-   "en": "A và B giống nhau nhưng hơi khác nhau tí tẹo.",
+   "en": "A and B are similar, but they differ subtly.",
    "seg": [
     {
      "t": "AとBは"
@@ -55226,11 +55226,11 @@
   "section_title": "Ấn tượng về vật",
   "word": "ぼんやり[と] ＜する＞",
   "meaning_vi": "Mờ mờ",
-  "meaning_en": "Mờ mờ",
+  "meaning_en": "faintly, dimly; absent-mindedly",
   "example": {
    "jp": "遠（とお）くに山（やま）がぼんやりと見（み）える。",
    "vi": "Nhìn thấy núi mờ mờ ở đằng xa.",
-   "en": "Nhìn thấy núi mờ mờ ở đằng xa.",
+   "en": "The mountains are faintly visible in the distance.",
    "seg": [
     {
      "t": "遠",
@@ -55265,12 +55265,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "大型",
   "meaning_vi": "Lớn",
-  "meaning_en": "Lớn",
+  "meaning_en": "large-scale, large-size",
   "furigana": "おおがた",
   "example": {
    "jp": "明日（あした）、大型（おおがた）の台風（たいふう）が来（く）るかもしれない。",
    "vi": "Ngày mai bão lớn có thể sẽ đến.",
-   "en": "Ngày mai bão lớn có thể sẽ đến.",
+   "en": "A large typhoon may arrive tomorrow.",
    "seg": [
     {
      "t": "明日",
@@ -55312,12 +55312,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "多め＜な＞",
   "meaning_vi": "Hơi nhiều (một chút)",
-  "meaning_en": "Hơi nhiều (một chút)",
+  "meaning_en": "a bit more, on the generous side",
   "furigana": "おおめ",
   "example": {
    "jp": "ミルクが多（おお）めのコーヒーが好（す）きだ。 この店（みせ）のハンバーガーは、野菜（やさい）が多（おお）めだ。",
    "vi": "Tôi thích cà phê cho hơi nhiều sữa một chút. / Hamburger của cửa hàng này rau hơi nhiều.",
-   "en": "Tôi thích cà phê cho hơi nhiều sữa một chút. / Hamburger của cửa hàng này rau hơi nhiều.",
+   "en": "I like coffee with a bit more milk. The burgers at this place come with a generous amount of vegetables.",
    "seg": [
     {
      "t": "ミルクが"
@@ -55369,12 +55369,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "大きめ＜な＞",
   "meaning_vi": "Hơi to, hơi lớn (một chút)",
-  "meaning_en": "Hơi to, hơi lớn (một chút)",
+  "meaning_en": "a bit large, on the larger side",
   "furigana": "おおきめ",
   "example": {
    "jp": "子（こ）どもには、大（おお）きめの服（ふく）を買（か）ってあげる。 ジャケットは、大（おお）きめなほうが着（き）やすい。",
    "vi": "Tôi mua cho con bộ quần áo hơi lớn một chút. / Áo jacket hơi lớn một chút sẽ dễ mặc hơn.",
-   "en": "Tôi mua cho con bộ quần áo hơi lớn một chút. / Áo jacket hơi lớn một chút sẽ dễ mặc hơn.",
+   "en": "I buy slightly large clothes for my child. A jacket is easier to wear if it's on the larger side.",
    "seg": [
     {
      "t": "子",
@@ -55430,12 +55430,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "太め＜な＞",
   "meaning_vi": "Hơi to mập, hơi rộng (một chút)",
-  "meaning_en": "Hơi to mập, hơi rộng (một chút)",
+  "meaning_en": "a bit thick, on the thicker side",
   "furigana": "ふとめ",
   "example": {
    "jp": "今年（ことし）の夏（なつ）は、太（ふと）めのパンツがほしい。 ここのラーメンは太（ふと）めだ。",
    "vi": "Mùa hè năm nay tôi muốn có quần hơi rộng một chút. / Sợi mì ramen ở đây hơi to.",
-   "en": "Mùa hè năm nay tôi muốn có quần hơi rộng một chút. / Sợi mì ramen ở đây hơi to.",
+   "en": "This summer I want trousers on the looser side. The ramen noodles here are on the thick side.",
    "seg": [
     {
      "t": "今年",
@@ -55477,12 +55477,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "完ぺき＜な＞",
   "meaning_vi": "Hoàn hảo, không thể chê vào đâu được",
-  "meaning_en": "Hoàn hảo, không thể chê vào đâu được",
+  "meaning_en": "perfect, flawless",
   "furigana": "かんぺき",
   "example": {
    "jp": "この朝食（ちょうしょく）は、栄養（えいよう）のバランスが完（かん）ぺきだ。（ナ形）",
    "vi": "Bữa sáng này có sự cân bằng dinh dưỡng hoàn hảo.",
-   "en": "Bữa sáng này có sự cân bằng dinh dưỡng hoàn hảo.",
+   "en": "This breakfast has a perfect nutritional balance.",
    "seg": [
     {
      "t": "この"
@@ -55520,11 +55520,11 @@
   "section_title": "Ấn tượng về vật",
   "word": "たっぷり[と]＜する＞",
   "meaning_vi": "Đầy",
-  "meaning_en": "Đầy",
+  "meaning_en": "plenty, a generous amount",
   "example": {
    "jp": "紅茶（こうちゃ）にミルクと砂糖（さとう）をたっぷり入（い）れる。",
    "vi": "Cho đầy sữa và đường vào trà (hồng trà).",
-   "en": "Cho đầy sữa và đường vào trà (hồng trà).",
+   "en": "I put plenty of milk and sugar in my tea.",
    "seg": [
     {
      "t": "紅茶",
@@ -55559,12 +55559,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "多少",
   "meaning_vi": "Ít nhiều",
-  "meaning_en": "Ít nhiều",
+  "meaning_en": "somewhat, more or less",
   "furigana": "たしょう",
   "example": {
    "jp": "この商品（しょうひん）は、サンプルと多少（たしょう）違（ちが）う。",
    "vi": "Sản phẩm này ít nhiều khác với mẫu.",
-   "en": "Sản phẩm này ít nhiều khác với mẫu.",
+   "en": "This product differs somewhat from the sample.",
    "seg": [
     {
      "t": "この"
@@ -55599,11 +55599,11 @@
   "section_title": "Ấn tượng về vật",
   "word": "それほど",
   "meaning_vi": "Đến mức đó",
-  "meaning_en": "Đến mức đó",
+  "meaning_en": "(not) that much, to that extent",
   "example": {
    "jp": "みんなが彼（かれ）を変（へん）だと言（い）うが、それほどでもない。",
    "vi": "Mọi người đều nói anh ta khác thường nhưng không đến mức đó.",
-   "en": "Mọi người đều nói anh ta khác thường nhưng không đến mức đó.",
+   "en": "Everyone says he's odd, but he isn't really that bad.",
    "seg": [
     {
      "t": "みんなが"
@@ -55641,12 +55641,12 @@
   "section_title": "Ấn tượng về vật",
   "word": "縮む",
   "meaning_vi": "Bị co rút",
-  "meaning_en": "Bị co rút",
+  "meaning_en": "shrink",
   "furigana": "ちぢむ",
   "example": {
    "jp": "このシャツは、洗濯（せんたく）機（き）で洗（あら）うたびに縮（ちぢ）む。",
    "vi": "Cái áo này mỗi lần giặt bằng máy giặt đều bị co rút.",
-   "en": "Cái áo này mỗi lần giặt bằng máy giặt đều bị co rút.",
+   "en": "This shirt shrinks every time I wash it in the machine.",
    "seg": [
     {
      "t": "このシャツは、"
@@ -55688,12 +55688,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "現代",
   "meaning_vi": "Hiện đại",
-  "meaning_en": "Hiện đại",
+  "meaning_en": "modern times, the present age",
   "furigana": "げんだい",
   "example": {
    "jp": "現代（げんだい）の社会（しゃかい）には、いろいろな問題（もんだい）がある。",
    "vi": "Trong xã hội hiện đại có nhiều vấn đề.",
-   "en": "Trong xã hội hiện đại có nhiều vấn đề.",
+   "en": "Modern society has all sorts of problems.",
    "seg": [
     {
      "t": "現代",
@@ -55728,12 +55728,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "現実",
   "meaning_vi": "Hiện thực",
-  "meaning_en": "Hiện thực",
+  "meaning_en": "reality",
   "furigana": "げんじつ",
   "example": {
    "jp": "現実（げんじつ）はきびしいが、前（まえ）に進（すす）んでいこう。",
    "vi": "Hiện thực nghiệt ngã nhưng hãy tiến lên trước!",
-   "en": "Hiện thực nghiệt ngã nhưng hãy tiến lên trước!",
+   "en": "Reality is harsh, but let's keep moving forward.",
    "seg": [
     {
      "t": "現実",
@@ -55768,12 +55768,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "理想",
   "meaning_vi": "Lý tưởng",
-  "meaning_en": "Lý tưởng",
+  "meaning_en": "ideal",
   "furigana": "りそう",
   "example": {
    "jp": "理想（りそう）と現実（げんじつ）の間（ま）で悩（なや）むことがある。",
    "vi": "Giữa lý tưởng với hiện thực thường có những điều trăn trở.",
-   "en": "Giữa lý tưởng với hiện thực thường có những điều trăn trở.",
+   "en": "Sometimes I agonize over the gap between the ideal and reality.",
    "seg": [
     {
      "t": "理想",
@@ -55815,12 +55815,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "偉大な",
   "meaning_vi": "Vĩ đaị",
-  "meaning_en": "Vĩ đaị",
+  "meaning_en": "great, magnificent",
   "furigana": "いだいな",
   "example": {
    "jp": "社会（しゃかい）には偉大（いだい）なリーダーが必要（ひつよう）だ。",
    "vi": "Xã hội cần những người đứng đầu vĩ đại.",
-   "en": "Xã hội cần những người đứng đầu vĩ đại.",
+   "en": "Society needs great leaders.",
    "seg": [
     {
      "t": "社会",
@@ -55855,12 +55855,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "当然＜な＞",
   "meaning_vi": "Đương nhiên",
-  "meaning_en": "Đương nhiên",
+  "meaning_en": "natural, obvious, only to be expected",
   "furigana": "とうぜん",
   "example": {
    "jp": "子（こ）どもが親（おや）を大切（たいせつ）にするのは、当然（とうぜん）のことだ。（名） 今日（きょう）の試合（しあい）の結果（けっか）は当然（とうぜん）だ。（ナ形）",
    "vi": "Con cái trân trọng bố mẹ là lẽ đương nhiên. / Kết quả trận đấu ngày hôm nay là đương nhiên.",
-   "en": "Con cái trân trọng bố mẹ là lẽ đương nhiên. / Kết quả trận đấu ngày hôm nay là đương nhiên.",
+   "en": "It's only natural for children to treasure their parents. Today's match result was only to be expected.",
    "seg": [
     {
      "t": "子",
@@ -55930,12 +55930,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "当たり前＜な＞",
   "meaning_vi": "Sự đương nhiên (đương nhiên)",
-  "meaning_en": "Sự đương nhiên (đương nhiên)",
+  "meaning_en": "natural, obvious, a matter of course",
   "furigana": "あたりまえ",
   "example": {
    "jp": "困（こま）っている人（ひと）を助（たす）けるのは当たり前（あたりまえ）だ。（ナ形）",
    "vi": "Giúp đỡ người đang gặp khó khăn là đương nhiên.",
-   "en": "Giúp đỡ người đang gặp khó khăn là đương nhiên.",
+   "en": "Helping someone in trouble is only natural.",
    "seg": [
     {
      "t": "困",
@@ -55977,12 +55977,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "[お]金持ち",
   "meaning_vi": "Người giàu, giàu",
-  "meaning_en": "Người giàu, giàu",
+  "meaning_en": "rich person, wealthy",
   "furigana": "[お]かねもち",
   "example": {
    "jp": "子（こ）どものころは、お金持（かねも）ちになりたかった。",
    "vi": "Lúc nhỏ, tôi đã muốn trở thành người giàu có.",
-   "en": "Lúc nhỏ, tôi đã muốn trở thành người giàu có.",
+   "en": "When I was a child, I wanted to become rich.",
    "seg": [
     {
      "t": "子",
@@ -56010,12 +56010,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "貧しい",
   "meaning_vi": "Nghèo",
-  "meaning_en": "Nghèo",
+  "meaning_en": "poor; meager, impoverished",
   "furigana": "まずしい",
   "example": {
    "jp": "①彼（かれ）は貧（まず）しかったが、努力（どりょく）して社長（しゃちょう）になった。 ②彼（かれ）は考（かんが）えが貧（まず）しい。",
    "vi": "①Anh ấy nghèo nhưng đã nỗ lực và trở thành giám đốc. ②Suy nghĩ của anh ta nghèo nàn.",
-   "en": "①Anh ấy nghèo nhưng đã nỗ lực và trở thành giám đốc. ②Suy nghĩ của anh ta nghèo nàn.",
+   "en": "(1) He was poor, but through hard work he became a company president. (2) His thinking is impoverished.",
    "seg": [
     {
      "t": "①"
@@ -56081,12 +56081,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "貧乏＜な/する＞",
   "meaning_vi": "Sự nghèo khổ (nghèo)",
-  "meaning_en": "Sự nghèo khổ (nghèo)",
+  "meaning_en": "poverty, poor",
   "furigana": "びんぼう",
   "example": {
    "jp": "祖父（そふ）は子（こ）どものころ、貧乏（びんぼう）だったそうだ。",
    "vi": "Nghe nói ông tôi hồi bé nghèo.",
-   "en": "Nghe nói ông tôi hồi bé nghèo.",
+   "en": "Apparently my grandfather was poor when he was a child.",
    "seg": [
     {
      "t": "祖父",
@@ -56121,12 +56121,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "発展＜する＞",
   "meaning_vi": "Sự phát triển",
-  "meaning_en": "Sự phát triển",
+  "meaning_en": "development, growth",
   "furigana": "はってん",
   "example": {
    "jp": "社会（しゃかい）の発展（はってん）のために役に立（やくにた）ちたい。",
    "vi": "Tôi muốn góp phần vào sự phát triển của xã hội.",
-   "en": "Tôi muốn góp phần vào sự phát triển của xã hội.",
+   "en": "I want to be of use to the development of society.",
    "seg": [
     {
      "t": "社会",
@@ -56161,12 +56161,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "進歩＜する＞",
   "meaning_vi": "Sự tiến bộ",
-  "meaning_en": "Sự tiến bộ",
+  "meaning_en": "progress, advance",
   "furigana": "しんぽ",
   "example": {
    "jp": "技術（ぎじゅつ）は常（つね）に進歩（しんぽ）している。",
    "vi": "Kỹ thuật thường xuyên tiến bộ.",
-   "en": "Kỹ thuật thường xuyên tiến bộ.",
+   "en": "Technology is constantly advancing.",
    "seg": [
     {
      "t": "技術",
@@ -56201,12 +56201,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "強力な",
   "meaning_vi": "Mạnh mẽ",
-  "meaning_en": "Mạnh mẽ",
+  "meaning_en": "powerful, strong",
   "furigana": "きょうりょくな",
   "example": {
    "jp": "将来（しょうらい）のために、強力（きょうりょく）に発展（はってん）を進（すす）める。",
    "vi": "Thúc đẩy phát triển mạnh mẽ vì tương lai.",
-   "en": "Thúc đẩy phát triển mạnh mẽ vì tương lai.",
+   "en": "For the sake of the future, we push development forward vigorously.",
    "seg": [
     {
      "t": "将来",
@@ -56248,11 +56248,11 @@
   "section_title": "Xã hội của chúng ta",
   "word": "パワー",
   "meaning_vi": "Sức mạnh, năng lượng",
-  "meaning_en": "Sức mạnh, năng lượng",
+  "meaning_en": "power, energy",
   "example": {
    "jp": "若者（わかもの）のパワーが、これからの社会（しゃかい）をつくる。",
    "vi": "Sức mạnh của tuổi trẻ tạo nên xã hội mai sau.",
-   "en": "Sức mạnh của tuổi trẻ tạo nên xã hội mai sau.",
+   "en": "The energy of young people will build the society of the future.",
    "seg": [
     {
      "t": "若者",
@@ -56280,11 +56280,11 @@
   "section_title": "Xã hội của chúng ta",
   "word": "あふれる",
   "meaning_vi": "Dâng đầy, đầy",
-  "meaning_en": "Dâng đầy, đầy",
+  "meaning_en": "overflow, be full of",
   "example": {
    "jp": "①大雨（おおあめ）で川（かわ）の水（みず）があふれた。 ②ラッシュで、人（ひと）がホームにあふれている。",
    "vi": "①Mưa lớn nước sông dâng đầy. ②giờ cao điểm người đầy sân ga.",
-   "en": "①Mưa lớn nước sông dâng đầy. ②giờ cao điểm người đầy sân ga.",
+   "en": "(1) The river water overflowed in the heavy rain. (2) During rush hour, the platform is overflowing with people.",
    "seg": [
     {
      "t": "①"
@@ -56329,11 +56329,11 @@
   "section_title": "Xã hội của chúng ta",
   "word": "くずれる",
   "meaning_vi": "Lở, hư hại, bị phá vỡ",
-  "meaning_en": "Lở, hư hại, bị phá vỡ",
+  "meaning_en": "collapse, crumble, break down",
   "example": {
    "jp": "①大雨（おおあめ）で山（やま）がくずれた。 ②社会（しゃかい）のルールがくずれてきている。",
    "vi": "①Mưa lớn làm núi lở. ②Luật lệ xã hội bị phá vỡ.",
-   "en": "①Mưa lớn làm núi lở. ②Luật lệ xã hội bị phá vỡ.",
+   "en": "(1) The mountainside collapsed in the heavy rain. (2) The rules of society are breaking down.",
    "seg": [
     {
      "t": "①"
@@ -56371,12 +56371,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "経つ",
   "meaning_vi": "Trôi qua",
-  "meaning_en": "Trôi qua",
+  "meaning_en": "pass, elapse (of time)",
   "furigana": "たつ",
   "example": {
    "jp": "何（なん）年（ねん）経（た）っても、あの事故（じこ）を忘（わす）れてはいけない。",
    "vi": "Cho dù là bao nhiêu năm trôi qua đi nữa cũng không được quên vụ tai nạn ấy.",
-   "en": "Cho dù là bao nhiêu năm trôi qua đi nữa cũng không được quên vụ tai nạn ấy.",
+   "en": "No matter how many years pass, we must not forget that accident.",
    "seg": [
     {
      "t": "何",
@@ -56419,12 +56419,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "前後",
   "meaning_vi": "Trước sau, bên dưới",
-  "meaning_en": "Trước sau, bên dưới",
+  "meaning_en": "before and after, around, approximately",
   "furigana": "ぜんご",
   "example": {
    "jp": "20歳（はたち）前後（ぜんご）の若者（わかもの）に、アンケートを取（と）った。",
    "vi": "Tôi đã thực hiện khảo sát với đối tượng thanh niên trên dưới 20 tuổi.",
-   "en": "Tôi đã thực hiện khảo sát với đối tượng thanh niên trên dưới 20 tuổi.",
+   "en": "I surveyed young people around twenty years old.",
    "seg": [
     {
      "t": "20"
@@ -56466,12 +56466,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "盛んな",
   "meaning_vi": "Rầm rộ, thịnh vượng, phát triển",
-  "meaning_en": "Rầm rộ, thịnh vượng, phát triển",
+  "meaning_en": "thriving, prosperous, popular",
   "furigana": "さかんな",
   "example": {
    "jp": "この町（まち）は、今（いま）でも祭（まつ）りが盛（さか）んだ。",
    "vi": "Phố này ngay cả bây giờ lễ hội vẫn rầm rộ.",
-   "en": "Phố này ngay cả bây giờ lễ hội vẫn rầm rộ.",
+   "en": "In this town, festivals are still thriving even now.",
    "seg": [
     {
      "t": "この"
@@ -56516,12 +56516,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "産業",
   "meaning_vi": "Ngành, ngành sản xuất",
-  "meaning_en": "Ngành, ngành sản xuất",
+  "meaning_en": "industry",
   "furigana": "さんぎょう",
   "example": {
    "jp": "日本（にほん）には、新（あたら）しい産業（さんぎょう）が必要（ひつよう）だ。",
    "vi": "Ở Nhật Bản cần có ngành sản xuất mới.",
-   "en": "Ở Nhật Bản cần có ngành sản xuất mới.",
+   "en": "Japan needs new industries.",
    "seg": [
     {
      "t": "日本",
@@ -56563,12 +56563,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "工業",
   "meaning_vi": "Công nghiệp",
-  "meaning_en": "Công nghiệp",
+  "meaning_en": "manufacturing industry",
   "furigana": "こうぎょう",
   "example": {
    "jp": "私（わたし）のふるさとでは工業（こうぎょう）が盛（さか）んだ。",
    "vi": "Ở quê tôi công nghiệp phát triển.",
-   "en": "Ở quê tôi công nghiệp phát triển.",
+   "en": "In my hometown, manufacturing is thriving.",
    "seg": [
     {
      "t": "私",
@@ -56603,12 +56603,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "商業",
   "meaning_vi": "Thương nghiệp, thương mại",
-  "meaning_en": "Thương nghiệp, thương mại",
+  "meaning_en": "commerce, trade",
   "furigana": "しょうぎょう",
   "example": {
    "jp": "この地方（ちほう）は商業（しょうぎょう）の町（まち）だ。",
    "vi": "Địa phương này là một thành phố thương mại.",
-   "en": "Địa phương này là một thành phố thương mại.",
+   "en": "This region is a commercial town.",
    "seg": [
     {
      "t": "この"
@@ -56646,12 +56646,12 @@
   "section_title": "Xã hội của chúng ta",
   "word": "農業",
   "meaning_vi": "Nông nghiệp",
-  "meaning_en": "Nông nghiệp",
+  "meaning_en": "agriculture, farming",
   "furigana": "のうぎょう",
   "example": {
    "jp": "いなかで農業（のうぎょう）を始（はじ）めたい。",
    "vi": "Tôi muốn bắt đầu làm nông ở vùng quê.",
-   "en": "Tôi muốn bắt đầu làm nông ở vùng quê.",
+   "en": "I want to take up farming in the countryside.",
    "seg": [
     {
      "t": "いなかで"
@@ -56682,12 +56682,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "語る",
   "meaning_vi": "Kể, nói",
-  "meaning_en": "Kể, nói",
+  "meaning_en": "talk about, tell, narrate",
   "furigana": "かたる",
   "example": {
    "jp": "政治（せいじ）家（か）が平和（へいわ）について語（かた）った。",
    "vi": "Chính trị gia đã nói về hòa bình.",
-   "en": "Chính trị gia đã nói về hòa bình.",
+   "en": "The politician spoke about peace.",
    "seg": [
     {
      "t": "政治",
@@ -56726,12 +56726,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "解消＜する＞",
   "meaning_vi": "Sự giải quyết, giải tỏa",
-  "meaning_en": "Sự giải quyết, giải tỏa",
+  "meaning_en": "resolve, eliminate, clear up",
   "furigana": "かいしょう",
   "example": {
    "jp": "国（くに）と国（くに）のトラブルを解消（かいしょう）するのは難（むずか）しい。",
    "vi": "Việc giải quyết rắc rối giữa nước này với nước kia thì khó khăn.",
-   "en": "Việc giải quyết rắc rối giữa nước này với nước kia thì khó khăn.",
+   "en": "Resolving trouble between one country and another is difficult.",
    "seg": [
     {
      "t": "国",
@@ -56773,11 +56773,11 @@
   "section_title": "Xã hội quốc tế",
   "word": "それぞれ",
   "meaning_vi": "Mỗi, riêng",
-  "meaning_en": "Mỗi, riêng",
+  "meaning_en": "each, respective, respectively",
   "example": {
    "jp": "全（すべ）ての国（くに）に、それぞれの文化（ぶんか）がある。（名） 人（ひと）は、それぞれ違（ちが）う考（かんが）えを持（も）っている。（副（ふく））",
    "vi": "Tất cả các nước đều có văn hóa riêng. / Mỗi người đều có suy nghĩ riêng khác nhau.",
-   "en": "Tất cả các nước đều có văn hóa riêng. / Mỗi người đều có suy nghĩ riêng khác nhau.",
+   "en": "Every country has its own culture. People each hold different views.",
    "seg": [
     {
      "t": "全",
@@ -56847,12 +56847,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "片方",
   "meaning_vi": "Một phía",
-  "meaning_en": "Một phía",
+  "meaning_en": "one side, one of a pair",
   "furigana": "かたほう",
   "example": {
    "jp": "片方（かたほう）だけでなく、両方（りょうほう）の意見（いけん）を聞（き）くことが大切（たいせつ）だ。",
    "vi": "Việc nghe ý kiến từ cả hai phía chứ không phải một phía là quan trọng.",
-   "en": "Việc nghe ý kiến từ cả hai phía chứ không phải một phía là quan trọng.",
+   "en": "It's important to hear both sides, not just one.",
    "seg": [
     {
      "t": "片方",
@@ -56901,12 +56901,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "囲む",
   "meaning_vi": "Vây quanh, bao bọc",
-  "meaning_en": "Vây quanh, bao bọc",
+  "meaning_en": "surround, enclose",
   "furigana": "かこむ",
   "example": {
    "jp": "A国（こく）は3つの国（くに）に囲（かこ）まれている。",
    "vi": "Nước A được bao bọc bởi 3 nước.",
-   "en": "Nước A được bao bọc bởi 3 nước.",
+   "en": "Country A is surrounded by three countries.",
    "seg": [
     {
      "t": "A"
@@ -56944,12 +56944,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "代わり",
   "meaning_vi": "Thay cho",
-  "meaning_en": "Thay cho",
+  "meaning_en": "in place of, in exchange for",
   "furigana": "かわり",
   "example": {
    "jp": "車（くるま）を輸出（ゆしゅつ）する代（か）わりに、石油（せきゆ）や小麦粉（こむぎこ）を輸入（ゆにゅう）する。",
    "vi": "Thay cho việc xuất khẩu xe hơi thì nhập xăng dầu, bột mì.",
-   "en": "Thay cho việc xuất khẩu xe hơi thì nhập xăng dầu, bột mì.",
+   "en": "In exchange for exporting cars, they import oil and flour.",
    "seg": [
     {
      "t": "車",
@@ -57005,12 +57005,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "友好",
   "meaning_vi": "Tình hữu nghị",
-  "meaning_en": "Tình hữu nghị",
+  "meaning_en": "friendship, amity (between nations)",
   "furigana": "ゆうこう",
   "example": {
    "jp": "近（ちか）くの国（くに）との友好（ゆうこう）は、特（とく）に大切（たいせつ）だ。",
    "vi": "Tình hữu nghị với nước láng giềng là đặc biệt quan trọng.",
-   "en": "Tình hữu nghị với nước láng giềng là đặc biệt quan trọng.",
+   "en": "Friendly relations with neighboring countries are especially important.",
    "seg": [
     {
      "t": "近",
@@ -57059,12 +57059,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "期待＜する＞",
   "meaning_vi": "Kỳ vọng, hy vọng",
-  "meaning_en": "Kỳ vọng, hy vọng",
+  "meaning_en": "expect, look forward to, have hopes for",
   "furigana": "きたい",
   "example": {
    "jp": "これからの両国（りょうこく）の友好（ゆうこう）関係（かんけい）に期待（きたい）している。",
    "vi": "Tôi hi vọng vào mối quan hệ hữu nghị hai nước trong mai đây.",
-   "en": "Tôi hi vọng vào mối quan hệ hữu nghị hai nước trong mai đây.",
+   "en": "I have high hopes for the friendly relations between the two countries going forward.",
    "seg": [
     {
      "t": "これからの"
@@ -57106,12 +57106,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "区別＜する＞",
   "meaning_vi": "Sự phân biệt, tách biệt",
-  "meaning_en": "Sự phân biệt, tách biệt",
+  "meaning_en": "distinguish, differentiate",
   "furigana": "くべつ",
   "example": {
    "jp": "国（くに）の問題（もんだい）と個人（こじん）の問題（もんだい）を区別（くべつ）しよう。",
    "vi": "Hãy tách biệt giữa vấn đề của đất nước với vấn đề của cá nhân!",
-   "en": "Hãy tách biệt giữa vấn đề của đất nước với vấn đề của cá nhân!",
+   "en": "Let's distinguish between national issues and personal ones.",
    "seg": [
     {
      "t": "国",
@@ -57160,12 +57160,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "差别＜する＞",
   "meaning_vi": "Sự phân biệt đối xử",
-  "meaning_en": "Sự phân biệt đối xử",
+  "meaning_en": "discrimination",
   "furigana": "さべつ",
   "example": {
    "jp": "差別（さべつ）のない社会（しゃかい）にしたい。",
    "vi": "Tôi muốn xây dựng một xã hội không có sự phân biệt đôí xử.",
-   "en": "Tôi muốn xây dựng một xã hội không có sự phân biệt đôí xử.",
+   "en": "I want to make a society without discrimination.",
    "seg": [
     {
      "t": "差別",
@@ -57193,12 +57193,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "限界",
   "meaning_vi": "giới hạn",
-  "meaning_en": "giới hạn",
+  "meaning_en": "limit, boundary",
   "furigana": "げんかい",
   "example": {
    "jp": "A国（こく）のB国（こく）に対する我慢（がまん）が、限界（げんかい）を超（こ）えた。",
    "vi": "Sự chịu đựng của nước A đối với nước B đã vượt quá giới hạn.",
-   "en": "Sự chịu đựng của nước A đối với nước B đã vượt quá giới hạn.",
+   "en": "Country A's patience with Country B has passed its limit.",
    "seg": [
     {
      "t": "A"
@@ -57250,12 +57250,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "通じる",
   "meaning_vi": "Biết, hiểu",
-  "meaning_en": "Biết, hiểu",
+  "meaning_en": "get through, be understood, communicate",
   "furigana": "つうじる",
   "example": {
    "jp": "海外（かいがい）で言葉（ことば）が通（つう）じないのは、とても不便（ふべん）だ。",
    "vi": "Ở nước ngoài không biết tiếng rất bất tiện.",
-   "en": "Ở nước ngoài không biết tiếng rất bất tiện.",
+   "en": "Not being able to make yourself understood abroad is very inconvenient.",
    "seg": [
     {
      "t": "海外",
@@ -57297,11 +57297,11 @@
   "section_title": "Xã hội quốc tế",
   "word": "ジェスチャー",
   "meaning_vi": "Động tác",
-  "meaning_en": "Động tác",
+  "meaning_en": "gesture",
   "example": {
    "jp": "言葉（ことば）が通（つう）じない場合（ばあい）は、ジェスチャーで伝（つた）える。",
    "vi": "Trường hợp không biết tiếng thì dùng động tác để truyền đạt.",
-   "en": "Trường hợp không biết tiếng thì dùng động tác để truyền đạt.",
+   "en": "When words don't get through, you communicate with gestures.",
    "seg": [
     {
      "t": "言葉",
@@ -57343,12 +57343,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "首都",
   "meaning_vi": "Thủ đô",
-  "meaning_en": "Thủ đô",
+  "meaning_en": "capital city",
   "furigana": "しゅと",
   "example": {
    "jp": "スイスの首都（しゅと）で、大（おお）きな会議（かいぎ）が開（ひら）かれる。",
    "vi": "Cuộc họp lớn được tổ chức tại thủ đô của Thụy Sỹ.",
-   "en": "Cuộc họp lớn được tổ chức tại thủ đô của Thụy Sỹ.",
+   "en": "A major conference will be held in the capital of Switzerland.",
    "seg": [
     {
      "t": "スイスの"
@@ -57393,12 +57393,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "順調な",
   "meaning_vi": "Thuận lợi",
-  "meaning_en": "Thuận lợi",
+  "meaning_en": "smooth, going well, favorable",
   "furigana": "じゅんちょうな",
   "example": {
    "jp": "3か国の話し合（はなしあ）いは、順調（じゅんちょう）に進（すす）んでいるようだ。",
    "vi": "Cuộc nói chuyện của 3 nước có vẻ diễn ra thuận lợi.",
-   "en": "Cuộc nói chuyện của 3 nước có vẻ diễn ra thuận lợi.",
+   "en": "The talks between the three countries seem to be progressing smoothly.",
    "seg": [
     {
      "t": "3か国の"
@@ -57436,12 +57436,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "対象",
   "meaning_vi": "Đối tượng",
-  "meaning_en": "Đối tượng",
+  "meaning_en": "target, subject, object",
   "furigana": "たいしょう",
   "example": {
    "jp": "となりの国（くに）の首相（しゅしょう）を対象（たいしょう）に、インタビューをした。",
    "vi": "Tôi đã chọn thủ tướng nước láng giềng để làm đối tượng phỏng vấn.",
-   "en": "Tôi đã chọn thủ tướng nước láng giềng để làm đối tượng phỏng vấn.",
+   "en": "I conducted an interview with the neighboring country's prime minister as the subject.",
    "seg": [
     {
      "t": "となりの"
@@ -57479,12 +57479,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "通知＜する＞",
   "meaning_vi": "Thông báo",
-  "meaning_en": "Thông báo",
+  "meaning_en": "notify, notice",
   "furigana": "つうち",
   "example": {
    "jp": "A国（こく）から、来年（らいねん）の訪日（ほうにち）の予定（よてい）が通知（つうち）された。",
    "vi": "Dự định đến thăm Nhật vào năm sau đã được nước A thông báo.",
-   "en": "Dự định đến thăm Nhật vào năm sau đã được nước A thông báo.",
+   "en": "Country A notified us of its plans to visit Japan next year.",
    "seg": [
     {
      "t": "A"
@@ -57536,12 +57536,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "態度",
   "meaning_vi": "Thái độ",
-  "meaning_en": "Thái độ",
+  "meaning_en": "attitude, manner",
   "furigana": "たいど",
   "example": {
    "jp": "相手（あいて）の態度（たいど）で、こちらの態度（たいど）を変（か）える。",
    "vi": "Thái độ của đối phương đã làm thay đổi thái độ của tôi.",
-   "en": "Thái độ của đối phương đã làm thay đổi thái độ của tôi.",
+   "en": "I change my own attitude depending on the other person's attitude.",
    "seg": [
     {
      "t": "相手",
@@ -57583,12 +57583,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "求める",
   "meaning_vi": "Yêu cầu, đòi hỏi, mong muốn",
-  "meaning_en": "Yêu cầu, đòi hỏi, mong muốn",
+  "meaning_en": "seek, request, demand",
   "furigana": "もとめる",
   "example": {
    "jp": "貧（まず）しい人（ひと）たちが何（なに）を求（もと）めているのか、考（かんが）えるべきだ。",
    "vi": "Nên nghĩ xem, những người nghèo đang mong muốn điều gì.",
-   "en": "Nên nghĩ xem, những người nghèo đang mong muốn điều gì.",
+   "en": "We ought to think about what people in poverty are seeking.",
    "seg": [
     {
      "t": "貧",
@@ -57637,12 +57637,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "結論",
   "meaning_vi": "Kết luận",
-  "meaning_en": "Kết luận",
+  "meaning_en": "conclusion",
   "furigana": "けつろん",
   "example": {
    "jp": "話し合（はなしあ）いの結論（けつろん）は、明日（あした）わかるそうだ。",
    "vi": "Kết luận của buổi nói chuyện nghe nói sẽ cho biết bào ngày mai.",
-   "en": "Kết luận của buổi nói chuyện nghe nói sẽ cho biết bào ngày mai.",
+   "en": "The conclusion of the talks will apparently be known tomorrow.",
    "seg": [
     {
      "t": "話し合",
@@ -57677,12 +57677,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "ひっくり返す",
   "meaning_vi": "Lật ngược, đảo ngược",
-  "meaning_en": "Lật ngược, đảo ngược",
+  "meaning_en": "turn over, overturn, reverse",
   "furigana": "ひっくりかえす",
   "example": {
    "jp": "①ステーキを焼（や）くときは、途中（とちゅう）でひっくり返す。 ②昨日（きのう）出（で）た結論（けつろん）が、もうひっくり返された。",
    "vi": "①Khi nướng món bò bít tết, giữa chừng thì lật ngược lại. ②Kết luận đưa ra ngày hôm qua đã bị lật ngược.",
-   "en": "①Khi nướng món bò bít tết, giữa chừng thì lật ngược lại. ②Kết luận đưa ra ngày hôm qua đã bị lật ngược.",
+   "en": "(1) When grilling a steak, turn it over partway through. (2) The conclusion reached yesterday has already been overturned.",
    "seg": [
     {
      "t": "①ステーキを"
@@ -57731,12 +57731,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "広がる",
   "meaning_vi": "Mở rộng",
-  "meaning_en": "Mở rộng",
+  "meaning_en": "spread, widen, expand",
   "furigana": "ひろがる",
   "example": {
    "jp": "留学（りゅうがく）によって可能（かのう）性（せい）が広（ひろ）がった。",
    "vi": "Khả năng được mở rộng bởi việc du học.",
-   "en": "Khả năng được mở rộng bởi việc du học.",
+   "en": "Studying abroad broadened my possibilities.",
    "seg": [
     {
      "t": "留学",
@@ -57775,12 +57775,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "広げる",
   "meaning_vi": "Mở rộng, mở mang",
-  "meaning_en": "Mở rộng, mở mang",
+  "meaning_en": "spread out, broaden, extend",
   "furigana": "ひろげる",
   "example": {
    "jp": "積極（せっきょく）的（てき）に自分（じぶん）の世界（せかい）を広（ひろ）げていきたい。",
    "vi": "Tôi muốn tích cực mở mang thế giới của bản thân.",
-   "en": "Tôi muốn tích cực mở mang thế giới của bản thân.",
+   "en": "I want to actively broaden my own world.",
    "seg": [
     {
      "t": "積極",
@@ -57826,12 +57826,12 @@
   "section_title": "Xã hội quốc tế",
   "word": "活動＜する＞",
   "meaning_vi": "Hoạt động",
-  "meaning_en": "Hoạt động",
+  "meaning_en": "activity, take action",
   "furigana": "かつどう",
   "example": {
    "jp": "小（ちい）さな活動（かつどう）から、世界（せかい）を変（か）えていく。",
    "vi": "Thay đổi thế giới bắt đầu từ những hoạt động nhỏ.",
-   "en": "Thay đổi thế giới bắt đầu từ những hoạt động nhỏ.",
+   "en": "We change the world starting from small actions.",
    "seg": [
     {
      "t": "小",
@@ -57873,11 +57873,11 @@
   "section_title": "Xã hội quốc tế",
   "word": "ボランティア",
   "meaning_vi": "Tình nguyện",
-  "meaning_en": "Tình nguyện",
+  "meaning_en": "volunteer, volunteering",
   "example": {
    "jp": "ボランティアに参加（さんか）して、成長（せいちょう）したい。",
    "vi": "Tôi muốn tham gia hoạt động tình nguyện để trưởng thành.",
-   "en": "Tôi muốn tham gia hoạt động tình nguyện để trưởng thành.",
+   "en": "I want to take part in volunteer work and grow as a person.",
    "seg": [
     {
      "t": "ボランティアに"
