@@ -20229,12 +20229,12 @@
   "section_title": "Trường học",
   "word": "遅刻＜する＞",
   "meaning_vi": "Sự đi trễ, đi muộn",
-  "meaning_en": "Sự đi trễ, đi muộn",
+  "meaning_en": "be late, arrive late",
   "furigana": "ちこく",
   "example": {
    "jp": "電車（でんしゃ）が遅（おく）れて、学校（がっこう）に遅刻（ちこく）してしまった。",
    "vi": "Tàu điện trễ làm tôi đi học muộn.",
-   "en": "Tàu điện trễ làm tôi đi học muộn.",
+   "en": "The train was delayed and I ended up late for school.",
    "seg": [
     {
      "t": "電車",
@@ -20276,11 +20276,11 @@
   "section_title": "Trường học",
   "word": "サボる",
   "meaning_vi": "Trốn học, trốn việc",
-  "meaning_en": "Trốn học, trốn việc",
+  "meaning_en": "skip (class or work), play truant",
   "example": {
    "jp": "二（ふつ）日（か）も授業（じゅぎょう）を（）サボって、先生（せんせい）にしかられた。",
    "vi": "Tôi trốn học những hai ngày liền nên bị thầy (cô) giáo mắng.",
-   "en": "Tôi trốn học những hai ngày liền nên bị thầy (cô) giáo mắng.",
+   "en": "I skipped class for two days straight and got told off by the teacher.",
    "seg": [
     {
      "t": "二",
@@ -20326,12 +20326,12 @@
   "section_title": "Trường học",
   "word": "集中＜する＞",
   "meaning_vi": "Sự tập trung",
-  "meaning_en": "Sự tập trung",
+  "meaning_en": "concentrate, focus",
   "furigana": "しゅうちゅう",
   "example": {
    "jp": "授業（じゅぎょう）のとき、なかなか集中（しゅうちゅう）できなくて困（こま）った。",
    "vi": "Trong giờ học tôi khổ sở vì không thể nào tập trung được.",
-   "en": "Trong giờ học tôi khổ sở vì không thể nào tập trung được.",
+   "en": "I had trouble concentrating during class.",
    "seg": [
     {
      "t": "授業",
@@ -20366,11 +20366,11 @@
   "section_title": "Trường học",
   "word": "うとうと[と] ＜する＞",
   "meaning_vi": "Ngủ gà gật, lơ mơ ngủ",
-  "meaning_en": "Ngủ gà gật, lơ mơ ngủ",
+  "meaning_en": "doze off, nod off",
   "example": {
    "jp": "教室（きょうしつ）が暖（あたた）かいと、うとうとしてしまう。",
    "vi": "Phòng học ấm là tôi lơ mơ ngủ.",
-   "en": "Phòng học ấm là tôi lơ mơ ngủ.",
+   "en": "When the classroom is warm, I end up dozing off.",
    "seg": [
     {
      "t": "教室",
@@ -20398,12 +20398,12 @@
   "section_title": "Trường học",
   "word": "居眠り＜する＞",
   "meaning_vi": "Sự ngủ gật",
-  "meaning_en": "Sự ngủ gật",
+  "meaning_en": "doze off, fall asleep (while sitting)",
   "furigana": "いねむり",
   "example": {
    "jp": "居眠（いねむ）りしていて、先生（せんせい）に注意（ちゅうい）された。",
    "vi": "Tôi ngủ gật trong lớp nên bị thầy (cô) giáo nhắc nhở.",
-   "en": "Tôi ngủ gật trong lớp nên bị thầy (cô) giáo nhắc nhở.",
+   "en": "I dozed off and got a warning from the teacher.",
    "seg": [
     {
      "t": "居眠",
@@ -20438,12 +20438,12 @@
   "section_title": "Trường học",
   "word": "寝不足＜な＞",
   "meaning_vi": "Sự thiếu ngủ (thiếu ngủ)",
-  "meaning_en": "Sự thiếu ngủ (thiếu ngủ)",
+  "meaning_en": "lack of sleep, sleep-deprived",
   "furigana": "ねぶそく",
   "example": {
    "jp": "最近（さいきん）、寝不足（ねぶそく）が続（つづ）いている。 最近（さいきん）ずっと寝不足（ねぶそく）で、授業（じゅぎょう）中（ちゅう）に眠（ねむ）くなる。",
    "vi": "Gần đây tình trạng thiếu ngủ bị kéo dài. / Gần đây tôi bị thiếu ngủ suốt nên trong giờ học cứ buồn ngủ.",
-   "en": "Gần đây tình trạng thiếu ngủ bị kéo dài. / Gần đây tôi bị thiếu ngủ suốt nên trong giờ học cứ buồn ngủ.",
+   "en": "Lately I've been short on sleep for days on end. I've been sleep-deprived recently and get drowsy during class.",
    "seg": [
     {
      "t": "最近",
@@ -20510,12 +20510,12 @@
   "section_title": "Trường học",
   "word": "期間",
   "meaning_vi": "Thời gian, thời kỳ",
-  "meaning_en": "Thời gian, thời kỳ",
+  "meaning_en": "period, duration",
   "furigana": "きかん",
   "example": {
    "jp": "テスト期間（きかん）なので、毎日（まいにち）遅（おそ）くまで勉強（べんきょう）している。",
    "vi": "Vì là thời gian thi nên hàng ngày tôi học đến tận giờ muộn.",
-   "en": "Vì là thời gian thi nên hàng ngày tôi học đến tận giờ muộn.",
+   "en": "It's exam period, so I study late every day.",
    "seg": [
     {
      "t": "テスト"
@@ -20557,12 +20557,12 @@
   "section_title": "Trường học",
   "word": "期限",
   "meaning_vi": "Thời hạn",
-  "meaning_en": "Thời hạn",
+  "meaning_en": "deadline, time limit",
   "furigana": "きげん",
   "example": {
    "jp": "宿題（しゅくだい）の期限（きげん）は明日（あした）までだ。",
    "vi": "Thời hạn nộp bài tập là đến ngày mai.",
-   "en": "Thời hạn nộp bài tập là đến ngày mai.",
+   "en": "The homework is due by tomorrow.",
    "seg": [
     {
      "t": "宿題",
@@ -20597,12 +20597,12 @@
   "section_title": "Trường học",
   "word": "時間割",
   "meaning_vi": "Thời khóa biểu",
-  "meaning_en": "Thời khóa biểu",
+  "meaning_en": "class timetable, schedule",
   "furigana": "じかんわり",
   "example": {
    "jp": "先生（せんせい）から、新（あたら）しい時間割（じかんわり）をもらった。",
    "vi": "Tôi nhận được thời khóa biểu mới từ thầy (cô) giáo.",
-   "en": "Tôi nhận được thời khóa biểu mới từ thầy (cô) giáo.",
+   "en": "I got the new timetable from the teacher.",
    "seg": [
     {
      "t": "先生",
@@ -20637,12 +20637,12 @@
   "section_title": "Trường học",
   "word": "項目",
   "meaning_vi": "Mục, khoản",
-  "meaning_en": "Mục, khoản",
+  "meaning_en": "item, category, heading",
   "furigana": "こうもく",
   "example": {
    "jp": "資料（しりょう）を、項目（こうもく）に分（わ）けて整理（せいり）する。",
    "vi": "Phân chia tài liệu theo mục để sắp xếp.",
-   "en": "Phân chia tài liệu theo mục để sắp xếp.",
+   "en": "I sort the materials by dividing them into categories.",
    "seg": [
     {
      "t": "資料",
@@ -20684,12 +20684,12 @@
   "section_title": "Trường học",
   "word": "座席",
   "meaning_vi": "Chỗ ngồi",
-  "meaning_en": "Chỗ ngồi",
+  "meaning_en": "seat",
   "furigana": "ざせき",
   "example": {
    "jp": "クラスの座席（ざせき）は、1か月に1度（ど）変（か）える。",
    "vi": "Chỗ ngồi trong lớp một tháng lại thay đổi một lần.",
-   "en": "Chỗ ngồi trong lớp một tháng lại thay đổi một lần.",
+   "en": "The seating in class changes once a month.",
    "seg": [
     {
      "t": "クラスの"
@@ -20724,12 +20724,12 @@
   "section_title": "Trường học",
   "word": "締め切り",
   "meaning_vi": "Hạn chót",
-  "meaning_en": "Hạn chót",
+  "meaning_en": "deadline, closing date",
   "furigana": "しめきり",
   "example": {
    "jp": "試験（しけん）の申し込（もうしこ）みは、金曜日（きんようび）が締め切（しめき）りだ。",
    "vi": "Hạn chót đăng ký dự thi là ngày thứ sáu.",
-   "en": "Hạn chót đăng ký dự thi là ngày thứ sáu.",
+   "en": "The deadline for exam applications is Friday.",
    "seg": [
     {
      "t": "試験",
@@ -20771,12 +20771,12 @@
   "section_title": "Trường học",
   "word": "開く",
   "meaning_vi": "Mở",
-  "meaning_en": "Mở",
+  "meaning_en": "open",
   "furigana": "ひらく",
   "example": {
    "jp": "教科書（きょうかしょ）の123ページを開（ひら）いてください。",
    "vi": "Hãy mở trang 123 sách giáo khoa!",
-   "en": "Hãy mở trang 123 sách giáo khoa!",
+   "en": "Please open your textbook to page 123.",
    "seg": [
     {
      "t": "教科書",
@@ -20804,12 +20804,12 @@
   "section_title": "Trường học",
   "word": "一応",
   "meaning_vi": "Tạm thời, cứ thử, cho chắc",
-  "meaning_en": "Tạm thời, cứ thử, cho chắc",
+  "meaning_en": "just in case, for now, tentatively",
   "furigana": "いちおう",
   "example": {
    "jp": "答（こた）えを書（か）いたら、一応（いちおう）確認（かくにん）しよう。",
    "vi": "Khi viết xong câu trả lời, hãy kiểm tra lại cho chắc!",
-   "en": "Khi viết xong câu trả lời, hãy kiểm tra lại cho chắc!",
+   "en": "Once you've written your answer, check it just to be safe.",
    "seg": [
     {
      "t": "答",
@@ -20848,11 +20848,11 @@
   "section_title": "Trường học",
   "word": "きちんと＜する＞",
   "meaning_vi": "Cẩn thận, ngay ngắn, nghiêm chỉnh",
-  "meaning_en": "Cẩn thận, ngay ngắn, nghiêm chỉnh",
+  "meaning_en": "properly, neatly, without fail",
   "example": {
    "jp": "宿題（しゅくだい）は、毎日（まいにち）きちんと出（だ）してください。",
    "vi": "Hàng ngày, hãy nộp bài tập về nhà thật nghiêm chỉnh!",
-   "en": "Hàng ngày, hãy nộp bài tập về nhà thật nghiêm chỉnh!",
+   "en": "Please hand in your homework properly every day.",
    "seg": [
     {
      "t": "宿題",
@@ -20887,11 +20887,11 @@
   "section_title": "Trường học",
   "word": "きっかけ",
   "meaning_vi": "Nguyên cớ, động cơ, cơ hội",
-  "meaning_en": "Nguyên cớ, động cơ, cơ hội",
+  "meaning_en": "trigger, the thing that started it",
   "example": {
    "jp": "先生（せんせい）との出会（であ）いがきっかけで、勉強（べんきょう）が好（す）きになった。",
    "vi": "Nhờ gặp thầy (cô) mà tôi trở nên thích học.",
-   "en": "Nhờ gặp thầy (cô) mà tôi trở nên thích học.",
+   "en": "Meeting that teacher was what got me to love studying.",
    "seg": [
     {
      "t": "先生",
@@ -20933,11 +20933,11 @@
   "section_title": "Trường học",
   "word": "かしこい",
   "meaning_vi": "Thông minh, khôn ngoan",
-  "meaning_en": "Thông minh, khôn ngoan",
+  "meaning_en": "clever, bright, wise",
   "example": {
    "jp": "あの子（こ）はかしこくて、親（おや）の手伝（てつだ）いもよくする。",
    "vi": "Đứa trẻ ấy thông minh, cũng hay giúp đỡ bố mẹ.",
-   "en": "Đứa trẻ ấy thông minh, cũng hay giúp đỡ bố mẹ.",
+   "en": "That child is bright and helps their parents a lot too.",
    "seg": [
     {
      "t": "あの"
@@ -20975,12 +20975,12 @@
   "section_title": "Trường học",
   "word": "貸し出し",
   "meaning_vi": "(Sự) cho mượn",
-  "meaning_en": "(Sự) cho mượn",
+  "meaning_en": "lending, loan (of books)",
   "furigana": "かしだし",
   "example": {
    "jp": "図書館（としょかん）の本（ほん）の貸し出（かしだ）しは、1回（かい）5冊（さつ）までです。",
    "vi": "Thư viện cho mượn sách tối đa mỗi lần 5 quyển.",
-   "en": "Thư viện cho mượn sách tối đa mỗi lần 5 quyển.",
+   "en": "The library lends up to five books at a time.",
    "seg": [
     {
      "t": "図書館",
@@ -21029,12 +21029,12 @@
   "section_title": "Trường học",
   "word": "返却＜する＞",
   "meaning_vi": "Sự trả lại",
-  "meaning_en": "Sự trả lại",
+  "meaning_en": "return (something borrowed)",
   "furigana": "へんきゃく",
   "example": {
    "jp": "この本（ほん）は、2週間（しゅうかん）以内（いない）に返却（へんきゃく）してください。",
    "vi": "Nội trong hai tuần hãy trả cuốn sách này!",
-   "en": "Nội trong hai tuần hãy trả cuốn sách này!",
+   "en": "Please return this book within two weeks.",
    "seg": [
     {
      "t": "この"
@@ -21076,12 +21076,12 @@
   "section_title": "Trường học",
   "word": "名札",
   "meaning_vi": "Thẻ tên, bảng tên",
-  "meaning_en": "Thẻ tên, bảng tên",
+  "meaning_en": "name tag",
   "furigana": "なふだ",
   "example": {
    "jp": "中学校（ちゅうがっこう）までは、学校（がっこう）で名札（なふだ）をつけていた。",
    "vi": "Tôi đeo bảng tên ở trường cho đến năm cấp hai.",
-   "en": "Tôi đeo bảng tên ở trường cho đến năm cấp hai.",
+   "en": "Up through junior high, we wore name tags at school.",
    "seg": [
     {
      "t": "中学校",
@@ -21116,12 +21116,12 @@
   "section_title": "Trường học",
   "word": "給食",
   "meaning_vi": "Bữa ăn trưa ở trường",
-  "meaning_en": "Bữa ăn trưa ở trường",
+  "meaning_en": "school lunch",
   "furigana": "きゅうしょく",
   "example": {
    "jp": "子（こ）どものころ、給食（きゅうしょく）がとても楽（たの）しみだった。",
    "vi": "Thời bé, tôi rất thích thú chờ đợi bữa ăn trưa ở trường.",
-   "en": "Thời bé, tôi rất thích thú chờ đợi bữa ăn trưa ở trường.",
+   "en": "When I was a child, I really looked forward to school lunch.",
    "seg": [
     {
      "t": "子",
@@ -21156,12 +21156,12 @@
   "section_title": "Trường học",
   "word": "体育",
   "meaning_vi": "Môn thể dục",
-  "meaning_en": "Môn thể dục",
+  "meaning_en": "physical education",
   "furigana": "たいいく",
   "example": {
    "jp": "勉強（べんきょう）はできなかったが、体育（たいいく）は得意（とくい）だった。",
    "vi": "Tôi học không được nhưng môn thể dục thì giỏi.",
-   "en": "Tôi học không được nhưng môn thể dục thì giỏi.",
+   "en": "I wasn't good at studying, but I was good at PE.",
    "seg": [
     {
      "t": "勉強",
@@ -21196,12 +21196,12 @@
   "section_title": "Học tập",
   "word": "単語",
   "meaning_vi": "Từ vựng",
-  "meaning_en": "Từ vựng",
+  "meaning_en": "word, vocabulary item",
   "furigana": "たんご",
   "example": {
    "jp": "単語（たんご）を、たくさん覚（おぼ）えよう。",
    "vi": "Hãy nhớ nhiều từ vựng nào!",
-   "en": "Hãy nhớ nhiều từ vựng nào!",
+   "en": "Let's learn lots of vocabulary.",
    "seg": [
     {
      "t": "単語",
@@ -21229,11 +21229,11 @@
   "section_title": "Học tập",
   "word": "アクセント",
   "meaning_vi": "Trọng âm",
-  "meaning_en": "Trọng âm",
+  "meaning_en": "accent, stress",
   "example": {
    "jp": "アクセントに注意（ちゅうい）して、発音（はつおん）しよう。",
    "vi": "Hãy chú ý đến trọng âm khi phát âm!",
-   "en": "Hãy chú ý đến trọng âm khi phát âm!",
+   "en": "Let's pay attention to the accent when we pronounce it.",
    "seg": [
     {
      "t": "アクセントに"
@@ -21264,12 +21264,12 @@
   "section_title": "Học tập",
   "word": "暗記＜する＞",
   "meaning_vi": "Học thuộc lòng",
-  "meaning_en": "Học thuộc lòng",
+  "meaning_en": "memorize by heart",
   "furigana": "あんき",
   "example": {
    "jp": "この文（ぶん）を暗記（あんき）するのに、1時間（じかん）もかかった。",
    "vi": "Để thuộc lòng câu văn này mất những 1 tiếng đồng hồ.",
-   "en": "Để thuộc lòng câu văn này mất những 1 tiếng đồng hồ.",
+   "en": "It took me a whole hour to memorize this sentence.",
    "seg": [
     {
      "t": "この"
@@ -21307,12 +21307,12 @@
   "section_title": "Học tập",
   "word": "記憶＜する＞",
   "meaning_vi": "Trí nhớ, ghi nhớ",
-  "meaning_en": "Trí nhớ, ghi nhớ",
+  "meaning_en": "memory, remember",
   "furigana": "きおく",
   "example": {
    "jp": "小学校（しょうがっこう）のとき、この本（ほん）を読（よ）んだ記憶（きおく）がある。",
    "vi": "Tôi còn nhớ mình đã đọc cuốn sách này hồi học tiểu học.",
-   "en": "Tôi còn nhớ mình đã đọc cuốn sách này hồi học tiểu học.",
+   "en": "I have a memory of reading this book in elementary school.",
    "seg": [
     {
      "t": "小学校",
@@ -21354,12 +21354,12 @@
   "section_title": "Học tập",
   "word": "くり返す",
   "meaning_vi": "Lặp lại",
-  "meaning_en": "Lặp lại",
+  "meaning_en": "repeat, do over again",
   "furigana": "くりかえす",
   "example": {
    "jp": "日本語（にほんご）の文（ぶん）を、何（なん）回（かい）もくり返して読（よ）む。",
    "vi": "Tôi đọc đi đọc lại nhiều lần câu tiếng Nhật.",
-   "en": "Tôi đọc đi đọc lại nhiều lần câu tiếng Nhật.",
+   "en": "I read the Japanese sentence over and over.",
    "seg": [
     {
      "t": "日本語",
@@ -21405,12 +21405,12 @@
   "section_title": "Học tập",
   "word": "聞き取る",
   "meaning_vi": "Nghe hiểu, nghe lấy",
-  "meaning_en": "Nghe hiểu, nghe lấy",
+  "meaning_en": "catch (by listening), make out",
   "furigana": "ききとる",
   "example": {
    "jp": "単語（たんご）を聞き取（ききと）って、書（か）いてください。",
    "vi": "Hãy nghe lấy từ vựng và viết ra!",
-   "en": "Hãy nghe lấy từ vựng và viết ra!",
+   "en": "Please listen for the words and write them down.",
    "seg": [
     {
      "t": "単語",
@@ -21445,12 +21445,12 @@
   "section_title": "Học tập",
   "word": "聞き返す",
   "meaning_vi": "Hỏi lại",
-  "meaning_en": "Hỏi lại",
+  "meaning_en": "ask again, ask back",
   "furigana": "ききかえす",
   "example": {
    "jp": "先生（せんせい）の話（はなし）がよく聞き取（ききと）れなかったので、聞き返（ききかえ）した。",
    "vi": "Vì không nghe rõ thầy giáo nói nên tôi đã hỏi lại.",
-   "en": "Vì không nghe rõ thầy giáo nói nên tôi đã hỏi lại.",
+   "en": "I couldn't quite catch what the teacher said, so I asked again.",
    "seg": [
     {
      "t": "先生",
@@ -21492,12 +21492,12 @@
   "section_title": "Học tập",
   "word": "聞き直す",
   "meaning_vi": "Nghe lại",
-  "meaning_en": "Nghe lại",
+  "meaning_en": "listen again, re-listen",
   "furigana": "ききなおす",
   "example": {
    "jp": "発音（はつおん）を確認（かくにん）するために、もう一度ＣＤ（しーでぃー）を聞（き）き直（なお）した。",
    "vi": "Tôi đã nghe lại CD một lần nữa để kiểm tra phát âm.",
-   "en": "Tôi đã nghe lại CD một lần nữa để kiểm tra phát âm.",
+   "en": "I listened to the CD once more to check the pronunciation.",
    "seg": [
     {
      "t": "発音",
@@ -21546,12 +21546,12 @@
   "section_title": "Học tập",
   "word": "言い直す",
   "meaning_vi": "Nói lại, sửa lại lời nói",
-  "meaning_en": "Nói lại, sửa lại lời nói",
+  "meaning_en": "rephrase, say over again",
   "furigana": "いいなおす",
   "example": {
    "jp": "発音（はつおん）を間違（まちが）えたので、言い直（いいなお）した。",
    "vi": "Vì phát âm nhầm nên tôi đã nói lại.",
-   "en": "Vì phát âm nhầm nên tôi đã nói lại.",
+   "en": "I got the pronunciation wrong, so I said it again.",
    "seg": [
     {
      "t": "発音",
@@ -21586,12 +21586,12 @@
   "section_title": "Học tập",
   "word": "英会話",
   "meaning_vi": "Hội thoại tiếng Anh",
-  "meaning_en": "Hội thoại tiếng Anh",
+  "meaning_en": "English conversation",
   "furigana": "えいかいわ",
   "example": {
    "jp": "英会話（えいかいわ）を習（なら）っているが、なかなかうまくならない。",
    "vi": "Tôi học hội thoại tiếng Anh nhưng mãi không giỏi lên được.",
-   "en": "Tôi học hội thoại tiếng Anh nhưng mãi không giỏi lên được.",
+   "en": "I'm taking English conversation lessons, but I'm not getting much better.",
    "seg": [
     {
      "t": "英会話",
@@ -21619,12 +21619,12 @@
   "section_title": "Học tập",
   "word": "入門",
   "meaning_vi": "Nhập môn",
-  "meaning_en": "Nhập môn",
+  "meaning_en": "introduction, beginner level",
   "furigana": "にゅうもん",
   "example": {
    "jp": "フランス語（ふらんすご）の入門（にゅうもん）クラスで勉強（べんきょう）しています。",
    "vi": "Tôi đang học lớp nhập môn tiếng Pháp.",
-   "en": "Tôi đang học lớp nhập môn tiếng Pháp.",
+   "en": "I'm studying in an introductory French class.",
    "seg": [
     {
      "t": "フランス語",
@@ -21659,12 +21659,12 @@
   "section_title": "Học tập",
   "word": "下書き＜する＞",
   "meaning_vi": "Bản nháp, viết nháp",
-  "meaning_en": "Bản nháp, viết nháp",
+  "meaning_en": "rough draft, draft",
   "furigana": "したがき",
   "example": {
    "jp": "作文（さくぶん）は、まず下書（したが）きをしたほうがいい。",
    "vi": "Viết bài văn thì nên viết nháp trước đã.",
-   "en": "Viết bài văn thì nên viết nháp trước đã.",
+   "en": "For a composition, it's better to write a draft first.",
    "seg": [
     {
      "t": "作文",
@@ -21692,12 +21692,12 @@
   "section_title": "Học tập",
   "word": "清書＜する＞",
   "meaning_vi": "Viết chính thức, viết sạch",
-  "meaning_en": "Viết chính thức, viết sạch",
+  "meaning_en": "fair copy, final write-up",
   "furigana": "せいしょ",
   "example": {
    "jp": "清書（せいしょ）はていねいに、きれいに書（か）きましょう。",
    "vi": "Khi viết chính thức, hãy viết cẩn thận và đẹp nhé!",
-   "en": "Khi viết chính thức, hãy viết cẩn thận và đẹp nhé!",
+   "en": "When making the fair copy, let's write carefully and neatly.",
    "seg": [
     {
      "t": "清書",
@@ -21725,12 +21725,12 @@
   "section_title": "Học tập",
   "word": "表れる",
   "meaning_vi": "Thể hiện, biểu hiện",
-  "meaning_en": "Thể hiện, biểu hiện",
+  "meaning_en": "appear, show, be expressed",
   "furigana": "あらわれる",
   "example": {
    "jp": "書（か）いた文字（もじ）には、その人（ひと）の気持（きも）ちが表（あらわ）れる。",
    "vi": "Chữ viết thể hiện tâm trạng của người đó.",
-   "en": "Chữ viết thể hiện tâm trạng của người đó.",
+   "en": "A person's feelings show in the characters they write.",
    "seg": [
     {
      "t": "書",
@@ -21779,12 +21779,12 @@
   "section_title": "Học tập",
   "word": "物語",
   "meaning_vi": "Câu chuyện, truyện kể",
-  "meaning_en": "Câu chuyện, truyện kể",
+  "meaning_en": "story, tale",
   "furigana": "ものがたり",
   "example": {
    "jp": "寝（ね）る前（まえ）に、日本（にほん）の物語（ものがたり）を読（よ）む。",
    "vi": "Trước khi ngủ, tôi đọc truyện Nhật Bản.",
-   "en": "Trước khi ngủ, tôi đọc truyện Nhật Bản.",
+   "en": "Before bed, I read Japanese stories.",
    "seg": [
     {
      "t": "寝",
@@ -21833,12 +21833,12 @@
   "section_title": "Học tập",
   "word": "教科",
   "meaning_vi": "Môn học",
-  "meaning_en": "Môn học",
+  "meaning_en": "school subject",
   "furigana": "きょうか",
   "example": {
    "jp": "私（わたし）の好（す）きな教科（きょうか）は、数学（すうがく）です。",
    "vi": "Môn học mà tôi thích là môn toán.",
-   "en": "Môn học mà tôi thích là môn toán.",
+   "en": "My favorite subject is mathematics.",
    "seg": [
     {
      "t": "私",
@@ -21880,12 +21880,12 @@
   "section_title": "Học tập",
   "word": "科目",
   "meaning_vi": "Môn học",
-  "meaning_en": "Môn học",
+  "meaning_en": "subject, course",
   "furigana": "かもく",
   "example": {
    "jp": "水曜日（すいようび）は、好（す）きな科目（かもく）の授業（じゅぎょう）を選（えら）べる。",
    "vi": "Vào thứ tư, chúng tôi có thể chọn tiết học môn yêu thích.",
-   "en": "Vào thứ tư, chúng tôi có thể chọn tiết học môn yêu thích.",
+   "en": "On Wednesdays we can choose classes in subjects we like.",
    "seg": [
     {
      "t": "水曜日",
@@ -21934,12 +21934,12 @@
   "section_title": "Học tập",
   "word": "足し算",
   "meaning_vi": "Phép cộng",
-  "meaning_en": "Phép cộng",
+  "meaning_en": "addition",
   "furigana": "たしざん",
   "example": {
    "jp": "大（おお）きな数字（すうじ）の足し算（たしざん）は間違（まちが）えそうだ。",
    "vi": "Phép cộng số lớn có khả năng bị nhầm.",
-   "en": "Phép cộng số lớn có khả năng bị nhầm.",
+   "en": "I'm likely to make mistakes adding up large numbers.",
    "seg": [
     {
      "t": "大",
@@ -21981,11 +21981,11 @@
   "section_title": "Học tập",
   "word": "イコール",
   "meaning_vi": "Bằng, dấu bằng",
-  "meaning_en": "Bằng, dấu bằng",
+  "meaning_en": "equals, equal sign",
   "example": {
    "jp": "[=]はイコールと読（よ）む。",
    "vi": "Dấu '=' đọc là \"bằng\".",
-   "en": "Dấu '=' đọc là \"bằng\".",
+   "en": "\"=\" is read as \"equals.\"",
    "seg": [
     {
      "t": "[=]はイコールと"
@@ -22009,11 +22009,11 @@
   "section_title": "Học tập",
   "word": "グラフ",
   "meaning_vi": "Biểu đồ",
-  "meaning_en": "Biểu đồ",
+  "meaning_en": "graph, chart",
   "example": {
    "jp": "次（つぎ）のグラフを見（み）て、答（こた）えてください。",
    "vi": "Hãy nhìn biểu đồ sau đây và trả lời.",
-   "en": "Hãy nhìn biểu đồ sau đây và trả lời.",
+   "en": "Please look at the following graph and answer.",
    "seg": [
     {
      "t": "次",
@@ -22048,12 +22048,12 @@
   "section_title": "Học tập",
   "word": "三角形",
   "meaning_vi": "Hình tam giác",
-  "meaning_en": "Hình tam giác",
+  "meaning_en": "triangle",
   "furigana": "さんかっけい",
   "example": {
    "jp": "紙（かみ）を三角形（さんかっけい）に折（お）る。",
    "vi": "Gấp tờ giấy thành hình tam giác.",
-   "en": "Gấp tờ giấy thành hình tam giác.",
+   "en": "Fold the paper into a triangle.",
    "seg": [
     {
      "t": "紙",
@@ -22088,12 +22088,12 @@
   "section_title": "Học tập",
   "word": "定規",
   "meaning_vi": "Thước kẻ",
-  "meaning_en": "Thước kẻ",
+  "meaning_en": "ruler",
   "furigana": "じょうぎ",
   "example": {
    "jp": "箱（はこ）の大（おお）きさを定規（じょうぎ）で測（はか）る。",
    "vi": "Đo kích thước của cái hộp bằng thước kẻ.",
-   "en": "Đo kích thước của cái hộp bằng thước kẻ.",
+   "en": "I measure the size of the box with a ruler.",
    "seg": [
     {
      "t": "箱",
@@ -22135,11 +22135,11 @@
   "section_title": "Học tập",
   "word": "センチ",
   "meaning_vi": "Xen-ti-mét (cm)",
-  "meaning_en": "Xen-ti-mét (cm)",
+  "meaning_en": "centimeter",
   "example": {
    "jp": "1メートルは、何（なん）センチですか。",
    "vi": "1 mét bằng bao nhiêu xen-ti-mét?",
-   "en": "1 mét bằng bao nhiêu xen-ti-mét?",
+   "en": "How many centimeters are there in one meter?",
    "seg": [
     {
      "t": "1メートルは、"
@@ -22163,12 +22163,12 @@
   "section_title": "Học tập",
   "word": "自習＜する＞",
   "meaning_vi": "Tự học",
-  "meaning_en": "Tự học",
+  "meaning_en": "study on one's own, self-study",
   "furigana": "じしゅう",
   "example": {
    "jp": "先生（せんせい）が来（く）るまで、自習（じしゅう）していてください。",
    "vi": "Hãy tự học cho đến khi thầy giáo đến!",
-   "en": "Hãy tự học cho đến khi thầy giáo đến!",
+   "en": "Please study on your own until the teacher arrives.",
    "seg": [
     {
      "t": "先生",
@@ -22203,12 +22203,12 @@
   "section_title": "Học tập",
   "word": "ローマ字",
   "meaning_vi": "Chữ cái La-tinh",
-  "meaning_en": "Chữ cái La-tinh",
+  "meaning_en": "romaji, Roman letters",
   "furigana": "ローマじ",
   "example": {
    "jp": "ここに、ローマ字（ろーまじ）で名前（なまえ）を書（か）いてください。",
    "vi": "Hãy viết tên bằng chữ cái La-tinh vào đây!",
-   "en": "Hãy viết tên bằng chữ cái La-tinh vào đây!",
+   "en": "Please write your name here in Roman letters.",
    "seg": [
     {
      "t": "ここに、"
@@ -22246,12 +22246,12 @@
   "section_title": "Học tập",
   "word": "補講＜する＞",
   "meaning_vi": "Học bù, giờ học bổ sung",
-  "meaning_en": "Học bù, giờ học bổ sung",
+  "meaning_en": "supplementary lesson, make-up class",
   "furigana": "ほこう",
   "example": {
    "jp": "昨日（きのう）欠席（けっせき）した人（ひと）は、今日（きょう）、補講（ほこう）があります。",
    "vi": "Những ai vắng mặt ngày hôm qua, hôm nay sẽ có giờ học bù.",
-   "en": "Những ai vắng mặt ngày hôm qua, hôm nay sẽ có giờ học bù.",
+   "en": "Those who were absent yesterday have a make-up class today.",
    "seg": [
     {
      "t": "昨日",
@@ -22297,11 +22297,11 @@
   "section_title": "Học tập",
   "word": "（えんぴつを）けずる",
   "meaning_vi": "Gọt (bút chì)",
-  "meaning_en": "Gọt (bút chì)",
+  "meaning_en": "sharpen (a pencil)",
   "example": {
    "jp": "息子（むすこ）は、ナイフでえんぴつをけずれない。",
    "vi": "Con trai tôi không thể gọt bút chì bằng dao.",
-   "en": "Con trai tôi không thể gọt bút chì bằng dao.",
+   "en": "My son can't sharpen a pencil with a knife.",
    "seg": [
     {
      "t": "息子",
@@ -22322,12 +22322,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "学部",
   "meaning_vi": "Khoa",
-  "meaning_en": "Khoa",
+  "meaning_en": "faculty, department (at a university)",
   "furigana": "がくぶ",
   "example": {
    "jp": "人気（にんき）の学部（がくぶ）に、定員（ていいん）の50倍（ばい）の学生（がくせい）が集（あつ）まった。",
    "vi": "Những khoa được mọi người thích có số lượng sinh viên tập trung gấp 50 lần mức chỉ tiêu.",
-   "en": "Những khoa được mọi người thích có số lượng sinh viên tập trung gấp 50 lần mức chỉ tiêu.",
+   "en": "Fifty times more students than the quota applied to the popular faculty.",
    "seg": [
     {
      "t": "人気",
@@ -22383,12 +22383,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "文系",
   "meaning_vi": "Khối ngành xã hội",
-  "meaning_en": "Khối ngành xã hội",
+  "meaning_en": "humanities, liberal arts track",
   "furigana": "ぶんけい",
   "example": {
    "jp": "ほとんどの大学（だいがく）では、文系（ぶんけい）に女子（じょし）が多（おお）い。",
    "vi": "Trong hầu hết các trường đại học, khối ngành xã hội có nhiều nữ.",
-   "en": "Trong hầu hết các trường đại học, khối ngành xã hội có nhiều nữ.",
+   "en": "At most universities, there are more women in the humanities.",
    "seg": [
     {
      "t": "ほとんどの"
@@ -22433,12 +22433,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "理系",
   "meaning_vi": "Khối ngành tự nhiên",
-  "meaning_en": "Khối ngành tự nhiên",
+  "meaning_en": "sciences, science track",
   "furigana": "りけい",
   "example": {
    "jp": "化学（かがく）が好（す）きなので、理系（りけい）に進（すす）んだ。",
    "vi": "Tôi thích môn hóa nên tôi đã theo học ngành tự nhiên.",
-   "en": "Tôi thích môn hóa nên tôi đã theo học ngành tự nhiên.",
+   "en": "I like chemistry, so I went into the sciences.",
    "seg": [
     {
      "t": "化学",
@@ -22480,12 +22480,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "学科",
   "meaning_vi": "Bộ môn",
-  "meaning_en": "Bộ môn",
+  "meaning_en": "department, course of study",
   "furigana": "がっか",
   "example": {
    "jp": "私（わたし）は外国（がいこく）語（ご）学部（がくぶ）の日本語（にほんご）学科（がっか）で勉強（べんきょう）している。",
    "vi": "Tôi đang học bộ môn tiếng Nhật của khoa ngoại ngữ.",
-   "en": "Tôi đang học bộ môn tiếng Nhật của khoa ngoại ngữ.",
+   "en": "I study in the Japanese department of the faculty of foreign languages.",
    "seg": [
     {
      "t": "私",
@@ -22539,12 +22539,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "専攻＜する＞",
   "meaning_vi": "Chuyên môn, chuyên ngành",
-  "meaning_en": "Chuyên môn, chuyên ngành",
+  "meaning_en": "major, specialize in",
   "furigana": "せんこう",
   "example": {
    "jp": "大学（だいがく）で何（なに）を専攻（せんこう）するか、よく考（かんが）えて受験（じゅけん）する。",
    "vi": "Tôi suy nghĩ kỹ xem mình theo học chuyên ngành gì ở đại học để thi vào.",
-   "en": "Tôi suy nghĩ kỹ xem mình theo học chuyên ngành gì ở đại học để thi vào.",
+   "en": "I think carefully about what to major in at university before taking the entrance exam.",
    "seg": [
     {
      "t": "大学",
@@ -22593,12 +22593,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "前期",
   "meaning_vi": "Học kỳ đầu",
-  "meaning_en": "Học kỳ đầu",
+  "meaning_en": "first term, first semester",
   "furigana": "ぜんき",
   "example": {
    "jp": "明日（あした）から前期（ぜんき）の試験（しけん）が始（はじ）まる。",
    "vi": "Ngày mai bắt đầu thi học kỳ đầu.",
-   "en": "Ngày mai bắt đầu thi học kỳ đầu.",
+   "en": "First-term exams start tomorrow.",
    "seg": [
     {
      "t": "明日",
@@ -22640,12 +22640,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "学費",
   "meaning_vi": "Học phí",
-  "meaning_en": "Học phí",
+  "meaning_en": "tuition, school fees",
   "furigana": "がくひ",
   "example": {
    "jp": "この大学（だいがく）の学費（がくひ）は、あまり高（たか）くない。",
    "vi": "Học phí của trường đại học này không cao lắm.",
-   "en": "Học phí của trường đại học này không cao lắm.",
+   "en": "The tuition at this university isn't very high.",
    "seg": [
     {
      "t": "この"
@@ -22683,12 +22683,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "奨学金",
   "meaning_vi": "Học bổng",
-  "meaning_en": "Học bổng",
+  "meaning_en": "scholarship",
   "furigana": "しょうがくきん",
   "example": {
    "jp": "今年（ことし）から奨学（しょうがく）金（きん）が、もらえることになった。",
    "vi": "Từ năm nay tôi bắt đầu được nhận học bổng.",
-   "en": "Từ năm nay tôi bắt đầu được nhận học bổng.",
+   "en": "Starting this year, I'm able to receive a scholarship.",
    "seg": [
     {
      "t": "今年",
@@ -22720,12 +22720,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "公立",
   "meaning_vi": "Công lập",
-  "meaning_en": "Công lập",
+  "meaning_en": "public (institution)",
   "furigana": "こうりつ",
   "example": {
    "jp": "高校（こうこう）まで、公立（こうりつ）の学校（がっこう）に通（かよ）っていた。",
    "vi": "Tôi đi học trường công lập cho đến hết cấp ba.",
-   "en": "Tôi đi học trường công lập cho đến hết cấp ba.",
+   "en": "I attended public schools up through high school.",
    "seg": [
     {
      "t": "高校",
@@ -22767,12 +22767,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "私立",
   "meaning_vi": "Tư lập",
-  "meaning_en": "Tư lập",
+  "meaning_en": "private (institution)",
   "furigana": "しりつ",
   "example": {
    "jp": "東京（とうきょう）には、有名（ゆうめい）な私立（しりつ）大学（だいがく）がたくさんある。",
    "vi": "Ở Tokyo có nhiều trường đại học tư lập nổi tiếng.",
-   "en": "Ở Tokyo có nhiều trường đại học tư lập nổi tiếng.",
+   "en": "There are many famous private universities in Tokyo.",
    "seg": [
     {
      "t": "東京",
@@ -22811,12 +22811,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "教授",
   "meaning_vi": "Giáo sư",
-  "meaning_en": "Giáo sư",
+  "meaning_en": "professor",
   "furigana": "きょうじゅ",
   "example": {
    "jp": "法学部（ほうがくぶ）の田中（たなか）教授（きょうじゅ）は、とても有名（ゆうめい）な人（ひと）だ。",
    "vi": "Giáo sư Tanaka khoa Luật là người rất nổi tiếng.",
-   "en": "Giáo sư Tanaka khoa Luật là người rất nổi tiếng.",
+   "en": "Professor Tanaka of the law faculty is a very well-known figure.",
    "seg": [
     {
      "t": "法学部",
@@ -22862,12 +22862,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "講義＜する＞",
   "meaning_vi": "Bài giảng",
-  "meaning_en": "Bài giảng",
+  "meaning_en": "lecture",
   "furigana": "こうぎ",
   "example": {
    "jp": "鈴木（すずき）教授（きょうじゅ）の講義（こうぎ）は、学生（がくせい）に大人気（だいにんき）だ。",
    "vi": "Bài giảng của giáo sư Suzuki rất được sinh viên yêu thích.",
-   "en": "Bài giảng của giáo sư Suzuki rất được sinh viên yêu thích.",
+   "en": "Professor Suzuki's lectures are hugely popular with students.",
    "seg": [
     {
      "t": "鈴木",
@@ -22913,11 +22913,11 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "えらい",
   "meaning_vi": "Uy tín, tầm cỡ",
-  "meaning_en": "Uy tín, tầm cỡ",
+  "meaning_en": "eminent, distinguished, of high standing",
   "example": {
    "jp": "この大学（だいがく）には、えらい教授（きょうじゅ）が多（おお）い。",
    "vi": "Trường đại học này có nhiều giáo sư uy tín.",
-   "en": "Trường đại học này có nhiều giáo sư uy tín.",
+   "en": "This university has many distinguished professors.",
    "seg": [
     {
      "t": "この"
@@ -22955,11 +22955,11 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "ゼミ",
   "meaning_vi": "Nhóm nghiên cứu",
-  "meaning_en": "Nhóm nghiên cứu",
+  "meaning_en": "seminar",
   "example": {
    "jp": "どのゼミを選（えら）ぶか、まだ考（かんが）えている。",
    "vi": "Tôi vẫn đang suy nghĩ xem chọn nhóm nghiên cứu nào.",
-   "en": "Tôi vẫn đang suy nghĩ xem chọn nhóm nghiên cứu nào.",
+   "en": "I'm still thinking about which seminar to choose.",
    "seg": [
     {
      "t": "どのゼミを"
@@ -22990,11 +22990,11 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "テーマ",
   "meaning_vi": "Chủ đề, đề tài",
-  "meaning_en": "Chủ đề, đề tài",
+  "meaning_en": "theme, topic",
   "example": {
    "jp": "論文（ろんぶん）のテーマを来週（らいしゅう）までにしなければならない。",
    "vi": "Cho đến tuần sau là phải quyết định đề tài luận văn.",
-   "en": "Cho đến tuần sau là phải quyết định đề tài luận văn.",
+   "en": "I have to decide on my thesis topic by next week.",
    "seg": [
     {
      "t": "論文",
@@ -23022,12 +23022,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "手続き＜する＞",
   "meaning_vi": "Thủ tục",
-  "meaning_en": "Thủ tục",
+  "meaning_en": "procedure, paperwork",
   "furigana": "てつづき",
   "example": {
    "jp": "入学（にゅうがく）の手続（てつづ）きは、金曜日（きんようび）までにしなければならない。",
    "vi": "Đến hết thứ Sáu phải làm xong thủ tục nhập học.",
-   "en": "Đến hết thứ Sáu phải làm xong thủ tục nhập học.",
+   "en": "The enrollment paperwork has to be done by Friday.",
    "seg": [
     {
      "t": "入学",
@@ -23062,12 +23062,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "日付",
   "meaning_vi": "Ngày tháng",
-  "meaning_en": "Ngày tháng",
+  "meaning_en": "date",
   "furigana": "ひづけ",
   "example": {
    "jp": "レポートに日付（ひづけ）を書（か）いてください。",
    "vi": "Hãy ghi ngày tháng vào bản báo cáo.",
-   "en": "Hãy ghi ngày tháng vào bản báo cáo.",
+   "en": "Please write the date on your report.",
    "seg": [
     {
      "t": "レポートに"
@@ -23098,12 +23098,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "筆者",
   "meaning_vi": "Tác giả",
-  "meaning_en": "Tác giả",
+  "meaning_en": "author, writer",
   "furigana": "ひっしゃ",
   "example": {
    "jp": "この筆者（ひっしゃ）の本（ほん）は、私（わたし）にはとても役に立（やくにた）つ。",
    "vi": "Sách của tác giả này rất có ích cho tôi.",
-   "en": "Sách của tác giả này rất có ích cho tôi.",
+   "en": "This author's books are very useful to me.",
    "seg": [
     {
      "t": "この"
@@ -23148,12 +23148,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "内容",
   "meaning_vi": "Nội dung",
-  "meaning_en": "Nội dung",
+  "meaning_en": "content, substance",
   "furigana": "ないよう",
   "example": {
    "jp": "レポートの内容（ないよう）はいいが、枚数（まいすう）が足（た）りない。",
    "vi": "Nội dung báo cáo tốt nhưng không đủ số trang.",
-   "en": "Nội dung báo cáo tốt nhưng không đủ số trang.",
+   "en": "The content of the report is good, but it isn't long enough.",
    "seg": [
     {
      "t": "レポートの"
@@ -23191,11 +23191,11 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "まとめる",
   "meaning_vi": "Tóm tắt",
-  "meaning_en": "Tóm tắt",
+  "meaning_en": "summarize, pull together",
   "example": {
    "jp": "考（かんが）えをまとめて、発表（はっぴょう）してください。",
    "vi": "Hãy tóm tắt suy nghĩ của mình và phát biểu.",
-   "en": "Hãy tóm tắt suy nghĩ của mình và phát biểu.",
+   "en": "Please pull your thoughts together and present them.",
    "seg": [
     {
      "t": "考",
@@ -23223,12 +23223,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "仕上げる",
   "meaning_vi": "Làm xong, hoàn thành",
-  "meaning_en": "Làm xong, hoàn thành",
+  "meaning_en": "finish, complete",
   "furigana": "しあげる",
   "example": {
    "jp": "卒業（そつぎょう）論文（ろんぶん）を1週間（しゅうかん）で仕上（しあ）げた。",
    "vi": "Tôi hoàn thành luận văn tốt nghiệp trong một tuần.",
-   "en": "Tôi hoàn thành luận văn tốt nghiệp trong một tuần.",
+   "en": "I finished my graduation thesis in a week.",
    "seg": [
     {
      "t": "卒業",
@@ -23267,12 +23267,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "提出＜する＞",
   "meaning_vi": "Sự nộp, xuất trình",
-  "meaning_en": "Sự nộp, xuất trình",
+  "meaning_en": "submit, hand in",
   "furigana": "ていしゅつ",
   "example": {
    "jp": "締め切（しめき）りまでに、レポートを提出（ていしゅつ）しなければ。",
    "vi": "Cho đến hạn chót phải nộp báo cáo.",
-   "en": "Cho đến hạn chót phải nộp báo cáo.",
+   "en": "I have to submit the report by the deadline.",
    "seg": [
     {
      "t": "締め切",
@@ -23300,12 +23300,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "進路",
   "meaning_vi": "Lựa chọn trong tương lai",
-  "meaning_en": "Lựa chọn trong tương lai",
+  "meaning_en": "future course, path after graduation",
   "furigana": "しんろ",
   "example": {
    "jp": "大学（だいがく）卒業（そつぎょう）後（ご）の進路（しんろ）について、親（おや）に相談（そうだん）した。",
    "vi": "Tôi đã bàn với bố mẹ về lựa chọn trong tương lai sau khi tốt nghiệp đại học.",
-   "en": "Tôi đã bàn với bố mẹ về lựa chọn trong tương lai sau khi tốt nghiệp đại học.",
+   "en": "I talked with my parents about my plans after graduating from university.",
    "seg": [
     {
      "t": "大学",
@@ -23355,12 +23355,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "大学院",
   "meaning_vi": "Cao học",
-  "meaning_en": "Cao học",
+  "meaning_en": "graduate school",
   "furigana": "だいがくいん",
   "example": {
    "jp": "私（わたし）は大学院（だいがくいん）で、研究（けんきゅう）をしたいと思（おも）っている。",
    "vi": "Tôi muốn làm nghiên cứu ở bậc cao học.",
-   "en": "Tôi muốn làm nghiên cứu ở bậc cao học.",
+   "en": "I'm thinking I'd like to do research at graduate school.",
    "seg": [
     {
      "t": "私",
@@ -23402,12 +23402,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "進学＜する＞",
   "meaning_vi": "Sự học lên",
-  "meaning_en": "Sự học lên",
+  "meaning_en": "go on to higher education, advance to the next level of schooling",
   "furigana": "しんがく",
   "example": {
    "jp": "大学院（だいがくいん）進学（しんがく）のための準備（じゅんび）をする。",
    "vi": "Tôi chuẩn bị để học lên cao học.",
-   "en": "Tôi chuẩn bị để học lên cao học.",
+   "en": "I'm preparing to go on to graduate school.",
    "seg": [
     {
      "t": "大学院",
@@ -23439,12 +23439,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "一人暮らし",
   "meaning_vi": "Sống một mình",
-  "meaning_en": "Sống một mình",
+  "meaning_en": "living alone",
   "furigana": "ひとりぐらし",
   "example": {
    "jp": "一人暮（ひとりぐ）らしは楽（らく）いが、ときどきさびしくなる。",
    "vi": "Sống một mình thoải mái nhưng thỉnh thoảng cũng cô đơn.",
-   "en": "Sống một mình thoải mái nhưng thỉnh thoảng cũng cô đơn.",
+   "en": "Living alone is comfortable, but sometimes I get lonely.",
    "seg": [
     {
      "t": "一人暮",
@@ -23472,11 +23472,11 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "アルバイト＜する＞",
   "meaning_vi": "Việc làm thêm",
-  "meaning_en": "Việc làm thêm",
+  "meaning_en": "part-time job",
   "example": {
    "jp": "来月（らいげつ）からアルバイトを減（へ）らすことにした。",
    "vi": "Tôi quyết định từ tháng sau sẽ giảm đi làm thêm.",
-   "en": "Tôi quyết định từ tháng sau sẽ giảm đi làm thêm.",
+   "en": "I decided to cut back on my part-time work starting next month.",
    "seg": [
     {
      "t": "来月",
@@ -23504,12 +23504,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "時給",
   "meaning_vi": "Lương theo giờ",
-  "meaning_en": "Lương theo giờ",
+  "meaning_en": "hourly wage",
   "furigana": "じきゅう",
   "example": {
    "jp": "今（いま）のバイトの時給（じきゅう）は悪（わる）くない。",
    "vi": "Lương giờ của công việc làm thêm bây giờ không tồi.",
-   "en": "Lương giờ của công việc làm thêm bây giờ không tồi.",
+   "en": "The hourly wage at my current part-time job isn't bad.",
    "seg": [
     {
      "t": "今",
@@ -23544,12 +23544,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "寮",
   "meaning_vi": "Ký túc xá",
-  "meaning_en": "Ký túc xá",
+  "meaning_en": "dormitory",
   "furigana": "りょう",
   "example": {
    "jp": "大学（だいがく）の寮（りょう）が空（あ）いていれば、ぜひ入（はい）りたい。",
    "vi": "Tôi muốn vào ký túc xá đại học nếu còn trống.",
-   "en": "Tôi muốn vào ký túc xá đại học nếu còn trống.",
+   "en": "If there's space in the university dormitory, I definitely want to move in.",
    "seg": [
     {
      "t": "大学",
@@ -23591,12 +23591,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "休学＜する＞",
   "meaning_vi": "Sự nghỉ học",
-  "meaning_en": "Sự nghỉ học",
+  "meaning_en": "take a leave of absence from school",
   "furigana": "きゅうがく",
   "example": {
    "jp": "海外（かいがい）留学（りゅうがく）するために、2年間（ねんかん）休学（きゅうがく）することにした。",
    "vi": "Tôi đã quyết định nghỉ học hai năm để đi du học.",
-   "en": "Tôi đã quyết định nghỉ học hai năm để đi du học.",
+   "en": "I decided to take two years off school to study abroad.",
    "seg": [
     {
      "t": "海外",
@@ -23632,12 +23632,12 @@
   "section_title": "Trường đại học của Nhật Bản",
   "word": "退学＜する＞",
   "meaning_vi": "Sự thôi học, bỏ học",
-  "meaning_en": "Sự thôi học, bỏ học",
+  "meaning_en": "drop out, leave school",
   "furigana": "たいがく",
   "example": {
    "jp": "経済（けいざい）的（てき）な理由（りゆう）で退学（たいがく）した。",
    "vi": "Tôi thôi học vì lý do kinh tế.",
-   "en": "Tôi thôi học vì lý do kinh tế.",
+   "en": "I dropped out for financial reasons.",
    "seg": [
     {
      "t": "経済",
@@ -23676,12 +23676,12 @@
   "section_title": "Thi cử",
   "word": "受験＜する＞",
   "meaning_vi": "Sự dự thi (thường chỉ việc thi vào các lớp đầu cấp, thi vào đại học)",
-  "meaning_en": "Sự dự thi (thường chỉ việc thi vào các lớp đầu cấp, thi vào đại học)",
+  "meaning_en": "take an entrance exam",
   "furigana": "じゅけん",
   "example": {
    "jp": "受験（じゅけん）のために、毎日（まいにち）10時間（じかん）勉強（べんきょう）している。",
    "vi": "Hàng ngày, tôi học 10 tiếng để thi.",
-   "en": "Hàng ngày, tôi học 10 tiếng để thi.",
+   "en": "I study ten hours a day for the entrance exam.",
    "seg": [
     {
      "t": "受験",
@@ -23720,12 +23720,12 @@
   "section_title": "Thi cử",
   "word": "受験生",
   "meaning_vi": "Thí sinh",
-  "meaning_en": "Thí sinh",
+  "meaning_en": "exam candidate, student preparing for entrance exams",
   "furigana": "じゅけんせい",
   "example": {
    "jp": "妹（いもうと）が受験生（じゅけんせい）なので、家族（かぞく）で応援（おうえん）している。",
    "vi": "Em gái tôi là thí sinh nên cả nhà cổ vũ.",
-   "en": "Em gái tôi là thí sinh nên cả nhà cổ vũ.",
+   "en": "My little sister is preparing for entrance exams, so the whole family is cheering her on.",
    "seg": [
     {
      "t": "妹",
@@ -23767,12 +23767,12 @@
   "section_title": "Thi cử",
   "word": "合格＜する＞",
   "meaning_vi": "Sự thi đỗ, thi đậu",
-  "meaning_en": "Sự thi đỗ, thi đậu",
+  "meaning_en": "pass (an exam)",
   "furigana": "ごうかく",
   "example": {
    "jp": "毎日（まいにち）がんばったのだから、ぜひ合格（ごうかく）したい。",
    "vi": "Tôi muốn nhất định thi đỗ vì đã cố gắng hàng ngày.",
-   "en": "Tôi muốn nhất định thi đỗ vì đã cố gắng hàng ngày.",
+   "en": "I've worked hard every day, so I really want to pass.",
    "seg": [
     {
      "t": "毎日",
@@ -23800,12 +23800,12 @@
   "section_title": "Thi cử",
   "word": "配る",
   "meaning_vi": "Phát",
-  "meaning_en": "Phát",
+  "meaning_en": "hand out, distribute",
   "furigana": "くばる",
   "example": {
    "jp": "試験（しけん）の説明（せつめい）のあとで、問題（もんだい）が配（くば）られた。",
    "vi": "Sau phần giải thích về kỳ thi, đề thi đã được phát.",
-   "en": "Sau phần giải thích về kỳ thi, đề thi đã được phát.",
+   "en": "After the exam instructions, the question papers were handed out.",
    "seg": [
     {
      "t": "試験",
@@ -23847,12 +23847,12 @@
   "section_title": "Thi cử",
   "word": "氏名",
   "meaning_vi": "Họ tên",
-  "meaning_en": "Họ tên",
+  "meaning_en": "full name",
   "furigana": "しめい",
   "example": {
    "jp": "氏名（しめい）のところに、ローマ字（ろーまじ）で名前（なまえ）を書（か）く。",
    "vi": "Viết tên bằng chữ La-tinh ở chỗ họ tên.",
-   "en": "Viết tên bằng chữ La-tinh ở chỗ họ tên.",
+   "en": "I write my name in Roman letters in the full name field.",
    "seg": [
     {
      "t": "氏名",
@@ -23894,12 +23894,12 @@
   "section_title": "Thi cử",
   "word": "裏返す",
   "meaning_vi": "Lật, úp",
-  "meaning_en": "Lật, úp",
+  "meaning_en": "turn over, flip over",
   "furigana": "うらがえす",
   "example": {
    "jp": "時間（じかん）になるまで、問題（もんだい）の紙（かみ）を裏返（うらがえ）しておいてください。",
    "vi": "Hãy úp đề thi xuống cho đến khi đến giờ (bắt đầu làm bài).",
-   "en": "Hãy úp đề thi xuống cho đến khi đến giờ (bắt đầu làm bài).",
+   "en": "Please leave the question paper face down until it's time to start.",
    "seg": [
     {
      "t": "時間",
@@ -23941,12 +23941,12 @@
   "section_title": "Thi cử",
   "word": "問い",
   "meaning_vi": "Câu hỏi",
-  "meaning_en": "Câu hỏi",
+  "meaning_en": "question",
   "furigana": "とい",
   "example": {
    "jp": "問（と）いをよく読（よ）んでから、答（こた）えましょう。",
    "vi": "Hãy đọc kỹ câu hỏi rồi trả lời!",
-   "en": "Hãy đọc kỹ câu hỏi rồi trả lời!",
+   "en": "Let's read the question carefully before answering.",
    "seg": [
     {
      "t": "問",
@@ -23981,12 +23981,12 @@
   "section_title": "Thi cử",
   "word": "解く",
   "meaning_vi": "Giải",
-  "meaning_en": "Giải",
+  "meaning_en": "solve, work out",
   "furigana": "とく",
   "example": {
    "jp": "どんどん問題（もんだい）を解（と）いていく。",
    "vi": "Tôi nhanh chóng giải dần các câu hỏi.",
-   "en": "Tôi nhanh chóng giải dần các câu hỏi.",
+   "en": "I work through the questions one after another.",
    "seg": [
     {
      "t": "どんどん"
@@ -24017,12 +24017,12 @@
   "section_title": "Thi cử",
   "word": "正解＜する＞",
   "meaning_vi": "Câu trả lời đúng, sự trả lời đúng",
-  "meaning_en": "Câu trả lời đúng, sự trả lời đúng",
+  "meaning_en": "correct answer",
   "furigana": "せいかい",
   "example": {
    "jp": "試験（しけん）が終（お）わったら、正解（せいかい）の紙（かみ）を配（くば）ります。",
    "vi": "Sau khi kỳ thi kết thúc, sẽ phát đáp án.",
-   "en": "Sau khi kỳ thi kết thúc, sẽ phát đáp án.",
+   "en": "Once the exam is over, we'll hand out the answer key.",
    "seg": [
     {
      "t": "試験",
@@ -24071,12 +24071,12 @@
   "section_title": "Thi cử",
   "word": "正確＜な＞",
   "meaning_vi": "Sự chính xác (chính xác)",
-  "meaning_en": "Sự chính xác (chính xác)",
+  "meaning_en": "accurate, precise",
   "furigana": "せいかく",
   "example": {
    "jp": "漢字（かんじ）は正確（せいかく）に書（か）いてください。",
    "vi": "Hãy viết chữ Kanji một cách chính xác!",
-   "en": "Hãy viết chữ Kanji một cách chính xác!",
+   "en": "Please write the kanji accurately.",
    "seg": [
     {
      "t": "漢字",
@@ -24111,11 +24111,11 @@
   "section_title": "Thi cử",
   "word": "すらすら[と]",
   "meaning_vi": "Vèo vèo, trơn tru",
-  "meaning_en": "Vèo vèo, trơn tru",
+  "meaning_en": "smoothly, without a hitch",
   "example": {
    "jp": "問題（もんだい）が簡単（かんたん）なので、すらすらと解（と）けた。",
    "vi": "Đề bài đơn giản nên tôi giải vèo vèo.",
-   "en": "Đề bài đơn giản nên tôi giải vèo vèo.",
+   "en": "The questions were easy, so I solved them smoothly.",
    "seg": [
     {
      "t": "問題",
@@ -24150,11 +24150,11 @@
   "section_title": "Thi cử",
   "word": "ちっとも",
   "meaning_vi": "Tẹo nào, tí gì",
-  "meaning_en": "Tẹo nào, tí gì",
+  "meaning_en": "not at all, not in the least",
   "example": {
    "jp": "何（なん）度（ど）問題（もんだい）を読（よ）んでも、ちっともわからない。",
    "vi": "Đọc mấy lần đề bài chẳng hiểu tí gì.",
-   "en": "Đọc mấy lần đề bài chẳng hiểu tí gì.",
+   "en": "No matter how many times I read the question, I don't understand it at all.",
    "seg": [
     {
      "t": "何",
@@ -24190,11 +24190,11 @@
   "section_title": "Thi cử",
   "word": "カンニング＜する＞",
   "meaning_vi": "Sự quay cóp",
-  "meaning_en": "Sự quay cóp",
+  "meaning_en": "cheating (on a test)",
   "example": {
    "jp": "カンニングをした学生（がくせい）が、注意（ちゅうい）された。",
    "vi": "Những sinh viên quay cóp bị nhắc nhở.",
-   "en": "Những sinh viên quay cóp bị nhắc nhở.",
+   "en": "The students who cheated were reprimanded.",
    "seg": [
     {
      "t": "カンニングをした"
@@ -24225,11 +24225,11 @@
   "section_title": "Thi cử",
   "word": "ぎりぎり＜な＞",
   "meaning_vi": "Sự vừa đủ, vừa sát (với yêu cầu, giới hạn), sự vừa kịp (thời gian), suýt soát",
-  "meaning_en": "Sự vừa đủ, vừa sát (với yêu cầu, giới hạn), sự vừa kịp (thời gian), suýt soát",
+  "meaning_en": "just barely, by a hair",
   "example": {
    "jp": "これが合格（ごうかく）ぎりぎりの点（てん）だった。（名） 試験（しけん）の時間（じかん）ぎりぎりに間に合（まにあ）った。（ナ形）",
    "vi": "Đây là điểm vừa đủ điểm thi đỗ. / Vừa kịp sát giờ thi.",
-   "en": "Đây là điểm vừa đủ điểm thi đỗ. / Vừa kịp sát giờ thi.",
+   "en": "This was just barely a passing score. I made it to the exam with barely any time to spare.",
    "seg": [
     {
      "t": "これが"
@@ -24281,12 +24281,12 @@
   "section_title": "Thi cử",
   "word": "余る",
   "meaning_vi": "Thừa",
-  "meaning_en": "Thừa",
+  "meaning_en": "be left over, be in surplus",
   "furigana": "あまる",
   "example": {
    "jp": "問題（もんだい）が早（はや）く解（と）けたので、時間（じかん）が余（あま）った。",
    "vi": "Vì tôi giải nhanh bài nên đã thừa thời gian.",
-   "en": "Vì tôi giải nhanh bài nên đã thừa thời gian.",
+   "en": "I solved the questions quickly, so I had time left over.",
    "seg": [
     {
      "t": "問題",
@@ -24335,12 +24335,12 @@
   "section_title": "Thi cử",
   "word": "適当な",
   "meaning_vi": "Phù hợp, đại khái",
-  "meaning_en": "Phù hợp, đại khái",
+  "meaning_en": "suitable, appropriate; slapdash, half-hearted",
   "furigana": "てきとうな",
   "example": {
    "jp": "①4つの中（なか）から、適当（てきとう）な答（こた）えを1つ選（えら）びなさい。 ②彼（かれ）の仕事（しごと）は、いつも適当（てきとう）で、みんな怒（おこ）っている。",
    "vi": "①Trong số 4 câu trả lời, hãy chọn ra một câu trả lời phù hợp. ②Công việc anh ta lúc nào cũng làm đại khái nên bị mọi người tức giận.",
-   "en": "①Trong số 4 câu trả lời, hãy chọn ra một câu trả lời phù hợp. ②Công việc anh ta lúc nào cũng làm đại khái nên bị mọi người tức giận.",
+   "en": "(1) From the four choices, select the one appropriate answer. (2) His work is always half-hearted, and everyone is annoyed with him.",
    "seg": [
     {
      "t": "①4つの"
@@ -24413,11 +24413,11 @@
   "section_title": "Thi cử",
   "word": "でたらめ＜な＞",
   "meaning_vi": "Sự linh tinh (linh tinh)",
-  "meaning_en": "Sự linh tinh (linh tinh)",
+  "meaning_en": "nonsense, random, made-up",
   "example": {
    "jp": "全然（ぜんぜん）わからないので、でたらめな答（こた）えを書（か）いた。（ナ形）",
    "vi": "Vì chẳng hiểu gì cả nên tôi đã viết câu trả lời linh tinh.",
-   "en": "Vì chẳng hiểu gì cả nên tôi đã viết câu trả lời linh tinh.",
+   "en": "I had no idea at all, so I wrote a random answer.",
    "seg": [
     {
      "t": "全然",
@@ -24452,12 +24452,12 @@
   "section_title": "Thi cử",
   "word": "間違い",
   "meaning_vi": "Chỗ nhầm, chỗ sai",
-  "meaning_en": "Chỗ nhầm, chỗ sai",
+  "meaning_en": "mistake, error",
   "furigana": "まちがい",
   "example": {
    "jp": "試験（しけん）の問題（もんだい）に間違（まちが）いがあった。",
    "vi": "Trong đề bài có chỗ sai.",
-   "en": "Trong đề bài có chỗ sai.",
+   "en": "There was a mistake in the exam question.",
    "seg": [
     {
      "t": "試験",
@@ -24492,12 +24492,12 @@
   "section_title": "Thi cử",
   "word": "優れる",
   "meaning_vi": "Giỏi, xuất sắc",
-  "meaning_en": "Giỏi, xuất sắc",
+  "meaning_en": "be excellent, be superior",
   "furigana": "すぐれる",
   "example": {
    "jp": "彼女（かのじょ）は学力（がくりょく）が優（すぐ）れている。",
    "vi": "Cô ấy có học lực giỏi.",
-   "en": "Cô ấy có học lực giỏi.",
+   "en": "She has excellent academic ability.",
    "seg": [
     {
      "t": "彼女",
@@ -24532,12 +24532,12 @@
   "section_title": "Thi cử",
   "word": "実力",
   "meaning_vi": "Thực lực",
-  "meaning_en": "Thực lực",
+  "meaning_en": "true ability, real skill",
   "furigana": "じつりょく",
   "example": {
    "jp": "試験（しけん）で、100パーセント実力（じつりょく）を出（だ）すのは難（むずか）しい。",
    "vi": "Khó có thể phát huy hết 100% thực lực trong kỳ thi.",
-   "en": "Khó có thể phát huy hết 100% thực lực trong kỳ thi.",
+   "en": "It's hard to show 100 percent of your ability in an exam.",
    "seg": [
     {
      "t": "試験",
@@ -24579,12 +24579,12 @@
   "section_title": "Thi cử",
   "word": "結果",
   "meaning_vi": "Kết quả",
-  "meaning_en": "Kết quả",
+  "meaning_en": "result, outcome",
   "furigana": "けっか",
   "example": {
    "jp": "早（はや）く結果（けっか）を知（し）りたいが、知（し）るのが怖（こわ）い。",
    "vi": "Tôi muốn biết kết quả nhanh nhưng lại sợ biết.",
-   "en": "Tôi muốn biết kết quả nhanh nhưng lại sợ biết.",
+   "en": "I want to know the results soon, but I'm afraid to find out.",
    "seg": [
     {
      "t": "早",
@@ -24633,12 +24633,12 @@
   "section_title": "Thi cử",
   "word": "少数",
   "meaning_vi": "Số ít",
-  "meaning_en": "Số ít",
+  "meaning_en": "small number, minority",
   "furigana": "しょうすう",
   "example": {
    "jp": "この試験（しけん）は少数（しょうすう）の人（ひと）しか合格（ごうかく）しない。",
    "vi": "Cuộc thi này chỉ có số ít người là đỗ.",
-   "en": "Cuộc thi này chỉ có số ít người là đỗ.",
+   "en": "Only a small number of people pass this exam.",
    "seg": [
     {
      "t": "この"
@@ -24683,12 +24683,12 @@
   "section_title": "Thi cử",
   "word": "可能性",
   "meaning_vi": "Khả năng",
-  "meaning_en": "Khả năng",
+  "meaning_en": "possibility, potential",
   "furigana": "かのうせい",
   "example": {
    "jp": "自分（じぶん）が大学（だいがく）に受（う）かる可能（かのう）性（せい）を信（しん）じたい。",
    "vi": "Tôi muốn tin vào khả năng đỗ đại học của mình.",
-   "en": "Tôi muốn tin vào khả năng đỗ đại học của mình.",
+   "en": "I want to believe in my own chances of getting into university.",
    "seg": [
     {
      "t": "自分",
@@ -24741,11 +24741,11 @@
   "section_title": "Thi cử",
   "word": "あきらめる",
   "meaning_vi": "Bỏ cuộc, từ bỏ",
-  "meaning_en": "Bỏ cuộc, từ bỏ",
+  "meaning_en": "give up",
   "example": {
    "jp": "どんな結果（けっか）でも、あきらめない。",
    "vi": "Dù có kết quả thế nào đi nữa tôi cũng không bỏ cuộc.",
-   "en": "Dù có kết quả thế nào đi nữa tôi cũng không bỏ cuộc.",
+   "en": "Whatever the result, I won't give up.",
    "seg": [
     {
      "t": "どんな"
@@ -24769,12 +24769,12 @@
   "section_title": "Thi cử",
   "word": "掲示板",
   "meaning_vi": "Bảng thông báo",
-  "meaning_en": "Bảng thông báo",
+  "meaning_en": "bulletin board, notice board",
   "furigana": "けいじばん",
   "example": {
    "jp": "掲示板（けいじばん）に、試験（しけん）のお知らせがはってある。",
    "vi": "Trên bảng thông báo có dán thông báo thi.",
-   "en": "Trên bảng thông báo có dán thông báo thi.",
+   "en": "A notice about the exam is posted on the bulletin board.",
    "seg": [
     {
      "t": "掲示板",
@@ -24802,12 +24802,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "知識",
   "meaning_vi": "Kiến thức",
-  "meaning_en": "Kiến thức",
+  "meaning_en": "knowledge",
   "furigana": "ちしき",
   "example": {
    "jp": "もっといろいろな知識（ちしき）を増（ふ）やしたい。",
    "vi": "Tôi muốn tăng cường nhiều kiến thức hơn nữa.",
-   "en": "Tôi muốn tăng cường nhiều kiến thức hơn nữa.",
+   "en": "I want to broaden my knowledge in all sorts of areas.",
    "seg": [
     {
      "t": "もっといろいろな"
@@ -24838,12 +24838,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "理解＜する＞",
   "meaning_vi": "Sự lý giải, hiểu",
-  "meaning_en": "Sự lý giải, hiểu",
+  "meaning_en": "understand, comprehend",
   "furigana": "りかい",
   "example": {
    "jp": "前（まえ）より早（はや）く日本語（にほんご）が理解（りかい）できるようになった。",
    "vi": "Tôi bắt đầu hiểu tiếng Nhật nhanh hơn trước.",
-   "en": "Tôi bắt đầu hiểu tiếng Nhật nhanh hơn trước.",
+   "en": "I've become able to understand Japanese faster than before.",
    "seg": [
     {
      "t": "前",
@@ -24885,12 +24885,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "目指す",
   "meaning_vi": "Nhắm tới, lấy mục tiêu",
-  "meaning_en": "Nhắm tới, lấy mục tiêu",
+  "meaning_en": "aim for, set one's sights on",
   "furigana": "めざす",
   "example": {
    "jp": "N3合格（ごうかく）を目指（めざ）して毎日（まいにち）がんばっている。",
    "vi": "Lấy mục tiêu thi đỗ N3, hàng ngày tôi cố gắng.",
-   "en": "Lấy mục tiêu thi đỗ N3, hàng ngày tôi cố gắng.",
+   "en": "I work hard every day aiming to pass N3.",
    "seg": [
     {
      "t": "N3"
@@ -24928,12 +24928,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "試す",
   "meaning_vi": "Thử",
-  "meaning_en": "Thử",
+  "meaning_en": "try out, test",
   "furigana": "ためす",
   "example": {
    "jp": "練習（れんしゅう）問題（もんだい）で自分（じぶん）の実力（じつりょく）を試（ため）してみよう。",
    "vi": "Tôi sẽ thử thực lực của mình bằng bài luyện tập.",
-   "en": "Tôi sẽ thử thực lực của mình bằng bài luyện tập.",
+   "en": "Let me test my ability with some practice questions.",
    "seg": [
     {
      "t": "練習",
@@ -24979,12 +24979,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "自信",
   "meaning_vi": "Tự tin",
-  "meaning_en": "Tự tin",
+  "meaning_en": "confidence",
   "furigana": "じしん",
   "example": {
    "jp": "日本語（にほんご）の日常（にちじょう）会話（かいわ）に自信（じしん）がある。",
    "vi": "Trong hội thoại thông thường bằng tiếng Nhật thì tôi tự tin.",
-   "en": "Trong hội thoại thông thường bằng tiếng Nhật thì tôi tự tin.",
+   "en": "I'm confident in everyday Japanese conversation.",
    "seg": [
     {
      "t": "日本語",
@@ -25023,12 +25023,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "やる気",
   "meaning_vi": "Động lực, sự hăng hái",
-  "meaning_en": "Động lực, sự hăng hái",
+  "meaning_en": "motivation, drive",
   "furigana": "やるき",
   "example": {
    "jp": "やる気はあるが、なかなか集中（しゅうちゅう）できない。",
    "vi": "Có hứng làm nhưng mãi không thể tập trung.",
-   "en": "Có hứng làm nhưng mãi không thể tập trung.",
+   "en": "I have the motivation, but I just can't concentrate.",
    "seg": [
     {
      "t": "やる気はあるが、なかなか"
@@ -25052,11 +25052,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "くやしい",
   "meaning_vi": "Cay cú, ấm ức, tiếc",
-  "meaning_en": "Cay cú, ấm ức, tiếc",
+  "meaning_en": "frustrating, galling, regrettable",
   "example": {
    "jp": "94点（てん）で不（ふ）合格（ごうかく）だった。とてもくやしい。",
    "vi": "94 điểm mà vẫn bị trượt. Tôi rất ấm ức.",
-   "en": "94 điểm mà vẫn bị trượt. Tôi rất ấm ức.",
+   "en": "I got 94 points and still failed. It's so frustrating.",
    "seg": [
     {
      "t": "94"
@@ -25091,11 +25091,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "レベル",
   "meaning_vi": "Trình độ",
-  "meaning_en": "Trình độ",
+  "meaning_en": "level",
   "example": {
    "jp": "早（はや）くN1のレベル勉強（べんきょう）をしたい。",
    "vi": "Tôi muốn nhanh chóng học trình độ N1.",
-   "en": "Tôi muốn nhanh chóng học trình độ N1.",
+   "en": "I want to get to studying at the N1 level soon.",
    "seg": [
     {
      "t": "早",
@@ -25123,12 +25123,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "利口＜な＞",
   "meaning_vi": "Khôn ngoan, lanh lợi",
-  "meaning_en": "Khôn ngoan, lanh lợi",
+  "meaning_en": "clever, bright, smart",
   "furigana": "りこう",
   "example": {
    "jp": "弟（おとうと）は利口（りこう）で、医者（いしゃ）になることを目指（めざ）している。（ナ形）",
    "vi": "Em trai tôi lanh lợi và đang hướng đến mục tiêu trở thành bác sĩ.",
-   "en": "Em trai tôi lanh lợi và đang hướng đến mục tiêu trở thành bác sĩ.",
+   "en": "My younger brother is bright and is aiming to become a doctor.",
    "seg": [
     {
      "t": "弟",
@@ -25170,11 +25170,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "さっそく",
   "meaning_vi": "Ngay, luôn",
-  "meaning_en": "Ngay, luôn",
+  "meaning_en": "at once, right away",
   "example": {
    "jp": "勉強（べんきょう）した単語（たんご）を、さっそく使（つか）ってみる。",
    "vi": "Tôi thử dùng luôn từ đã học.",
-   "en": "Tôi thử dùng luôn từ đã học.",
+   "en": "I try using the words I've studied right away.",
    "seg": [
     {
      "t": "勉強",
@@ -25209,11 +25209,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "ざっと",
   "meaning_vi": "Sơ qua, lướt qua",
-  "meaning_en": "Sơ qua, lướt qua",
+  "meaning_en": "roughly, briefly, at a glance",
   "example": {
    "jp": "テスト前（まえ）に教科書（きょうかしょ）をざっと復習（ふくしゅう）した。",
    "vi": "Tôi đã ôn qua sách giáo khoa trước bài kiểm tra.",
-   "en": "Tôi đã ôn qua sách giáo khoa trước bài kiểm tra.",
+   "en": "I skimmed through the textbook before the test.",
    "seg": [
     {
      "t": "テスト"
@@ -25251,11 +25251,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "しっかり[と] ＜する＞",
   "meaning_vi": "Chắc chắn, cẩn thận, đàng hoàng",
-  "meaning_en": "Chắc chắn, cẩn thận, đàng hoàng",
+  "meaning_en": "firmly, thoroughly, properly",
   "example": {
    "jp": "彼（かれ）は毎日（まいにち）しっかり予習（よしゅう）も復習（ふくしゅう）もしている。",
    "vi": "Hàng ngày anh ta đều ôn bài và học trước bài cẩn thận.",
-   "en": "Hàng ngày anh ta đều ôn bài và học trước bài cẩn thận.",
+   "en": "He does his preparation and review thoroughly every day.",
    "seg": [
     {
      "t": "彼",
@@ -25297,11 +25297,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "じっくり[と]",
   "meaning_vi": "Kỹ lưỡng, thong thả",
-  "meaning_en": "Kỹ lưỡng, thong thả",
+  "meaning_en": "carefully, unhurriedly, thoroughly",
   "example": {
    "jp": "時間（じかん）はあるので、じっくりと解（と）いてください。",
    "vi": "Có thời gian nên hãy thong thả làm bài!",
-   "en": "Có thời gian nên hãy thong thả làm bài!",
+   "en": "There's plenty of time, so please take your time solving them.",
    "seg": [
     {
      "t": "時間",
@@ -25329,12 +25329,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "相当＜な＞",
   "meaning_vi": "Khá, rất, tương đương",
-  "meaning_en": "Khá, rất, tương đương",
+  "meaning_en": "considerably, quite, fairly",
   "furigana": "そうとう",
   "example": {
    "jp": "今日（きょう）のテストは、相当（そうとう）難（むずか）しかった。（副（ふく））",
    "vi": "Bài kiểm tra ngày hôm nay khá là khó.",
-   "en": "Bài kiểm tra ngày hôm nay khá là khó.",
+   "en": "Today's test was considerably difficult.",
    "seg": [
     {
      "t": "今日",
@@ -25373,11 +25373,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "まあまあ＜な＞",
   "meaning_vi": "Cũng được, tạm được",
-  "meaning_en": "Cũng được, tạm được",
+  "meaning_en": "so-so, not bad, passable",
   "example": {
    "jp": "この問題（もんだい）で80点（てん）なら、まあまあだろう。",
    "vi": "Với bài này mà được 80 điểm thì có lẽ cũng được rồi.",
-   "en": "Với bài này mà được 80 điểm thì có lẽ cũng được rồi.",
+   "en": "If you got 80 on this question set, that's not bad.",
    "seg": [
     {
      "t": "この"
@@ -25408,12 +25408,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "努力＜する＞",
   "meaning_vi": "Sự nỗ lực, cố gắng",
-  "meaning_en": "Sự nỗ lực, cố gắng",
+  "meaning_en": "effort, make an effort",
   "furigana": "どりょく",
   "example": {
    "jp": "努カ（どりょく）すれば、きっといい、結果（けっか）になる。",
    "vi": "Nếu cố gắng nhất định sẽ cho kết quả tốt.",
-   "en": "Nếu cố gắng nhất định sẽ cho kết quả tốt.",
+   "en": "If you make the effort, you're sure to get good results.",
    "seg": [
     {
      "t": "努カ",
@@ -25441,11 +25441,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "なまける",
   "meaning_vi": "Lười biếng",
-  "meaning_en": "Lười biếng",
+  "meaning_en": "be lazy, slack off",
   "example": {
    "jp": "昨日（きのう）の夜（よる）なまけたので、テストの点（てん）が悪（わる）かった。",
    "vi": "Đêm qua tôi lười nên điểm bài kiểm tra kém.",
-   "en": "Đêm qua tôi lười nên điểm bài kiểm tra kém.",
+   "en": "I slacked off last night, so my test score was poor.",
    "seg": [
     {
      "t": "昨日",
@@ -25487,12 +25487,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "得意な",
   "meaning_vi": "Giỏi, sở trường",
-  "meaning_en": "Giỏi, sở trường",
+  "meaning_en": "good at, one's strong point",
   "furigana": "とくいな",
   "example": {
    "jp": "努力（どりょく）したので、会話（かいわ）も得意（とくい）になった。",
    "vi": "Vì đã nỗ lực nên tôi cũng trở nên giỏi hội thoại.",
-   "en": "Vì đã nỗ lực nên tôi cũng trở nên giỏi hội thoại.",
+   "en": "I worked at it, and now I'm good at conversation too.",
    "seg": [
     {
      "t": "努力",
@@ -25527,12 +25527,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "苦手な",
   "meaning_vi": "Yếu, không giỏi",
-  "meaning_en": "Yếu, không giỏi",
+  "meaning_en": "poor at, weak at",
   "furigana": "にがてな",
   "example": {
    "jp": "苦手（にがて）なな科目（かもく）は作文（さくぶん）だ。",
    "vi": "Môn học yếu của tôi là tập làm văn.",
-   "en": "Môn học yếu của tôi là tập làm văn.",
+   "en": "The subject I'm weak at is composition.",
    "seg": [
     {
      "t": "苦手",
@@ -25567,11 +25567,11 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "マスター＜する＞",
   "meaning_vi": "Sự thành thạo, thành thạo",
-  "meaning_en": "Sự thành thạo, thành thạo",
+  "meaning_en": "master",
   "example": {
    "jp": "外国（がいこく）語（ご）をマスターするのは大変（たいへん）だ。",
    "vi": "Để thành thạo ngoại ngữ rất vất vả.",
-   "en": "Để thành thạo ngoại ngữ rất vất vả.",
+   "en": "Mastering a foreign language is hard work.",
    "seg": [
     {
      "t": "外国",
@@ -25603,12 +25603,12 @@
   "section_title": "Hãy cố gắng hơn nữa!",
   "word": "問い合わせる",
   "meaning_vi": "Hỏi, liên hệ hỏi",
-  "meaning_en": "Hỏi, liên hệ hỏi",
+  "meaning_en": "inquire, make an inquiry",
   "furigana": "といあわせる",
   "example": {
    "jp": "日本語（にほんご）能力（のうりょく）試験（しけん）について、電話（でんわ）で問い合（といあ）わせた。",
    "vi": "Tôi gọi điện hỏi về kỳ thi năng lực tiếng Nhật.",
-   "en": "Tôi gọi điện hỏi về kỳ thi năng lực tiếng Nhật.",
+   "en": "I called to inquire about the Japanese Language Proficiency Test.",
    "seg": [
     {
      "t": "日本語",
@@ -25651,12 +25651,12 @@
   "section_title": "Việc làm",
   "word": "企業",
   "meaning_vi": "Doanh nghiệp, công ty",
-  "meaning_en": "Doanh nghiệp, công ty",
+  "meaning_en": "company, enterprise",
   "furigana": "きぎょう",
   "example": {
    "jp": "興味（きょうみ）がある企業（きぎょう）が、いくつかある。",
    "vi": "Có một vài doanh nghiệp mà tôi quan tâm.",
-   "en": "Có một vài doanh nghiệp mà tôi quan tâm.",
+   "en": "There are several companies I'm interested in.",
    "seg": [
     {
      "t": "興味",
@@ -25684,11 +25684,11 @@
   "section_title": "Việc làm",
   "word": "ホームページ",
   "meaning_vi": "Trang chủ, trang web",
-  "meaning_en": "Trang chủ, trang web",
+  "meaning_en": "homepage, website",
   "example": {
    "jp": "行（い）きたい会社（かいしゃ）のホームページをチェックする。",
    "vi": "Tôi kiểm tra trang chủ của công ty mà tôi muốn đến.",
-   "en": "Tôi kiểm tra trang chủ của công ty mà tôi muốn đến.",
+   "en": "I check the website of the company I want to join.",
    "seg": [
     {
      "t": "行",
@@ -25716,12 +25716,12 @@
   "section_title": "Việc làm",
   "word": "条件",
   "meaning_vi": "Điều kiện",
-  "meaning_en": "Điều kiện",
+  "meaning_en": "condition, terms",
   "furigana": "じょうけん",
   "example": {
    "jp": "就職（しゅうしょく）の条件（じょうけん）は、企業（きぎょう）によって違（ちが）う。",
    "vi": "Điều kiện làm việc mỗi công ty mỗi khác.",
-   "en": "Điều kiện làm việc mỗi công ty mỗi khác.",
+   "en": "Employment terms differ from company to company.",
    "seg": [
     {
      "t": "就職",
@@ -25763,12 +25763,12 @@
   "section_title": "Việc làm",
   "word": "募集＜する＞",
   "meaning_vi": "Sự tuyển mộ, chiêu mộ",
-  "meaning_en": "Sự tuyển mộ, chiêu mộ",
+  "meaning_en": "recruitment, invite applications",
   "furigana": "ぼしゅう",
   "example": {
    "jp": "サイトを見（み）て、募集（ぼしゅう）の条件（じょうけん）を確認（かくにん）した。",
    "vi": "Tôi xem trang web, xác nhận điều kiện tuyển mộ.",
-   "en": "Tôi xem trang web, xác nhận điều kiện tuyển mộ.",
+   "en": "I looked at the site and checked the recruitment conditions.",
    "seg": [
     {
      "t": "サイトを"
@@ -25813,12 +25813,12 @@
   "section_title": "Việc làm",
   "word": "応募＜する＞",
   "meaning_vi": "Sự ứng tuyển",
-  "meaning_en": "Sự ứng tuyển",
+  "meaning_en": "apply (for a position)",
   "furigana": "おうぼ",
   "example": {
    "jp": "3つの企業（きぎょう）に応募（おうぼ）して見ようと思っている",
    "vi": "Tôi định thử ứng tuyển vào 3 công ty.",
-   "en": "Tôi định thử ứng tuyển vào 3 công ty.",
+   "en": "I'm thinking of applying to three companies.",
    "seg": [
     {
      "t": "3つの"
@@ -25849,12 +25849,12 @@
   "section_title": "Việc làm",
   "word": "登録＜する＞",
   "meaning_vi": "Sự đăng ký",
-  "meaning_en": "Sự đăng ký",
+  "meaning_en": "register, sign up",
   "furigana": "とうろく",
   "example": {
    "jp": "就職（しゅうしょく）サイトに登録（とうろく）した。",
    "vi": "Tôi đã đăng ký vào trang xin việc.",
-   "en": "Tôi đã đăng ký vào trang xin việc.",
+   "en": "I registered on a job-hunting site.",
    "seg": [
     {
      "t": "就職",
@@ -25882,12 +25882,12 @@
   "section_title": "Việc làm",
   "word": "面接＜する＞",
   "meaning_vi": "Sự phỏng vấn",
-  "meaning_en": "Sự phỏng vấn",
+  "meaning_en": "interview",
   "furigana": "めんせつ",
   "example": {
    "jp": "面接（めんせつ）の翌日（よくじつ）、さっそく連絡（れんらく）が来（き）た。",
    "vi": "Hôm sau ngày phỏng vấn đã có liên lạc ngay.",
-   "en": "Hôm sau ngày phỏng vấn đã có liên lạc ngay.",
+   "en": "The day after the interview, I heard back right away.",
    "seg": [
     {
      "t": "面接",
@@ -25929,12 +25929,12 @@
   "section_title": "Việc làm",
   "word": "履歴書",
   "meaning_vi": "Sơ yếu lý lịch",
-  "meaning_en": "Sơ yếu lý lịch",
+  "meaning_en": "resume, CV",
   "furigana": "りれきしょ",
   "example": {
    "jp": "履歴（りれき）書（しょ）のために写真（しゃしん）を撮（と）った。",
    "vi": "Tôi chụp ảnh để làm sơ yếu lý lịch.",
-   "en": "Tôi chụp ảnh để làm sơ yếu lý lịch.",
+   "en": "I had a photo taken for my resume.",
    "seg": [
     {
      "t": "履歴",
@@ -25973,12 +25973,12 @@
   "section_title": "Việc làm",
   "word": "記入＜する＞",
   "meaning_vi": "Việc ghi, điền vào",
-  "meaning_en": "Việc ghi, điền vào",
+  "meaning_en": "fill in, enter (on a form)",
   "furigana": "きにゅう",
   "example": {
    "jp": "履歴（りれき）書（しょ）に趣味（しゅみ）を記入（きにゅう）した。",
    "vi": "Tôi viết sở thích vào sơ yếu lý lịch.",
-   "en": "Tôi viết sở thích vào sơ yếu lý lịch.",
+   "en": "I filled in my hobbies on the resume.",
    "seg": [
     {
      "t": "履歴",
@@ -26017,12 +26017,12 @@
   "section_title": "Việc làm",
   "word": "資格",
   "meaning_vi": "Chứng chỉ, tư cách",
-  "meaning_en": "Chứng chỉ, tư cách",
+  "meaning_en": "qualification, certification",
   "furigana": "しかく",
   "example": {
    "jp": "就職（しゅうしょく）のためには、どんな資格（しかく）が必要（ひつよう）ですか。",
    "vi": "Để xin việc thì cần chứng chỉ gì?",
-   "en": "Để xin việc thì cần chứng chỉ gì?",
+   "en": "What kind of qualifications do you need to get a job?",
    "seg": [
     {
      "t": "就職",
@@ -26057,12 +26057,12 @@
   "section_title": "Việc làm",
   "word": "服装",
   "meaning_vi": "Trang phục",
-  "meaning_en": "Trang phục",
+  "meaning_en": "clothing, attire",
   "furigana": "ふくそう",
   "example": {
    "jp": "面接（めんせつ）では、髪型（かみがた）や服装（ふくそう）にも気（き）をつけましょう。",
    "vi": "Hãy chú ý tóc tai, trang phục khi đi phỏng vấn.",
-   "en": "Hãy chú ý tóc tai, trang phục khi đi phỏng vấn.",
+   "en": "At an interview, let's pay attention to hairstyle and attire too.",
    "seg": [
     {
      "t": "面接",
@@ -26104,12 +26104,12 @@
   "section_title": "Việc làm",
   "word": "長所",
   "meaning_vi": "Sở trường, điểm mạnh",
-  "meaning_en": "Sở trường, điểm mạnh",
+  "meaning_en": "strong point, merit",
   "furigana": "ちょうしょ",
   "example": {
    "jp": "あなたの長所（ちょうしょ）を2つ答（こた）えてください。",
    "vi": "Hãy nói 2 sở trường của bạn.",
-   "en": "Hãy nói 2 sở trường của bạn.",
+   "en": "Please tell us two of your strong points.",
    "seg": [
     {
      "t": "あなたの"
@@ -26140,12 +26140,12 @@
   "section_title": "Việc làm",
   "word": "短所",
   "meaning_vi": "Sở đoản, điểm yếu",
-  "meaning_en": "Sở đoản, điểm yếu",
+  "meaning_en": "weak point, shortcoming",
   "furigana": "たんしょ",
   "example": {
    "jp": "あなたの短所（たんしょ）は何（なん）ですか。",
    "vi": "Điểm yếu của bạn là gì?",
-   "en": "Điểm yếu của bạn là gì?",
+   "en": "What is your weak point?",
    "seg": [
     {
      "t": "あなたの"
@@ -26176,12 +26176,12 @@
   "section_title": "Việc làm",
   "word": "全て",
   "meaning_vi": "Tất cả",
-  "meaning_en": "Tất cả",
+  "meaning_en": "all, everything",
   "furigana": "すべて",
   "example": {
    "jp": "社長（しゃちょう）の本（ほん）は、全（すべ）て読（よ）んだ。",
    "vi": "Tôi đã đọc tất cả sách của giám đốc.",
-   "en": "Tôi đã đọc tất cả sách của giám đốc.",
+   "en": "I've read all of the president's books.",
    "seg": [
     {
      "t": "社長",
@@ -26223,11 +26223,11 @@
   "section_title": "Việc làm",
   "word": "ワイシャツ",
   "meaning_vi": "Áo sơ mi",
-  "meaning_en": "Áo sơ mi",
+  "meaning_en": "dress shirt",
   "example": {
    "jp": "デパートで、面接（めんせつ）のためのワイシャツを買（か）った。",
    "vi": "Tôi đã mua áo sơ mi để đi phỏng vấn tại trung tâm thương mại.",
-   "en": "Tôi đã mua áo sơ mi để đi phỏng vấn tại trung tâm thương mại.",
+   "en": "I bought a dress shirt for the interview at the department store.",
    "seg": [
     {
      "t": "デパートで、"
@@ -26258,11 +26258,11 @@
   "section_title": "Việc làm",
   "word": "ぜひ",
   "meaning_vi": "Nhất định, rất",
-  "meaning_en": "Nhất định, rất",
+  "meaning_en": "by all means, definitely",
   "example": {
    "jp": "ぜひ、こちらで働（はたら）かせていただきたいです。",
    "vi": "Tôi rất muốn được làm việc ở đây.",
-   "en": "Tôi rất muốn được làm việc ở đây.",
+   "en": "I would very much like to be allowed to work here.",
    "seg": [
     {
      "t": "ぜひ、こちらで"
@@ -26286,11 +26286,11 @@
   "section_title": "Việc làm",
   "word": "ぜひとも",
   "meaning_vi": "Nhất định, rất mong",
-  "meaning_en": "Nhất định, rất mong",
+  "meaning_en": "by all means, without fail",
   "example": {
    "jp": "ぜひとも、この会社（かいしゃ）で働（はたら）きたいです。",
    "vi": "Tôi rất mong muốn được làm việc ở công ty này.",
-   "en": "Tôi rất mong muốn được làm việc ở công ty này.",
+   "en": "I want to work at this company more than anything.",
    "seg": [
     {
      "t": "ぜひとも、この"
@@ -26321,11 +26321,11 @@
   "section_title": "Việc làm",
   "word": "やとう",
   "meaning_vi": "Thuê, tuyển",
-  "meaning_en": "Thuê, tuyển",
+  "meaning_en": "employ, hire",
   "example": {
    "jp": "この会社（かいしゃ）では、1000人（にん）以上（いじょう）の社員（しゃいん）をやとっているそうだ。",
    "vi": "Nghe nói công ty này thuê hơn 1000 nhân viên.",
-   "en": "Nghe nói công ty này thuê hơn 1000 nhân viên.",
+   "en": "Apparently this company employs over a thousand staff.",
    "seg": [
     {
      "t": "この"
@@ -26367,12 +26367,12 @@
   "section_title": "Việc làm",
   "word": "採用＜する＞",
   "meaning_vi": "Sự tuyển dụng",
-  "meaning_en": "Sự tuyển dụng",
+  "meaning_en": "hire, adopt, take on",
   "furigana": "さいよう",
   "example": {
    "jp": "あの会社（かいしゃ）に採用（さいよう）されるか、心配（しんぱい）だ。",
    "vi": "Tôi lo không biết có được tuyển dụng vào công ty đấy không.",
-   "en": "Tôi lo không biết có được tuyển dụng vào công ty đấy không.",
+   "en": "I'm worried about whether I'll be hired by that company.",
    "seg": [
     {
      "t": "あの"
@@ -26410,12 +26410,12 @@
   "section_title": "Việc làm",
   "word": "受け取る",
   "meaning_vi": "Nhận",
-  "meaning_en": "Nhận",
+  "meaning_en": "receive, accept",
   "furigana": "うけとる",
   "example": {
    "jp": "面接（めんせつ）した会社（かいしゃ）から、採用（さいよう）の書類（しょるい）を受け取（うけと）った。",
    "vi": "Tôi đã nhận được hồ sơ tuyển dụng từ công ty phỏng vấn.",
-   "en": "Tôi đã nhận được hồ sơ tuyển dụng từ công ty phỏng vấn.",
+   "en": "I received the employment paperwork from the company that interviewed me.",
    "seg": [
     {
      "t": "面接",
@@ -26464,12 +26464,12 @@
   "section_title": "Việc làm",
   "word": "正社員",
   "meaning_vi": "Nhân viên chính thức",
-  "meaning_en": "Nhân viên chính thức",
+  "meaning_en": "full-time employee, permanent staff",
   "furigana": "せいしゃいん",
   "example": {
    "jp": "できれば正社員（せいしゃいん）になりたい。",
    "vi": "Nếu được tôi muốn trở thành nhân viên chính thức.",
-   "en": "Nếu được tôi muốn trở thành nhân viên chính thức.",
+   "en": "If possible, I want to become a full-time employee.",
    "seg": [
     {
      "t": "できれば"
@@ -26493,11 +26493,11 @@
   "section_title": "Việc làm",
   "word": "サラリーマン",
   "meaning_vi": "Người làm công ăn lương, nhân viên công ty",
-  "meaning_en": "Người làm công ăn lương, nhân viên công ty",
+  "meaning_en": "office worker, salaried worker",
   "example": {
    "jp": "サラリーマンらしいスーツを買（か）った。",
    "vi": "Tôi đã mua một bộ com-lê đúng kiểu người đi làm.",
-   "en": "Tôi đã mua một bộ com-lê đúng kiểu người đi làm.",
+   "en": "I bought a suit that looks the part for an office worker.",
    "seg": [
     {
      "t": "サラリーマンらしいスーツを"
@@ -26521,12 +26521,12 @@
   "section_title": "Việc làm",
   "word": "研修＜する＞",
   "meaning_vi": "Sự đào tạo, tập huấn",
-  "meaning_en": "Sự đào tạo, tập huấn",
+  "meaning_en": "training",
   "furigana": "けんしゅう",
   "example": {
    "jp": "採用（さいよう）が決（き）まって、すぐに研修（けんしゅう）が始（はじ）まる。",
    "vi": "Tuyển dụng được quyết định và công tác đào tạo được bắt đầu ngay.",
-   "en": "Tuyển dụng được quyết định và công tác đào tạo được bắt đầu ngay.",
+   "en": "Once my hiring was confirmed, training started right away.",
    "seg": [
     {
      "t": "採用",
@@ -26568,12 +26568,12 @@
   "section_title": "Việc làm",
   "word": "実習＜する＞",
   "meaning_vi": "Sự thực tập, tập sự",
-  "meaning_en": "Sự thực tập, tập sự",
+  "meaning_en": "practical training, hands-on practice",
   "furigana": "じっしゅう",
   "example": {
    "jp": "研修（けんしゅう）で習（なら）ったことを実習（じっしゅう）する。",
    "vi": "Thực tập những điều đã học ở khóa đào tạo.",
-   "en": "Thực tập những điều đã học ở khóa đào tạo.",
+   "en": "I put into practice what I learned in the training.",
    "seg": [
     {
      "t": "研修",
@@ -26608,11 +26608,11 @@
   "section_title": "Việc làm",
   "word": "インターン",
   "meaning_vi": "Thực tập, thực tập sinh",
-  "meaning_en": "Thực tập, thực tập sinh",
+  "meaning_en": "internship, intern",
   "example": {
    "jp": "インターンは学生（がくせい）にとって、いい経験（けいけん）だ。",
    "vi": "Thực tập là một kinh nghiệm tốt đối với sinh viên.",
-   "en": "Thực tập là một kinh nghiệm tốt đối với sinh viên.",
+   "en": "An internship is good experience for a student.",
    "seg": [
     {
      "t": "インターンは"
@@ -26643,12 +26643,12 @@
   "section_title": "Việc làm",
   "word": "職場",
   "meaning_vi": "Nơi làm việc",
-  "meaning_en": "Nơi làm việc",
+  "meaning_en": "workplace",
   "furigana": "しょくば",
   "example": {
    "jp": "職場（しょくば）では、人（ひと）との関係（かんけい）がとても大切（たいせつ）だ。",
    "vi": "Mối quan hệ con người ở nơi làm việc rất quan trọng.",
-   "en": "Mối quan hệ con người ở nơi làm việc rất quan trọng.",
+   "en": "At work, relationships with people are very important.",
    "seg": [
     {
      "t": "職場",
@@ -26690,12 +26690,12 @@
   "section_title": "Việc làm",
   "word": "得る",
   "meaning_vi": "Đạt được, có được",
-  "meaning_en": "Đạt được, có được",
+  "meaning_en": "gain, obtain",
   "furigana": "える",
   "example": {
    "jp": "仕事（しごと）から、多（おお）くの経験（けいけん）を得（え）ることができる。",
    "vi": "Có thể có được nhiều kinh nghiệm từ công việc.",
-   "en": "Có thể có được nhiều kinh nghiệm từ công việc.",
+   "en": "You can gain a great deal of experience from a job.",
    "seg": [
     {
      "t": "仕事",
@@ -26737,11 +26737,11 @@
   "section_title": "Việc làm",
   "word": "たとえ",
   "meaning_vi": "Cho dù",
-  "meaning_en": "Cho dù",
+  "meaning_en": "even if, supposing",
   "example": {
    "jp": "たとえ嫌（いや）なことがあっても、がんばりたい。",
    "vi": "Cho dù có điều gì chán ghét tôi vẫn muốn cố gắng.",
-   "en": "Cho dù có điều gì chán ghét tôi vẫn muốn cố gắng.",
+   "en": "Even if unpleasant things happen, I want to keep working at it.",
    "seg": [
     {
      "t": "たとえ"
@@ -26765,12 +26765,12 @@
   "section_title": "Công ty",
   "word": "受付",
   "meaning_vi": "Quầy lễ tân",
-  "meaning_en": "Quầy lễ tân",
+  "meaning_en": "reception desk",
   "furigana": "うけつけ",
   "example": {
    "jp": "受付（うけつけ）で名前（なまえ）を書（か）かないと、会社（かいしゃ）の中（なか）に入（い）れない。",
    "vi": "Nếu không ghi tên ở quầy lễ tân thì không vào được công ty.",
-   "en": "Nếu không ghi tên ở quầy lễ tân thì không vào được công ty.",
+   "en": "If you don't sign in at reception, you can't enter the company.",
    "seg": [
     {
      "t": "受付",
@@ -26826,11 +26826,11 @@
   "section_title": "Công ty",
   "word": "ミーティング＜する＞",
   "meaning_vi": "Cuộc họp",
-  "meaning_en": "Cuộc họp",
+  "meaning_en": "meeting",
   "example": {
    "jp": "3時（じ）からのミーティングには、社長（しゃちょう）も出席（しゅっせき）する。",
    "vi": "Giám đốc cũng tham dự cuộc họp từ 3 giờ.",
-   "en": "Giám đốc cũng tham dự cuộc họp từ 3 giờ.",
+   "en": "The president will attend the meeting at three as well.",
    "seg": [
     {
      "t": "3"
@@ -26868,12 +26868,12 @@
   "section_title": "Công ty",
   "word": "話し合う",
   "meaning_vi": "Thảo luận, bàn bạc",
-  "meaning_en": "Thảo luận, bàn bạc",
+  "meaning_en": "discuss, talk over",
   "furigana": "はなしあう",
   "example": {
    "jp": "来月（らいげつ）のイベントについて、みんなで話し合（はなしあ）った。",
    "vi": "Tất cả đã bàn bạc với nhau về sự kiện của tháng tới.",
-   "en": "Tất cả đã bàn bạc với nhau về sự kiện của tháng tới.",
+   "en": "We all discussed next month's event together.",
    "seg": [
     {
      "t": "来月",
@@ -26901,12 +26901,12 @@
   "section_title": "Công ty",
   "word": "調整＜する＞",
   "meaning_vi": "Sự điều chỉnh, điều phối, sắp xếp",
-  "meaning_en": "Sự điều chỉnh, điều phối, sắp xếp",
+  "meaning_en": "adjust, coordinate",
   "furigana": "ちょうせい",
   "example": {
    "jp": "出張（しゅっちょう）のスケジュールを調整（ちょうせい）した。",
    "vi": "Tôi đã sắp xếp lịch trình công tác.",
-   "en": "Tôi đã sắp xếp lịch trình công tác.",
+   "en": "I adjusted the schedule for the business trip.",
    "seg": [
     {
      "t": "出張",
@@ -26934,12 +26934,12 @@
   "section_title": "Công ty",
   "word": "能力",
   "meaning_vi": "Năng lực",
-  "meaning_en": "Năng lực",
+  "meaning_en": "ability, capability",
   "furigana": "のうりょく",
   "example": {
    "jp": "A社（しゃ）では、能力（のうりょく）のある外国（がいこく）人（じん）を採用（さいよう）している。",
    "vi": "Ở công ty A tuyển dụng những người nước ngoài có năng lực.",
-   "en": "Ở công ty A tuyển dụng những người nước ngoài có năng lực.",
+   "en": "Company A hires capable foreign nationals.",
    "seg": [
     {
      "t": "A"
@@ -26988,12 +26988,12 @@
   "section_title": "Công ty",
   "word": "役割",
   "meaning_vi": "Vai trò",
-  "meaning_en": "Vai trò",
+  "meaning_en": "role, part",
   "furigana": "やくわり",
   "example": {
    "jp": "一人（ひとり）ひとりの役割（やくわり）を、しっかり決（き）めましょう。",
    "vi": "Chúng ta hãy quy định rõ ràng vai trò của từng người!",
-   "en": "Chúng ta hãy quy định rõ ràng vai trò của từng người!",
+   "en": "Let's clearly decide each person's role.",
    "seg": [
     {
      "t": "一人",
@@ -27028,11 +27028,11 @@
   "section_title": "Công ty",
   "word": "もうかる",
   "meaning_vi": "Có lời, kiếm được lợi nhuận",
-  "meaning_en": "Có lời, kiếm được lợi nhuận",
+  "meaning_en": "be profitable, make money",
   "example": {
    "jp": "会社（かいしゃ）がもうかるためには、アイディアが必要（ひつよう）だ。",
    "vi": "Cần có ý tưởng để công ty có lời.",
-   "en": "Cần có ý tưởng để công ty có lời.",
+   "en": "For a company to be profitable, it needs ideas.",
    "seg": [
     {
      "t": "会社",
@@ -27060,12 +27060,12 @@
   "section_title": "Công ty",
   "word": "通勤＜する＞",
   "meaning_vi": "Sự đi làm (chỉ việc đi và về)",
-  "meaning_en": "Sự đi làm (chỉ việc đi và về)",
+  "meaning_en": "commute to work",
   "furigana": "つうきん",
   "example": {
    "jp": "通勤（つうきん）に往復（おうふく）で4時間（じかん）もかかる。",
    "vi": "Mất những 4 tiếng đi làm vừa đi vừa về.",
-   "en": "Mất những 4 tiếng đi làm vừa đi vừa về.",
+   "en": "My commute takes a full four hours round trip.",
    "seg": [
     {
      "t": "通勤",
@@ -27100,12 +27100,12 @@
   "section_title": "Công ty",
   "word": "早退＜する＞",
   "meaning_vi": "Sự về sớm",
-  "meaning_en": "Sự về sớm",
+  "meaning_en": "leave early",
   "furigana": "そうたい",
   "example": {
    "jp": "かぜをひいたので、3時（じ）くらいに早退（そうたい）した。",
    "vi": "Tôi bị cảm nên về sớm tầm 3 giờ.",
-   "en": "Tôi bị cảm nên về sớm tầm 3 giờ.",
+   "en": "I caught a cold, so I left early at around three.",
    "seg": [
     {
      "t": "かぜをひいたので、3"
@@ -27136,12 +27136,12 @@
   "section_title": "Công ty",
   "word": "無断",
   "meaning_vi": "Không xin phép",
-  "meaning_en": "Không xin phép",
+  "meaning_en": "without permission, without notice",
   "furigana": "むだん",
   "example": {
    "jp": "社会（しゃかい）人（じん）が無断（むだん）で休（やす）むなんて、信（しん）じられない。",
    "vi": "Không thể tin được là có người đi làm nghỉ không xin phép.",
-   "en": "Không thể tin được là có người đi làm nghỉ không xin phép.",
+   "en": "I can't believe a working adult would take time off without notice.",
    "seg": [
     {
      "t": "社会",
@@ -27187,12 +27187,12 @@
   "section_title": "Công ty",
   "word": "社会人",
   "meaning_vi": "Người đi làm",
-  "meaning_en": "Người đi làm",
+  "meaning_en": "working adult, member of society",
   "furigana": "しゃかいじん",
   "example": {
    "jp": "弟（おとうと）は、今年（ことし）の春（はる）から社会（しゃかい）人（じん）になる。",
    "vi": "Em trai tôi sẽ trở thành người đi làm từ mùa xuân năm nay.",
-   "en": "Em trai tôi sẽ trở thành người đi làm từ mùa xuân năm nay.",
+   "en": "My younger brother enters the workforce this spring.",
    "seg": [
     {
      "t": "弟",
@@ -27238,12 +27238,12 @@
   "section_title": "Công ty",
   "word": "一人ひとり",
   "meaning_vi": "Từng người từng người",
-  "meaning_en": "Từng người từng người",
+  "meaning_en": "each person, one by one",
   "furigana": "ひとりひとり",
   "example": {
    "jp": "社長（しゃちょう）が一人（ひとり）ひとりの意見（いけん）を聞（き）いた。",
    "vi": "Giám đốc nghe ý kiến từng người từng người một.",
-   "en": "Giám đốc nghe ý kiến từng người từng người một.",
+   "en": "The president listened to each person's opinion in turn.",
    "seg": [
     {
      "t": "社長",
@@ -27285,12 +27285,12 @@
   "section_title": "Công ty",
   "word": "印鑑",
   "meaning_vi": "Con dấu",
-  "meaning_en": "Con dấu",
+  "meaning_en": "personal seal, hanko",
   "furigana": "いんかん",
   "example": {
    "jp": "銀行（ぎんこう）の書類（しょるい）のために、印鑑（いんかん）が必要（ひつよう）だ。",
    "vi": "Cần có con dấu để làm giấy tờ ngân hàng.",
-   "en": "Cần có con dấu để làm giấy tờ ngân hàng.",
+   "en": "You need a personal seal for the bank paperwork.",
    "seg": [
     {
      "t": "銀行",
@@ -27332,11 +27332,11 @@
   "section_title": "Công ty",
   "word": "インタビュー＜する＞",
   "meaning_vi": "Sự phỏng vấn",
-  "meaning_en": "Sự phỏng vấn",
+  "meaning_en": "interview (for media)",
   "example": {
    "jp": "番組（ばんぐみ）のインタビューで、仕事（しごと）について聞（き）かれた。",
    "vi": "Tôi bị hỏi về công việc trong cuộc phỏng vấn của một chương trình truyền hình.",
-   "en": "Tôi bị hỏi về công việc trong cuộc phỏng vấn của một chương trình truyền hình.",
+   "en": "I was asked about my work in a TV program interview.",
    "seg": [
     {
      "t": "番組",
@@ -27371,11 +27371,11 @@
   "section_title": "Công ty",
   "word": "アンケート",
   "meaning_vi": "Cuộc điều tra, khảo sát, thăm dò",
-  "meaning_en": "Cuộc điều tra, khảo sát, thăm dò",
+  "meaning_en": "questionnaire, survey",
   "example": {
    "jp": "会社（かいしゃ）で商品（しょうひん）に関するアンケートを取（と）った。",
    "vi": "Ở công ty đã làm cuộc khảo sát liên quan đến sản phẩm.",
-   "en": "Ở công ty đã làm cuộc khảo sát liên quan đến sản phẩm.",
+   "en": "The company conducted a survey about the product.",
    "seg": [
     {
      "t": "会社",
@@ -27410,12 +27410,12 @@
   "section_title": "Công ty",
   "word": "回答＜する＞",
   "meaning_vi": "Sự trả lời, hồi đáp",
-  "meaning_en": "Sự trả lời, hồi đáp",
+  "meaning_en": "response, reply",
   "furigana": "かいとう",
   "example": {
    "jp": "ほとんどの社員（しゃいん）が、アンケートに回答（かいとう）した。",
    "vi": "Hầu hết nhân viên đều trả lời khảo sát.",
-   "en": "Hầu hết nhân viên đều trả lời khảo sát.",
+   "en": "Almost all the employees responded to the survey.",
    "seg": [
     {
      "t": "ほとんどの"
@@ -27446,11 +27446,11 @@
   "section_title": "Công ty",
   "word": "ノック＜する＞",
   "meaning_vi": "Gõ cửa",
-  "meaning_en": "Gõ cửa",
+  "meaning_en": "knock",
   "example": {
    "jp": "部屋（へや）入（はい）るときは、ドアをノックしてください。",
    "vi": "Hãy gõ cửa khi vào phòng!",
-   "en": "Hãy gõ cửa khi vào phòng!",
+   "en": "Please knock on the door when you enter the room.",
    "seg": [
     {
      "t": "部屋",
@@ -27475,12 +27475,12 @@
   "section_title": "Công ty",
   "word": "月末",
   "meaning_vi": "Cuối tháng",
-  "meaning_en": "Cuối tháng",
+  "meaning_en": "end of the month",
   "furigana": "げつまつ",
   "example": {
    "jp": "この会社（かいしゃ）では月末（げつまつ）が給料（きゅうりょう）日（び）だ。",
    "vi": "Công ty này cuối tháng là ngày lĩnh lương.",
-   "en": "Công ty này cuối tháng là ngày lĩnh lương.",
+   "en": "At this company, payday is at the end of the month.",
    "seg": [
     {
      "t": "この"
@@ -27522,12 +27522,12 @@
   "section_title": "Công ty",
   "word": "確かめる",
   "meaning_vi": "Kiểm tra lại, xác nhận",
-  "meaning_en": "Kiểm tra lại, xác nhận",
+  "meaning_en": "make sure, verify",
   "furigana": "たしかめる",
   "example": {
    "jp": "書類（しょるい）を受け取（うけと）ったら、必（かなら）ず内容（ないよう）を確（たし）かめる。",
    "vi": "Khi nhận giấy tờ nhất định phải kiểm tra nội dung.",
-   "en": "Khi nhận giấy tờ nhất định phải kiểm tra nội dung.",
+   "en": "When you receive documents, always verify the contents.",
    "seg": [
     {
      "t": "書類",
@@ -27576,12 +27576,12 @@
   "section_title": "Công ty",
   "word": "確かに",
   "meaning_vi": "Quả thật, đúng là, chắc chắn là",
-  "meaning_en": "Quả thật, đúng là, chắc chắn là",
+  "meaning_en": "certainly, indeed, surely",
   "furigana": "たしかに",
   "example": {
    "jp": "A「今日（きょう）は社長（しゃちょう）が出張（しゅっちょう）なので、会議（かいぎ）は明日（あした）にしきしょう。」 B「確（たし）かにそのほうがいいですね。」",
    "vi": "A: Hôm nay giám đốc đi công tác nên chúng ta hãy để cuộc họp vào ngày mai đi! / B: Đúng là nên như thế nhỉ!",
-   "en": "A: Hôm nay giám đốc đi công tác nên chúng ta hãy để cuộc họp vào ngày mai đi! / B: Đúng là nên như thế nhỉ!",
+   "en": "A: \"The president is away on business today, so let's hold the meeting tomorrow.\" B: \"Yes, that would certainly be better.\"",
    "seg": [
     {
      "t": "A「"
@@ -27640,11 +27640,11 @@
   "section_title": "Công ty",
   "word": "とっくに",
   "meaning_vi": "Đã, từ lâu rồi",
-  "meaning_en": "Đã, từ lâu rồi",
+  "meaning_en": "long ago, already",
   "example": {
    "jp": "A「部長（ぶちょう）は？」 B「とっくに帰（かえ）りましたよ。1時間（じかん）くらい前（まえ）に。」",
    "vi": "A: Trưởng phòng đâu rồi? / B: Về từ lâu rồi mà! Khoảng 1 tiếng trước.",
-   "en": "A: Trưởng phòng đâu rồi? / B: Về từ lâu rồi mà! Khoảng 1 tiếng trước.",
+   "en": "A: \"Where's the department manager?\" B: \"He left ages ago — about an hour back.\"",
    "seg": [
     {
      "t": "A「"
@@ -27689,12 +27689,12 @@
   "section_title": "Công ty",
   "word": "失業＜する＞",
   "meaning_vi": "Sự thất nghiệp",
-  "meaning_en": "Sự thất nghiệp",
+  "meaning_en": "lose one's job, unemployment",
   "furigana": "しつぎょう",
   "example": {
    "jp": "兄（あに）は先月（せんげつ）会社（かいしゃ）を辞（や）めて、今（いま）失業（しつぎょう）中（ちゅう）だ。",
    "vi": "Anh trai tôi nghỉ việc công ty tháng trước, bây giờ đang thất nghiệp.",
-   "en": "Anh trai tôi nghỉ việc công ty tháng trước, bây giờ đang thất nghiệp.",
+   "en": "My older brother quit his job last month and is currently unemployed.",
    "seg": [
     {
      "t": "兄",
@@ -27748,12 +27748,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "上司",
   "meaning_vi": "Cấp trên, sếp",
-  "meaning_en": "Cấp trên, sếp",
+  "meaning_en": "superior, boss",
   "furigana": "じょうし",
   "example": {
    "jp": "上司（じょうし）はきびしいほうが、いいと思（おも）う。",
    "vi": "Tôi nghĩ sếp nên nghiêm khắc thì tốt hơn.",
-   "en": "Tôi nghĩ sếp nên nghiêm khắc thì tốt hơn.",
+   "en": "I think it's better for a boss to be strict.",
    "seg": [
     {
      "t": "上司",
@@ -27781,12 +27781,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "部下",
   "meaning_vi": "Cấp dưới, nhân viên dưới quyền",
-  "meaning_en": "Cấp dưới, nhân viên dưới quyền",
+  "meaning_en": "subordinate, staff under one",
   "furigana": "ぶか",
   "example": {
    "jp": "この会社（かいしゃ）では、部下（ぶか）が上司（じょうし）に自由（じゆう）に意見（いけん）を言（い）える。",
    "vi": "Trong công ty này, cấp dưới có thể tự do nói ý kiến với cấp trên.",
-   "en": "Trong công ty này, cấp dưới có thể tự do nói ý kiến với cấp trên.",
+   "en": "At this company, subordinates can freely voice their opinions to their bosses.",
    "seg": [
     {
      "t": "この"
@@ -27845,12 +27845,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "先輩",
   "meaning_vi": "Bậc đàn anh, người đi trước",
-  "meaning_en": "Bậc đàn anh, người đi trước",
+  "meaning_en": "senior colleague, one's senior (at school or work)",
   "furigana": "せんぱい",
   "example": {
    "jp": "私（わたし）と先輩（せんぱい）は、兄弟（きょうだい）のように親（した）しい。",
    "vi": "Tôi và bậc đàn anh thân thiết như anh em.",
-   "en": "Tôi và bậc đàn anh thân thiết như anh em.",
+   "en": "My senior colleague and I are as close as siblings.",
    "seg": [
     {
      "t": "私",
@@ -27892,12 +27892,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "肩書き",
   "meaning_vi": "Chức danh, chức vụ",
-  "meaning_en": "Chức danh, chức vụ",
+  "meaning_en": "job title",
   "furigana": "かたがき",
   "example": {
    "jp": "田中（たなか）さんの肩書（かたが）きは課長（かちょう）だ。",
    "vi": "Chức danh của anh Tanaka là trưởng phòng.",
-   "en": "Chức danh của anh Tanaka là trưởng phòng.",
+   "en": "Mr. Tanaka's title is section chief.",
    "seg": [
     {
      "t": "田中",
@@ -27932,11 +27932,11 @@
   "section_title": "Quan hệ trên dưới",
   "word": "アドバイス＜する＞",
   "meaning_vi": "Lời khuyên",
-  "meaning_en": "Lời khuyên",
+  "meaning_en": "advice",
   "example": {
    "jp": "先輩（せんぱい）のアドバイスは役に立（やくにた）つ。",
    "vi": "Lời khuyên của đàn anh rất có ích.",
-   "en": "Lời khuyên của đàn anh rất có ích.",
+   "en": "My senior colleague's advice is helpful.",
    "seg": [
     {
      "t": "先輩",
@@ -27964,11 +27964,11 @@
   "section_title": "Quan hệ trên dưới",
   "word": "ひとこと",
   "meaning_vi": "Đôi lời, một lời",
-  "meaning_en": "Đôi lời, một lời",
+  "meaning_en": "a word, a brief comment",
   "example": {
    "jp": "何（なに）かひとことアドバイスをお願いします。",
    "vi": "Xin hãy cho tôi đôi lời khuyên.",
-   "en": "Xin hãy cho tôi đôi lời khuyên.",
+   "en": "Please give me a word of advice.",
    "seg": [
     {
      "t": "何",
@@ -27989,12 +27989,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "同僚",
   "meaning_vi": "Đồng nghiệp",
-  "meaning_en": "Đồng nghiệp",
+  "meaning_en": "colleague, coworker",
   "furigana": "どうりょう",
   "example": {
    "jp": "あの会社（かいしゃ）の同僚（どうりょう）はみんないい人（ひと）だった。",
    "vi": "Các đồng nghiệp ở công ty đó đều là người tốt cả.",
-   "en": "Các đồng nghiệp ở công ty đó đều là người tốt cả.",
+   "en": "The colleagues at that company were all good people.",
    "seg": [
     {
      "t": "あの"
@@ -28032,12 +28032,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "同期",
   "meaning_vi": "Cùng đợt, cùng khóa",
-  "meaning_en": "Cùng đợt, cùng khóa",
+  "meaning_en": "same cohort, joined in the same year",
   "furigana": "どうき",
   "example": {
    "jp": "私（わたし）の同期（どうき）は10人（にん）しかいない。",
    "vi": "Cùng đợt với tôi chỉ có 10 người.",
-   "en": "Cùng đợt với tôi chỉ có 10 người.",
+   "en": "There are only ten people in my intake year.",
    "seg": [
     {
      "t": "私",
@@ -28072,12 +28072,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "休暇",
   "meaning_vi": "Nghỉ phép, kỳ nghỉ",
-  "meaning_en": "Nghỉ phép, kỳ nghỉ",
+  "meaning_en": "leave, vacation",
   "furigana": "きゅうか",
   "example": {
    "jp": "上司（じょうし）に許可（きょか）をもらって、休暇（きゅうか）を取（と）った。",
    "vi": "Tôi đã xin phép cấp trên và nghỉ phép.",
-   "en": "Tôi đã xin phép cấp trên và nghỉ phép.",
+   "en": "I got permission from my boss and took some leave.",
    "seg": [
     {
      "t": "上司",
@@ -28119,11 +28119,11 @@
   "section_title": "Quan hệ trên dưới",
   "word": "オフ",
   "meaning_vi": "Nghỉ, ngày nghỉ",
-  "meaning_en": "Nghỉ, ngày nghỉ",
+  "meaning_en": "day off, time off",
   "example": {
    "jp": "オフの日（ひ）も、会社（かいしゃ）の同期（どうき）と会（あ）う。",
    "vi": "Ngày nghỉ cũng gặp người cùng đợt ở công ty.",
-   "en": "Ngày nghỉ cũng gặp người cùng đợt ở công ty.",
+   "en": "Even on my days off, I meet up with coworkers from my intake year.",
    "seg": [
     {
      "t": "オフの"
@@ -28168,12 +28168,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "責任",
   "meaning_vi": "Trách nhiệm",
-  "meaning_en": "Trách nhiệm",
+  "meaning_en": "responsibility",
   "furigana": "せきにん",
   "example": {
    "jp": "今（いま）の仕事（しごと）は責任（せきにん）が重（おも）い。",
    "vi": "Công việc hiện tại có trách nhiệm nặng nề.",
-   "en": "Công việc hiện tại có trách nhiệm nặng nề.",
+   "en": "My current job carries heavy responsibility.",
    "seg": [
     {
      "t": "今",
@@ -28215,11 +28215,11 @@
   "section_title": "Quan hệ trên dưới",
   "word": "プレッシャー",
   "meaning_vi": "Áp lực",
-  "meaning_en": "Áp lực",
+  "meaning_en": "pressure",
   "example": {
    "jp": "上司（じょうし）からのプレッシャーに負（ま）けたくない。",
    "vi": "Tôi không muốn đầu hàng trước áp lực từ cấp trên.",
-   "en": "Tôi không muốn đầu hàng trước áp lực từ cấp trên.",
+   "en": "I don't want to give in to the pressure from my boss.",
    "seg": [
     {
      "t": "上司",
@@ -28247,12 +28247,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "不満＜な＞",
   "meaning_vi": "Bất mãn, không hài lòng",
-  "meaning_en": "Bất mãn, không hài lòng",
+  "meaning_en": "dissatisfaction, discontent",
   "furigana": "ふまん",
   "example": {
    "jp": "不満（ふまん）があるなら、はっきり言（い）うべきだ。 不満（ふまん）な気持（きも）ちを上司（じょうし）に伝（つた）えた。",
    "vi": "Nếu có điều gì không hài lòng thì nên nói rõ ràng. / Tôi đã nói cảm giác bất mãn của mình với cấp trên.",
-   "en": "Nếu có điều gì không hài lòng thì nên nói rõ ràng. / Tôi đã nói cảm giác bất mãn của mình với cấp trên.",
+   "en": "If you're dissatisfied, you should say so clearly. I told my boss how dissatisfied I felt.",
    "seg": [
     {
      "t": "不満",
@@ -28308,12 +28308,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "命令＜する＞",
   "meaning_vi": "Lệnh, mệnh lệnh",
-  "meaning_en": "Lệnh, mệnh lệnh",
+  "meaning_en": "order, command",
   "furigana": "めいれい",
   "example": {
    "jp": "会社（かいしゃ）の命令（めいれい）にノーと言（い）えない。",
    "vi": "Không thể nói không với mệnh lệnh của công ty.",
-   "en": "Không thể nói không với mệnh lệnh của công ty.",
+   "en": "You can't say no to a company order.",
    "seg": [
     {
      "t": "会社",
@@ -28348,12 +28348,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "指示＜する＞",
   "meaning_vi": "Chỉ thị, chỉ dẫn",
-  "meaning_en": "Chỉ thị, chỉ dẫn",
+  "meaning_en": "instruction, direction",
   "furigana": "しじ",
   "example": {
    "jp": "上司（じょうし）に指示（しじ）されたことを忘（わす）れてしまった。",
    "vi": "Tôi quên mất những gì được cấp trên chỉ thị.",
-   "en": "Tôi quên mất những gì được cấp trên chỉ thị.",
+   "en": "I forgot what my boss instructed me to do.",
    "seg": [
     {
      "t": "上司",
@@ -28388,12 +28388,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "苦労＜する＞",
   "meaning_vi": "Sự vất vả, gian khổ",
-  "meaning_en": "Sự vất vả, gian khổ",
+  "meaning_en": "hardship, trouble, struggle",
   "furigana": "くろう",
   "example": {
    "jp": "仕事（しごと）を覚（おぼ）えるために、苦労（くろう）した。",
    "vi": "Tôi đã vất vả để học việc.",
-   "en": "Tôi đã vất vả để học việc.",
+   "en": "I struggled to learn the job.",
    "seg": [
     {
      "t": "仕事",
@@ -28428,11 +28428,11 @@
   "section_title": "Quan hệ trên dưới",
   "word": "くたくたな",
   "meaning_vi": "Rã rời, kiệt sức",
-  "meaning_en": "Rã rời, kiệt sức",
+  "meaning_en": "exhausted, worn out",
   "example": {
    "jp": "毎日（まいにち）仕事（しごと）が忙（いそが）しくて、もうくたくただ。",
    "vi": "Hằng ngày công việc bận rộn, kiệt sức lắm rồi.",
-   "en": "Hằng ngày công việc bận rộn, kiệt sức lắm rồi.",
+   "en": "Work is busy every day and I'm completely worn out.",
    "seg": [
     {
      "t": "毎日",
@@ -28464,11 +28464,11 @@
   "section_title": "Quan hệ trên dưới",
   "word": "ミス＜する＞",
   "meaning_vi": "Lỗi, sai sót",
-  "meaning_en": "Lỗi, sai sót",
+  "meaning_en": "mistake, error",
   "example": {
    "jp": "ミスは、だれにでもあることだ。",
    "vi": "Ai cũng có lúc mắc lỗi.",
-   "en": "Ai cũng có lúc mắc lỗi.",
+   "en": "Mistakes are something anyone can make.",
    "seg": [
     {
      "t": "ミスは、だれにでもあることだ。"
@@ -28485,12 +28485,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "報告＜する＞",
   "meaning_vi": "Báo cáo",
-  "meaning_en": "Báo cáo",
+  "meaning_en": "report",
   "furigana": "ほうこく",
   "example": {
    "jp": "もしミスしてしまったら、上司（じょうし）に報告（ほうこく）しなさい。",
    "vi": "Nếu mắc lỗi thì hãy báo cáo cho cấp trên.",
-   "en": "Nếu mắc lỗi thì hãy báo cáo cho cấp trên.",
+   "en": "If you do make a mistake, report it to your boss.",
    "seg": [
     {
      "t": "もしミスしてしまったら、"
@@ -28521,12 +28521,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "飲み会",
   "meaning_vi": "Buổi nhậu, tiệc rượu",
-  "meaning_en": "Buổi nhậu, tiệc rượu",
+  "meaning_en": "drinking party",
   "furigana": "のみかい",
   "example": {
    "jp": "明日（あした）、同期（どうき）の飲（の）み会（かい）がある。",
    "vi": "Ngày mai có buổi nhậu với hội cùng đợt.",
-   "en": "Ngày mai có buổi nhậu với hội cùng đợt.",
+   "en": "Tomorrow there's a drinking party with my intake year.",
    "seg": [
     {
      "t": "明日",
@@ -28568,12 +28568,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "歓迎会",
   "meaning_vi": "Tiệc chào mừng, tiệc đón chào",
-  "meaning_en": "Tiệc chào mừng, tiệc đón chào",
+  "meaning_en": "welcome party",
   "furigana": "かんげいかい",
   "example": {
    "jp": "4月（がつ）と10月（がつ）に歓迎（かんげい）会（かい）がある。",
    "vi": "Tháng 4 và tháng 10 có tiệc chào mừng.",
-   "en": "Tháng 4 và tháng 10 có tiệc chào mừng.",
+   "en": "There are welcome parties in April and October.",
    "seg": [
     {
      "t": "4"
@@ -28615,12 +28615,12 @@
   "section_title": "Quan hệ trên dưới",
   "word": "飲み放題",
   "meaning_vi": "Uống không giới hạn, uống thoải mái",
-  "meaning_en": "Uống không giới hạn, uống thoải mái",
+  "meaning_en": "all-you-can-drink",
   "furigana": "のみほうだい",
   "example": {
    "jp": "飲（の）み放題（ほうだい）だと、飲（の）みすぎてしまう。",
    "vi": "Nếu là uống không giới hạn thì hay uống quá nhiều.",
-   "en": "Nếu là uống không giới hạn thì hay uống quá nhiều.",
+   "en": "When it's all-you-can-drink, I end up drinking too much.",
    "seg": [
     {
      "t": "飲",
@@ -28655,11 +28655,11 @@
   "section_title": "Quan hệ trên dưới",
   "word": "つぐ",
   "meaning_vi": "Rót",
-  "meaning_en": "Rót",
+  "meaning_en": "pour (a drink)",
   "example": {
    "jp": "乾杯（かんぱい）の前（まえ）に、先輩（せんぱい）にビールをついだ。",
    "vi": "Trước khi nâng cốc, tôi đã rót bia cho đàn anh.",
-   "en": "Trước khi nâng cốc, tôi đã rót bia cho đàn anh.",
+   "en": "Before the toast, I poured beer for my senior colleague.",
    "seg": [
     {
      "t": "乾杯",
@@ -28694,12 +28694,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "勤務＜する＞",
   "meaning_vi": "Sự làm việc",
-  "meaning_en": "Sự làm việc",
+  "meaning_en": "work, service, duty",
   "furigana": "きんむ",
   "example": {
    "jp": "勤務（きんむ）時間（じかん）は9時（じ）から5時（じ）だ。",
    "vi": "Thời gian làm việc từ 9 giờ đến 5 giờ.",
-   "en": "Thời gian làm việc từ 9 giờ đến 5 giờ.",
+   "en": "Working hours are from nine to five.",
    "seg": [
     {
      "t": "勤務",
@@ -28738,12 +28738,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "事務",
   "meaning_vi": "Việc văn phòng",
-  "meaning_en": "Việc văn phòng",
+  "meaning_en": "office work, clerical work",
   "furigana": "じむ",
   "example": {
    "jp": "会社（かいしゃ）に入（はい）ったときは、事務（じむ）をやっていた。",
    "vi": "Khi vào công ty, tôi làm công việc văn phòng.",
-   "en": "Khi vào công ty, tôi làm công việc văn phòng.",
+   "en": "When I joined the company, I was doing clerical work.",
    "seg": [
     {
      "t": "会社",
@@ -28778,12 +28778,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "担当＜する＞",
   "meaning_vi": "Sự phụ trách",
-  "meaning_en": "Sự phụ trách",
+  "meaning_en": "be in charge of, handle",
   "furigana": "たんとう",
   "example": {
    "jp": "今年（ことし）から、大（おお）きな仕事（しごと）を担当（たんとう）している。",
    "vi": "Từ năm nay, tôi phụ trách công việc lớn.",
-   "en": "Từ năm nay, tôi phụ trách công việc lớn.",
+   "en": "Since this year, I've been in charge of a big project.",
    "seg": [
     {
      "t": "今年",
@@ -28825,12 +28825,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "営業＜する＞",
   "meaning_vi": "Kinh doanh (thường chỉ hoạt động mua bán của doanh nghiệp)",
-  "meaning_en": "Kinh doanh (thường chỉ hoạt động mua bán của doanh nghiệp)",
+  "meaning_en": "sales, business operations",
   "furigana": "えいぎょう",
   "example": {
    "jp": "営業（えいぎょう）の仕事（しごと）は、いろいろな人（ひと）に会（あ）えて楽（たの）しい。",
    "vi": "Công việc kinh doanh được gặp gỡ nhiều người nên rất vui.",
-   "en": "Công việc kinh doanh được gặp gỡ nhiều người nên rất vui.",
+   "en": "Sales work is enjoyable because you get to meet all kinds of people.",
    "seg": [
     {
      "t": "営業",
@@ -28879,12 +28879,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "経営＜する＞",
   "meaning_vi": "Sự quản lý, điều hành (doanh nghiệp)",
-  "meaning_en": "Sự quản lý, điều hành (doanh nghiệp)",
+  "meaning_en": "management, run (a business)",
   "furigana": "けいえい",
   "example": {
    "jp": "将来（しょうらい）、自分（じぶん）の会社（かいしゃ）を経営（けいえい）したい。",
    "vi": "Tương lai tôi muốn điều hành công ty của mình.",
-   "en": "Tương lai tôi muốn điều hành công ty của mình.",
+   "en": "In the future I want to run my own company.",
    "seg": [
     {
      "t": "将来",
@@ -28926,12 +28926,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "広告＜する＞",
   "meaning_vi": "Việc quảng cáo",
-  "meaning_en": "Việc quảng cáo",
+  "meaning_en": "advertising, advertisement",
   "furigana": "こうこく",
   "example": {
    "jp": "学生（がくせい）時代（じだい）から広告（こうこく）の仕事（しごと）に興味（きょうみ）があった。",
    "vi": "Tôi đã hứng thú với công việc quảng cáo từ thời sinh viên.",
-   "en": "Tôi đã hứng thú với công việc quảng cáo từ thời sinh viên.",
+   "en": "I've been interested in advertising work since my student days.",
    "seg": [
     {
      "t": "学生",
@@ -28977,12 +28977,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "出版＜する＞",
   "meaning_vi": "Sự xuất bản",
-  "meaning_en": "Sự xuất bản",
+  "meaning_en": "publish, publication",
   "furigana": "しゅっぱん",
   "example": {
    "jp": "あの会社（かいしゃ）は、日本語（にほんご）の本（ほん）を出版（しゅっぱん）している。",
    "vi": "Công ty ấy xuất bản sách tiếng Nhật.",
-   "en": "Công ty ấy xuất bản sách tiếng Nhật.",
+   "en": "That company publishes Japanese-language books.",
    "seg": [
     {
      "t": "あの"
@@ -29027,12 +29027,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "制作＜する＞",
   "meaning_vi": "Việc sản xuất, làm, chế tác",
-  "meaning_en": "Việc sản xuất, làm, chế tác",
+  "meaning_en": "produce, production",
   "furigana": "せいさく",
   "example": {
    "jp": "私（わたし）は、テレビドラマを制（せい）作したいと思（おも）っている。",
    "vi": "Tôi muốn làm phim truyền hình.",
-   "en": "Tôi muốn làm phim truyền hình.",
+   "en": "I'd like to produce television dramas.",
    "seg": [
     {
      "t": "私",
@@ -29067,12 +29067,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "通訳＜する＞",
   "meaning_vi": "Sự phiên dịch, thông dịch",
-  "meaning_en": "Sự phiên dịch, thông dịch",
+  "meaning_en": "interpret, interpreting",
   "furigana": "つうやく",
   "example": {
    "jp": "会社（かいしゃ）でベトナム語（ご）の通訳（つうやく）の仕事（しごと）をしている。",
    "vi": "Trong công ty tôi làm việc phiên dịch tiếng Việt.",
-   "en": "Trong công ty tôi làm việc phiên dịch tiếng Việt.",
+   "en": "I work as a Vietnamese interpreter at the company.",
    "seg": [
     {
      "t": "会社",
@@ -29114,12 +29114,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "精算＜する＞",
   "meaning_vi": "Sự quyết toán, thanh toán",
-  "meaning_en": "Sự quyết toán, thanh toán",
+  "meaning_en": "settle (an account), square up",
   "furigana": "せいさん",
   "example": {
    "jp": "交通（こうつう）費（ひ）は1週間（しゅうかん）以内（いない）に精算（せいさん）してください。",
    "vi": "Hãy quyết toán chi phí đi lại trong vòng một tuần.",
-   "en": "Hãy quyết toán chi phí đi lại trong vòng một tuần.",
+   "en": "Please settle your travel expenses within one week.",
    "seg": [
     {
      "t": "交通",
@@ -29162,12 +29162,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "（予定を）立てる",
   "meaning_vi": "Lên, lập (dự định)",
-  "meaning_en": "Lên, lập (dự định)",
+  "meaning_en": "make (a plan), draw up",
   "furigana": "たてる",
   "example": {
    "jp": "海外（かいがい）出張（しゅっちょう）の予定（よてい）を立（た）てる。",
    "vi": "Tôi lên dự định công tác nước ngoài.",
-   "en": "Tôi lên dự định công tác nước ngoài.",
+   "en": "I draw up plans for an overseas business trip.",
    "seg": [
     {
      "t": "海外",
@@ -29206,12 +29206,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "長期",
   "meaning_vi": "Trường kỳ, dài hạn",
-  "meaning_en": "Trường kỳ, dài hạn",
+  "meaning_en": "long term",
   "furigana": "ちょうき",
   "example": {
    "jp": "今度（こんど）の出張（しゅっちょう）は長期（ちょうき）の予定（よてい）だ。",
    "vi": "Đợt công tác này dự định sẽ dài.",
-   "en": "Đợt công tác này dự định sẽ dài.",
+   "en": "This business trip is planned to be a long one.",
    "seg": [
     {
      "t": "今度",
@@ -29253,12 +29253,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "日程",
   "meaning_vi": "Lịch trình",
-  "meaning_en": "Lịch trình",
+  "meaning_en": "schedule, itinerary",
   "furigana": "にってい",
   "example": {
    "jp": "仕事（しごと）が忙（いそが）しくて、旅行（りょこう）の日程（にってい）が決（き）められない。",
    "vi": "Công việc bận bịu nên không quyết định được lịch trình đi du lịch.",
-   "en": "Công việc bận bịu nên không quyết định được lịch trình đi du lịch.",
+   "en": "Work is so busy that I can't settle on an itinerary for the trip.",
    "seg": [
     {
      "t": "仕事",
@@ -29307,11 +29307,11 @@
   "section_title": "Là công việc như thế nào?",
   "word": "ずらす",
   "meaning_vi": "Đẩy, dời qua một bên, đổi lịch",
-  "meaning_en": "Đẩy, dời qua một bên, đổi lịch",
+  "meaning_en": "shift, move aside, push back",
   "example": {
    "jp": "①いすをずらして、掃除（そうじ）する。 ②会議（かいぎ）のスケジュールを3日（にち）ずらそう。",
    "vi": "①Đẩy ghế qua một bên để quét dọn. ②Hãy đổi lịch họp lệch đi 3 ngày.",
-   "en": "①Đẩy ghế qua một bên để quét dọn. ②Hãy đổi lịch họp lệch đi 3 ngày.",
+   "en": "(1) I move the chair aside and clean. (2) Let's push the meeting schedule back three days.",
    "seg": [
     {
      "t": "①いすをずらして、"
@@ -29349,12 +29349,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "延期＜する＞",
   "meaning_vi": "Sự hoãn, hoãn lại",
-  "meaning_en": "Sự hoãn, hoãn lại",
+  "meaning_en": "postpone, defer",
   "furigana": "えんき",
   "example": {
    "jp": "出張（しゅっちょう）が来週（らいしゅう）に延期（えんき）された。",
    "vi": "Công tác bị hoãn lại sang tuần sau.",
-   "en": "Công tác bị hoãn lại sang tuần sau.",
+   "en": "The business trip was postponed to next week.",
    "seg": [
     {
      "t": "出張",
@@ -29389,12 +29389,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "携帯＜する＞",
   "meaning_vi": "Sự mang theo, cầm theo",
-  "meaning_en": "Sự mang theo, cầm theo",
+  "meaning_en": "carry with one, bring along",
   "furigana": "けいたい",
   "example": {
    "jp": "出張（しゅっちょう）には、必（かなら）ずパソコンを携帯（けいたい）している。",
    "vi": "Đi công tác, tôi luôn mang theo máy tính.",
-   "en": "Đi công tác, tôi luôn mang theo máy tính.",
+   "en": "I always carry my laptop on business trips.",
    "seg": [
     {
      "t": "出張",
@@ -29429,12 +29429,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "協力＜する＞",
   "meaning_vi": "Sự hợp tác",
-  "meaning_en": "Sự hợp tác",
+  "meaning_en": "cooperate, work together",
   "furigana": "きょうりょく",
   "example": {
    "jp": "みんなで協力（きょうりょく）して、いい結果（けっか）を出（だ）そう。",
    "vi": "Tất cả chúng ta cùng hợp tác để cho ra kết quả tốt đẹp nào!",
-   "en": "Tất cả chúng ta cùng hợp tác để cho ra kết quả tốt đẹp nào!",
+   "en": "Let's all work together and produce a good result.",
    "seg": [
     {
      "t": "みんなで"
@@ -29472,12 +29472,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "省略＜する＞",
   "meaning_vi": "Sự lược bỏ, bỏ qua",
-  "meaning_en": "Sự lược bỏ, bỏ qua",
+  "meaning_en": "omit, leave out",
   "furigana": "しょうりゃく",
   "example": {
    "jp": "あいさつは省略（しょうりゃく）して、さっそく会議（かいぎ）を始（はじ）めよう。",
    "vi": "Tôi xin phép được bỏ qua phần chào hỏi và bắt đầu vào ngay buổi họp.",
-   "en": "Tôi xin phép được bỏ qua phần chào hỏi và bắt đầu vào ngay buổi họp.",
+   "en": "Let's skip the greetings and get straight into the meeting.",
    "seg": [
     {
      "t": "あいさつは"
@@ -29515,12 +29515,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "積む",
   "meaning_vi": "Tích lũy, chồng chất",
-  "meaning_en": "Tích lũy, chồng chất",
+  "meaning_en": "pile up, accumulate, build up",
   "furigana": "つむ",
   "example": {
    "jp": "①部長（ぶちょう）の机（つくえ）の上（うえ）に、書類（しょるい）が積（つ）んである。 ②経験（けいけん）を積（つ）んで、自分（じぶん）の会社（かいしゃ）を作（つく）りたい。",
    "vi": "①Trên bàn trưởng phòng, hồ sơ chồng chất. ②Tôi muốn tích lũy kinh nghiệm để mở công ty của mình.",
-   "en": "①Trên bàn trưởng phòng, hồ sơ chồng chất. ②Tôi muốn tích lũy kinh nghiệm để mở công ty của mình.",
+   "en": "(1) Documents are piled up on the department manager's desk. (2) I want to build up experience and start my own company.",
    "seg": [
     {
      "t": "①"
@@ -29607,12 +29607,12 @@
   "section_title": "Là công việc như thế nào?",
   "word": "成長＜する＞",
   "meaning_vi": "Sự trưởng thành",
-  "meaning_en": "Sự trưởng thành",
+  "meaning_en": "grow, mature",
   "furigana": "せいちょう",
   "example": {
    "jp": "大学生（だいがくせい）のころと比（くら）べると、成長（せいちょう）したと思（おも）う。",
    "vi": "Tôi nghĩ so với thời sinh viên tôi đã trưởng thành.",
-   "en": "Tôi nghĩ so với thời sinh viên tôi đã trưởng thành.",
+   "en": "Compared with my university days, I think I've grown.",
    "seg": [
     {
      "t": "大学生",
@@ -29654,11 +29654,11 @@
   "section_title": "Là công việc như thế nào?",
   "word": "かせぐ",
   "meaning_vi": "Kiếm tiền",
-  "meaning_en": "Kiếm tiền",
+  "meaning_en": "earn (money)",
   "example": {
    "jp": "お金をかせいで、将来（しょうらい）のために貯金（ちょきん）したい。",
    "vi": "Tôi muốn kiếm tiền và tiết kiệm cho tương lai.",
-   "en": "Tôi muốn kiếm tiền và tiết kiệm cho tương lai.",
+   "en": "I want to earn money and save for the future.",
    "seg": [
     {
      "t": "お金をかせいで、"
@@ -29689,12 +29689,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "画面",
   "meaning_vi": "Màn hình",
-  "meaning_en": "Màn hình",
+  "meaning_en": "screen, display",
   "furigana": "がめん",
   "example": {
    "jp": "パソコンの画面（がめん）を見（み）ていると、目（め）が疲（つか）れる。",
    "vi": "Nếu nhìn mãi màn hình máy tính sẽ mỏi mắt.",
-   "en": "Nếu nhìn mãi màn hình máy tính sẽ mỏi mắt.",
+   "en": "Looking at a computer screen tires my eyes.",
    "seg": [
     {
      "t": "パソコンの"
@@ -29739,12 +29739,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "件名",
   "meaning_vi": "Tiêu đề (email)",
-  "meaning_en": "Tiêu đề (email)",
+  "meaning_en": "subject line",
   "furigana": "けんめい",
   "example": {
    "jp": "メールの件名（けんめい）は、長（なが）すぎないほうがいい。",
    "vi": "Tiêu đề email không nên quá dài.",
-   "en": "Tiêu đề email không nên quá dài.",
+   "en": "An email subject line shouldn't be too long.",
    "seg": [
     {
      "t": "メールの"
@@ -29775,12 +29775,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "受信＜する＞",
   "meaning_vi": "Việc nhận (thư, e-mail)",
-  "meaning_en": "Việc nhận (thư, e-mail)",
+  "meaning_en": "receive (a message)",
   "furigana": "じゅしん",
   "example": {
    "jp": "このメールは昨日（きのう）受信（じゅしん）した。",
    "vi": "E-mail này tôi nhận được từ hôm qua.",
-   "en": "E-mail này tôi nhận được từ hôm qua.",
+   "en": "I received this email yesterday.",
    "seg": [
     {
      "t": "このメールは"
@@ -29808,12 +29808,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "送信＜する＞",
   "meaning_vi": "Việc gửi (thư, e-mail)",
-  "meaning_en": "Việc gửi (thư, e-mail)",
+  "meaning_en": "send (a message), transmit",
   "furigana": "そうしん",
   "example": {
    "jp": "さっき送信（そうしん）したメールは届（とど）いただろうか。",
    "vi": "Không biết e-mail gửi lúc nãy đã đến chưa?",
-   "en": "Không biết e-mail gửi lúc nãy đã đến chưa?",
+   "en": "I wonder if the email I sent a moment ago has arrived.",
    "seg": [
     {
      "t": "さっき"
@@ -29844,12 +29844,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "返信＜する＞",
   "meaning_vi": "Việc trả lời (thư, e-mail)",
-  "meaning_en": "Việc trả lời (thư, e-mail)",
+  "meaning_en": "reply",
   "furigana": "へんしん",
   "example": {
    "jp": "仕事（しごと）のメールは、できるだけ早（はや）く返信（へんしん）しよう。",
    "vi": "Hãy trả lời e-mail công việc càng nhanh càng tốt.",
-   "en": "Hãy trả lời e-mail công việc càng nhanh càng tốt.",
+   "en": "Let's reply to work emails as quickly as we can.",
    "seg": [
     {
      "t": "仕事",
@@ -29884,12 +29884,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "やり取り＜する＞",
   "meaning_vi": "Sự trao đổi qua lại",
-  "meaning_en": "Sự trao đổi qua lại",
+  "meaning_en": "exchange (messages), back and forth",
   "furigana": "やりとり",
   "example": {
    "jp": "毎日（まいにち）のように、メールをやり取りしている。",
    "vi": "Hầu như ngày nào tôi cũng trao đổi e-mail.",
-   "en": "Hầu như ngày nào tôi cũng trao đổi e-mail.",
+   "en": "I exchange emails almost every day.",
    "seg": [
     {
      "t": "毎日",
@@ -29910,12 +29910,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "入力＜する＞",
   "meaning_vi": "Sự đánh máy, gõ, nhập",
-  "meaning_en": "Sự đánh máy, gõ, nhập",
+  "meaning_en": "input, type in",
   "furigana": "にゅうりょく",
   "example": {
    "jp": "大切（たいせつ）なメールは、入力（にゅうりょく）したら何（なん）回（かい）も確認（かくにん）する。",
    "vi": "Những e-mail quan trọng sau khi đánh xong, tôi kiểm tra lại nhiều lần.",
-   "en": "Những e-mail quan trọng sau khi đánh xong, tôi kiểm tra lại nhiều lần.",
+   "en": "For important emails, I check them several times after typing them.",
    "seg": [
     {
      "t": "大切",
@@ -29961,12 +29961,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "変換＜する＞",
   "meaning_vi": "Sự chuyển đổi",
-  "meaning_en": "Sự chuyển đổi",
+  "meaning_en": "conversion (of kana to kanji)",
   "furigana": "へんかん",
   "example": {
    "jp": "彼（かれ）のメールは漢字（かんじ）の変換（へんかん）ミスがとても多（おお）い。",
    "vi": "E-mail của anh ấy có rất nhiều lỗi chuyển đổi chữ Hán.",
-   "en": "E-mail của anh ấy có rất nhiều lỗi chuyển đổi chữ Hán.",
+   "en": "His emails have a great many kanji conversion errors.",
    "seg": [
     {
      "t": "彼",
@@ -30008,12 +30008,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "改行＜する＞",
   "meaning_vi": "Sự xuống dòng",
-  "meaning_en": "Sự xuống dòng",
+  "meaning_en": "start a new line, line break",
   "furigana": "かいぎょう",
   "example": {
    "jp": "メールの文（ぶん）は、読（よ）みやすいように改行（かいぎょう）してください。",
    "vi": "Hãy xuống dòng các câu trong e-mail sao cho dễ đọc.",
-   "en": "Hãy xuống dòng các câu trong e-mail sao cho dễ đọc.",
+   "en": "Please add line breaks in your email so it's easy to read.",
    "seg": [
     {
      "t": "メールの"
@@ -30051,12 +30051,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "見直す",
   "meaning_vi": "Xem lại",
-  "meaning_en": "Xem lại",
+  "meaning_en": "review, look over again",
   "furigana": "みなおす",
   "example": {
    "jp": "内容（ないよう）を2回（かい）見直（みなお）して、送信（そうしん）した。",
    "vi": "Tôi xem lại nội dung hai lần rồi gửi.",
-   "en": "Tôi xem lại nội dung hai lần rồi gửi.",
+   "en": "I looked over the content twice and then sent it.",
    "seg": [
     {
      "t": "内容",
@@ -30095,12 +30095,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "変更＜する＞",
   "meaning_vi": "Sự thay đổi",
-  "meaning_en": "Sự thay đổi",
+  "meaning_en": "change, alter",
   "furigana": "へんこう",
   "example": {
    "jp": "アドレスを変更（へんこう）するのに、時間（じかん）がかかった。",
    "vi": "Mất thời gian để thay đổi địa chỉ.",
-   "en": "Mất thời gian để thay đổi địa chỉ.",
+   "en": "It took a while to change my address.",
    "seg": [
     {
      "t": "アドレスを"
@@ -30131,12 +30131,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "画像",
   "meaning_vi": "Hình ảnh, ảnh",
-  "meaning_en": "Hình ảnh, ảnh",
+  "meaning_en": "image, picture",
   "furigana": "がぞう",
   "example": {
    "jp": "このパソコンは画像（がぞう）がとてもきれいだ。",
    "vi": "Hình ảnh của máy vi tính này rất đẹp.",
-   "en": "Hình ảnh của máy vi tính này rất đẹp.",
+   "en": "The picture quality on this computer is very good.",
    "seg": [
     {
      "t": "このパソコンは"
@@ -30160,12 +30160,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "挿入＜する＞",
   "meaning_vi": "Sự chèn",
-  "meaning_en": "Sự chèn",
+  "meaning_en": "insert",
   "furigana": "そうにゅう",
   "example": {
    "jp": "画像（がぞう）を挿入（そうにゅう）して、おもしろいメールを送（おく）った。",
    "vi": "Tôi chèn hình ảnh vào, gửi đi một e-mail thú vị.",
-   "en": "Tôi chèn hình ảnh vào, gửi đi một e-mail thú vị.",
+   "en": "I inserted an image and sent an amusing email.",
    "seg": [
     {
      "t": "画像",
@@ -30200,12 +30200,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "添付＜する＞",
   "meaning_vi": "Sự đính kèm",
-  "meaning_en": "Sự đính kèm",
+  "meaning_en": "attach (a file)",
   "furigana": "てんぷ",
   "example": {
    "jp": "ファイルを添付（てんぷ）して、送信（そうしん）した。",
    "vi": "Tôi đính kèm tệp rồi gửi đi.",
-   "en": "Tôi đính kèm tệp rồi gửi đi.",
+   "en": "I attached the file and sent it.",
    "seg": [
     {
      "t": "ファイルを"
@@ -30236,12 +30236,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "削除＜する＞",
   "meaning_vi": "Sự xóa bỏ",
-  "meaning_en": "Sự xóa bỏ",
+  "meaning_en": "delete",
   "furigana": "さくじょ",
   "example": {
    "jp": "昨日（きのう）のメールは、削除（さくじょ）してください。",
    "vi": "Hãy xóa e-mail ngày hôm qua đi!",
-   "en": "Hãy xóa e-mail ngày hôm qua đi!",
+   "en": "Please delete yesterday's email.",
    "seg": [
     {
      "t": "昨日",
@@ -30269,12 +30269,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "保存＜する＞",
   "meaning_vi": "Sự lưu trữ, lưu",
-  "meaning_en": "Sự lưu trữ, lưu",
+  "meaning_en": "save, store",
   "furigana": "ほぞん",
   "example": {
    "jp": "好（す）きな写真（しゃしん）を何（なん）枚（まい）か保存（ほぞん）した。",
    "vi": "Tôi lưu một số bức ảnh mà tôi thích.",
-   "en": "Tôi lưu một số bức ảnh mà tôi thích.",
+   "en": "I saved a few photos that I liked.",
    "seg": [
     {
      "t": "好",
@@ -30320,12 +30320,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "新規作成＜する＞",
   "meaning_vi": "Sự tạo mới",
-  "meaning_en": "Sự tạo mới",
+  "meaning_en": "create new (a file)",
   "furigana": "しんきさくせい",
   "example": {
    "jp": "ファイルを新規（しんき）作成（さくせい）したが、保存（ほぞん）し忘（わす）れた。",
    "vi": "Tôi tạo tệp mới nhưng quên không lưu.",
-   "en": "Tôi tạo tệp mới nhưng quên không lưu.",
+   "en": "I created a new file but forgot to save it.",
    "seg": [
     {
      "t": "ファイルを"
@@ -30367,12 +30367,12 @@
   "section_title": "Bằng máy vi tính",
   "word": "完了＜する＞",
   "meaning_vi": "Sự hoàn thành, hoàn tất",
-  "meaning_en": "Sự hoàn thành, hoàn tất",
+  "meaning_en": "complete, finish",
   "furigana": "かんりょう",
   "example": {
    "jp": "データの送信（そうしん）が完了（かんりょう）して、安心（あんしん）した。",
    "vi": "Tôi yên tâm vì đã hoàn tất việc gửi dữ liệu đi.",
-   "en": "Tôi yên tâm vì đã hoàn tất việc gửi dữ liệu đi.",
+   "en": "The data transfer completed and I felt relieved.",
    "seg": [
     {
      "t": "データの"
@@ -30410,11 +30410,11 @@
   "section_title": "Bằng máy vi tính",
   "word": "ブログ",
   "meaning_vi": "Trang blog",
-  "meaning_en": "Trang blog",
+  "meaning_en": "blog",
   "example": {
    "jp": "友（とも）だちのブログは、毎日（まいにち）更新（こうしん）されている。",
    "vi": "Trang blog của bạn tôi được cập nhật hàng ngày.",
-   "en": "Trang blog của bạn tôi được cập nhật hàng ngày.",
+   "en": "My friend's blog is updated every day.",
    "seg": [
     {
      "t": "友",
@@ -30446,11 +30446,11 @@
   "section_title": "Bằng máy vi tính",
   "word": "マウス",
   "meaning_vi": "Chuột máy tính",
-  "meaning_en": "Chuột máy tính",
+  "meaning_en": "mouse",
   "example": {
    "jp": "パソコンは古（ふる）いが、マウスは新（あたら）しい。",
    "vi": "Máy vi tính cũ nhưng chuột mới.",
-   "en": "Máy vi tính cũ nhưng chuột mới.",
+   "en": "The computer is old, but the mouse is new.",
    "seg": [
     {
      "t": "パソコンは"
@@ -30481,11 +30481,11 @@
   "section_title": "Bằng máy vi tính",
   "word": "クリック＜する＞",
   "meaning_vi": "Sự nhấp chuột, kích chuột",
-  "meaning_en": "Sự nhấp chuột, kích chuột",
+  "meaning_en": "click",
   "example": {
    "jp": "ここをクリツクすると、画面（がめん）が変（か）わる。",
    "vi": "Nếu nhấp chuột vào chỗ này thì màn hình sẽ thay đổi.",
-   "en": "Nếu nhấp chuột vào chỗ này thì màn hình sẽ thay đổi.",
+   "en": "If you click here, the screen changes.",
    "seg": [
     {
      "t": "ここをクリツクすると、"
@@ -30516,11 +30516,11 @@
   "section_title": "Bằng máy vi tính",
   "word": "プロバイダー",
   "meaning_vi": "Nhà cung cấp mạng",
-  "meaning_en": "Nhà cung cấp mạng",
+  "meaning_en": "internet provider",
   "example": {
    "jp": "引っ越（ひっこ）ししたので、プロバイダーに連絡（れんらく）した。",
    "vi": "Tôi chuyển nhà nên đã liên lạc với nhà cung cấp mạng.",
-   "en": "Tôi chuyển nhà nên đã liên lạc với nhà cung cấp mạng.",
+   "en": "I moved house, so I contacted my provider.",
    "seg": [
     {
      "t": "引っ越",
@@ -30548,11 +30548,11 @@
   "section_title": "Bằng máy vi tính",
   "word": "ダウンロード＜する＞",
   "meaning_vi": "Sự tải xuống",
-  "meaning_en": "Sự tải xuống",
+  "meaning_en": "download",
   "example": {
    "jp": "便利（べんり）なソフトウェアを、無料（むりょう）でダウンロードした。",
    "vi": "Tôi đã tải xuống miễn phí một phần mềm tiện lợi.",
-   "en": "Tôi đã tải xuống miễn phí một phần mềm tiện lợi.",
+   "en": "I downloaded some useful software for free.",
    "seg": [
     {
      "t": "便利",
@@ -30580,11 +30580,11 @@
   "section_title": "Bằng máy vi tính",
   "word": "ノートパソコン",
   "meaning_vi": "Máy tính xách tay",
-  "meaning_en": "Máy tính xách tay",
+  "meaning_en": "laptop computer",
   "example": {
    "jp": "私（わたし）はこのノートパソコンを、8年（ねん）も使（つか）っている。",
    "vi": "Tôi đã dùng cái máy tính xách tay này những 8 năm rồi.",
-   "en": "Tôi đã dùng cái máy tính xách tay này những 8 năm rồi.",
+   "en": "I've been using this laptop for a full eight years.",
    "seg": [
     {
      "t": "私",
@@ -30619,12 +30619,12 @@
   "section_title": "Du lịch",
   "word": "日にち",
   "meaning_vi": "Ngày, số ngày",
-  "meaning_en": "Ngày, số ngày",
+  "meaning_en": "date, number of days",
   "furigana": "ひにち",
   "example": {
    "jp": "ツアーの申し込（もうしこ）みの締め切（しめき）りまで日（ひ）にちがない。",
    "vi": "Chẳng còn bao nhiêu ngày là đến hạn chót đăng ký chuyến du lịch.",
-   "en": "Chẳng còn bao nhiêu ngày là đến hạn chót đăng ký chuyến du lịch.",
+   "en": "There aren't many days left until the tour application deadline.",
    "seg": [
     {
      "t": "ツアーの"
@@ -30662,12 +30662,12 @@
   "section_title": "Du lịch",
   "word": "日帰り",
   "meaning_vi": "Đi về trong ngày",
-  "meaning_en": "Đi về trong ngày",
+  "meaning_en": "day trip, returning the same day",
   "furigana": "ひがえり",
   "example": {
    "jp": "大阪（おおさか）に日帰（ひがえ）りで出張（しゅっちょう）する。",
    "vi": "Tôi đi công tác Osaka về trong ngày.",
-   "en": "Tôi đi công tác Osaka về trong ngày.",
+   "en": "I'm making a day trip to Osaka for business.",
    "seg": [
     {
      "t": "大阪",
@@ -30702,12 +30702,12 @@
   "section_title": "Du lịch",
   "word": "泊まり",
   "meaning_vi": "Nghỉ qua đêm",
-  "meaning_en": "Nghỉ qua đêm",
+  "meaning_en": "overnight stay",
   "furigana": "とまり",
   "example": {
    "jp": "土曜日（どようび）に、泊（と）まりで温泉（おんせん）に行（い）った。",
    "vi": "Thứ bảy tôi đã đi tắm suối nóng và nghỉ lại qua đêm.",
-   "en": "Thứ bảy tôi đã đi tắm suối nóng và nghỉ lại qua đêm.",
+   "en": "On Saturday I went to a hot spring and stayed the night.",
    "seg": [
     {
      "t": "土曜日",
@@ -30749,12 +30749,12 @@
   "section_title": "Du lịch",
   "word": "宿泊＜する＞",
   "meaning_vi": "Sự lưu trú, nghỉ trọ",
-  "meaning_en": "Sự lưu trú, nghỉ trọ",
+  "meaning_en": "lodging, accommodation",
   "furigana": "しゅくはく",
   "example": {
    "jp": "交通（こうつう）費（ひ）と宿泊（しゅくはく）で、5万（まん）円（えん）くらいかかる。",
    "vi": "Tiền đi lại và tiền trọ mất khoảng 50 nghìn yên.",
-   "en": "Tiền đi lại và tiền trọ mất khoảng 50 nghìn yên.",
+   "en": "Travel and accommodation come to about 50,000 yen.",
    "seg": [
     {
      "t": "交通",
@@ -30797,12 +30797,12 @@
   "section_title": "Du lịch",
   "word": "滞在＜する＞",
   "meaning_vi": "Ở, lưu trú",
-  "meaning_en": "Ở, lưu trú",
+  "meaning_en": "stay, sojourn",
   "furigana": "たいざい",
   "example": {
    "jp": "アメリカに滞在（たいざい）中（ちゅう）、友（とも）だちと会（あ）う予定（よてい）だ。",
    "vi": "Tôi dự định gặp bạn bè trong thời gian ở Mỹ.",
-   "en": "Tôi dự định gặp bạn bè trong thời gian ở Mỹ.",
+   "en": "I plan to meet up with friends during my stay in America.",
    "seg": [
     {
      "t": "アメリカに"
@@ -30851,12 +30851,12 @@
   "section_title": "Du lịch",
   "word": "団体",
   "meaning_vi": "Đoàn, đoàn thể",
-  "meaning_en": "Đoàn, đoàn thể",
+  "meaning_en": "group, organization",
   "furigana": "だんたい",
   "example": {
    "jp": "団体（だんたい）で旅行（りょこう）するときは、時間（じかん）を守（まも）ってください。",
    "vi": "Khi đi du lịch theo đoàn, hãy tuân thủ thời gian!",
-   "en": "Khi đi du lịch theo đoàn, hãy tuân thủ thời gian!",
+   "en": "When traveling in a group, please be punctual.",
    "seg": [
     {
      "t": "団体",
