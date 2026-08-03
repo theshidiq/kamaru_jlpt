@@ -6,12 +6,12 @@
   "section_title": "Gia đình",
   "word": "父親",
   "meaning_vi": "bố, người cha",
-  "meaning_en": "bố, người cha",
+  "meaning_en": "father",
   "furigana": "ちちおや",
   "example": {
    "jp": "父親（ちちおや）は今年（ことし）50歳（さい）になる。",
    "vi": "Bố tôi năm nay 50 tuổi.",
-   "en": "Bố tôi năm nay 50 tuổi.",
+   "en": "My father turns 50 this year.",
    "seg": [
     {
      "t": "父親",
@@ -46,12 +46,12 @@
   "section_title": "Gia đình",
   "word": "母親",
   "meaning_vi": "mẹ, người mẹ",
-  "meaning_en": "mẹ, người mẹ",
+  "meaning_en": "mother",
   "furigana": "ははおや",
   "example": {
    "jp": "母親（ははおや）の料理（りょうり）は、とてもおいしい。",
    "vi": "Các món ăn mẹ tôi nấu rất ngon.",
-   "en": "Các món ăn mẹ tôi nấu rất ngon.",
+   "en": "My mother's cooking is really delicious.",
    "seg": [
     {
      "t": "母親",
@@ -79,12 +79,12 @@
   "section_title": "Gia đình",
   "word": "長女",
   "meaning_vi": "trưởng nữ, con gái cả, con gái đầu lòng",
-  "meaning_en": "trưởng nữ, con gái cả, con gái đầu lòng",
+  "meaning_en": "eldest daughter",
   "furigana": "ちょうじょ",
   "example": {
    "jp": "私（わたし）は長女（ちょうじょ）で、妹（いもうと）が一人（ひとり）いる。",
    "vi": "Tôi là con gái cả, dưới tôi còn có một em gái nữa.",
-   "en": "Tôi là con gái cả, dưới tôi còn có một em gái nữa.",
+   "en": "I'm the eldest daughter, and I have a younger sister.",
    "seg": [
     {
      "t": "私",
@@ -126,12 +126,12 @@
   "section_title": "Gia đình",
   "word": "長男",
   "meaning_vi": "trưởng nam, con trai cả, con trai đầu lòng",
-  "meaning_en": "trưởng nam, con trai cả, con trai đầu lòng",
+  "meaning_en": "eldest son",
   "furigana": "ちょうなん",
   "example": {
    "jp": "姉（あね）に元気（げんき）な長男（ちょうなん）が生（う）まれた。",
    "vi": "Chị tôi đã sinh được một cậu con trai đầu lòng khỏe mạnh.",
-   "en": "Chị tôi đã sinh được một cậu con trai đầu lòng khỏe mạnh.",
+   "en": "My older sister gave birth to a healthy baby boy.",
    "seg": [
     {
      "t": "姉",
@@ -173,12 +173,12 @@
   "section_title": "Gia đình",
   "word": "次女",
   "meaning_vi": "con gái thứ hai",
-  "meaning_en": "con gái thứ hai",
+  "meaning_en": "second daughter",
   "furigana": "じじょ",
   "example": {
    "jp": "次女（じじょ）は母（はは）に似（に）ている。",
    "vi": "Cô con gái thứ hai giống mẹ.",
-   "en": "Cô con gái thứ hai giống mẹ.",
+   "en": "The second daughter takes after her mother.",
    "seg": [
     {
      "t": "次女",
@@ -213,12 +213,12 @@
   "section_title": "Gia đình",
   "word": "次男",
   "meaning_vi": "con trai thứ hai",
-  "meaning_en": "con trai thứ hai",
+  "meaning_en": "second son",
   "furigana": "じなん",
   "example": {
    "jp": "次男（じなん）はとても背（せ）が高（たか）い。",
    "vi": "Cậu con trai thứ hai rất cao.",
-   "en": "Cậu con trai thứ hai rất cao.",
+   "en": "The second son is very tall.",
    "seg": [
     {
      "t": "次男",
@@ -253,12 +253,12 @@
   "section_title": "Gia đình",
   "word": "三女",
   "meaning_vi": "con gái thứ ba",
-  "meaning_en": "con gái thứ ba",
+  "meaning_en": "third daughter",
   "furigana": "さんじょ",
   "example": {
    "jp": "三（さん）女（じょ）は小学（しょうがく）一（いち）年生（ねんせい）だ。",
    "vi": "Cô con gái thứ ba là học sinh lớp một tiểu học.",
-   "en": "Cô con gái thứ ba là học sinh lớp một tiểu học.",
+   "en": "The third daughter is in the first grade of elementary school.",
    "seg": [
     {
      "t": "三",
@@ -298,12 +298,12 @@
   "section_title": "Gia đình",
   "word": "三男",
   "meaning_vi": "con trai thứ ba",
-  "meaning_en": "con trai thứ ba",
+  "meaning_en": "third son",
   "furigana": "さんなん",
   "example": {
    "jp": "三男（さんなん）は兄弟（きょうだい）の中（なか）で一番（いちばん）元気（げんき）だ。",
    "vi": "Trong anh em, cậu con trai thứ ba là khỏe mạnh nhất.",
-   "en": "Trong anh em, cậu con trai thứ ba là khỏe mạnh nhất.",
+   "en": "The third son is the most energetic of the siblings.",
    "seg": [
     {
      "t": "三男",
@@ -349,12 +349,12 @@
   "section_title": "Gia đình",
   "word": "末っ子",
   "meaning_vi": "con út",
-  "meaning_en": "con út",
+  "meaning_en": "youngest child",
   "furigana": "すえっこ",
   "example": {
    "jp": "彼（かれ）は5人（にん）兄弟（きょうだい）の末っ子（すえっこ）だ。",
    "vi": "Anh ấy là con út trong gia đình có 5 anh em.",
-   "en": "Anh ấy là con út trong gia đình có 5 anh em.",
+   "en": "He is the youngest of five siblings.",
    "seg": [
     {
      "t": "彼",
@@ -393,12 +393,12 @@
   "section_title": "Gia đình",
   "word": "一人っ子",
   "meaning_vi": "con một",
-  "meaning_en": "con một",
+  "meaning_en": "only child",
   "furigana": "ひとりっこ",
   "example": {
    "jp": "私（わたし）の友（とも）だちには、一人っ子（ひとりっこ）が多（おお）い。",
    "vi": "Bạn bè tôi nhiều người là con một.",
-   "en": "Bạn bè tôi nhiều người là con một.",
+   "en": "A lot of my friends are only children.",
    "seg": [
     {
      "t": "私",
@@ -440,12 +440,12 @@
   "section_title": "Gia đình",
   "word": "姉妹",
   "meaning_vi": "chị em gái",
-  "meaning_en": "chị em gái",
+  "meaning_en": "sisters",
   "furigana": "しまい",
   "example": {
    "jp": "私（わたし）は3人（にん）姉妹（しまい）の末っ子（すえっこ）だ。",
    "vi": "Tôi là con út trong gia đình có 3 chị em gái.",
-   "en": "Tôi là con út trong gia đình có 3 chị em gái.",
+   "en": "I'm the youngest of three sisters.",
    "seg": [
     {
      "t": "私",
@@ -484,12 +484,12 @@
   "section_title": "Gia đình",
   "word": "一人娘",
   "meaning_vi": "con gái độc nhất, con gái duy nhất",
-  "meaning_en": "con gái độc nhất, con gái duy nhất",
+  "meaning_en": "only daughter",
   "furigana": "ひとりむすめ",
   "example": {
    "jp": "父親（ちちおや）は一人娘（ひとりむすめ）の結婚式（けっこんしき）で泣（な）いた。",
    "vi": "Người cha đã khóc trong đám cưới của cô con gái duy nhất của mình.",
-   "en": "Người cha đã khóc trong đám cưới của cô con gái duy nhất của mình.",
+   "en": "The father cried at his only daughter's wedding.",
    "seg": [
     {
      "t": "父親",
@@ -531,12 +531,12 @@
   "section_title": "Gia đình",
   "word": "親子",
   "meaning_vi": "cha mẹ và con cái",
-  "meaning_en": "cha mẹ và con cái",
+  "meaning_en": "parent and child",
   "furigana": "おやこ",
   "example": {
    "jp": "最近（さいきん）、親子（おやこ）でよく海外（かいがい）旅行（りょこう）をしている。",
    "vi": "Gần đây, bố mẹ con cái hay đi du lịch nước ngoài cùng nhau.",
-   "en": "Gần đây, bố mẹ con cái hay đi du lịch nước ngoài cùng nhau.",
+   "en": "Lately, parents and children often travel abroad together.",
    "seg": [
     {
      "t": "最近",
@@ -575,12 +575,12 @@
   "section_title": "Gia đình",
   "word": "夫婦",
   "meaning_vi": "vợ chồng",
-  "meaning_en": "vợ chồng",
+  "meaning_en": "married couple, husband and wife",
   "furigana": "ふうふ",
   "example": {
    "jp": "砂糖（さとう）さん夫婦（ふうふ）は、毎日（まいにち）散歩（さんぽ）している。",
    "vi": "Vợ chồng anh Sato hằng ngày đi dạo.",
-   "en": "Vợ chồng anh Sato hằng ngày đi dạo.",
+   "en": "Mr. and Mrs. Sato go for a walk every day.",
    "seg": [
     {
      "t": "砂糖",
@@ -619,12 +619,12 @@
   "section_title": "Gia đình",
   "word": "［ご］夫妻",
   "meaning_vi": "vợ chồng (kính ngữ)",
-  "meaning_en": "vợ chồng (kính ngữ)",
+  "meaning_en": "married couple (honorific)",
   "furigana": "［ご］ふさい",
   "example": {
    "jp": "部長（ぶちょう）ご夫妻（ふさい）の家（いえ）に招待（しょうたい）された。",
    "vi": "Tôi được vợ chồng trưởng phòng mời đến nhà chơi.",
-   "en": "Tôi được vợ chồng trưởng phòng mời đến nhà chơi.",
+   "en": "I was invited to the home of the department manager and his wife.",
    "seg": [
     {
      "t": "部長",
@@ -666,12 +666,12 @@
   "section_title": "Gia đình",
   "word": "親類",
   "meaning_vi": "họ hàng",
-  "meaning_en": "họ hàng",
+  "meaning_en": "relatives",
   "furigana": "しんるい",
   "example": {
    "jp": "田中（たなか）さんと私（わたし）は親類（しんるい）だ。",
    "vi": "Anh Tanaka và tôi là chỗ họ hàng.",
-   "en": "Anh Tanaka và tôi là chỗ họ hàng.",
+   "en": "Mr. Tanaka and I are relatives.",
    "seg": [
     {
      "t": "田中",
@@ -706,12 +706,12 @@
   "section_title": "Gia đình",
   "word": "先祖",
   "meaning_vi": "tổ tiên",
-  "meaning_en": "tổ tiên",
+  "meaning_en": "ancestor",
   "furigana": "せんぞ",
   "example": {
    "jp": "うちの先祖（せんぞ）に、有名（ゆうめい）なサムライがいるそうだ。",
    "vi": "Nghe nói trong tổ tiên nhà tôi có một vị samurai nổi tiếng.",
-   "en": "Nghe nói trong tổ tiên nhà tôi có một vị samurai nổi tiếng.",
+   "en": "Apparently there is a famous samurai among my ancestors.",
    "seg": [
     {
      "t": "うちの"
@@ -742,12 +742,12 @@
   "section_title": "Gia đình",
   "word": "尊敬＜する＞",
   "meaning_vi": "kính trọng, tôn kính",
-  "meaning_en": "kính trọng, tôn kính",
+  "meaning_en": "respect, look up to",
   "furigana": "そんけい",
   "example": {
    "jp": "私（わたし）は両親（りょうしん）をとても尊敬（そんけい）している。",
    "vi": "Tôi rất kính trọng bố mẹ tôi.",
-   "en": "Tôi rất kính trọng bố mẹ tôi.",
+   "en": "I have great respect for my parents.",
    "seg": [
     {
      "t": "私",
@@ -782,11 +782,11 @@
   "section_title": "Gia đình",
   "word": "おじ",
   "meaning_vi": "chú, cậu, bác trai",
-  "meaning_en": "chú, cậu, bác trai",
+  "meaning_en": "uncle",
   "example": {
    "jp": "父（ちち）とおじは二人（ふたり）兄弟（きょうだい）だ。",
    "vi": "Bố tôi và chú tôi là hai anh em.",
-   "en": "Bố tôi và chú tôi là hai anh em.",
+   "en": "My father and my uncle are the two brothers.",
    "seg": [
     {
      "t": "父",
@@ -818,11 +818,11 @@
   "section_title": "Gia đình",
   "word": "おば",
   "meaning_vi": "cô, dì, bác gái",
-  "meaning_en": "cô, dì, bác gái",
+  "meaning_en": "aunt",
   "example": {
    "jp": "私（わたし）は母親（ははおや）よりおばに、いろいろ相談（そうだん）する。",
    "vi": "Tôi tâm sự nhiều với dì hơn là mẹ.",
-   "en": "Tôi tâm sự nhiều với dì hơn là mẹ.",
+   "en": "I talk things over with my aunt more than with my mother.",
    "seg": [
     {
      "t": "私",
@@ -857,11 +857,11 @@
   "section_title": "Gia đình",
   "word": "いとこ",
   "meaning_vi": "anh chị em họ",
-  "meaning_en": "anh chị em họ",
+  "meaning_en": "cousin",
   "example": {
    "jp": "今日（きょう）、いとこが遊（あそ）びに来（く）る。",
    "vi": "Hôm nay, anh họ tôi đến chơi.",
-   "en": "Hôm nay, anh họ tôi đến chơi.",
+   "en": "My cousin is coming over to visit today.",
    "seg": [
     {
      "t": "今日",
@@ -896,11 +896,11 @@
   "section_title": "Gia đình",
   "word": "おい",
   "meaning_vi": "cháu trai (con của anh chị em)",
-  "meaning_en": "cháu trai (con của anh chị em)",
+  "meaning_en": "nephew",
   "example": {
    "jp": "おいが生（う）まれて、私（わたし）もおばさんになった。",
    "vi": "Cháu trai chào đời, thế là tôi trở thành dì (cô).",
-   "en": "Cháu trai chào đời, thế là tôi trở thành dì (cô).",
+   "en": "My nephew was born, and I became an aunt.",
    "seg": [
     {
      "t": "おいが"
@@ -931,11 +931,11 @@
   "section_title": "Gia đình",
   "word": "めい",
   "meaning_vi": "cháu gái (con của anh chị em)",
-  "meaning_en": "cháu gái (con của anh chị em)",
+  "meaning_en": "niece",
   "example": {
    "jp": "おいもめいも、とてもかわいい。",
    "vi": "Cả cháu trai lẫn cháu gái đều rất dễ thương.",
-   "en": "Cả cháu trai lẫn cháu gái đều rất dễ thương.",
+   "en": "Both my nephew and my niece are very cute.",
    "seg": [
     {
      "t": "おいもめいも、とてもかわいい。"
@@ -952,12 +952,12 @@
   "section_title": "Gia đình",
   "word": "連れる",
   "meaning_vi": "dẫn đi, dắt đi",
-  "meaning_en": "dẫn đi, dắt đi",
+  "meaning_en": "take (someone) along, bring along",
   "furigana": "つれる",
   "example": {
    "jp": "子（こ）どもを連（つ）れて、近所（きんじょ）の公園（こうえん）に行（い）く。",
    "vi": "Tôi dắt con đi chơi công viên gần nhà.",
-   "en": "Tôi dắt con đi chơi công viên gần nhà.",
+   "en": "I take my child to the park nearby.",
    "seg": [
     {
      "t": "子",
@@ -1006,12 +1006,12 @@
   "section_title": "Gia đình",
   "word": "似る",
   "meaning_vi": "giống, giống nhau",
-  "meaning_en": "giống, giống nhau",
+  "meaning_en": "resemble, look like",
   "furigana": "にる",
   "example": {
    "jp": "Ａ（えい）「お父さんとお母さん、どちらに似（に）ていますか。」 Ｂ（びー）「父（ちち）に似（に）ていると言（い）われます。」",
    "vi": "A: Bố với mẹ thì bạn giống ai hơn? / B: Mọi người bảo tôi giống bố.",
-   "en": "A: Bố với mẹ thì bạn giống ai hơn? / B: Mọi người bảo tôi giống bố.",
+   "en": "A: \"Who do you look more like, your father or your mother?\" B: \"People tell me I look like my father.\"",
    "seg": [
     {
      "t": "Ａ",
@@ -1067,11 +1067,11 @@
   "section_title": "Gia đình",
   "word": "そっくりな",
   "meaning_vi": "giống hệt, giống như đúc",
-  "meaning_en": "giống hệt, giống như đúc",
+  "meaning_en": "identical, the spitting image",
   "example": {
    "jp": "妹（いもうと）の顔（かお）は、父親（ちちおや）にそっくりだ。",
    "vi": "Gương mặt của em gái giống bố như đúc.",
-   "en": "Gương mặt của em gái giống bố như đúc.",
+   "en": "My younger sister's face is the spitting image of our father's.",
    "seg": [
     {
      "t": "妹",
@@ -1106,12 +1106,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "親友",
   "meaning_vi": "bạn thân",
-  "meaning_en": "bạn thân",
+  "meaning_en": "close friend, best friend",
   "furigana": "しんゆう",
   "example": {
    "jp": "私（わたし）には親友（しんゆう）が3人（にん）います。",
    "vi": "Tôi có ba người bạn thân.",
-   "en": "Tôi có ba người bạn thân.",
+   "en": "I have three close friends.",
    "seg": [
     {
      "t": "私",
@@ -1146,12 +1146,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "仲間",
   "meaning_vi": "đồng đội, bạn bè, người cùng nhóm",
-  "meaning_en": "đồng đội, bạn bè, người cùng nhóm",
+  "meaning_en": "companion, fellow member",
   "furigana": "なかま",
   "example": {
    "jp": "彼（かれ）もサッカーの仲間（なかま）に入（い）れよ。",
    "vi": "Cho cậu ta cùng tham gia vào hội bóng đá nào!",
-   "en": "Cho cậu ta cùng tham gia vào hội bóng đá nào!",
+   "en": "Let him join our soccer group too!",
    "seg": [
     {
      "t": "彼",
@@ -1186,12 +1186,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "仲良し",
   "meaning_vi": "thân, thân thiết, quan hệ tốt",
-  "meaning_en": "thân, thân thiết, quan hệ tốt",
+  "meaning_en": "close, on good terms",
   "furigana": "なかよし",
   "example": {
    "jp": "クラスメートは、みんな仲良（なかよ）しだ。",
    "vi": "Tất cả bạn bè trong lớp đều thân thiết với nhau.",
-   "en": "Tất cả bạn bè trong lớp đều thân thiết với nhau.",
+   "en": "All of my classmates get along well.",
    "seg": [
     {
      "t": "クラスメートは、みんな"
@@ -1215,12 +1215,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "幼なじみ",
   "meaning_vi": "bạn thuở bé",
-  "meaning_en": "bạn thuở bé",
+  "meaning_en": "childhood friend",
   "furigana": "おさななじみ",
   "example": {
    "jp": "いなかに帰（かえ）ると、いつも幼（おさな）なじみに会（あ）う。",
    "vi": "Mỗi khi về quê, bao giờ tôi cũng gặp lũ bạn thuở bé.",
-   "en": "Mỗi khi về quê, bao giờ tôi cũng gặp lũ bạn thuở bé.",
+   "en": "Whenever I go back to my hometown, I always meet up with my childhood friends.",
    "seg": [
     {
      "t": "いなかに"
@@ -1258,12 +1258,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "友情",
   "meaning_vi": "tình bạn",
-  "meaning_en": "tình bạn",
+  "meaning_en": "friendship",
   "furigana": "ゆうじょう",
   "example": {
    "jp": "彼（かれ）との友情（ゆうじょう）をいつまでも大切（たいせつ）にしたい。",
    "vi": "Tôi luôn muốn giữ gìn tình bạn với anh ấy.",
-   "en": "Tôi luôn muốn giữ gìn tình bạn với anh ấy.",
+   "en": "I want to treasure my friendship with him forever.",
    "seg": [
     {
      "t": "彼",
@@ -1298,12 +1298,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "親しい",
   "meaning_vi": "thân thiết, thân mật",
-  "meaning_en": "thân thiết, thân mật",
+  "meaning_en": "close, intimate",
   "furigana": "したしい",
   "example": {
    "jp": "親（した）しい友（とも）だちの結婚式（けっこんしき）に招待（しょうたい）された。",
    "vi": "Tôi được mời dự đám cưới của người bạn thân.",
-   "en": "Tôi được mời dự đám cưới của người bạn thân.",
+   "en": "I was invited to a close friend's wedding.",
    "seg": [
     {
      "t": "親",
@@ -1345,12 +1345,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "知人",
   "meaning_vi": "người quen",
-  "meaning_en": "người quen",
+  "meaning_en": "acquaintance",
   "furigana": "ちじん",
   "example": {
    "jp": "知人（ちじん）の紹介（しょうかい）で、彼（かれ）と知り合（しりあ）った。",
    "vi": "Tôi biết anh ấy qua giới thiệu của người quen.",
-   "en": "Tôi biết anh ấy qua giới thiệu của người quen.",
+   "en": "I got to know him through an introduction from an acquaintance.",
    "seg": [
     {
      "t": "知人",
@@ -1392,11 +1392,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "メンバー",
   "meaning_vi": "thành viên, thành phần tham dự",
-  "meaning_en": "thành viên, thành phần tham dự",
+  "meaning_en": "member",
   "example": {
    "jp": "Ａ（えい）「明日（あした）のパーテイーのメンバーは、だれですか。」 Ｂ（びー）「先生（せんせい）と私（わたし）たらです。」",
    "vi": "A: Thành phần tham dự buổi tiệc ngày mai là những ai? / B: Là thầy (cô) giáo và chúng tôi ạ.",
-   "en": "A: Thành phần tham dự buổi tiệc ngày mai là những ai? / B: Là thầy (cô) giáo và chúng tôi ạ.",
+   "en": "A: \"Who are the members coming to tomorrow's party?\" B: \"The teacher and us.\"",
    "seg": [
     {
      "t": "Ａ",
@@ -1445,11 +1445,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "つなぐ",
   "meaning_vi": "nắm, nối, kết nối",
-  "meaning_en": "nắm, nối, kết nối",
+  "meaning_en": "join, connect, hold (hands)",
   "example": {
    "jp": "子（こ）どもたらは、手（て）をつないで学校（がっこう）に行（い）く。",
    "vi": "Bọn trẻ con nắm tay nhau đến trường.",
-   "en": "Bọn trẻ con nắm tay nhau đến trường.",
+   "en": "The children walk to school holding hands.",
    "seg": [
     {
      "t": "子",
@@ -1491,11 +1491,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "つながる",
   "meaning_vi": "kết nối, gọi được",
-  "meaning_en": "kết nối, gọi được",
+  "meaning_en": "be connected, get through",
   "example": {
    "jp": "夜（よる）になっても、電話（でんわ）がつながらない。",
    "vi": "Đến tận đêm, điện thoại cũng không gọi được.",
-   "en": "Đến tận đêm, điện thoại cũng không gọi được.",
+   "en": "Even by nighttime, the call still wouldn't go through.",
    "seg": [
     {
      "t": "夜",
@@ -1523,12 +1523,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "当時",
   "meaning_vi": "lúc đó, thời đó",
-  "meaning_en": "lúc đó, thời đó",
+  "meaning_en": "at that time, back then",
   "furigana": "とうじ",
   "example": {
    "jp": "彼女（かのじょ）はクラスメートだったが、当時（とうじ）は、あまり話（はな）さなかった。",
    "vi": "Cô ấy từng là bạn học cùng lớp với tôi nhưng thời đó chẳng hay nói chuyện mấy.",
-   "en": "Cô ấy từng là bạn học cùng lớp với tôi nhưng thời đó chẳng hay nói chuyện mấy.",
+   "en": "She was my classmate, but back then we hardly talked.",
    "seg": [
     {
      "t": "彼女",
@@ -1563,12 +1563,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "祝う",
   "meaning_vi": "mừng, chúc mừng",
-  "meaning_en": "mừng, chúc mừng",
+  "meaning_en": "celebrate, congratulate",
   "furigana": "いわう",
   "example": {
    "jp": "友（とも）だちの婚約（こんやく）を祝（いわ）うための会（かい）を開（ひら）いた。",
    "vi": "Tôi tổ chức buổi mừng bạn đính hôn.",
-   "en": "Tôi tổ chức buổi mừng bạn đính hôn.",
+   "en": "I held a party to celebrate my friend's engagement.",
    "seg": [
     {
      "t": "友",
@@ -1617,12 +1617,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "遠慮＜する＞",
   "meaning_vi": "sự làm khách, e ngại, giữ kẽ",
-  "meaning_en": "sự làm khách, e ngại, giữ kẽ",
+  "meaning_en": "hold back, be reserved",
   "furigana": "えんりょ",
   "example": {
    "jp": "遠慮（えんりょ）しないで、食（た）べてください。",
    "vi": "Hãy ăn đi, đừng làm khách.",
-   "en": "Hãy ăn đi, đừng làm khách.",
+   "en": "Please don't hold back — help yourself.",
    "seg": [
     {
      "t": "遠慮",
@@ -1650,11 +1650,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "しょっちゅう",
   "meaning_vi": "thường xuyên",
-  "meaning_en": "thường xuyên",
+  "meaning_en": "constantly, all the time",
   "example": {
    "jp": "幼（おさな）なじみとしょっちゅう食事（しょくじ）している。",
    "vi": "Tôi thường xuyên đi ăn uống với lũ bạn thuở bé.",
-   "en": "Tôi thường xuyên đi ăn uống với lũ bạn thuở bé.",
+   "en": "I eat out with my childhood friends all the time.",
    "seg": [
     {
      "t": "幼",
@@ -1682,11 +1682,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "たびたび",
   "meaning_vi": "nhiều lần",
-  "meaning_en": "nhiều lần",
+  "meaning_en": "repeatedly, again and again",
   "example": {
    "jp": "仕事（しごと）中（ちゅう）に、友（とも）だちからたびたびメールが来（く）る。",
    "vi": "Trong lúc làm việc, bạn bè nhiều lần gửi tin nhắn đến.",
-   "en": "Trong lúc làm việc, bạn bè nhiều lần gửi tin nhắn đến.",
+   "en": "My friends message me again and again while I'm at work.",
    "seg": [
     {
      "t": "仕事",
@@ -1725,11 +1725,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "たまに",
   "meaning_vi": "thi thoảng",
-  "meaning_en": "thi thoảng",
+  "meaning_en": "occasionally, once in a while",
   "example": {
    "jp": "大学（だいがく）の友（とも）だちとたまにお酒（さけ）をのむ。",
    "vi": "Thi thoảng tôi đi uống cùng với bạn bè đại học.",
-   "en": "Thi thoảng tôi đi uống cùng với bạn bè đại học.",
+   "en": "I go drinking with my university friends once in a while.",
    "seg": [
     {
      "t": "大学",
@@ -1764,11 +1764,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "たまたま",
   "meaning_vi": "tình cờ, ngẫu nhiên",
-  "meaning_en": "tình cờ, ngẫu nhiên",
+  "meaning_en": "by chance, happen to",
   "example": {
    "jp": "昨日（きのう）駅前（えきまえ）で、たまたま高校（こうこう）時代（じだい）の友（とも）だちに会（あ）った。",
    "vi": "Hôm qua, tình cờ tôi gặp lại người bạn thời cấp ba ở trước ga.",
-   "en": "Hôm qua, tình cờ tôi gặp lại người bạn thời cấp ba ở trước ga.",
+   "en": "Yesterday I happened to run into a friend from high school in front of the station.",
    "seg": [
     {
      "t": "昨日",
@@ -1818,11 +1818,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "めったに",
   "meaning_vi": "họa hoằn, hiếm khi",
-  "meaning_en": "họa hoằn, hiếm khi",
+  "meaning_en": "rarely, hardly ever",
   "example": {
    "jp": "東京（とうきょう）に来（き）てから、幼（おさな）なじみとめったに会（あ）えない。",
    "vi": "Từ khi đến Tokyo, tôi hiếm khi gặp được bạn bè thuở bé.",
-   "en": "Từ khi đến Tokyo, tôi hiếm khi gặp được bạn bè thuở bé.",
+   "en": "Since coming to Tokyo, I hardly ever get to see my childhood friends.",
    "seg": [
     {
      "t": "東京",
@@ -1864,11 +1864,11 @@
   "section_title": "Bạn bè và người quen",
   "word": "しばらく",
   "meaning_vi": "một lúc, một thời gian",
-  "meaning_en": "một lúc, một thời gian",
+  "meaning_en": "for a while, for some time",
   "example": {
    "jp": "幼（おさな）なじみとしばらく会（あ）っていない。",
    "vi": "Đã lâu tôi không gặp bạn thuở bé.",
-   "en": "Đã lâu tôi không gặp bạn thuở bé.",
+   "en": "I haven't seen my childhood friend for a while.",
    "seg": [
     {
      "t": "幼",
@@ -1896,12 +1896,12 @@
   "section_title": "Bạn bè và người quen",
   "word": "別々＜な＞",
   "meaning_vi": "sự khác nhau, riêng biệt",
-  "meaning_en": "sự khác nhau, riêng biệt",
+  "meaning_en": "separate, individual",
   "furigana": "べつべつ",
   "example": {
    "jp": "①親友（しんゆう）とは別々（べつべつ）の大学（だいがく）にすすんだ。 ②これは別々（べつべつ）に入（い）れてください。",
    "vi": "①Tôi và bạn thân mỗi đứa vào một trường đại học khác nhau. ②Cái này bỏ riêng ra nhé!",
-   "en": "①Tôi và bạn thân mỗi đứa vào một trường đại học khác nhau. ②Cái này bỏ riêng ra nhé!",
+   "en": "(1) My best friend and I went on to separate universities. (2) Please put this in separately.",
    "seg": [
     {
      "t": "①"
@@ -1953,12 +1953,12 @@
   "section_title": "Người yêu",
   "word": "彼女",
   "meaning_vi": "cô ấy, bạn gái",
-  "meaning_en": "cô ấy, bạn gái",
+  "meaning_en": "she, girlfriend",
   "furigana": "かのじょ",
   "example": {
    "jp": "彼女（かのじょ）ができたので、毎日（まいにち）がたのしい。",
    "vi": "Tôi mới có bạn gái nên ngày nào cũng vui.",
-   "en": "Tôi mới có bạn gái nên ngày nào cũng vui.",
+   "en": "I got a girlfriend, so every day is fun now.",
    "seg": [
     {
      "t": "彼女",
@@ -1986,12 +1986,12 @@
   "section_title": "Người yêu",
   "word": "彼",
   "meaning_vi": "anh ấy, bạn trai",
-  "meaning_en": "anh ấy, bạn trai",
+  "meaning_en": "he, boyfriend",
   "furigana": "かれ",
   "example": {
    "jp": "両親(りょうしん)、彼(かれ)をあまり好(す)きじゃないようだ。",
    "vi": "Bố mẹ tôi có vẻ không thích anh ấy lắm.",
-   "en": "Bố mẹ tôi có vẻ không thích anh ấy lắm.",
+   "en": "My parents don't seem to like him very much.",
    "seg": [
     {
      "t": "両親",
@@ -2026,12 +2026,12 @@
   "section_title": "Người yêu",
   "word": "愛情",
   "meaning_vi": "tình yêu, tình cảm",
-  "meaning_en": "tình yêu, tình cảm",
+  "meaning_en": "affection, love",
   "furigana": "あいじょう",
   "example": {
    "jp": "やさしい人（ひと）だとわかり,友情（ゆうじょう）が愛情（あいじょう）に変（か）わった。",
    "vi": "Tôi cảm nhận được đó là một người hiền lành và tình bạn đã chuyển sang thành tình yêu.",
-   "en": "Tôi cảm nhận được đó là một người hiền lành và tình bạn đã chuyển sang thành tình yêu.",
+   "en": "I realized he was a kind person, and friendship turned into love.",
    "seg": [
     {
      "t": "やさしい"
@@ -2076,12 +2076,12 @@
   "section_title": "Người yêu",
   "word": "出会い",
   "meaning_vi": "cuộc gặp gỡ",
-  "meaning_en": "cuộc gặp gỡ",
+  "meaning_en": "meeting, encounter",
   "furigana": "であい",
   "example": {
    "jp": "それはドラマのような出会（であ）いだった。",
    "vi": "Đó là một cuộc gặp gỡ giống như trong phim vậy.",
-   "en": "Đó là một cuộc gặp gỡ giống như trong phim vậy.",
+   "en": "It was an encounter like something out of a drama.",
    "seg": [
     {
      "t": "それはドラマのような"
@@ -2105,12 +2105,12 @@
   "section_title": "Người yêu",
   "word": "出会う",
   "meaning_vi": "gặp, gặp gỡ",
-  "meaning_en": "gặp, gặp gỡ",
+  "meaning_en": "meet, come across",
   "furigana": "であう",
   "example": {
    "jp": "アメリカに旅行（りょこう）したとき、彼女（かのじょ）に出会（であ）った。",
    "vi": "Tôi đã gặp cô ấy khi đi du lịch sang Mỹ.",
-   "en": "Tôi đã gặp cô ấy khi đi du lịch sang Mỹ.",
+   "en": "I met her when I was traveling in America.",
    "seg": [
     {
      "t": "アメリカに"
@@ -2148,12 +2148,12 @@
   "section_title": "Người yêu",
   "word": "付き合う",
   "meaning_vi": "hẹn hò, giao lưu, đi cùng",
-  "meaning_en": "hẹn hò, giao lưu, đi cùng",
+  "meaning_en": "go out with, keep company, go along with",
   "furigana": "つきあう",
   "example": {
    "jp": "①二人（ふたり）は半年（はんとし）前（まえ）から付き合（つきあ）っている。 ②これから友（とも）だちの買い物（かいもの）に付き合（つきあ）う。",
    "vi": "①Hai người hẹn hò từ nửa năm trước./②Bây giờ tôi cùng đi mua sắm với bạn.",
-   "en": "①Hai người hẹn hò từ nửa năm trước./②Bây giờ tôi cùng đi mua sắm với bạn.",
+   "en": "(1) The two of them have been going out for six months. (2) I'm going shopping with my friend now.",
    "seg": [
     {
      "t": "①"
@@ -2216,12 +2216,12 @@
   "section_title": "Người yêu",
   "word": "交際＜する＞",
   "meaning_vi": "sự giao thiệp, mối quan hệ, hẹn hò",
-  "meaning_en": "sự giao thiệp, mối quan hệ, hẹn hò",
+  "meaning_en": "dating, relationship, association",
   "furigana": "こうさい",
   "example": {
    "jp": "彼女（かのじょ）の両親（りょうしん）が、二人（ふたり）の交際（こうさい）に反対（はんたい）している。",
    "vi": "Bố mẹ cô ấy phản đối mối quan hệ của hai đứa.",
-   "en": "Bố mẹ cô ấy phản đối mối quan hệ của hai đứa.",
+   "en": "Her parents are against the two of them dating.",
    "seg": [
     {
      "t": "彼女",
@@ -2270,12 +2270,12 @@
   "section_title": "Người yêu",
   "word": "記念＜する＞",
   "meaning_vi": "sự kỷ niệm",
-  "meaning_en": "sự kỷ niệm",
+  "meaning_en": "commemorate, mark an occasion",
   "furigana": "きねん",
   "example": {
    "jp": "彼女（かのじょ）の卒業（そつぎょう）を記念（きねん）して、写真（しゃしん）を撮（と）った。",
    "vi": "Tôi chụp ảnh kỷ niệm tốt nghiệp của cô ấy.",
-   "en": "Tôi chụp ảnh kỷ niệm tốt nghiệp của cô ấy.",
+   "en": "We took a photo to commemorate her graduation.",
    "seg": [
     {
      "t": "彼女",
@@ -2324,12 +2324,12 @@
   "section_title": "Người yêu",
   "word": "記念日",
   "meaning_vi": "ngày kỷ niệm",
-  "meaning_en": "ngày kỷ niệm",
+  "meaning_en": "anniversary",
   "furigana": "きねんび",
   "example": {
    "jp": "明日（あした）は結婚（けっこん）記念（きねん）日（び）だ。",
    "vi": "Mai là ngày kỷ niệm ngày cưới.",
-   "en": "Mai là ngày kỷ niệm ngày cưới.",
+   "en": "Tomorrow is our wedding anniversary.",
    "seg": [
     {
      "t": "明日",
@@ -2365,11 +2365,11 @@
   "section_title": "Người yêu",
   "word": "けんか＜する＞",
   "meaning_vi": "sự cãi nhau, cãi vã, đánh lộn",
-  "meaning_en": "sự cãi nhau, cãi vã, đánh lộn",
+  "meaning_en": "quarrel, fight",
   "example": {
    "jp": "私（わたし）たちは、よくけんかする。",
    "vi": "Chúng tôi hay cãi vã.",
-   "en": "Chúng tôi hay cãi vã.",
+   "en": "We fight a lot.",
    "seg": [
     {
      "t": "私",
@@ -2390,12 +2390,12 @@
   "section_title": "Người yêu",
   "word": "言い返す",
   "meaning_vi": "nói lại, bắt bẻ, bốp chát",
-  "meaning_en": "nói lại, bắt bẻ, bốp chát",
+  "meaning_en": "talk back, answer back",
   "furigana": "いいかえす",
   "example": {
    "jp": "彼（かれ）は注意（ちゅうい）されると、すぐ言い返（いいかえ）す。",
    "vi": "Anh ấy hễ bị nhắc nhở là nói trả lại ngay.",
-   "en": "Anh ấy hễ bị nhắc nhở là nói trả lại ngay.",
+   "en": "The moment you correct him, he talks back.",
    "seg": [
     {
      "t": "彼",
@@ -2430,12 +2430,12 @@
   "section_title": "Người yêu",
   "word": "謝る",
   "meaning_vi": "xin lỗi",
-  "meaning_en": "xin lỗi",
+  "meaning_en": "apologize",
   "furigana": "あやまる",
   "example": {
    "jp": "私（わたし）が怒（おこ）ると、彼（かれ）はすぐに謝（あやま）る。",
    "vi": "Hễ tôi tức giận là anh ta lại xin lỗi ngay.",
-   "en": "Hễ tôi tức giận là anh ta lại xin lỗi ngay.",
+   "en": "Whenever I get angry, he apologizes right away.",
    "seg": [
     {
      "t": "私",
@@ -2477,12 +2477,12 @@
   "section_title": "Người yêu",
   "word": "仲直り＜する＞",
   "meaning_vi": "sự làm lành",
-  "meaning_en": "sự làm lành",
+  "meaning_en": "make up, reconcile",
   "furigana": "なかなおり",
   "example": {
    "jp": "3日（みっか）前（まえ）にけんかして、まだ仲直（なかなお）りしていない。",
    "vi": "Chúng tôi cãi nhau 3 ngày trước và giờ vẫn chưa làm lành.",
-   "en": "Chúng tôi cãi nhau 3 ngày trước và giờ vẫn chưa làm lành.",
+   "en": "We had a fight three days ago and still haven't made up.",
    "seg": [
     {
      "t": "3"
@@ -2517,12 +2517,12 @@
   "section_title": "Người yêu",
   "word": "連れて行く",
   "meaning_vi": "dẫn đi, dắt đi",
-  "meaning_en": "dẫn đi, dắt đi",
+  "meaning_en": "take (someone) with you, bring along",
   "furigana": "つれていく",
   "example": {
    "jp": "両親（りょうしん）の家（いえ）に彼女（かのじょ）を連（つ）れて行（い）きたい。",
    "vi": "Tôi muốn dẫn bạn gái đến nhà bố mẹ.",
-   "en": "Tôi muốn dẫn bạn gái đến nhà bố mẹ.",
+   "en": "I want to take my girlfriend to my parents' house.",
    "seg": [
     {
      "t": "両親",
@@ -2571,12 +2571,12 @@
   "section_title": "Người yêu",
   "word": "連れて来る",
   "meaning_vi": "dẫn đến, dẫn về",
-  "meaning_en": "dẫn đến, dẫn về",
+  "meaning_en": "bring (someone) along, bring over",
   "furigana": "つれてくる",
   "example": {
    "jp": "兄（あに）が彼女（かのじょ）を家（いえ）に連（つ）れて来（き）た。",
    "vi": "Anh trai tôi dẫn bạn gái về nhà.",
-   "en": "Anh trai tôi dẫn bạn gái về nhà.",
+   "en": "My older brother brought his girlfriend home.",
    "seg": [
     {
      "t": "兄",
@@ -2625,12 +2625,12 @@
   "section_title": "Người yêu",
   "word": "秘密",
   "meaning_vi": "bí mật",
-  "meaning_en": "bí mật",
+  "meaning_en": "secret",
   "furigana": "ひみつ",
   "example": {
    "jp": "彼（かれ）は私（わたし）の秘密（ひみつ）を、みんなに話（はな）した。",
    "vi": "Anh ấy nói điều bí mật của tôi cho tất cả mọi người biết.",
-   "en": "Anh ấy nói điều bí mật của tôi cho tất cả mọi người biết.",
+   "en": "He told everyone my secret.",
    "seg": [
     {
      "t": "彼",
@@ -2672,12 +2672,12 @@
   "section_title": "Người yêu",
   "word": "内緒",
   "meaning_vi": "bí mật, chuyện nội bộ, biết với nhau",
-  "meaning_en": "bí mật, chuyện nội bộ, biết với nhau",
+  "meaning_en": "secret, confidential, between us",
   "furigana": "ないしょ",
   "example": {
    "jp": "この話（はなし）は、ぜったいに内緒（ないしょ）にしてね。",
    "vi": "Chuyện này phải tuyệt đối giữ bí mật đấy nhé.",
-   "en": "Chuyện này phải tuyệt đối giữ bí mật đấy nhé.",
+   "en": "Keep this strictly between us, okay?",
    "seg": [
     {
      "t": "この"
@@ -2708,12 +2708,12 @@
   "section_title": "Người yêu",
   "word": "好かれる",
   "meaning_vi": "được thích, được yêu mến",
-  "meaning_en": "được thích, được yêu mến",
+  "meaning_en": "be liked, be well liked",
   "furigana": "すかれる",
   "example": {
    "jp": "彼女（かのじょ）は、みんなに好（す）かれる人（ひと）だ。",
    "vi": "Cô ấy là người được mọi người yêu mến.",
-   "en": "Cô ấy là người được mọi người yêu mến.",
+   "en": "She's someone everyone likes.",
    "seg": [
     {
      "t": "彼女",
@@ -2748,11 +2748,11 @@
   "section_title": "Người yêu",
   "word": "もてる",
   "meaning_vi": "có duyên, đào hoa",
-  "meaning_en": "có duyên, đào hoa",
+  "meaning_en": "be popular, be attractive to others",
   "example": {
    "jp": "どうして彼（かれ）が女性（じょせい）にもてるのか、わからない。",
    "vi": "Tôi không hiểu được tại sao anh ta lại có duyên với phụ nữ.",
-   "en": "Tôi không hiểu được tại sao anh ta lại có duyên với phụ nữ.",
+   "en": "I don't understand why he's so popular with women.",
    "seg": [
     {
      "t": "どうして"
@@ -2783,12 +2783,12 @@
   "section_title": "Người yêu",
   "word": "（人を）ふる",
   "meaning_vi": "bỏ (người yêu), từ chối (ai đó)",
-  "meaning_en": "bỏ (người yêu), từ chối (ai đó)",
+  "meaning_en": "dump (someone), turn (someone) down",
   "furigana": "ふる",
   "example": {
    "jp": "弟（おとうと）は彼女（かのじょ）にふられて、元気（げんき）がない。",
    "vi": "Em trai bị bạn gái bỏ nên buồn bã.",
-   "en": "Em trai bị bạn gái bỏ nên buồn bã.",
+   "en": "My younger brother got dumped by his girlfriend and he's down about it.",
    "seg": [
     {
      "t": "弟",
@@ -2823,12 +2823,12 @@
   "section_title": "Người yêu",
   "word": "［ぉ］見合い＜する＞",
   "meaning_vi": "xem mặt, mai mối",
-  "meaning_en": "xem mặt, mai mối",
+  "meaning_en": "matchmaking meeting, arranged first meeting",
   "furigana": "［ぉ］みあい",
   "example": {
    "jp": "姉（あね）はお見合（みあ）いの前（まえ）に、美容（びよう）院（いん）へ行（い）った。",
    "vi": "Chị gái trước khi đi đến buổi xem mặt đã đi làm tóc.",
-   "en": "Chị gái trước khi đi đến buổi xem mặt đã đi làm tóc.",
+   "en": "My older sister went to the salon before her matchmaking meeting.",
    "seg": [
     {
      "t": "姉",
@@ -2881,12 +2881,12 @@
   "section_title": "Người yêu",
   "word": "恋愛＜する＞",
   "meaning_vi": "chuyện yêu đương, tình yêu",
-  "meaning_en": "chuyện yêu đương, tình yêu",
+  "meaning_en": "romance, being in love",
   "furigana": "れんあい",
   "example": {
    "jp": "今（いま）は恋愛（れんあい）より、いい友達（ともだち）がほしい。",
    "vi": "Bây giờ tôi muốn có một người bạn tốt hơn là chuyện yêu đương.",
-   "en": "Bây giờ tôi muốn có một người bạn tốt hơn là chuyện yêu đương.",
+   "en": "Right now I'd rather have a good friend than a romance.",
    "seg": [
     {
      "t": "今",
@@ -2921,12 +2921,12 @@
   "section_title": "Người yêu",
   "word": "存在＜する＞",
   "meaning_vi": "sự tồn tại, người, thứ",
-  "meaning_en": "sự tồn tại, người, thứ",
+  "meaning_en": "existence, presence, someone who matters",
   "furigana": "そんざい",
   "example": {
    "jp": "恋人（こいびと）は、ぼくにとって大切（たいせつ）な存在（そんざい）だ。",
    "vi": "Người yêu là thứ rất quan trọng đối với tôi.",
-   "en": "Người yêu là thứ rất quan trọng đối với tôi.",
+   "en": "My partner is someone who really matters to me.",
    "seg": [
     {
      "t": "恋人",
@@ -2961,12 +2961,12 @@
   "section_title": "Giao tiếp",
   "word": "相手",
   "meaning_vi": "đối phương, đối tác, người đối diện",
-  "meaning_en": "đối phương, đối tác, người đối diện",
+  "meaning_en": "the other person, partner, counterpart",
   "furigana": "あいて",
   "example": {
    "jp": "自分（じぶん）のことだけでなく、相手（あいて）のことも考（かんが）えよう。",
    "vi": "Không chỉ nghĩ cho mình mà hãy nghĩ cho cả đối phương.",
-   "en": "Không chỉ nghĩ cho mình mà hãy nghĩ cho cả đối phương.",
+   "en": "Don't just think about yourself — think about the other person too.",
    "seg": [
     {
      "t": "自分",
@@ -3001,12 +3001,12 @@
   "section_title": "Giao tiếp",
   "word": "助ける",
   "meaning_vi": "giúp đỡ, cứu",
-  "meaning_en": "giúp đỡ, cứu",
+  "meaning_en": "help, rescue, save",
   "furigana": "たすける",
   "example": {
    "jp": "駅（えき）で困（こま）っている人（ひと）を助（たす）けた。",
    "vi": "Tôi đã giúp một người đang gặp khó khăn ở ga.",
-   "en": "Tôi đã giúp một người đang gặp khó khăn ở ga.",
+   "en": "I helped someone who was in trouble at the station.",
    "seg": [
     {
      "t": "駅",
@@ -3048,12 +3048,12 @@
   "section_title": "Giao tiếp",
   "word": "助かる",
   "meaning_vi": "được cứu, được giúp đỡ, nhờ có... mà đỡ",
-  "meaning_en": "được cứu, được giúp đỡ, nhờ có... mà đỡ",
+  "meaning_en": "be saved, be a big help",
   "furigana": "たすかる",
   "example": {
    "jp": "友（とも）だちがレポートをチェックしてくれたので、助（たす）かった。",
    "vi": "Nhờ bạn tôi kiểm tra lại bài báo cáo giúp nên đỡ được nhiều.",
-   "en": "Nhờ bạn tôi kiểm tra lại bài báo cáo giúp nên đỡ được nhiều.",
+   "en": "My friend checked my report for me, which was a big help.",
    "seg": [
     {
      "t": "友",
@@ -3081,12 +3081,12 @@
   "section_title": "Giao tiếp",
   "word": "支える",
   "meaning_vi": "hỗ trợ, nâng đỡ, làm chỗ dựa",
-  "meaning_en": "hỗ trợ, nâng đỡ, làm chỗ dựa",
+  "meaning_en": "support, hold up",
   "furigana": "ささえる",
   "example": {
    "jp": "国（くに）の両親（りょうしん）が、いつも私（わたし）を支（ささ）えてくれる。",
    "vi": "Bố mẹ tôi ở quê nhà luôn luôn là chỗ dựa cho tôi.",
-   "en": "Bố mẹ tôi ở quê nhà luôn luôn là chỗ dựa cho tôi.",
+   "en": "My parents back home always support me.",
    "seg": [
     {
      "t": "国",
@@ -3128,12 +3128,12 @@
   "section_title": "Giao tiếp",
   "word": "誘う",
   "meaning_vi": "rủ, mời",
-  "meaning_en": "rủ, mời",
+  "meaning_en": "invite, ask (someone) along",
   "furigana": "さそう",
   "example": {
    "jp": "見（み）たい映画（えいが）があるので、友（とも）だちを誘（さそ）った。",
    "vi": "Tôi có một bộ phim muốn xem nên đã rủ bạn đi cùng.",
-   "en": "Tôi có một bộ phim muốn xem nên đã rủ bạn đi cùng.",
+   "en": "There was a movie I wanted to see, so I asked a friend along.",
    "seg": [
     {
      "t": "見",
@@ -3175,12 +3175,12 @@
   "section_title": "Giao tiếp",
   "word": "待ち合わせる",
   "meaning_vi": "hẹn gặp nhau",
-  "meaning_en": "hẹn gặp nhau",
+  "meaning_en": "arrange to meet, meet up",
   "furigana": "まちあわせる",
   "example": {
    "jp": "駅前（えきまえ）のカフェで、友（とも）だちと待ち合（まちあ）わせた。",
    "vi": "Tôi đã hẹn gặp bạn ở quán cà phê trước ga.",
-   "en": "Tôi đã hẹn gặp bạn ở quán cà phê trước ga.",
+   "en": "I met up with a friend at the cafe in front of the station.",
    "seg": [
     {
      "t": "駅前",
@@ -3215,12 +3215,12 @@
   "section_title": "Giao tiếp",
   "word": "交換＜する＞",
   "meaning_vi": "sự trao đổi",
-  "meaning_en": "sự trao đổi",
+  "meaning_en": "exchange, swap",
   "furigana": "こうかん",
   "example": {
    "jp": "仕事（しごと）の相手（あいて）と、メールアドレスを交換（こうかん）した。",
    "vi": "Tôi đã trao đổi địa chỉ e-mail với đối tác công việc.",
-   "en": "Tôi đã trao đổi địa chỉ e-mail với đối tác công việc.",
+   "en": "I exchanged email addresses with a business contact.",
    "seg": [
     {
      "t": "仕事",
@@ -3255,12 +3255,12 @@
   "section_title": "Giao tiếp",
   "word": "交流＜する＞",
   "meaning_vi": "sự giao lưu",
-  "meaning_en": "sự giao lưu",
+  "meaning_en": "interact, exchange, mingle",
   "furigana": "こうりゅう",
   "example": {
    "jp": "いろいろな国（くに）の人（ひと）たちと交流（こうりゅう）したい。",
    "vi": "Tôi muốn giao lưu với mọi người đến từ nhiều nước khác nhau.",
-   "en": "Tôi muốn giao lưu với mọi người đến từ nhiều nước khác nhau.",
+   "en": "I want to interact with people from all sorts of countries.",
    "seg": [
     {
      "t": "いろいろな"
@@ -3298,12 +3298,12 @@
   "section_title": "Giao tiếp",
   "word": "断る",
   "meaning_vi": "từ chối",
-  "meaning_en": "từ chối",
+  "meaning_en": "decline, refuse, turn down",
   "furigana": "ことわる",
   "example": {
    "jp": "兄（あに）の友（とも）だちにデートに誘（さそ）われたが、断（ことわ）った。",
    "vi": "Bạn của anh trai tôi rủ đi hẹn hò nhưng tôi đã từ chối.",
-   "en": "Bạn của anh trai tôi rủ đi hẹn hò nhưng tôi đã từ chối.",
+   "en": "My brother's friend asked me out, but I turned him down.",
    "seg": [
     {
      "t": "兄",
@@ -3345,12 +3345,12 @@
   "section_title": "Giao tiếp",
   "word": "預ける",
   "meaning_vi": "gửi, giao cho ai trông hộ",
-  "meaning_en": "gửi, giao cho ai trông hộ",
+  "meaning_en": "leave (something) in someone's care, entrust",
   "furigana": "あずける",
   "example": {
    "jp": "旅行（りょこう）の間（あいだ）、友（とも）だちのペットを預（あず）けた。",
    "vi": "Tôi đã gửi bạn trông hộ thú cưng trong thời gian đi du lịch.",
-   "en": "Tôi đã gửi bạn trông hộ thú cưng trong thời gian đi du lịch.",
+   "en": "I left my friend's pet in her care while I was traveling.",
    "seg": [
     {
      "t": "旅行",
@@ -3392,12 +3392,12 @@
   "section_title": "Giao tiếp",
   "word": "預かる",
   "meaning_vi": "trông hộ, giữ hộ, được giao phó",
-  "meaning_en": "trông hộ, giữ hộ, được giao phó",
+  "meaning_en": "look after, take charge of, keep for someone",
   "furigana": "あずかる",
   "example": {
    "jp": "友（とも）だちの旅行（りょこう）の間（あいだ）、彼女（かのじょ）のペットを預（あず）かった。",
    "vi": "Tôi đã trông hộ thú cưng của bạn tôi trong thời gian cô ấy đi du lịch.",
-   "en": "Tôi đã trông hộ thú cưng của bạn tôi trong thời gian cô ấy đi du lịch.",
+   "en": "I looked after my friend's pet while she was away on a trip.",
    "seg": [
     {
      "t": "友",
@@ -3446,11 +3446,11 @@
   "section_title": "Giao tiếp",
   "word": "かわいがる",
   "meaning_vi": "cưng chiều, yêu quý",
-  "meaning_en": "cưng chiều, yêu quý",
+  "meaning_en": "dote on, be fond of, treat affectionately",
   "example": {
    "jp": "彼女（かのじょ）は、みんなからかわいがられている。",
    "vi": "Cô ấy được mọi người yêu quý.",
-   "en": "Cô ấy được mọi người yêu quý.",
+   "en": "Everyone is fond of her.",
    "seg": [
     {
      "t": "彼女",
@@ -3471,12 +3471,12 @@
   "section_title": "Giao tiếp",
   "word": "甘やかす",
   "meaning_vi": "chiều, chiều chuộng, nuông chiều",
-  "meaning_en": "chiều, chiều chuộng, nuông chiều",
+  "meaning_en": "spoil, pamper",
   "furigana": "あまやかす",
   "example": {
    "jp": "両親（りょうしん）は弟（おとうと）を甘（あま）やかしている。",
    "vi": "Bố mẹ tôi chiều chuộng em trai.",
-   "en": "Bố mẹ tôi chiều chuộng em trai.",
+   "en": "My parents spoil my younger brother.",
    "seg": [
     {
      "t": "両親",
@@ -3511,12 +3511,12 @@
   "section_title": "Giao tiếp",
   "word": "ついて来る",
   "meaning_vi": "đi theo, bám theo",
-  "meaning_en": "đi theo, bám theo",
+  "meaning_en": "come along, follow",
   "furigana": "ついてくる",
   "example": {
    "jp": "散歩（さんぽ）にいつも妹（いもうと）がついて来（く）る",
    "vi": "Em gái tôi lúc nào cũng đi theo khi tôi đi dạo.",
-   "en": "Em gái tôi lúc nào cũng đi theo khi tôi đi dạo.",
+   "en": "My little sister always comes along when I go for a walk.",
    "seg": [
     {
      "t": "散歩",
@@ -3551,12 +3551,12 @@
   "section_title": "Giao tiếp",
   "word": "抱く",
   "meaning_vi": "ôm, bế",
-  "meaning_en": "ôm, bế",
+  "meaning_en": "hold (in one's arms), carry (a baby)",
   "furigana": "だく",
   "example": {
    "jp": "かわいい赤（あか）ちゃんを抱（だ）いた。",
    "vi": "Tôi đã bế em bé dễ thương.",
-   "en": "Tôi đã bế em bé dễ thương.",
+   "en": "I held the adorable baby.",
    "seg": [
     {
      "t": "かわいい"
@@ -3587,12 +3587,12 @@
   "section_title": "Giao tiếp",
   "word": "話しかける",
   "meaning_vi": "bắt chuyện, lên tiếng nói với",
-  "meaning_en": "bắt chuyện, lên tiếng nói với",
+  "meaning_en": "speak to, strike up a conversation with",
   "furigana": "はなしかける",
   "example": {
    "jp": "兄（あに）は、赤（あか）ちゃんに話（はな）しかけた。",
    "vi": "Anh trai tôi bắt chuyện với em bé.",
-   "en": "Anh trai tôi bắt chuyện với em bé.",
+   "en": "My older brother talked to the baby.",
    "seg": [
     {
      "t": "兄",
@@ -3627,12 +3627,12 @@
   "section_title": "Giao tiếp",
   "word": "無視＜する＞",
   "meaning_vi": "sự phớt lờ, làm ngơ, bỏ qua",
-  "meaning_en": "sự phớt lờ, làm ngơ, bỏ qua",
+  "meaning_en": "ignore, disregard",
   "furigana": "むし",
   "example": {
    "jp": "知（し）り会（あ）いに話（はな）しかけたのに、無視（むし）された。",
    "vi": "Tôi bắt chuyện với người quen nhưng đã bị phớt lờ.",
-   "en": "Tôi bắt chuyện với người quen nhưng đã bị phớt lờ.",
+   "en": "I spoke to an acquaintance, but they ignored me.",
    "seg": [
     {
      "t": "知",
@@ -3674,12 +3674,12 @@
   "section_title": "Giao tiếp",
   "word": "振り向く",
   "meaning_vi": "quay đầu lại, ngoảnh lại",
-  "meaning_en": "quay đầu lại, ngoảnh lại",
+  "meaning_en": "turn around, look back",
   "furigana": "ふりむく",
   "example": {
    "jp": "後（うし）ろから名前（なまえ）を呼（よ）ばれて、振り向（ふりむ）いた。",
    "vi": "Bị gọi tên từ phía sau, tôi đã ngoảnh lại.",
-   "en": "Bị gọi tên từ phía sau, tôi đã ngoảnh lại.",
+   "en": "Someone called my name from behind, so I turned around.",
    "seg": [
     {
      "t": "後",
@@ -3721,11 +3721,11 @@
   "section_title": "Giao tiếp",
   "word": "いただく",
   "meaning_vi": "nhận, được ai đó cho (kính ngữ khiêm nhường)",
-  "meaning_en": "nhận, được ai đó cho (kính ngữ khiêm nhường)",
+  "meaning_en": "receive (humble form of もらう)",
   "example": {
    "jp": "部長（ぶちょう）に日本（にほん）のお酒（さけ）をいただいた。",
    "vi": "Tôi đã được trưởng phòng cho rượu sake Nhật Bản.",
-   "en": "Tôi đã được trưởng phòng cho rượu sake Nhật Bản.",
+   "en": "I received Japanese sake from my department manager.",
    "seg": [
     {
      "t": "部長",
@@ -3760,11 +3760,11 @@
   "section_title": "Giao tiếp",
   "word": "くださる",
   "meaning_vi": "cho (kính ngữ tôn kính, người trên cho người dưới)",
-  "meaning_en": "cho (kính ngữ tôn kính, người trên cho người dưới)",
+  "meaning_en": "give (honorific form of くれる, from a superior)",
   "example": {
    "jp": "社長（しゃちょう）の奥様（おくさま）が、お菓子をくださった。",
    "vi": "Phu nhân giám đốc đã cho tôi bánh kẹo.",
-   "en": "Phu nhân giám đốc đã cho tôi bánh kẹo.",
+   "en": "The company president's wife gave me some sweets.",
    "seg": [
     {
      "t": "社長",
@@ -3792,12 +3792,12 @@
   "section_title": "Giao tiếp",
   "word": "差し上げる",
   "meaning_vi": "tặng, biếu (kính ngữ khiêm nhường)",
-  "meaning_en": "tặng, biếu (kính ngữ khiêm nhường)",
+  "meaning_en": "give, present (humble form of あげる)",
   "furigana": "さしあげる",
   "example": {
    "jp": "先生（せんせい）に国（くに）のお土産（みやげ）を差し上（さしあ）げた。",
    "vi": "Tôi đã biếu thầy/cô quà lưu niệm từ quê nhà.",
-   "en": "Tôi đã biếu thầy/cô quà lưu niệm từ quê nhà.",
+   "en": "I gave my teacher a souvenir from my home country.",
    "seg": [
     {
      "t": "先生",
@@ -3839,11 +3839,11 @@
   "section_title": "Giao tiếp",
   "word": "やる",
   "meaning_vi": "cho (dùng với người dưới hoặc động vật)",
-  "meaning_en": "cho (dùng với người dưới hoặc động vật)",
+  "meaning_en": "give (to an inferior, a child, or an animal)",
   "example": {
    "jp": "妹（いもうと）に買（か）ったばかりのバッグをやった。",
    "vi": "Tôi cho em gái cái túi xách vừa mới mua.",
-   "en": "Tôi cho em gái cái túi xách vừa mới mua.",
+   "en": "I gave my little sister the bag I had just bought.",
    "seg": [
     {
      "t": "妹",
@@ -3871,12 +3871,12 @@
   "section_title": "Giao tiếp",
   "word": "与える",
   "meaning_vi": "cho, ban cho, mang lại",
-  "meaning_en": "cho, ban cho, mang lại",
+  "meaning_en": "give, grant, bring (someone something)",
   "furigana": "あたえる",
   "example": {
    "jp": "彼女（かのじょ）は、私（わたし）たちに元気（げんき）を与（あた）えてくれる人（ひと）だ。",
    "vi": "Cô ấy là người mang lại sự vui vẻ cho chúng tôi.",
-   "en": "Cô ấy là người mang lại sự vui vẻ cho chúng tôi.",
+   "en": "She's the kind of person who lifts our spirits.",
    "seg": [
     {
      "t": "彼女",
@@ -3925,12 +3925,12 @@
   "section_title": "Giao tiếp",
   "word": "味方＜する＞",
   "meaning_vi": "đồng minh, người cùng phe, đứng về phía",
-  "meaning_en": "đồng minh, người cùng phe, đứng về phía",
+  "meaning_en": "ally, take someone's side",
   "furigana": "みかた",
   "example": {
    "jp": "私（わたし）はいつも、あなたの味方（みかた）です。",
    "vi": "Tôi luôn đứng về phía bạn.",
-   "en": "Tôi luôn đứng về phía bạn.",
+   "en": "I'm always on your side.",
    "seg": [
     {
      "t": "私",
@@ -3958,12 +3958,12 @@
   "section_title": "Giao tiếp",
   "word": "悪口",
   "meaning_vi": "nói xấu, lời nói xấu",
-  "meaning_en": "nói xấu, lời nói xấu",
+  "meaning_en": "speaking ill of someone, bad-mouthing",
   "furigana": "わるぐち",
   "example": {
    "jp": "人（ひと）の悪口（わるぐち）を言（い）うのは、やめよう。",
    "vi": "Hãy thôi nói xấu người khác đi!",
-   "en": "Hãy thôi nói xấu người khác đi!",
+   "en": "Let's stop speaking ill of other people.",
    "seg": [
     {
      "t": "人",
@@ -3998,12 +3998,12 @@
   "section_title": "Giao tiếp",
   "word": "我々",
   "meaning_vi": "chúng tôi, chúng ta (trang trọng)",
-  "meaning_en": "chúng tôi, chúng ta (trang trọng)",
+  "meaning_en": "we, us (formal)",
   "furigana": "われわれ",
   "example": {
    "jp": "これが我々（われわれ）の意見（いけん）です。",
    "vi": "Đây là ý kiến của chúng tôi.",
-   "en": "Đây là ý kiến của chúng tôi.",
+   "en": "This is our opinion.",
    "seg": [
     {
      "t": "これが"
@@ -4034,11 +4034,11 @@
   "section_title": "Giao tiếp",
   "word": "まね＜する＞",
   "meaning_vi": "sự bắt chước, làm theo",
-  "meaning_en": "sự bắt chước, làm theo",
+  "meaning_en": "imitate, copy, mimic",
   "example": {
    "jp": "人（ひと）のまねではなく、自分（じぶん）の考（かんが）えを持（も）とう。",
    "vi": "Không phải là làm theo người khác mà hãy có chính kiến của mình.",
-   "en": "Không phải là làm theo người khác mà hãy có chính kiến của mình.",
+   "en": "Rather than copying others, have your own ideas.",
    "seg": [
     {
      "t": "人",
@@ -4080,12 +4080,12 @@
   "section_title": "Là người như thế nào?",
   "word": "名字",
   "meaning_vi": "họ (tên)",
-  "meaning_en": "họ (tên)",
+  "meaning_en": "surname, family name",
   "furigana": "みょうじ",
   "example": {
    "jp": "彼（かれ）の名字（みょうじ）は、とても珍（めずら）しい。",
    "vi": "Họ của anh ấy rất hiếm.",
-   "en": "Họ của anh ấy rất hiếm.",
+   "en": "His surname is very unusual.",
    "seg": [
     {
      "t": "彼",
@@ -4120,12 +4120,12 @@
   "section_title": "Là người như thế nào?",
   "word": "性別",
   "meaning_vi": "giới tính",
-  "meaning_en": "giới tính",
+  "meaning_en": "gender, sex",
   "furigana": "せいべつ",
   "example": {
    "jp": "名前（なまえ）を書（か）いて、性別（せいべつ）に●をしてください。",
    "vi": "Hãy viết tên và khoanh vào giới tính.",
-   "en": "Hãy viết tên và khoanh vào giới tính.",
+   "en": "Please write your name and circle your gender.",
    "seg": [
     {
      "t": "名前",
@@ -4160,12 +4160,12 @@
   "section_title": "Là người như thế nào?",
   "word": "年齢",
   "meaning_vi": "tuổi, tuổi tác",
-  "meaning_en": "tuổi, tuổi tác",
+  "meaning_en": "age",
   "furigana": "ねんれい",
   "example": {
    "jp": "女性（じょせい）に年齢（ねんれい）を聞（き）いてはいけない。",
    "vi": "Không được hỏi tuổi tác của phụ nữ.",
-   "en": "Không được hỏi tuổi tác của phụ nữ.",
+   "en": "You shouldn't ask a woman her age.",
    "seg": [
     {
      "t": "女性",
@@ -4200,12 +4200,12 @@
   "section_title": "Là người như thế nào?",
   "word": "高齢",
   "meaning_vi": "cao tuổi, nhiều tuổi",
-  "meaning_en": "cao tuổi, nhiều tuổi",
+  "meaning_en": "advanced age, elderly",
   "furigana": "こうれい",
   "example": {
    "jp": "日本（にほん）には、高齢（こうれい）で元気（げんき）な人（ひと）が多（おお）い。",
    "vi": "Ở Nhật Bản có nhiều người cao tuổi khỏe mạnh.",
-   "en": "Ở Nhật Bản có nhiều người cao tuổi khỏe mạnh.",
+   "en": "In Japan there are many elderly people who are still in good health.",
    "seg": [
     {
      "t": "日本",
@@ -4254,12 +4254,12 @@
   "section_title": "Là người như thế nào?",
   "word": "老人",
   "meaning_vi": "người già",
-  "meaning_en": "người già",
+  "meaning_en": "elderly person, senior",
   "furigana": "ろうじん",
   "example": {
    "jp": "ボウリングは、老人（ろうじん）も好（す）きなスポーツだ。",
    "vi": "Bowling cũng là môn thể thao mà người già yêu thích.",
-   "en": "Bowling cũng là môn thể thao mà người già yêu thích.",
+   "en": "Bowling is a sport that older people enjoy too.",
    "seg": [
     {
      "t": "ボウリングは、"
@@ -4290,12 +4290,12 @@
   "section_title": "Là người như thế nào?",
   "word": "幼児",
   "meaning_vi": "trẻ ấu nhi (trẻ từ 1-5 tuổi)",
-  "meaning_en": "trẻ ấu nhi (trẻ từ 1-5 tuổi)",
+  "meaning_en": "young child, infant (roughly ages 1-5)",
   "furigana": "ようじ",
   "example": {
    "jp": "この教室（きょうしつ）では、幼児（ようじ）が英語（えいご）を勉強（べんきょう）している。",
    "vi": "Trẻ ấu nhi đang học tiếng Anh ở lớp này.",
-   "en": "Trẻ ấu nhi đang học tiếng Anh ở lớp này.",
+   "en": "Young children are studying English in this classroom.",
    "seg": [
     {
      "t": "この"
@@ -4340,12 +4340,12 @@
   "section_title": "Là người như thế nào?",
   "word": "出身",
   "meaning_vi": "xuất thân, quê quán",
-  "meaning_en": "xuất thân, quê quán",
+  "meaning_en": "origin, where one is from",
   "furigana": "しゅっしん",
   "example": {
    "jp": "彼（かれ）はタイのバンコク出身（しゅっしん）だ。",
    "vi": "Anh ấy đến từ Bangkok, Thái Lan.",
-   "en": "Anh ấy đến từ Bangkok, Thái Lan.",
+   "en": "He is from Bangkok, Thailand.",
    "seg": [
     {
      "t": "彼",
@@ -4373,12 +4373,12 @@
   "section_title": "Là người như thế nào?",
   "word": "生まれ",
   "meaning_vi": "(sự) sinh ra, nơi sinh",
-  "meaning_en": "(sự) sinh ra, nơi sinh",
+  "meaning_en": "birth, birthplace",
   "furigana": "うまれ",
   "example": {
    "jp": "私（わたし）は大阪（おおさか）生（う）まれだ。",
    "vi": "Tôi sinh ra ở Osaka.",
-   "en": "Tôi sinh ra ở Osaka.",
+   "en": "I was born in Osaka.",
    "seg": [
     {
      "t": "私",
@@ -4410,12 +4410,12 @@
   "section_title": "Là người như thế nào?",
   "word": "育ち",
   "meaning_vi": "(sự) lớn lên, trưởng thành",
-  "meaning_en": "(sự) lớn lên, trưởng thành",
+  "meaning_en": "upbringing, where one was raised",
   "furigana": "そだち",
   "example": {
    "jp": "私（わたし）は大阪（おおさか）生（う）まれ、東京（とうきょう）育（そだ）ちダ。",
    "vi": "Tôi sinh ra ở Osaka, lớn lên ở Tokyo.",
-   "en": "Tôi sinh ra ở Osaka, lớn lên ở Tokyo.",
+   "en": "I was born in Osaka and raised in Tokyo.",
    "seg": [
     {
      "t": "私",
@@ -4458,12 +4458,12 @@
   "section_title": "Là người như thế nào?",
   "word": "行儀",
   "meaning_vi": "cách cư xử, phép tắc",
-  "meaning_en": "cách cư xử, phép tắc",
+  "meaning_en": "manners, behavior",
   "furigana": "ぎょうぎ",
   "example": {
    "jp": "あの子（こ）は、とても行儀（ぎょうぎ）がいい。",
    "vi": "Đứa bé đó rất ngoan ngoãn.",
-   "en": "Đứa bé đó rất ngoan ngoãn.",
+   "en": "That child is very well behaved.",
    "seg": [
     {
      "t": "あの"
@@ -4494,11 +4494,11 @@
   "section_title": "Là người như thế nào?",
   "word": "マナー",
   "meaning_vi": "phép lịch sự, quy tắc ứng xử",
-  "meaning_en": "phép lịch sự, quy tắc ứng xử",
+  "meaning_en": "manners, etiquette",
   "example": {
    "jp": "彼（かれ）はタバコのマナーを知（し）らない。",
    "vi": "Anh ta không biết phép lịch sự khi hút thuốc.",
-   "en": "Anh ta không biết phép lịch sự khi hút thuốc.",
+   "en": "He has no manners when it comes to smoking.",
    "seg": [
     {
      "t": "彼",
@@ -4526,12 +4526,12 @@
   "section_title": "Là người như thế nào?",
   "word": "個人",
   "meaning_vi": "cá nhân",
-  "meaning_en": "cá nhân",
+  "meaning_en": "individual, personal",
   "furigana": "こじん",
   "example": {
    "jp": "個人（こじん）のデータは、あまり教（おし）えないほうがいい。",
    "vi": "Không nên cho biết dữ liệu cá nhân.",
-   "en": "Không nên cho biết dữ liệu cá nhân.",
+   "en": "It's better not to share personal data too freely.",
    "seg": [
     {
      "t": "個人",
@@ -4559,11 +4559,11 @@
   "section_title": "Là người như thế nào?",
   "word": "アドレス",
   "meaning_vi": "địa chỉ email",
-  "meaning_en": "địa chỉ email",
+  "meaning_en": "email address",
   "example": {
    "jp": "アドレスは名刺（めいし）に書（か）いてある。",
    "vi": "Địa chỉ email có ghi trên danh thiếp.",
-   "en": "Địa chỉ email có ghi trên danh thiếp.",
+   "en": "My email address is written on my business card.",
    "seg": [
     {
      "t": "アドレスは"
@@ -4594,12 +4594,12 @@
   "section_title": "Là người như thế nào?",
   "word": "本人",
   "meaning_vi": "bản thân, đương sự",
-  "meaning_en": "bản thân, đương sự",
+  "meaning_en": "the person themselves, the individual in question",
   "furigana": "ほんにん",
   "example": {
    "jp": "あなたが本人（ほんにん）か、確認（かくにん）させてください。",
    "vi": "Hãy cho tôi xác nhận có phải đúng là anh (chị) hay không.",
-   "en": "Hãy cho tôi xác nhận có phải đúng là anh (chị) hay không.",
+   "en": "Please let me confirm that you are the person in question.",
    "seg": [
     {
      "t": "あなたが"
@@ -4630,12 +4630,12 @@
   "section_title": "Là người như thế nào?",
   "word": "独身",
   "meaning_vi": "độc thân",
-  "meaning_en": "độc thân",
+  "meaning_en": "single, unmarried",
   "furigana": "どくしん",
   "example": {
    "jp": "彼（かれ）は独身（どくしん）だが、結婚（けっこん）したいと言（い）っていた。",
    "vi": "Anh ấy độc thân nhưng nói muốn lấy vợ.",
-   "en": "Anh ấy độc thân nhưng nói muốn lấy vợ.",
+   "en": "He's single, but he said he wants to get married.",
    "seg": [
     {
      "t": "彼",
@@ -4677,12 +4677,12 @@
   "section_title": "Là người như thế nào?",
   "word": "主婦",
   "meaning_vi": "nội trợ",
-  "meaning_en": "nội trợ",
+  "meaning_en": "housewife, homemaker",
   "furigana": "しゅふ",
   "example": {
    "jp": "姉（あね）は主婦（しゅふ）だが、仕事（しごと）もしている。",
    "vi": "Chị tôi làm nội trợ nhưng cũng đi làm.",
-   "en": "Chị tôi làm nội trợ nhưng cũng đi làm.",
+   "en": "My older sister is a homemaker, but she works as well.",
    "seg": [
     {
      "t": "姉",
@@ -4717,11 +4717,11 @@
   "section_title": "Là người như thế nào?",
   "word": "フリーター",
   "meaning_vi": "người làm thêm tự do",
-  "meaning_en": "người làm thêm tự do",
+  "meaning_en": "freeter, person living on part-time work",
   "example": {
    "jp": "弟（おとうと）は大学（だいがく）を卒業（そつぎょう）してからずっとフリーターだ。",
    "vi": "Sau khi tốt nghiệp đại học, em trai tôi làm thêm tự do suốt.",
-   "en": "Sau khi tốt nghiệp đại học, em trai tôi làm thêm tự do suốt.",
+   "en": "My younger brother has been working part-time jobs ever since he graduated from university.",
    "seg": [
     {
      "t": "弟",
@@ -4756,12 +4756,12 @@
   "section_title": "Là người như thế nào?",
   "word": "無職",
   "meaning_vi": "thất nghiệp, không có việc làm",
-  "meaning_en": "thất nghiệp, không có việc làm",
+  "meaning_en": "unemployed, without a job",
   "furigana": "むしょく",
   "example": {
    "jp": "今（いま）は無職（むしょく）だが、来月（らいげつ）から働（はたら）く。",
    "vi": "Bây giờ thì thất nghiệp nhưng từ tháng sau tôi sẽ đi làm.",
-   "en": "Bây giờ thì thất nghiệp nhưng từ tháng sau tôi sẽ đi làm.",
+   "en": "I'm unemployed right now, but I start work next month.",
    "seg": [
     {
      "t": "今",
@@ -4803,12 +4803,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "本日",
   "meaning_vi": "hôm nay",
-  "meaning_en": "hôm nay",
+  "meaning_en": "today (formal)",
   "furigana": "ほんじつ",
   "example": {
    "jp": "本日（ほんじつ）はお忙しいところ、ありがとうございます。",
    "vi": "Tôi xin cám ơn ông ngày hôm nay, mặc dù rất bận rộn vẫn dành thời gian cho tôi.",
-   "en": "Tôi xin cám ơn ông ngày hôm nay, mặc dù rất bận rộn vẫn dành thời gian cho tôi.",
+   "en": "Thank you for making time today despite being busy.",
    "seg": [
     {
      "t": "本日",
@@ -4829,12 +4829,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "明日",
   "meaning_vi": "ngày mai",
-  "meaning_en": "ngày mai",
+  "meaning_en": "tomorrow (formal)",
   "furigana": "あす",
   "example": {
    "jp": "明日（あす）の3時（じ）に、そちらにうかがいます。",
    "vi": "Tôi xin phép đến chỗ chị vào 3 giờ ngày mai.",
-   "en": "Tôi xin phép đến chỗ chị vào 3 giờ ngày mai.",
+   "en": "I will call on you at three o'clock tomorrow.",
    "seg": [
     {
      "t": "明日",
@@ -4862,12 +4862,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "前日",
   "meaning_vi": "ngày hôm trước",
-  "meaning_en": "ngày hôm trước",
+  "meaning_en": "the day before, the previous day",
   "furigana": "ぜんじつ",
   "example": {
    "jp": "会議（かいぎ）の前日（ぜんじつ）に準備（じゅんび）をする。",
    "vi": "Chuẩn bị vào ngày hôm trước khi hội nghị diễn ra.",
-   "en": "Chuẩn bị vào ngày hôm trước khi hội nghị diễn ra.",
+   "en": "I do the preparation the day before the meeting.",
    "seg": [
     {
      "t": "会議",
@@ -4902,12 +4902,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "翌日",
   "meaning_vi": "ngày hôm sau",
-  "meaning_en": "ngày hôm sau",
+  "meaning_en": "the next day, the following day",
   "furigana": "よくじつ",
   "example": {
    "jp": "誕生（たんじょう）日（び）の翌日（よくじつ）に、韓国（かんこく）に出張（しゅっちょう）した。",
    "vi": "Tôi đã đi công tác Hàn Quốc vào hôm sau ngày sinh nhật.",
-   "en": "Tôi đã đi công tác Hàn Quốc vào hôm sau ngày sinh nhật.",
+   "en": "I went on a business trip to Korea the day after my birthday.",
    "seg": [
     {
      "t": "誕生",
@@ -4953,11 +4953,11 @@
   "section_title": "Cách nói về thời gian",
   "word": "しあさって",
   "meaning_vi": "ngày kia",
-  "meaning_en": "ngày kia",
+  "meaning_en": "three days from now",
   "example": {
    "jp": "私（わたし）の誕生（たんじょう）日（び）は、しあさってだ。",
    "vi": "Sinh nhật tôi là ngày kia.",
-   "en": "Sinh nhật tôi là ngày kia.",
+   "en": "My birthday is three days from now.",
    "seg": [
     {
      "t": "私",
@@ -4989,12 +4989,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "先おととい",
   "meaning_vi": "hôm kìa",
-  "meaning_en": "hôm kìa",
+  "meaning_en": "three days ago",
   "furigana": "さきおととい",
   "example": {
    "jp": "先（さき）おととい,高校（こうこう）のクラス会（かい）があった。",
    "vi": "Hôm kìa có buổi họp lớp cấp ba.",
-   "en": "Hôm kìa có buổi họp lớp cấp ba.",
+   "en": "Three days ago there was a high school class reunion.",
    "seg": [
     {
      "t": "先",
@@ -5029,12 +5029,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "昨日",
   "meaning_vi": "hôm qua",
-  "meaning_en": "hôm qua",
+  "meaning_en": "yesterday (formal)",
   "furigana": "さくじつ",
   "example": {
    "jp": "昨日（さくじつ）は、いろいろとお世話になりました。",
    "vi": "Tôi cám ơn anh ngày hôm qua đã giúp tôi rất nhiều.",
-   "en": "Tôi cám ơn anh ngày hôm qua đã giúp tôi rất nhiều.",
+   "en": "Thank you for all your help yesterday.",
    "seg": [
     {
      "t": "昨日",
@@ -5055,12 +5055,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "昨年",
   "meaning_vi": "năm ngoái",
-  "meaning_en": "năm ngoái",
+  "meaning_en": "last year (formal)",
   "furigana": "さくねん",
   "example": {
    "jp": "昨年（さくねん）の5月（がつ）に日本（にほん）にまいりました。",
    "vi": "Tôi đến Nhật Bản vào tháng 5 năm ngoái.",
-   "en": "Tôi đến Nhật Bản vào tháng 5 năm ngoái.",
+   "en": "I came to Japan in May last year.",
    "seg": [
     {
      "t": "昨年",
@@ -5095,12 +5095,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "先日",
   "meaning_vi": "hôm nọ, hôm trước",
-  "meaning_en": "hôm nọ, hôm trước",
+  "meaning_en": "the other day, recently",
   "furigana": "せんじつ",
   "example": {
    "jp": "Ａ（えい）「先日（せんじつ）は、どうもありがとございました。」 Ｂ（びー）「こちらこそ、どうも。」",
    "vi": "A: Hôm nọ cám ơn chị nhé! /B: Tôi cũng vậy.",
-   "en": "A: Hôm nọ cám ơn chị nhé! /B: Tôi cũng vậy.",
+   "en": "A: \"Thank you very much for the other day.\" B: \"Not at all, thank you too.\"",
    "seg": [
     {
      "t": "Ａ",
@@ -5135,12 +5135,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "再来週",
   "meaning_vi": "tuần tới nữa",
-  "meaning_en": "tuần tới nữa",
+  "meaning_en": "the week after next",
   "furigana": "さらいしゅう",
   "example": {
    "jp": "再来週（さらいしゅう）は仕事（しごと）が忙（いそが）しくなりそうだ。",
    "vi": "Có lẽ tuần tới nữa công việc sẽ bận.",
-   "en": "Có lẽ tuần tới nữa công việc sẽ bận.",
+   "en": "Work looks like it will get busy the week after next.",
    "seg": [
     {
      "t": "再来週",
@@ -5175,12 +5175,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "先々週",
   "meaning_vi": "tuần trước nữa",
-  "meaning_en": "tuần trước nữa",
+  "meaning_en": "the week before last",
   "furigana": "せんせんしゅう",
   "example": {
    "jp": "先々（せんせん）週（しゅう）の試験（しけん）が、今日（きょう）やっと返（かえ）ってきた。",
    "vi": "Cuối cùng, ngày hôm nay cũng biết kết quả của kỳ thi tuần trước nữa.",
-   "en": "Cuối cùng, ngày hôm nay cũng biết kết quả của kỳ thi tuần trước nữa.",
+   "en": "The test from the week before last finally came back today.",
    "seg": [
     {
      "t": "先々",
@@ -5226,12 +5226,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "上旬",
   "meaning_vi": "thượng tuần, đầu tháng",
-  "meaning_en": "thượng tuần, đầu tháng",
+  "meaning_en": "the first ten days of a month, early in the month",
   "furigana": "じょうじゅん",
   "example": {
    "jp": "来月（らいげつ）の上旬（じょうじゅん）、タイに旅行（りょこう）に行（い）きます。",
    "vi": "Tôi sẽ đi du lịch ở Thái Lan vào thượng tuần của tháng tới.",
-   "en": "Tôi sẽ đi du lịch ở Thái Lan vào thượng tuần của tháng tới.",
+   "en": "I'm going on a trip to Thailand early next month.",
    "seg": [
     {
      "t": "来月",
@@ -5273,12 +5273,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "中旬",
   "meaning_vi": "trung tuần, giữa tháng",
-  "meaning_en": "trung tuần, giữa tháng",
+  "meaning_en": "the middle ten days of a month, mid-month",
   "furigana": "ちゅうじゅん",
   "example": {
    "jp": "今月（こんげつ）の中旬（ちゅうじゅん）までにレポートを出（だ）してください。",
    "vi": "Hãy nộp báo cáo trước trung tuần tháng này.",
-   "en": "Hãy nộp báo cáo trước trung tuần tháng này.",
+   "en": "Please submit the report by the middle of this month.",
    "seg": [
     {
      "t": "今月",
@@ -5313,12 +5313,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "下旬",
   "meaning_vi": "hạ tuần, cuối tháng",
-  "meaning_en": "hạ tuần, cuối tháng",
+  "meaning_en": "the last ten days of a month, end of the month",
   "furigana": "げじゅん",
   "example": {
    "jp": "毎月（まいつき）下旬（げじゅん）になると、給料（きゅうりょう）が楽（たの）しみだ。",
    "vi": "Cứ đến cuối tháng tôi lại khấp khởi chờ lương.",
-   "en": "Cứ đến cuối tháng tôi lại khấp khởi chờ lương.",
+   "en": "Every month when the end of the month comes around, I look forward to my paycheck.",
    "seg": [
     {
      "t": "毎月",
@@ -5357,12 +5357,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "深夜",
   "meaning_vi": "đêm khuya",
-  "meaning_en": "đêm khuya",
+  "meaning_en": "late at night, the middle of the night",
   "furigana": "しんや",
   "example": {
    "jp": "深夜（しんや）になると、大（おお）きな声（こえ）が聞（き）こえる。",
    "vi": "Cứ đến đêm khuya, tôi lại nghe thấy giọng nói to.",
-   "en": "Cứ đến đêm khuya, tôi lại nghe thấy giọng nói to.",
+   "en": "Late at night, I can hear loud voices.",
    "seg": [
     {
      "t": "深夜",
@@ -5404,12 +5404,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "未来",
   "meaning_vi": "tương lai",
-  "meaning_en": "tương lai",
+  "meaning_en": "the future",
   "furigana": "みらい",
   "example": {
    "jp": "子（こ）どもたちの明（あか）るい未来（みらい）を考（かんが）えよ。",
    "vi": "Hãy nghĩ đến tương lai tươi sáng của bọn trẻ.",
-   "en": "Hãy nghĩ đến tương lai tươi sáng của bọn trẻ.",
+   "en": "Let's think about a bright future for the children.",
    "seg": [
     {
      "t": "子",
@@ -5451,12 +5451,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "数日",
   "meaning_vi": "vài ngày, mấy ngày",
-  "meaning_en": "vài ngày, mấy ngày",
+  "meaning_en": "a few days, several days",
   "furigana": "すうじつ",
   "example": {
    "jp": "土曜日（どようび）から数（すう）日（じつ）は、天気（てんき）が悪（わる）いそうだ。",
    "vi": "Nghe nói từ thứ Bảy, thời tiết sẽ xấu đi trong vài ngày.",
-   "en": "Nghe nói từ thứ Bảy, thời tiết sẽ xấu đi trong vài ngày.",
+   "en": "Apparently the weather will be bad for a few days starting Saturday.",
    "seg": [
     {
      "t": "土曜日",
@@ -5502,12 +5502,12 @@
   "section_title": "Cách nói về thời gian",
   "word": "以降",
   "meaning_vi": "từ sau, kể từ sau",
-  "meaning_en": "từ sau, kể từ sau",
+  "meaning_en": "after, from (a point in time) onward",
   "furigana": "いこう",
   "example": {
    "jp": "大（おお）地震（じしん）以降（いこう）、水（みず）を買（か）っておくようになった。",
    "vi": "Kể từ sau trận động đất lớn xảy ra, tôi bắt đầu mua nước dự trữ.",
-   "en": "Kể từ sau trận động đất lớn xảy ra, tôi bắt đầu mua nước dự trữ.",
+   "en": "Ever since the big earthquake, I've made a habit of buying water to keep on hand.",
    "seg": [
     {
      "t": "大",
@@ -5550,12 +5550,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "朝食",
   "meaning_vi": "bữa sáng",
-  "meaning_en": "bữa sáng",
+  "meaning_en": "breakfast",
   "furigana": "ちょうしょく",
   "example": {
    "jp": "忙（いそが）しくても。朝食（ちょうしょく）は食（た）べたほうがいい。",
    "vi": "Dù bận cũng nên ăn sáng.",
-   "en": "Dù bận cũng nên ăn sáng.",
+   "en": "Even when you're busy, you should eat breakfast.",
    "seg": [
     {
      "t": "忙",
@@ -5590,11 +5590,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "モーニング",
   "meaning_vi": "bữa sáng (set ăn sáng)",
-  "meaning_en": "bữa sáng (set ăn sáng)",
+  "meaning_en": "morning set, breakfast set (at a cafe)",
   "example": {
    "jp": "あの店（みせ）のモーニングセットは、安（やす）くておいしい。",
    "vi": "Set ăn sáng của cửa hàng đó vừa rẻ lại vừa ngon.",
-   "en": "Set ăn sáng của cửa hàng đó vừa rẻ lại vừa ngon.",
+   "en": "The morning set at that place is cheap and delicious.",
    "seg": [
     {
      "t": "あの"
@@ -5625,12 +5625,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "昼食",
   "meaning_vi": "bữa trưa",
-  "meaning_en": "bữa trưa",
+  "meaning_en": "lunch",
   "furigana": "ちゅうしょく",
   "example": {
    "jp": "忙（いそが）しいので、昼食（ちゅうしょく）はいつもサンドイッチです。",
    "vi": "Vì bận nên bữa trưa bao giờ cũng là bánh sandwich.",
-   "en": "Vì bận nên bữa trưa bao giờ cũng là bánh sandwich.",
+   "en": "I'm busy, so lunch is always a sandwich.",
    "seg": [
     {
      "t": "忙",
@@ -5658,11 +5658,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "ランチ",
   "meaning_vi": "bữa trưa",
-  "meaning_en": "bữa trưa",
+  "meaning_en": "lunch",
   "example": {
    "jp": "ここのランチメニューは、おいしそうだ。",
    "vi": "Thực đơn bữa trưa ở đây trông có vẻ ngon.",
-   "en": "Thực đơn bữa trưa ở đây trông có vẻ ngon.",
+   "en": "The lunch menu here looks good.",
    "seg": [
     {
      "t": "ここのランチメニューは、おいしそうだ。"
@@ -5679,12 +5679,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "夕食",
   "meaning_vi": "bữa tối",
-  "meaning_en": "bữa tối",
+  "meaning_en": "dinner, evening meal",
   "furigana": "ゆうしょく",
   "example": {
    "jp": "今日（きょう）の夕食（ゆうしょく）は、ちょっと遅（おそ）くなりそうだ。",
    "vi": "Bữa tối hôm nay có vẻ sẽ muộn một chút.",
-   "en": "Bữa tối hôm nay có vẻ sẽ muộn một chút.",
+   "en": "Dinner looks like it will be a bit late today.",
    "seg": [
     {
      "t": "今日",
@@ -5719,11 +5719,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "デイナー",
   "meaning_vi": "bữa tối",
-  "meaning_en": "bữa tối",
+  "meaning_en": "dinner",
   "example": {
    "jp": "昨日（きのう）のデイナーは高級（こうきゅう）レストランで食（た）べた。",
    "vi": "Bữa tối hôm qua tôi ăn ở nhà hàng cao cấp.",
-   "en": "Bữa tối hôm qua tôi ăn ở nhà hàng cao cấp.",
+   "en": "I had dinner at an upscale restaurant yesterday.",
    "seg": [
     {
      "t": "昨日",
@@ -5758,11 +5758,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "デザート",
   "meaning_vi": "món tráng miệng",
-  "meaning_en": "món tráng miệng",
+  "meaning_en": "dessert",
   "example": {
    "jp": "おなかがいっつぱいだが、デザートは食（た）べられる。",
    "vi": "No rồi nhưng vẫn có thể ăn được món tráng miệng.",
-   "en": "No rồi nhưng vẫn có thể ăn được món tráng miệng.",
+   "en": "I'm full, but I can still manage dessert.",
    "seg": [
     {
      "t": "おなかがいっつぱいだが、デザートは"
@@ -5786,11 +5786,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "おやつ",
   "meaning_vi": "bữa ăn xế, bữa ăn phụ",
-  "meaning_en": "bữa ăn xế, bữa ăn phụ",
+  "meaning_en": "afternoon snack",
   "example": {
    "jp": "もうすぐ3時（じ）、おやつの時間（じかん）ですよ。",
    "vi": "Sắp sửa 3 giờ rồi, đến bữa ăn phụ rồi đấy!",
-   "en": "Sắp sửa 3 giờ rồi, đến bữa ăn phụ rồi đấy!",
+   "en": "It's almost three o'clock — snack time!",
    "seg": [
     {
      "t": "もうすぐ3"
@@ -5821,11 +5821,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "おかず",
   "meaning_vi": "thức ăn (ăn kèm cơm), món phụ",
-  "meaning_en": "thức ăn (ăn kèm cơm), món phụ",
+  "meaning_en": "side dish (eaten with rice)",
   "example": {
    "jp": "毎日（まいにち）のおかずを考（かんが）えるのは大変（たいへん）だ。",
    "vi": "Ngày nào cũng phải nghĩ món ăn kèm cơm thật là mệt.",
-   "en": "Ngày nào cũng phải nghĩ món ăn kèm cơm thật là mệt.",
+   "en": "Thinking up side dishes every day is a lot of work.",
    "seg": [
     {
      "t": "毎日",
@@ -5860,12 +5860,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "[お]弁当",
   "meaning_vi": "cơm hộp",
-  "meaning_en": "cơm hộp",
+  "meaning_en": "boxed lunch, bento",
   "furigana": "[お]べんとう",
   "example": {
    "jp": "毎日（まいにち）、会社（かいしゃ）に弁当（べんとう）を持（も）って行（い）く。",
    "vi": "Hàng ngày, tôi mang cơm hộp đến công ty.",
-   "en": "Hàng ngày, tôi mang cơm hộp đến công ty.",
+   "en": "I take a boxed lunch to work every day.",
    "seg": [
     {
      "t": "毎日",
@@ -5914,12 +5914,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "自炊＜する＞",
   "meaning_vi": "việc tự nấu ăn",
-  "meaning_en": "việc tự nấu ăn",
+  "meaning_en": "cooking for oneself",
   "furigana": "じすい",
   "example": {
    "jp": "日本（にほん）に来（き）てから，自炊（じすい）を始（はじ）めた。",
    "vi": "Từ khi đến Nhật, tôi bắt đầu tự nấu ăn.",
-   "en": "Từ khi đến Nhật, tôi bắt đầu tự nấu ăn.",
+   "en": "I started cooking for myself after coming to Japan.",
    "seg": [
     {
      "t": "日本",
@@ -5961,12 +5961,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "外食＜する＞",
   "meaning_vi": "việc ăn ngoài",
-  "meaning_en": "việc ăn ngoài",
+  "meaning_en": "eating out",
   "furigana": "がいしょく",
   "example": {
    "jp": "週末（しゅうまつ）は外食（がいしょく）することがある。",
    "vi": "Cuối tuần thỉnh thoảng tôi đi ăn ngoài.",
-   "en": "Cuối tuần thỉnh thoảng tôi đi ăn ngoài.",
+   "en": "Sometimes I eat out on weekends.",
    "seg": [
     {
      "t": "週末",
@@ -5994,11 +5994,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "グルメ",
   "meaning_vi": "sành ăn, người sành ăn",
-  "meaning_en": "sành ăn, người sành ăn",
+  "meaning_en": "gourmet, foodie",
   "example": {
    "jp": "彼（かれ）はグルメで、いろいろな店（みせ）を知（し）っている。",
    "vi": "Anh ấy là người sành ăn, biết nhiều cửa hàng.",
-   "en": "Anh ấy là người sành ăn, biết nhiều cửa hàng.",
+   "en": "He's a foodie and knows all sorts of restaurants.",
    "seg": [
     {
      "t": "彼",
@@ -6033,11 +6033,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "おごる",
   "meaning_vi": "đãi, chiêu đãi",
-  "meaning_en": "đãi, chiêu đãi",
+  "meaning_en": "treat (someone), pay for someone",
   "example": {
    "jp": "ボーナスをもらったので、妹（いもうと）にデイナーをおごった。",
    "vi": "Vì mới có thưởng nên tôi đã đãi em gái đi ăn tối.",
-   "en": "Vì mới có thưởng nên tôi đã đãi em gái đi ăn tối.",
+   "en": "I got my bonus, so I treated my little sister to dinner.",
    "seg": [
     {
      "t": "ボーナスをもらったので、"
@@ -6061,12 +6061,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "食欲",
   "meaning_vi": "(sự) thèm ăn, hứng ăn",
-  "meaning_en": "(sự) thèm ăn, hứng ăn",
+  "meaning_en": "appetite",
   "furigana": "しょくよく",
   "example": {
    "jp": "最近（さいきん）、おまり食欲（しょくよく）がない。",
    "vi": "Gần đây, tôi không có hứng ăn lắm.",
-   "en": "Gần đây, tôi không có hứng ăn lắm.",
+   "en": "I haven't had much of an appetite lately.",
    "seg": [
     {
      "t": "最近",
@@ -6094,12 +6094,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "注文＜する＞",
   "meaning_vi": "sự đặt hàng, gọi món",
-  "meaning_en": "sự đặt hàng, gọi món",
+  "meaning_en": "order (food or goods)",
   "furigana": "ちゅうもん",
   "example": {
    "jp": "先（さき）に飲み物（のみもの）を注文（ちゅうもん）しましょう。",
    "vi": "Chúng mình gọi đồ uống trước đi nào!",
-   "en": "Chúng mình gọi đồ uống trước đi nào!",
+   "en": "Let's order drinks first.",
    "seg": [
     {
      "t": "先",
@@ -6134,12 +6134,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "乾杯＜する＞",
   "meaning_vi": "sự cạn chén, nâng cốc, cụng ly",
-  "meaning_en": "sự cạn chén, nâng cốc, cụng ly",
+  "meaning_en": "toast, drink a toast",
   "furigana": "かんぱい",
   "example": {
    "jp": "ワインで乾杯（かんぱい）しましょう。",
    "vi": "Chúng ta hãy nâng cốc uống rượu vang nào.",
-   "en": "Chúng ta hãy nâng cốc uống rượu vang nào.",
+   "en": "Let's have a toast with wine.",
    "seg": [
     {
      "t": "ワインで"
@@ -6163,11 +6163,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "かむ",
   "meaning_vi": "nhai, cắn",
-  "meaning_en": "nhai, cắn",
+  "meaning_en": "chew, bite",
   "example": {
    "jp": "食事（しょくじ）のときは、よくかみましょう。",
    "vi": "Khi ăn, chúng ta hãy nhai thật kỹ!",
-   "en": "Khi ăn, chúng ta hãy nhai thật kỹ!",
+   "en": "Let's chew our food well when we eat.",
    "seg": [
     {
      "t": "食事",
@@ -6188,12 +6188,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "味わう",
   "meaning_vi": "thưởng thức, nếm",
-  "meaning_en": "thưởng thức, nếm",
+  "meaning_en": "savor, taste",
   "furigana": "あじわう",
   "example": {
    "jp": "おいしい料理（りょうり）は、よく味（あじ）わって食（た）べよう。",
    "vi": "Nào hãy thưởng thức các món ăn ngon!",
-   "en": "Nào hãy thưởng thức các món ăn ngon!",
+   "en": "Let's really savor this delicious food.",
    "seg": [
     {
      "t": "おいしい"
@@ -6231,12 +6231,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "お代わり＜する＞",
   "meaning_vi": "sự ăn thêm, uống thêm",
-  "meaning_en": "sự ăn thêm, uống thêm",
+  "meaning_en": "second helping, refill",
   "furigana": "おかわり",
   "example": {
    "jp": "みそ汁（しる）がおいしくて、お代（か）わりした。",
    "vi": "Canh tương miso ngon nên tôi đã dùng thêm bát nữa.",
-   "en": "Canh tương miso ngon nên tôi đã dùng thêm bát nữa.",
+   "en": "The miso soup was delicious, so I had a second helping.",
    "seg": [
     {
      "t": "みそ"
@@ -6267,12 +6267,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "残す",
   "meaning_vi": "để thừa, để lại",
-  "meaning_en": "để thừa, để lại",
+  "meaning_en": "leave (food) uneaten, leave behind",
   "furigana": "のこす",
   "example": {
    "jp": "ごはんが多（おお）すぎて、少（すこ）し残（のこ）した。",
    "vi": "Cơm quá nhiều nên tôi để thừa một ít.",
-   "en": "Cơm quá nhiều nên tôi để thừa một ít.",
+   "en": "There was too much rice, so I left a little.",
    "seg": [
     {
      "t": "ごはんが"
@@ -6310,12 +6310,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "残り物",
   "meaning_vi": "đồ (ăn) thừa",
-  "meaning_en": "đồ (ăn) thừa",
+  "meaning_en": "leftovers",
   "furigana": "のこりもの",
   "example": {
    "jp": "今日（きょう）の残り物（のこりもの）は、明日（あした）食（た）べよう。",
    "vi": "Đồ ăn thừa hôm nay, ngày mai ăn nào!",
-   "en": "Đồ ăn thừa hôm nay, ngày mai ăn nào!",
+   "en": "Let's eat today's leftovers tomorrow.",
    "seg": [
     {
      "t": "今日",
@@ -6354,11 +6354,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "もったいない",
   "meaning_vi": "lãng phí, uổng phí",
-  "meaning_en": "lãng phí, uổng phí",
+  "meaning_en": "wasteful, a shame to waste",
   "example": {
    "jp": "食べ物（たべもの）を残（のこ）すなんて、もったいない。",
    "vi": "Để thừa đồ ăn thật là lãng phí.",
-   "en": "Để thừa đồ ăn thật là lãng phí.",
+   "en": "Leaving food uneaten is such a waste.",
    "seg": [
     {
      "t": "食べ物",
@@ -6386,12 +6386,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "済ませる",
   "meaning_vi": "làm xong, dùng ... cho đơn giản",
-  "meaning_en": "làm xong, dùng ... cho đơn giản",
+  "meaning_en": "finish, get by with, make do with",
   "furigana": "すませる",
   "example": {
    "jp": "今日（きょう）の昼（ひる）ごはんはコンビ弁当（べんとう）で済（す）ませた。",
    "vi": "Bữa trưa hôm nay tôi đã dùng cơm hộp cửa hàng tiện lợi cho đơn giản.",
-   "en": "Bữa trưa hôm nay tôi đã dùng cơm hộp cửa hàng tiện lợi cho đơn giản.",
+   "en": "I made do with a convenience store bento for lunch today.",
    "seg": [
     {
      "t": "今日",
@@ -6433,12 +6433,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "済む",
   "meaning_vi": "xong, xong xuôi; giải quyết xong",
-  "meaning_en": "xong, xong xuôi; giải quyết xong",
+  "meaning_en": "be finished, be settled, get by",
   "furigana": "すむ",
   "example": {
    "jp": "①もう晩（ばん）ごはんの準備（じゅんび）は済（す）んだ。 ②弁当（べんとう）を作（つく）れば、安（やす）く済（す）む。",
    "vi": "① Việc chuẩn bị bữa tối đã xong./② Nếu làm cơm hộp thì sẽ (giải quyết xong với giá) rẻ.",
-   "en": "① Việc chuẩn bị bữa tối đã xong./② Nếu làm cơm hộp thì sẽ (giải quyết xong với giá) rẻ.",
+   "en": "(1) The dinner preparations are already done. (2) If you make a bento, you can get by cheaply.",
    "seg": [
     {
      "t": "①もう"
@@ -6504,12 +6504,12 @@
   "section_title": "Đời sống ẩm thực",
   "word": "量",
   "meaning_vi": "lượng, số lượng",
-  "meaning_en": "lượng, số lượng",
+  "meaning_en": "amount, quantity, portion",
   "furigana": "りょう",
   "example": {
    "jp": "この店（みせ）のスパゲッティは、量（りょう）が少（すく）ない。",
    "vi": "Mì spaghetti của cửa hàng này, lượng ít.",
-   "en": "Mì spaghetti của cửa hàng này, lượng ít.",
+   "en": "The portions of spaghetti at this restaurant are small.",
    "seg": [
     {
      "t": "この"
@@ -6547,11 +6547,11 @@
   "section_title": "Đời sống ẩm thực",
   "word": "バランス",
   "meaning_vi": "cân bằng, sự cân bằng",
-  "meaning_en": "cân bằng, sự cân bằng",
+  "meaning_en": "balance",
   "example": {
    "jp": "食事（しょくじ）は、肉（にく）と野菜（やさい）のバランスが大切（たいせつ）だ。",
    "vi": "Sự cân bằng giữa thịt và rau trong bữa ăn rất quan trọng.",
-   "en": "Sự cân bằng giữa thịt và rau trong bữa ăn rất quan trọng.",
+   "en": "In a meal, the balance between meat and vegetables is important.",
    "seg": [
     {
      "t": "食事",
@@ -6593,11 +6593,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "なべ",
   "meaning_vi": "nồi",
-  "meaning_en": "nồi",
+  "meaning_en": "pot",
   "example": {
    "jp": "スーパーで、大（おお）きななべを買（か）った。",
    "vi": "Tôi đã mua cái nồi lớn ở siêu thị.",
-   "en": "Tôi đã mua cái nồi lớn ở siêu thị.",
+   "en": "I bought a big pot at the supermarket.",
    "seg": [
     {
      "t": "スーパーで、"
@@ -6628,11 +6628,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "フライパン",
   "meaning_vi": "chảo",
-  "meaning_en": "chảo",
+  "meaning_en": "frying pan",
   "example": {
    "jp": "フライパンで、オムレツを作（つく）った。",
    "vi": "Tôi đã làm trứng ốp-la bằng chảo.",
-   "en": "Tôi đã làm trứng ốp-la bằng chảo.",
+   "en": "I made an omelet in the frying pan.",
    "seg": [
     {
      "t": "フライパンで、オムレツを"
@@ -6656,12 +6656,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "包丁",
   "meaning_vi": "dao nhà bếp",
-  "meaning_en": "dao nhà bếp",
+  "meaning_en": "kitchen knife",
   "furigana": "ほうちょう",
   "example": {
    "jp": "私（わたし）の家（いえ）には包丁（ほうちょう）が1本（いっぽん）しかない。",
    "vi": "Nhà tôi chỉ có mỗi một con dao.",
-   "en": "Nhà tôi chỉ có mỗi một con dao.",
+   "en": "There's only one kitchen knife in my house.",
    "seg": [
     {
      "t": "私",
@@ -6703,12 +6703,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "まな板",
   "meaning_vi": "thớt",
-  "meaning_en": "thớt",
+  "meaning_en": "cutting board",
   "furigana": "まないた",
   "example": {
    "jp": "うちのまな板は、木（き）でできている。",
    "vi": "Thớt nhà tôi làm bằng gỗ.",
-   "en": "Thớt nhà tôi làm bằng gỗ.",
+   "en": "Our cutting board is made of wood.",
    "seg": [
     {
      "t": "うちのまな板は、"
@@ -6732,11 +6732,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "おたま",
   "meaning_vi": "muôi, vá",
-  "meaning_en": "muôi, vá",
+  "meaning_en": "ladle",
   "example": {
    "jp": "おたまでカレーを、よく混（ま）ぜてください。",
    "vi": "Hãy dùng muôi khuấy cà ri cho thật đều.",
-   "en": "Hãy dùng muôi khuấy cà ri cho thật đều.",
+   "en": "Please stir the curry well with the ladle.",
    "seg": [
     {
      "t": "おたまでカレーを、よく"
@@ -6760,11 +6760,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "しゃもじ",
   "meaning_vi": "thìa xới cơm",
-  "meaning_en": "thìa xới cơm",
+  "meaning_en": "rice paddle, rice scoop",
   "example": {
    "jp": "このしゃもじは、ごはんがつきにくい。",
    "vi": "Cái thìa xới cơm này khó bị dính cơm.",
-   "en": "Cái thìa xới cơm này khó bị dính cơm.",
+   "en": "Rice doesn't stick to this rice paddle easily.",
    "seg": [
     {
      "t": "このしゃもじは、ごはんがつきにくい。"
@@ -6781,12 +6781,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "大さじ",
   "meaning_vi": "thìa to, muỗng to",
-  "meaning_en": "thìa to, muỗng to",
+  "meaning_en": "tablespoon",
   "furigana": "おおさじ",
   "example": {
    "jp": "まず、砂糖（さとう）を大（おお）さじ2杯（はい）入（い）れてください。",
    "vi": "Trước tiên, hãy cho 2 thìa to đường vào.",
-   "en": "Trước tiên, hãy cho 2 thìa to đường vào.",
+   "en": "First, add two tablespoons of sugar.",
    "seg": [
     {
      "t": "まず、"
@@ -6828,12 +6828,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "炊飯器",
   "meaning_vi": "nồi cơm điện",
-  "meaning_en": "nồi cơm điện",
+  "meaning_en": "rice cooker",
   "furigana": "すいはんき",
   "example": {
    "jp": "炊飯（すいはん）器（き）で、ごはんを炊（た）く。",
    "vi": "Nấu cơm bằng nồi cơm điện.",
-   "en": "Nấu cơm bằng nồi cơm điện.",
+   "en": "I cook rice in the rice cooker.",
    "seg": [
     {
      "t": "炊飯",
@@ -6865,12 +6865,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "流し台",
   "meaning_vi": "bồn rửa",
-  "meaning_en": "bồn rửa",
+  "meaning_en": "kitchen sink",
   "furigana": "ながしだい",
   "example": {
    "jp": "この流し台（ながしだい）は石（いし）でできている。",
    "vi": "Cái bồn rửa này làm bằng đá.",
-   "en": "Cái bồn rửa này làm bằng đá.",
+   "en": "This sink is made of stone.",
    "seg": [
     {
      "t": "この"
@@ -6901,12 +6901,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "電子レンジ",
   "meaning_vi": "lò vi sóng",
-  "meaning_en": "lò vi sóng",
+  "meaning_en": "microwave oven",
   "furigana": "でんしレンジ",
   "example": {
    "jp": "電子（でんし）レンジの[チン]という音（おと）が聞（き）こえた。",
    "vi": "Tôi đã nghe thấy tiếng 'ting' của lò vi sóng.",
-   "en": "Tôi đã nghe thấy tiếng 'ting' của lò vi sóng.",
+   "en": "I heard the \"ding\" of the microwave.",
    "seg": [
     {
      "t": "電子",
@@ -6941,11 +6941,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "ガスレンジ",
   "meaning_vi": "bếp ga",
-  "meaning_en": "bếp ga",
+  "meaning_en": "gas stove, gas range",
   "example": {
    "jp": "ガスレンジから変（へん）な臭（にお）いがする。",
    "vi": "Có mùi lạ bốc ra từ bếp ga.",
-   "en": "Có mùi lạ bốc ra từ bếp ga.",
+   "en": "There's a strange smell coming from the gas stove.",
    "seg": [
     {
      "t": "ガスレンジから"
@@ -6976,12 +6976,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "調味料",
   "meaning_vi": "gia vị",
-  "meaning_en": "gia vị",
+  "meaning_en": "seasoning, condiment",
   "furigana": "ちょうみりょう",
   "example": {
    "jp": "台所（だいどころ）に調味（ちょうみ）料（りょう）が、たくさんある。",
    "vi": "Trong bếp có rất nhiều gia vị.",
-   "en": "Trong bếp có rất nhiều gia vị.",
+   "en": "There are lots of seasonings in the kitchen.",
    "seg": [
     {
      "t": "台所",
@@ -7013,12 +7013,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "サラダ油",
   "meaning_vi": "dầu ăn",
-  "meaning_en": "dầu ăn",
+  "meaning_en": "cooking oil, vegetable oil",
   "furigana": "サラダあぶら",
   "example": {
    "jp": "サラダ油（さらだゆ）を買（か）って来（く）るのを忘（わす）れた。",
    "vi": "Tôi đã quên mua dầu ăn.",
-   "en": "Tôi đã quên mua dầu ăn.",
+   "en": "I forgot to buy cooking oil on the way home.",
    "seg": [
     {
      "t": "サラダ油",
@@ -7060,12 +7060,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "食品",
   "meaning_vi": "thực phẩm, đồ ăn",
-  "meaning_en": "thực phẩm, đồ ăn",
+  "meaning_en": "food, foodstuffs",
   "furigana": "しょくひん",
   "example": {
    "jp": "食品（しょくひん）は近所（きんじょ）のスーパーで買（か）う。",
    "vi": "Tôi mua thực phẩm ở siêu thị gần nhà.",
-   "en": "Tôi mua thực phẩm ở siêu thị gần nhà.",
+   "en": "I buy food at the supermarket near my house.",
    "seg": [
     {
      "t": "食品",
@@ -7100,12 +7100,12 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "切らす",
   "meaning_vi": "dùng hết, để hết",
-  "meaning_en": "dùng hết, để hết",
+  "meaning_en": "run out of, use up",
   "furigana": "きらす",
   "example": {
    "jp": "しょうゆを切（き）らしたので、コンビニに買（か）いに行（い）った。",
    "vi": "Vì đã hết xì dầu nên tôi đi ra cửa hàng tiện lợi để mua.",
-   "en": "Vì đã hết xì dầu nên tôi đi ra cửa hàng tiện lợi để mua.",
+   "en": "I ran out of soy sauce, so I went to the convenience store to buy some.",
    "seg": [
     {
      "t": "しょうゆを"
@@ -7143,11 +7143,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "くさる",
   "meaning_vi": "hỏng, thiu",
-  "meaning_en": "hỏng, thiu",
+  "meaning_en": "go bad, rot, spoil",
   "example": {
    "jp": "冷蔵庫（れいぞうこ）の牛乳（ぎゅうにゅう）が、くさっていた。",
    "vi": "Sữa trong tủ lạnh đã bị hỏng.",
-   "en": "Sữa trong tủ lạnh đã bị hỏng.",
+   "en": "The milk in the fridge had gone bad.",
    "seg": [
     {
      "t": "冷蔵庫",
@@ -7175,11 +7175,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "アルミホイル",
   "meaning_vi": "giấy bạc",
-  "meaning_en": "giấy bạc",
+  "meaning_en": "aluminum foil",
   "example": {
    "jp": "アルミホイルで包（つつ）んで、魚（さかな）を焼（や）く。",
    "vi": "Bọc cá bằng giấy bạc rồi nướng.",
-   "en": "Bọc cá bằng giấy bạc rồi nướng.",
+   "en": "Wrap the fish in aluminum foil and grill it.",
    "seg": [
     {
      "t": "アルミホイルで"
@@ -7217,11 +7217,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "ラップ＜する＞",
   "meaning_vi": "màng bọc thực phẩm",
-  "meaning_en": "màng bọc thực phẩm",
+  "meaning_en": "plastic wrap, cling film",
   "example": {
    "jp": "残（のこ）ったものはラップして、冷蔵庫（れいぞうこ）に入（い）れておく。",
    "vi": "Bọc đồ ăn thừa bằng màng bọc rồi cất vào tủ lạnh.",
-   "en": "Bọc đồ ăn thừa bằng màng bọc rồi cất vào tủ lạnh.",
+   "en": "I wrap the leftovers in plastic wrap and put them in the fridge.",
    "seg": [
     {
      "t": "残",
@@ -7256,11 +7256,11 @@
   "section_title": "Dụng cụ và nguyên liệu nấu ăn",
   "word": "おしぼり",
   "meaning_vi": "khăn ướt",
-  "meaning_en": "khăn ướt",
+  "meaning_en": "wet towel, oshibori",
   "example": {
    "jp": "かにを食（た）べるときは、おしぼりが必要（ひつよう）だ。",
    "vi": "Khi ăn cua cần có khăn ướt.",
-   "en": "Khi ăn cua cần có khăn ướt.",
+   "en": "You need a wet towel when you eat crab.",
    "seg": [
     {
      "t": "かにを"
@@ -7291,12 +7291,12 @@
   "section_title": "Cách làm món ăn",
   "word": "刻む",
   "meaning_vi": "băm nhỏ, thái nhỏ; khắc, chạm trổ",
-  "meaning_en": "băm nhỏ, thái nhỏ; khắc, chạm trổ",
+  "meaning_en": "chop finely, mince",
   "furigana": "きざむ",
   "example": {
    "jp": "野菜（やさい）を細（こま）かく刻（きざ）みます。",
    "vi": "Băm nhỏ rau củ.",
-   "en": "Băm nhỏ rau củ.",
+   "en": "Chop the vegetables finely.",
    "seg": [
     {
      "t": "野菜",
@@ -7331,12 +7331,12 @@
   "section_title": "Cách làm món ăn",
   "word": "（卵を）割る",
   "meaning_vi": "đập (trứng), làm bể",
-  "meaning_en": "đập (trứng), làm bể",
+  "meaning_en": "crack (an egg), break",
   "furigana": "わる",
   "example": {
    "jp": "卵（たまご）を3つ、割（わ）ってください。",
    "vi": "Hãy đập 3 quả trứng.",
-   "en": "Hãy đập 3 quả trứng.",
+   "en": "Please crack three eggs.",
    "seg": [
     {
      "t": "卵",
@@ -7364,11 +7364,11 @@
   "section_title": "Cách làm món ăn",
   "word": "むく",
   "meaning_vi": "bóc, gọt",
-  "meaning_en": "bóc, gọt",
+  "meaning_en": "peel",
   "example": {
    "jp": "じゃがいもの皮（かわ）をむいたら、小（ちい）さく切（き）ります。",
    "vi": "Gọt xong vỏ khoai tây thì thái nhỏ.",
-   "en": "Gọt xong vỏ khoai tây thì thái nhỏ.",
+   "en": "Once you've peeled the potatoes, cut them into small pieces.",
    "seg": [
     {
      "t": "じゃがいもの"
@@ -7406,12 +7406,12 @@
   "section_title": "Cách làm món ăn",
   "word": "加える",
   "meaning_vi": "thêm vào",
-  "meaning_en": "thêm vào",
+  "meaning_en": "add",
   "furigana": "くわえる",
   "example": {
    "jp": "なべに水（みず）を200ミリリットル加（くわ）えます。",
    "vi": "Cho thêm 200ml nước vào nồi.",
-   "en": "Cho thêm 200ml nước vào nồi.",
+   "en": "Add 200 milliliters of water to the pot.",
    "seg": [
     {
      "t": "なべに"
@@ -7442,12 +7442,12 @@
   "section_title": "Cách làm món ăn",
   "word": "少々",
   "meaning_vi": "một chút, một ít",
-  "meaning_en": "một chút, một ít",
+  "meaning_en": "a little, a small amount",
   "furigana": "しょうしょう",
   "example": {
    "jp": "塩（しお）とこしょうを少々（しょうしょう）入（い）れます。",
    "vi": "Cho vào một ít muối và tiêu.",
-   "en": "Cho vào một ít muối và tiêu.",
+   "en": "Add a little salt and pepper.",
    "seg": [
     {
      "t": "塩",
@@ -7479,12 +7479,12 @@
   "section_title": "Cách làm món ăn",
   "word": "揚げる",
   "meaning_vi": "rán, chiên",
-  "meaning_en": "rán, chiên",
+  "meaning_en": "deep-fry",
   "furigana": "あげる",
   "example": {
    "jp": "180度（ど）の油（あぶら）で、しっかり揚（あ）げます。",
    "vi": "Rán kỹ bằng dầu nóng 180 độ.",
-   "en": "Rán kỹ bằng dầu nóng 180 độ.",
+   "en": "Deep-fry thoroughly in oil at 180 degrees.",
    "seg": [
     {
      "t": "180"
@@ -7522,12 +7522,12 @@
   "section_title": "Cách làm món ăn",
   "word": "煮る",
   "meaning_vi": "nấu, ninh",
-  "meaning_en": "nấu, ninh",
+  "meaning_en": "simmer, boil (in liquid)",
   "furigana": "にる",
   "example": {
    "jp": "なべにふたをして、30分煮（に）てください。",
    "vi": "Hãy đậy nắp nồi và ninh 30 phút.",
-   "en": "Hãy đậy nắp nồi và ninh 30 phút.",
+   "en": "Put the lid on the pot and simmer for 30 minutes.",
    "seg": [
     {
      "t": "なべにふたをして、30分"
@@ -7551,11 +7551,11 @@
   "section_title": "Cách làm món ăn",
   "word": "ゆでる",
   "meaning_vi": "luộc",
-  "meaning_en": "luộc",
+  "meaning_en": "boil (in water)",
   "example": {
    "jp": "お湯に塩（しお）を入（い）れて、ゆでます。",
    "vi": "Cho muối vào nước sôi và luộc.",
-   "en": "Cho muối vào nước sôi và luộc.",
+   "en": "Add salt to the hot water and boil.",
    "seg": [
     {
      "t": "お湯に"
@@ -7586,12 +7586,12 @@
   "section_title": "Cách làm món ăn",
   "word": "蒸す",
   "meaning_vi": "hấp",
-  "meaning_en": "hấp",
+  "meaning_en": "steam",
   "furigana": "むす",
   "example": {
    "jp": "電子（でんし）レンジで、野菜（やさい）を蒸（む）します。",
    "vi": "Hấp rau bằng lò vi sóng.",
-   "en": "Hấp rau bằng lò vi sóng.",
+   "en": "Steam the vegetables in the microwave.",
    "seg": [
     {
      "t": "電子",
@@ -7626,11 +7626,11 @@
   "section_title": "Cách làm món ăn",
   "word": "くるむ",
   "meaning_vi": "quấn, cuộn",
-  "meaning_en": "quấn, cuộn",
+  "meaning_en": "wrap up, wrap in",
   "example": {
    "jp": "さくらの葉（は）で、材料（ざいりょう）をくるみます。",
    "vi": "Quấn nguyên liệu bằng lá cây anh đào.",
-   "en": "Quấn nguyên liệu bằng lá cây anh đào.",
+   "en": "Wrap the ingredients in cherry leaves.",
    "seg": [
     {
      "t": "さくらの"
@@ -7661,11 +7661,11 @@
   "section_title": "Cách làm món ăn",
   "word": "にぎる",
   "meaning_vi": "nắm, cầm chặt",
-  "meaning_en": "nắm, cầm chặt",
+  "meaning_en": "grip, shape with the hands",
   "example": {
    "jp": "ごはんに梅干（うめぼ）しを入（い）れて、にぎります。",
    "vi": "Cho mơ muối vào cơm rồi nắm.",
-   "en": "Cho mơ muối vào cơm rồi nắm.",
+   "en": "Put a pickled plum in the rice and shape it into a ball.",
    "seg": [
     {
      "t": "ごはんに"
@@ -7696,12 +7696,12 @@
   "section_title": "Cách làm món ăn",
   "word": "熱する",
   "meaning_vi": "làm nóng, đun nóng",
-  "meaning_en": "làm nóng, đun nóng",
+  "meaning_en": "heat",
   "furigana": "ねっする",
   "example": {
    "jp": "フライパンで、5分くらい熱（ねっ）してください。",
    "vi": "Hãy đun nóng trên chảo khoảng 5 phút.",
-   "en": "Hãy đun nóng trên chảo khoảng 5 phút.",
+   "en": "Heat it in the frying pan for about five minutes.",
    "seg": [
     {
      "t": "フライパンで、5分くらい"
@@ -7725,11 +7725,11 @@
   "section_title": "Cách làm món ăn",
   "word": "こげる",
   "meaning_vi": "cháy, bị cháy khét",
-  "meaning_en": "cháy, bị cháy khét",
+  "meaning_en": "burn, get scorched",
   "example": {
    "jp": "焼（や）きすぎて、魚（さかな）がこげてしまいました。",
    "vi": "Nướng kỹ quá, cá bị cháy mất rồi.",
-   "en": "Nướng kỹ quá, cá bị cháy mất rồi.",
+   "en": "I grilled it too long and the fish got burnt.",
    "seg": [
     {
      "t": "焼",
@@ -7757,12 +7757,12 @@
   "section_title": "Cách làm món ăn",
   "word": "取り出す",
   "meaning_vi": "lấy ra",
-  "meaning_en": "lấy ra",
+  "meaning_en": "take out, remove",
   "furigana": "とりだす",
   "example": {
    "jp": "電子（でんし）レンジから、暖（あたた）めた野菜（やさい）を取り出（とりだ）します。",
    "vi": "Lấy rau đã hâm nóng từ lò vi sóng ra.",
-   "en": "Lấy rau đã hâm nóng từ lò vi sóng ra.",
+   "en": "Take the warmed vegetables out of the microwave.",
    "seg": [
     {
      "t": "電子",
@@ -7804,12 +7804,12 @@
   "section_title": "Cách làm món ăn",
   "word": "塗る",
   "meaning_vi": "phết, bôi, sơn",
-  "meaning_en": "phết, bôi, sơn",
+  "meaning_en": "spread, apply, paint",
   "furigana": "ぬる",
   "example": {
    "jp": "パンにバターを塗（ぬ）ります。",
    "vi": "Phết bơ lên bánh mì.",
-   "en": "Phết bơ lên bánh mì.",
+   "en": "Spread butter on the bread.",
    "seg": [
     {
      "t": "パンにバターを"
@@ -7833,12 +7833,12 @@
   "section_title": "Cách làm món ăn",
   "word": "温める",
   "meaning_vi": "làm nóng, hâm nóng",
-  "meaning_en": "làm nóng, hâm nóng",
+  "meaning_en": "warm up, heat up",
   "furigana": "あたためる",
   "example": {
    "jp": "これは、このままでも温（あたた）めても、おいしいです。",
    "vi": "Cái này để nguyên thế hoặc hâm nóng lên đều ngon.",
-   "en": "Cái này để nguyên thế hoặc hâm nóng lên đều ngon.",
+   "en": "This is delicious either as is or warmed up.",
    "seg": [
     {
      "t": "これは、このままでも"
@@ -7862,12 +7862,12 @@
   "section_title": "Cách làm món ăn",
   "word": "冷やす",
   "meaning_vi": "làm lạnh, ướp lạnh",
-  "meaning_en": "làm lạnh, ướp lạnh",
+  "meaning_en": "chill, cool",
   "furigana": "ひやす",
   "example": {
    "jp": "この料理（りょうり）は冷（ひ）やしても、おいしいです。",
    "vi": "Món ăn này để lạnh cũng ngon.",
-   "en": "Món ăn này để lạnh cũng ngon.",
+   "en": "This dish is delicious chilled as well.",
    "seg": [
     {
      "t": "この"
@@ -7898,11 +7898,11 @@
   "section_title": "Cách làm món ăn",
   "word": "ぬるい",
   "meaning_vi": "ấm ấm, hâm hẩm",
-  "meaning_en": "ấm ấm, hâm hẩm",
+  "meaning_en": "lukewarm, tepid",
   "example": {
    "jp": "ぬるいコーヒーは、おいしくないです。",
    "vi": "Cà phê ấm ấm thì không ngon.",
-   "en": "Cà phê ấm ấm thì không ngon.",
+   "en": "Lukewarm coffee isn't good.",
    "seg": [
     {
      "t": "ぬるいコーヒーは、おいしくないです。"
@@ -7919,12 +7919,12 @@
   "section_title": "Cách làm món ăn",
   "word": "水分",
   "meaning_vi": "thành phần nước, độ ẩm",
-  "meaning_en": "thành phần nước, độ ẩm",
+  "meaning_en": "moisture, water content",
   "furigana": "すいぶん",
   "example": {
    "jp": "この野菜（やさい）は水分（すいぶん）が多（おお）いですね。",
    "vi": "Rau này chứa nhiều nước nhỉ.",
-   "en": "Rau này chứa nhiều nước nhỉ.",
+   "en": "This vegetable has a lot of water in it, doesn't it.",
    "seg": [
     {
      "t": "この"
@@ -7962,12 +7962,12 @@
   "section_title": "Cách làm món ăn",
   "word": "沸かす",
   "meaning_vi": "đun sôi",
-  "meaning_en": "đun sôi",
+  "meaning_en": "boil (water)",
   "furigana": "わかす",
   "example": {
    "jp": "そこのやかんで、お湯を沸（わ）かしてください。",
    "vi": "Hãy đun sôi nước bằng cái ấm ở đó.",
-   "en": "Hãy đun sôi nước bằng cái ấm ở đó.",
+   "en": "Please boil some water in that kettle over there.",
    "seg": [
     {
      "t": "そこのやかんで、お湯を"
@@ -7991,12 +7991,12 @@
   "section_title": "Cách làm món ăn",
   "word": "注ぐ",
   "meaning_vi": "rót, đổ",
-  "meaning_en": "rót, đổ",
+  "meaning_en": "pour",
   "furigana": "そそぐ",
   "example": {
    "jp": "お湯をカップに注（そそ）ぎ、3分待（ま）ちます。",
    "vi": "Rót nước sôi vào cốc, đợi 3 phút.",
-   "en": "Rót nước sôi vào cốc, đợi 3 phút.",
+   "en": "Pour the hot water into the cup and wait three minutes.",
    "seg": [
     {
      "t": "お湯をカップに"
@@ -8027,12 +8027,12 @@
   "section_title": "Cách làm món ăn",
   "word": "味見＜する＞",
   "meaning_vi": "nếm thử",
-  "meaning_en": "nếm thử",
+  "meaning_en": "taste, sample",
   "furigana": "あじみ",
   "example": {
    "jp": "途中（とちゅう）でちょっと味見（あじみ）をしてみましょう。",
    "vi": "Giữa chừng hãy nếm thử một chút nhé.",
-   "en": "Giữa chừng hãy nếm thử một chút nhé.",
+   "en": "Let's have a little taste partway through.",
    "seg": [
     {
      "t": "途中",
@@ -8060,12 +8060,12 @@
   "section_title": "Cách làm món ăn",
   "word": "手間",
   "meaning_vi": "thời gian và công sức",
-  "meaning_en": "thời gian và công sức",
+  "meaning_en": "time and effort, trouble",
   "furigana": "てま",
   "example": {
    "jp": "この料理（りょうり）は手間（てま）がかかりません。",
    "vi": "Món ăn này không tốn thời gian và công sức.",
-   "en": "Món ăn này không tốn thời gian và công sức.",
+   "en": "This dish doesn't take much time or effort.",
    "seg": [
     {
      "t": "この"
@@ -8096,12 +8096,12 @@
   "section_title": "Cách làm món ăn",
   "word": "手軽な",
   "meaning_vi": "dễ dàng, đơn giản",
-  "meaning_en": "dễ dàng, đơn giản",
+  "meaning_en": "easy, simple, effortless",
   "furigana": "てがるな",
   "example": {
    "jp": "家（いえ）でも手軽（てがる）にレストランの料理（りょうり）が作（つく）れます。",
    "vi": "Ở nhà cũng có thể dễ dàng nấu được món ăn của nhà hàng.",
-   "en": "Ở nhà cũng có thể dễ dàng nấu được món ăn của nhà hàng.",
+   "en": "You can easily make restaurant-quality dishes at home too.",
    "seg": [
     {
      "t": "家",
@@ -8143,12 +8143,12 @@
   "section_title": "Cách làm món ăn",
   "word": "でき上がり",
   "meaning_vi": "hoàn thành, thành phẩm",
-  "meaning_en": "hoàn thành, thành phẩm",
+  "meaning_en": "completion, finished product",
   "furigana": "できあがり",
   "example": {
    "jp": "これで、料理（りょうり）のでき上がりです。",
    "vi": "Thế là món ăn đã hoàn thành.",
-   "en": "Thế là món ăn đã hoàn thành.",
+   "en": "And with that, the dish is done.",
    "seg": [
     {
      "t": "これで、"
@@ -8172,12 +8172,12 @@
   "section_title": "Cách làm món ăn",
   "word": "分ける",
   "meaning_vi": "chia, phân chia",
-  "meaning_en": "chia, phân chia",
+  "meaning_en": "divide, split, share",
   "furigana": "わける",
   "example": {
    "jp": "この料理（りょうり）は、二人（ふたり）で分（わ）けて食（た）べましょう。",
    "vi": "Món này hãy chia cho hai người cùng ăn.",
-   "en": "Món này hãy chia cho hai người cùng ăn.",
+   "en": "Let's split this dish between the two of us.",
    "seg": [
     {
      "t": "この"
@@ -8222,11 +8222,11 @@
   "section_title": "Cách làm món ăn",
   "word": "つまむ",
   "meaning_vi": "gắp, nhón",
-  "meaning_en": "gắp, nhón",
+  "meaning_en": "pick up (with fingers or chopsticks)",
   "example": {
    "jp": "これは、はしでつまんで食（た）べてください。",
    "vi": "Cái này thì hãy dùng đũa gắp mà ăn.",
-   "en": "Cái này thì hãy dùng đũa gắp mà ăn.",
+   "en": "Please pick this up with your chopsticks to eat it.",
    "seg": [
     {
      "t": "これは、はしでつまんで"
@@ -8250,12 +8250,12 @@
   "section_title": "Cách làm món ăn",
   "word": "塩辛い",
   "meaning_vi": "mặn",
-  "meaning_en": "mặn",
+  "meaning_en": "salty",
   "furigana": "しおからい",
   "example": {
    "jp": "これは、ちょっと塩辛（しおから）いですね。",
    "vi": "Cái này hơi mặn nhỉ.",
-   "en": "Cái này hơi mặn nhỉ.",
+   "en": "This is a little salty, isn't it.",
    "seg": [
     {
      "t": "これは、ちょっと"
@@ -8279,11 +8279,11 @@
   "section_title": "Cách làm món ăn",
   "word": "すっぱい",
   "meaning_vi": "chua",
-  "meaning_en": "chua",
+  "meaning_en": "sour",
   "example": {
    "jp": "私（わたし）は、すっぱいりんごが好（す）きです。",
    "vi": "Tôi thích táo chua.",
-   "en": "Tôi thích táo chua.",
+   "en": "I like sour apples.",
    "seg": [
     {
      "t": "私",
@@ -8311,12 +8311,12 @@
   "section_title": "Cách làm món ăn",
   "word": "冷凍＜する＞",
   "meaning_vi": "đông lạnh",
-  "meaning_en": "đông lạnh",
+  "meaning_en": "freeze",
   "furigana": "れいとう",
   "example": {
    "jp": "料理（りょうり）が残（のこ）ったら、冷凍（れいとう）しておきましょう。",
    "vi": "Nếu món ăn còn thừa, hãy để đông lạnh.",
-   "en": "Nếu món ăn còn thừa, hãy để đông lạnh.",
+   "en": "If there's food left over, let's freeze it.",
    "seg": [
     {
      "t": "料理",
@@ -8351,11 +8351,11 @@
   "section_title": "Việc nhà",
   "word": "ちらかる",
   "meaning_vi": "bừa bộn, bày bừa, bày lung tung",
-  "meaning_en": "bừa bộn, bày bừa, bày lung tung",
+  "meaning_en": "be scattered about, be messy",
   "example": {
    "jp": "弟（おとうと）の部屋（へや）に、おもちゃがちらかっている。",
    "vi": "Căn phòng của em trai đồ chơi bày lung tung.",
-   "en": "Căn phòng của em trai đồ chơi bày lung tung.",
+   "en": "Toys are scattered all over my little brother's room.",
    "seg": [
     {
      "t": "弟",
@@ -8383,12 +8383,12 @@
   "section_title": "Việc nhà",
   "word": "片付ける",
   "meaning_vi": "dọn, dọn dẹp",
-  "meaning_en": "dọn, dọn dẹp",
+  "meaning_en": "tidy up, put away",
   "furigana": "かたづける",
   "example": {
    "jp": "母親（ははおや）「今（いま）すぐ部屋（へや）を片付（かたづ）けなさい。」 子（こ）ども「ゲームが終（お）わったら、やるよ」",
    "vi": "Mẹ: Hãy dọn phòng ngay! Con: Chơi game xong, con sẽ dọn!",
-   "en": "Mẹ: Hãy dọn phòng ngay! Con: Chơi game xong, con sẽ dọn!",
+   "en": "Mother: \"Tidy up your room right now.\" Child: \"I'll do it when I finish my game.\"",
    "seg": [
     {
      "t": "母親",
@@ -8444,12 +8444,12 @@
   "section_title": "Việc nhà",
   "word": "清潔な",
   "meaning_vi": "sạch sẽ",
-  "meaning_en": "sạch sẽ",
+  "meaning_en": "clean, hygienic",
   "furigana": "せいけつな",
   "example": {
    "jp": "家（いえ）の中（なか）は、いつも清潔（せいけつ）にしておきたい。",
    "vi": "Tôi muốn trong nhà lúc nào cũng sạch sẽ.",
-   "en": "Tôi muốn trong nhà lúc nào cũng sạch sẽ.",
+   "en": "I want to keep the inside of the house clean at all times.",
    "seg": [
     {
      "t": "家",
@@ -8484,12 +8484,12 @@
   "section_title": "Việc nhà",
   "word": "掃く",
   "meaning_vi": "quét, quét dọn",
-  "meaning_en": "quét, quét dọn",
+  "meaning_en": "sweep",
   "furigana": "はく",
   "example": {
    "jp": "毎日（まいにち）、家（いえ）の前（まえ）を掃（は）いている。",
    "vi": "Hằng ngày tôi đều quét trước cửa nhà.",
-   "en": "Hằng ngày tôi đều quét trước cửa nhà.",
+   "en": "I sweep in front of the house every day.",
    "seg": [
     {
      "t": "毎日",
@@ -8531,11 +8531,11 @@
   "section_title": "Việc nhà",
   "word": "ほうき",
   "meaning_vi": "chổi",
-  "meaning_en": "chổi",
+  "meaning_en": "broom",
   "example": {
    "jp": "ほうきで玄関（げんかん）を掃（は）く。",
    "vi": "Tôi quét chỗ cửa vào nhà bằng chổi.",
-   "en": "Tôi quét chỗ cửa vào nhà bằng chổi.",
+   "en": "I sweep the entryway with a broom.",
    "seg": [
     {
      "t": "ほうきで"
@@ -8566,11 +8566,11 @@
   "section_title": "Việc nhà",
   "word": "ちりとり",
   "meaning_vi": "cái hốt rác",
-  "meaning_en": "cái hốt rác",
+  "meaning_en": "dustpan",
   "example": {
    "jp": "掃（は）いたごみを、ちりとりに集（あつ）める。",
    "vi": "Thu rác đã quét vào cái hốt rác.",
-   "en": "Thu rác đã quét vào cái hốt rác.",
+   "en": "I gather the swept-up trash into the dustpan.",
    "seg": [
     {
      "t": "掃",
@@ -8598,12 +8598,12 @@
   "section_title": "Việc nhà",
   "word": "掃除機",
   "meaning_vi": "máy hút bụi",
-  "meaning_en": "máy hút bụi",
+  "meaning_en": "vacuum cleaner",
   "furigana": "そうじき",
   "example": {
    "jp": "うちの掃除（そうじ）機（き）は、音（おと）がとても静（しず）かだ。",
    "vi": "Máy hút bụi nhà tôi tiếng rất êm.",
-   "en": "Máy hút bụi nhà tôi tiếng rất êm.",
+   "en": "Our vacuum cleaner is very quiet.",
    "seg": [
     {
      "t": "うちの"
@@ -8645,11 +8645,11 @@
   "section_title": "Việc nhà",
   "word": "ふく",
   "meaning_vi": "lau",
-  "meaning_en": "lau",
+  "meaning_en": "wipe",
   "example": {
    "jp": "食事（しょくじ）前（まえ）に、テーブルをきれいにふく。",
    "vi": "Lau sạch bàn trước khi ăn.",
-   "en": "Lau sạch bàn trước khi ăn.",
+   "en": "I wipe the table clean before meals.",
    "seg": [
     {
      "t": "食事",
@@ -8674,11 +8674,11 @@
   "section_title": "Việc nhà",
   "word": "ぞうきん",
   "meaning_vi": "giẻ lau",
-  "meaning_en": "giẻ lau",
+  "meaning_en": "cleaning cloth, rag",
   "example": {
    "jp": "古（ふる）いタオルでぞうきんをつくった。",
    "vi": "Tôi làm giẻ lau bằng khăn mặt cũ.",
-   "en": "Tôi làm giẻ lau bằng khăn mặt cũ.",
+   "en": "I made a cleaning rag out of an old towel.",
    "seg": [
     {
      "t": "古",
@@ -8699,11 +8699,11 @@
   "section_title": "Việc nhà",
   "word": "バケツ",
   "meaning_vi": "xô",
-  "meaning_en": "xô",
+  "meaning_en": "bucket",
   "example": {
    "jp": "もう少し大（おお）きなバケツは、ありませんか。",
    "vi": "Có cái xô nào lớn hơn một chút không?",
-   "en": "Có cái xô nào lớn hơn một chút không?",
+   "en": "Do you have a slightly bigger bucket?",
    "seg": [
     {
      "t": "もう少し"
@@ -8727,11 +8727,11 @@
   "section_title": "Việc nhà",
   "word": "しぼる",
   "meaning_vi": "vắt",
-  "meaning_en": "vắt",
+  "meaning_en": "wring out, squeeze",
   "example": {
    "jp": "ぞうきんを、よくしぼってください。",
    "vi": "Hãy vắt kỹ giẻ lau!",
-   "en": "Hãy vắt kỹ giẻ lau!",
+   "en": "Please wring the cloth out well.",
    "seg": [
     {
      "t": "ぞうきんを、よくしぼってください。"
@@ -8748,11 +8748,11 @@
   "section_title": "Việc nhà",
   "word": "こぼす",
   "meaning_vi": "làm đổ",
-  "meaning_en": "làm đổ",
+  "meaning_en": "spill",
   "example": {
    "jp": "バケツの水（みず）をこぼしてしまった。",
    "vi": "Tôi làm đổ mất nước trong xô.",
-   "en": "Tôi làm đổ mất nước trong xô.",
+   "en": "I spilled the water from the bucket.",
    "seg": [
     {
      "t": "バケツの"
@@ -8776,12 +8776,12 @@
   "section_title": "Việc nhà",
   "word": "洗剤",
   "meaning_vi": "bột giặt, nước rửa, chất tẩy rửa",
-  "meaning_en": "bột giặt, nước rửa, chất tẩy rửa",
+  "meaning_en": "detergent, cleaning agent",
   "furigana": "せんざい",
   "example": {
    "jp": "お風呂（ふろ）の掃除（そうじ）には、どんな洗剤（せんざい）がいいですか。",
    "vi": "Để dọn phòng tắm thì dùng chất tẩy rửa nào tốt?",
-   "en": "Để dọn phòng tắm thì dùng chất tẩy rửa nào tốt?",
+   "en": "What kind of cleaner is good for cleaning the bath?",
    "seg": [
     {
      "t": "お"
@@ -8819,11 +8819,11 @@
   "section_title": "Việc nhà",
   "word": "かび",
   "meaning_vi": "mốc",
-  "meaning_en": "mốc",
+  "meaning_en": "mold, mildew",
   "example": {
    "jp": "お風呂（ふろ）のかびを取（と）る。",
    "vi": "Tẩy mốc buồng tắm.",
-   "en": "Tẩy mốc buồng tắm.",
+   "en": "I remove the mold in the bathroom.",
    "seg": [
     {
      "t": "お"
@@ -8854,11 +8854,11 @@
   "section_title": "Việc nhà",
   "word": "ほこり",
   "meaning_vi": "bụi",
-  "meaning_en": "bụi",
+  "meaning_en": "dust",
   "example": {
    "jp": "窓（まど）を開（あ）けると、部屋（へや）にほこりが入（はい）る。",
    "vi": "Hễ mở cửa sổ là bụi vào trong phòng.",
-   "en": "Hễ mở cửa sổ là bụi vào trong phòng.",
+   "en": "When I open the window, dust comes into the room.",
    "seg": [
     {
      "t": "窓",
@@ -8900,11 +8900,11 @@
   "section_title": "Việc nhà",
   "word": "みがく",
   "meaning_vi": "cọ, đánh cọ",
-  "meaning_en": "cọ, đánh cọ",
+  "meaning_en": "polish, scrub",
   "example": {
    "jp": "かがみを、きれいにみがく。",
    "vi": "Đánh cọ sạch gương.",
-   "en": "Đánh cọ sạch gương.",
+   "en": "I polish the mirror until it's clean.",
    "seg": [
     {
      "t": "かがみを、きれいにみがく。"
@@ -8921,11 +8921,11 @@
   "section_title": "Việc nhà",
   "word": "ブラシ",
   "meaning_vi": "bàn chải",
-  "meaning_en": "bàn chải",
+  "meaning_en": "brush",
   "example": {
    "jp": "ブラシで、お風呂（ふろ）を洗（あら）う。",
    "vi": "Rửa bồn tắm bằng bàn chải.",
-   "en": "Rửa bồn tắm bằng bàn chải.",
+   "en": "I scrub the bathtub with a brush.",
    "seg": [
     {
      "t": "ブラシで、お"
@@ -8956,11 +8956,11 @@
   "section_title": "Việc nhà",
   "word": "あわ",
   "meaning_vi": "bọt",
-  "meaning_en": "bọt",
+  "meaning_en": "bubbles, foam, lather",
   "example": {
    "jp": "この石（せっ）けんは、あわがよく出（で）る。",
    "vi": "Xà phòng này ra nhiều bọt.",
-   "en": "Xà phòng này ra nhiều bọt.",
+   "en": "This soap lathers up well.",
    "seg": [
     {
      "t": "この"
@@ -8991,12 +8991,12 @@
   "section_title": "Việc nhà",
   "word": "臭う",
   "meaning_vi": "bốc mùi, có mùi",
-  "meaning_en": "bốc mùi, có mùi",
+  "meaning_en": "smell, give off an odor",
   "furigana": "におう",
   "example": {
    "jp": "バケツの中（なか）の生（なま）ごみが臭（にお）う。",
    "vi": "Rác hữu cơ trong thùng bốc mùi.",
-   "en": "Rác hữu cơ trong thùng bốc mùi.",
+   "en": "The food waste in the bucket smells.",
    "seg": [
     {
      "t": "バケツの"
@@ -9034,12 +9034,12 @@
   "section_title": "Việc nhà",
   "word": "洗濯物",
   "meaning_vi": "đồ giặt",
-  "meaning_en": "đồ giặt",
+  "meaning_en": "laundry, washing",
   "furigana": "せんたくもの",
   "example": {
    "jp": "毎日（まいにち）、洗濯（せんたく）物（もの）が多（おお）い。",
    "vi": "Hàng ngày, đồ giặt nhiều.",
-   "en": "Hàng ngày, đồ giặt nhiều.",
+   "en": "There's a lot of laundry every day.",
    "seg": [
     {
      "t": "毎日",
@@ -9078,12 +9078,12 @@
   "section_title": "Việc nhà",
   "word": "汚れ",
   "meaning_vi": "bẩn, vết bẩn",
-  "meaning_en": "bẩn, vết bẩn",
+  "meaning_en": "dirt, stain",
   "furigana": "よごれ",
   "example": {
    "jp": "この洗剤（せんざい）は、汚（よご）れがよく落（お）ちる。",
    "vi": "Bột giặt này làm sạch vết bẩn rất tốt.",
-   "en": "Bột giặt này làm sạch vết bẩn rất tốt.",
+   "en": "This detergent gets stains out well.",
    "seg": [
     {
      "t": "この"
@@ -9121,12 +9121,12 @@
   "section_title": "Việc nhà",
   "word": "干す",
   "meaning_vi": "phơi, hong",
-  "meaning_en": "phơi, hong",
+  "meaning_en": "hang out to dry, air",
   "furigana": "ほす",
   "example": {
    "jp": "天気（てんき）がいいので、洗濯（せんたく）物（もの）を外（そと）に干（ほ）そう。",
    "vi": "Trời nắng nên tôi định phơi đồ giặt bên ngoài.",
-   "en": "Trời nắng nên tôi định phơi đồ giặt bên ngoài.",
+   "en": "The weather's nice, so let's hang the laundry outside.",
    "seg": [
     {
      "t": "天気",
@@ -9172,12 +9172,12 @@
   "section_title": "Việc nhà",
   "word": "乾燥＜する＞",
   "meaning_vi": "sự sấy khô",
-  "meaning_en": "sự sấy khô",
+  "meaning_en": "drying, dry out",
   "furigana": "かんそう",
   "example": {
    "jp": "厚（あつ）いバスタオルは、乾燥（かんそう）機（き）で乾燥（かんそう）させる。",
    "vi": "Sấy khô khăn tắm dày bằng máy sấy.",
-   "en": "Sấy khô khăn tắm dày bằng máy sấy.",
+   "en": "I dry thick bath towels in the dryer.",
    "seg": [
     {
      "t": "厚",
@@ -9216,11 +9216,11 @@
   "section_title": "Việc nhà",
   "word": "たたむ",
   "meaning_vi": "gấp",
-  "meaning_en": "gấp",
+  "meaning_en": "fold",
   "example": {
    "jp": "息子（むすこ）は自分（じぶん）で洗濯（せんたく）物（もの）をたたむ。",
    "vi": "Con trai tôi tự mình gấp đồ giặt.",
-   "en": "Con trai tôi tự mình gấp đồ giặt.",
+   "en": "My son folds his own laundry.",
    "seg": [
     {
      "t": "息子",
@@ -9259,11 +9259,11 @@
   "section_title": "Việc nhà",
   "word": "アイロン",
   "meaning_vi": "bàn là, bàn ủi",
-  "meaning_en": "bàn là, bàn ủi",
+  "meaning_en": "iron",
   "example": {
    "jp": "娘（むすめ）はアイロンをかけるのが上手（じょうず）だ。",
    "vi": "Con gái tôi ủi đồ rất giỏi.",
-   "en": "Con gái tôi ủi đồ rất giỏi.",
+   "en": "My daughter is good at ironing.",
    "seg": [
     {
      "t": "娘",
@@ -9291,12 +9291,12 @@
   "section_title": "Việc nhà",
   "word": "敷く",
   "meaning_vi": "trải",
-  "meaning_en": "trải",
+  "meaning_en": "spread out, lay out",
   "furigana": "しく",
   "example": {
    "jp": "たたみの部屋（へや）に、ふとんを敷（し）いて寝（ね）ている。",
    "vi": "Tôi trải đệm ra phòng chiếu để ngủ.",
-   "en": "Tôi trải đệm ra phòng chiếu để ngủ.",
+   "en": "I lay out a futon in the tatami room and sleep there.",
    "seg": [
     {
      "t": "たたみの"
@@ -9334,12 +9334,12 @@
   "section_title": "Việc nhà",
   "word": "育児",
   "meaning_vi": "nuôi con",
-  "meaning_en": "nuôi con",
+  "meaning_en": "childcare, raising children",
   "furigana": "いくじ",
   "example": {
    "jp": "働（はたら）きながら育児（いくじ）をするのは大変（たいへん）だ。",
    "vi": "Vừa làm việc, vừa nuôi con thì vất vả.",
-   "en": "Vừa làm việc, vừa nuôi con thì vất vả.",
+   "en": "Raising children while working is hard.",
    "seg": [
     {
      "t": "働",
@@ -9374,12 +9374,12 @@
   "section_title": "Việc nhà",
   "word": "（人を）起こす",
   "meaning_vi": "đánh thức",
-  "meaning_en": "đánh thức",
+  "meaning_en": "wake (someone) up",
   "furigana": "おこす",
   "example": {
    "jp": "毎朝（まいあさ）6時（じ）に、子（こ）どもを起（お）こす。",
    "vi": "Hàng sáng tôi đánh thức con dậy lúc 6 giờ.",
-   "en": "Hàng sáng tôi đánh thức con dậy lúc 6 giờ.",
+   "en": "I wake the children up at six every morning.",
    "seg": [
     {
      "t": "毎朝",
@@ -9421,12 +9421,12 @@
   "section_title": "Việc nhà",
   "word": "糸",
   "meaning_vi": "sợi chỉ",
-  "meaning_en": "sợi chỉ",
+  "meaning_en": "thread",
   "furigana": "いと",
   "example": {
    "jp": "黒（くろ）い糸（いと）でボタンをつけた。",
    "vi": "Tôi đơm cúc bằng chỉ đen.",
-   "en": "Tôi đơm cúc bằng chỉ đen.",
+   "en": "I sewed the button on with black thread.",
    "seg": [
     {
      "t": "黒",
@@ -9454,12 +9454,12 @@
   "section_title": "Việc nhà",
   "word": "針",
   "meaning_vi": "kim",
-  "meaning_en": "kim",
+  "meaning_en": "needle",
   "furigana": "はり",
   "example": {
    "jp": "針（はり）に糸（いと）を通（とお）すのは、とても難（むずか）しい。",
    "vi": "Xâu chỉ vào kim rất khó.",
-   "en": "Xâu chỉ vào kim rất khó.",
+   "en": "Threading a needle is very difficult.",
    "seg": [
     {
      "t": "針",
@@ -9501,12 +9501,12 @@
   "section_title": "Việc nhà",
   "word": "生ごみ",
   "meaning_vi": "rác hữu cơ",
-  "meaning_en": "rác hữu cơ",
+  "meaning_en": "food waste, kitchen garbage",
   "furigana": "なまごみ",
   "example": {
    "jp": "夏（なつ）は、生（なま）ごみがすぐに臭（にお）う。",
    "vi": "Mùa hè, rác hữu cơ chóng bốc mùi.",
-   "en": "Mùa hè, rác hữu cơ chóng bốc mùi.",
+   "en": "In summer, food waste starts to smell right away.",
    "seg": [
     {
      "t": "夏",
@@ -9541,12 +9541,12 @@
   "section_title": "Việc nhà",
   "word": "空き缶",
   "meaning_vi": "vỏ lon",
-  "meaning_en": "vỏ lon",
+  "meaning_en": "empty can",
   "furigana": "あきかん",
   "example": {
    "jp": "水曜日（すいようび）は、空き缶（あきかん）を捨（す）てる日（ひ）だ。",
    "vi": "Thứ tư là ngày vứt vỏ lon.",
-   "en": "Thứ tư là ngày vứt vỏ lon.",
+   "en": "Wednesday is the day for throwing out empty cans.",
    "seg": [
     {
      "t": "水曜日",
@@ -9588,12 +9588,12 @@
   "section_title": "Việc nhà",
   "word": "（ごみを）出す",
   "meaning_vi": "vứt (rác)",
-  "meaning_en": "vứt (rác)",
+  "meaning_en": "take out (the garbage)",
   "furigana": "だす",
   "example": {
    "jp": "決（き）められた日（ひ）に、ごみを出（だ）す。",
    "vi": "Vứt rác vào ngày quy định.",
-   "en": "Vứt rác vào ngày quy định.",
+   "en": "Take the garbage out on the designated day.",
    "seg": [
     {
      "t": "決",
@@ -9628,12 +9628,12 @@
   "section_title": "Nhà",
   "word": "住まい",
   "meaning_vi": "chỗ ở, nơi ở",
-  "meaning_en": "chỗ ở, nơi ở",
+  "meaning_en": "residence, home",
   "furigana": "すまい",
   "example": {
    "jp": "インターネットで、住（す）まいを探（さが）す。",
    "vi": "Tìm chỗ ở qua Internet.",
-   "en": "Tìm chỗ ở qua Internet.",
+   "en": "I look for a place to live on the internet.",
    "seg": [
     {
      "t": "インターネットで、"
@@ -9664,11 +9664,11 @@
   "section_title": "Nhà",
   "word": "リビング",
   "meaning_vi": "phòng khách",
-  "meaning_en": "phòng khách",
+  "meaning_en": "living room",
   "example": {
    "jp": "リビングが広（ひろ）いので、この部屋（へや）に決（き）めた。",
    "vi": "Phòng khách rộng rãi nên tôi quyết định lấy căn này.",
-   "en": "Phòng khách rộng rãi nên tôi quyết định lấy căn này.",
+   "en": "The living room was spacious, so I decided on this apartment.",
    "seg": [
     {
      "t": "リビングが"
@@ -9706,12 +9706,12 @@
   "section_title": "Nhà",
   "word": "居間",
   "meaning_vi": "phòng khách (kiểu Nhật)",
-  "meaning_en": "phòng khách (kiểu Nhật)",
+  "meaning_en": "living room (Japanese-style)",
   "furigana": "いま",
   "example": {
    "jp": "家族（かぞく）みんなで、居間（いま）でテレビを見（み）る。",
    "vi": "Mọi người trong gia đình xem ti vi ở phòng khách.",
-   "en": "Mọi người trong gia đình xem ti vi ở phòng khách.",
+   "en": "The whole family watches TV in the living room.",
    "seg": [
     {
      "t": "家族",
@@ -9746,12 +9746,12 @@
   "section_title": "Nhà",
   "word": "家電",
   "meaning_vi": "đồ điện gia dụng",
-  "meaning_en": "đồ điện gia dụng",
+  "meaning_en": "home appliances",
   "furigana": "かでん",
   "example": {
    "jp": "引っ越（ひっこ）したとき，新（あたら）しい家電（かでん）を買（か）った。",
    "vi": "Khi chuyển nhà tôi đã mua đồ điện gia dụng mới.",
-   "en": "Khi chuyển nhà tôi đã mua đồ điện gia dụng mới.",
+   "en": "When I moved, I bought new home appliances.",
    "seg": [
     {
      "t": "引っ越",
@@ -9793,11 +9793,11 @@
   "section_title": "Nhà",
   "word": "エアコン",
   "meaning_vi": "máy điều hòa",
-  "meaning_en": "máy điều hòa",
+  "meaning_en": "air conditioner",
   "example": {
    "jp": "このエアコンは電気（でんき）代（だい）が安（やす）い。",
    "vi": "Máy điều hòa này tiền điện rẻ.",
-   "en": "Máy điều hòa này tiền điện rẻ.",
+   "en": "This air conditioner is cheap to run.",
    "seg": [
     {
      "t": "このエアコンは"
@@ -9832,11 +9832,11 @@
   "section_title": "Nhà",
   "word": "クーラー",
   "meaning_vi": "máy lạnh",
-  "meaning_en": "máy lạnh",
+  "meaning_en": "air conditioner, cooler",
   "example": {
    "jp": "私（わたし）の国（くに）は暑（あつ）いので、クーラーしかない。",
    "vi": "Nước tôi nóng nên chỉ có máy lạnh.",
-   "en": "Nước tôi nóng nên chỉ có máy lạnh.",
+   "en": "My country is hot, so we only have coolers.",
    "seg": [
     {
      "t": "私",
@@ -9871,12 +9871,12 @@
   "section_title": "Nhà",
   "word": "暖める",
   "meaning_vi": "làm ấm, sưởi ấm",
-  "meaning_en": "làm ấm, sưởi ấm",
+  "meaning_en": "warm up, heat (a room)",
   "furigana": "あたためる",
   "example": {
    "jp": "寒（さむ）いので、ヒーターで暖（あたた）めた。",
    "vi": "Trời lạnh nên tôi đã sưởi ấm bằng máy sưởi.",
-   "en": "Trời lạnh nên tôi đã sưởi ấm bằng máy sưởi.",
+   "en": "It was cold, so I warmed the room up with the heater.",
    "seg": [
     {
      "t": "寒",
@@ -9904,12 +9904,12 @@
   "section_title": "Nhà",
   "word": "天井",
   "meaning_vi": "trần nhà",
-  "meaning_en": "trần nhà",
+  "meaning_en": "ceiling",
   "furigana": "てんじょう",
   "example": {
    "jp": "このマンションは、天井（てんじょう）が高（たか）い。",
    "vi": "Chung cư này trần nhà cao.",
-   "en": "Chung cư này trần nhà cao.",
+   "en": "This apartment building has high ceilings.",
    "seg": [
     {
      "t": "このマンションは、"
@@ -9940,12 +9940,12 @@
   "section_title": "Nhà",
   "word": "床",
   "meaning_vi": "sàn nhà",
-  "meaning_en": "sàn nhà",
+  "meaning_en": "floor",
   "furigana": "ゆか",
   "example": {
    "jp": "リビングの床（ゆか）には、何（なに）も敷（し）いていない。",
    "vi": "Sàn nhà phòng khách chẳng trải gì cả.",
-   "en": "Sàn nhà phòng khách chẳng trải gì cả.",
+   "en": "There's nothing laid down on the living room floor.",
    "seg": [
     {
      "t": "リビングの"
