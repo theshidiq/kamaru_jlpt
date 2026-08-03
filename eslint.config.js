@@ -20,4 +20,12 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    // Japanese content banks use full-width spaces (U+3000) as authentic
+    // indentation inside notice- and form-style reading passages.
+    files: ['src/lib/reading.ts', 'src/lib/grammar.ts'],
+    rules: {
+      'no-irregular-whitespace': ['error', { skipStrings: true, skipTemplates: true }],
+    },
+  },
 ])

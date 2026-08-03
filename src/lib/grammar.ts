@@ -725,3 +725,369 @@ export const GRAMMAR_QUESTIONS_N2: GrammarQuestion[] = [
     pattern: 'をもとに',
   },
 ]
+
+// ────────────────────────────────────────────────
+// N3 Grammar Questions
+// ────────────────────────────────────────────────
+export const GRAMMAR_QUESTIONS_N3: GrammarQuestion[] = [
+  // ～ようになる / ～なくなる
+  {
+    id: 'n3g001',
+    sentence: '毎日練習して、泳げる（　　）なった。',
+    options: ['ように', 'ことに', 'そうに', 'ために'],
+    correctIndex: 0,
+    explanation: 'ようになる = come to be able to do. Practiced daily and became able to swim.',
+    pattern: 'ようになる',
+  },
+  // ～ば～ほど
+  {
+    id: 'n3g002',
+    sentence: '練習すれば（　　）、上手になります。',
+    options: ['するほど', 'したほど', 'するより', 'したより'],
+    correctIndex: 0,
+    explanation: 'ば〜ほど = the more ~, the more ~. The more you practice, the better you get.',
+    pattern: 'ば〜ほど',
+  },
+  // ～たびに
+  {
+    id: 'n3g003',
+    sentence: 'この写真を見る（　　）、故郷を思い出す。',
+    options: ['たびに', 'ながら', 'うちに', 'ばかり'],
+    correctIndex: 0,
+    explanation: 'たびに = every time, whenever. Every time I see this photo, I remember my hometown.',
+    pattern: 'たびに',
+  },
+  // ～うちに
+  {
+    id: 'n3g004',
+    sentence: '若い（　　）、いろいろな経験をしたほうがいい。',
+    options: ['うちに', 'たびに', 'とおりに', 'ながら'],
+    correctIndex: 0,
+    explanation: 'うちに = while (a state lasts). While you are young, it is good to have many experiences.',
+    pattern: 'うちに',
+  },
+  // ～ないうちに
+  {
+    id: 'n3g005',
+    sentence: '雨が降らない（　　）、洗濯物を取り込もう。',
+    options: ['うちに', 'ところに', 'ばかりに', 'とともに'],
+    correctIndex: 0,
+    explanation: 'ないうちに = before ~ happens. Let us bring in the laundry before it rains.',
+    pattern: 'ないうちに',
+  },
+  // ～とおりに
+  {
+    id: 'n3g006',
+    sentence: '説明書に書いてある（　　）、組み立ててください。',
+    options: ['とおりに', 'ように', 'ままに', 'ほどに'],
+    correctIndex: 0,
+    explanation: 'とおりに = exactly as, in the way that. Assemble it as written in the manual.',
+    pattern: 'とおりに',
+  },
+  // ～まま
+  {
+    id: 'n3g007',
+    sentence: 'テレビをつけた（　　）、寝てしまった。',
+    options: ['まま', 'ながら', 'うちに', 'とおり'],
+    correctIndex: 0,
+    explanation: 'まま = leaving a state unchanged. I fell asleep with the TV left on.',
+    pattern: 'まま',
+  },
+  // ～ばかり
+  {
+    id: 'n3g008',
+    sentence: '弟はゲームを（　　）いて、勉強しない。',
+    options: ['してばかり', 'しかばかり', 'するばかり', 'したばかり'],
+    correctIndex: 0,
+    explanation: 'てばかりいる = do nothing but ~. My brother does nothing but play games.',
+    pattern: 'てばかりいる',
+  },
+  // ～たばかり
+  {
+    id: 'n3g009',
+    sentence: '日本に来た（　　）なので、まだ日本語が話せません。',
+    options: ['ばかり', 'ところ', 'とたん', 'うち'],
+    correctIndex: 0,
+    explanation: 'たばかり = just did (a short time ago). I have just come to Japan.',
+    pattern: 'たばかり',
+  },
+  // ～たところ
+  {
+    id: 'n3g010',
+    sentence: '今、駅に着いた（　　）です。',
+    options: ['ところ', 'ばかり', 'うち', 'まま'],
+    correctIndex: 0,
+    explanation: 'たところ = just finished doing, right now. I have just arrived at the station.',
+    pattern: 'たところ',
+  },
+  // ～ているところ
+  {
+    id: 'n3g011',
+    sentence: '今、資料を作っている（　　）です。',
+    options: ['ところ', 'ばかり', 'とたん', 'ため'],
+    correctIndex: 0,
+    explanation: 'ているところ = in the middle of doing. I am in the middle of preparing the documents.',
+    pattern: 'ているところ',
+  },
+  // ～とたん
+  {
+    id: 'n3g012',
+    sentence: '家を出た（　　）、雨が降り出した。',
+    options: ['とたん', 'うちに', 'ばかり', 'ながら'],
+    correctIndex: 0,
+    explanation: 'とたん = the moment that. The moment I left the house, it started to rain.',
+    pattern: 'とたん',
+  },
+  // ～おかげで
+  {
+    id: 'n3g013',
+    sentence: '先生の（　　）、試験に合格できました。',
+    options: ['おかげで', 'せいで', 'ために', 'ように'],
+    correctIndex: 0,
+    explanation: 'おかげで = thanks to (positive result). Thanks to my teacher, I passed the exam.',
+    pattern: 'おかげで',
+  },
+  // ～せいで
+  {
+    id: 'n3g014',
+    sentence: '寝坊した（　　）、電車に乗り遅れた。',
+    options: ['せいで', 'おかげで', 'ために', 'うちに'],
+    correctIndex: 0,
+    explanation: 'せいで = because of (negative result). Because I overslept, I missed the train.',
+    pattern: 'せいで',
+  },
+  // ～ため（に）
+  {
+    id: 'n3g015',
+    sentence: '事故の（　　）、道路が渋滞している。',
+    options: ['ために', 'ように', 'おかげで', 'とおりに'],
+    correctIndex: 0,
+    explanation: 'ために = because of, due to (cause). Due to the accident, the road is congested.',
+    pattern: 'ために（原因）',
+  },
+  // ～によって
+  {
+    id: 'n3g016',
+    sentence: '人（　　）、考え方は違う。',
+    options: ['によって', 'について', 'に対して', 'にとって'],
+    correctIndex: 0,
+    explanation: 'によって = depending on, varies with. Ways of thinking differ from person to person.',
+    pattern: 'によって',
+  },
+  // ～について
+  {
+    id: 'n3g017',
+    sentence: '日本の文化（　　）、レポートを書いた。',
+    options: ['について', 'によって', 'にとって', 'に対して'],
+    correctIndex: 0,
+    explanation: 'について = about, concerning. I wrote a report about Japanese culture.',
+    pattern: 'について',
+  },
+  // ～にとって
+  {
+    id: 'n3g018',
+    sentence: '私（　　）、家族が一番大切だ。',
+    options: ['にとって', 'について', 'によって', 'に対して'],
+    correctIndex: 0,
+    explanation: 'にとって = for, from the standpoint of. For me, family is the most important thing.',
+    pattern: 'にとって',
+  },
+  // ～みたい
+  {
+    id: 'n3g019',
+    sentence: '空が暗い。雨が降る（　　）だ。',
+    options: ['みたい', 'そう', 'らしく', 'ば'],
+    correctIndex: 0,
+    explanation: 'みたいだ = it seems, it looks like. The sky is dark. It looks like it will rain.',
+    pattern: 'みたいだ',
+  },
+  // ～らしい
+  {
+    id: 'n3g020',
+    sentence: '田中さんは来月結婚する（　　）です。',
+    options: ['らしい', 'みたく', 'ような', 'そうに'],
+    correctIndex: 0,
+    explanation: 'らしい = apparently, I hear. Apparently Mr. Tanaka is getting married next month.',
+    pattern: 'らしい',
+  },
+  // ～はずだ
+  {
+    id: 'n3g021',
+    sentence: '彼は昨日出発したから、もう着いている（　　）だ。',
+    options: ['はず', 'つもり', 'よう', 'そう'],
+    correctIndex: 0,
+    explanation: 'はずだ = should be, ought to be (logical expectation). He left yesterday, so he should have arrived.',
+    pattern: 'はずだ',
+  },
+  // ～わけだ
+  {
+    id: 'n3g022',
+    sentence: '10年も住んでいたのか。日本語が上手な（　　）だ。',
+    options: ['わけ', 'はず', 'つもり', 'まま'],
+    correctIndex: 0,
+    explanation: 'わけだ = that is why, no wonder. He lived there ten years — no wonder his Japanese is good.',
+    pattern: 'わけだ',
+  },
+  // ～ことにする
+  {
+    id: 'n3g023',
+    sentence: '来年から留学する（　　）した。',
+    options: ['ことに', 'ように', 'ものに', 'ところに'],
+    correctIndex: 0,
+    explanation: 'ことにする = decide to (own decision). I decided to study abroad from next year.',
+    pattern: 'ことにする',
+  },
+  // ～ことになる
+  {
+    id: 'n3g024',
+    sentence: '来月、大阪へ転勤する（　　）なりました。',
+    options: ['ことに', 'ように', 'ところに', 'ものに'],
+    correctIndex: 0,
+    explanation: 'ことになる = it has been decided (externally). It has been decided I will transfer to Osaka.',
+    pattern: 'ことになる',
+  },
+  // ～ことがある
+  {
+    id: 'n3g025',
+    sentence: 'たまに朝ごはんを食べない（　　）がある。',
+    options: ['こと', 'もの', 'ところ', 'とき'],
+    correctIndex: 0,
+    explanation: 'ことがある = there are times when. Occasionally there are times I skip breakfast.',
+    pattern: 'ことがある',
+  },
+  // ～ものだ
+  {
+    id: 'n3g026',
+    sentence: '子どものころは、よく川で遊んだ（　　）だ。',
+    options: ['もの', 'こと', 'ところ', 'よう'],
+    correctIndex: 0,
+    explanation: 'たものだ = used to (nostalgic recollection). As a child, I used to play in the river.',
+    pattern: 'ものだ',
+  },
+  // ～べきだ
+  {
+    id: 'n3g027',
+    sentence: '約束は守る（　　）だ。',
+    options: ['べき', 'はず', 'まま', 'ばかり'],
+    correctIndex: 0,
+    explanation: 'べきだ = should, ought to (moral obligation). You should keep your promises.',
+    pattern: 'べきだ',
+  },
+  // ～ようとする
+  {
+    id: 'n3g028',
+    sentence: '出かけ（　　）としたとき、電話が鳴った。',
+    options: ['よう', 'そう', 'ため', 'まま'],
+    correctIndex: 0,
+    explanation: 'ようとする = be about to do. Just as I was about to go out, the phone rang.',
+    pattern: 'ようとする',
+  },
+  // ～がる
+  {
+    id: 'n3g029',
+    sentence: '妹は新しい自転車を欲し（　　）いる。',
+    options: ['がって', 'そうに', 'ようで', 'みたい'],
+    correctIndex: 0,
+    explanation: 'がる = show signs of (third person emotion). My sister wants a new bicycle.',
+    pattern: 'がる',
+  },
+  // ～すぎる
+  {
+    id: 'n3g030',
+    sentence: '昨日はケーキを食べ（　　）、おなかが痛くなった。',
+    options: ['すぎて', 'ながら', 'たまま', 'ばかり'],
+    correctIndex: 0,
+    explanation: 'すぎる = too much, excessively. I ate too much yesterday and got a stomachache.',
+    pattern: 'すぎる',
+  },
+  // ～やすい / ～にくい
+  {
+    id: 'n3g031',
+    sentence: 'このペンは書き（　　）ので、気に入っている。',
+    options: ['やすい', 'にくい', 'すぎる', 'がる'],
+    correctIndex: 0,
+    explanation: 'やすい = easy to do. This pen is easy to write with, so I like it.',
+    pattern: 'やすい・にくい',
+  },
+  // ～かどうか
+  {
+    id: 'n3g032',
+    sentence: '彼が来る（　　）、まだ分からない。',
+    options: ['かどうか', 'かもしれない', 'ようで', 'ばかり'],
+    correctIndex: 0,
+    explanation: 'かどうか = whether or not. I still do not know whether or not he will come.',
+    pattern: 'かどうか',
+  },
+  // ～ても
+  {
+    id: 'n3g033',
+    sentence: 'どんなに高く（　　）、この本が買いたい。',
+    options: ['ても', 'たら', 'れば', 'なら'],
+    correctIndex: 0,
+    explanation: 'ても = even if. No matter how expensive it is, I want to buy this book.',
+    pattern: 'ても',
+  },
+  // ～のに
+  {
+    id: 'n3g034',
+    sentence: '約束した（　　）、彼は来なかった。',
+    options: ['のに', 'ので', 'ため', 'から'],
+    correctIndex: 0,
+    explanation: 'のに = even though (with surprise or dissatisfaction). Even though he promised, he did not come.',
+    pattern: 'のに',
+  },
+  // ～ので
+  {
+    id: 'n3g035',
+    sentence: '体調が悪い（　　）、今日は早く帰ります。',
+    options: ['ので', 'のに', 'ても', 'なら'],
+    correctIndex: 0,
+    explanation: 'ので = because (soft, polite reason). Because I feel unwell, I will go home early today.',
+    pattern: 'ので',
+  },
+  // ～し
+  {
+    id: 'n3g036',
+    sentence: 'この店は安い（　　）、おいしい。よく来ます。',
+    options: ['し', 'ので', 'のに', 'から'],
+    correctIndex: 0,
+    explanation: 'し = and (listing reasons). This restaurant is cheap and tasty, so I come often.',
+    pattern: 'し',
+  },
+  // ～たらどうですか
+  {
+    id: 'n3g037',
+    sentence: '疲れているなら、少し休んだら（　　）ですか。',
+    options: ['どう', 'なに', 'いつ', 'どこ'],
+    correctIndex: 0,
+    explanation: 'たらどうですか = why not ~, how about ~ (suggestion). If you are tired, why not rest a little?',
+    pattern: 'たらどうですか',
+  },
+  // ～なければならない
+  {
+    id: 'n3g038',
+    sentence: '明日までにレポートを出さ（　　）なりません。',
+    options: ['なければ', 'なくても', 'ないでも', 'ないと'],
+    correctIndex: 0,
+    explanation: 'なければならない = must, have to. I have to submit the report by tomorrow.',
+    pattern: 'なければならない',
+  },
+  // ～なくてもいい
+  {
+    id: 'n3g039',
+    sentence: '明日は休みだから、早く起き（　　）いいです。',
+    options: ['なくても', 'なければ', 'ないでは', 'ずには'],
+    correctIndex: 0,
+    explanation: 'なくてもいい = do not have to. Tomorrow is a holiday, so you do not have to get up early.',
+    pattern: 'なくてもいい',
+  },
+  // ～場合は
+  {
+    id: 'n3g040',
+    sentence: '遅れる（　　）は、必ず連絡してください。',
+    options: ['場合', 'ところ', 'うち', 'ばかり'],
+    correctIndex: 0,
+    explanation: '場合は = in the case that, if. If you are going to be late, be sure to contact us.',
+    pattern: '場合は',
+  },
+]

@@ -2,21 +2,18 @@ import type { QuizQuestion } from '@/types/quiz'
 import type { VocabWord } from '@/types/vocab'
 import type { JlptLevel } from '@/types/user'
 import { getChapterWords, getSection, shuffle, getMeaning, LEVEL_CONFIG, DEFAULT_LEVEL } from '@/lib/vocab'
-import { GRAMMAR_QUESTIONS, GRAMMAR_QUESTIONS_N2 } from '@/lib/grammar'
-import { READING_PASSAGES, READING_PASSAGES_N2 } from '@/lib/reading'
+import { GRAMMAR_QUESTIONS, GRAMMAR_QUESTIONS_N3, GRAMMAR_QUESTIONS_N2 } from '@/lib/grammar'
+import { READING_PASSAGES, READING_PASSAGES_N3, READING_PASSAGES_N2 } from '@/lib/reading'
 
-// N3 has no dedicated grammar/reading bank yet, so it falls back to the N4
-// banks. Swap these entries once GRAMMAR_QUESTIONS_N3 / READING_PASSAGES_N3
-// exist — nothing else needs to change.
 const GRAMMAR_BANK: Record<JlptLevel, typeof GRAMMAR_QUESTIONS> = {
   N4: GRAMMAR_QUESTIONS,
-  N3: GRAMMAR_QUESTIONS, // TODO: GRAMMAR_QUESTIONS_N3
+  N3: GRAMMAR_QUESTIONS_N3,
   N2: GRAMMAR_QUESTIONS_N2,
 }
 
 const READING_BANK: Record<JlptLevel, typeof READING_PASSAGES> = {
   N4: READING_PASSAGES,
-  N3: READING_PASSAGES, // TODO: READING_PASSAGES_N3
+  N3: READING_PASSAGES_N3,
   N2: READING_PASSAGES_N2,
 }
 
