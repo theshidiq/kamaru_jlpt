@@ -9983,11 +9983,11 @@
   "section_title": "Nhà",
   "word": "カーペット",
   "meaning_vi": "thảm",
-  "meaning_en": "thảm",
+  "meaning_en": "carpet, rug",
   "example": {
    "jp": "たたみの上（うえ）に、カーペットを敷（し）いている。",
    "vi": "Trải thảm lên trên chiếu tatami.",
-   "en": "Trải thảm lên trên chiếu tatami.",
+   "en": "I've laid a carpet over the tatami.",
    "seg": [
     {
      "t": "たたみの"
@@ -10018,11 +10018,11 @@
   "section_title": "Nhà",
   "word": "ざぶとん",
   "meaning_vi": "đệm ngồi",
-  "meaning_en": "đệm ngồi",
+  "meaning_en": "floor cushion, zabuton",
   "example": {
    "jp": "お客さんのためのざぶとんを買（か）いに行（い）く。",
    "vi": "Tôi đi mua đệm ngồi dành cho khách.",
-   "en": "Tôi đi mua đệm ngồi dành cho khách.",
+   "en": "I'm going to buy floor cushions for guests.",
    "seg": [
     {
      "t": "お客さんのためのざぶとんを"
@@ -10053,11 +10053,11 @@
   "section_title": "Nhà",
   "word": "ソファー",
   "meaning_vi": "ghế sofa",
-  "meaning_en": "ghế sofa",
+  "meaning_en": "sofa, couch",
   "example": {
    "jp": "テレビを見（み）るときは、ソファーに座（すわ）る。",
    "vi": "Tôi ngồi ghế sofa khi xem tivi.",
-   "en": "Tôi ngồi ghế sofa khi xem tivi.",
+   "en": "I sit on the sofa when I watch TV.",
    "seg": [
     {
      "t": "テレビを"
@@ -10088,11 +10088,11 @@
   "section_title": "Nhà",
   "word": "クッション",
   "meaning_vi": "đệm, gối tựa",
-  "meaning_en": "đệm, gối tựa",
+  "meaning_en": "cushion",
   "example": {
    "jp": "ソファーに合（あ）うクッションを買（か）った。",
    "vi": "Tôi mua gối tựa hợp với chiếc ghế sofa.",
-   "en": "Tôi mua gối tựa hợp với chiếc ghế sofa.",
+   "en": "I bought cushions that go with the sofa.",
    "seg": [
     {
      "t": "ソファーに"
@@ -10123,11 +10123,11 @@
   "section_title": "Nhà",
   "word": "どかす",
   "meaning_vi": "dời ra, chuyển ra chỗ khác",
-  "meaning_en": "dời ra, chuyển ra chỗ khác",
+  "meaning_en": "move (something) out of the way",
   "example": {
    "jp": "その車（くるま）をどかしてください。",
    "vi": "Hãy dời cái xe đó ra chỗ khác.",
-   "en": "Hãy dời cái xe đó ra chỗ khác.",
+   "en": "Please move that car out of the way.",
    "seg": [
     {
      "t": "その"
@@ -10151,11 +10151,11 @@
   "section_title": "Nhà",
   "word": "コンセント",
   "meaning_vi": "ổ cắm điện",
-  "meaning_en": "ổ cắm điện",
+  "meaning_en": "electrical outlet, socket",
   "example": {
    "jp": "この部屋（へや）はコンセントが多（おお）くて、便利（べんり）だ。",
    "vi": "Căn phòng này có nhiều ổ cắm điện, tiện lợi.",
-   "en": "Căn phòng này có nhiều ổ cắm điện, tiện lợi.",
+   "en": "This room has a lot of outlets, which is convenient.",
    "seg": [
     {
      "t": "この"
@@ -10193,11 +10193,11 @@
   "section_title": "Nhà",
   "word": "スイッチ",
   "meaning_vi": "công tắc",
-  "meaning_en": "công tắc",
+  "meaning_en": "switch",
   "example": {
    "jp": "暗（くら）くて、スイッチがどこかわからない。",
    "vi": "Tối nên không biết công tắc ở đâu.",
-   "en": "Tối nên không biết công tắc ở đâu.",
+   "en": "It's dark and I can't tell where the switch is.",
    "seg": [
     {
      "t": "暗",
@@ -10218,11 +10218,11 @@
   "section_title": "Nhà",
   "word": "ドライヤー",
   "meaning_vi": "máy sấy tóc",
-  "meaning_en": "máy sấy tóc",
+  "meaning_en": "hair dryer",
   "example": {
    "jp": "ドライヤーは小（ちい）さいほうがいい。",
    "vi": "Máy sấy tóc nhỏ thì tốt hơn.",
-   "en": "Máy sấy tóc nhỏ thì tốt hơn.",
+   "en": "A small hair dryer is better.",
    "seg": [
     {
      "t": "ドライヤーは"
@@ -10246,12 +10246,12 @@
   "section_title": "Nhà",
   "word": "蛇口",
   "meaning_vi": "vòi nước",
-  "meaning_en": "vòi nước",
+  "meaning_en": "faucet, tap",
   "furigana": "じゃぐち",
   "example": {
    "jp": "お風呂（ふろ）に蛇口（じゃぐち）が二（ふた）つ、ついている。",
    "vi": "Bồn tắm có gắn hai vòi nước.",
-   "en": "Bồn tắm có gắn hai vòi nước.",
+   "en": "There are two faucets in the bathroom.",
    "seg": [
     {
      "t": "お"
@@ -10289,11 +10289,11 @@
   "section_title": "Nhà",
   "word": "ひねる",
   "meaning_vi": "vặn, xoay",
-  "meaning_en": "vặn, xoay",
+  "meaning_en": "twist, turn",
   "example": {
    "jp": "右（みぎ）の蛇口（じゃぐち）をひねると、お湯が出（で）てくる。",
    "vi": "Vặn vòi nước bên phải, nước nóng sẽ chảy ra.",
-   "en": "Vặn vòi nước bên phải, nước nóng sẽ chảy ra.",
+   "en": "If you turn the right-hand faucet, hot water comes out.",
    "seg": [
     {
      "t": "右",
@@ -10328,12 +10328,12 @@
   "section_title": "Nhà",
   "word": "実家",
   "meaning_vi": "nhà bố mẹ đẻ",
-  "meaning_en": "nhà bố mẹ đẻ",
+  "meaning_en": "one's parents' home, family home",
   "furigana": "じっか",
   "example": {
    "jp": "週末（しゅうまつ）は実家（じっか）に帰（かえ）る。",
    "vi": "Cuối tuần tôi về nhà bố mẹ đẻ.",
-   "en": "Cuối tuần tôi về nhà bố mẹ đẻ.",
+   "en": "I go back to my parents' home on weekends.",
    "seg": [
     {
      "t": "週末",
@@ -10368,12 +10368,12 @@
   "section_title": "Nhà",
   "word": "家賃",
   "meaning_vi": "tiền thuê nhà",
-  "meaning_en": "tiền thuê nhà",
+  "meaning_en": "rent",
   "furigana": "やちん",
   "example": {
    "jp": "私（わたし）のマンションは家賃（やちん）が高（たか）い。",
    "vi": "Chung cư của tôi tiền thuê nhà cao.",
-   "en": "Chung cư của tôi tiền thuê nhà cao.",
+   "en": "The rent on my apartment is high.",
    "seg": [
     {
      "t": "私",
@@ -10408,12 +10408,12 @@
   "section_title": "Nhà",
   "word": "物置",
   "meaning_vi": "nhà kho, nơi để đồ",
-  "meaning_en": "nhà kho, nơi để đồ",
+  "meaning_en": "storeroom, shed",
   "furigana": "ものおき",
   "example": {
    "jp": "物置（ものおき）にスキーの道具（どうぐ）を入（い）れている。",
    "vi": "Tôi để dụng cụ trượt tuyết ở nhà kho.",
-   "en": "Tôi để dụng cụ trượt tuyết ở nhà kho.",
+   "en": "I keep my ski gear in the storeroom.",
    "seg": [
     {
      "t": "物置",
@@ -10448,12 +10448,12 @@
   "section_title": "Nhà",
   "word": "日当たり",
   "meaning_vi": "ánh nắng, hướng nắng",
-  "meaning_en": "ánh nắng, hướng nắng",
+  "meaning_en": "sunlight, exposure to the sun",
   "furigana": "ひあたり",
   "example": {
    "jp": "広（ひろ）くて、日当（ひあ）たりのいい部屋（へや）に住（す）みたい。",
    "vi": "Tôi muốn sống trong căn phòng rộng rãi, có ánh nắng chiếu vào.",
-   "en": "Tôi muốn sống trong căn phòng rộng rãi, có ánh nắng chiếu vào.",
+   "en": "I want to live in a room that's spacious and gets good sunlight.",
    "seg": [
     {
      "t": "広",
@@ -10495,12 +10495,12 @@
   "section_title": "Nhà",
   "word": "内側",
   "meaning_vi": "bên trong, mặt trong",
-  "meaning_en": "bên trong, mặt trong",
+  "meaning_en": "the inside, inner side",
   "furigana": "うちがわ",
   "example": {
    "jp": "この家（いえ）は古（ふる）いが、内側（うちがわ）はきれいだ。",
    "vi": "Ngôi nhà này cũ nhưng bên trong đẹp.",
-   "en": "Ngôi nhà này cũ nhưng bên trong đẹp.",
+   "en": "This house is old, but the inside is lovely.",
    "seg": [
     {
      "t": "この"
@@ -10538,12 +10538,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "［お］札",
   "meaning_vi": "tiền giấy",
-  "meaning_en": "tiền giấy",
+  "meaning_en": "banknote, bill",
   "furigana": "［お］さつ",
   "example": {
    "jp": "日本（にほん）のお札は、千（せん）円（えん）から一（いち）万（まん）円（えん）まである。",
    "vi": "Tiền giấy của Nhật Bản có mệnh giá từ 1,000 đến 10,000 yên.",
-   "en": "Tiền giấy của Nhật Bản có mệnh giá từ 1,000 đến 10,000 yên.",
+   "en": "Japanese banknotes range from 1,000 yen to 10,000 yen.",
    "seg": [
     {
      "t": "日本",
@@ -10590,11 +10590,11 @@
   "section_title": "Tiền và ngân hàng",
   "word": "コイン",
   "meaning_vi": "tiền xu",
-  "meaning_en": "tiền xu",
+  "meaning_en": "coin",
   "example": {
    "jp": "海外（かいがい）のコインを集（あつ）めるのが好（す）きだ。",
    "vi": "Tôi thích sưu tầm tiền xu của nước ngoài.",
-   "en": "Tôi thích sưu tầm tiền xu của nước ngoài.",
+   "en": "I like collecting foreign coins.",
    "seg": [
     {
      "t": "海外",
@@ -10629,12 +10629,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "小銭",
   "meaning_vi": "tiền lẻ, xu lẻ",
-  "meaning_en": "tiền lẻ, xu lẻ",
+  "meaning_en": "small change, loose change",
   "furigana": "こぜに",
   "example": {
    "jp": "財布（さいふ）に小銭（こぜに）がない。",
    "vi": "Trong ví không có tiền lẻ.",
-   "en": "Trong ví không có tiền lẻ.",
+   "en": "I don't have any change in my wallet.",
    "seg": [
     {
      "t": "財布",
@@ -10662,12 +10662,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "生活費",
   "meaning_vi": "chi phí sinh hoạt",
-  "meaning_en": "chi phí sinh hoạt",
+  "meaning_en": "living expenses, cost of living",
   "furigana": "せいかつひ",
   "example": {
    "jp": "日本（にほん）は生活（せいかつ）費（ひ）が高（たか）い。",
    "vi": "Chi phí sinh hoạt ở Nhật Bản cao.",
-   "en": "Chi phí sinh hoạt ở Nhật Bản cao.",
+   "en": "The cost of living in Japan is high.",
    "seg": [
     {
      "t": "日本",
@@ -10706,12 +10706,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "食費",
   "meaning_vi": "chi phí ăn uống, tiền ăn",
-  "meaning_en": "chi phí ăn uống, tiền ăn",
+  "meaning_en": "food expenses, grocery costs",
   "furigana": "しょくひ",
   "example": {
    "jp": "一（いち）か月の食費（しょくひ）は2万（まん）円（えん）ぐらいだ。",
    "vi": "Tiền ăn một tháng khoảng hai mươi nghìn yên.",
-   "en": "Tiền ăn một tháng khoảng hai mươi nghìn yên.",
+   "en": "My food expenses come to about 20,000 yen a month.",
    "seg": [
     {
      "t": "一",
@@ -10750,12 +10750,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "光熱費",
   "meaning_vi": "chi phí điện nước ga",
-  "meaning_en": "chi phí điện nước ga",
+  "meaning_en": "utility costs (gas, electricity, water)",
   "furigana": "こうねつひ",
   "example": {
    "jp": "日本（にほん）は光熱（こうねつ）費（ひ）が高（たか）い。",
    "vi": "Chi phí điện nước ga ở Nhật Bản cao.",
-   "en": "Chi phí điện nước ga ở Nhật Bản cao.",
+   "en": "Utility costs in Japan are high.",
    "seg": [
     {
      "t": "日本",
@@ -10794,12 +10794,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "交際費",
   "meaning_vi": "chi phí giao tiếp, tiền tiếp khách",
-  "meaning_en": "chi phí giao tiếp, tiền tiếp khách",
+  "meaning_en": "entertainment expenses, socializing costs",
   "furigana": "こうさいひ",
   "example": {
    "jp": "友（とも）だちとよく飲（の）みに行（い）くので、交際（こうさい）費（ひ）がかかる。",
    "vi": "Tôi hay đi uống với bạn bè nên tốn tiền giao tiếp.",
-   "en": "Tôi hay đi uống với bạn bè nên tốn tiền giao tiếp.",
+   "en": "I often go drinking with friends, so socializing costs add up.",
    "seg": [
     {
      "t": "友",
@@ -10845,12 +10845,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "公共料金",
   "meaning_vi": "phí dịch vụ công cộng",
-  "meaning_en": "phí dịch vụ công cộng",
+  "meaning_en": "utility charges, public utility fees",
   "furigana": "こうきょうりょうきん",
   "example": {
    "jp": "この国（くに）は公共料金（こうきょうりょうきん）が安（やす）い。",
    "vi": "Phí dịch vụ công cộng ở nước này rẻ.",
-   "en": "Phí dịch vụ công cộng ở nước này rẻ.",
+   "en": "Utility charges in this country are cheap.",
    "seg": [
     {
      "t": "この"
@@ -10888,11 +10888,11 @@
   "section_title": "Tiền và ngân hàng",
   "word": "［お］こづかい",
   "meaning_vi": "tiền tiêu vặt",
-  "meaning_en": "tiền tiêu vặt",
+  "meaning_en": "pocket money, allowance",
   "example": {
    "jp": "1か月のこづかいは3万（まん）円（えん）だ。",
    "vi": "Tiền tiêu vặt một tháng là ba mươi nghìn yên.",
-   "en": "Tiền tiêu vặt một tháng là ba mươi nghìn yên.",
+   "en": "My monthly allowance is 30,000 yen.",
    "seg": [
     {
      "t": "1か月のこづかいは3"
@@ -10920,12 +10920,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "節約＜する＞",
   "meaning_vi": "sự tiết kiệm",
-  "meaning_en": "sự tiết kiệm",
+  "meaning_en": "save, economize, cut back",
   "furigana": "せつやく",
   "example": {
    "jp": "旅行（りょこう）のために節約（せつやく）している。",
    "vi": "Tôi đang tiết kiệm để đi du lịch.",
-   "en": "Tôi đang tiết kiệm để đi du lịch.",
+   "en": "I'm cutting back so I can go on a trip.",
    "seg": [
     {
      "t": "旅行",
@@ -10953,11 +10953,11 @@
   "section_title": "Tiền và ngân hàng",
   "word": "ぜいたく＜な/する＞",
   "meaning_vi": "xa xỉ, xa hoa, xài sang",
-  "meaning_en": "xa xỉ, xa hoa, xài sang",
+  "meaning_en": "luxury, extravagance, extravagant",
   "example": {
    "jp": "今（いま）はまだ学生（がくせい）なので、せいたくはできない。（名） ぜいたくな生活（せいかつ）に、あまり興味（きょうみ）がない。（ナ形）",
    "vi": "Bây giờ vẫn là sinh viên nên không thể xài sang được./Tôi không mấy hứng thú với cuộc sống xa hoa.",
-   "en": "Bây giờ vẫn là sinh viên nên không thể xài sang được./Tôi không mấy hứng thú với cuộc sống xa hoa.",
+   "en": "I'm still a student, so I can't afford luxuries. I'm not very interested in an extravagant lifestyle.",
    "seg": [
     {
      "t": "今",
@@ -10999,12 +10999,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "割り勘",
   "meaning_vi": "chia nhau trả tiền",
-  "meaning_en": "chia nhau trả tiền",
+  "meaning_en": "splitting the bill, going Dutch",
   "furigana": "わりかん",
   "example": {
    "jp": "今日（きょう）は割り勘（わりかん） しよう。",
    "vi": "Hôm nay chúng mình chia nhau trả tiền nhé!",
-   "en": "Hôm nay chúng mình chia nhau trả tiền nhé!",
+   "en": "Let's split the bill today.",
    "seg": [
     {
      "t": "今日",
@@ -11032,11 +11032,11 @@
   "section_title": "Tiền và ngân hàng",
   "word": "レンタル＜する＞",
   "meaning_vi": "sự thuê, mướn",
-  "meaning_en": "sự thuê, mướn",
+  "meaning_en": "rental, rent",
   "example": {
    "jp": "結婚式（けっこんしき）のドレスは、レンタルにした。",
    "vi": "Tôi quyết định thuê váy cho đám cưới.",
-   "en": "Tôi quyết định thuê váy cho đám cưới.",
+   "en": "I decided to rent a dress for the wedding.",
    "seg": [
     {
      "t": "結婚式",
@@ -11057,12 +11057,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "支払う",
   "meaning_vi": "trả tiền, thanh toán",
-  "meaning_en": "trả tiền, thanh toán",
+  "meaning_en": "pay, settle (a bill)",
   "furigana": "しはらう",
   "example": {
    "jp": "コンビニで、公共（こうきょう）料金（りょうきん）を支払（しはら）うことができる。",
    "vi": "Có thể thanh toán phí dịch vụ công cộng ở cửa hàng tiện lợi.",
-   "en": "Có thể thanh toán phí dịch vụ công cộng ở cửa hàng tiện lợi.",
+   "en": "You can pay utility bills at a convenience store.",
    "seg": [
     {
      "t": "コンビニで、"
@@ -11097,12 +11097,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "支払い",
   "meaning_vi": "sự chi trả, thanh toán",
-  "meaning_en": "sự chi trả, thanh toán",
+  "meaning_en": "payment",
   "furigana": "しはらい",
   "example": {
    "jp": "公共（こうきょう）料金（りょうきん）の支払（しはら）いを忘（わす）れていた。",
    "vi": "Tôi quên thanh toán phí dịch vụ công cộng.",
-   "en": "Tôi quên thanh toán phí dịch vụ công cộng.",
+   "en": "I had forgotten to pay the utility bill.",
    "seg": [
     {
      "t": "公共",
@@ -11141,12 +11141,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "勘定＜する＞",
   "meaning_vi": "sự tính tiền, thanh toán",
-  "meaning_en": "sự tính tiền, thanh toán",
+  "meaning_en": "bill, check, settling up",
   "furigana": "かんじょう",
   "example": {
    "jp": "客（きゃく）［お勘定（かんじょう）は、どこでしますか。」 店員（てんいん）「レジでお願いします。」",
    "vi": "Khách: Tính tiền ở đâu ạ?/Nhân viên: Dạ, ở quầy thanh toán ạ!",
-   "en": "Khách: Tính tiền ở đâu ạ?/Nhân viên: Dạ, ở quầy thanh toán ạ!",
+   "en": "Customer: \"Where do I pay the bill?\" Staff: \"At the register, please.\"",
    "seg": [
     {
      "t": "客",
@@ -11181,12 +11181,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "口座",
   "meaning_vi": "tài khoản ngân hàng",
-  "meaning_en": "tài khoản ngân hàng",
+  "meaning_en": "bank account",
   "furigana": "こうざ",
   "example": {
    "jp": "初（はじ）めて自分（じぶん）の口座（こうざ）を開（ひら）いた。",
    "vi": "Lần đầu tiên tôi mở tài khoản ngân hàng cho mình.",
-   "en": "Lần đầu tiên tôi mở tài khoản ngân hàng cho mình.",
+   "en": "I opened my own bank account for the first time.",
    "seg": [
     {
      "t": "初",
@@ -11228,11 +11228,11 @@
   "section_title": "Tiền và ngân hàng",
   "word": "キャッシュカード",
   "meaning_vi": "thẻ rút tiền",
-  "meaning_en": "thẻ rút tiền",
+  "meaning_en": "cash card, ATM card",
   "example": {
    "jp": "銀行（ぎんこう）からキャッシュカードが届（とど）いた。",
    "vi": "Thẻ rút tiền từ ngân hàng đã được gửi đến.",
-   "en": "Thẻ rút tiền từ ngân hàng đã được gửi đến.",
+   "en": "The cash card arrived from the bank.",
    "seg": [
     {
      "t": "銀行",
@@ -11260,12 +11260,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "暗証番号",
   "meaning_vi": "mã PIN, mã số cá nhân",
-  "meaning_en": "mã PIN, mã số cá nhân",
+  "meaning_en": "PIN, personal identification number",
   "furigana": "あんしょうばんごう",
   "example": {
    "jp": "カードの暗証（あんしょう）番号（ばんごう）を忘（わす）れてしまった。",
    "vi": "Tôi quên mất mã PIN của thẻ.",
-   "en": "Tôi quên mất mã PIN của thẻ.",
+   "en": "I've forgotten my card's PIN.",
    "seg": [
     {
      "t": "カードの"
@@ -11300,12 +11300,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "預金＜する＞",
   "meaning_vi": "tiền gửi ngân hàng, sự gửi tiền",
-  "meaning_en": "tiền gửi ngân hàng, sự gửi tiền",
+  "meaning_en": "bank deposit, deposit money",
   "furigana": "よきん",
   "example": {
    "jp": "銀行（ぎんこう）に100万（まん）円（えん）預金（よきん）した。",
    "vi": "Tôi đã gửi một triệu yên vào ngân hàng.",
-   "en": "Tôi đã gửi một triệu yên vào ngân hàng.",
+   "en": "I deposited one million yen in the bank.",
    "seg": [
     {
      "t": "銀行",
@@ -11341,11 +11341,11 @@
   "section_title": "Tiền và ngân hàng",
   "word": "ためる",
   "meaning_vi": "tích lũy, dành dụm",
-  "meaning_en": "tích lũy, dành dụm",
+  "meaning_en": "save up, put aside",
   "example": {
    "jp": "会社（かいしゃ）員（いん）になったら、お金をためるつもりだ。",
    "vi": "Khi trở thành nhân viên công ty, tôi dự định sẽ dành dụm tiền.",
-   "en": "Khi trở thành nhân viên công ty, tôi dự định sẽ dành dụm tiền.",
+   "en": "Once I'm working at a company, I intend to save up money.",
    "seg": [
     {
      "t": "会社",
@@ -11370,11 +11370,11 @@
   "section_title": "Tiền và ngân hàng",
   "word": "たまる",
   "meaning_vi": "được tích lũy, dành dụm được",
-  "meaning_en": "được tích lũy, dành dụm được",
+  "meaning_en": "accumulate, build up",
   "example": {
    "jp": "節約（せつやく）しても、なかなかお金がたまらない。",
    "vi": "Dù có tiết kiệm, mãi vẫn không dành dụm được tiền.",
-   "en": "Dù có tiết kiệm, mãi vẫn không dành dụm được tiền.",
+   "en": "Even though I economize, my savings just don't build up.",
    "seg": [
     {
      "t": "節約",
@@ -11395,12 +11395,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "引き出す",
   "meaning_vi": "rút (tiền)",
-  "meaning_en": "rút (tiền)",
+  "meaning_en": "withdraw (money)",
   "furigana": "ひきだす",
   "example": {
    "jp": "大（おお）きな買い物（かいもの）をするので、お金を引き出（ひきだ）した。",
    "vi": "Vì sắp mua sắm lớn nên tôi đã rút tiền.",
-   "en": "Vì sắp mua sắm lớn nên tôi đã rút tiền.",
+   "en": "I'm making a big purchase, so I withdrew some money.",
    "seg": [
     {
      "t": "大",
@@ -11435,12 +11435,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "振り込む",
   "meaning_vi": "chuyển khoản",
-  "meaning_en": "chuyển khoản",
+  "meaning_en": "transfer (money), pay in",
   "furigana": "ふりこむ",
   "example": {
    "jp": "銀行（ぎんこう）で、公共（こうきょう）料（りょう）金（きん）を振り込（ふりこ）んだ。",
    "vi": "Tôi đã chuyển khoản trả phí dịch vụ công cộng ở ngân hàng.",
-   "en": "Tôi đã chuyển khoản trả phí dịch vụ công cộng ở ngân hàng.",
+   "en": "I paid the utility bill by transfer at the bank.",
    "seg": [
     {
      "t": "銀行",
@@ -11483,12 +11483,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "送金＜する＞",
   "meaning_vi": "sự gửi tiền, chuyển tiền (cho ai đó)",
-  "meaning_en": "sự gửi tiền, chuyển tiền (cho ai đó)",
+  "meaning_en": "remit money, send money",
   "furigana": "そうきん",
   "example": {
    "jp": "今月（こんげつ）も、国（くに）の両親（りょうしん）に送金（そうきん）した。",
    "vi": "Tháng này tôi cũng đã gửi tiền cho bố mẹ ở quê nhà.",
-   "en": "Tháng này tôi cũng đã gửi tiền cho bố mẹ ở quê nhà.",
+   "en": "I sent money to my parents back home again this month.",
    "seg": [
     {
      "t": "今月",
@@ -11530,12 +11530,12 @@
   "section_title": "Tiền và ngân hàng",
   "word": "通帳記入",
   "meaning_vi": "cập nhật sổ ngân hàng",
-  "meaning_en": "cập nhật sổ ngân hàng",
+  "meaning_en": "updating one's bankbook",
   "furigana": "つうちょうきにゅう",
   "example": {
    "jp": "通帳記入（つうちょうきにゅう）のために、銀行（ぎんこう）に寄（よ）った。",
    "vi": "Tôi ghé qua ngân hàng để cập nhật sổ ngân hàng.",
-   "en": "Tôi ghé qua ngân hàng để cập nhật sổ ngân hàng.",
+   "en": "I stopped by the bank to update my bankbook.",
    "seg": [
     {
      "t": "通帳記入",
@@ -11570,12 +11570,12 @@
   "section_title": "Mua sắm",
   "word": "品物",
   "meaning_vi": "hàng, hàng hóa",
-  "meaning_en": "hàng, hàng hóa",
+  "meaning_en": "goods, merchandise, item",
   "furigana": "しなもの",
   "example": {
    "jp": "駅前（えきまえ）のデパートは、高（たか）い品物（しなもの）が多（おお）い。",
    "vi": "Cửa hàng bách hóa trước ga có nhiều hàng đắt tiền.",
-   "en": "Cửa hàng bách hóa trước ga có nhiều hàng đắt tiền.",
+   "en": "The department store in front of the station has a lot of expensive items.",
    "seg": [
     {
      "t": "駅前",
@@ -11617,12 +11617,12 @@
   "section_title": "Mua sắm",
   "word": "現金",
   "meaning_vi": "tiền mặt",
-  "meaning_en": "tiền mặt",
+  "meaning_en": "cash",
   "furigana": "げんきん",
   "example": {
    "jp": "買い物（かいもの）は、いつも現金（げんきん）で払（はら）う。",
    "vi": "Tôi bao giờ cũng dùng tiền mặt thanh toán khi mua sắm.",
-   "en": "Tôi bao giờ cũng dùng tiền mặt thanh toán khi mua sắm.",
+   "en": "I always pay in cash when I shop.",
    "seg": [
     {
      "t": "買い物",
@@ -11657,11 +11657,11 @@
   "section_title": "Mua sắm",
   "word": "クレジットカード",
   "meaning_vi": "thẻ tín dụng",
-  "meaning_en": "thẻ tín dụng",
+  "meaning_en": "credit card",
   "example": {
    "jp": "このクレジットカードは、とても便利（べんり）だ。",
    "vi": "Thẻ tín dụng này rất tiện.",
-   "en": "Thẻ tín dụng này rất tiện.",
+   "en": "This credit card is very convenient.",
    "seg": [
     {
      "t": "このクレジットカードは、とても"
@@ -11685,12 +11685,12 @@
   "section_title": "Mua sắm",
   "word": "一回払い",
   "meaning_vi": "thanh toán một lần",
-  "meaning_en": "thanh toán một lần",
+  "meaning_en": "payment in full, single payment",
   "furigana": "いっかいばらい",
   "example": {
    "jp": "カードの支払（しはら）いは、一（いっ）回（かい）払（ばら）いだ。",
    "vi": "Thanh toán bằng thẻ là thanh toán một lần.",
-   "en": "Thanh toán bằng thẻ là thanh toán một lần.",
+   "en": "The card payment is in a single installment.",
    "seg": [
     {
      "t": "カードの"
@@ -11729,12 +11729,12 @@
   "section_title": "Mua sắm",
   "word": "合計＜する＞",
   "meaning_vi": "tổng cộng",
-  "meaning_en": "tổng cộng",
+  "meaning_en": "total, sum up",
   "furigana": "ごうけい",
   "example": {
    "jp": "先月（せんげつ）のカードの支払（しはら）いは、合計（ごうけい）10万（まん）円（えん）になった。",
    "vi": "Thanh toán thẻ của tháng trước tổng cộng là 100 nghìn yên.",
-   "en": "Thanh toán thẻ của tháng trước tổng cộng là 100 nghìn yên.",
+   "en": "Last month's card payments came to 100,000 yen in total.",
    "seg": [
     {
      "t": "先月",
@@ -11780,12 +11780,12 @@
   "section_title": "Mua sắm",
   "word": "代金",
   "meaning_vi": "tiền mua hàng",
-  "meaning_en": "tiền mua hàng",
+  "meaning_en": "price, payment for goods",
   "furigana": "だいきん",
   "example": {
    "jp": "品物（しなもの）は代金（だいきん）を払（はら）って、3日（みっか）以内（いない）に届（とど）く。",
    "vi": "Trả tiền hàng rồi thì hàng sẽ được gửi đến trong vòng 3 ngày.",
-   "en": "Trả tiền hàng rồi thì hàng sẽ được gửi đến trong vòng 3 ngày.",
+   "en": "Once you pay for the item, it arrives within three days.",
    "seg": [
     {
      "t": "品物",
@@ -11838,12 +11838,12 @@
   "section_title": "Mua sắm",
   "word": "税込",
   "meaning_vi": "bao gồm thuế",
-  "meaning_en": "bao gồm thuế",
+  "meaning_en": "tax included",
   "furigana": "ぜいこみ",
   "example": {
    "jp": "この値段（ねだん）は税込（ぜいこ）みですか。",
    "vi": "Giá này đã bao gồm thuế chưa?",
-   "en": "Giá này đã bao gồm thuế chưa?",
+   "en": "Does this price include tax?",
    "seg": [
     {
      "t": "この"
@@ -11874,12 +11874,12 @@
   "section_title": "Mua sắm",
   "word": "請求書",
   "meaning_vi": "phiếu yêu cầu thanh toán",
-  "meaning_en": "phiếu yêu cầu thanh toán",
+  "meaning_en": "invoice, bill",
   "furigana": "せいきゅうしょ",
   "example": {
    "jp": "電話（でんわ）料金（りょうきん）の請求（せいきゅう）書（しょ）が届（とど）いた。",
    "vi": "Phiếu yêu cầu thanh toán tiền điện thoại đã được gửi đến.",
-   "en": "Phiếu yêu cầu thanh toán tiền điện thoại đã được gửi đến.",
+   "en": "The phone bill arrived.",
    "seg": [
     {
      "t": "電話",
@@ -11922,12 +11922,12 @@
   "section_title": "Mua sắm",
   "word": "領収書",
   "meaning_vi": "biên lai, hóa đơn",
-  "meaning_en": "biên lai, hóa đơn",
+  "meaning_en": "receipt",
   "furigana": "りょうしゅうしょ",
   "example": {
    "jp": "買い物（かいもの）をするときは、領収（りょうしゅう）書（しょ）をもらう。",
    "vi": "Khi mua sắm, tôi lấy hóa đơn.",
-   "en": "Khi mua sắm, tôi lấy hóa đơn.",
+   "en": "I get a receipt when I go shopping.",
    "seg": [
     {
      "t": "買い物",
@@ -11959,12 +11959,12 @@
   "section_title": "Mua sắm",
   "word": "売り切れ",
   "meaning_vi": "sự bán hết",
-  "meaning_en": "sự bán hết",
+  "meaning_en": "sold out",
   "furigana": "うりきれ",
   "example": {
    "jp": "ほしかったバッグは、売り切（うりき）れだった。",
    "vi": "Cái túi mà tôi muốn đã bị bán hết.",
-   "en": "Cái túi mà tôi muốn đã bị bán hết.",
+   "en": "The bag I wanted was sold out.",
    "seg": [
     {
      "t": "ほしかったバッグは、"
@@ -11988,12 +11988,12 @@
   "section_title": "Mua sắm",
   "word": "品切れ",
   "meaning_vi": "sự hết hàng",
-  "meaning_en": "sự hết hàng",
+  "meaning_en": "out of stock",
   "furigana": "しなぎれ",
   "example": {
    "jp": "店（みせ）の人（ひと）に、Ｍ（えむ）サイズは品切（しなぎ）れだと言（い）われた。",
    "vi": "Người bán hàng nói rằng cỡ M đã hết hàng.",
-   "en": "Người bán hàng nói rằng cỡ M đã hết hàng.",
+   "en": "The shop assistant told me that size M was out of stock.",
    "seg": [
     {
      "t": "店",
@@ -12042,12 +12042,12 @@
   "section_title": "Mua sắm",
   "word": "日替わり",
   "meaning_vi": "thay đổi theo ngày",
-  "meaning_en": "thay đổi theo ngày",
+  "meaning_en": "changing daily, daily special",
   "furigana": "ひがわり",
   "example": {
    "jp": "この店（みせ）は、日替（ひが）わりでセールをしている。",
    "vi": "Cửa tiệm này bán hạ giá thay đổi theo ngày.",
-   "en": "Cửa tiệm này bán hạ giá thay đổi theo ngày.",
+   "en": "This shop runs a different sale each day.",
    "seg": [
     {
      "t": "この"
@@ -12078,12 +12078,12 @@
   "section_title": "Mua sắm",
   "word": "割引",
   "meaning_vi": "giảm giá",
-  "meaning_en": "giảm giá",
+  "meaning_en": "discount",
   "furigana": "わりびき",
   "example": {
    "jp": "あのパン屋（や）は、水曜日（すいようび）に10パーセント割引（わりびき）をしている。",
    "vi": "Cửa hàng bánh mỳ đó đang giảm giá 10% vào thứ tư.",
-   "en": "Cửa hàng bánh mỳ đó đang giảm giá 10% vào thứ tư.",
+   "en": "That bakery gives a 10 percent discount on Wednesdays.",
    "seg": [
     {
      "t": "あのパン"
@@ -12121,12 +12121,12 @@
   "section_title": "Mua sắm",
   "word": "半額",
   "meaning_vi": "nửa giá tiền",
-  "meaning_en": "nửa giá tiền",
+  "meaning_en": "half price",
   "furigana": "はんがく",
   "example": {
    "jp": "5万（まん）円（えん）のコードが半額（はんがく）で買（か）えた。",
    "vi": "Tôi mua được một cái áo khoác 50 nghìn yên với nửa giá tiền.",
-   "en": "Tôi mua được một cái áo khoác 50 nghìn yên với nửa giá tiền.",
+   "en": "I was able to buy a 50,000 yen coat at half price.",
    "seg": [
     {
      "t": "5"
@@ -12168,12 +12168,12 @@
   "section_title": "Mua sắm",
   "word": "特売日",
   "meaning_vi": "ngày hạ giá đặc biệt",
-  "meaning_en": "ngày hạ giá đặc biệt",
+  "meaning_en": "special sale day, bargain day",
   "furigana": "とくばいび",
   "example": {
    "jp": "今日（きょう）はスーパーの特売（とくばい）日（び）だ。",
    "vi": "Hôm nay là ngày hạ giá đặc biệt của siêu thị.",
-   "en": "Hôm nay là ngày hạ giá đặc biệt của siêu thị.",
+   "en": "Today is the supermarket's bargain day.",
    "seg": [
     {
      "t": "今日",
@@ -12205,11 +12205,11 @@
   "section_title": "Mua sắm",
   "word": "たった",
   "meaning_vi": "chỉ có, vẻn vẹn",
-  "meaning_en": "chỉ có, vẻn vẹn",
+  "meaning_en": "only, just, merely",
   "example": {
    "jp": "有名（ゆうめい）ブランドのバックがたった3万（まん）円（えん）だった。",
    "vi": "Cái túi hàng hiệu nổi tiếng chỉ có 30 nghìn yên.",
-   "en": "Cái túi hàng hiệu nổi tiếng chỉ có 30 nghìn yên.",
+   "en": "The famous brand-name bag was only 30,000 yen.",
    "seg": [
     {
      "t": "有名",
@@ -12241,12 +12241,12 @@
   "section_title": "Mua sắm",
   "word": "得＜な＞",
   "meaning_vi": "món hời (hời, lời)",
-  "meaning_en": "món hời (hời, lời)",
+  "meaning_en": "gain, bargain, profit",
   "furigana": "とく",
   "example": {
    "jp": "バーゲンに行（い）って、得（とく）をした。（名）",
    "vi": "Tôi đi vào đợt hạ giá nên hời.",
-   "en": "Tôi đi vào đợt hạ giá nên hời.",
+   "en": "I went to the sale and got a good deal.",
    "seg": [
     {
      "t": "バーゲンに"
@@ -12277,12 +12277,12 @@
   "section_title": "Mua sắm",
   "word": "損＜な＞",
   "meaning_vi": "tổn thất, thiệt (bị thiệt)",
-  "meaning_en": "tổn thất, thiệt (bị thiệt)",
+  "meaning_en": "loss, disadvantage",
   "furigana": "そん",
   "example": {
    "jp": "バーゲンに行（い）けなくて、損（そん）をした。（名）",
    "vi": "Không thể đi vào đợt giảm giá nên đã bị thiệt.",
-   "en": "Không thể đi vào đợt giảm giá nên đã bị thiệt.",
+   "en": "I couldn't make it to the sale, so I lost out.",
    "seg": [
     {
      "t": "バーゲンに"
@@ -12313,11 +12313,11 @@
   "section_title": "Mua sắm",
   "word": "おまけ＜する＞",
   "meaning_vi": "quà tặng, khuyến mãi",
-  "meaning_en": "quà tặng, khuyến mãi",
+  "meaning_en": "free extra, bonus item",
   "example": {
    "jp": "お店（みせ）の人（ひと）が、りんごをおまけしてくれた。",
    "vi": "Người bán hàng đã tặng khuyến mãi táo cho tôi.",
-   "en": "Người bán hàng đã tặng khuyến mãi táo cho tôi.",
+   "en": "The shopkeeper threw in an apple for free.",
    "seg": [
     {
      "t": "お"
@@ -12348,11 +12348,11 @@
   "section_title": "Mua sắm",
   "word": "むだ＜な＞",
   "meaning_vi": "sự lãng phí (hoang phí, lãng phí)",
-  "meaning_en": "sự lãng phí (hoang phí, lãng phí)",
+  "meaning_en": "waste, pointless",
   "example": {
    "jp": "そんなものを買（か）って、お金をむだだ。（名） むだなものは買（か）わないようにしている。（ナ形）",
    "vi": "Mua món đồ như thế là lãng phí. Tôi cố gắng không mua những thứ không cần thiết.",
-   "en": "Mua món đồ như thế là lãng phí. Tôi cố gắng không mua những thứ không cần thiết.",
+   "en": "Buying something like that is a waste of money. I try not to buy things I don't need.",
    "seg": [
     {
      "t": "そんなものを"
@@ -12383,11 +12383,11 @@
   "section_title": "Mua sắm",
   "word": "むだづかい＜する＞",
   "meaning_vi": "sự tiêu xài hoang phí",
-  "meaning_en": "sự tiêu xài hoang phí",
+  "meaning_en": "waste money, spend wastefully",
   "example": {
    "jp": "ボーナスをむだづかいしてしまった。",
    "vi": "Tôi đã tiêu lãng phí tiền thưởng.",
-   "en": "Tôi đã tiêu lãng phí tiền thưởng.",
+   "en": "I ended up frittering away my bonus.",
    "seg": [
     {
      "t": "ボーナスをむだづかいしてしまった。"
@@ -12404,12 +12404,12 @@
   "section_title": "Mua sắm",
   "word": "寄る",
   "meaning_vi": "rẽ qua, ghé qua",
-  "meaning_en": "rẽ qua, ghé qua",
+  "meaning_en": "stop by, drop in",
   "furigana": "よる",
   "example": {
    "jp": "帰（かえ）りにデパートに寄（よ）って、買い物（かいもの）をした。",
    "vi": "Trên đường về tôi đã ghé qua trung tâm thương mại mua sắm.",
-   "en": "Trên đường về tôi đã ghé qua trung tâm thương mại mua sắm.",
+   "en": "I stopped by the department store on the way home and did some shopping.",
    "seg": [
     {
      "t": "帰",
@@ -12444,11 +12444,11 @@
   "section_title": "Mua sắm",
   "word": "ついでに",
   "meaning_vi": "tiện thể",
-  "meaning_en": "tiện thể",
+  "meaning_en": "while I'm at it, on the way",
   "example": {
    "jp": "郵便（ゆうびん）局（きょく）に行（い）った。ついでに、コンビニに寄（よ）った。",
    "vi": "Tôi đã đi bưu điện. Tiện thể, tôi ghé qua cửa hàng tiện lợi.",
-   "en": "Tôi đã đi bưu điện. Tiện thể, tôi ghé qua cửa hàng tiện lợi.",
+   "en": "I went to the post office. While I was at it, I stopped by the convenience store.",
    "seg": [
     {
      "t": "郵便",
@@ -12487,12 +12487,12 @@
   "section_title": "Mua sắm",
   "word": "レジ袋",
   "meaning_vi": "túi ni lông, túi bóng",
-  "meaning_en": "túi ni lông, túi bóng",
+  "meaning_en": "plastic shopping bag",
   "furigana": "レジぶくろ",
   "example": {
    "jp": "あのスーパーでは、レジ袋（ぶくろ）が3円（えん）です。",
    "vi": "Ở siêu thị ấy, túi ni lông đựng hàng là 3 yên.",
-   "en": "Ở siêu thị ấy, túi ni lông đựng hàng là 3 yên.",
+   "en": "At that supermarket, a plastic bag costs three yen.",
    "seg": [
     {
      "t": "あのスーパーでは、レジ"
@@ -12523,12 +12523,12 @@
   "section_title": "Mua sắm",
   "word": "定休日",
   "meaning_vi": "ngày nghỉ quy định",
-  "meaning_en": "ngày nghỉ quy định",
+  "meaning_en": "regular closing day",
   "furigana": "ていきゅうび",
   "example": {
    "jp": "本日（ほんじつ）は定休（ていきゅう）日（び）のため、休（やす）ませていただきます。",
    "vi": "Hôm nay là ngày nghỉ quy định nên chúng tôi xin được phép nghỉ.",
-   "en": "Hôm nay là ngày nghỉ quy định nên chúng tôi xin được phép nghỉ.",
+   "en": "Today is our regular closing day, so we will be closed.",
    "seg": [
     {
      "t": "本日",
@@ -12567,12 +12567,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "覚ます",
   "meaning_vi": "tỉnh dậy, thức dậy",
-  "meaning_en": "tỉnh dậy, thức dậy",
+  "meaning_en": "wake (oneself) up, awaken",
   "furigana": "さます",
   "example": {
    "jp": "夜中（やちゅう）の3時（じ）に目（め）を覚（さ）ました。",
    "vi": "Tôi tỉnh dậy lúc 3 giờ đêm.",
-   "en": "Tôi tỉnh dậy lúc 3 giờ đêm.",
+   "en": "I woke up at three in the morning.",
    "seg": [
     {
      "t": "夜中",
@@ -12614,12 +12614,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "覚める",
   "meaning_vi": "tỉnh giấc, thức dậy",
-  "meaning_en": "tỉnh giấc, thức dậy",
+  "meaning_en": "wake up, come awake",
   "furigana": "さめる",
   "example": {
    "jp": "毎朝（まいあさ）、7時（じ）に目（め）が覚（さ）める。",
    "vi": "Mỗi sáng tôi tỉnh giấc lúc 7 giờ.",
-   "en": "Mỗi sáng tôi tỉnh giấc lúc 7 giờ.",
+   "en": "I wake up at seven every morning.",
    "seg": [
     {
      "t": "毎朝",
@@ -12661,12 +12661,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "（夜が）明ける",
   "meaning_vi": "trời sáng",
-  "meaning_en": "trời sáng",
+  "meaning_en": "dawn, day breaks",
   "furigana": "あける",
   "example": {
    "jp": "ゲームをしていたら、夜（よる）が明（あ）けてしまった。",
    "vi": "Tôi chơi game rồi thì trời sáng mất tiêu.",
-   "en": "Tôi chơi game rồi thì trời sáng mất tiêu.",
+   "en": "I was playing games and the sun came up before I knew it.",
    "seg": [
     {
      "t": "ゲームをしていたら、"
@@ -12697,12 +12697,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "支度＜する＞",
   "meaning_vi": "sự chuẩn bị, sửa soạn",
-  "meaning_en": "sự chuẩn bị, sửa soạn",
+  "meaning_en": "prepare, get ready",
   "furigana": "したく",
   "example": {
    "jp": "起（お）きたら、急（いそ）いで朝（あさ）ごはんを食（た）べて、支度（したく）する。",
    "vi": "Thức dậy là tôi vội vã ăn sáng rồi sửa soạn.",
-   "en": "Thức dậy là tôi vội vã ăn sáng rồi sửa soạn.",
+   "en": "As soon as I get up, I hurriedly eat breakfast and get ready.",
    "seg": [
     {
      "t": "起",
@@ -12751,12 +12751,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "合わせる",
   "meaning_vi": "ghép lại, chắp lại, kết hợp",
-  "meaning_en": "ghép lại, chắp lại, kết hợp",
+  "meaning_en": "put together, join, match",
   "furigana": "あわせる",
   "example": {
    "jp": "ごはんのとき、手（て）を合（あ）わせて「いただきます」と言（い）う。",
    "vi": "Khi ăn cơm, chắp tay lại và nói 'Itadakimasu'.",
-   "en": "Khi ăn cơm, chắp tay lại và nói 'Itadakimasu'.",
+   "en": "At mealtime, we put our hands together and say \"itadakimasu.\"",
    "seg": [
     {
      "t": "ごはんのとき、"
@@ -12794,11 +12794,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "しまう",
   "meaning_vi": "cất, cất đi",
-  "meaning_en": "cất, cất đi",
+  "meaning_en": "put away, store",
   "example": {
    "jp": "午前（ごぜん）中（ちゅう）に、冬（ふゆ）のふとんを干（ほ）して、しまう。",
    "vi": "Trong buổi sáng, tôi phơi chăn mùa đông và cất đi.",
-   "en": "Trong buổi sáng, tôi phơi chăn mùa đông và cất đi.",
+   "en": "In the morning I air out the winter futon and put it away.",
    "seg": [
     {
      "t": "午前",
@@ -12837,11 +12837,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "（ひげを）そる",
   "meaning_vi": "cạo (râu)",
-  "meaning_en": "cạo (râu)",
+  "meaning_en": "shave (a beard)",
   "example": {
    "jp": "夫（おっと）はひげをそるのに、時間（じかん）がかかる。",
    "vi": "Chồng tôi mất thời gian cho việc cạo râu.",
-   "en": "Chồng tôi mất thời gian cho việc cạo râu.",
+   "en": "It takes my husband a long time to shave.",
    "seg": [
     {
      "t": "夫",
@@ -12869,12 +12869,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "（髪を）とかす",
   "meaning_vi": "chải (tóc)",
-  "meaning_en": "chải (tóc)",
+  "meaning_en": "comb (one's hair)",
   "furigana": "とかす",
   "example": {
    "jp": "朝（あさ）、3分くらいで髪（かみ）をとかす。",
    "vi": "Buổi sáng, tôi chải tóc mất khoảng 3 phút.",
-   "en": "Buổi sáng, tôi chải tóc mất khoảng 3 phút.",
+   "en": "In the morning, I comb my hair in about three minutes.",
    "seg": [
     {
      "t": "朝",
@@ -12902,11 +12902,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "そろえる",
   "meaning_vi": "sắp xếp, chuẩn bị đầy đủ",
-  "meaning_en": "sắp xếp, chuẩn bị đầy đủ",
+  "meaning_en": "gather together, get in order",
   "example": {
    "jp": "持（も）っていくものをそろえて、バッグに入（い）れる。",
    "vi": "Tôi gom những thứ cần mang theo rồi cho vào túi.",
-   "en": "Tôi gom những thứ cần mang theo rồi cho vào túi.",
+   "en": "I gather together what I'm taking with me and put it in my bag.",
    "seg": [
     {
      "t": "持",
@@ -12934,12 +12934,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "昼寝＜する＞",
   "meaning_vi": "việc ngủ trưa",
-  "meaning_en": "việc ngủ trưa",
+  "meaning_en": "afternoon nap",
   "furigana": "ひるね",
   "example": {
    "jp": "会社（かいしゃ）で15分だけ、昼寝（ひるね）している。",
    "vi": "Ở công ty, tôi ngủ trưa chỉ 15 phút.",
-   "en": "Ở công ty, tôi ngủ trưa chỉ 15 phút.",
+   "en": "I take a fifteen-minute nap at the office.",
    "seg": [
     {
      "t": "会社",
@@ -12967,12 +12967,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "腰かける",
   "meaning_vi": "ngồi xuống",
-  "meaning_en": "ngồi xuống",
+  "meaning_en": "sit down, take a seat",
   "furigana": "こしかける",
   "example": {
    "jp": "いすに腰（こし）かけて、少（すこ）し休（やす）もう。",
    "vi": "Ngồi xuống ghế, nghỉ ngơi một chút nào!",
-   "en": "Ngồi xuống ghế, nghỉ ngơi một chút nào!",
+   "en": "Let's sit down on the chair and rest a bit.",
    "seg": [
     {
      "t": "いすに"
@@ -13010,12 +13010,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "暮れる",
   "meaning_vi": "tối dần, (mặt trời) lặn",
-  "meaning_en": "tối dần, (mặt trời) lặn",
+  "meaning_en": "get dark, (the sun) sets",
   "furigana": "くれる",
   "example": {
    "jp": "もう少しで日（ひ）が暮（く）れる。",
    "vi": "Mặt trời sắp sửa lặn.",
-   "en": "Mặt trời sắp sửa lặn.",
+   "en": "The sun will set before long.",
    "seg": [
     {
      "t": "もう少しで"
@@ -13046,11 +13046,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "おしゃべり＜する＞",
   "meaning_vi": "sự nói chuyện, chuyện trò",
-  "meaning_en": "sự nói chuyện, chuyện trò",
+  "meaning_en": "chat, chatter",
   "example": {
    "jp": "家族(かぞく)とおしゃべりする時間(じかん)を大切(たいせつ)にしている。",
    "vi": "Tôi trân trọng thời gian chuyện trò với gia đình.",
-   "en": "Tôi trân trọng thời gian chuyện trò với gia đình.",
+   "en": "I treasure the time I spend chatting with my family.",
    "seg": [
     {
      "t": "家族",
@@ -13085,11 +13085,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "リラックス＜する＞",
   "meaning_vi": "sự thư giãn",
-  "meaning_en": "sự thư giãn",
+  "meaning_en": "relax",
   "example": {
    "jp": "家（いえ）に帰（かえ）って、リビングでリラックスする。",
    "vi": "Về đến nhà, tôi thư giãn ở phòng khách.",
-   "en": "Về đến nhà, tôi thư giãn ở phòng khách.",
+   "en": "I go home and relax in the living room.",
    "seg": [
     {
      "t": "家",
@@ -13117,11 +13117,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "ふだん",
   "meaning_vi": "thông thường, bình thường",
-  "meaning_en": "thông thường, bình thường",
+  "meaning_en": "usually, ordinarily",
   "example": {
    "jp": "ふだんは家（いえ）で食事（しょくじ）をする。",
    "vi": "Bình thường tôi ăn ở nhà.",
-   "en": "Bình thường tôi ăn ở nhà.",
+   "en": "I usually eat at home.",
    "seg": [
     {
      "t": "ふだんは"
@@ -13152,12 +13152,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "ふだん着",
   "meaning_vi": "quần áo thường ngày, quần áo ở nhà",
-  "meaning_en": "quần áo thường ngày, quần áo ở nhà",
+  "meaning_en": "everyday clothes, casual clothes",
   "furigana": "ふだんぎ",
   "example": {
    "jp": "ふだん着（ぎ）のまま、ソファーで寝（ね）てしまった。",
    "vi": "Tôi ngủ quên trên ghế sofa mà vẫn mặc nguyên bộ quần áo thường ngày.",
-   "en": "Tôi ngủ quên trên ghế sofa mà vẫn mặc nguyên bộ quần áo thường ngày.",
+   "en": "I fell asleep on the sofa still in my everyday clothes.",
    "seg": [
     {
      "t": "ふだん"
@@ -13188,12 +13188,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "相変わらず",
   "meaning_vi": "vẫn như cũ, vẫn như thường",
-  "meaning_en": "vẫn như cũ, vẫn như thường",
+  "meaning_en": "as always, the same as ever",
   "furigana": "あいかわらず",
   "example": {
    "jp": "息子（むすこ）は相変（あいか）わらずゲームをしている。",
    "vi": "Con trai tôi vẫn chơi game như thường.",
-   "en": "Con trai tôi vẫn chơi game như thường.",
+   "en": "My son is playing video games, same as ever.",
    "seg": [
     {
      "t": "息子",
@@ -13221,11 +13221,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "たいてい",
   "meaning_vi": "thường, thường thường",
-  "meaning_en": "thường, thường thường",
+  "meaning_en": "usually, generally, for the most part",
   "example": {
    "jp": "たいてい、1時（じ）ごろ寝（ね）る。",
    "vi": "Thường thường tôi đi ngủ khoảng 1 giờ.",
-   "en": "Thường thường tôi đi ngủ khoảng 1 giờ.",
+   "en": "I usually go to bed around one.",
    "seg": [
     {
      "t": "たいてい、1"
@@ -13256,12 +13256,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "夜ふかし＜する＞",
   "meaning_vi": "sự thức khuya",
-  "meaning_en": "sự thức khuya",
+  "meaning_en": "staying up late",
   "furigana": "よふかし",
   "example": {
    "jp": "週末（しゅうまつ）は、ちょっと夜（よ）ふかししてしまう。",
    "vi": "Cuối tuần tôi thức khuya một chút.",
-   "en": "Cuối tuần tôi thức khuya một chút.",
+   "en": "On weekends I end up staying up a bit late.",
    "seg": [
     {
      "t": "週末",
@@ -13289,12 +13289,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "電源",
   "meaning_vi": "nguồn điện, ổ cắm điện",
-  "meaning_en": "nguồn điện, ổ cắm điện",
+  "meaning_en": "power source, power supply",
   "furigana": "でんげん",
   "example": {
    "jp": "夜（よる）、パソコンの電源（でんげん）を切（き）る。",
    "vi": "Buổi tối, tôi tắt nguồn máy vi tính.",
-   "en": "Buổi tối, tôi tắt nguồn máy vi tính.",
+   "en": "At night, I turn off the computer's power.",
    "seg": [
     {
      "t": "夜",
@@ -13329,12 +13329,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "充電＜する＞",
   "meaning_vi": "việc sạc pin, nạp điện",
-  "meaning_en": "việc sạc pin, nạp điện",
+  "meaning_en": "charge (a battery)",
   "furigana": "じゅうでん",
   "example": {
    "jp": "寝（ね）る前（まえ）に、スマートフォンを充電（じゅうでん）しておく。",
    "vi": "Trước khi đi ngủ, tôi sạc điện thoại thông minh.",
-   "en": "Trước khi đi ngủ, tôi sạc điện thoại thông minh.",
+   "en": "I charge my smartphone before going to bed.",
    "seg": [
     {
      "t": "寝",
@@ -13369,11 +13369,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "セット＜する＞",
   "meaning_vi": "sự cài đặt",
-  "meaning_en": "sự cài đặt",
+  "meaning_en": "set",
   "example": {
    "jp": "目覚（めざ）ましを7時（じ）にセットした。",
    "vi": "Tôi cài đặt đồng hồ báo thức lúc 7 giờ.",
-   "en": "Tôi cài đặt đồng hồ báo thức lúc 7 giờ.",
+   "en": "I set the alarm for seven o'clock.",
    "seg": [
     {
      "t": "目覚",
@@ -13401,11 +13401,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "なでる",
   "meaning_vi": "vuốt ve, xoa",
-  "meaning_en": "vuốt ve, xoa",
+  "meaning_en": "stroke, pet",
   "example": {
    "jp": "ペットの犬（いぬ）をなでて、「おやすみ」と言（い）った。",
    "vi": "Tôi vuốt ve con cún và nói 'Chúc ngủ ngon!'.",
-   "en": "Tôi vuốt ve con cún và nói 'Chúc ngủ ngon!'.",
+   "en": "I petted my dog and said \"good night.\"",
    "seg": [
     {
      "t": "ペットの"
@@ -13436,11 +13436,11 @@
   "section_title": "Từ sáng đến tối",
   "word": "ぐっすり[と]",
   "meaning_vi": "say giấc, ngủ say",
-  "meaning_en": "say giấc, ngủ say",
+  "meaning_en": "soundly, deeply (asleep)",
   "example": {
    "jp": "今日（きょう）もぐっすり寝（ね）られそだ。",
    "vi": "Hôm nay cũng có vẻ ngủ say giấc đây.",
-   "en": "Hôm nay cũng có vẻ ngủ say giấc đây.",
+   "en": "It looks like I'll sleep soundly again tonight.",
    "seg": [
     {
      "t": "今日",
@@ -13468,12 +13468,12 @@
   "section_title": "Từ sáng đến tối",
   "word": "運",
   "meaning_vi": "vận, vận may",
-  "meaning_en": "vận, vận may",
+  "meaning_en": "luck, fortune",
   "furigana": "うん",
   "example": {
    "jp": "今日（きょう）は、運（うん）がいい一（いち）日（にち）だった。",
    "vi": "Hôm nay là một ngày may mắn.",
-   "en": "Hôm nay là một ngày may mắn.",
+   "en": "Today was a lucky day.",
    "seg": [
     {
      "t": "今日",
@@ -13512,12 +13512,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "日常",
   "meaning_vi": "thường nhật, hằng ngày",
-  "meaning_en": "thường nhật, hằng ngày",
+  "meaning_en": "everyday, daily life",
   "furigana": "にちじょう",
   "example": {
    "jp": "日常（にちじょう）の生活（せいかつ）を楽（たの）しみたい。",
    "vi": "Tôi muốn tận hưởng cuộc sống thường nhật.",
-   "en": "Tôi muốn tận hưởng cuộc sống thường nhật.",
+   "en": "I want to enjoy everyday life.",
    "seg": [
     {
      "t": "日常",
@@ -13552,12 +13552,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "常に",
   "meaning_vi": "luôn luôn, lúc nào cũng",
-  "meaning_en": "luôn luôn, lúc nào cũng",
+  "meaning_en": "always, constantly",
   "furigana": "つねに",
   "example": {
    "jp": "常（つね）に、家族（かぞく）の健康（けんこう）を考（かんが）えている。",
    "vi": "Tôi luôn luôn nghĩ đến sức khỏe của gia đình.",
-   "en": "Tôi luôn luôn nghĩ đến sức khỏe của gia đình.",
+   "en": "I'm always thinking about my family's health.",
    "seg": [
     {
      "t": "常",
@@ -13599,12 +13599,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "出迎え",
   "meaning_vi": "(sự) đón tiếp",
-  "meaning_en": "(sự) đón tiếp",
+  "meaning_en": "meeting (someone on arrival), reception",
   "furigana": "でむかえ",
   "example": {
    "jp": "空港（くうこう）へ国（くに）の友（とも）だちの出迎（でむか）えに行（い）く。",
    "vi": "Tôi đi ra sân bay để đón bạn từ quê nhà.",
-   "en": "Tôi đi ra sân bay để đón bạn từ quê nhà.",
+   "en": "I'm going to the airport to meet a friend from back home.",
    "seg": [
     {
      "t": "空港",
@@ -13653,12 +13653,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "出迎える",
   "meaning_vi": "đón, đón tiếp",
-  "meaning_en": "đón, đón tiếp",
+  "meaning_en": "go to meet, greet (on arrival)",
   "furigana": "でむかえる",
   "example": {
    "jp": "バス停（ばすてい）で友（とも）だちを出迎（でむか）えた。",
    "vi": "Tôi đón bạn ở trạm xe buýt.",
-   "en": "Tôi đón bạn ở trạm xe buýt.",
+   "en": "I met my friend at the bus stop.",
    "seg": [
     {
      "t": "バス停",
@@ -13693,12 +13693,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "見送り",
   "meaning_vi": "(sự) tiễn",
-  "meaning_en": "(sự) tiễn",
+  "meaning_en": "seeing (someone) off",
   "furigana": "みおくり",
   "example": {
    "jp": "空港（くうこう）へ家族（かぞく）を見送（みおく）りに行（い）く。",
    "vi": "Tôi đi ra sân bay để tiễn gia đình.",
-   "en": "Tôi đi ra sân bay để tiễn gia đình.",
+   "en": "I'm going to the airport to see my family off.",
    "seg": [
     {
      "t": "空港",
@@ -13740,12 +13740,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "見送る",
   "meaning_vi": "tiễn",
-  "meaning_en": "tiễn",
+  "meaning_en": "see (someone) off",
   "furigana": "みおくる",
   "example": {
    "jp": "泣（な）きながら家族（かぞく）を見送（みおく）った。",
    "vi": "Tôi vừa khóc vừa tiễn gia đình.",
-   "en": "Tôi vừa khóc vừa tiễn gia đình.",
+   "en": "I saw my family off in tears.",
    "seg": [
     {
      "t": "泣",
@@ -13780,12 +13780,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "郵送＜する＞",
   "meaning_vi": "gửi qua bưu điện",
-  "meaning_en": "gửi qua bưu điện",
+  "meaning_en": "send by mail",
   "furigana": "ゆうそう",
   "example": {
    "jp": "母（はは）に誕生（たんじょう）日（び）プレゼントを郵送（ゆうそう）した。",
    "vi": "Tôi đã gửi quà sinh nhật cho mẹ qua bưu điện.",
-   "en": "Tôi đã gửi quà sinh nhật cho mẹ qua bưu điện.",
+   "en": "I mailed a birthday present to my mother.",
    "seg": [
     {
      "t": "母",
@@ -13824,12 +13824,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "小包",
   "meaning_vi": "gói hàng, bưu kiện",
-  "meaning_en": "gói hàng, bưu kiện",
+  "meaning_en": "parcel, package",
   "furigana": "こづつみ",
   "example": {
    "jp": "小包（こづつみ）にセーターを入（い）れた。",
    "vi": "Tôi cho chiếc áo len vào bưu kiện.",
-   "en": "Tôi cho chiếc áo len vào bưu kiện.",
+   "en": "I put the sweater in the parcel.",
    "seg": [
     {
      "t": "小包",
@@ -13857,12 +13857,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "送料",
   "meaning_vi": "phí gửi hàng, cước vận chuyển",
-  "meaning_en": "phí gửi hàng, cước vận chuyển",
+  "meaning_en": "shipping fee, postage",
   "furigana": "そうりょう",
   "example": {
    "jp": "荷物（にもつ）を送（おく）るとき、送料（そうりょう）がかかる。",
    "vi": "Khi gửi hàng sẽ mất phí vận chuyển.",
-   "en": "Khi gửi hàng sẽ mất phí vận chuyển.",
+   "en": "There's a shipping fee when you send a package.",
    "seg": [
     {
      "t": "荷物",
@@ -13897,12 +13897,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "あて先",
   "meaning_vi": "địa chỉ người nhận",
-  "meaning_en": "địa chỉ người nhận",
+  "meaning_en": "recipient's address, destination",
   "furigana": "あてさき",
   "example": {
    "jp": "あて先を間違（まちが）えないように書（か）いた。",
    "vi": "Tôi đã viết cẩn thận để không nhầm địa chỉ người nhận.",
-   "en": "Tôi đã viết cẩn thận để không nhầm địa chỉ người nhận.",
+   "en": "I wrote the address carefully so as not to get it wrong.",
    "seg": [
     {
      "t": "あて先を"
@@ -13933,12 +13933,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "あて名",
   "meaning_vi": "tên người nhận",
-  "meaning_en": "tên người nhận",
+  "meaning_en": "addressee, recipient's name",
   "furigana": "あてな",
   "example": {
    "jp": "あて名に母（はは）の名前（なまえ）を書（か）いた。",
    "vi": "Tôi đã viết tên mẹ vào chỗ tên người nhận.",
-   "en": "Tôi đã viết tên mẹ vào chỗ tên người nhận.",
+   "en": "I wrote my mother's name as the addressee.",
    "seg": [
     {
      "t": "あて名に"
@@ -13976,12 +13976,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "差出人",
   "meaning_vi": "người gửi",
-  "meaning_en": "người gửi",
+  "meaning_en": "sender",
   "furigana": "さしだしにん",
   "example": {
    "jp": "ここに差出人（さしだしにん）の住所（じゅうしょ）を書（か）いてください。",
    "vi": "Xin hãy viết địa chỉ người gửi vào đây.",
-   "en": "Xin hãy viết địa chỉ người gửi vào đây.",
+   "en": "Please write the sender's address here.",
    "seg": [
     {
      "t": "ここに"
@@ -14019,11 +14019,11 @@
   "section_title": "Cả những việc như thế này",
   "word": "とりあえず",
   "meaning_vi": "trước mắt, tạm thời",
-  "meaning_en": "trước mắt, tạm thời",
+  "meaning_en": "for now, first of all",
   "example": {
    "jp": "大学（だいがく）に合格（ごうかく）したので、とりあえず母（はは）に知（し）らせた。",
    "vi": "Vì đã đậu đại học nên trước mắt tôi báo cho mẹ biết.",
-   "en": "Vì đã đậu đại học nên trước mắt tôi báo cho mẹ biết.",
+   "en": "I passed the university entrance exam, so for now I let my mother know.",
    "seg": [
     {
      "t": "大学",
@@ -14065,12 +14065,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "出前",
   "meaning_vi": "giao đồ ăn tận nhà",
-  "meaning_en": "giao đồ ăn tận nhà",
+  "meaning_en": "food delivery",
   "furigana": "でまえ",
   "example": {
    "jp": "今日（きょう）は疲（つか）れたので、すしの出前（でまえ）にしよう。",
    "vi": "Hôm nay mệt nên gọi sushi giao tận nhà thôi.",
-   "en": "Hôm nay mệt nên gọi sushi giao tận nhà thôi.",
+   "en": "I'm tired today, so let's order sushi delivery.",
    "seg": [
     {
      "t": "今日",
@@ -14105,11 +14105,11 @@
   "section_title": "Cả những việc như thế này",
   "word": "ほどく",
   "meaning_vi": "tháo, cởi, gỡ",
-  "meaning_en": "tháo, cởi, gỡ",
+  "meaning_en": "untie, undo, unravel",
   "example": {
    "jp": "玄関（げんかん）で、くつのひもをほどいた。",
    "vi": "Tôi tháo dây giày ở lối vào.",
-   "en": "Tôi tháo dây giày ở lối vào.",
+   "en": "I untied my shoelaces at the entrance.",
    "seg": [
     {
      "t": "玄関",
@@ -14130,12 +14130,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "留守番電話",
   "meaning_vi": "máy trả lời tự động, hộp thư thoại",
-  "meaning_en": "máy trả lời tự động, hộp thư thoại",
+  "meaning_en": "answering machine, voicemail",
   "furigana": "るすばんでんわ",
   "example": {
    "jp": "留守番（るすばん）電話（でんわ）に母（はは）の声（こえ）が入（はい）っていた。",
    "vi": "Có giọng nói của mẹ tôi trong hộp thư thoại.",
-   "en": "Có giọng nói của mẹ tôi trong hộp thư thoại.",
+   "en": "There was a message from my mother on the answering machine.",
    "seg": [
     {
      "t": "留守番",
@@ -14181,11 +14181,11 @@
   "section_title": "Cả những việc như thế này",
   "word": "よく",
   "meaning_vi": "hay, thường xuyên",
-  "meaning_en": "hay, thường xuyên",
+  "meaning_en": "often, frequently",
   "example": {
    "jp": "両親（りょうしん）や兄弟（きょうだい）と、よく電話（でんわ）で話（はな）している。",
    "vi": "Tôi hay nói chuyện điện thoại với bố mẹ và anh chị em.",
-   "en": "Tôi hay nói chuyện điện thoại với bố mẹ và anh chị em.",
+   "en": "I often talk with my parents and siblings on the phone.",
    "seg": [
     {
      "t": "両親",
@@ -14227,12 +14227,12 @@
   "section_title": "Cả những việc như thế này",
   "word": "早め＜な＞",
   "meaning_vi": "sớm, sớm hơn bình thường",
-  "meaning_en": "sớm, sớm hơn bình thường",
+  "meaning_en": "early, ahead of time",
   "furigana": "はやめ",
   "example": {
    "jp": "飛行機（ひこうき）のチケットを早（はや）めに予約（よやく）しておく。",
    "vi": "Tôi sẽ đặt trước vé máy bay sớm.",
-   "en": "Tôi sẽ đặt trước vé máy bay sớm.",
+   "en": "I book plane tickets early.",
    "seg": [
     {
      "t": "飛行機",
@@ -14267,11 +14267,11 @@
   "section_title": "Cả những việc như thế này",
   "word": "リサイクル＜する＞",
   "meaning_vi": "tái chế, tái sử dụng",
-  "meaning_en": "tái chế, tái sử dụng",
+  "meaning_en": "recycle",
   "example": {
    "jp": "洋服（ようふく）も家具（かぐ）もリサイクルできる。",
    "vi": "Quần áo cũng như đồ nội thất đều có thể tái chế được.",
-   "en": "Quần áo cũng như đồ nội thất đều có thể tái chế được.",
+   "en": "Both clothes and furniture can be recycled.",
    "seg": [
     {
      "t": "洋服",
@@ -14299,11 +14299,11 @@
   "section_title": "Cả những việc như thế này",
   "word": "どける",
   "meaning_vi": "dời ra, di chuyển sang chỗ khác",
-  "meaning_en": "dời ra, di chuyển sang chỗ khác",
+  "meaning_en": "move (something) out of the way",
   "example": {
    "jp": "その自転車（じてんしゃ）をどけてください。",
    "vi": "Xin hãy dời chiếc xe đạp đó ra chỗ khác.",
-   "en": "Xin hãy dời chiếc xe đạp đó ra chỗ khác.",
+   "en": "Please move that bicycle out of the way.",
    "seg": [
     {
      "t": "その"
@@ -14327,12 +14327,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "商店街",
   "meaning_vi": "Phố thương mại",
-  "meaning_en": "Phố thương mại",
+  "meaning_en": "shopping street, shopping district",
   "furigana": "しょうてんがい",
   "example": {
    "jp": "駅前（えきまえ）に大（おお）きな商店（しょうてん）街（がい）がある。",
    "vi": "Trước cửa ga có phố thương mại lớn.",
-   "en": "Trước cửa ga có phố thương mại lớn.",
+   "en": "There's a big shopping street in front of the station.",
    "seg": [
     {
      "t": "駅前",
@@ -14371,11 +14371,11 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "にぎやかな",
   "meaning_vi": "Nhộn nhịp",
-  "meaning_en": "Nhộn nhịp",
+  "meaning_en": "lively, bustling",
   "example": {
    "jp": "商店（しょうてん）街（がい）は、たくさんの人（ひと）でにぎやかだ。",
    "vi": "Phố thương mại có nhiều người, nhộn nhịp.",
-   "en": "Phố thương mại có nhiều người, nhộn nhịp.",
+   "en": "The shopping street is bustling with lots of people.",
    "seg": [
     {
      "t": "商店",
@@ -14407,12 +14407,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "高層ビル",
   "meaning_vi": "Tòa nhà cao tầng",
-  "meaning_en": "Tòa nhà cao tầng",
+  "meaning_en": "high-rise building, skyscraper",
   "furigana": "こうそうビル",
   "example": {
    "jp": "この町（まち）には、高層（こうそう）ビルがない。",
    "vi": "Ở thị trấn này không có tòa nhà cao tầng.",
-   "en": "Ở thị trấn này không có tòa nhà cao tầng.",
+   "en": "There are no high-rise buildings in this town.",
    "seg": [
     {
      "t": "この"
@@ -14443,12 +14443,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "建つ",
   "meaning_vi": "Được xây dựng",
-  "meaning_en": "Được xây dựng",
+  "meaning_en": "be built, stand",
   "furigana": "たつ",
   "example": {
    "jp": "川（かわ）の近（ちか）くに、高層（こうそう）マンションが建（た）った。",
    "vi": "Gần sông có một chung cư cao tầng được xây.",
-   "en": "Gần sông có một chung cư cao tầng được xây.",
+   "en": "A high-rise apartment building went up near the river.",
    "seg": [
     {
      "t": "川",
@@ -14490,12 +14490,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "水族館",
   "meaning_vi": "Thủy cung",
-  "meaning_en": "Thủy cung",
+  "meaning_en": "aquarium",
   "furigana": "すいぞくかん",
   "example": {
    "jp": "水族館（すいぞくかん）は、いつも子（こ）どもでいっぱいだ。",
    "vi": "Thủy cung bao giờ cũng đông trẻ em.",
-   "en": "Thủy cung bao giờ cũng đông trẻ em.",
+   "en": "The aquarium is always packed with children.",
    "seg": [
     {
      "t": "水族館",
@@ -14523,12 +14523,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "博物館",
   "meaning_vi": "Bảo tàng",
-  "meaning_en": "Bảo tàng",
+  "meaning_en": "museum",
   "furigana": "はくぶつかん",
   "example": {
    "jp": "週末（しゅうまつ）、博物館（はくぶつかん）はとても込（こ）んでいる。",
    "vi": "Cuối tuần, bảo tàng rất đông.",
-   "en": "Cuối tuần, bảo tàng rất đông.",
+   "en": "The museum is very crowded on weekends.",
    "seg": [
     {
      "t": "週末",
@@ -14563,12 +14563,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "出入り口（出入口）",
   "meaning_vi": "Lối / cửa ra vào",
-  "meaning_en": "Lối / cửa ra vào",
+  "meaning_en": "entrance and exit, doorway",
   "furigana": "でいりぐち",
   "example": {
    "jp": "博物館（はくぶつかん）の出入り口（でいりぐち）に、ポスターがはってある。",
    "vi": "Áp-phích được dán ở lối ra vào của bảo tàng.",
-   "en": "Áp-phích được dán ở lối ra vào của bảo tàng.",
+   "en": "A poster is put up at the museum entrance.",
    "seg": [
     {
      "t": "博物館",
@@ -14596,12 +14596,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "自動ドア",
   "meaning_vi": "Cửa tự động",
-  "meaning_en": "Cửa tự động",
+  "meaning_en": "automatic door",
   "furigana": "じどうドア",
   "example": {
    "jp": "出入り口（でいりぐち）に、大（おお）きな自動（じどう）ドアがある。",
    "vi": "Ở lối ra vào có cửa tự động lớn.",
-   "en": "Ở lối ra vào có cửa tự động lớn.",
+   "en": "There's a large automatic door at the entrance.",
    "seg": [
     {
      "t": "出入り口",
@@ -14636,12 +14636,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "入館料",
   "meaning_vi": "Phí vào cửa",
-  "meaning_en": "Phí vào cửa",
+  "meaning_en": "admission fee",
   "furigana": "にゅうかんりょう",
   "example": {
    "jp": "入館（にゅうかん）料（りょう）は400円（えん）です。",
    "vi": "Phí vào cửa là 400 yên.",
-   "en": "Phí vào cửa là 400 yên.",
+   "en": "The admission fee is 400 yen.",
    "seg": [
     {
      "t": "入館",
@@ -14673,12 +14673,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "混雑＜する＞",
   "meaning_vi": "Sự đông đúc, đông nghịt",
-  "meaning_en": "Sự đông đúc, đông nghịt",
+  "meaning_en": "congestion, crowding",
   "furigana": "こんざつ",
   "example": {
    "jp": "週末（しゅうまつ）は、どこも混雑（こんざつ）している。",
    "vi": "Cuối tuần ở đâu cũng đông nghịt.",
-   "en": "Cuối tuần ở đâu cũng đông nghịt.",
+   "en": "Everywhere is crowded on weekends.",
    "seg": [
     {
      "t": "週末",
@@ -14706,12 +14706,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "行列",
   "meaning_vi": "Hàng người",
-  "meaning_en": "Hàng người",
+  "meaning_en": "line, queue",
   "furigana": "ぎょうれつ",
   "example": {
    "jp": "人気（にんき）の店（みせ）の前（まえ）に、長（なが）い行列（ぎょうれつ）ができている。",
    "vi": "Trước cửa tiệm được ưa thích, có một hàng người xếp dài.",
-   "en": "Trước cửa tiệm được ưa thích, có một hàng người xếp dài.",
+   "en": "There's a long line in front of the popular shop.",
    "seg": [
     {
      "t": "人気",
@@ -14760,12 +14760,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "休館日",
   "meaning_vi": "Ngày đóng cửa",
-  "meaning_en": "Ngày đóng cửa",
+  "meaning_en": "closing day (of a museum or library)",
   "furigana": "きゅうかんび",
   "example": {
    "jp": "この博物館（はくぶつかん）の休館（きゅうかん）日（び）は、月曜日（げつようび）だ。",
    "vi": "Ngày đóng cửa của bảo tàng này là thứ hai.",
-   "en": "Ngày đóng cửa của bảo tàng này là thứ hai.",
+   "en": "This museum's closing day is Monday.",
    "seg": [
     {
      "t": "この"
@@ -14807,11 +14807,11 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "ホール",
   "meaning_vi": "Hội trường",
-  "meaning_en": "Hội trường",
+  "meaning_en": "hall",
   "example": {
    "jp": "市（し）のホールで、よくコンサートが開（ひら）かれる。",
    "vi": "Những buổi hoà nhạc hay được tổ chức ở hội trường thành phố.",
-   "en": "Những buổi hoà nhạc hay được tổ chức ở hội trường thành phố.",
+   "en": "Concerts are often held at the city hall.",
    "seg": [
     {
      "t": "市",
@@ -14839,12 +14839,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "使用料",
   "meaning_vi": "Phí sử dụng",
-  "meaning_en": "Phí sử dụng",
+  "meaning_en": "usage fee, rental charge",
   "furigana": "しようりょう",
   "example": {
    "jp": "このホールの使用（しよう）料（りょう）は、3時間（じかん）1万（まん）円（えん）だ。",
    "vi": "Phí sử dụng hội trường này là 10 nghìn yên cho 3 tiếng đồng hồ.",
-   "en": "Phí sử dụng hội trường này là 10 nghìn yên cho 3 tiếng đồng hồ.",
+   "en": "The usage fee for this hall is 10,000 yen for three hours.",
    "seg": [
     {
      "t": "このホールの"
@@ -14890,12 +14890,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "無料",
   "meaning_vi": "Miễn phí",
-  "meaning_en": "Miễn phí",
+  "meaning_en": "free of charge",
   "furigana": "むりょう",
   "example": {
    "jp": "駅前（えきまえ）で無料（むりょう）の化粧（けしょう）品（ひん）をもらった。",
    "vi": "Trước nhà ga, tôi được cho mỹ phẩm miễn phí.",
-   "en": "Trước nhà ga, tôi được cho mỹ phẩm miễn phí.",
+   "en": "I got some free cosmetics in front of the station.",
    "seg": [
     {
      "t": "駅前",
@@ -14934,12 +14934,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "老人ホーム",
   "meaning_vi": "Nhà dưỡng lão",
-  "meaning_en": "Nhà dưỡng lão",
+  "meaning_en": "nursing home, retirement home",
   "furigana": "ろうじんホーム",
   "example": {
    "jp": "公園（こうえん）の近（ちか）くに、老人（ろうじん）ホームができるそうだ。",
    "vi": "Nghe nói gần công viên sẽ xây nhà dưỡng lão.",
-   "en": "Nghe nói gần công viên sẽ xây nhà dưỡng lão.",
+   "en": "Apparently a nursing home is going to be built near the park.",
    "seg": [
     {
      "t": "公園",
@@ -14974,12 +14974,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "目印",
   "meaning_vi": "Dấu hiệu nhận biết",
-  "meaning_en": "Dấu hiệu nhận biết",
+  "meaning_en": "landmark, marker",
   "furigana": "めじるし",
   "example": {
    "jp": "A「そちらの近（ちか）くに、何（なに）か目印（めじるし）がありますか。」 B「そうですね。赤（あか）い橋（はし）があります。」",
    "vi": "A: Ở gần đấy có gì làm dấu hiệu nhận biết không? / B: Ừ nhỉ! Có cây cầu đỏ.",
-   "en": "A: Ở gần đấy có gì làm dấu hiệu nhận biết không? / B: Ừ nhỉ! Có cây cầu đỏ.",
+   "en": "A: \"Is there any landmark near there?\" B: \"Let me see. There's a red bridge.\"",
    "seg": [
     {
      "t": "A「そちらの"
@@ -15031,12 +15031,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "歩道橋",
   "meaning_vi": "Cầu vượt đi bộ",
-  "meaning_en": "Cầu vượt đi bộ",
+  "meaning_en": "pedestrian bridge, footbridge",
   "furigana": "ほどうきょう",
   "example": {
    "jp": "歩道橋（ほどうきょう）に上（のぼ）ると、町（まち）がよく見（み）える。",
    "vi": "Nếu leo lên cầu vượt đi bộ sẽ nhìn thấy rõ thị trấn.",
-   "en": "Nếu leo lên cầu vượt đi bộ sẽ nhìn thấy rõ thị trấn.",
+   "en": "If you go up on the pedestrian bridge, you get a good view of the town.",
    "seg": [
     {
      "t": "歩道橋",
@@ -15078,11 +15078,11 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "タワー",
   "meaning_vi": "Tháp",
-  "meaning_en": "Tháp",
+  "meaning_en": "tower",
   "example": {
    "jp": "スカイツリーは、日本（にほん）で一番（いちばん）高（たか）いタワーだ。",
    "vi": "Skytree là tháp cao nhất ở Nhật Bản.",
-   "en": "Skytree là tháp cao nhất ở Nhật Bản.",
+   "en": "Skytree is the tallest tower in Japan.",
    "seg": [
     {
      "t": "スカイツリーは、"
@@ -15117,11 +15117,11 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "ライト",
   "meaning_vi": "Đèn, ánh sáng",
-  "meaning_en": "Đèn, ánh sáng",
+  "meaning_en": "light",
   "example": {
    "jp": "あのタワーは夜（よる）7時（じ）になると、ライトがつく。",
    "vi": "Tháp ấy cứ đến 7 giờ tối là có đèn chiếu sáng.",
-   "en": "Tháp ấy cứ đến 7 giờ tối là có đèn chiếu sáng.",
+   "en": "The lights on that tower come on at seven in the evening.",
    "seg": [
     {
      "t": "あのタワーは"
@@ -15152,12 +15152,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "居酒屋",
   "meaning_vi": "Quán nhậu",
-  "meaning_en": "Quán nhậu",
+  "meaning_en": "izakaya, Japanese pub",
   "furigana": "いざかや",
   "example": {
    "jp": "この町（まち）には、たくさん居酒屋（いざかや）がある。",
    "vi": "Ở phố này có nhiều quán nhậu.",
-   "en": "Ở phố này có nhiều quán nhậu.",
+   "en": "There are lots of izakaya in this town.",
    "seg": [
     {
      "t": "この"
@@ -15188,12 +15188,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "八百屋",
   "meaning_vi": "Cửa hàng rau quả",
-  "meaning_en": "Cửa hàng rau quả",
+  "meaning_en": "greengrocer, vegetable shop",
   "furigana": "やおや",
   "example": {
    "jp": "野菜（やさい）や果物（くだもの）は八百屋（やおや）で買（か）う。",
    "vi": "Rau và hoa quả thì tôi mua ở cửa hàng rau quả.",
-   "en": "Rau và hoa quả thì tôi mua ở cửa hàng rau quả.",
+   "en": "I buy vegetables and fruit at the greengrocer.",
    "seg": [
     {
      "t": "野菜",
@@ -15235,12 +15235,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "正面",
   "meaning_vi": "Chính diện, mặt trước",
-  "meaning_en": "Chính diện, mặt trước",
+  "meaning_en": "front, facade, directly opposite",
   "furigana": "しょうめん",
   "example": {
    "jp": "パン屋（や）の正面（しょうめん）に、小（ちい）さな本屋（ほんや）がある。",
    "vi": "Chính diện cửa hàng bánh mì có một hiệu sách nhỏ.",
-   "en": "Chính diện cửa hàng bánh mì có một hiệu sách nhỏ.",
+   "en": "There's a small bookshop directly opposite the bakery.",
    "seg": [
     {
      "t": "パン"
@@ -15285,11 +15285,11 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "そば",
   "meaning_vi": "Bên cạnh, gần",
-  "meaning_en": "Bên cạnh, gần",
+  "meaning_en": "beside, next to, near",
   "example": {
    "jp": "本屋（ほんや）のそばに、おいしいレストランがある。",
    "vi": "Bên cạnh hiệu sách có một nhà hàng ngon.",
-   "en": "Bên cạnh hiệu sách có một nhà hàng ngon.",
+   "en": "There's a good restaurant next to the bookshop.",
    "seg": [
     {
      "t": "本屋",
@@ -15310,11 +15310,11 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "コンクリート",
   "meaning_vi": "Bê tông",
-  "meaning_en": "Bê tông",
+  "meaning_en": "concrete",
   "example": {
    "jp": "あのアパートは、コンクリートでできている。",
    "vi": "Chung cư ấy được xây bằng bê tông.",
-   "en": "Chung cư ấy được xây bằng bê tông.",
+   "en": "That apartment building is made of concrete.",
    "seg": [
     {
      "t": "あのアパートは、コンクリートでできている。"
@@ -15331,12 +15331,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "地方",
   "meaning_vi": "Địa phương",
-  "meaning_en": "Địa phương",
+  "meaning_en": "region, district",
   "furigana": "ちほう",
   "example": {
    "jp": "この地方（ちほう）には、自然（しぜん）がたくさんある。",
    "vi": "Địa phương này có nhiều phong cảnh tự nhiên.",
-   "en": "Địa phương này có nhiều phong cảnh tự nhiên.",
+   "en": "This region has a lot of nature.",
    "seg": [
     {
      "t": "この"
@@ -15367,12 +15367,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "地域",
   "meaning_vi": "Khu vực",
-  "meaning_en": "Khu vực",
+  "meaning_en": "area, locality",
   "furigana": "ちいき",
   "example": {
    "jp": "この地域（ちいき）には、知り合（しりあ）いが多（おお）い。",
    "vi": "Tôi có nhiều người quen biết ở khu vực này.",
-   "en": "Tôi có nhiều người quen biết ở khu vực này.",
+   "en": "I have a lot of acquaintances in this area.",
    "seg": [
     {
      "t": "この"
@@ -15410,12 +15410,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "郊外",
   "meaning_vi": "Ngoại ô",
-  "meaning_en": "Ngoại ô",
+  "meaning_en": "suburbs, outskirts",
   "furigana": "こうがい",
   "example": {
    "jp": "いつか郊外（こうがい）に、庭（にわ）のある家（いえ）を建（た）てたい。",
    "vi": "Tôi muốn khi nào đó sẽ xây một căn nhà có sân vườn ở ngoại ô.",
-   "en": "Tôi muốn khi nào đó sẽ xây một căn nhà có sân vườn ở ngoại ô.",
+   "en": "Someday I want to build a house with a garden in the suburbs.",
    "seg": [
     {
      "t": "いつか"
@@ -15460,12 +15460,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "中心",
   "meaning_vi": "Trung tâm, giữa",
-  "meaning_en": "Trung tâm, giữa",
+  "meaning_en": "center, middle",
   "furigana": "ちゅうしん",
   "example": {
    "jp": "広場（ひろば）の中心（ちゅうしん）に、きれいな花（はな）が咲（さ）いている。",
    "vi": "Hoa đẹp đang đua nở giữa trung tâm quảng trường.",
-   "en": "Hoa đẹp đang đua nở giữa trung tâm quảng trường.",
+   "en": "Beautiful flowers are blooming in the center of the plaza.",
    "seg": [
     {
      "t": "広場",
@@ -15507,12 +15507,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "移転＜する＞",
   "meaning_vi": "Sự di dời, di chuyển",
-  "meaning_en": "Sự di dời, di chuyển",
+  "meaning_en": "relocation, move",
   "furigana": "いてん",
   "example": {
    "jp": "市役所（しやくしょ）が移転（いてん）するらしい。",
    "vi": "Nghe nói tòa thị chính sẽ được di dời.",
-   "en": "Nghe nói tòa thị chính sẽ được di dời.",
+   "en": "It seems the city hall is going to be relocated.",
    "seg": [
     {
      "t": "市役所",
@@ -15540,12 +15540,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "工事＜する＞",
   "meaning_vi": "Thi công, công trình xây dựng",
-  "meaning_en": "Thi công, công trình xây dựng",
+  "meaning_en": "construction work",
   "furigana": "こうじ",
   "example": {
    "jp": "3年（ねん）くらい前（まえ）から、駅（えき）の工事（こうじ）をしている。",
    "vi": "Nhà ga đang được thi công từ khoảng 3 năm trước.",
-   "en": "Nhà ga đang được thi công từ khoảng 3 năm trước.",
+   "en": "They've been doing construction on the station for about three years.",
    "seg": [
     {
      "t": "3"
@@ -15590,12 +15590,12 @@
   "section_title": "Quanh cảnh thành phố",
   "word": "空き地",
   "meaning_vi": "Khu đất trống",
-  "meaning_en": "Khu đất trống",
+  "meaning_en": "vacant lot, empty plot",
   "furigana": "あきち",
   "example": {
    "jp": "うちの近（ちか）くの空き地（あきち）が、駐車（ちゅうしゃ）場（じょう）になった。",
    "vi": "Khu đất trống ở gần nhà đã trở thành bãi đỗ xe.",
-   "en": "Khu đất trống ở gần nhà đã trở thành bãi đỗ xe.",
+   "en": "The vacant lot near our house has become a parking lot.",
    "seg": [
     {
      "t": "うちの"
@@ -15637,12 +15637,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "人ごみ",
   "meaning_vi": "Đám đông",
-  "meaning_en": "Đám đông",
+  "meaning_en": "crowd, throng of people",
   "furigana": "ひとごみ",
   "example": {
    "jp": "人（ひと）ごみの中（なか）を歩（ある）くと、ちょっと疲（つか）れる。",
    "vi": "Hễ đi bộ trong đám đông người là thấy hơi mệt.",
-   "en": "Hễ đi bộ trong đám đông người là thấy hơi mệt.",
+   "en": "Walking through a crowd tires me out a little.",
    "seg": [
     {
      "t": "人",
@@ -15684,12 +15684,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "都会",
   "meaning_vi": "Đô thị",
-  "meaning_en": "Đô thị",
+  "meaning_en": "city, urban area",
   "furigana": "とかい",
   "example": {
    "jp": "都会（とかい）には自然（しぜん）が少（すく）ない。",
    "vi": "Ở đô thị ít có khung cảnh tự nhiên.",
-   "en": "Ở đô thị ít có khung cảnh tự nhiên.",
+   "en": "There isn't much nature in the city.",
    "seg": [
     {
      "t": "都会",
@@ -15724,11 +15724,11 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "ぶらぶら＜する＞",
   "meaning_vi": "Sự lang thang",
-  "meaning_en": "Sự lang thang",
+  "meaning_en": "stroll about, wander aimlessly",
   "example": {
    "jp": "休（やす）みの日（ひ）は、一人（ひとり）で町（まち）をぶらぶらする。",
    "vi": "Vào ngày nghỉ, tôi một mình đi lang thang thị trấn.",
-   "en": "Vào ngày nghỉ, tôi một mình đi lang thang thị trấn.",
+   "en": "On my days off, I wander around town by myself.",
    "seg": [
     {
      "t": "休",
@@ -15770,11 +15770,11 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "うろうろ＜する＞",
   "meaning_vi": "Sự lởn vởn, lảng vảng",
-  "meaning_en": "Sự lởn vởn, lảng vảng",
+  "meaning_en": "loiter, hang around",
   "example": {
    "jp": "最近（さいきん）、知（し）らない人（ひと）が家（いえ）の前（まえ）をうろうろしている。",
    "vi": "Gần đây, có người lạ đi lởn vởn trước nhà.",
-   "en": "Gần đây, có người lạ đi lởn vởn trước nhà.",
+   "en": "Lately a stranger has been hanging around in front of the house.",
    "seg": [
     {
      "t": "最近",
@@ -15823,12 +15823,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "通りかかる",
   "meaning_vi": "Tình cờ đi ngang qua",
-  "meaning_en": "Tình cờ đi ngang qua",
+  "meaning_en": "happen to pass by",
   "furigana": "とおりかかる",
   "example": {
    "jp": "通（とお）りかかった店（みせ）に、ちょっと入（はい）ってみた。",
    "vi": "Tôi thử ghé vào cửa hàng mà mình tình cờ đi ngang qua.",
-   "en": "Tôi thử ghé vào cửa hàng mà mình tình cờ đi ngang qua.",
+   "en": "I popped into a shop I happened to be passing.",
    "seg": [
     {
      "t": "通",
@@ -15863,12 +15863,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "通り過ぎる",
   "meaning_vi": "Đi quá, đi lướt qua",
-  "meaning_en": "Đi quá, đi lướt qua",
+  "meaning_en": "pass by, go past",
   "furigana": "とおりすぎる",
   "example": {
    "jp": "スマホを見（み）ていて、学校（がっこう）を通り過（とおりす）ぎてしまった。",
    "vi": "Mải xem điện thoại, tôi đã đi quá mất trường học.",
-   "en": "Mải xem điện thoại, tôi đã đi quá mất trường học.",
+   "en": "I was looking at my phone and walked right past the school.",
    "seg": [
     {
      "t": "スマホを"
@@ -15906,12 +15906,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "徒歩",
   "meaning_vi": "Đi bộ",
-  "meaning_en": "Đi bộ",
+  "meaning_en": "on foot, walking",
   "furigana": "とほ",
   "example": {
    "jp": "うちから駅（えき）まで、徒歩（とほ）で15分くらいだ。",
    "vi": "Từ nhà đến ga đi bộ mất khoảng 15 phút.",
-   "en": "Từ nhà đến ga đi bộ mất khoảng 15 phút.",
+   "en": "It's about fifteen minutes on foot from my house to the station.",
    "seg": [
     {
      "t": "うちから"
@@ -15942,12 +15942,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "方向",
   "meaning_vi": "Hướng, phương hướng",
-  "meaning_en": "Hướng, phương hướng",
+  "meaning_en": "direction, bearing",
   "furigana": "ほうこう",
   "example": {
    "jp": "知（し）らない町（まち）では、方向（ほうこう）がわからない。",
    "vi": "Ở thành phố không quen tôi không biết phương hướng.",
-   "en": "Ở thành phố không quen tôi không biết phương hướng.",
+   "en": "In a town I don't know, I can't tell which direction is which.",
    "seg": [
     {
      "t": "知",
@@ -15982,12 +15982,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "遠回り＜する＞",
   "meaning_vi": "Sự đi vòng, đường vòng",
-  "meaning_en": "Sự đi vòng, đường vòng",
+  "meaning_en": "detour, going the long way around",
   "furigana": "とおまわり",
   "example": {
    "jp": "時間（じかん）があるから、ちょっと遠回（とおまわ）りしてみよう。",
    "vi": "Vì có thời gian nên thử đi vòng một chút xem sao.",
-   "en": "Vì có thời gian nên thử đi vòng một chút xem sao.",
+   "en": "I have time, so let's take a bit of a detour.",
    "seg": [
     {
      "t": "時間",
@@ -16015,12 +16015,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "近道＜する＞",
   "meaning_vi": "Sự đi tắt, đường tắt",
-  "meaning_en": "Sự đi tắt, đường tắt",
+  "meaning_en": "shortcut",
   "furigana": "ちかみち",
   "example": {
    "jp": "駅（えき）に行（い）くとき、公園（こうえん）を通（とお）って近道（ちかみち）した。",
    "vi": "Khi đi ra ga, tôi đi tắt qua công viên.",
-   "en": "Khi đi ra ga, tôi đi tắt qua công viên.",
+   "en": "On my way to the station, I took a shortcut through the park.",
    "seg": [
     {
      "t": "駅",
@@ -16069,12 +16069,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "距離",
   "meaning_vi": "Cự ly, khoảng cách",
-  "meaning_en": "Cự ly, khoảng cách",
+  "meaning_en": "distance",
   "furigana": "きょり",
   "example": {
    "jp": "うちから学校（がっこう）まで、ちょっと距離（きょり）がある。",
    "vi": "Từ nhà đến trường hơi có khoảng cách (hơi xa) một chút.",
-   "en": "Từ nhà đến trường hơi có khoảng cách (hơi xa) một chút.",
+   "en": "It's a bit of a distance from my house to school.",
    "seg": [
     {
      "t": "うちから"
@@ -16105,12 +16105,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "追いかける",
   "meaning_vi": "Đuổi theo",
-  "meaning_en": "Đuổi theo",
+  "meaning_en": "chase, run after",
   "furigana": "おいかける",
   "example": {
    "jp": "女の子（おんなのこ）が犬（いぬ）を追（お）いかけている。",
    "vi": "Bé gái đang đuổi theo con chó.",
-   "en": "Bé gái đang đuổi theo con chó.",
+   "en": "A little girl is chasing a dog.",
    "seg": [
     {
      "t": "女の子",
@@ -16145,12 +16145,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "追いつく",
   "meaning_vi": "Đuổi kịp",
-  "meaning_en": "Đuổi kịp",
+  "meaning_en": "catch up with",
   "furigana": "おいつく",
   "example": {
    "jp": "ちょっと走（はし）ったら、すぐに追（お）いついた。",
    "vi": "Chạy một chút là đuổi kịp ngay.",
-   "en": "Chạy một chút là đuổi kịp ngay.",
+   "en": "I ran a little and caught up right away.",
    "seg": [
     {
      "t": "ちょっと"
@@ -16181,12 +16181,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "追い越す",
   "meaning_vi": "Vượt, vượt qua",
-  "meaning_en": "Vượt, vượt qua",
+  "meaning_en": "overtake, pass",
   "furigana": "おいこす",
   "example": {
    "jp": "前（まえ）の人（ひと）がゆっくり歩（ある）いていたので、追い越（おいこ）した。",
    "vi": "Vì người đằng trước đi chậm rãi nên tôi đã vượt qua.",
-   "en": "Vì người đằng trước đi chậm rãi nên tôi đã vượt qua.",
+   "en": "The person ahead of me was walking slowly, so I passed them.",
    "seg": [
     {
      "t": "前",
@@ -16228,12 +16228,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "突き当たり",
   "meaning_vi": "Cuối đường, ngõ cụt",
-  "meaning_en": "Cuối đường, ngõ cụt",
+  "meaning_en": "end of the road, dead end",
   "furigana": "つきあたり",
   "example": {
    "jp": "この道（みち）の突（つ）き当（あ）たりに病院（びょういん）がある。",
    "vi": "Ở cuối con đường này có bệnh viện.",
-   "en": "Ở cuối con đường này có bệnh viện.",
+   "en": "There's a hospital at the end of this road.",
    "seg": [
     {
      "t": "この"
@@ -16278,12 +16278,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "立ち止まる",
   "meaning_vi": "Dừng lại",
-  "meaning_en": "Dừng lại",
+  "meaning_en": "stop, come to a standstill",
   "furigana": "たちどまる",
   "example": {
    "jp": "立ち止（たちど）まらないで、前（まえ）に進（すす）んでください。",
    "vi": "Xin đừng dừng lại, hãy đi tiếp phía trước.",
-   "en": "Xin đừng dừng lại, hãy đi tiếp phía trước.",
+   "en": "Please don't stop — keep moving forward.",
    "seg": [
     {
      "t": "立ち止",
@@ -16318,12 +16318,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "横切る",
   "meaning_vi": "Băng qua",
-  "meaning_en": "Băng qua",
+  "meaning_en": "cross, go across",
   "furigana": "よこぎる",
   "example": {
    "jp": "黒（くろ）猫（ねこ）が道（みち）を横切（よこぎ）った。",
    "vi": "Con mèo đen băng qua đường.",
-   "en": "Con mèo đen băng qua đường.",
+   "en": "A black cat crossed the road.",
    "seg": [
     {
      "t": "黒",
@@ -16362,12 +16362,12 @@
   "section_title": "Đi bộ trong thành phố",
   "word": "見かける",
   "meaning_vi": "Trông thấy, bắt gặp",
-  "meaning_en": "Trông thấy, bắt gặp",
+  "meaning_en": "spot, catch sight of",
   "furigana": "みかける",
   "example": {
    "jp": "駅（えき）で知り合（しりあ）いを見（み）かけた。",
    "vi": "Tôi bắt gặp người quen ở ga.",
-   "en": "Tôi bắt gặp người quen ở ga.",
+   "en": "I spotted an acquaintance at the station.",
    "seg": [
     {
      "t": "駅",
@@ -16402,12 +16402,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "行き先",
   "meaning_vi": "Nơi đến, điểm đến",
-  "meaning_en": "Nơi đến, điểm đến",
+  "meaning_en": "destination",
   "furigana": "いきさき / ゆきさき",
   "example": {
    "jp": "急（いそ）いでいたので、行き先（ゆきさき）を間違（まちが）えてしまった。",
    "vi": "Vì vội vàng nên tôi đã bị nhầm mất nơi đến.",
-   "en": "Vì vội vàng nên tôi đã bị nhầm mất nơi đến.",
+   "en": "I was in a hurry and ended up going to the wrong destination.",
    "seg": [
     {
      "t": "急",
@@ -16442,12 +16442,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "往復＜する＞",
   "meaning_vi": "Sự đi và về, khứ hồi",
-  "meaning_en": "Sự đi và về, khứ hồi",
+  "meaning_en": "round trip, there and back",
   "furigana": "おうふく",
   "example": {
    "jp": "会社（かいしゃ）まで往復（おうふく）4時間（じかん）かかる。",
    "vi": "Đến công ty cả đi lẫn về mất 4 tiếng đồng hồ.",
-   "en": "Đến công ty cả đi lẫn về mất 4 tiếng đồng hồ.",
+   "en": "The round trip to work takes four hours.",
    "seg": [
     {
      "t": "会社",
@@ -16482,12 +16482,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "片道",
   "meaning_vi": "Một chiều",
-  "meaning_en": "Một chiều",
+  "meaning_en": "one way",
   "furigana": "かたみち",
   "example": {
    "jp": "東京（とうきょう）まで新幹線（しんかんせん）で、片道（かたみち）1万（まん）円（えん）だ。",
    "vi": "Đi một chiều bằng tàu Shinkansen đến Tokyo mất 10 nghìn yên.",
-   "en": "Đi một chiều bằng tàu Shinkansen đến Tokyo mất 10 nghìn yên.",
+   "en": "It's 10,000 yen one way to Tokyo by bullet train.",
    "seg": [
     {
      "t": "東京",
@@ -16533,12 +16533,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "各駅停車",
   "meaning_vi": "Tàu chậm (đỗ lại tất cả các ga)",
-  "meaning_en": "Tàu chậm (đỗ lại tất cả các ga)",
+  "meaning_en": "local train (stopping at every station)",
   "furigana": "かくえきていしゃ",
   "example": {
    "jp": "時間（じかん）があるときは、各駅（かくえき）停車（ていしゃ）に乗（の）る。",
    "vi": "Khi có thời gian tôi đi tàu chậm.",
-   "en": "Khi có thời gian tôi đi tàu chậm.",
+   "en": "When I have time, I take the local train.",
    "seg": [
     {
      "t": "時間",
@@ -16577,12 +16577,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "急行",
   "meaning_vi": "Tàu tốc hành",
-  "meaning_en": "Tàu tốc hành",
+  "meaning_en": "express train",
   "furigana": "きゅうこう",
   "example": {
    "jp": "急行(きゅうこう)に乗(の)るときは、急行(きゅうこう)料金(りょうきん)が必要(ひつよう)だ。 A駅（えき）までお急（いそ）ぎの方（ほう）は、次（つぎ）の急行（きゅうこう）をご利用（りよう）ください。",
    "vi": "①Khi đi tàu tốc hành, bạn cần phải trả tiền vé tốc hành. ②Quý vị nào muốn đi gấp đến nhà ga A, vui lòng sử dụng tàu tốc hành tiếp theo.",
-   "en": "①Khi đi tàu tốc hành, bạn cần phải trả tiền vé tốc hành. ②Quý vị nào muốn đi gấp đến nhà ga A, vui lòng sử dụng tàu tốc hành tiếp theo.",
+   "en": "(1) When you take the express, you need an express fare. (2) Passengers in a hurry to get to Station A, please use the next express.",
    "seg": [
     {
      "t": "急行",
@@ -16670,12 +16670,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "始発",
   "meaning_vi": "Chuyến đầu tiên, ga đầu",
-  "meaning_en": "Chuyến đầu tiên, ga đầu",
+  "meaning_en": "first train, starting station",
   "furigana": "しはつ",
   "example": {
    "jp": "①この駅（えき）の始発（しはつ）電車（でんしゃ）は、5時半（じはん）ごろだ。 ②ここは中央（ちゅうおう）線（せん）の始発駅（しはつえき）だ。",
    "vi": "①Chuyến tàu đầu tiên của ga này là khoảng 5 giờ rưỡi. ②Đây là ga xuất phát đầu tiên của tuyến Chuo.",
-   "en": "①Chuyến tàu đầu tiên của ga này là khoảng 5 giờ rưỡi. ②Đây là ga xuất phát đầu tiên của tuyến Chuo.",
+   "en": "(1) The first train from this station is around 5:30. (2) This is the starting station of the Chuo Line.",
    "seg": [
     {
      "t": "①この"
@@ -16735,12 +16735,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "終電",
   "meaning_vi": "Chuyến tàu cuối cùng",
-  "meaning_en": "Chuyến tàu cuối cùng",
+  "meaning_en": "last train",
   "furigana": "しゅうでん",
   "example": {
    "jp": "12時半（じはん）の終電（しゅうでん）に間に合（まにあ）わない。",
    "vi": "Không kịp chuyến tàu cuối cùng lúc 12 giờ rưỡi.",
-   "en": "Không kịp chuyến tàu cuối cùng lúc 12 giờ rưỡi.",
+   "en": "I won't make the 12:30 last train.",
    "seg": [
     {
      "t": "12"
@@ -16778,12 +16778,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "終点",
   "meaning_vi": "Ga cuối, trạm cuối",
-  "meaning_en": "Ga cuối, trạm cuối",
+  "meaning_en": "terminus, final stop",
   "furigana": "しゅうてん",
   "example": {
    "jp": "終電（しゅうでん）で寝（ね）てしまって、終点（しゅうてん）まで行（い）った。",
    "vi": "Tôi đã ngủ quên trên chuyến tàu cuối cùng và đi đến tận ga cuối.",
-   "en": "Tôi đã ngủ quên trên chuyến tàu cuối cùng và đi đến tận ga cuối.",
+   "en": "I fell asleep on the last train and rode all the way to the final stop.",
    "seg": [
     {
      "t": "終電",
@@ -16825,12 +16825,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "上り",
   "meaning_vi": "Lên thành phố, tàu đi về hướng trung tâm",
-  "meaning_en": "Lên thành phố, tàu đi về hướng trung tâm",
+  "meaning_en": "inbound (train heading toward Tokyo or the city center)",
   "furigana": "のぼり",
   "example": {
    "jp": "もうすぐ上（のぼ）り電車（でんしゃ）が来（く）る。",
    "vi": "Tàu đi lên thành phố sắp đến.",
-   "en": "Tàu đi lên thành phố sắp đến.",
+   "en": "The inbound train will be here soon.",
    "seg": [
     {
      "t": "もうすぐ"
@@ -16868,12 +16868,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "下り",
   "meaning_vi": "Đi về địa phương, tàu đi ra ngoại thành",
-  "meaning_en": "Đi về địa phương, tàu đi ra ngoại thành",
+  "meaning_en": "outbound (train heading away from Tokyo or the city center)",
   "furigana": "くだり",
   "example": {
    "jp": "下（くだ）りの電車（でんしゃ）に乗（の）って、山（やま）へ行（い）く。",
    "vi": "Tôi đi tàu chiều xuống để đến núi.",
-   "en": "Tôi đi tàu chiều xuống để đến núi.",
+   "en": "I take the outbound train to go to the mountains.",
    "seg": [
     {
      "t": "下",
@@ -16922,12 +16922,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "ＪＲ",
   "meaning_vi": "JR (Công ty đường sắt Nhật Bản)",
-  "meaning_en": "JR (Công ty đường sắt Nhật Bản)",
+  "meaning_en": "JR (Japan Railways)",
   "furigana": "ジェイアール",
   "example": {
    "jp": "私（わたし）はＪＲ（じぇいあーる）を、よく利用（りよう）する。",
    "vi": "Tôi hay sử dụng JR.",
-   "en": "Tôi hay sử dụng JR.",
+   "en": "I use JR often.",
    "seg": [
     {
      "t": "私",
@@ -16962,12 +16962,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "私鉄",
   "meaning_vi": "Tuyến đường sắt tư nhân",
-  "meaning_en": "Tuyến đường sắt tư nhân",
+  "meaning_en": "private railway line",
   "furigana": "してつ",
   "example": {
    "jp": "この近（ちか）くに私鉄（してつ）の駅（えき）はない。",
    "vi": "Ở gần đây không có ga đường sắt tư nhân.",
-   "en": "Ở gần đây không có ga đường sắt tư nhân.",
+   "en": "There's no private railway station near here.",
    "seg": [
     {
      "t": "この"
@@ -17005,12 +17005,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "経由＜する＞",
   "meaning_vi": "Sự đi qua, quá cảnh",
-  "meaning_en": "Sự đi qua, quá cảnh",
+  "meaning_en": "go via, transit through",
   "furigana": "けいゆ",
   "example": {
    "jp": "今日（きょう）は東京（とうきょう）駅（えき）を経由（けいゆ）して、家（いえ）に帰（かえ）る。",
    "vi": "Hôm nay tôi đi qua ga Tokyo để về nhà.",
-   "en": "Hôm nay tôi đi qua ga Tokyo để về nhà.",
+   "en": "Today I'm going home via Tokyo Station.",
    "seg": [
     {
      "t": "今日",
@@ -17063,12 +17063,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "定期券",
   "meaning_vi": "Vé tháng",
-  "meaning_en": "Vé tháng",
+  "meaning_en": "commuter pass, season ticket",
   "furigana": "ていきけん",
   "example": {
    "jp": "定期（ていき）券（けん）は割引（わりびき）があるので、得（とく）だ。",
    "vi": "Vé tháng có giảm giá nên rất lợi.",
-   "en": "Vé tháng có giảm giá nên rất lợi.",
+   "en": "A commuter pass is discounted, so it's good value.",
    "seg": [
     {
      "t": "定期",
@@ -17107,12 +17107,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "有効期限",
   "meaning_vi": "Thời hạn có hiệu lực, hạn sử dụng",
-  "meaning_en": "Thời hạn có hiệu lực, hạn sử dụng",
+  "meaning_en": "expiration date, period of validity",
   "furigana": "ゆうこうきげん",
   "example": {
    "jp": "カードの有効（ゆうこう）期限（きげん）は、来月（らいげつ）までだ。",
    "vi": "Thời hạn có hiệu lực của thẻ là đến tháng sau.",
-   "en": "Thời hạn có hiệu lực của thẻ là đến tháng sau.",
+   "en": "The card is valid until next month.",
    "seg": [
     {
      "t": "カードの"
@@ -17147,12 +17147,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "窓口",
   "meaning_vi": "Quầy giao dịch",
-  "meaning_en": "Quầy giao dịch",
+  "meaning_en": "service window, counter",
   "furigana": "まどぐち",
   "example": {
    "jp": "駅（えき）の窓口（まどぐち）で、旅行（りょこう）の予約（よやく）ができる。",
    "vi": "Có thể đặt tour du lịch tại quầy giao dịch ở nhà ga.",
-   "en": "Có thể đặt tour du lịch tại quầy giao dịch ở nhà ga.",
+   "en": "You can book travel at the station's ticket window.",
    "seg": [
     {
      "t": "駅",
@@ -17194,12 +17194,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "販売＜する＞",
   "meaning_vi": "Sự bán, việc bán hàng",
-  "meaning_en": "Sự bán, việc bán hàng",
+  "meaning_en": "sell, sale",
   "furigana": "はんばい",
   "example": {
    "jp": "窓口（まどぐち）で、記念（きねん）切符（きっぷ）を販売（はんばい）している。",
    "vi": "Tại quầy giao dịch có bán vé kỷ niệm.",
-   "en": "Tại quầy giao dịch có bán vé kỷ niệm.",
+   "en": "They're selling commemorative tickets at the window.",
    "seg": [
     {
      "t": "窓口",
@@ -17238,12 +17238,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "通路側",
   "meaning_vi": "Phía lối đi",
-  "meaning_en": "Phía lối đi",
+  "meaning_en": "aisle side",
   "furigana": "つうろがわ",
   "example": {
    "jp": "新幹線（しんかんせん）では通路（つうろ）側（がわ）に座（すわ）る。",
    "vi": "Trong tàu Shinkansen tôi ngồi phía lối đi.",
-   "en": "Trong tàu Shinkansen tôi ngồi phía lối đi.",
+   "en": "On the bullet train I sit on the aisle side.",
    "seg": [
     {
      "t": "新幹線",
@@ -17282,12 +17282,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "改札",
   "meaning_vi": "Cửa soát vé",
-  "meaning_en": "Cửa soát vé",
+  "meaning_en": "ticket gate",
   "furigana": "かいさつ",
   "example": {
    "jp": "改札（かいさつ）を出（で）たところで待ち合（まちあ）わせた。",
    "vi": "Chúng tôi đã hẹn gặp nhau ở chỗ ra cửa soát vé.",
-   "en": "Chúng tôi đã hẹn gặp nhau ở chỗ ra cửa soát vé.",
+   "en": "We arranged to meet just outside the ticket gate.",
    "seg": [
     {
      "t": "改札",
@@ -17322,12 +17322,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "指定席",
   "meaning_vi": "Ghế chỉ định",
-  "meaning_en": "Ghế chỉ định",
+  "meaning_en": "reserved seat",
   "furigana": "していせき",
   "example": {
    "jp": "旅行（りょこう）の前（まえ）に、指定（してい）席（せき）を予約（よやく）した。",
    "vi": "Trước khi đi du lịch, tôi đã đặt trước ghế chỉ định.",
-   "en": "Trước khi đi du lịch, tôi đã đặt trước ghế chỉ định.",
+   "en": "I reserved a seat before the trip.",
    "seg": [
     {
      "t": "旅行",
@@ -17373,12 +17373,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "車内アナウンス",
   "meaning_vi": "Phát thanh trên tàu",
-  "meaning_en": "Phát thanh trên tàu",
+  "meaning_en": "in-train announcement",
   "furigana": "しゃないアナウンス",
   "example": {
    "jp": "車内（しゃない）アナウンスで、携帯（けいたい）電話（でんわ）のルールを説明（せつめい）している。",
    "vi": "Phát thanh trên tàu đang giải thích về quy định sử dụng điện thoại di động.",
-   "en": "Phát thanh trên tàu đang giải thích về quy định sử dụng điện thoại di động.",
+   "en": "The in-train announcement is explaining the rules about mobile phones.",
    "seg": [
     {
      "t": "車内",
@@ -17417,12 +17417,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "車掌",
   "meaning_vi": "Người soát vé, nhân viên phụ trách trên tàu",
-  "meaning_en": "Người soát vé, nhân viên phụ trách trên tàu",
+  "meaning_en": "conductor",
   "furigana": "しゃしょう",
   "example": {
    "jp": "新幹線（しんかんせん）の車掌（しゃしょう）の制服（せいふく）は、かっこいい。",
    "vi": "Đồng phục của nhân viên trên tàu Shinkansen trông rất đẹp.",
-   "en": "Đồng phục của nhân viên trên tàu Shinkansen trông rất đẹp.",
+   "en": "The bullet train conductors' uniforms look sharp.",
    "seg": [
     {
      "t": "新幹線",
@@ -17457,11 +17457,11 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "ホーム",
   "meaning_vi": "Sân ga, ke ga",
-  "meaning_en": "Sân ga, ke ga",
+  "meaning_en": "platform",
   "example": {
    "jp": "ホームに、たくさんの人（ひと）が並（なら）んでいる。",
    "vi": "Nhiều người đang xếp hàng trên sân ga.",
-   "en": "Nhiều người đang xếp hàng trên sân ga.",
+   "en": "A lot of people are lined up on the platform.",
    "seg": [
     {
      "t": "ホームに、たくさんの"
@@ -17492,12 +17492,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "線路",
   "meaning_vi": "Đường ray, đường tàu",
-  "meaning_en": "Đường ray, đường tàu",
+  "meaning_en": "railway track",
   "furigana": "せんろ",
   "example": {
    "jp": "線路（せんろ）には、ぜったいに降（お）りないでください。",
    "vi": "Tuyệt đối không được xuống đường ray!",
-   "en": "Tuyệt đối không được xuống đường ray!",
+   "en": "Never go down onto the tracks.",
    "seg": [
     {
      "t": "線路",
@@ -17525,12 +17525,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "踏切",
   "meaning_vi": "Đường ngang (chỗ đường bộ giao với đường sắt)",
-  "meaning_en": "Đường ngang (chỗ đường bộ giao với đường sắt)",
+  "meaning_en": "railway crossing",
   "furigana": "ふみきり",
   "example": {
    "jp": "あの踏切（ふみきり）は10分くらい開（ひら）かないことがある。",
    "vi": "Đường ngang đó có khi khoảng 10 phút vẫn chưa mở.",
-   "en": "Đường ngang đó có khi khoảng 10 phút vẫn chưa mở.",
+   "en": "That crossing sometimes doesn't open for about ten minutes.",
    "seg": [
     {
      "t": "あの"
@@ -17561,12 +17561,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "乗り遅れる",
   "meaning_vi": "Trễ tàu xe, lỡ tàu xe",
-  "meaning_en": "Trễ tàu xe, lỡ tàu xe",
+  "meaning_en": "miss (a train or bus)",
   "furigana": "のりおくれる",
   "example": {
    "jp": "道（みち）が込（こ）んで、新幹線（しんかんせん）に乗り遅（のりおく）れた。",
    "vi": "Đường đông nên tôi đã trễ tàu Shinkansen.",
-   "en": "Đường đông nên tôi đã trễ tàu Shinkansen.",
+   "en": "The roads were congested and I missed the bullet train.",
    "seg": [
     {
      "t": "道",
@@ -17608,12 +17608,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "乗り換える",
   "meaning_vi": "Chuyển tàu xe, đổi tàu xe",
-  "meaning_en": "Chuyển tàu xe, đổi tàu xe",
+  "meaning_en": "transfer, change (trains)",
   "furigana": "のりかえる",
   "example": {
    "jp": "次（つぎ）の駅（えき）で、地下鉄（ちかてつ）に乗り換（のりか）える。",
    "vi": "Tôi sẽ chuyển sang tàu điện ngầm ở ga tiếp theo.",
-   "en": "Tôi sẽ chuyển sang tàu điện ngầm ở ga tiếp theo.",
+   "en": "I change to the subway at the next station.",
    "seg": [
     {
      "t": "次",
@@ -17655,12 +17655,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "乗り越す",
   "meaning_vi": "Đi quá (phạm vi vé đã mua)",
-  "meaning_en": "Đi quá (phạm vi vé đã mua)",
+  "meaning_en": "ride past one's paid fare limit",
   "furigana": "のりこす",
   "example": {
    "jp": "乗り越（のりこ）したら、改札（かいさつ）でお金を払（はら）う。",
    "vi": "Nếu đi quá phạm vi vé thì trả tiền ở cửa soát vé.",
-   "en": "Nếu đi quá phạm vi vé thì trả tiền ở cửa soát vé.",
+   "en": "If you ride past your fare limit, you pay at the ticket gate.",
    "seg": [
     {
      "t": "乗り越",
@@ -17695,12 +17695,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "乗り過ごす",
   "meaning_vi": "Đi quá trạm, lỡ trạm",
-  "meaning_en": "Đi quá trạm, lỡ trạm",
+  "meaning_en": "miss one's stop, ride past one's stop",
   "furigana": "のりすごす",
   "example": {
    "jp": "電車（でんしゃ）で寝（ね）てしまって、乗り過（のりす）ごした。",
    "vi": "Ngủ quên trên tàu nên đã đi quá trạm.",
-   "en": "Ngủ quên trên tàu nên đã đi quá trạm.",
+   "en": "I fell asleep on the train and missed my stop.",
    "seg": [
     {
      "t": "電車",
@@ -17735,12 +17735,12 @@
   "section_title": "Tàu điện và tàu Shin kansen",
   "word": "踏む",
   "meaning_vi": "Giẫm, dẫm",
-  "meaning_en": "Giẫm, dẫm",
+  "meaning_en": "step on, tread on",
   "furigana": "ふむ",
   "example": {
    "jp": "電車（でんしゃ）の中（なか）で、となりの人（ひと）の足（あし）を踏（ふ）んでしまった。",
    "vi": "Tôi đã lỡ giẫm vào chân người bên cạnh trong tàu điện.",
-   "en": "Tôi đã lỡ giẫm vào chân người bên cạnh trong tàu điện.",
+   "en": "I accidentally stepped on the foot of the person next to me on the train.",
    "seg": [
     {
      "t": "電車",
@@ -17789,12 +17789,12 @@
   "section_title": "Xe buýt",
   "word": "バス停",
   "meaning_vi": "Bến đỗ xe buýt",
-  "meaning_en": "Bến đỗ xe buýt",
+  "meaning_en": "bus stop",
   "furigana": "バスてい",
   "example": {
    "jp": "私（わたし）のアパートの近（ちか）くに、バス停（ばすてい）がある。",
    "vi": "Gần khu tập thể của tôi có bến đỗ xe buýt.",
-   "en": "Gần khu tập thể của tôi có bến đỗ xe buýt.",
+   "en": "There's a bus stop near my apartment.",
    "seg": [
     {
      "t": "私",
@@ -17829,12 +17829,12 @@
   "section_title": "Xe buýt",
   "word": "乗車口",
   "meaning_vi": "Cửa lên xe",
-  "meaning_en": "Cửa lên xe",
+  "meaning_en": "boarding door",
   "furigana": "じょうしゃぐち",
   "example": {
    "jp": "乗車（じょうしゃ）口（ぐち）でバス代（だい）を払（はら）ってください。",
    "vi": "Hãy trả tiền xe buýt ở cửa lên xe.",
-   "en": "Hãy trả tiền xe buýt ở cửa lên xe.",
+   "en": "Please pay the bus fare at the boarding door.",
    "seg": [
     {
      "t": "乗車",
@@ -17873,12 +17873,12 @@
   "section_title": "Xe buýt",
   "word": "乗客",
   "meaning_vi": "Hành khách",
-  "meaning_en": "Hành khách",
+  "meaning_en": "passenger",
   "furigana": "じょうきゃく",
   "example": {
    "jp": "昼間（ひるま）の乗客（じょうきゃく）は、高齢（こうれい）者（しゃ）が多（おお）い。",
    "vi": "Hành khách ban ngày có nhiều người già.",
-   "en": "Hành khách ban ngày có nhiều người già.",
+   "en": "Many of the daytime passengers are elderly.",
    "seg": [
     {
      "t": "昼間",
@@ -17924,12 +17924,12 @@
   "section_title": "Xe buýt",
   "word": "乗車＜する＞",
   "meaning_vi": "Đi tàu, đi xe",
-  "meaning_en": "Đi tàu, đi xe",
+  "meaning_en": "board, get on (a vehicle)",
   "furigana": "じょうしゃ",
   "example": {
    "jp": "この切符（きっぷ）は、一（いち）日（にち）に何（なん）回（かい）も乗車（じょうしゃ）できる。",
    "vi": "Vé này có thể đi tàu một ngày mấy lần cũng được.",
-   "en": "Vé này có thể đi tàu một ngày mấy lần cũng được.",
+   "en": "With this ticket you can board as many times a day as you like.",
    "seg": [
     {
      "t": "この"
@@ -17982,12 +17982,12 @@
   "section_title": "Xe buýt",
   "word": "発車＜する＞",
   "meaning_vi": "Sự xuất phát",
-  "meaning_en": "Sự xuất phát",
+  "meaning_en": "depart (of a vehicle)",
   "furigana": "はっしゃ",
   "example": {
    "jp": "このバスは10時（じ）に発車（はっしゃ）する。",
    "vi": "Xe buýt này xuất phát lúc 10 giờ.",
-   "en": "Xe buýt này xuất phát lúc 10 giờ.",
+   "en": "This bus departs at ten o'clock.",
    "seg": [
     {
      "t": "このバスは10"
@@ -18018,12 +18018,12 @@
   "section_title": "Xe buýt",
   "word": "通過＜する＞",
   "meaning_vi": "Sự đi qua",
-  "meaning_en": "Sự đi qua",
+  "meaning_en": "pass through, go past",
   "furigana": "つうか",
   "example": {
    "jp": "もうすぐ市役所（しやくしょ）の前（まえ）を通過（つうか）する。",
    "vi": "Sắp sửa đi qua trước cửa tòa thị chính.",
-   "en": "Sắp sửa đi qua trước cửa tòa thị chính.",
+   "en": "We'll pass by the city hall shortly.",
    "seg": [
     {
      "t": "もうすぐ"
@@ -18061,12 +18061,12 @@
   "section_title": "Xe buýt",
   "word": "停車＜する＞",
   "meaning_vi": "Sự dừng xe",
-  "meaning_en": "Sự dừng xe",
+  "meaning_en": "stop (of a vehicle)",
   "furigana": "ていしゃ",
   "example": {
    "jp": "駅前（えきまえ）で停車（ていしゃ）すると、たくさんの人（ひと）が乗（の）ってきた。",
    "vi": "Khi dừng xe trước ga, nhiều người lên xe.",
-   "en": "Khi dừng xe trước ga, nhiều người lên xe.",
+   "en": "When it stopped in front of the station, a lot of people got on.",
    "seg": [
     {
      "t": "駅前",
@@ -18108,12 +18108,12 @@
   "section_title": "Xe buýt",
   "word": "下車＜する＞",
   "meaning_vi": "Sự xuống xe",
-  "meaning_en": "Sự xuống xe",
+  "meaning_en": "get off (a vehicle)",
   "furigana": "げしゃ",
   "example": {
    "jp": "たくさんの人（ひと）が途中（とちゅう）で下車（げしゃ）した。",
    "vi": "Nhiều người xuống xe giữa chừng.",
-   "en": "Nhiều người xuống xe giữa chừng.",
+   "en": "A lot of people got off partway along the route.",
    "seg": [
     {
      "t": "たくさんの"
@@ -18151,12 +18151,12 @@
   "section_title": "Xe buýt",
   "word": "交通費",
   "meaning_vi": "Tiền đi lại",
-  "meaning_en": "Tiền đi lại",
+  "meaning_en": "transportation costs, travel expenses",
   "furigana": "こうつうひ",
   "example": {
    "jp": "日本（にほん）は交通（こうつう）費（ひ）が、とても高（たか）い。",
    "vi": "Tiền đi lại ở Nhật Bản rất đắt.",
-   "en": "Tiền đi lại ở Nhật Bản rất đắt.",
+   "en": "Transportation costs in Japan are very high.",
    "seg": [
     {
      "t": "日本",
@@ -18195,12 +18195,12 @@
   "section_title": "Xe buýt",
   "word": "バス代",
   "meaning_vi": "Tiền xe buýt",
-  "meaning_en": "Tiền xe buýt",
+  "meaning_en": "bus fare",
   "furigana": "バスだい",
   "example": {
    "jp": "今年（ことし）、バス代（だい）が高（たか）くなった。",
    "vi": "Năm nay, tiền xe buýt đã tăng.",
-   "en": "Năm nay, tiền xe buýt đã tăng.",
+   "en": "Bus fares went up this year.",
    "seg": [
     {
      "t": "今年",
@@ -18235,12 +18235,12 @@
   "section_title": "Xe buýt",
   "word": "払い戻す",
   "meaning_vi": "Hoàn trả, lấy lại",
-  "meaning_en": "Hoàn trả, lấy lại",
+  "meaning_en": "refund, pay back",
   "furigana": "はらいもどす",
   "example": {
    "jp": "一度（いちど）払（はら）ったバス代（だい）は、払い戻（はらいもど）せません。",
    "vi": "Tiền xe buýt một khi đã trả rồi thì không lấy lại được.",
-   "en": "Tiền xe buýt một khi đã trả rồi thì không lấy lại được.",
+   "en": "Once you've paid the bus fare, it cannot be refunded.",
    "seg": [
     {
      "t": "一度",
@@ -18279,12 +18279,12 @@
   "section_title": "Xe buýt",
   "word": "定員",
   "meaning_vi": "Số người chở tối đa",
-  "meaning_en": "Số người chở tối đa",
+  "meaning_en": "capacity, maximum number of people",
   "furigana": "ていいん",
   "example": {
    "jp": "このバスの定員（ていいん）は45人（にん）だ。",
    "vi": "Số người chở tối đa của xe buýt này là 45 người.",
-   "en": "Số người chở tối đa của xe buýt này là 45 người.",
+   "en": "This bus has a capacity of 45 people.",
    "seg": [
     {
      "t": "このバスの"
@@ -18315,11 +18315,11 @@
   "section_title": "Xe buýt",
   "word": "つめる",
   "meaning_vi": "Dồn",
-  "meaning_en": "Dồn",
+  "meaning_en": "move up, close the gaps",
   "example": {
    "jp": "込（こ）んでいるときは、席（せき）をつめてお座（すわ）りください。",
    "vi": "Khi đông người thì hãy ngồi dồn chỗ.",
-   "en": "Khi đông người thì hãy ngồi dồn chỗ.",
+   "en": "When it's crowded, please move up and make room as you sit.",
    "seg": [
     {
      "t": "込",
@@ -18354,11 +18354,11 @@
   "section_title": "Xe buýt",
   "word": "がらがらな",
   "meaning_vi": "Vắng tanh",
-  "meaning_en": "Vắng tanh",
+  "meaning_en": "empty, deserted",
   "example": {
    "jp": "この時間（じかん）のバスはがらがらだ。",
    "vi": "Xe buýt giờ này vắng tanh.",
-   "en": "Xe buýt giờ này vắng tanh.",
+   "en": "The bus at this hour is empty.",
    "seg": [
     {
      "t": "この"
@@ -18382,11 +18382,11 @@
   "section_title": "Xe buýt",
   "word": "すく",
   "meaning_vi": "Trống, vắng",
-  "meaning_en": "Trống, vắng",
+  "meaning_en": "become empty, thin out",
   "example": {
    "jp": "駅前（えきまえ）で人（ひと）が降（お）りたので、バスがすいた。",
    "vi": "Trước ga mọi người xuống nên xe buýt trống không.",
-   "en": "Trước ga mọi người xuống nên xe buýt trống không.",
+   "en": "People got off in front of the station, so the bus emptied out.",
    "seg": [
     {
      "t": "駅前",
@@ -18421,12 +18421,12 @@
   "section_title": "Xe buýt",
   "word": "満員",
   "meaning_vi": "Đầy chỗ, hết chỗ, chật",
-  "meaning_en": "Đầy chỗ, hết chỗ, chật",
+  "meaning_en": "full, no seats left",
   "furigana": "まんいん",
   "example": {
    "jp": "雨（あめ）の日（ひ）の朝（あさ）は、満員（まんいん）になることが多（おお）い。",
    "vi": "Nhiều hôm buổi sáng trời mưa là hết chỗ.",
-   "en": "Nhiều hôm buổi sáng trời mưa là hết chỗ.",
+   "en": "On rainy mornings it's often full.",
    "seg": [
     {
      "t": "雨",
@@ -18475,11 +18475,11 @@
   "section_title": "Xe buýt",
   "word": "ぎっしり[と]",
   "meaning_vi": "Chật ních",
-  "meaning_en": "Chật ních",
+  "meaning_en": "packed tightly, crammed",
   "example": {
    "jp": "バスに人（ひと）がぎっしり乗（の）っている。",
    "vi": "Người ngồi chật ních trong xe buýt.",
-   "en": "Người ngồi chật ních trong xe buýt.",
+   "en": "The bus is packed with people.",
    "seg": [
     {
      "t": "バスに"
@@ -18510,12 +18510,12 @@
   "section_title": "Xe buýt",
   "word": "時刻",
   "meaning_vi": "Giờ giấc",
-  "meaning_en": "Giờ giấc",
+  "meaning_en": "time, hour",
   "furigana": "じこく",
   "example": {
    "jp": "日本（にほん）のバスは、時刻（じこく）の通（とお）りに走（はし）る。",
    "vi": "Xe buýt ở Nhật Bản chạy đúng giờ.",
-   "en": "Xe buýt ở Nhật Bản chạy đúng giờ.",
+   "en": "Buses in Japan run right on time.",
    "seg": [
     {
      "t": "日本",
@@ -18557,12 +18557,12 @@
   "section_title": "Xe buýt",
   "word": "優先席",
   "meaning_vi": "Ghế ưu tiên",
-  "meaning_en": "Ghế ưu tiên",
+  "meaning_en": "priority seat",
   "furigana": "ゆうせんせき",
   "example": {
    "jp": "優先（ゆうせん）席（せき）に若（わか）い男性（だんせい）が座（すわ）っている。",
    "vi": "Người đàn ông trẻ đang ngồi ở ghế ưu tiên.",
-   "en": "Người đàn ông trẻ đang ngồi ở ghế ưu tiên.",
+   "en": "A young man is sitting in the priority seat.",
    "seg": [
     {
      "t": "優先",
@@ -18608,12 +18608,12 @@
   "section_title": "Xe buýt",
   "word": "立ち上がる",
   "meaning_vi": "Đứng dậy",
-  "meaning_en": "Đứng dậy",
+  "meaning_en": "stand up, rise",
   "furigana": "たちあがる",
   "example": {
    "jp": "お年寄（としよ）りが乗（の）ってきたので、すぐに立ち上（たちあ）がった。",
    "vi": "Một người già bước lên xe nên tôi đã đứng ngay dậy.",
-   "en": "Một người già bước lên xe nên tôi đã đứng ngay dậy.",
+   "en": "An elderly person got on, so I stood up right away.",
    "seg": [
     {
      "t": "お"
@@ -18651,11 +18651,11 @@
   "section_title": "Xe buýt",
   "word": "ゆずる",
   "meaning_vi": "Nhường",
-  "meaning_en": "Nhường",
+  "meaning_en": "give up (a seat), yield",
   "example": {
    "jp": "お年寄（としよ）りに席（せき）をゆずった。",
    "vi": "Tôi nhường ghế cho người già.",
-   "en": "Tôi nhường ghế cho người già.",
+   "en": "I gave up my seat to an elderly person.",
    "seg": [
     {
      "t": "お"
@@ -18686,11 +18686,11 @@
   "section_title": "Xe buýt",
   "word": "かかる",
   "meaning_vi": "Tốn",
-  "meaning_en": "Tốn",
+  "meaning_en": "take (time), cost",
   "example": {
    "jp": "電車（でんしゃ）よりバスのほうが、時間（じかん）がかかる。",
    "vi": "Xe buýt tốn thời gian hơn tàu điện.",
-   "en": "Xe buýt tốn thời gian hơn tàu điện.",
+   "en": "The bus takes longer than the train.",
    "seg": [
     {
      "t": "電車",
@@ -18718,11 +18718,11 @@
   "section_title": "Xe buýt",
   "word": "ブレーキ",
   "meaning_vi": "Phanh",
-  "meaning_en": "Phanh",
+  "meaning_en": "brake",
   "example": {
    "jp": "急（きゅう）なブレーキで、バスが止（と）まった。",
    "vi": "Xe buýt phanh dừng gấp.",
-   "en": "Xe buýt phanh dừng gấp.",
+   "en": "The bus stopped with a sudden braking.",
    "seg": [
     {
      "t": "急",
@@ -18750,11 +18750,11 @@
   "section_title": "Lái xe",
   "word": "ドライブ＜する＞",
   "meaning_vi": "Sự lái xe dạo chơi",
-  "meaning_en": "Sự lái xe dạo chơi",
+  "meaning_en": "go for a drive",
   "example": {
    "jp": "私（わたし）の趣味（しゅみ）はドライブです。",
    "vi": "Sở thích của tôi là lái xe dạo chơi.",
-   "en": "Sở thích của tôi là lái xe dạo chơi.",
+   "en": "My hobby is going for drives.",
    "seg": [
     {
      "t": "私",
@@ -18782,12 +18782,12 @@
   "section_title": "Lái xe",
   "word": "乗せる",
   "meaning_vi": "Chở, cho lên xe",
-  "meaning_en": "Chở, cho lên xe",
+  "meaning_en": "give (someone) a ride, load on",
   "furigana": "のせる",
   "example": {
    "jp": "友（とも）だちや彼女（かのじょ）を乗（の）せて、よくドライブする。",
    "vi": "Tôi hay lái xe chở bạn bè hay bạn gái đi chơi.",
-   "en": "Tôi hay lái xe chở bạn bè hay bạn gái đi chơi.",
+   "en": "I often go for drives with my friends or girlfriend along.",
    "seg": [
     {
      "t": "友",
@@ -18822,12 +18822,12 @@
   "section_title": "Lái xe",
   "word": "助手席",
   "meaning_vi": "Ghế phụ",
-  "meaning_en": "Ghế phụ",
+  "meaning_en": "passenger seat, front passenger seat",
   "furigana": "じょしゅせき",
   "example": {
    "jp": "彼女（かのじょ）が助手（じょしゅ）席（せき）に座（すわ）ると、どきどきする。",
    "vi": "Cô ấy ngồi ở ghế phụ là tôi cảm thấy hồi hộp.",
-   "en": "Cô ấy ngồi ở ghế phụ là tôi cảm thấy hồi hộp.",
+   "en": "When she sits in the passenger seat, my heart races.",
    "seg": [
     {
      "t": "彼女",
@@ -18866,11 +18866,11 @@
   "section_title": "Lái xe",
   "word": "シートベルト",
   "meaning_vi": "Dây an toàn",
-  "meaning_en": "Dây an toàn",
+  "meaning_en": "seat belt",
   "example": {
    "jp": "シートベルトをするのを、忘（わす）れないでください。",
    "vi": "Đừng quên thắt dây an toàn!",
-   "en": "Đừng quên thắt dây an toàn!",
+   "en": "Please don't forget to fasten your seat belt.",
    "seg": [
     {
      "t": "シートベルトをするのを、"
@@ -18894,11 +18894,11 @@
   "section_title": "Lái xe",
   "word": "カーナビ",
   "meaning_vi": "Thiết bị chỉ đường ô tô",
-  "meaning_en": "Thiết bị chỉ đường ô tô",
+  "meaning_en": "car navigation system",
   "example": {
    "jp": "カーナビがあれば、どこへでも行（い）ける。",
    "vi": "Nếu có thiết bị chỉ đường ô tô thì đâu cũng đi được.",
-   "en": "Nếu có thiết bị chỉ đường ô tô thì đâu cũng đi được.",
+   "en": "With a car navigation system, you can go anywhere.",
    "seg": [
     {
      "t": "カーナビがあれば、どこへでも"
@@ -18922,12 +18922,12 @@
   "section_title": "Lái xe",
   "word": "道路",
   "meaning_vi": "Đường, đường bộ",
-  "meaning_en": "Đường, đường bộ",
+  "meaning_en": "road",
   "furigana": "どうろ",
   "example": {
    "jp": "今日（きょう）は道路（どうろ）が、いつもよりすいている。",
    "vi": "Hôm nay đường vắng hơn mọi khi.",
-   "en": "Hôm nay đường vắng hơn mọi khi.",
+   "en": "The roads are emptier than usual today.",
    "seg": [
     {
      "t": "今日",
@@ -18955,12 +18955,12 @@
   "section_title": "Lái xe",
   "word": "渋滞＜する＞",
   "meaning_vi": "Sự kẹt xe, tắc đường",
-  "meaning_en": "Sự kẹt xe, tắc đường",
+  "meaning_en": "traffic jam, congestion",
   "furigana": "じゅうたい",
   "example": {
    "jp": "連休（れんきゅう）中（ちゅう）、この道路（どうろ）はかなり渋滞（じゅうたい）する。",
    "vi": "Vào ngày nghỉ dài, đường này kẹt xe khá nặng.",
-   "en": "Vào ngày nghỉ dài, đường này kẹt xe khá nặng.",
+   "en": "During the holidays, this road gets pretty congested.",
    "seg": [
     {
      "t": "連休",
@@ -18999,12 +18999,12 @@
   "section_title": "Lái xe",
   "word": "速度",
   "meaning_vi": "Tốc độ",
-  "meaning_en": "Tốc độ",
+  "meaning_en": "speed",
   "furigana": "そくど",
   "example": {
    "jp": "速度（そくど）を守（まも）って走（はし）ろう。",
    "vi": "Hãy chạy đúng tốc độ quy định!",
-   "en": "Hãy chạy đúng tốc độ quy định!",
+   "en": "Let's keep to the speed limit while driving.",
    "seg": [
     {
      "t": "速度",
@@ -19039,12 +19039,12 @@
   "section_title": "Lái xe",
   "word": "高速道路",
   "meaning_vi": "Đường cao tốc",
-  "meaning_en": "Đường cao tốc",
+  "meaning_en": "expressway, highway",
   "furigana": "こうそくどうろ",
   "example": {
    "jp": "高速（こうそく）道路（どうろ）は、あまり利用（りよう）したことがない。",
    "vi": "Tôi không hay sử dụng đường cao tốc lắm.",
-   "en": "Tôi không hay sử dụng đường cao tốc lắm.",
+   "en": "I haven't used the expressway much.",
    "seg": [
     {
      "t": "高速",
@@ -19076,12 +19076,12 @@
   "section_title": "Lái xe",
   "word": "安全＜な＞",
   "meaning_vi": "Sự an toàn (an toàn)",
-  "meaning_en": "Sự an toàn (an toàn)",
+  "meaning_en": "safe, safety",
   "furigana": "あんぜん",
   "example": {
    "jp": "安全（あんぜん）な場所（ばしょ）に車（くるま）を止（と）めた。（ナ形）",
    "vi": "Tôi đỗ xe ở nơi an toàn.",
-   "en": "Tôi đỗ xe ở nơi an toàn.",
+   "en": "I parked the car in a safe place.",
    "seg": [
     {
      "t": "安全",
@@ -19123,12 +19123,12 @@
   "section_title": "Lái xe",
   "word": "列",
   "meaning_vi": "Hàng, dãy",
-  "meaning_en": "Hàng, dãy",
+  "meaning_en": "line, row",
   "furigana": "れつ",
   "example": {
    "jp": "ひどい渋滞（じゅうたい）で、車（くるま）の長（なが）い列（れつ）ができている。",
    "vi": "Đường tắc nặng, xe nối thành hàng dài.",
-   "en": "Đường tắc nặng, xe nối thành hàng dài.",
+   "en": "The traffic is terrible and a long line of cars has formed.",
    "seg": [
     {
      "t": "ひどい"
@@ -19173,12 +19173,12 @@
   "section_title": "Lái xe",
   "word": "割り込む",
   "meaning_vi": "Chen ngang, chen vào",
-  "meaning_en": "Chen ngang, chen vào",
+  "meaning_en": "cut in, butt in",
   "furigana": "わりこむ",
   "example": {
    "jp": "後（うし）ろの車（くるま）が、私（わたし）の前（まえ）に割り込（わりこ）んできた。",
    "vi": "Xe đằng sau chen lên trước tôi.",
-   "en": "Xe đằng sau chen lên trước tôi.",
+   "en": "The car behind me cut in front of me.",
    "seg": [
     {
      "t": "後",
@@ -19227,12 +19227,12 @@
   "section_title": "Lái xe",
   "word": "駐車違反",
   "meaning_vi": "Vi phạm quy định đỗ xe",
-  "meaning_en": "Vi phạm quy định đỗ xe",
+  "meaning_en": "parking violation",
   "furigana": "ちゅうしゃいはん",
   "example": {
    "jp": "駐車（ちゅうしゃ）違反（いはん）をしたら、お金を払（はら）わなければならない。",
    "vi": "Nếu vi phạm quy định đỗ xe sẽ phải nộp phạt.",
-   "en": "Nếu vi phạm quy định đỗ xe sẽ phải nộp phạt.",
+   "en": "If you commit a parking violation, you have to pay a fine.",
    "seg": [
     {
      "t": "駐車",
@@ -19264,12 +19264,12 @@
   "section_title": "Lái xe",
   "word": "スピード違反",
   "meaning_vi": "Vi phạm tốc độ",
-  "meaning_en": "Vi phạm tốc độ",
+  "meaning_en": "speeding violation",
   "furigana": "スピードいはん",
   "example": {
    "jp": "スピード違反（いはん）をしたことがない。",
    "vi": "Tôi chưa từng vi phạm tốc độ.",
-   "en": "Tôi chưa từng vi phạm tốc độ.",
+   "en": "I've never been caught speeding.",
    "seg": [
     {
      "t": "スピード"
@@ -19293,12 +19293,12 @@
   "section_title": "Lái xe",
   "word": "飲酒運転",
   "meaning_vi": "Lái xe khi đã uống rượu bia",
-  "meaning_en": "Lái xe khi đã uống rượu bia",
+  "meaning_en": "drunk driving",
   "furigana": "いんしゅうんてん",
   "example": {
    "jp": "飲酒（いんしゅ）運転（うんてん）をしてはいけません。",
    "vi": "Không được lái xe khi đã uống rượu bia.",
-   "en": "Không được lái xe khi đã uống rượu bia.",
+   "en": "You must not drink and drive.",
    "seg": [
     {
      "t": "飲酒",
@@ -19323,11 +19323,11 @@
   "section_title": "Lái xe",
   "word": "アクセル",
   "meaning_vi": "Chân ga, bàn đạp ga",
-  "meaning_en": "Chân ga, bàn đạp ga",
+  "meaning_en": "accelerator, gas pedal",
   "example": {
    "jp": "アクセルを踏（ふ）んで、スピードを上（あ）げた。",
    "vi": "Tôi đạp ga tăng tốc.",
-   "en": "Tôi đạp ga tăng tốc.",
+   "en": "I stepped on the accelerator and sped up.",
    "seg": [
     {
      "t": "アクセルを"
@@ -19358,11 +19358,11 @@
   "section_title": "Lái xe",
   "word": "カーブ",
   "meaning_vi": "Khúc cua, đoạn đường cong",
-  "meaning_en": "Khúc cua, đoạn đường cong",
+  "meaning_en": "curve, bend",
   "example": {
    "jp": "ここから長（なが）いカーブの道（みち）が続（つづ）く。",
    "vi": "Từ đây trở đi sẽ là đoạn đường cong kéo dài liên tiếp.",
-   "en": "Từ đây trở đi sẽ là đoạn đường cong kéo dài liên tiếp.",
+   "en": "From here on, a long curving road continues.",
    "seg": [
     {
      "t": "ここから"
@@ -19400,11 +19400,11 @@
   "section_title": "Lái xe",
   "word": "ゆるい",
   "meaning_vi": "Lỏng, thoai thoải",
-  "meaning_en": "Lỏng, thoai thoải",
+  "meaning_en": "loose, gentle (of a slope or curve)",
   "example": {
    "jp": "①シートベルトがゆるいと、危険（きけん）だ。 ②ゆるいカーブの道（みち）を走（はし）る。",
    "vi": "①Dây an toàn mà lỏng lẻo thì nguy hiểm. ②Chạy trên đoạn đường có khúc cua thoai thoải.",
-   "en": "①Dây an toàn mà lỏng lẻo thì nguy hiểm. ②Chạy trên đoạn đường có khúc cua thoai thoải.",
+   "en": "(1) It's dangerous if your seat belt is loose. (2) I drive along a road with gentle curves.",
    "seg": [
     {
      "t": "①シートベルトがゆるいと、"
@@ -19442,11 +19442,11 @@
   "section_title": "Lái xe",
   "word": "パンク＜する＞",
   "meaning_vi": "Thủng lốp, nổ lốp",
-  "meaning_en": "Thủng lốp, nổ lốp",
+  "meaning_en": "puncture, flat tire",
   "example": {
    "jp": "彼（かれ）の車（くるま）は、何（なに）かを踏（ふ）んでパンクした。",
    "vi": "Xe của anh ấy đè lên cái gì đó và bị thủng lốp.",
-   "en": "Xe của anh ấy đè lên cái gì đó và bị thủng lốp.",
+   "en": "His car ran over something and got a flat tire.",
    "seg": [
     {
      "t": "彼",
@@ -19488,12 +19488,12 @@
   "section_title": "Lái xe",
   "word": "一方通行",
   "meaning_vi": "Đường một chiều",
-  "meaning_en": "Đường một chiều",
+  "meaning_en": "one-way traffic",
   "furigana": "いっぽうつうこう",
   "example": {
    "jp": "この道（みち）が一方（いっぽう）通行（つうこう）だと知（し）らなかった。",
    "vi": "Tôi không hề biết đây là đường một chiều.",
-   "en": "Tôi không hề biết đây là đường một chiều.",
+   "en": "I had no idea this road was one way.",
    "seg": [
     {
      "t": "この"
@@ -19535,12 +19535,12 @@
   "section_title": "Lái xe",
   "word": "通行止め",
   "meaning_vi": "Cấm lưu thông, đường bị chặn",
-  "meaning_en": "Cấm lưu thông, đường bị chặn",
+  "meaning_en": "road closed, no through traffic",
   "furigana": "つうこうどめ",
   "example": {
    "jp": "ここから先（さき）は通行止（つうこうど）めです。",
    "vi": "Từ đây trở đi đường bị cấm lưu thông.",
-   "en": "Từ đây trở đi đường bị cấm lưu thông.",
+   "en": "The road is closed beyond this point.",
    "seg": [
     {
      "t": "ここから"
@@ -19571,12 +19571,12 @@
   "section_title": "Lái xe",
   "word": "運転免許証",
   "meaning_vi": "Bằng lái xe",
-  "meaning_en": "Bằng lái xe",
+  "meaning_en": "driver's license",
   "furigana": "うんてんめんきょしょう",
   "example": {
    "jp": "運転（うんてん）免許（めんきょ）証（しょう）は常（つね）に持（も）っていなければならない。",
    "vi": "Phải luôn mang theo bằng lái xe.",
-   "en": "Phải luôn mang theo bằng lái xe.",
+   "en": "You must carry your driver's license with you at all times.",
    "seg": [
     {
      "t": "運転",
@@ -19619,11 +19619,11 @@
   "section_title": "Lái xe",
   "word": "ぶつかる",
   "meaning_vi": "Va chạm, đâm vào",
-  "meaning_en": "Va chạm, đâm vào",
+  "meaning_en": "collide, crash into",
   "example": {
    "jp": "交差点（こうさてん）で、車（くるま）と自転車（じてんしゃ）がぶつかった。",
    "vi": "Xe ô tô và xe đạp đâm nhau ở ngã tư.",
-   "en": "Xe ô tô và xe đạp đâm nhau ở ngã tư.",
+   "en": "A car and a bicycle collided at the intersection.",
    "seg": [
     {
      "t": "交差点",
@@ -19658,11 +19658,11 @@
   "section_title": "Lái xe",
   "word": "ひく",
   "meaning_vi": "Cán, đâm phải",
-  "meaning_en": "Cán, đâm phải",
+  "meaning_en": "run over, hit (with a vehicle)",
   "example": {
    "jp": "車（くるま）の前（まえ）に犬（いぬ）がいたので、ひかないように注意（ちゅうい）した。",
    "vi": "Có một con chó ở trước ô tô nên tôi đã chú ý để không cán phải.",
-   "en": "Có một con chó ở trước ô tô nên tôi đã chú ý để không cán phải.",
+   "en": "There was a dog in front of the car, so I was careful not to run it over.",
    "seg": [
     {
      "t": "車",
@@ -19704,11 +19704,11 @@
   "section_title": "Lái xe",
   "word": "ハンドル",
   "meaning_vi": "Tay lái, vô lăng",
-  "meaning_en": "Tay lái, vô lăng",
+  "meaning_en": "steering wheel",
   "example": {
    "jp": "初（はじ）めてハンドルをにぎったときは、緊張（きんちょう）した。",
    "vi": "Tôi rất căng thẳng khi lần đầu tiên nắm vô lăng.",
-   "en": "Tôi rất căng thẳng khi lần đầu tiên nắm vô lăng.",
+   "en": "I was nervous the first time I gripped the steering wheel.",
    "seg": [
     {
      "t": "初",
@@ -19736,11 +19736,11 @@
   "section_title": "Lái xe",
   "word": "トランク",
   "meaning_vi": "Cốp xe, thùng xe",
-  "meaning_en": "Cốp xe, thùng xe",
+  "meaning_en": "trunk (of a car)",
   "example": {
    "jp": "車（くるま）のトランクに、ゴルフの道具（どうぐ）が入（はい）っている。",
    "vi": "Trong cốp xe ô tô có dụng cụ chơi gôn.",
-   "en": "Trong cốp xe ô tô có dụng cụ chơi gôn.",
+   "en": "There's golf equipment in the car's trunk.",
    "seg": [
     {
      "t": "車",
@@ -19775,11 +19775,11 @@
   "section_title": "Lái xe",
   "word": "エンジン",
   "meaning_vi": "Động cơ",
-  "meaning_en": "Động cơ",
+  "meaning_en": "engine",
   "example": {
    "jp": "この車（くるま）のエンジンの音（おと）は、ちょっとおかしい。",
    "vi": "Tiếng động cơ xe này hơi lạ.",
-   "en": "Tiếng động cơ xe này hơi lạ.",
+   "en": "The sound of this car's engine is a little odd.",
    "seg": [
     {
      "t": "この"
@@ -19810,12 +19810,12 @@
   "section_title": "Lái xe",
   "word": "中古車",
   "meaning_vi": "Xe ô tô cũ",
-  "meaning_en": "Xe ô tô cũ",
+  "meaning_en": "used car, secondhand car",
   "furigana": "ちゅうこしゃ",
   "example": {
    "jp": "いろいろ考（かんが）えて、中古（ちゅうこ）車（しゃ）を買（か）うことにした。",
    "vi": "Nghĩ đi nghĩ lại, tôi đã quyết định mua xe ô tô cũ.",
-   "en": "Nghĩ đi nghĩ lại, tôi đã quyết định mua xe ô tô cũ.",
+   "en": "After thinking it over, I decided to buy a used car.",
    "seg": [
     {
      "t": "いろいろ"
@@ -19857,11 +19857,11 @@
   "section_title": "Lái xe",
   "word": "トラック",
   "meaning_vi": "Xe tải",
-  "meaning_en": "Xe tải",
+  "meaning_en": "truck",
   "example": {
    "jp": "トラックが、私（わたし）の車（くるま）を追い越（おいこ）していった。",
    "vi": "Chiếc xe tải đã vượt xe tôi.",
-   "en": "Chiếc xe tải đã vượt xe tôi.",
+   "en": "A truck overtook my car.",
    "seg": [
     {
      "t": "トラックが、"
@@ -19899,12 +19899,12 @@
   "section_title": "Trường học",
   "word": "入学式",
   "meaning_vi": "Lễ nhập học",
-  "meaning_en": "Lễ nhập học",
+  "meaning_en": "entrance ceremony",
   "furigana": "にゅうがくしき",
   "example": {
    "jp": "入学（にゅうがく）式（しき）のころ、さくらが咲（さ）く。",
    "vi": "Hoa anh đào nở vào khoảng thời gian lễ nhập học.",
-   "en": "Hoa anh đào nở vào khoảng thời gian lễ nhập học.",
+   "en": "The cherry blossoms bloom around the time of the entrance ceremony.",
    "seg": [
     {
      "t": "入学",
@@ -19936,12 +19936,12 @@
   "section_title": "Trường học",
   "word": "卒業式",
   "meaning_vi": "Lễ tốt nghiệp",
-  "meaning_en": "Lễ tốt nghiệp",
+  "meaning_en": "graduation ceremony",
   "furigana": "そつぎょうしき",
   "example": {
    "jp": "卒業（そつぎょう）式（しき）の日（ひ）、大（おお）きな声（こえ）で泣（な）いた。",
    "vi": "Tôi đã khóc to trong ngày lễ tốt nghiệp.",
-   "en": "Tôi đã khóc to trong ngày lễ tốt nghiệp.",
+   "en": "On the day of the graduation ceremony, I cried out loud.",
    "seg": [
     {
      "t": "卒業",
@@ -19994,12 +19994,12 @@
   "section_title": "Trường học",
   "word": "通学＜する＞",
   "meaning_vi": "Sự đi học",
-  "meaning_en": "Sự đi học",
+  "meaning_en": "commute to school",
   "furigana": "つうがく",
   "example": {
    "jp": "私（わたし）はバスと電車（でんしゃ）で通学（つうがく）しています。",
    "vi": "Tôi đi học bằng xe buýt và tàu điện.",
-   "en": "Tôi đi học bằng xe buýt và tàu điện.",
+   "en": "I commute to school by bus and train.",
    "seg": [
     {
      "t": "私",
@@ -20034,12 +20034,12 @@
   "section_title": "Trường học",
   "word": "学年",
   "meaning_vi": "Năm học, khối lớp",
-  "meaning_en": "Năm học, khối lớp",
+  "meaning_en": "school year, grade level",
   "furigana": "がくねん",
   "example": {
    "jp": "日本（にほん）の小学校（しょうがっこう）は6学年（がくねん）、中学校（ちゅうがっこう）は3学年（がくねん）だ。",
    "vi": "Trường tiểu học của Nhật có 6 khối lớp, trường cấp hai có 3 khối lớp.",
-   "en": "Trường tiểu học của Nhật có 6 khối lớp, trường cấp hai có 3 khối lớp.",
+   "en": "Elementary school in Japan has six grades, and junior high has three.",
    "seg": [
     {
      "t": "日本",
@@ -20088,12 +20088,12 @@
   "section_title": "Trường học",
   "word": "学期",
   "meaning_vi": "Học kỳ",
-  "meaning_en": "Học kỳ",
+  "meaning_en": "school term, semester",
   "furigana": "がっき",
   "example": {
    "jp": "夏休（なつやす）みが終（お）わって、新（あたら）しい学期（がっき）が始（はじ）まる。",
    "vi": "Kỳ nghỉ hè kết thúc, học kỳ mới bắt đầu.",
-   "en": "Kỳ nghỉ hè kết thúc, học kỳ mới bắt đầu.",
+   "en": "Summer vacation ends and the new term begins.",
    "seg": [
     {
      "t": "夏休",
@@ -20142,12 +20142,12 @@
   "section_title": "Trường học",
   "word": "欠席＜する＞",
   "meaning_vi": "Vắng mặt, nghỉ",
-  "meaning_en": "Vắng mặt, nghỉ",
+  "meaning_en": "be absent",
   "furigana": "けっせき",
   "example": {
    "jp": "授業（じゅぎょう）を欠席（けっせき）するときは、学校（がっこう）に連絡（れんらく）してください。",
    "vi": "Khi nghỉ học hãy thông báo cho nhà trường biết!",
-   "en": "Khi nghỉ học hãy thông báo cho nhà trường biết!",
+   "en": "When you're going to miss class, please contact the school.",
    "seg": [
     {
      "t": "授業",
@@ -20189,12 +20189,12 @@
   "section_title": "Trường học",
   "word": "遅れる",
   "meaning_vi": "Đến trễ, đến muộn",
-  "meaning_en": "Đến trễ, đến muộn",
+  "meaning_en": "be late, be delayed",
   "furigana": "おくれる",
   "example": {
    "jp": "朝（あさ）の電車（でんしゃ）が30分も遅（おく）れた。",
    "vi": "Tàu điện buổi sáng đến trễ những 30 phút.",
-   "en": "Tàu điện buổi sáng đến trễ những 30 phút.",
+   "en": "The morning train was a full thirty minutes late.",
    "seg": [
     {
      "t": "朝",
