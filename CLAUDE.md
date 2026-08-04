@@ -265,4 +265,17 @@ npm run dev      # start dev server at http://localhost:1997
 npm run build    # TypeScript check + Vite build
 npm run lint     # ESLint
 npm run preview  # preview production build
+npm run deploy   # build + deploy to Cloudflare Pages
 ```
+
+---
+
+## Deployment
+- **Host:** Cloudflare Pages (Wrangler CLI, direct upload — not git-connected)
+- **Project name:** `kamaru-jlpt` (note: *not* `kamaru`)
+- **Live URL:** https://kamaru-jlpt.pages.dev
+- **SPA routing:** `public/_redirects` (`/* /index.html 200`) — required, or
+  deep links like `/quiz/grammar` 404
+- Requires `npx wrangler login` once per machine; the deploy needs
+  `pages (write)` scope.
+- If the working tree has untracked files, append `--commit-dirty=true`.
