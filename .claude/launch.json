@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "kamaru-dev",
+      "url": "http://localhost:1997",
+      "port": 1997
+    }
+  ]
+}

@@ -5,10 +5,10 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { ResultsScreen } from '@/components/quiz/ResultsScreen'
 import { ListeningPlayer } from '@/components/quiz/ListeningPlayer'
 import { SCENE_MAP } from '@/components/scenes'
+import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { loadListeningQuestions, generateListeningQuiz } from '@/lib/listening'
-import { supabase } from '@/lib/supabase'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import type { ListeningQuestion } from '@/types/listening'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
@@ -95,8 +95,7 @@ export function ListeningQuiz() {
       setPhase('results')
       if (user) {
         const finalResults = results
-        await supabase.from('quiz_attempts').insert({
-          user_id: user.id,
+        await storeFor(user).addQuizAttempt(user.id, {
           quiz_type: 'listening',
           score: finalResults.filter(r => r.isCorrect).length,
           total_questions: finalResults.length,

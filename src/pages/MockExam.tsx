@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
+import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { generateMockExam, calculateMockScore } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
-import { supabase } from '@/lib/supabase'
 import { useNavigate } from 'react-router-dom'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import confetti from 'canvas-confetti'
@@ -69,8 +69,7 @@ export function MockExam() {
     }
 
     if (user) {
-      await supabase.from('mock_exam_attempts').insert({
-        user_id: user.id,
+      await storeFor(user).addMockAttempt(user.id, {
         vocab_score: vCorrect,
         grammar_score: gCorrect,
         reading_score: rCorrect,
@@ -78,8 +77,7 @@ export function MockExam() {
         passed: score.passed,
         time_taken_seconds: finalElapsed,
       })
-      await supabase.from('quiz_attempts').insert({
-        user_id: user.id,
+      await storeFor(user).addQuizAttempt(user.id, {
         quiz_type: 'mock',
         score: vCorrect + gCorrect + rCorrect,
         total_questions: vocabResults.length + grammarResults.length + res.length,

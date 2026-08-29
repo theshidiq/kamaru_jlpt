@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { supabase } from '@/lib/supabase'
+import { loadLocalProfile } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 
 export function useAuth() {
@@ -7,6 +8,15 @@ export function useAuth() {
 
   useEffect(() => {
     let resolved = false
+
+    // Guests resolve entirely from localStorage — no network, no 3s timeout.
+    const localProfile = loadLocalProfile()
+    if (localProfile) {
+      setUser(localProfile)
+      loadWordStatuses(localProfile.id)
+      setAuthReady()
+      return
+    }
 
     async function resolveSession(userId: string | undefined, userEmail?: string, userName?: string) {
       if (resolved) return

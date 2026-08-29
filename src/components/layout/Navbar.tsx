@@ -5,9 +5,11 @@ import { useState, useRef, useEffect } from 'react'
 import { RiHome4Line, RiBookOpenLine, RiPencilLine, RiBarChart2Line, RiTargetLine, RiSunLine, RiMoonLine } from '@remixicon/react'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
+import { isGuest, clearLocalProfile, exportProgress, importProgress } from '@/lib/storage'
+import toast from 'react-hot-toast'
 
 export function Navbar() {
-  const { user, darkMode, toggleDarkMode, resetWordStatuses, preferredLanguage, setLanguage } = useAppStore()
+  const { user, darkMode, toggleDarkMode, resetWordStatuses, preferredLanguage, setLanguage, setUser } = useAppStore()
   const lang = preferredLanguage
   const navigate = useNavigate()
   const location = useLocation()
@@ -45,10 +47,52 @@ export function Navbar() {
     return () => document.removeEventListener('mousedown', handleClick)
   }, [menuOpen])
 
+  const guest = isGuest(user)
+
   async function handleLogout() {
     setMenuOpen(false)
-    await supabase.auth.signOut()
+    if (guest) {
+      if (!confirm(lang === 'id'
+        ? 'Keluar mode tamu? Progres tetap tersimpan di perangkat ini.'
+        : 'Exit guest mode? Your progress stays saved on this device.')) return
+      clearLocalProfile()
+      setUser(null)
+    } else {
+      await supabase.auth.signOut()
+    }
     navigate('/login')
+  }
+
+  function handleExport() {
+    setMenuOpen(false)
+    const payload = exportProgress()
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `kamaru-backup-${new Date().toISOString().split('T')[0]}.json`
+    a.click()
+    URL.revokeObjectURL(url)
+    toast.success(t('exportDone', lang))
+  }
+
+  function handleImport() {
+    setMenuOpen(false)
+    const input = document.createElement('input')
+    input.type = 'file'
+    input.accept = 'application/json,.json'
+    input.onchange = async () => {
+      const file = input.files?.[0]
+      if (!file) return
+      try {
+        importProgress(JSON.parse(await file.text()))
+        toast.success(t('importDone', lang))
+        window.location.reload()
+      } catch {
+        toast.error(t('importFailed', lang))
+      }
+    }
+    input.click()
   }
 
   async function handleResetScore() {
@@ -151,6 +195,26 @@ export function Navbar() {
                     </button>
 
                     <button
+                      onClick={handleExport}
+                      className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                    >
+                      <svg className="w-4 h-4 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                      {t('exportProgress', lang)}
+                    </button>
+
+                    <button
+                      onClick={handleImport}
+                      className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                    >
+                      <svg className="w-4 h-4 text-sky-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                      </svg>
+                      {t('importProgress', lang)}
+                    </button>
+
+                    <button
                       onClick={handleResetScore}
                       disabled={resetting}
                       className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors disabled:opacity-50"
@@ -170,7 +234,7 @@ export function Navbar() {
                       <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                       </svg>
-                      {t('signOut', lang)}
+                      {guest ? t('exitGuest', lang) : t('signOut', lang)}
                     </button>
                   </div>
                 </div>

@@ -3,6 +3,7 @@ import { loadVocab, getTodaySectionForLevel, buildChapterMap, LEVEL_CONFIG, DEFA
 import type { VocabWord, ChapterInfo } from '@/types/vocab'
 import type { UserProfile, WordStatus, JlptLevel } from '@/types/user'
 import { supabase } from '@/lib/supabase'
+import { storeFor, isGuest, saveLocalProfile } from '@/lib/storage'
 
 interface AppState {
   // Vocab
@@ -74,17 +75,23 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ preferredLanguage: lang })
     const { user } = get()
     if (user) {
-      await supabase.from('profiles').update({ preferred_language: lang }).eq('id', user.id)
-      set({ user: { ...user, preferred_language: lang } })
+      const updated = { ...user, preferred_language: lang }
+      if (isGuest(user)) saveLocalProfile(updated)
+      else await supabase.from('profiles').update({ preferred_language: lang }).eq('id', user.id)
+      set({ user: updated })
     }
   },
 
   setJlptLevel: async (level: JlptLevel) => {
     const { user } = get()
     if (!user) return
-    const { error } = await supabase.from('profiles').update({ jlpt_level: level }).eq('id', user.id)
-    if (error) throw new Error('Failed to update level: ' + error.message)
     const updatedUser = { ...user, jlpt_level: level }
+    if (isGuest(user)) {
+      saveLocalProfile(updatedUser)
+    } else {
+      const { error } = await supabase.from('profiles').update({ jlpt_level: level }).eq('id', user.id)
+      if (error) throw new Error('Failed to update level: ' + error.message)
+    }
     const t = getTodaySectionForLevel(level, user.study_start_date)
     // Reset vocab cache for the new level
     set({
@@ -127,39 +134,28 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   loadWordStatuses: async (userId: string) => {
-    const { data } = await supabase
-      .from('word_status')
-      .select('word, status')
-      .eq('user_id', userId)
-    if (data) {
-      const statuses: Record<string, WordStatus> = {}
-      for (const row of data) statuses[row.word] = row.status
-      set({ wordStatuses: statuses })
-    }
+    const statuses = await storeFor(get().user ?? { id: userId } as UserProfile).loadWordStatuses(userId)
+    set({ wordStatuses: statuses })
   },
 
   setWordStatus: async (word, status, chapter, section) => {
     const { user } = get()
     if (!user) return
     set(s => ({ wordStatuses: { ...s.wordStatuses, [word]: status } }))
-    await supabase.from('word_status').upsert(
-      { user_id: user.id, word, status, chapter, section, updated_at: new Date().toISOString() },
-      { onConflict: 'user_id,word' },
-    )
+    await storeFor(user).setWordStatus(user.id, word, status, chapter, section)
   },
 
   resetWordStatuses: async () => {
     const { user } = get()
     if (!user) return
     const todayStr = new Date().toISOString().split('T')[0]
-    await Promise.all([
-      supabase.from('word_status').delete().eq('user_id', user.id),
-      supabase.from('quiz_attempts').delete().eq('user_id', user.id),
-      supabase.from('mock_exam_attempts').delete().eq('user_id', user.id),
-      supabase.from('daily_sessions').delete().eq('user_id', user.id),
-      supabase.from('profiles').update({ study_start_date: todayStr }).eq('id', user.id),
-    ])
+    await storeFor(user).reset(user.id)
     const updatedUser = { ...user, study_start_date: todayStr }
+    if (isGuest(user)) {
+      saveLocalProfile(updatedUser)
+    } else {
+      await supabase.from('profiles').update({ study_start_date: todayStr }).eq('id', user.id)
+    }
     const level = user.jlpt_level ?? DEFAULT_LEVEL
     const t = getTodaySectionForLevel(level, todayStr)
     set({

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { supabase } from '@/lib/supabase'
+import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 
 export interface DailySession {
@@ -43,22 +43,11 @@ export function useProgress(): ProgressData {
     if (!user) return
 
     async function fetchProgress() {
-      const [sessionsRes, attemptsRes] = await Promise.all([
-        supabase
-          .from('daily_sessions')
-          .select('session_date, self_rating, chapter, section')
-          .eq('user_id', user!.id)
-          .order('session_date', { ascending: false }),
-        supabase
-          .from('quiz_attempts')
-          .select('id, quiz_type, score, total_questions, time_taken_seconds, created_at, chapter')
-          .eq('user_id', user!.id)
-          .order('created_at', { ascending: false })
-          .limit(20),
+      const store = storeFor(user)
+      const [sessions, recentAttempts] = await Promise.all([
+        store.getSessions(user!.id),
+        store.getAttempts(user!.id, 20),
       ])
-
-      const sessions: DailySession[] = sessionsRes.data ?? []
-      const recentAttempts: QuizAttempt[] = attemptsRes.data ?? []
 
       // Calculate streak
       let streak = 0

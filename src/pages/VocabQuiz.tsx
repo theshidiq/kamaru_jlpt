@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
+import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 import { useProgress } from '@/hooks/useProgress'
 import { generateVocabQuiz } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
 import { ResultsScreen } from '@/components/quiz/ResultsScreen'
-import { supabase } from '@/lib/supabase'
 import { t } from '@/lib/i18n'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 
@@ -41,8 +41,7 @@ export function VocabQuiz() {
     setPhase('results')
     if (user) {
       const correct = res.filter(r => r.isCorrect).length
-      await supabase.from('quiz_attempts').insert({
-        user_id: user.id,
+      await storeFor(user).addQuizAttempt(user.id, {
         quiz_type: 'vocab',
         chapter,
         score: correct,

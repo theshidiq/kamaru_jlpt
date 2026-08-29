@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '@/lib/supabase'
 import { useAppStore } from '@/store/useAppStore'
+import { createGuestProfile } from '@/lib/storage'
+import { t } from '@/lib/i18n'
 import toast from 'react-hot-toast'
 import { motion } from 'framer-motion'
 
@@ -11,7 +13,8 @@ const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID as string | undef
 
 export function Login() {
   const navigate = useNavigate()
-  const { user, authReady } = useAppStore()
+  const { user, authReady, setUser, preferredLanguage: lang } = useAppStore()
+  const [guestName, setGuestName] = useState('')
   const [mode, setMode] = useState<Mode>('login')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -109,6 +112,12 @@ export function Login() {
     }
   }
 
+  function handleGuest() {
+    const profile = createGuestProfile(guestName)
+    setUser(profile)
+    navigate('/', { replace: true })
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-gray-950 dark:to-indigo-950 flex items-center justify-center p-4">
       <motion.div
@@ -124,6 +133,36 @@ export function Login() {
           </div>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white">華丸</h1>
           <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">JLPT Study App</p>
+        </div>
+
+        {/* Guest mode — the default, fastest path */}
+        <div className="mb-6">
+          <input
+            type="text"
+            value={guestName}
+            onChange={e => setGuestName(e.target.value)}
+            placeholder={t('guestNamePlaceholder', lang)}
+            maxLength={30}
+            className="w-full border border-gray-300 dark:border-gray-600 rounded-lg py-2.5 px-4 text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          />
+          <button
+            onClick={handleGuest}
+            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition-colors"
+          >
+            {t('continueAsGuest', lang)}
+          </button>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
+            {t('guestNote', lang)}
+          </p>
+        </div>
+
+        <div className="relative mb-5">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-200 dark:border-gray-700" />
+          </div>
+          <div className="relative flex justify-center text-xs text-gray-400 dark:text-gray-500">
+            <span className="bg-white dark:bg-gray-900 px-2">{t('orSignIn', lang)}</span>
+          </div>
         </div>
 
         {/* Google OAuth button */}

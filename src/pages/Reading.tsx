@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
+import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { generateReadingQuiz } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
 import { ResultsScreen } from '@/components/quiz/ResultsScreen'
-import { supabase } from '@/lib/supabase'
 import type { QuizResult } from '@/types/quiz'
 import { useNavigate } from 'react-router-dom'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
@@ -26,8 +26,7 @@ export function Reading() {
     setElapsed(el)
     setPhase('results')
     if (user) {
-      await supabase.from('quiz_attempts').insert({
-        user_id: user.id,
+      await storeFor(user).addQuizAttempt(user.id, {
         quiz_type: 'reading',
         score: res.filter(r => r.isCorrect).length,
         total_questions: res.length,

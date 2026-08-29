@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
+import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
 import { getSection, getMeaning } from '@/lib/vocab'
@@ -8,7 +9,6 @@ import { t } from '@/lib/i18n'
 import { generateVocabQuiz } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
 import { ResultsScreen } from '@/components/quiz/ResultsScreen'
-import { supabase } from '@/lib/supabase'
 import toast from 'react-hot-toast'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
@@ -49,16 +49,14 @@ export function StudySession() {
     if (!user || !selfRating) return
     setSaving(true)
     try {
-      await supabase.from('daily_sessions').upsert(
+      await storeFor(user).upsertDailySession(user.id,
         {
-          user_id: user.id,
           session_date: new Date().toISOString().split('T')[0],
           chapter: todayChapter,
           section: todaySection,
           self_rating: selfRating,
           completed_at: new Date().toISOString(),
         },
-        { onConflict: 'user_id,session_date' },
       )
       toast.success(lang === 'id' ? 'Sesi selesai! Hebat 🎉' : 'Session complete! Well done 🎉')
       navigate('/')
@@ -227,8 +225,7 @@ export function StudySession() {
               onSave={async () => {
                 if (!user) return
                 const correct = quizResults.filter(r => r.isCorrect).length
-                await supabase.from('quiz_attempts').insert({
-                  user_id: user.id,
+                await storeFor(user).addQuizAttempt(user.id, {
                   quiz_type: 'vocab',
                   chapter: todayChapter,
                   section: todaySection,

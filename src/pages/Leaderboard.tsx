@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { supabase } from '@/lib/supabase'
+import { isGuest } from '@/lib/storage'
+import { t } from '@/lib/i18n'
 import { RiMedalLine } from '@remixicon/react'
 
 interface LeaderboardEntry {
@@ -14,11 +16,13 @@ interface LeaderboardEntry {
 }
 
 export function Leaderboard() {
-  const { user } = useAppStore()
+  const { user, preferredLanguage: lang } = useAppStore()
+  const guest = isGuest(user)
   const [entries, setEntries] = useState<LeaderboardEntry[]>([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(!guest)
 
   useEffect(() => {
+    if (guest) return
     async function fetch() {
       const { data } = await supabase
         .from('leaderboard_view')
@@ -29,7 +33,7 @@ export function Leaderboard() {
       setLoading(false)
     }
     fetch()
-  }, [])
+  }, [guest])
 
   const medalColors = ['text-amber-500', 'text-gray-400', 'text-amber-700']
 
@@ -38,7 +42,13 @@ export function Leaderboard() {
       <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">ランキング</h1>
       <p className="text-gray-500 dark:text-gray-400 text-sm mb-5">グループ全体のスコアを比較しましょう</p>
 
-      {loading ? (
+      {guest ? (
+        <div className="text-center py-12 px-6">
+          <RiMedalLine size={40} className="mx-auto text-gray-300 dark:text-gray-600 mb-3" />
+          <p className="text-gray-700 dark:text-gray-200 font-medium">{t('guestLeaderboard', lang)}</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{t('guestLeaderboardSub', lang)}</p>
+        </div>
+      ) : loading ? (
         <div className="text-center py-10 text-gray-400">読み込み中...</div>
       ) : entries.length === 0 ? (
         <div className="text-center py-10 text-gray-400">まだデータがありません</div>
