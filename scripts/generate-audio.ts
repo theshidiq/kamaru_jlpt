@@ -108,6 +108,16 @@ const QUESTION_VOICES: Record<string, { M: string; F: string }> = {
   lq023: { M: 'Japanese_IntellectualSenior', F: 'Japanese_KindLady'       },  // store customer + staff
   lq024: { M: 'Japanese_IntellectualSenior', F: 'Japanese_DependableWoman'},  // classroom trainer monologue
   lq025: { M: 'Japanese_IntellectualSenior', F: 'Japanese_GracefulMaiden' },  // home neighbors
+  lq026: { M: 'Japanese_IntellectualSenior', F: 'Japanese_GracefulMaiden' },  // office colleagues
+  lq027: { M: 'Japanese_IntellectualSenior', F: 'Japanese_DependableWoman' },  // station passenger + staff
+  lq028: { M: 'Japanese_GentleButler',     F: 'Japanese_GracefulMaiden' },  // restaurant staff + customer
+  lq029: { M: 'Japanese_IntellectualSenior', F: 'Japanese_KindLady'     },  // store customer + staff
+  lq030: { M: 'Japanese_InnocentBoy',      F: 'Japanese_KindLady'     },  // home son + mother
+  lq031: { M: 'Japanese_SportyStudent',    F: 'Japanese_DependableWoman' },  // classroom student + teacher
+  lq032: { M: 'Japanese_IntellectualSenior', F: 'Japanese_GracefulMaiden' },  // office colleagues
+  lq033: { M: 'Japanese_OptimisticYouth',  F: 'Japanese_GracefulMaiden' },  // station passengers
+  lq034: { M: 'Japanese_GentleButler',     F: 'Japanese_GracefulMaiden' },  // restaurant phone booking
+  lq035: { M: 'Japanese_SportyStudent',    F: 'Japanese_DependableWoman' },  // classroom student + teacher
 }
 
 // ─── Inline question bank ─────────────────────────────────────────────────────
@@ -308,6 +318,92 @@ const QUESTIONS: ListeningQuestion[] = [
     { speaker: 'FEMALE', text: '便利なんですが、会社が遠くて毎日1時間半かかるんです。もっと会社の近くに住みたくて。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
     { speaker: 'MALE',   text: 'そうでしたか。寂しくなりますね。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
     { speaker: 'FEMALE', text: '私もこのアパートは気に入っているんですが、通勤時間がちょっと…', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq026', scene: 'office',     question: '男の人は何時の新幹線に乗りますか。', script: [
+    { speaker: 'NARRATOR', text: '会社で、女の人と男の人が話しています。男の人は何時の新幹線に乗りますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '山田さん、明日の大阪出張ですが、新幹線は10時のに乗る予定でしたよね。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'はい、そのつもりでしたが、先方との打ち合わせが午後1時からに変わったんです。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'じゃあ、もう少し遅い便でも間に合いますね。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'そうですね。ただ、駅から会社まで30分かかるので、11時の新幹線にしておきます。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '念のため、その一本前でもいいんじゃないですか。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'いえ、11時で十分です。それで予約します。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq027', scene: 'station',    question: '男の人はこのあとまず何をしますか。', script: [
+    { speaker: 'NARRATOR', text: '駅で、男の人と駅員が話しています。男の人はこのあとまず何をしますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'すみません、定期券をなくしてしまったんですが、どうすればいいですか。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '再発行はできますが、身分証明書が必要です。お持ちですか。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '今日は持っていません。家にあります。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'それでしたら、今日は普通の切符をお買いになって、明日、身分証明書を持ってきてください。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'わかりました。じゃあ、そうします。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq028', scene: 'restaurant', question: '女の人は全部でいくら払いますか。', script: [
+    { speaker: 'NARRATOR', text: 'レストランで、店員と女の人が話しています。女の人は全部でいくら払いますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'すみません、ランチセットを2つと、コーヒーを1つお願いします。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'ランチセットは880円、コーヒーは単品で250円になります。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'あ、ランチセットにコーヒーは付いていますか。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'はい、セットにはお飲み物が付きますので、追加のコーヒーだけ別料金です。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'そうなんですね。じゃあ、追加のコーヒーはやめておきます。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq029', scene: 'store',      question: '男の人はどれを買いますか。', script: [
+    { speaker: 'NARRATOR', text: '電気屋で、男の人と店員が話しています。男の人はどれを買いますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'すみません、一人暮らし用の洗濯機を探しているんですが。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'こちらの5キロタイプが人気です。3万5千円で、乾燥機能は付いていません。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '乾燥は必要ですね。部屋に干す場所がないので。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'でしたら、こちらの乾燥機能付きが5万2千円です。少し大きいですが。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '予算は5万円までなんですが……。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'それでしたら、乾燥機能付きで一つ前の型なら、4万8千円でご用意できます。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'それにします。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq030', scene: 'home',       question: '息子はこのあと何をしますか。', script: [
+    { speaker: 'NARRATOR', text: '家で、母親と息子が話しています。息子はこのあと何をしますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'お客さんが来る前に、掃除機をかけて、それからお皿を並べておいてね。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'うん。でも、掃除機は昨日かけたよ。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'あら、そうだった。じゃあ、テーブルを拭いてくれる？', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'わかった。お皿は？', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'お皿はお姉ちゃんに頼んだから、大丈夫。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'じゃあ、テーブルだけだね。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq031', scene: 'classroom',  question: '学生はいつ、どこにレポートを出しますか。', script: [
+    { speaker: 'NARRATOR', text: '大学で、先生と学生が話しています。学生はいつ、どこにレポートを出しますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '先生、レポートの締め切りは金曜日でしたよね。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'ええ、金曜日の午後5時までです。でも、今週は私が出張なので、木曜日までに出してもらえると助かります。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '実は、まだ半分しか終わっていなくて……。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'そうですか。それなら、金曜日でかまいませんよ。事務室に出しておいてください。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'ありがとうございます。金曜日に事務室に出します。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq032', scene: 'office',     question: '女の人はこのあとすぐ何をしますか。', script: [
+    { speaker: 'NARRATOR', text: '会社で、男の人と女の人が話しています。女の人はこのあとすぐ何をしますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '佐藤さん、この資料、会議の前にコピーしておいてください。20部です。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'はい。会議は3時からですよね。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'そうです。あ、その前に、部長に内容を確認してもらってください。直すところがあるかもしれないので。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'わかりました。じゃあ、確認してからコピーします。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'お願いします。部長は今、会議室にいますよ。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq033', scene: 'station',    question: '二人はどうして電車に乗れませんでしたか。', script: [
+    { speaker: 'NARRATOR', text: '駅のホームで、女の人と男の人が話しています。二人はどうして電車に乗れませんでしたか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'あれ、行っちゃった。まだ3分前だと思ったのに。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '時刻表が変わったみたいですよ。先月からダイヤ改正があったって、貼り紙に書いてあります。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'え、本当ですか。全然気がつきませんでした。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '僕もさっき知りました。次は15分後ですね。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '仕方ないですね。待ちましょう。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq034', scene: 'restaurant', question: '女の人は何時に予約しますか。', script: [
+    { speaker: 'NARRATOR', text: '電話で、女の人と店の人が話しています。女の人は何時に予約しますか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'すみません、今週の土曜日、6人で予約したいんですが。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'ありがとうございます。何時ごろでしょうか。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '7時ごろがいいんですが。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '申し訳ありません、7時は満席でして。6時か、8時半でしたらお取りできます。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '8時半だと遅いですね。子どもも一緒なので。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'では、6時はいかがでしょうか。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'はい、それでお願いします。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+  ]},
+  { id: 'lq035', scene: 'classroom',  question: '学生は明日、何を持って来なければなりませんか。', script: [
+    { speaker: 'NARRATOR', text: '教室で、先生が話しています。学生は明日、何を持って来なければなりませんか。', voiceId: V.NARRATOR, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '明日は博物館へ行きます。教科書は必要ありません。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: '先生、ノートは持って行きますか。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: 'はい、見学しながらメモを取ってもらうので、ノートと筆記用具は必ず持って来てください。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'MALE',    text: 'お弁当はどうしますか。', voiceId: V.MALE, emotion: 'neutral', speed: 0.9 },
+    { speaker: 'FEMALE',  text: '昼までに戻りますから、いりません。あ、入館料の300円だけ忘れないでくださいね。', voiceId: V.FEMALE, emotion: 'neutral', speed: 0.9 },
   ]},
 ]
 
