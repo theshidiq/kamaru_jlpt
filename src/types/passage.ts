@@ -30,6 +30,8 @@ export interface PassageTiming {
 }
 
 export interface PassageAudioEntry {
+  /** Model that produced this audio; a mismatch means the file is stale. */
+  modelId?: string
   id: string          // `${level}-${chapter}-${section}`
   audioUrl: string
   durationMs: number
