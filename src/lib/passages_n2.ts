@@ -2046,4 +2046,401 @@ export const PASSAGES_N2: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N2',
+    chapter: 6,
+    section: 1,
+    title: '就職活動',
+    targetWords: [
+      '求人', '志望', 'エントリー', '携わる', '生かす', '貴社', '御中', '動機', '熱意', '学歴', '不問', '制限', '特技', '協調', '肝心な', '精一杯', '対応', '合同', '望ましい', '好ましい', '公平', 'せめて', '受け取る', '内定', '辞退', '契約', '入社', '心得る', '社会人', '自覚', 'いよいよ',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '求人', r: 'きゅうじん' }, { t: 'サイト' }, { t: 'で' }, { t: '志望', r: 'しぼう' }, { t: 'する' }, { t: '会社', r: 'かいしゃ' }, { t: 'を' }, { t: '探', r: 'さが' }, { t: 'し、' }, { t: 'エントリー' }, { t: 'した。' },
+        ],
+        en: 'I searched job sites for companies I wanted and submitted entries.',
+      },
+      {
+        seg: [
+          { t: '学歴', r: 'がくれき' }, { t: '' }, { t: '不問', r: 'ふもん' }, { t: '、' }, { t: '年齢', r: 'ねんれい' }, { t: 'の' }, { t: '制限', r: 'せいげん' }, { t: 'なし' }, { t: 'と' }, { t: 'ある' }, { t: 'の' }, { t: 'は' }, { t: '好', r: 'この' }, { t: 'ましい。' },
+        ],
+        en: 'It is agreeable when it says no educational requirement and no age limit.',
+      },
+      {
+        seg: [
+          { t: '封筒', r: 'ふうとう' }, { t: 'に' }, { t: '「' }, { t: '御中', r: 'おんちゅう' }, { t: '」' }, { t: 'と' }, { t: '書', r: 'か' }, { t: 'き、' }, { t: '貴社', r: 'きしゃ' }, { t: 'あて' }, { t: 'に' }, { t: '送', r: 'おく' }, { t: 'った。' },
+        ],
+        en: 'I wrote "onchu" on the envelope and sent it to the company.',
+      },
+      {
+        seg: [
+          { t: '志望', r: 'しぼう' }, { t: '' }, { t: '動機', r: 'どうき' }, { t: 'に' }, { t: 'は、' }, { t: '熱意', r: 'ねつい' }, { t: 'を' }, { t: '込', r: 'こ' }, { t: 'めて' }, { t: '書', r: 'か' }, { t: 'いた。' },
+        ],
+        en: 'I wrote my reason for applying with real enthusiasm.',
+      },
+      {
+        seg: [
+          { t: '特技', r: 'とくぎ' }, { t: 'と、' }, { t: 'これ' }, { t: 'まで' }, { t: 'の' }, { t: '経験', r: 'けいけん' }, { t: 'を' }, { t: '生', r: 'い' }, { t: 'かせる' }, { t: '点' }, { t: 'を' }, { t: 'アピール' }, { t: 'した。' },
+        ],
+        en: 'I highlighted my special skills and how I could use my experience.',
+      },
+      {
+        seg: [
+          { t: '肝心', r: 'かんじん' }, { t: 'な' }, { t: 'の' }, { t: 'は、' }, { t: '人', r: 'ひと' }, { t: 'と' }, { t: '協調', r: 'きょうちょう' }, { t: 'できる' }, { t: 'か' }, { t: 'どうか' }, { t: 'だ' }, { t: 'そうだ。' },
+        ],
+        en: 'What matters, apparently, is whether you can cooperate with others.',
+      },
+      {
+        seg: [
+          { t: '合同', r: 'ごうどう' }, { t: '' }, { t: '説明会', r: 'せつめいかい' }, { t: 'で' }, { t: 'は、' }, { t: '公平', r: 'こうへい' }, { t: 'に' }, { t: '質問', r: 'しつもん' }, { t: 'に' }, { t: '対応', r: 'たいおう' }, { t: 'して' }, { t: 'くれた。' },
+        ],
+        en: 'At the joint information session they answered questions fairly.',
+      },
+      {
+        seg: [
+          { t: '面接', r: 'めんせつ' }, { t: 'で' }, { t: 'は' }, { t: '精一杯', r: 'せいいっぱい' }, { t: '' }, { t: '話', r: 'はな' }, { t: 'し、' }, { t: 'せめて' }, { t: '後悔', r: 'こうかい' }, { t: 'は' }, { t: 'しないように' }, { t: 'した。' },
+        ],
+        en: 'In the interview I spoke my utmost, so that at least I would have no regrets.',
+      },
+      {
+        seg: [
+          { t: '医療', r: 'いりょう' }, { t: 'に' }, { t: '携', r: 'たずさ' }, { t: 'わる' }, { t: '仕事', r: 'しごと' }, { t: 'が' }, { t: '望', r: 'のぞ' }, { t: 'ましい' }, { t: 'と' }, { t: '考', r: 'かんが' }, { t: 'えて' }, { t: 'いた。' },
+        ],
+        en: 'I had thought work involving healthcare would be desirable.',
+      },
+      {
+        seg: [
+          { t: '内定', r: 'ないてい' }, { t: 'の' }, { t: '通知', r: 'つうち' }, { t: 'を' }, { t: '受', r: 'う' }, { t: 'け' }, { t: '取', r: 'と' }, { t: 'り、' }, { t: 'ほか' }, { t: 'は' }, { t: '辞退', r: 'じたい' }, { t: 'した。' },
+        ],
+        en: 'I received a job offer and declined the others.',
+      },
+      {
+        seg: [
+          { t: '契約', r: 'けいやく' }, { t: 'を' }, { t: '交', r: 'か' }, { t: 'わし、' }, { t: 'いよいよ' }, { t: '入社', r: 'にゅうしゃ' }, { t: 'の' }, { t: '日', r: 'ひ' }, { t: 'が' }, { t: '来', r: 'き' }, { t: 'た。' },
+        ],
+        en: 'I signed the contract, and at last the day of joining the company came.',
+      },
+      {
+        seg: [
+          { t: '社会人', r: 'しゃかいじん' }, { t: 'として' }, { t: 'の' }, { t: '責任', r: 'せきにん' }, { t: 'を' }, { t: '自覚', r: 'じかく' }, { t: 'し、' }, { t: '心得', r: 'こころえ' }, { t: 'て' }, { t: 'おく' }, { t: 'つもり', r: '・' }, { t: 'だ。' },
+        ],
+        en: 'I intend to be aware of my responsibilities as a working adult and keep them in mind.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 6,
+    section: 2,
+    title: '会社という組織',
+    targetWords: [
+      '大企業', '大手', '代表', '民間', '組織', '従業員', '新入社員', '派遣社員', 'オーナー', '重役', 'オフィス', '支給', '出世', '昇進', '転勤', '赴任', '有給休暇', '人事', '人材', '人手', 'モニター', '業績', '資本', '方針', '我々', '製品', '売れ行き', '売り上げ', 'コスト', '果たす', '得る', '認める',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '私', r: 'わたし' }, { t: 'の' }, { t: '会社', r: 'かいしゃ' }, { t: 'は' }, { t: '大手', r: 'おおて' }, { t: 'の' }, { t: '民間', r: 'みんかん' }, { t: '' }, { t: '企業', r: 'きぎょう' }, { t: 'で、' }, { t: '従業員', r: 'じゅうぎょういん' }, { t: 'も' }, { t: '多', r: 'おお' }, { t: 'い。' },
+        ],
+        en: 'My company is a major private firm with many employees.',
+      },
+      {
+        seg: [
+          { t: '新入社員', r: 'しんにゅうしゃいん' }, { t: 'も' }, { t: '派遣社員', r: 'はけんしゃいん' }, { t: 'も、' }, { t: '同', r: 'おな' }, { t: 'じ' }, { t: 'オフィス' }, { t: 'で' }, { t: '働', r: 'はたら' }, { t: 'く。' },
+        ],
+        en: 'New hires and temporary staff all work in the same office.',
+      },
+      {
+        seg: [
+          { t: '大企業', r: 'だいきぎょう' }, { t: 'の' }, { t: '組織', r: 'そしき' }, { t: 'は' }, { t: '複雑', r: 'ふくざつ' }, { t: 'で、' }, { t: '人事', r: 'じんじ' }, { t: 'の' }, { t: '方針', r: 'ほうしん' }, { t: 'も' }, { t: 'よく' }, { t: '変', r: 'か' }, { t: 'わる。' },
+        ],
+        en: 'The organization of a large company is complex, and HR policy changes often.',
+      },
+      {
+        seg: [
+          { t: '重役', r: 'じゅうやく' }, { t: 'や' }, { t: 'オーナー' }, { t: 'が' }, { t: '会社', r: 'かいしゃ' }, { t: 'を' }, { t: '代表', r: 'だいひょう' }, { t: 'して' }, { t: '挨拶', r: 'あいさつ' }, { t: 'した。' },
+        ],
+        en: 'The executives and the owner gave a greeting on behalf of the company.',
+      },
+      {
+        seg: [
+          { t: '我々', r: 'われわれ' }, { t: 'の' }, { t: '部署', r: 'ぶしょ' }, { t: 'は' }, { t: '人手', r: 'ひとで' }, { t: 'が' }, { t: '足', r: 'た' }, { t: 'りず、' }, { t: '人材', r: 'じんざい' }, { t: 'を' }, { t: '募集', r: 'ぼしゅう' }, { t: 'している。' },
+        ],
+        en: 'Our department is short-handed and is recruiting.',
+      },
+      {
+        seg: [
+          { t: '製品', r: 'せいひん' }, { t: 'の' }, { t: '売', r: 'う' }, { t: 'れ' }, { t: '行', r: 'ゆ' }, { t: 'き' }, { t: 'を' }, { t: 'モニター' }, { t: 'で' }, { t: '確認', r: 'かくにん' }, { t: 'する。' },
+        ],
+        en: 'I check how the products are selling on the monitor.',
+      },
+      {
+        seg: [
+          { t: '今期', r: 'こんき' }, { t: 'の' }, { t: '売', r: 'う' }, { t: 'り' }, { t: '上', r: 'あ' }, { t: 'げ' }, { t: 'は' }, { t: '伸', r: 'の' }, { t: 'び、' }, { t: '業績', r: 'ぎょうせき' }, { t: 'も' }, { t: '良', r: 'よ' }, { t: 'かった。' },
+        ],
+        en: 'This term’s sales rose and performance was good.',
+      },
+      {
+        seg: [
+          { t: 'コスト' }, { t: 'を' }, { t: '下', r: 'さ' }, { t: 'げる' }, { t: '役割', r: 'やくわり' }, { t: 'を' }, { t: '果', r: 'は' }, { t: 'たし、' }, { t: '評価', r: 'ひょうか' }, { t: 'を' }, { t: '得', r: 'え' }, { t: 'た。' },
+        ],
+        en: 'I fulfilled my role of cutting costs and earned recognition.',
+      },
+      {
+        seg: [
+          { t: '努力', r: 'どりょく' }, { t: 'が' }, { t: '認', r: 'みと' }, { t: 'められて' }, { t: '昇進', r: 'しょうしん' }, { t: 'し、' }, { t: '出世', r: 'しゅっせ' }, { t: 'した' }, { t: '同期', r: 'どうき' }, { t: 'も' }, { t: 'いる。' },
+        ],
+        en: 'Some of my intake had their efforts recognized, were promoted and got ahead.',
+      },
+      {
+        seg: [
+          { t: '転勤', r: 'てんきん' }, { t: 'を' }, { t: '命', r: 'めい' }, { t: 'じられ、' }, { t: '大阪', r: 'おおさか' }, { t: 'に' }, { t: '赴任', r: 'ふにん' }, { t: 'する' }, { t: 'こと' }, { t: 'に' }, { t: 'なった。' },
+        ],
+        en: 'I was ordered to transfer and will be posted to Osaka.',
+      },
+      {
+        seg: [
+          { t: '有給休暇', r: 'ゆうきゅうきゅうか' }, { t: 'は' }, { t: '支給', r: 'しきゅう' }, { t: 'されている' }, { t: 'が、' }, { t: 'なかなか' }, { t: '取', r: 'と' }, { t: 'れない。' },
+        ],
+        en: 'Paid leave is granted, but it is hard to take.',
+      },
+      {
+        seg: [
+          { t: '資本', r: 'しほん' }, { t: 'の' }, { t: '大', r: 'おお' }, { t: 'きさ' }, { t: 'より、' }, { t: '働', r: 'はたら' }, { t: 'く' }, { t: '人', r: 'ひと' }, { t: 'の' }, { t: '気持', r: 'きも' }, { t: 'ち' }, { t: 'が' }, { t: '大切', r: 'たいせつ' }, { t: 'だ' }, { t: 'と' }, { t: '思', r: 'おも' }, { t: 'う。' },
+        ],
+        en: 'More than the size of the capital, I think the feelings of the workers matter.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 6,
+    section: 3,
+    title: '仕事の進め方',
+    targetWords: [
+      'ビジネス', '就く', '生きがい', 'やりがい', '抱く', '打ち合わせ', 'アポイント', '応対', '改めて', 'じかに', 'プロジェクト', '意図', '新たな', '組む', '取り引き', '依頼', '任せる', '引き受ける', 'こなす', '成果', '達成', '作業', '保留', 'やり直す', '件', '急用', '至急', '手順', '移動', '大工', 'ガードマン',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: 'この' }, { t: 'ビジネス' }, { t: 'に' }, { t: '就', r: 'つ' }, { t: 'いて' }, { t: 'から、' }, { t: '毎日', r: 'まいにち' }, { t: 'に' }, { t: 'やりがい' }, { t: 'を' }, { t: '感', r: 'かん' }, { t: 'じる。' },
+        ],
+        en: 'Since taking this job, I feel a sense of reward each day.',
+      },
+      {
+        seg: [
+          { t: '仕事', r: 'しごと' }, { t: 'に' }, { t: '生', r: 'い' }, { t: 'きがい' }, { t: 'を' }, { t: '抱', r: 'いだ' }, { t: 'く' }, { t: '人' }, { t: 'は' }, { t: '強', r: 'つよ' }, { t: 'い。' },
+        ],
+        en: 'People who find purpose in their work are strong.',
+      },
+      {
+        seg: [
+          { t: '朝', r: 'あさ' }, { t: 'の' }, { t: '打', r: 'う' }, { t: 'ち' }, { t: '合', r: 'あ' }, { t: 'わせ' }, { t: 'で、' }, { t: 'その' }, { t: '日', r: 'ひ' }, { t: 'の' }, { t: '手順', r: 'てじゅん' }, { t: 'を' }, { t: '確認', r: 'かくにん' }, { t: 'する。' },
+        ],
+        en: 'In the morning meeting we confirm the day’s procedure.',
+      },
+      {
+        seg: [
+          { t: '取', r: 'と' }, { t: 'り' }, { t: '引', r: 'ひ' }, { t: 'き' }, { t: '先', r: 'さき' }, { t: 'に' }, { t: 'アポイント' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'り、' }, { t: '新', r: 'あら' }, { t: 'たな' }, { t: 'プロジェクト' }, { t: 'を' }, { t: '組', r: 'く' }, { t: 'む。' },
+        ],
+        en: 'I make an appointment with a client and set up a new project.',
+      },
+      {
+        seg: [
+          { t: '電話', r: 'でんわ' }, { t: 'の' }, { t: '応対', r: 'おうたい' }, { t: 'で' }, { t: 'は、' }, { t: '伝言', r: 'でんごん' }, { t: 'を' }, { t: '正確', r: 'せいかく' }, { t: 'に' }, { t: '残', r: 'のこ' }, { t: 'す。' },
+        ],
+        en: 'When answering the phone, I leave messages accurately.',
+      },
+      {
+        seg: [
+          { t: '急用', r: 'きゅうよう' }, { t: 'なら' }, { t: '至急', r: 'しきゅう' }, { t: '' }, { t: '連絡', r: 'れんらく' }, { t: 'し、' }, { t: 'その' }, { t: '件', r: 'けん' }, { t: 'は' }, { t: 'じかに' }, { t: '話', r: 'はな' }, { t: 'す。' },
+        ],
+        en: 'If it is urgent I contact them immediately and discuss that matter in person.',
+      },
+      {
+        seg: [
+          { t: '依頼', r: 'いらい' }, { t: 'を' }, { t: '引', r: 'ひ' }, { t: 'き' }, { t: '受', r: 'う' }, { t: 'け、' }, { t: '後輩', r: 'こうはい' }, { t: 'に' }, { t: 'も' }, { t: '一' }, { t: '部', r: 'ぶ' }, { t: 'を' }, { t: '任', r: 'まか' }, { t: 'せた。' },
+        ],
+        en: 'I took on the request and entrusted part of it to a junior colleague.',
+      },
+      {
+        seg: [
+          { t: '意図', r: 'いと' }, { t: 'を' }, { t: '改', r: 'あらた' }, { t: 'めて' }, { t: '説明', r: 'せつめい' }, { t: 'する' }, { t: 'と、' }, { t: '作業', r: 'さぎょう' }, { t: 'を' }, { t: 'うまく' }, { t: 'こなして' }, { t: 'くれた。' },
+        ],
+        en: 'When I explained the intent again, they handled the work well.',
+      },
+      {
+        seg: [
+          { t: '目標', r: 'もくひょう' }, { t: 'を' }, { t: '達成', r: 'たっせい' }, { t: 'し、' }, { t: '成果', r: 'せいか' }, { t: 'を' }, { t: '報告', r: 'ほうこく' }, { t: 'した。' },
+        ],
+        en: 'We achieved the target and reported the results.',
+      },
+      {
+        seg: [
+          { t: '判断', r: 'はんだん' }, { t: 'を' }, { t: '保留', r: 'ほりゅう' }, { t: 'した' }, { t: '案件', r: 'あんけん' }, { t: 'は、' }, { t: 'あとで' }, { t: 'やり' }, { t: '直', r: 'なお' }, { t: 'す' }, { t: 'こと' }, { t: 'に' }, { t: 'なった。' },
+        ],
+        en: 'The matter we put on hold ended up being redone later.',
+      },
+      {
+        seg: [
+          { t: '現場', r: 'げんば' }, { t: 'へ' }, { t: '移動', r: 'いどう' }, { t: 'する' }, { t: 'と、' }, { t: '大工', r: 'だいく' }, { t: 'や' }, { t: 'ガードマン' }, { t: 'が' }, { t: 'すでに' }, { t: '働', r: 'はたら' }, { t: 'いていた。' },
+        ],
+        en: 'When I moved to the site, the carpenters and security guards were already at work.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 6,
+    section: 4,
+    title: '上下のつきあい',
+    targetWords: [
+      '地位', '目上', '敬意', '敬う', '的確な', '忠告', 'サポート', 'いばる', '押し付ける', 'ご無沙汰', '恐縮', '信頼', '従う', 'うなずく', '反論', 'わびる', 'やる気', 'お世辞', 'ごまをする', '上等な', '苦痛', '夫人', 'ベテラン', '平社員',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '会社', r: 'かいしゃ' }, { t: 'で' }, { t: 'は' }, { t: '地位', r: 'ちい' }, { t: 'に' }, { t: 'かかわらず、' }, { t: '目上', r: 'めうえ' }, { t: 'の' }, { t: '人', r: 'ひと' }, { t: 'を' }, { t: '敬', r: 'うやま' }, { t: 'う。' },
+        ],
+        en: 'At the company, regardless of rank, we respect our seniors.',
+      },
+      {
+        seg: [
+          { t: '敬意', r: 'けいい' }, { t: 'を' }, { t: '持', r: 'も' }, { t: 'って' }, { t: '接', r: 'せっ' }, { t: 'すれば、' }, { t: '信頼', r: 'しんらい' }, { t: 'は' }, { t: '自然', r: 'しぜん' }, { t: 'に' }, { t: '生', r: 'う' }, { t: 'まれる。' },
+        ],
+        en: 'If you deal with people respectfully, trust arises naturally.',
+      },
+      {
+        seg: [
+          { t: 'ベテラン', r: '・' }, { t: 'の' }, { t: '先輩', r: 'せんぱい' }, { t: 'は、' }, { t: 'いつも' }, { t: '的確', r: 'てきかく' }, { t: 'な' }, { t: '忠告', r: 'ちゅうこく' }, { t: 'を' }, { t: 'くれる。' },
+        ],
+        en: 'The veteran senior always gives precise advice.',
+      },
+      {
+        seg: [
+          { t: '困', r: 'こま' }, { t: 'った' }, { t: 'とき' }, { t: 'に' }, { t: 'サポート' }, { t: 'して' }, { t: 'もらい、' }, { t: '感謝', r: 'かんしゃ' }, { t: 'して' }, { t: 'いる。' },
+        ],
+        en: 'They supported me when I was in trouble, and I am grateful.',
+      },
+      {
+        seg: [
+          { t: 'いばって' }, { t: '仕事', r: 'しごと' }, { t: 'を' }, { t: '押', r: 'お' }, { t: 'し' }, { t: '付', r: 'つ' }, { t: 'ける' }, { t: '人', r: 'ひと' }, { t: 'は、' }, { t: 'やる' }, { t: '気', r: 'き' }, { t: 'を' }, { t: 'うばう。' },
+        ],
+        en: 'People who throw their weight around and force work on others sap motivation.',
+      },
+      {
+        seg: [
+          { t: '平社員', r: 'ひらしゃいん' }, { t: 'でも、' }, { t: '反論', r: 'はんろん' }, { t: 'す' }, { t: 'べき' }, { t: 'とき' }, { t: 'は' }, { t: '意見', r: 'いけん' }, { t: 'を' }, { t: '言', r: 'い' }, { t: 'う。' },
+        ],
+        en: 'Even a rank-and-file employee should speak up when they ought to object.',
+      },
+      {
+        seg: [
+          { t: '指示', r: 'しじ' }, { t: 'に' }, { t: '従', r: 'したが' }, { t: 'い' }, { t: 'ながら' }, { t: 'も、' }, { t: 'ただ' }, { t: 'うなずく' }, { t: 'だけ' }, { t: 'で' }, { t: 'は' }, { t: 'いけない。' },
+        ],
+        en: 'While following instructions, you must not merely nod along.',
+      },
+      {
+        seg: [
+          { t: '失敗', r: 'しっぱい' }, { t: 'した' }, { t: 'とき' }, { t: 'は、' }, { t: 'すぐ' }, { t: 'に' }, { t: 'わびる' }, { t: 'の' }, { t: 'が' }, { t: '上等', r: 'じょうとう' }, { t: 'な' }, { t: '態度', r: 'たいど' }, { t: 'だ。' },
+        ],
+        en: 'When you fail, apologizing at once is the proper attitude.',
+      },
+      {
+        seg: [
+          { t: 'お' }, { t: '世辞', r: 'せじ' }, { t: 'を' }, { t: '言', r: 'い' }, { t: 'ったり' }, { t: 'ごまをすったり' }, { t: 'する' }, { t: 'の' }, { t: 'は、' }, { t: 'かえって' }, { t: '苦痛', r: 'くつう' }, { t: 'だ。' },
+        ],
+        en: 'Flattering people or currying favor is, if anything, painful.',
+      },
+      {
+        seg: [
+          { t: '久', r: 'ひさ' }, { t: 'しぶり' }, { t: 'に' }, { t: '会', r: 'あ' }, { t: 'った' }, { t: '部長', r: 'ぶちょう' }, { t: '' }, { t: '夫人', r: 'ふじん' }, { t: 'に、' }, { t: 'ご' }, { t: '無沙汰', r: 'ぶさた' }, { t: 'を' }, { t: 'わびた。' },
+        ],
+        en: 'Meeting the manager’s wife after a long time, I apologized for being out of touch.',
+      },
+      {
+        seg: [
+          { t: '恐縮', r: 'きょうしゅく' }, { t: 'です' }, { t: 'が、' }, { t: 'と' }, { t: '前置', r: 'まえお' }, { t: 'き' }, { t: 'して' }, { t: 'お' }, { t: '願', r: 'ねが' }, { t: 'い' }, { t: 'を' }, { t: 'した。' },
+        ],
+        en: 'I prefaced my request with "I am much obliged, but…".',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 6,
+    section: 5,
+    title: '辞める、変える',
+    targetWords: [
+      '退職', '転職', '首になる', 'リストラ', '独立', '着々', 'フリー', '不平', '満足', '辛抱', 'ぐっと', '負う', '溶け込む', 'やむを得ず', '立ち上げる', '試みる', '専念', '悔やむ', '見送る', '逃す', '重なる', '引き止める', '特殊', '身の回り', '状況',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '先月', r: 'せんげつ' }, { t: '、' }, { t: 'ついに' }, { t: '退職', r: 'たいしょく' }, { t: 'を' }, { t: '決', r: 'き' }, { t: 'めた。' },
+        ],
+        en: 'Last month I finally decided to leave my job.',
+      },
+      {
+        seg: [
+          { t: '不平', r: 'ふへい' }, { t: 'を' }, { t: '言', r: 'い' }, { t: 'わず' }, { t: 'に' }, { t: '辛抱', r: 'しんぼう' }, { t: 'して' }, { t: 'きた' }, { t: 'が、' }, { t: '状況', r: 'じょうきょう' }, { t: 'は' }, { t: '変', r: 'か' }, { t: 'わらなかった。' },
+        ],
+        en: 'I endured without complaining, but the situation did not change.',
+      },
+      {
+        seg: [
+          { t: 'リストラ' }, { t: 'で' }, { t: '首', r: 'くび' }, { t: 'に' }, { t: 'なる' }, { t: '同僚', r: 'どうりょう' }, { t: 'も' }, { t: 'いて、' }, { t: '見送', r: 'みおく' }, { t: 'る' }, { t: 'の' }, { t: 'は' }, { t: 'つらかった。' },
+        ],
+        en: 'Some colleagues were laid off, and seeing them go was hard.',
+      },
+      {
+        seg: [
+          { t: 'やむを' }, { t: '得', r: 'え' }, { t: 'ず' }, { t: '転職', r: 'てんしょく' }, { t: 'を' }, { t: '試', r: 'こころ' }, { t: 'みる' }, { t: '人', r: 'ひと' }, { t: 'も' }, { t: '多', r: 'おお' }, { t: 'かった。' },
+        ],
+        en: 'Many had no choice but to try changing jobs.',
+      },
+      {
+        seg: [
+          { t: '私', r: 'わたし' }, { t: 'は' }, { t: 'フリー' }, { t: 'に' }, { t: 'なり、' }, { t: '自分', r: 'じぶん' }, { t: 'の' }, { t: '会社', r: 'かいしゃ' }, { t: 'を' }, { t: '立', r: 'た' }, { t: 'ち' }, { t: '上', r: 'あ' }, { t: 'げる' }, { t: 'こと' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'I went freelance and decided to start my own company.',
+      },
+      {
+        seg: [
+          { t: '独立', r: 'どくりつ' }, { t: 'の' }, { t: '準備', r: 'じゅんび' }, { t: 'を' }, { t: '着々', r: 'ちゃくちゃく' }, { t: 'と' }, { t: '進', r: 'すす' }, { t: 'め、' }, { t: 'ひとつ' }, { t: 'の' }, { t: '分野', r: 'ぶんや' }, { t: 'に' }, { t: '専念', r: 'せんねん' }, { t: 'する。' },
+        ],
+        en: 'I steadily prepared to go independent and focus on a single field.',
+      },
+      {
+        seg: [
+          { t: '上司', r: 'じょうし' }, { t: 'は' }, { t: '引', r: 'ひ' }, { t: 'き' }, { t: '止', r: 'と' }, { t: 'めて' }, { t: 'くれた' }, { t: 'が、' }, { t: '気持', r: 'きも' }, { t: 'ち' }, { t: 'は' }, { t: 'ぐっと' }, { t: '固', r: 'かた' }, { t: 'まって' }, { t: 'いた。' },
+        ],
+        en: 'My boss tried to stop me, but my mind was firmly made up.',
+      },
+      {
+        seg: [
+          { t: '責任', r: 'せきにん' }, { t: 'を' }, { t: '負', r: 'お' }, { t: 'う' }, { t: '特殊', r: 'とくしゅ' }, { t: 'な' }, { t: '立場', r: 'たちば' }, { t: 'に' }, { t: 'なった' }, { t: 'が、' }, { t: '満足', r: 'まんぞく' }, { t: 'している。' },
+        ],
+        en: 'I am now in a special position bearing responsibility, but I am satisfied.',
+      },
+      {
+        seg: [
+          { t: '好機', r: 'こうき' }, { t: 'を' }, { t: '逃', r: 'のが' }, { t: 'した' }, { t: 'こと' }, { t: 'を' }, { t: '悔', r: 'く' }, { t: 'やむ' }, { t: 'より、' }, { t: 'いま' }, { t: 'を' }, { t: '大切', r: 'たいせつ' }, { t: 'に' }, { t: 'したい。' },
+        ],
+        en: 'Rather than regret missed chances, I want to value the present.',
+      },
+      {
+        seg: [
+          { t: '新', r: 'あたら' }, { t: 'しい' }, { t: '環境', r: 'かんきょう' }, { t: 'に' }, { t: '溶', r: 'と' }, { t: 'け' }, { t: '込', r: 'こ' }, { t: 'み、' }, { t: '身', r: 'み' }, { t: 'の' }, { t: '回', r: 'まわ' }, { t: 'り' }, { t: 'を' }, { t: '整', r: 'ととの' }, { t: 'えた。' },
+        ],
+        en: 'I settled into the new environment and put my surroundings in order.',
+      },
+      {
+        seg: [
+          { t: '予定', r: 'よてい' }, { t: 'が' }, { t: '重', r: 'かさ' }, { t: 'なる' }, { t: '日', r: 'ひ' }, { t: 'も' }, { t: 'ある' }, { t: 'が、' }, { t: 'いまは' }, { t: '楽', r: 'たの' }, { t: 'しい。' },
+        ],
+        en: 'Some days my schedule doubles up, but right now it is enjoyable.',
+      },
+    ],
+  },
 ]
