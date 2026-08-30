@@ -50,6 +50,7 @@ function arg(name: string): string | undefined {
   return i >= 0 ? args[i + 1] : undefined
 }
 const onlyChapter = arg('chapter') ? Number(arg('chapter')) : undefined
+const onlySection = arg('section') ? Number(arg('section')) : undefined
 const dryRun = args.includes('--dry-run')
 
 // ─── API ─────────────────────────────────────────────────────────────────────
@@ -59,11 +60,8 @@ interface Alignment {
   character_end_times_seconds: number[]
 }
 
-/** The API's romanisation of what it actually said — used as a sanity check. */
+/** What the API says it will actually speak — the pronunciation sanity check. */
 let lastNormalised = ''
-function alignment_normalised(_a: Alignment): string {
-  return lastNormalised
-}
 
 async function tts(text: string): Promise<{ audio: Buffer; alignment: Alignment }> {
   const res = await fetch(
@@ -94,7 +92,7 @@ function mapTimings(passage: SectionPassage, a: Alignment): PassageTiming[][] {
   let cursor = 0
   return passage.sentences.map(sentence =>
     sentence.seg.map(token => {
-      const spoken = token.r ?? token.t
+      const spoken = token.t
       const i = text.indexOf(spoken, cursor)
       if (i < 0) {
         // Should not happen; fall back to a zero-width marker at the cursor.
@@ -113,16 +111,20 @@ function mapTimings(passage: SectionPassage, a: Alignment): PassageTiming[][] {
 }
 
 /**
- * Text sent to the TTS. Kanji tokens are replaced by their furigana reading.
+ * Text sent to the TTS — the kanji exactly as displayed.
  *
- * ElevenLabs reads Japanese kanji as CHINESE — 私 becomes "Si", 天気 becomes
- * "Tian Qi" — in every model and regardless of language_code. Feeding it the
- * kana reading is what makes it speak Japanese. The screen still shows kanji;
- * only the audio input is kana, and mapTimings walks this same string so the
- * highlighting stays aligned.
+ * This MUST stay identical to what is on screen. eleven_v3 has a real
+ * Japanese frontend and passes kanji through untouched, so display text and
+ * spoken text are the same string and mapTimings can walk token.t directly.
+ *
+ * Do NOT substitute furigana here. The older models (flash_v2_5,
+ * multilingual_v2) lack a Japanese frontend: they romanise kanji as Chinese
+ * pinyin (私 -> "Si") AND collapse the geminate small-tsu (いっか -> "itsuka",
+ * がっこう -> "gatsukou"). Feeding them kana fixed the first defect but not
+ * the second. v3 is the only model that gets both right.
  */
 function speechText(p: SectionPassage): string {
-  return p.sentences.map(s => s.seg.map(t => t.r ?? t.t).join('')).join('')
+  return passageText(p)
 }
 
 /** Text as displayed (kanji), used only for reporting. */
@@ -139,7 +141,9 @@ async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true })
 
   const all: SectionPassage[] = PASSAGES_N2
-  const todo = all.filter(p => onlyChapter === undefined || p.chapter === onlyChapter)
+  const todo = all.filter(p =>
+    (onlyChapter === undefined || p.chapter === onlyChapter) &&
+    (onlySection === undefined || p.section === onlySection))
 
   const chars = todo.reduce((n, p) => n + speechText(p).length, 0)
   console.log(`${todo.length} passage(s), ${chars} characters`)
@@ -168,11 +172,20 @@ async function main() {
     process.stdout.write(`  gen   ${id}  ${text.length} chars  `)
     const { audio, alignment } = await tts(text)
 
-    // Guard: if the model romanised the text as Chinese pinyin, the audio is
-    // wrong. Kana input should never produce capitalised latin syllables.
-    const norm = alignment_normalised(alignment)
-    if (/\b(Si|Tian|Jia|Xue|Zhong|Ben|Ri|Qi|Fu|Dai)\b/.test(norm)) {
-      throw new Error(`${id}: TTS produced Chinese readings — check the seg[] furigana`)
+    // Guard: verify the model actually spoke Japanese. normalized_alignment
+    // echoes back what it will say, so both known defects are detectable:
+    //   pinyin           私 -> "Si", 天気 -> "Tian Qi"
+    //   geminate collapse いっか -> "itsuka", がっこう -> "gatsukou"
+    // v3 echoes the Japanese back verbatim; anything latin means wrong model.
+    const norm = lastNormalised
+    if (/[A-Za-z]{2}/.test(norm)) {
+      throw new Error(
+        `${id}: TTS returned romanised text (${norm.slice(0, 60)}...) — ` +
+        `model ${MODEL_ID} lacks a Japanese frontend, use eleven_v3`,
+      )
+    }
+    if (text.includes('っ') && !norm.includes('っ')) {
+      throw new Error(`${id}: geminate small-tsu was dropped by ${MODEL_ID}`)
     }
     fs.writeFileSync(outPath, audio)
 
