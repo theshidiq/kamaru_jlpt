@@ -1821,4 +1821,229 @@ export const PASSAGES_N2: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N2',
+    chapter: 5,
+    section: 3,
+    title: '試験の日',
+    targetWords: [
+      '挑戦', '範囲', 'パターン', 'あらゆる', '課題', '段落', '箇所', '用紙', '応用', '選択', '当てはまる', '述べる', '言い換える', '考え込む', '限る', '紛らわしい', 'さっぱり', '勘', '本番', '迫る', '必死な', 'いっせいに', '終了', '回収', '採点', '確実な',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '試験', r: 'しけん' }, { t: 'に' }, { t: '挑戦', r: 'ちょうせん' }, { t: 'する' }, { t: 'と' }, { t: '決', r: 'き' }, { t: 'め、' }, { t: '出題', r: 'しゅつだい' }, { t: '' }, { t: '範囲', r: 'はんい' }, { t: 'を' }, { t: '調', r: 'しら' }, { t: 'べた。' },
+        ],
+        en: 'Having decided to take on the exam, I looked up the scope of the questions.',
+      },
+      {
+        seg: [
+          { t: '過去', r: 'かこ' }, { t: 'の' }, { t: 'パターン' }, { t: 'を' }, { t: '分析', r: 'ぶんせき' }, { t: 'し、' }, { t: 'あらゆる' }, { t: '課題', r: 'かだい' }, { t: 'に' }, { t: '目', r: 'め' }, { t: 'を' }, { t: '通', r: 'とお' }, { t: 'した。' },
+        ],
+        en: 'I analysed past patterns and looked through every kind of task.',
+      },
+      {
+        seg: [
+          { t: '長', r: 'なが' }, { t: 'い' }, { t: '文章', r: 'ぶんしょう' }, { t: 'は' }, { t: '段落', r: 'だんらく' }, { t: 'ごと' }, { t: 'に' }, { t: '区切', r: 'くぎ' }, { t: 'り、' }, { t: '大事', r: 'だいじ' }, { t: 'な' }, { t: '箇所', r: 'かしょ' }, { t: 'に' }, { t: '印', r: 'しるし' }, { t: 'を' }, { t: 'つける。' },
+        ],
+        en: 'I break long texts into paragraphs and mark the important spots.',
+      },
+      {
+        seg: [
+          { t: '答', r: 'こた' }, { t: 'え' }, { t: 'を' }, { t: '用紙', r: 'ようし' }, { t: 'に' }, { t: '書', r: 'か' }, { t: 'く' }, { t: 'とき' }, { t: 'は、' }, { t: '当', r: 'あ' }, { t: 'てはまる' }, { t: 'ものを' }, { t: '選択', r: 'せんたく' }, { t: 'する。' },
+        ],
+        en: 'When writing answers on the sheet, I select the one that applies.',
+      },
+      {
+        seg: [
+          { t: '自分', r: 'じぶん' }, { t: 'の' }, { t: '考', r: 'かんが' }, { t: 'え' }, { t: 'を' }, { t: '述', r: 'の' }, { t: 'べ、' }, { t: '別', r: 'べつ' }, { t: 'の' }, { t: '言葉', r: 'ことば' }, { t: 'で' }, { t: '言', r: 'い' }, { t: 'い' }, { t: '換', r: 'か' }, { t: 'える' }, { t: '練習', r: 'れんしゅう' }, { t: 'も' }, { t: 'した。' },
+        ],
+        en: 'I also practised stating my own view and rephrasing it in other words.',
+      },
+      {
+        seg: [
+          { t: '紛', r: 'まぎ' }, { t: 'らわしい' }, { t: '選択肢', r: 'せんたくし' }, { t: 'に' }, { t: '考', r: 'かんが' }, { t: 'え' }, { t: '込', r: 'こ' }, { t: 'み、' }, { t: 'さっぱり' }, { t: '分', r: 'わ' }, { t: 'からない' }, { t: 'こと' }, { t: 'も' }, { t: 'ある。' },
+        ],
+        en: 'I get stuck on confusing options and sometimes have no idea at all.',
+      },
+      {
+        seg: [
+          { t: 'そんな' }, { t: 'とき' }, { t: 'は' }, { t: '勘', r: 'かん' }, { t: 'に' }, { t: '限', r: 'かぎ' }, { t: 'らず、' }, { t: '基本', r: 'きほん' }, { t: 'を' }, { t: '応用', r: 'おうよう' }, { t: 'して' }, { t: '考', r: 'かんが' }, { t: 'える。' },
+        ],
+        en: 'At such times I do not rely on guesswork but apply the basics.',
+      },
+      {
+        seg: [
+          { t: '本番', r: 'ほんばん' }, { t: 'が' }, { t: '迫', r: 'せま' }, { t: 'る' }, { t: 'と、' }, { t: 'だれ' }, { t: 'も' }, { t: 'が' }, { t: '必死', r: 'ひっし' }, { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'As the real thing approaches, everyone becomes desperate.',
+      },
+      {
+        seg: [
+          { t: '「はじめ」' }, { t: 'の' }, { t: '合図', r: 'あいず' }, { t: 'で、' }, { t: 'いっせいに' }, { t: 'ページ' }, { t: 'を' }, { t: 'めくった。' },
+        ],
+        en: 'At the signal to begin, we all turned the page at once.',
+      },
+      {
+        seg: [
+          { t: '終了', r: 'しゅうりょう' }, { t: 'の' }, { t: '合図', r: 'あいず' }, { t: 'の' }, { t: 'あと、' }, { t: '用紙', r: 'ようし' }, { t: 'が' }, { t: '回収', r: 'かいしゅう' }, { t: 'された。' },
+        ],
+        en: 'After the signal to stop, the papers were collected.',
+      },
+      {
+        seg: [
+          { t: '採点', r: 'さいてん' }, { t: 'の' }, { t: '結果', r: 'けっか' }, { t: 'が' }, { t: '出', r: 'で' }, { t: 'る' }, { t: 'まで、' }, { t: '確実', r: 'かくじつ' }, { t: 'な' }, { t: 'こと' }, { t: 'は' }, { t: '言', r: 'い' }, { t: 'えない。' },
+        ],
+        en: 'Until the marking results come out, nothing can be said for certain.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 5,
+    section: 4,
+    title: '大学での研究',
+    targetWords: [
+      '受講', '書き留める', '目標', '心構え', '学問', '分野', '取り組む', '意欲', '思いつく', '発明', '継続', 'ほんの', '受け入れる', 'キャンパス', '休講', '講師', '学会', 'わずか', '論理的な', '論じる', '引用', '訳す', '編集', '要旨', '明確な', '挙げる', '用いる', '手書き', '一気に', '完成', '分析'
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '大学', r: 'だいがく' }, { t: 'で' }, { t: 'は' }, { t: '好', r: 'す' }, { t: 'きな' }, { t: '分野', r: 'ぶんや' }, { t: 'の' }, { t: '講義', r: 'こうぎ' }, { t: 'を' }, { t: '受講', r: 'じゅこう' }, { t: 'できる。' },
+        ],
+        en: 'At university you can take lectures in the field you like.',
+      },
+      {
+        seg: [
+          { t: '講師', r: 'こうし' }, { t: 'の' }, { t: '話', r: 'はなし' }, { t: 'を' }, { t: '書', r: 'か' }, { t: 'き' }, { t: '留', r: 'と' }, { t: 'め、' }, { t: 'あとで' }, { t: '要旨', r: 'ようし' }, { t: 'を' }, { t: 'まとめる。' },
+        ],
+        en: 'I note down what the lecturer says and summarize the gist afterwards.',
+      },
+      {
+        seg: [
+          { t: '明確', r: 'めいかく' }, { t: 'な' }, { t: '目標', r: 'もくひょう' }, { t: 'と' }, { t: '心構', r: 'こころがま' }, { t: 'え' }, { t: 'が' }, { t: 'あれば、' }, { t: '学問', r: 'がくもん' }, { t: 'は' }, { t: '楽', r: 'たの' }, { t: 'しい。' },
+        ],
+        en: 'With clear goals and the right mindset, academic study is enjoyable.',
+      },
+      {
+        seg: [
+          { t: '研究', r: 'けんきゅう' }, { t: 'に' }, { t: '取', r: 'と' }, { t: 'り' }, { t: '組', r: 'く' }, { t: 'む' }, { t: '意欲', r: 'いよく' }, { t: 'は、' }, { t: 'ほんの' }, { t: '小', r: 'ちい' }, { t: 'さな' }, { t: '疑問', r: 'ぎもん' }, { t: 'から' }, { t: '生', r: 'う' }, { t: 'まれる。' },
+        ],
+        en: 'The drive to tackle research is born from just a small question.',
+      },
+      {
+        seg: [
+          { t: '思', r: 'おも' }, { t: 'いついた' }, { t: 'こと' }, { t: 'を' }, { t: '論理的', r: 'ろんりてき' }, { t: 'に' }, { t: '論', r: 'ろん' }, { t: 'じ、' }, { t: 'データ' }, { t: 'を' }, { t: '分析', r: 'ぶんせき' }, { t: 'して' }, { t: '例', r: 'れい' }, { t: 'を' }, { t: '挙', r: 'あ' }, { t: 'げる。' },
+        ],
+        en: 'I argue what occurs to me logically, analyse the data and give examples.',
+      },
+      {
+        seg: [
+          { t: '他人', r: 'たにん' }, { t: 'の' }, { t: '文', r: 'ぶん' }, { t: 'を' }, { t: '引用', r: 'いんよう' }, { t: 'する' }, { t: 'とき' }, { t: 'は、' }, { t: 'かならず' }, { t: '出典', r: 'しゅってん' }, { t: 'を' }, { t: '用', r: 'もち' }, { t: 'いる。' },
+        ],
+        en: 'When quoting others, I always cite the source.',
+      },
+      {
+        seg: [
+          { t: '英語', r: 'えいご' }, { t: 'の' }, { t: '論文', r: 'ろんぶん' }, { t: 'を' }, { t: '訳', r: 'やく' }, { t: 'し、' }, { t: '編集', r: 'へんしゅう' }, { t: 'して' }, { t: '資料', r: 'しりょう' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'I translated English papers and edited them into materials.',
+      },
+      {
+        seg: [
+          { t: '休講', r: 'きゅうこう' }, { t: 'の' }, { t: '日', r: 'ひ' }, { t: 'は、' }, { t: 'キャンパス' }, { t: 'が' }, { t: 'わずか' }, { t: 'に' }, { t: '静', r: 'しず' }, { t: 'か' }, { t: 'だ。' },
+        ],
+        en: 'On days when lectures are cancelled, the campus is a little quieter.',
+      },
+      {
+        seg: [
+          { t: '学会', r: 'がっかい' }, { t: 'の' }, { t: '発表', r: 'はっぴょう' }, { t: 'を' }, { t: '受', r: 'う' }, { t: 'け' }, { t: '入', r: 'い' }, { t: 'れて' }, { t: 'もらい、' }, { t: '研究', r: 'けんきゅう' }, { t: 'を' }, { t: '継続', r: 'けいぞく' }, { t: 'した。' },
+        ],
+        en: 'My conference presentation was accepted, and I continued the research.',
+      },
+      {
+        seg: [
+          { t: '手書', r: 'てが' }, { t: 'き' }, { t: 'の' }, { t: 'メモ' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'ながら、' }, { t: '一' }, { t: '気', r: 'き' }, { t: 'に' }, { t: '論文', r: 'ろんぶん' }, { t: 'を' }, { t: '完成', r: 'かんせい' }, { t: 'させた。' },
+        ],
+        en: 'Looking at my handwritten notes, I finished the paper in one go.',
+      },
+      {
+        seg: [
+          { t: '新', r: 'あたら' }, { t: 'しい' }, { t: '方法', r: 'ほうほう' }, { t: 'を' }, { t: '発明', r: 'はつめい' }, { t: 'する' }, { t: 'こと' }, { t: 'も、' }, { t: 'いつか' }, { t: 'は' }, { t: 'できる' }, { t: 'だろう。' },
+        ],
+        en: 'Someday I may even be able to invent a new method.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 5,
+    section: 5,
+    title: 'パソコンの前で',
+    targetWords: [
+      '起動', '本体', 'キーボード', 'ディスプレイ', '接続', '検索', '転送', '文書', '設定', '余白', 'フォント', 'カーソル', '改行', '区切る', '貼り付ける', '強調', '拡大', '消去', '上書き保存', '順序', '印刷', 'プリンター', 'インク',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '朝', r: 'あさ' }, { t: '、' }, { t: 'パソコン' }, { t: 'の' }, { t: '本体', r: 'ほんたい' }, { t: 'の' }, { t: 'ボタン' }, { t: 'を' }, { t: '押', r: 'お' }, { t: 'して' }, { t: '起動', r: 'きどう' }, { t: 'する。' },
+        ],
+        en: 'In the morning I press the button on the computer and start it up.',
+      },
+      {
+        seg: [
+          { t: 'ディスプレイ' }, { t: 'が' }, { t: '明', r: 'あか' }, { t: 'るく' }, { t: 'なり、' }, { t: 'キーボード' }, { t: 'に' }, { t: '手', r: 'て' }, { t: 'を' }, { t: '置', r: 'お' }, { t: 'く。' },
+        ],
+        en: 'The display brightens and I put my hands on the keyboard.',
+      },
+      {
+        seg: [
+          { t: 'ネット' }, { t: 'に' }, { t: '接続', r: 'せつぞく' }, { t: 'して、' }, { t: 'キーワード' }, { t: 'を' }, { t: '検索', r: 'けんさく' }, { t: 'する。' },
+        ],
+        en: 'I connect to the internet and search for keywords.',
+      },
+      {
+        seg: [
+          { t: '必要', r: 'ひつよう' }, { t: 'な' }, { t: '文書', r: 'ぶんしょ' }, { t: 'を' }, { t: '同僚', r: 'どうりょう' }, { t: 'に' }, { t: '転送', r: 'てんそう' }, { t: 'した。' },
+        ],
+        en: 'I forwarded the necessary documents to a colleague.',
+      },
+      {
+        seg: [
+          { t: '余白', r: 'よはく' }, { t: 'と' }, { t: 'フォント' }, { t: 'を' }, { t: '設定', r: 'せってい' }, { t: 'し、' }, { t: '読', r: 'よ' }, { t: 'みやすく' }, { t: '整', r: 'ととの' }, { t: 'える。' },
+        ],
+        en: 'I set the margins and font and make it easy to read.',
+      },
+      {
+        seg: [
+          { t: 'カーソル' }, { t: 'を' }, { t: '動', r: 'うご' }, { t: 'かし、' }, { t: 'ここ' }, { t: 'で' }, { t: '改行', r: 'かいぎょう' }, { t: 'して' }, { t: '文', r: 'ぶん' }, { t: 'を' }, { t: '区切', r: 'くぎ' }, { t: 'る。' },
+        ],
+        en: 'I move the cursor, break the line here and divide the sentence.',
+      },
+      {
+        seg: [
+          { t: 'コピー' }, { t: 'した' }, { t: '表', r: 'ひょう' }, { t: 'を' }, { t: '貼', r: 'は' }, { t: 'り' }, { t: '付', r: 'つ' }, { t: 'け、' }, { t: '大事', r: 'だいじ' }, { t: 'な' }, { t: '数字', r: 'すうじ' }, { t: 'を' }, { t: '強調', r: 'きょうちょう' }, { t: 'した。' },
+        ],
+        en: 'I pasted the copied table and emphasized the important figures.',
+      },
+      {
+        seg: [
+          { t: '小', r: 'ちい' }, { t: 'さな' }, { t: '字', r: 'じ' }, { t: 'は' }, { t: '拡大', r: 'かくだい' }, { t: 'し、' }, { t: 'いらない' }, { t: '行', r: 'ぎょう' }, { t: 'は' }, { t: '消去', r: 'しょうきょ' }, { t: 'する。' },
+        ],
+        en: 'I enlarge small text and delete unnecessary lines.',
+      },
+      {
+        seg: [
+          { t: 'こまめに' }, { t: '上書', r: 'うわが' }, { t: 'き' }, { t: '保存', r: 'ほぞん' }, { t: 'して、' }, { t: '順序', r: 'じゅんじょ' }, { t: 'を' }, { t: '確', r: 'たし' }, { t: 'かめる。' },
+        ],
+        en: 'I save over the file frequently and check the order.',
+      },
+      {
+        seg: [
+          { t: 'プリンター' }, { t: 'の' }, { t: 'インク' }, { t: 'が' }, { t: '切', r: 'き' }, { t: 'れて、' }, { t: '印刷', r: 'いんさつ' }, { t: 'が' }, { t: '止', r: 'と' }, { t: 'まって' }, { t: 'しまった。' },
+        ],
+        en: 'The printer ran out of ink and the printing stopped.',
+      },
+    ],
+  },
 ]
