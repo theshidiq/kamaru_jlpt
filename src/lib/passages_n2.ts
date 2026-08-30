@@ -1324,4 +1324,359 @@ export const PASSAGES_N2: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N2',
+    chapter: 4,
+    section: 1,
+    title: '私の街',
+    targetWords: [
+      '街', '都市', '下町', '土地', '活気', '人通り', '絶える', '坂', '辺り', '付近', '住宅', '地区', 'エリア', '中間', '境', '抽選', '避難', '訓練', '見回る', '築く', '見当', '落書き', '強化',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '私', r: 'わたし' }, { t: 'の' }, { t: '住', r: 'す' }, { t: 'む' }, { t: '街', r: 'まち' }, { t: 'は、' }, { t: '大', r: 'おお' }, { t: 'きな' }, { t: '都市', r: 'とし' }, { t: 'の' }, { t: '中間', r: 'ちゅうかん' }, { t: 'に' }, { t: 'ある。' },
+        ],
+        en: 'The town I live in lies midway between large cities.',
+      },
+      {
+        seg: [
+          { t: '駅', r: 'えき' }, { t: 'の' }, { t: '付近', r: 'ふきん' }, { t: 'は' }, { t: '人通', r: 'ひとどお' }, { t: 'り' }, { t: 'が' }, { t: '絶', r: 'た' }, { t: 'えず、' }, { t: 'いつも' }, { t: '活気', r: 'かっき' }, { t: 'が' }, { t: 'ある。' },
+        ],
+        en: 'Near the station the flow of people never stops, and it is always lively.',
+      },
+      {
+        seg: [
+          { t: 'ゆるい' }, { t: '坂', r: 'さか' }, { t: 'を' }, { t: '上', r: 'のぼ' }, { t: 'る' }, { t: 'と、' }, { t: 'その' }, { t: '辺', r: 'あた' }, { t: 'り' }, { t: 'から' }, { t: '下町', r: 'したまち' }, { t: 'の' }, { t: '景色', r: 'けしき' }, { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'Going up the gentle slope, from around there it becomes an old-town view.',
+      },
+      {
+        seg: [
+          { t: '住宅', r: 'じゅうたく' }, { t: '' }, { t: '地区', r: 'ちく' }, { t: 'と' }, { t: '商業', r: 'しょうぎょう' }, { t: 'エリア' }, { t: 'の' }, { t: '境', r: 'さかい' }, { t: 'は、' }, { t: '道', r: 'みち' }, { t: 'が' }, { t: '斜', r: 'なな' }, { t: 'め' }, { t: 'に' }, { t: '走', r: 'はし' }, { t: 'っている。' },
+        ],
+        en: 'At the boundary between the residential district and the commercial area, the road runs diagonally.',
+      },
+      {
+        seg: [
+          { t: 'この' }, { t: '土地', r: 'とち' }, { t: 'は' }, { t: '人気', r: 'にんき' }, { t: 'が' }, { t: 'あり、' }, { t: '入居', r: 'にゅうきょ' }, { t: 'は' }, { t: '抽選', r: 'ちゅうせん' }, { t: 'に' }, { t: 'なる' }, { t: 'こと' }, { t: 'も' }, { t: 'ある。' },
+        ],
+        en: 'This area is popular, and moving in is sometimes decided by lottery.',
+      },
+      {
+        seg: [
+          { t: '年', r: 'ねん' }, { t: 'に' }, { t: '一' }, { t: '度', r: 'ど' }, { t: '、' }, { t: '避難', r: 'ひなん' }, { t: '' }, { t: '訓練', r: 'くんれん' }, { t: 'が' }, { t: '行', r: 'おこな' }, { t: 'われる。' },
+        ],
+        en: 'Once a year an evacuation drill is held.',
+      },
+      {
+        seg: [
+          { t: '夜', r: 'よる' }, { t: 'は' }, { t: '自治会', r: 'じちかい' }, { t: 'の' }, { t: '人', r: 'ひと' }, { t: 'が' }, { t: '見回', r: 'みまわ' }, { t: 'り、' }, { t: '防犯', r: 'ぼうはん' }, { t: 'を' }, { t: '強化', r: 'きょうか' }, { t: 'している。' },
+        ],
+        en: 'At night the neighborhood association patrols, strengthening security.',
+      },
+      {
+        seg: [
+          { t: '壁', r: 'かべ' }, { t: 'の' }, { t: '落書', r: 'らくが' }, { t: 'き' }, { t: 'を' }, { t: '消', r: 'け' }, { t: 'す' }, { t: '活動', r: 'かつどう' }, { t: 'も' }, { t: '続', r: 'つづ' }, { t: 'いている。' },
+        ],
+        en: 'The activity of removing graffiti from walls also continues.',
+      },
+      {
+        seg: [
+          { t: 'こうして' }, { t: '長', r: 'なが' }, { t: 'い' }, { t: '年月', r: 'ねんげつ' }, { t: 'を' }, { t: 'かけて、' }, { t: '安全', r: 'あんぜん' }, { t: 'な' }, { t: '街', r: 'まち' }, { t: 'を' }, { t: '築', r: 'きず' }, { t: 'いてきた。' },
+        ],
+        en: 'In this way, over many years, we have built a safe town.',
+      },
+      {
+        seg: [
+          { t: '十', r: 'じゅう' }, { t: '' }, { t: '年後', r: 'ねんご' }, { t: 'の' }, { t: '姿', r: 'すがた' }, { t: 'は、' }, { t: 'まだ' }, { t: '見当', r: 'けんとう' }, { t: 'が' }, { t: 'つかない。' },
+        ],
+        en: 'What it will look like in ten years, I still cannot guess.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 4,
+    section: 2,
+    title: '市役所にて',
+    targetWords: [
+      '自治体', '応える', '住民', '身分証明書', '生年月日', '署名', '修正', '年金', '施設', 'ロッカー', '建築', 'ニューアル', '近づける', '福祉', '年度', '交替', '収集', '配布', '処理', '需要', '提供', '用途', '知事'
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '自治体', r: 'じちたい' }, { t: 'の' }, { t: '窓口', r: 'まどぐち' }, { t: 'で、' }, { t: '住民', r: 'じゅうみん' }, { t: 'として' }, { t: 'の' }, { t: '手続', r: 'てつづ' }, { t: 'き' }, { t: 'を' }, { t: 'した。' },
+        ],
+        en: 'At the local government counter, I completed the procedures as a resident.',
+      },
+      {
+        seg: [
+          { t: '身分証明書', r: 'みぶんしょうめいしょ' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'せ、' }, { t: '生年月日', r: 'せいねんがっぴ' }, { t: 'を' }, { t: '確認', r: 'かくにん' }, { t: 'して' }, { t: 'もらう。' },
+        ],
+        en: 'I showed my ID and had my date of birth confirmed.',
+      },
+      {
+        seg: [
+          { t: '書類', r: 'しょるい' }, { t: 'に' }, { t: '署名', r: 'しょめい' }, { t: 'し、' }, { t: '間違', r: 'まちが' }, { t: 'い' }, { t: 'を' }, { t: 'その' }, { t: '場', r: 'ば' }, { t: 'で' }, { t: '修正', r: 'しゅうせい' }, { t: 'した。' },
+        ],
+        en: 'I signed the document and corrected a mistake on the spot.',
+      },
+      {
+        seg: [
+          { t: '年金', r: 'ねんきん' }, { t: 'や' }, { t: '福祉', r: 'ふくし' }, { t: 'の' }, { t: '相談', r: 'そうだん' }, { t: 'に' }, { t: 'も、' }, { t: 'ていねいに' }, { t: '応', r: 'こた' }, { t: 'えて' }, { t: 'くれる。' },
+        ],
+        en: 'They also respond carefully to questions about pensions and welfare.',
+      },
+      {
+        seg: [
+          { t: '県', r: 'けん' }, { t: 'の' }, { t: '知事', r: 'ちじ' }, { t: 'が' }, { t: '視察', r: 'しさつ' }, { t: 'に' }, { t: '来', r: 'き' }, { t: 'た' }, { t: '日', r: 'ひ' }, { t: 'は、' }, { t: '窓口', r: 'まどぐち' }, { t: 'が' }, { t: 'いつも' }, { t: 'より' }, { t: '静', r: 'しず' }, { t: 'かだった。' },
+        ],
+        en: 'On the day the prefectural governor came to inspect, the counter was quieter than usual.',
+      },
+      {
+        seg: [
+          { t: 'この' }, { t: '施設', r: 'しせつ' }, { t: 'は' }, { t: '去年', r: 'きょねん' }, { t: 'リニューアル' }, { t: 'され、' }, { t: 'ロッカー' }, { t: 'も' }, { t: '新', r: 'あたら' }, { t: 'しく' }, { t: 'なった。' },
+        ],
+        en: 'This facility was renovated last year, and the lockers are new too.',
+      },
+      {
+        seg: [
+          { t: '建築', r: 'けんちく' }, { t: 'の' }, { t: '際', r: 'さい' }, { t: '、' }, { t: '駅', r: 'えき' }, { t: 'に' }, { t: '近', r: 'ちか' }, { t: 'づける' }, { t: '案', r: 'あん' }, { t: 'が' }, { t: '選', r: 'えら' }, { t: 'ばれた。' },
+        ],
+        en: 'When it was built, the plan to place it nearer the station was chosen.',
+      },
+      {
+        seg: [
+          { t: '年度', r: 'ねんど' }, { t: 'の' }, { t: '初', r: 'はじ' }, { t: 'め' }, { t: 'に' }, { t: '担当者', r: 'たんとうしゃ' }, { t: 'が' }, { t: '交替', r: 'こうたい' }, { t: 'する。' },
+        ],
+        en: 'At the start of the fiscal year, the person in charge changes over.',
+      },
+      {
+        seg: [
+          { t: 'ごみ' }, { t: 'の' }, { t: '収集', r: 'しゅうしゅう' }, { t: '' }, { t: '日程', r: 'にってい' }, { t: 'は、' }, { t: 'チラシ' }, { t: 'で' }, { t: '配布', r: 'はいふ' }, { t: 'される。' },
+        ],
+        en: 'The rubbish collection schedule is distributed on a flyer.',
+      },
+      {
+        seg: [
+          { t: '申請', r: 'しんせい' }, { t: 'の' }, { t: '処理', r: 'しょり' }, { t: 'は' }, { t: '早', r: 'はや' }, { t: 'く、' }, { t: '用途', r: 'ようと' }, { t: 'に' }, { t: '応', r: 'おう' }, { t: 'じた' }, { t: '書式', r: 'しょしき' }, { t: 'が' }, { t: '提供', r: 'ていきょう' }, { t: 'される。' },
+        ],
+        en: 'Applications are processed quickly, and forms suited to each purpose are provided.',
+      },
+      {
+        seg: [
+          { t: '需要', r: 'じゅよう' }, { t: 'が' }, { t: '多', r: 'おお' }, { t: 'い' }, { t: '時期', r: 'じき' }, { t: 'は、' }, { t: 'やはり' }, { t: '混', r: 'こ' }, { t: 'む。' },
+        ],
+        en: 'In periods of high demand it does get crowded.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 4,
+    section: 3,
+    title: 'ふるさとへ',
+    targetWords: [
+      '故郷', '地元', '離れる', 'つかむ', '帰省', 'アクセス', '改善', '行事', 'はるか', '誇り', '載る', '宣伝', '作成', '見慣れる', '近郊', '描く', '若者', 'Uターン', '行き来', '担う',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '故郷', r: 'こきょう' }, { t: 'を' }, { t: '離', r: 'はな' }, { t: 'れて' }, { t: '十', r: 'じゅう' }, { t: '' }, { t: '年', r: 'ねん' }, { t: '、' }, { t: 'いま' }, { t: 'でも' }, { t: '地元', r: 'じもと' }, { t: 'の' }, { t: '話', r: 'はなし' }, { t: 'に' }, { t: 'なる' }, { t: 'と' }, { t: '声', r: 'こえ' }, { t: 'が' }, { t: '弾', r: 'はず' }, { t: 'む。' },
+        ],
+        en: 'Ten years since leaving my hometown, my voice still lifts when it comes up.',
+      },
+      {
+        seg: [
+          { t: '盆', r: 'ぼん' }, { t: 'と' }, { t: '正月', r: 'しょうがつ' }, { t: 'に' }, { t: 'は' }, { t: '必', r: 'かなら' }, { t: 'ず' }, { t: '帰省', r: 'きせい' }, { t: 'する。' },
+        ],
+        en: 'I always go home for Obon and New Year.',
+      },
+      {
+        seg: [
+          { t: 'アクセス' }, { t: 'が' }, { t: '改善', r: 'かいぜん' }, { t: 'され、' }, { t: '近郊', r: 'きんこう' }, { t: 'まで' }, { t: 'の' }, { t: '行', r: 'ゆ' }, { t: 'き' }, { t: '来', r: 'き' }, { t: 'が' }, { t: '楽', r: 'らく' }, { t: 'に' }, { t: 'なった。' },
+        ],
+        en: 'Access has improved, and travel to the surrounding area has become easy.',
+      },
+      {
+        seg: [
+          { t: '夏', r: 'なつ' }, { t: 'の' }, { t: '行事', r: 'ぎょうじ' }, { t: 'は' }, { t: '地域', r: 'ちいき' }, { t: 'の' }, { t: '誇', r: 'ほこ' }, { t: 'り' }, { t: 'で、' }, { t: 'はるかな' }, { t: '昔', r: 'むかし' }, { t: 'から' }, { t: '続', r: 'つづ' }, { t: 'く。' },
+        ],
+        en: 'The summer festival is the pride of the region and continues from the distant past.',
+      },
+      {
+        seg: [
+          { t: '雑誌', r: 'ざっし' }, { t: 'に' }, { t: '載', r: 'の' }, { t: 'った' }, { t: 'とき' }, { t: 'は、' }, { t: '宣伝', r: 'せんでん' }, { t: '' }, { t: '用', r: 'よう' }, { t: 'の' }, { t: 'ポスター' }, { t: 'も' }, { t: '作成', r: 'さくせい' }, { t: 'した。' },
+        ],
+        en: 'When it appeared in a magazine, we also made posters for publicity.',
+      },
+      {
+        seg: [
+          { t: '見慣', r: 'みな' }, { t: 'れた' }, { t: '風景', r: 'ふうけい' }, { t: 'を' }, { t: '絵', r: 'え' }, { t: 'に' }, { t: '描', r: 'えが' }, { t: 'く' }, { t: '人', r: 'ひと' }, { t: 'も' }, { t: '増', r: 'ふ' }, { t: 'えた。' },
+        ],
+        en: 'More people now paint the familiar scenery.',
+      },
+      {
+        seg: [
+          { t: 'チャンス' }, { t: 'を' }, { t: 'つかんで' }, { t: '都会', r: 'とかい' }, { t: 'へ' }, { t: '出', r: 'で' }, { t: 'た' }, { t: '若者', r: 'わかもの' }, { t: 'が、' }, { t: 'Uターン' }, { t: 'して' }, { t: '戻', r: 'もど' }, { t: 'って' }, { t: 'くる。' },
+        ],
+        en: 'Young people who seized a chance and went to the city return home again.',
+      },
+      {
+        seg: [
+          { t: '次', r: 'つぎ' }, { t: 'の' }, { t: '世代', r: 'せだい' }, { t: 'が' }, { t: 'この' }, { t: '土地', r: 'とち' }, { t: 'を' }, { t: '担', r: 'にな' }, { t: 'って' }, { t: 'いく' }, { t: 'だろう。' },
+        ],
+        en: 'The next generation will carry this place forward.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 4,
+    section: 4,
+    title: '移動する',
+    targetWords: [
+      '行き先', '方面', '行き帰り', '横断', '通行', '歩行者', '絶えず', '手段', '公共', '運賃', 'つかまる', 'アナウンス', '見合わせる', '乱れる', '再開', 'ICカード', '免許', '左右', '直線', 'なだらかな', '間隔', 'スムーズな', '指す', 'のろのろ', 'ぐるぐる', 'パンク', '慎重な', '気を抜く',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '毎朝', r: 'まいあさ' }, { t: '、' }, { t: '行', r: 'ゆ' }, { t: 'き' }, { t: '先', r: 'さき' }, { t: 'を' }, { t: '確', r: 'たし' }, { t: 'かめて' }, { t: 'から' }, { t: '家', r: 'いえ' }, { t: 'を' }, { t: '出', r: 'で' }, { t: 'る。' },
+        ],
+        en: 'Every morning I check my destination before leaving home.',
+      },
+      {
+        seg: [
+          { t: '東', r: 'ひがし' }, { t: '' }, { t: '方面', r: 'ほうめん' }, { t: 'の' }, { t: '電車', r: 'でんしゃ' }, { t: 'は、' }, { t: '行', r: 'ゆ' }, { t: 'き' }, { t: '帰', r: 'かえ' }, { t: 'り' }, { t: 'とも' }, { t: 'に' }, { t: '混', r: 'こ' }, { t: 'む。' },
+        ],
+        en: 'Trains heading east are crowded both ways.',
+      },
+      {
+        seg: [
+          { t: '公共', r: 'こうきょう' }, { t: 'の' }, { t: '交通', r: 'こうつう' }, { t: '' }, { t: '手段', r: 'しゅだん' }, { t: 'は' }, { t: '運賃', r: 'うんちん' }, { t: 'が' }, { t: '安', r: 'やす' }, { t: 'く、' }, { t: 'ICカード' }, { t: 'で' }, { t: '乗', r: 'の' }, { t: 'れる。' },
+        ],
+        en: 'Public transport is cheap and you can ride with an IC card.',
+      },
+      {
+        seg: [
+          { t: '車内', r: 'しゃない' }, { t: 'で' }, { t: 'は' }, { t: 'つり' }, { t: '革', r: 'かわ' }, { t: 'に' }, { t: 'つかまり、' }, { t: 'アナウンス' }, { t: 'を' }, { t: '聞', r: 'き' }, { t: 'く。' },
+        ],
+        en: 'Inside the carriage I hold a strap and listen to the announcements.',
+      },
+      {
+        seg: [
+          { t: '事故', r: 'じこ' }, { t: 'で' }, { t: 'ダイヤ' }, { t: 'が' }, { t: '乱', r: 'みだ' }, { t: 'れ、' }, { t: '運転', r: 'うんてん' }, { t: 'を' }, { t: '見合', r: 'みあ' }, { t: 'わせる' }, { t: '日', r: 'ひ' }, { t: 'も' }, { t: 'ある。' },
+        ],
+        en: 'Some days an accident disrupts the timetable and services are suspended.',
+      },
+      {
+        seg: [
+          { t: '再開', r: 'さいかい' }, { t: 'まで' }, { t: '絶', r: 'た' }, { t: 'えず' }, { t: 'アナウンス' }, { t: 'が' }, { t: '流', r: 'なが' }, { t: 'れた。' },
+        ],
+        en: 'Announcements played continuously until service resumed.',
+      },
+      {
+        seg: [
+          { t: '歩行者', r: 'ほこうしゃ' }, { t: 'は' }, { t: '横断', r: 'おうだん' }, { t: '' }, { t: '歩道', r: 'ほどう' }, { t: 'を' }, { t: '通行', r: 'つうこう' }, { t: 'し、' }, { t: '左右', r: 'さゆう' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'る。' },
+        ],
+        en: 'Pedestrians cross at the crossing and look both ways.',
+      },
+      {
+        seg: [
+          { t: '免許', r: 'めんきょ' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'って' }, { t: 'から' }, { t: 'は、' }, { t: '慎重', r: 'しんちょう' }, { t: 'に' }, { t: '運転', r: 'うんてん' }, { t: 'する' }, { t: 'よう' }, { t: 'に' }, { t: 'している。' },
+        ],
+        en: 'Since getting my licence, I try to drive carefully.',
+      },
+      {
+        seg: [
+          { t: '直線', r: 'ちょくせん' }, { t: 'は' }, { t: 'スムーズ' }, { t: 'だ' }, { t: 'が、' }, { t: 'なだらかな' }, { t: '坂', r: 'さか' }, { t: 'で' }, { t: 'は' }, { t: 'のろのろ' }, { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'The straight stretch is smooth, but on the gentle slope it slows to a crawl.',
+      },
+      {
+        seg: [
+          { t: '車間', r: 'しゃかん' }, { t: 'の' }, { t: '間隔', r: 'かんかく' }, { t: 'を' }, { t: 'あけ、' }, { t: 'ナビ' }, { t: 'が' }, { t: '指', r: 'さ' }, { t: 'す' }, { t: '方向', r: 'ほうこう' }, { t: 'へ' }, { t: '進', r: 'すす' }, { t: 'む。' },
+        ],
+        en: 'I leave space between cars and go the way the navigation points.',
+      },
+      {
+        seg: [
+          { t: '同', r: 'おな' }, { t: 'じ' }, { t: '道', r: 'みち' }, { t: 'を' }, { t: 'ぐるぐる' }, { t: '' }, { t: '回', r: 'まわ' }, { t: 'った' }, { t: 'あげく、' }, { t: 'タイヤ' }, { t: 'が' }, { t: 'パンク' }, { t: 'した。' },
+        ],
+        en: 'After going round and round the same road, the tyre went flat.',
+      },
+      {
+        seg: [
+          { t: 'どんな' }, { t: 'とき' }, { t: 'も' }, { t: '気', r: 'き' }, { t: 'を' }, { t: '抜', r: 'ぬ' }, { t: 'いて' }, { t: 'は' }, { t: 'いけない。' },
+        ],
+        en: 'You must never let your guard down.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 4,
+    section: 5,
+    title: 'この土地の仕事',
+    targetWords: [
+      '生産', '供給', '栽培', '農家', '作物', '漁業', '栄える', '急増', '情緒', '向上', '構成', '重視', '提案', '検討', '不可欠な', '妨げる', '生える', '著しい', '参考', 'リスク', '現地',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: 'この' }, { t: '地方', r: 'ちほう' }, { t: 'は' }, { t: '農業', r: 'のうぎょう' }, { t: 'と' }, { t: '漁業', r: 'ぎょぎょう' }, { t: 'で' }, { t: '栄', r: 'さか' }, { t: 'えて' }, { t: 'きた。' },
+        ],
+        en: 'This region has prospered on farming and fishing.',
+      },
+      {
+        seg: [
+          { t: '農家', r: 'のうか' }, { t: 'が' }, { t: '栽培', r: 'さいばい' }, { t: 'する' }, { t: '作物', r: 'さくもつ' }, { t: 'は、' }, { t: '都市', r: 'とし' }, { t: 'へ' }, { t: '供給', r: 'きょうきゅう' }, { t: 'される。' },
+        ],
+        en: 'The crops farmers grow are supplied to the cities.',
+      },
+      {
+        seg: [
+          { t: '生産', r: 'せいさん' }, { t: 'を' }, { t: '向上', r: 'こうじょう' }, { t: 'させる' }, { t: 'ため、' }, { t: '新', r: 'あたら' }, { t: 'しい' }, { t: '技術', r: 'ぎじゅつ' }, { t: 'が' }, { t: '普及', r: 'ふきゅう' }, { t: 'した。' },
+        ],
+        en: 'To raise production, new technology has spread.',
+      },
+      {
+        seg: [
+          { t: '若', r: 'わか' }, { t: 'い' }, { t: '就農者', r: 'しゅうのうしゃ' }, { t: 'が' }, { t: '急増', r: 'きゅうぞう' }, { t: 'した' }, { t: '年', r: 'とし' }, { t: 'も' }, { t: 'ある。' },
+        ],
+        en: 'There were years when young farmers increased sharply.',
+      },
+      {
+        seg: [
+          { t: '計画', r: 'けいかく' }, { t: 'を' }, { t: '構成', r: 'こうせい' }, { t: 'する' }, { t: '際', r: 'さい' }, { t: '、' }, { t: '現地', r: 'げんち' }, { t: 'の' }, { t: '声', r: 'こえ' }, { t: 'を' }, { t: '重視', r: 'じゅうし' }, { t: 'した。' },
+        ],
+        en: 'In putting the plan together, we placed weight on local voices.',
+      },
+      {
+        seg: [
+          { t: '提案', r: 'ていあん' }, { t: 'を' }, { t: '検討', r: 'けんとう' }, { t: 'し、' }, { t: 'リスク' }, { t: 'も' }, { t: '参考', r: 'さんこう' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'We examined the proposals and took the risks into account as well.',
+      },
+      {
+        seg: [
+          { t: '雑草', r: 'ざっそう' }, { t: 'が' }, { t: '生', r: 'は' }, { t: 'えて' }, { t: '成長', r: 'せいちょう' }, { t: 'を' }, { t: '妨', r: 'さまた' }, { t: 'げる' }, { t: 'こと' }, { t: 'も' }, { t: 'ある。' },
+        ],
+        en: 'Weeds sometimes grow and hinder growth.',
+      },
+      {
+        seg: [
+          { t: '気候', r: 'きこう' }, { t: 'の' }, { t: '影響', r: 'えいきょう' }, { t: 'は' }, { t: '著', r: 'いちじる' }, { t: 'しく、' }, { t: '対策', r: 'たいさく' }, { t: 'は' }, { t: '不可欠', r: 'ふかけつ' }, { t: 'だ。' },
+        ],
+        en: 'The effect of the climate is marked, and countermeasures are indispensable.',
+      },
+      {
+        seg: [
+          { t: '海辺', r: 'うみべ' }, { t: 'の' }, { t: '情緒', r: 'じょうちょ' }, { t: 'を' }, { t: '残', r: 'のこ' }, { t: 'した' }, { t: 'まま、' }, { t: 'この' }, { t: '土地', r: 'とち' }, { t: 'は' }, { t: '変', r: 'か' }, { t: 'わって' }, { t: 'いく。' },
+        ],
+        en: 'Keeping the atmosphere of the seaside, this place goes on changing.',
+      },
+    ],
+  },
 ]
