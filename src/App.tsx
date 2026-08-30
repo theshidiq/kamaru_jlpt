@@ -18,6 +18,7 @@ import { Reading } from '@/pages/Reading'
 import { MockExam } from '@/pages/MockExam'
 import { Progress } from '@/pages/Progress'
 import { Leaderboard } from '@/pages/Leaderboard'
+import { SectionReader } from '@/pages/SectionReader'
 import { FlashcardPicker } from '@/pages/FlashcardPicker'
 import { ListeningQuiz } from '@/pages/ListeningQuiz'
 
@@ -42,6 +43,7 @@ function AppInner() {
         <Route path="/mock-exam" element={<ProtectedRoute><MockExam /></ProtectedRoute>} />
         <Route path="/progress" element={<ProtectedRoute><Progress /></ProtectedRoute>} />
         <Route path="/leaderboard" element={<ProtectedRoute><Leaderboard /></ProtectedRoute>} />
+        <Route path="/read/:chapter/:section" element={<ProtectedRoute><SectionReader /></ProtectedRoute>} />
         <Route path="/flashcard" element={<ProtectedRoute><FlashcardPicker /></ProtectedRoute>} />
         <Route path="/quiz/listening" element={<ProtectedRoute><ListeningQuiz /></ProtectedRoute>} />
       </Routes>

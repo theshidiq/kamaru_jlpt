@@ -1,10 +1,11 @@
 import { useState, useRef, useMemo } from 'react'
-import { useParams, Link, useSearchParams } from 'react-router-dom'
+import { useParams, Link, useSearchParams, useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
 import { useAppStore } from '@/store/useAppStore'
 import { getSection, buildChapterMap, getMeaning } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
+import { PASSAGES_N2 } from '@/lib/passages_n2'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
 
@@ -87,6 +88,7 @@ function SwipeableCard({
 
 export function VocabSection() {
   const { chapter, section } = useParams<{ chapter: string; section: string }>()
+  const navigate = useNavigate()
   const ch = Number(chapter)
   const sec = Number(section)
   const { vocab, isLoading } = useVocab()
@@ -122,6 +124,7 @@ export function VocabSection() {
   }
 
   const words = getSection(vocab, ch, sec)
+  const hasPassage = PASSAGES_N2.some(p => p.chapter === ch && p.section === sec)
   const shuffledWords = useMemo(() => [...words].sort(() => Math.random() - 0.5), [ch, sec, words.length])
 
   if (isLoading) return <PageWrapper><div className="text-center py-10 text-gray-400">Loading...</div></PageWrapper>
@@ -177,6 +180,14 @@ export function VocabSection() {
             {v === 'list' ? t('list', lang) : t('flashcard', lang)}
           </button>
         ))}
+        {hasPassage && (
+          <button
+            onClick={() => navigate(`/read/${ch}/${sec}`)}
+            className="px-5 py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 hover:bg-rose-100 dark:hover:bg-rose-900/30"
+          >
+            {t('readTitle', lang)}
+          </button>
+        )}
       </div>
 
       {/* List (card) view */}
