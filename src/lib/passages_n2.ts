@@ -2443,4 +2443,371 @@ export const PASSAGES_N2: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N2',
+    chapter: 7,
+    section: 1,
+    title: '試合の日',
+    targetWords: [
+      '競技', '競う', '戦う', '勝負', '勝敗', '勝利', '破る', 'やっつける', '敗れる', '攻める', '逆転', '開会', '中断', '延長', '勇ましい', '勢い', 'さすが', '敵', 'グラウンド', '順位', 'トレーナー', '指導', '取り入れる', 'ハードな', '通用', '技', '今に',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '地区', r: 'ちく' }, { t: 'の' }, { t: '競技', r: 'きょうぎ' }, { t: '' }, { t: '大会', r: 'たいかい' }, { t: 'が、' }, { t: 'グラウンド' }, { t: 'で' }, { t: '開会', r: 'かいかい' }, { t: 'した。' },
+        ],
+        en: 'The district competition opened on the sports ground.',
+      },
+      {
+        seg: [
+          { t: '二', r: 'ふた' }, { t: 'つ' }, { t: 'の' }, { t: 'チーム' }, { t: 'が' }, { t: '順位', r: 'じゅんい' }, { t: 'を' }, { t: '競', r: 'きそ' }, { t: 'い、' }, { t: '激', r: 'はげ' }, { t: 'しく' }, { t: '戦', r: 'たたか' }, { t: 'った。' },
+        ],
+        en: 'Two teams competed for rank and fought fiercely.',
+      },
+      {
+        seg: [
+          { t: '前半', r: 'ぜんはん' }, { t: 'から' }, { t: '勢', r: 'いきお' }, { t: 'い' }, { t: 'よく' }, { t: '攻', r: 'せ' }, { t: 'め、' }, { t: '勇', r: 'いさ' }, { t: 'ましい' }, { t: '姿', r: 'すがた' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'せた。' },
+        ],
+        en: 'They attacked with momentum from the first half and looked valiant.',
+      },
+      {
+        seg: [
+          { t: '雨', r: 'あめ' }, { t: 'で' }, { t: '一時', r: 'いちじ' }, { t: '' }, { t: '中断', r: 'ちゅうだん' }, { t: 'した' }, { t: 'が、' }, { t: '観客', r: 'かんきゃく' }, { t: 'は' }, { t: '待', r: 'ま' }, { t: 'ち' }, { t: '続', r: 'つづ' }, { t: 'けた。' },
+        ],
+        en: 'It was briefly suspended by rain, but the spectators kept waiting.',
+      },
+      {
+        seg: [
+          { t: '後半', r: 'こうはん' }, { t: '、' }, { t: '相手', r: 'あいて' }, { t: 'を' }, { t: 'やっつける' }, { t: '' }, { t: '技', r: 'わざ' }, { t: 'が' }, { t: '決', r: 'き' }, { t: 'まり、' }, { t: '逆転', r: 'ぎゃくてん' }, { t: 'した。' },
+        ],
+        en: 'In the second half a decisive move beat the opponent and turned the game around.',
+      },
+      {
+        seg: [
+          { t: '延長', r: 'えんちょう' }, { t: 'の' }, { t: 'すえ' }, { t: 'に' }, { t: '勝負', r: 'しょうぶ' }, { t: 'が' }, { t: 'つき、' }, { t: '勝敗', r: 'しょうはい' }, { t: 'が' }, { t: '決', r: 'き' }, { t: 'まった。' },
+        ],
+        en: 'After extra time the contest was settled and the result decided.',
+      },
+      {
+        seg: [
+          { t: '敵', r: 'てき' }, { t: 'は' }, { t: '強', r: 'つよ' }, { t: 'かった' }, { t: 'が、' }, { t: 'ついに' }, { t: '記録', r: 'きろく' }, { t: 'を' }, { t: '破', r: 'やぶ' }, { t: 'って' }, { t: '勝利', r: 'しょうり' }, { t: 'した。' },
+        ],
+        en: 'The opponents were strong, but at last we broke the record and won.',
+      },
+      {
+        seg: [
+          { t: '敗', r: 'やぶ' }, { t: 'れた' }, { t: 'チーム' }, { t: 'も、' }, { t: 'さすが' }, { t: 'に' }, { t: '立派', r: 'りっぱ' }, { t: 'だった。' },
+        ],
+        en: 'The defeated team was, as expected, admirable too.',
+      },
+      {
+        seg: [
+          { t: 'トレーナー' }, { t: 'が' }, { t: '新', r: 'あたら' }, { t: 'しい' }, { t: '練習', r: 'れんしゅう' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'り' }, { t: '入', r: 'い' }, { t: 'れ、' }, { t: 'ハード' }, { t: 'に' }, { t: '指導', r: 'しどう' }, { t: 'した。' },
+        ],
+        en: 'The trainer introduced new drills and coached hard.',
+      },
+      {
+        seg: [
+          { t: 'この' }, { t: '方法', r: 'ほうほう' }, { t: 'が' }, { t: '全国', r: 'ぜんこく' }, { t: 'で' }, { t: 'も' }, { t: '通用', r: 'つうよう' }, { t: 'する' }, { t: 'か、' }, { t: '今', r: 'いま' }, { t: 'に' }, { t: '分', r: 'わ' }, { t: 'かる' }, { t: 'だろう。' },
+        ],
+        en: 'Whether this method works nationally will become clear before long.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 7,
+    section: 2,
+    title: '着るものの話',
+    targetWords: [
+      '格好', '持ち物', '身につける', 'センス', 'ダサい', 'いまひとつ', 'スタイル', '足元', 'ウエスト', '見た目', '人目', '色彩', '華やかな', '鮮やかな', '統一', 'フリーサイズ', 'ぶかぶか', '生地', '綿', 'オーダーメイド', 'サングラス', '取れる', '浴衣',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '出', r: 'で' }, { t: 'かける' }, { t: '前', r: 'まえ' }, { t: 'に、' }, { t: '鏡', r: 'かがみ' }, { t: 'で' }, { t: '格好', r: 'かっこう' }, { t: 'と' }, { t: '持', r: 'も' }, { t: 'ち' }, { t: '物', r: 'もの' }, { t: 'を' }, { t: '確', r: 'たし' }, { t: 'かめる。' },
+        ],
+        en: 'Before going out, I check my outfit and belongings in the mirror.',
+      },
+      {
+        seg: [
+          { t: '見', r: 'み' }, { t: 'た' }, { t: '目', r: 'め' }, { t: 'より、' }, { t: '身', r: 'み' }, { t: 'に' }, { t: 'つける' }, { t: 'もの' }, { t: 'の' }, { t: 'センス' }, { t: 'が' }, { t: '大事', r: 'だいじ' }, { t: 'だ' }, { t: 'と' }, { t: '思', r: 'おも' }, { t: 'う。' },
+        ],
+        en: 'More than looks, I think the taste of what you wear matters.',
+      },
+      {
+        seg: [
+          { t: '派手', r: 'はで' }, { t: 'すぎる' }, { t: 'と' }, { t: 'ダサい' }, { t: 'し、' }, { t: '地味', r: 'じみ' }, { t: 'すぎる' }, { t: 'と' }, { t: 'いまひとつ' }, { t: 'だ。' },
+        ],
+        en: 'Too flashy is naff, too plain is not quite right.',
+      },
+      {
+        seg: [
+          { t: '色彩', r: 'しきさい' }, { t: 'を' }, { t: '統一', r: 'とういつ' }, { t: 'する' }, { t: 'と、' }, { t: 'スタイル' }, { t: 'が' }, { t: 'きれい' }, { t: 'に' }, { t: '見', r: 'み' }, { t: 'える。' },
+        ],
+        en: 'Unifying the colors makes the silhouette look good.',
+      },
+      {
+        seg: [
+          { t: '鮮', r: 'あざ' }, { t: 'やかな' }, { t: '赤', r: 'あか' }, { t: 'は' }, { t: '華', r: 'はな' }, { t: 'やかで、' }, { t: '人目', r: 'ひとめ' }, { t: 'を' }, { t: '引', r: 'ひ' }, { t: 'く。' },
+        ],
+        en: 'Vivid red is gorgeous and catches the eye.',
+      },
+      {
+        seg: [
+          { t: 'ウエスト' }, { t: 'が' }, { t: 'ぶかぶか' }, { t: 'だった' }, { t: 'ので、' }, { t: 'フリーサイズ' }, { t: 'は' }, { t: 'やめた。' },
+        ],
+        en: 'The waist was baggy, so I gave up on the one-size item.',
+      },
+      {
+        seg: [
+          { t: '綿', r: 'めん' }, { t: 'の' }, { t: '生地', r: 'きじ' }, { t: 'は' }, { t: '肌', r: 'はだ' }, { t: 'に' }, { t: 'やさしく、' }, { t: 'なつ' }, { t: 'に' }, { t: 'ちょうど' }, { t: 'いい。' },
+        ],
+        en: 'Cotton fabric is kind to the skin and just right for summer.',
+      },
+      {
+        seg: [
+          { t: '足元', r: 'あしもと' }, { t: 'を' }, { t: '決', r: 'き' }, { t: 'めれば、' }, { t: 'ぜんたい' }, { t: 'が' }, { t: 'しまる。' },
+        ],
+        en: 'Get the footwear right and the whole look comes together.',
+      },
+      {
+        seg: [
+          { t: 'ボタン' }, { t: 'が' }, { t: '取', r: 'と' }, { t: 'れて' }, { t: 'いた' }, { t: 'ので、' }, { t: 'その' }, { t: '日', r: 'ひ' }, { t: 'は' }, { t: '別', r: 'べつ' }, { t: 'の' }, { t: '服', r: 'ふく' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'A button had come off, so that day I wore something else.',
+      },
+      {
+        seg: [
+          { t: '夏祭', r: 'なつまつ' }, { t: 'り' }, { t: 'に' }, { t: 'は' }, { t: '浴衣', r: 'ゆかた' }, { t: 'を' }, { t: '着', r: 'き' }, { t: 'て、' }, { t: 'サングラス' }, { t: 'は' }, { t: 'はずした。' },
+        ],
+        en: 'For the summer festival I wore a yukata and took off my sunglasses.',
+      },
+      {
+        seg: [
+          { t: 'いつか' }, { t: 'オーダーメイド' }, { t: 'の' }, { t: '一着', r: 'いっちゃく' }, { t: 'を' }, { t: '作', r: 'つく' }, { t: 'って' }, { t: 'みたい。' },
+        ],
+        en: 'Someday I want to have a made-to-order piece made.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 7,
+    section: 3,
+    title: '舞台を見る',
+    targetWords: [
+      'イベント', 'アイドル', 'ステージ', '興奮', '続々', '演劇', '劇場', '役者', '主役', 'セリフ', 'オーケストラ', 'リズム', '鑑賞', '芸術家', '監督', 'あらすじ', 'ありふれた', 'ばかばかしい', '退屈', '人物', '場面', '展開', 'テンポ', '評判', '評価', '感想', '賞',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '週末', r: 'しゅうまつ' }, { t: '、' }, { t: '友', r: 'とも' }, { t: 'だち' }, { t: 'と' }, { t: 'イベント' }, { t: 'に' }, { t: '出', r: 'で' }, { t: 'かけた。' },
+        ],
+        en: 'At the weekend I went out to an event with a friend.',
+      },
+      {
+        seg: [
+          { t: 'アイドル' }, { t: 'が' }, { t: 'ステージ' }, { t: 'に' }, { t: '続々', r: 'ぞくぞく' }, { t: 'と' }, { t: '現', r: 'あらわ' }, { t: 'れ、' }, { t: 'みんな' }, { t: '興奮', r: 'こうふん' }, { t: 'した。' },
+        ],
+        en: 'Idols appeared on stage one after another and everyone got excited.',
+      },
+      {
+        seg: [
+          { t: '翌週', r: 'よくしゅう' }, { t: 'は' }, { t: '劇場', r: 'げきじょう' }, { t: 'で' }, { t: '演劇', r: 'えんげき' }, { t: 'を' }, { t: '鑑賞', r: 'かんしょう' }, { t: 'した。' },
+        ],
+        en: 'The next week I saw a play at the theater.',
+      },
+      {
+        seg: [
+          { t: '主役', r: 'しゅやく' }, { t: 'の' }, { t: '役者', r: 'やくしゃ' }, { t: 'は、' }, { t: 'セリフ' }, { t: 'も' }, { t: '演技', r: 'えんぎ' }, { t: 'も' }, { t: '見事', r: 'みごと' }, { t: 'だった。' },
+        ],
+        en: 'The lead actor was superb in both lines and acting.',
+      },
+      {
+        seg: [
+          { t: 'オーケストラ' }, { t: 'の' }, { t: 'リズム' }, { t: 'が' }, { t: '場面', r: 'ばめん' }, { t: 'を' }, { t: '支', r: 'ささ' }, { t: 'え、' }, { t: 'テンポ' }, { t: 'も' }, { t: 'よかった。' },
+        ],
+        en: 'The orchestra’s rhythm supported the scenes, and the tempo was good.',
+      },
+      {
+        seg: [
+          { t: '登場', r: 'とうじょう' }, { t: '' }, { t: '人物', r: 'じんぶつ' }, { t: 'は' }, { t: '多', r: 'おお' }, { t: 'い' }, { t: 'が、' }, { t: 'あらすじ' }, { t: 'は' }, { t: 'わかりやすい。' },
+        ],
+        en: 'There are many characters, but the plot is easy to follow.',
+      },
+      {
+        seg: [
+          { t: 'ありふれた' }, { t: '展開', r: 'てんかい' }, { t: 'なら' }, { t: '退屈', r: 'たいくつ' }, { t: 'だ' }, { t: 'が、' }, { t: 'この' }, { t: '作品', r: 'さくひん' }, { t: 'は' }, { t: '違', r: 'ちが' }, { t: 'った。' },
+        ],
+        en: 'A commonplace development would be dull, but this work was different.',
+      },
+      {
+        seg: [
+          { t: '監督', r: 'かんとく' }, { t: 'は' }, { t: '若', r: 'わか' }, { t: 'い' }, { t: '芸術家', r: 'げいじゅつか' }, { t: 'で、' }, { t: '賞', r: 'しょう' }, { t: 'も' }, { t: '取', r: 'と' }, { t: 'っている。' },
+        ],
+        en: 'The director is a young artist who has won awards.',
+      },
+      {
+        seg: [
+          { t: 'ばかばかしい' }, { t: 'と' }, { t: '言', r: 'い' }, { t: 'う' }, { t: '人', r: 'ひと' }, { t: 'も' }, { t: 'いた' }, { t: 'が、' }, { t: '評判', r: 'ひょうばん' }, { t: 'は' }, { t: 'よかった。' },
+        ],
+        en: 'Some called it silly, but the reception was good.',
+      },
+      {
+        seg: [
+          { t: '帰', r: 'かえ' }, { t: 'り' }, { t: '道', r: 'みち' }, { t: '、' }, { t: 'おたがい' }, { t: 'の' }, { t: '感想', r: 'かんそう' }, { t: 'を' }, { t: '話', r: 'はな' }, { t: 'し、' }, { t: '高', r: 'たか' }, { t: 'く' }, { t: '評価', r: 'ひょうか' }, { t: 'した。' },
+        ],
+        en: 'On the way home we shared impressions and rated it highly.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 7,
+    section: 4,
+    title: '本の世界',
+    targetWords: [
+      '書物', '絵本', '作品', '著者', '書き手', 'ペンネーム', '主人公', 'ロマン', '伝記', '人生', '神話', '中世', '文明', '忠実な', '奇妙な', '背景', '実際', '文句', '果たして', '発想', '由来', '空想', '連想', '解釈', '発行', '生み出す', '読書家',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '子', r: 'こ' }, { t: 'ども' }, { t: 'の' }, { t: 'ころ' }, { t: 'は' }, { t: '絵本', r: 'えほん' }, { t: '、' }, { t: 'いま' }, { t: 'は' }, { t: '厚', r: 'あつ' }, { t: 'い' }, { t: '書物', r: 'しょもつ' }, { t: 'を' }, { t: '読', r: 'よ' }, { t: 'む。' },
+        ],
+        en: 'As a child it was picture books; now I read thick volumes.',
+      },
+      {
+        seg: [
+          { t: 'ある' }, { t: '著者', r: 'ちょしゃ' }, { t: 'の' }, { t: '作品', r: 'さくひん' }, { t: 'に' }, { t: '出会', r: 'であ' }, { t: 'い、' }, { t: '読書家', r: 'どくしょか' }, { t: 'に' }, { t: 'なった。' },
+        ],
+        en: 'I came across one author’s work and became a keen reader.',
+      },
+      {
+        seg: [
+          { t: 'その' }, { t: '書', r: 'か' }, { t: 'き' }, { t: '手', r: 'て' }, { t: 'は' }, { t: 'ペンネーム' }, { t: 'を' }, { t: '使', r: 'つか' }, { t: 'い、' }, { t: '人生', r: 'じんせい' }, { t: 'を' }, { t: '描', r: 'えが' }, { t: 'いて' }, { t: 'いる。' },
+        ],
+        en: 'That writer uses a pen name and depicts human life.',
+      },
+      {
+        seg: [
+          { t: '主人公', r: 'しゅじんこう' }, { t: 'の' }, { t: '伝記', r: 'でんき' }, { t: 'の' }, { t: 'ような' }, { t: '物語', r: 'ものがたり' }, { t: 'に、' }, { t: 'ロマン' }, { t: 'を' }, { t: '感', r: 'かん' }, { t: 'じた。' },
+        ],
+        en: 'I felt a romance in the story, which read like the hero’s biography.',
+      },
+      {
+        seg: [
+          { t: '中世', r: 'ちゅうせい' }, { t: 'の' }, { t: '文明', r: 'ぶんめい' }, { t: 'や' }, { t: '神話', r: 'しんわ' }, { t: 'が' }, { t: '背景', r: 'はいけい' }, { t: 'に' }, { t: 'ある。' },
+        ],
+        en: 'Medieval civilization and myth lie in the background.',
+      },
+      {
+        seg: [
+          { t: '史実', r: 'しじつ' }, { t: 'に' }, { t: '忠実', r: 'ちゅうじつ' }, { t: 'で' }, { t: 'あり' }, { t: 'ながら、' }, { t: '奇妙', r: 'きみょう' }, { t: 'な' }, { t: '発想', r: 'はっそう' }, { t: 'も' }, { t: '生', r: 'う' }, { t: 'み' }, { t: '出', r: 'だ' }, { t: 'している。' },
+        ],
+        en: 'While faithful to historical fact, it also produces strange ideas.',
+      },
+      {
+        seg: [
+          { t: '言葉', r: 'ことば' }, { t: 'の' }, { t: '由来', r: 'ゆらい' }, { t: 'を' }, { t: '調', r: 'しら' }, { t: 'べる' }, { t: 'と、' }, { t: 'いろいろ' }, { t: '連想', r: 'れんそう' }, { t: 'が' }, { t: '広', r: 'ひろ' }, { t: 'がる。' },
+        ],
+        en: 'Looking up the origin of a word sets off all sorts of associations.',
+      },
+      {
+        seg: [
+          { t: '実際', r: 'じっさい' }, { t: 'に' }, { t: 'は' }, { t: 'ない' }, { t: '世界', r: 'せかい' }, { t: 'を' }, { t: '空想', r: 'くうそう' }, { t: 'する' }, { t: 'の' }, { t: 'が' }, { t: '楽', r: 'たの' }, { t: 'しい。' },
+        ],
+        en: 'Imagining a world that does not really exist is enjoyable.',
+      },
+      {
+        seg: [
+          { t: '果', r: 'は' }, { t: 'たして' }, { t: 'この' }, { t: '解釈', r: 'かいしゃく' }, { t: 'で' }, { t: 'いい' }, { t: 'の' }, { t: 'か、' }, { t: '文句', r: 'もんく' }, { t: 'を' }, { t: '言', r: 'い' }, { t: 'う' }, { t: '人', r: 'ひと' }, { t: 'も' }, { t: 'いる' }, { t: 'だろう。' },
+        ],
+        en: 'Whether this interpretation is right, some will surely complain.',
+      },
+      {
+        seg: [
+          { t: 'この' }, { t: '本', r: 'ほん' }, { t: 'は' }, { t: '去年', r: 'きょねん' }, { t: '' }, { t: '発行', r: 'はっこう' }, { t: 'され、' }, { t: 'いま' }, { t: 'も' }, { t: '売', r: 'う' }, { t: 'れて' }, { t: 'いる。' },
+        ],
+        en: 'This book was published last year and still sells well.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 7,
+    section: 5,
+    title: '好きなこと',
+    targetWords: [
+      '習い事', 'こだわる', 'こだわり', '凝る', '熱中', 'コレクション', '多彩な', '素人', '初心者', '本格的な', '名人', '共通', 'ブーム', 'アウトドア', '編み物', '手品', '占い', '手話', '伝統', '作法', '撮影', 'レンズ', '宝くじ', '当たる', 'コツ', '瞬間', '組み合わせる', '身近',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '大人', r: 'おとな' }, { t: 'に' }, { t: 'なって' }, { t: 'から' }, { t: '習', r: 'なら' }, { t: 'い' }, { t: '事', r: 'ごと' }, { t: 'を' }, { t: '始', r: 'はじ' }, { t: 'める' }, { t: '人', r: 'ひと' }, { t: 'が' }, { t: '増', r: 'ふ' }, { t: 'えた。' },
+        ],
+        en: 'More people now take up lessons as adults.',
+      },
+      {
+        seg: [
+          { t: '私', r: 'わたし' }, { t: 'の' }, { t: '趣味', r: 'しゅみ' }, { t: 'は' }, { t: '多彩', r: 'たさい' }, { t: 'で、' }, { t: '身近', r: 'みぢか' }, { t: 'な' }, { t: 'もの' }, { t: 'ばかり' }, { t: 'だ。' },
+        ],
+        en: 'My hobbies are varied, and all of them are close at hand.',
+      },
+      {
+        seg: [
+          { t: 'カメラ' }, { t: 'に' }, { t: '凝', r: 'こ' }, { t: 'って、' }, { t: 'レンズ' }, { t: 'に' }, { t: 'まで' }, { t: 'こだわる' }, { t: 'ように' }, { t: 'なった。' },
+        ],
+        en: 'I got absorbed in cameras and even became particular about lenses.',
+      },
+      {
+        seg: [
+          { t: '撮影', r: 'さつえい' }, { t: 'の' }, { t: 'コツ' }, { t: 'は、' }, { t: '光', r: 'ひかり' }, { t: 'と' }, { t: '瞬間', r: 'しゅんかん' }, { t: 'を' }, { t: '組', r: 'く' }, { t: 'み' }, { t: '合', r: 'あ' }, { t: 'わせる' }, { t: 'こと' }, { t: 'だ。' },
+        ],
+        en: 'The knack of photography is combining light and the right moment.',
+      },
+      {
+        seg: [
+          { t: '素人', r: 'しろうと' }, { t: 'から' }, { t: '始', r: 'はじ' }, { t: 'め、' }, { t: 'いま' }, { t: 'は' }, { t: '本格的', r: 'ほんかくてき' }, { t: 'に' }, { t: '熱中', r: 'ねっちゅう' }, { t: 'して' }, { t: 'いる。' },
+        ],
+        en: 'I started as an amateur and am now seriously absorbed in it.',
+      },
+      {
+        seg: [
+          { t: '初心者', r: 'しょしんしゃ' }, { t: 'に' }, { t: 'は' }, { t: '編', r: 'あ' }, { t: 'み' }, { t: '物', r: 'もの' }, { t: 'や' }, { t: '手品', r: 'てじな' }, { t: 'も' }, { t: 'おすすめ' }, { t: 'だ。' },
+        ],
+        en: 'For beginners, knitting or magic tricks are also good.',
+      },
+      {
+        seg: [
+          { t: '友人', r: 'ゆうじん' }, { t: 'は' }, { t: '占', r: 'うらな' }, { t: 'い' }, { t: 'と' }, { t: '手話', r: 'しゅわ' }, { t: 'を' }, { t: '習', r: 'なら' }, { t: 'い、' }, { t: 'コレクション' }, { t: 'も' }, { t: '続', r: 'つづ' }, { t: 'けている。' },
+        ],
+        en: 'A friend studies fortune-telling and sign language and keeps up a collection.',
+      },
+      {
+        seg: [
+          { t: '茶道', r: 'さどう' }, { t: 'の' }, { t: '作法', r: 'さほう' }, { t: 'に' }, { t: 'は、' }, { t: '長', r: 'なが' }, { t: 'い' }, { t: '伝統', r: 'でんとう' }, { t: 'が' }, { t: 'ある。' },
+        ],
+        en: 'The etiquette of the tea ceremony carries a long tradition.',
+      },
+      {
+        seg: [
+          { t: 'アウトドア' }, { t: 'が' }, { t: 'ブーム' }, { t: 'に' }, { t: 'なり、' }, { t: '共通', r: 'きょうつう' }, { t: 'の' }, { t: '話題', r: 'わだい' }, { t: 'が' }, { t: '増', r: 'ふ' }, { t: 'えた。' },
+        ],
+        en: 'The outdoors became a boom, and shared topics increased.',
+      },
+      {
+        seg: [
+          { t: '宝', r: 'たから' }, { t: 'くじ' }, { t: 'が' }, { t: '当', r: 'あ' }, { t: 'たったら、' }, { t: 'と' }, { t: '話', r: 'はな' }, { t: 'す' }, { t: '名人', r: 'めいじん' }, { t: 'も' }, { t: 'いて、' }, { t: 'おかしかった。' },
+        ],
+        en: 'Even a master was talking about what if the lottery came in, which was funny.',
+      },
+      {
+        seg: [
+          { t: 'そんな' }, { t: 'こだわり' }, { t: 'が、' }, { t: '毎日', r: 'まいにち' }, { t: 'を' }, { t: '楽', r: 'たの' }, { t: 'しく' }, { t: 'して' }, { t: 'くれる。' },
+        ],
+        en: 'Such little obsessions make everyday life enjoyable.',
+      },
+    ],
+  },
 ]
