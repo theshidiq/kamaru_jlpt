@@ -524,4 +524,425 @@ export const PASSAGES_N2: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N2',
+    chapter: 2,
+    section: 1,
+    title: '我が家をさがす',
+    targetWords: [
+      '一人住まい', '賃貸', '敷金', '更新', 'ローン', '決まり', '一戸建て', 'マイホーム', '我が家', '家屋', '屋根', '洗面所', '物置', '間取り', '空間', '奥', '手前', '南向き', '温もり', '頑丈な', '点検', '停止', '物音', '防犯', 'ぞっと', '警備', '新築',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '東京', r: 'とうきょう' }, { t: 'で' }, { t: 'の' }, { t: '一人住', r: 'ひとりず' }, { t: 'まい' }, { t: 'も' }, { t: '三' }, { t: '年目', r: 'ねんめ' }, { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'This is my third year living alone in Tokyo.',
+      },
+      {
+        seg: [
+          { t: '賃貸', r: 'ちんたい' }, { t: 'の' }, { t: '契約', r: 'けいやく' }, { t: 'を' }, { t: '更新', r: 'こうしん' }, { t: 'する' }, { t: 'とき、' }, { t: '敷金', r: 'しききん' }, { t: 'の' }, { t: '' }, { t: '決', r: 'き' }, { t: 'まり' }, { t: 'を' }, { t: 'よく' }, { t: '読', r: 'よ' }, { t: 'んだ。' },
+        ],
+        en: 'When renewing the rental contract, I read the rules about the deposit carefully.',
+      },
+      {
+        seg: [
+          { t: 'いつ', r: '・' }, { t: 'か' }, { t: 'は' }, { t: 'ローン' }, { t: 'を' }, { t: '組', r: 'く' }, { t: 'んで' }, { t: 'マイホーム' }, { t: 'を' }, { t: '持', r: 'も' }, { t: 'ちたい。' },
+        ],
+        en: 'Someday I want to take out a loan and own my own home.',
+      },
+      {
+        seg: [
+          { t: 'できれば' }, { t: '一戸建', r: 'いっこだ' }, { t: 'て' }, { t: 'が' }, { t: 'いい' }, { t: 'が、' }, { t: '家屋', r: 'かおく' }, { t: 'の' }, { t: '値段', r: 'ねだん' }, { t: 'は' }, { t: '高', r: 'たか' }, { t: 'い。' },
+        ],
+        en: 'A detached house would be best, but house prices are high.',
+      },
+      {
+        seg: [
+          { t: '我', r: 'わ' }, { t: 'が' }, { t: '家', r: 'や' }, { t: 'の' }, { t: '理想', r: 'りそう' }, { t: 'は、' }, { t: '南向', r: 'みなみむ' }, { t: 'き' }, { t: 'で' }, { t: '日', r: 'ひ' }, { t: 'の' }, { t: '入', r: 'はい' }, { t: 'る' }, { t: '間取', r: 'まど' }, { t: 'り' }, { t: 'だ。' },
+        ],
+        en: 'My ideal home has a south-facing layout that lets the light in.',
+      },
+      {
+        seg: [
+          { t: '広', r: 'ひろ' }, { t: 'い' }, { t: '空間', r: 'くうかん' }, { t: 'と' }, { t: '木', r: 'き' }, { t: 'の' }, { t: '温', r: 'ぬく' }, { t: 'もり' }, { t: 'が' }, { t: 'ある' }, { t: '部屋' }, { t: 'に' }, { t: '住', r: 'す' }, { t: 'みたい。' },
+        ],
+        en: 'I want to live in a room with open space and the warmth of wood.',
+      },
+      {
+        seg: [
+          { t: '奥', r: 'おく' }, { t: 'に' }, { t: '洗面所', r: 'せんめんじょ' }, { t: '、' }, { t: '手前', r: 'てまえ' }, { t: 'に' }, { t: '物置', r: 'ものおき' }, { t: 'が' }, { t: 'あれば' }, { t: '便利', r: 'べんり' }, { t: 'だ。' },
+        ],
+        en: 'It would be convenient with a washroom at the back and a storeroom near the front.',
+      },
+      {
+        seg: [
+          { t: '屋根', r: 'やね' }, { t: 'が' }, { t: '頑丈', r: 'がんじょう' }, { t: 'で、' }, { t: '新築', r: 'しんちく' }, { t: 'なら' }, { t: 'なお' }, { t: 'いい。' },
+        ],
+        en: 'Even better if the roof is sturdy and the house is newly built.',
+      },
+      {
+        seg: [
+          { t: '夜中', r: 'よなか' }, { t: '、' }, { t: 'へんな' }, { t: '物音', r: 'ものおと' }, { t: 'が' }, { t: 'して' }, { t: 'ぞっと' }, { t: 'した' }, { t: 'こと' }, { t: 'が' }, { t: 'ある。' },
+        ],
+        en: 'One night I heard a strange noise and felt a chill.',
+      },
+      {
+        seg: [
+          { t: 'それ' }, { t: 'から' }, { t: '防犯', r: 'ぼうはん' }, { t: 'を' }, { t: '意識', r: 'いしき' }, { t: 'し、' }, { t: '警備', r: 'けいび' }, { t: '会社' }, { t: 'に' }, { t: '相談', r: 'そうだん' }, { t: 'した。' },
+        ],
+        en: 'Since then I have been conscious of security and consulted a security company.',
+      },
+      {
+        seg: [
+          { t: '設備', r: 'せつび' }, { t: 'の' }, { t: '点検', r: 'てんけん' }, { t: 'の' }, { t: '日', r: 'ひ' }, { t: 'は、' }, { t: 'エレベーター' }, { t: 'が' }, { t: '停止', r: 'ていし' }, { t: 'する。' },
+        ],
+        en: 'On equipment inspection days, the elevator stops running.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 2,
+    section: 2,
+    title: 'お金と付き合う',
+    targetWords: [
+      '收入', 'ごく', 'せいぜい', '出費', '赤字', '大金', '税金', '納める', '含む', '公共料金', '払い込む', '引き落とし', '手数料', '出し入れ', '高くつく', '残高', 'せっせと', '大まかな', '差し引く', '努める', '立て替える', '援助', '返済', '安定',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '毎月', r: 'まいつき' }, { t: 'の' }, { t: '收入', r: 'しゅうにゅう' }, { t: 'と' }, { t: '出費', r: 'しゅっぴ' }, { t: 'を、' }, { t: 'ノート' }, { t: 'に' }, { t: '大', r: 'おお' }, { t: 'まかに' }, { t: '書', r: 'か' }, { t: 'いている。' },
+        ],
+        en: 'I write down my monthly income and expenses roughly in a notebook.',
+      },
+      {
+        seg: [
+          { t: 'ごく' }, { t: '普通', r: 'ふつう' }, { t: 'の' }, { t: '生活', r: 'せいかつ' }, { t: 'だ' }, { t: 'が、' }, { t: 'ときどき' }, { t: '赤字', r: 'あかじ' }, { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'It is a very ordinary life, but sometimes I end up in the red.',
+      },
+      {
+        seg: [
+          { t: '家賃', r: 'やちん' }, { t: 'や' }, { t: '公共料金', r: 'こうきょうりょうきん' }, { t: 'は' }, { t: '口座', r: 'こうざ' }, { t: 'から' }, { t: 'の' }, { t: '引', r: 'ひ' }, { t: 'き' }, { t: '落', r: 'お' }, { t: 'とし' }, { t: 'だ。' },
+        ],
+        en: 'Rent and utility bills are taken by direct debit from my account.',
+      },
+      {
+        seg: [
+          { t: '税金', r: 'ぜいきん' }, { t: 'を' }, { t: '納', r: 'おさ' }, { t: 'める' }, { t: '時期', r: 'じき' }, { t: 'は、' }, { t: '残高', r: 'ざんだか' }, { t: 'を' }, { t: '何度', r: 'なんど' }, { t: 'も' }, { t: '確', r: 'たし' }, { t: 'かめる。' },
+        ],
+        en: 'When it is time to pay taxes, I check my balance again and again.',
+      },
+      {
+        seg: [
+          { t: 'ATM' }, { t: 'の' }, { t: '出', r: 'だ' }, { t: 'し' }, { t: '入', r: 'い' }, { t: 'れ' }, { t: 'で' }, { t: '手数料', r: 'てすうりょう' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'られる' }, { t: 'の' }, { t: 'は' }, { t: 'くやしい。' },
+        ],
+        en: 'It is annoying to be charged a fee for ATM withdrawals and deposits.',
+      },
+      {
+        seg: [
+          { t: '少額', r: 'しょうがく' }, { t: 'でも' }, { t: '積', r: 'つ' }, { t: 'もれば' }, { t: '高', r: 'たか' }, { t: 'くつく' }, { t: 'から、' }, { t: 'せいぜい' }, { t: '月', r: 'つき' }, { t: 'に' }, { t: '一' }, { t: '度', r: 'ど' }, { t: 'に' }, { t: 'している。' },
+        ],
+        en: 'Small amounts add up and become costly, so I limit it to once a month at most.',
+      },
+      {
+        seg: [
+          { t: '友人', r: 'ゆうじん' }, { t: 'の' }, { t: '分', r: 'ぶん' }, { t: 'を' }, { t: '立', r: 'た' }, { t: 'て' }, { t: '替', r: 'か' }, { t: 'えた' }, { t: 'とき' }, { t: 'は、' }, { t: 'あとで' }, { t: '差', r: 'さ' }, { t: 'し' }, { t: '引', r: 'ひ' }, { t: 'いて' }, { t: '返', r: 'かえ' }, { t: 'して' }, { t: 'もらう。' },
+        ],
+        en: 'When I pay for a friend, I have them subtract it and pay me back later.',
+      },
+      {
+        seg: [
+          { t: '大金', r: 'たいきん' }, { t: 'を' }, { t: '動', r: 'うご' }, { t: 'かす' }, { t: '話', r: 'はなし' }, { t: 'に' }, { t: 'は、' }, { t: 'リスク' }, { t: 'が' }, { t: '含', r: 'ふく' }, { t: 'まれている。' },
+        ],
+        en: 'Talk of moving large sums always contains risk.',
+      },
+      {
+        seg: [
+          { t: '学生', r: 'がくせい' }, { t: 'の' }, { t: 'ころ' }, { t: 'は' }, { t: '親', r: 'おや' }, { t: 'の' }, { t: '援助', r: 'えんじょ' }, { t: 'を' }, { t: '受', r: 'う' }, { t: 'け、' }, { t: 'いま' }, { t: 'は' }, { t: '返済', r: 'へんさい' }, { t: 'を' }, { t: '続', r: 'つづ' }, { t: 'けている。' },
+        ],
+        en: 'As a student I received help from my parents; now I keep making repayments.',
+      },
+      {
+        seg: [
+          { t: 'せっせと' }, { t: '働', r: 'はたら' }, { t: 'き、' }, { t: '生活', r: 'せいかつ' }, { t: 'を' }, { t: '安定', r: 'あんてい' }, { t: 'させる' }, { t: 'よう' }, { t: '努', r: 'つと' }, { t: 'めている。' },
+        ],
+        en: 'I work diligently and strive to make my life stable.',
+      },
+      {
+        seg: [
+          { t: '払', r: 'はら' }, { t: 'い' }, { t: '込', r: 'こ' }, { t: 'み' }, { t: 'を' }, { t: '忘', r: 'わす' }, { t: 'れない' }, { t: 'よう、' }, { t: 'カレンダー' }, { t: 'に' }, { t: '印', r: 'しるし' }, { t: 'を' }, { t: 'つけた。' },
+        ],
+        en: 'I marked the calendar so I would not forget the payment.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 2,
+    section: 3,
+    title: '食べる楽しみ',
+    targetWords: [
+      '好き嫌い', '好物', '飽きる', '物足りない', 'ボリューム', '一口', 'かじる', 'ひとたび', 'うまい', 'いける', '渋い', 'くどい', 'ファミレス', 'フルコース', 'オーダー', '催促', '会計', 'バイキング', 'トレイ', '器', '重ねる', 'ずらり', '主食', '生', 'なま物', '特製', '粗末な',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '私', r: 'わたし' }, { t: 'は' }, { t: '好', r: 'す' }, { t: 'き' }, { t: '嫌', r: 'きら' }, { t: 'い' }, { t: 'が' }, { t: '少', r: 'すく' }, { t: 'なく、' }, { t: '好物', r: 'こうぶつ' }, { t: 'も' }, { t: '多', r: 'おお' }, { t: 'い。' },
+        ],
+        en: 'I am not a fussy eater, and I have many favorite foods.',
+      },
+      {
+        seg: [
+          { t: 'ひとたび' }, { t: 'おいしい' }, { t: '店', r: 'みせ' }, { t: 'を' }, { t: '知', r: 'し' }, { t: 'る' }, { t: 'と、' }, { t: '飽', r: 'あ' }, { t: 'きる' }, { t: 'まで' }, { t: '通', r: 'かよ' }, { t: 'ってしまう。' },
+        ],
+        en: 'Once I learn of a good restaurant, I keep going until I tire of it.',
+      },
+      {
+        seg: [
+          { t: 'ファミレス' }, { t: 'の' }, { t: 'ハンバーグ' }, { t: 'は' }, { t: 'ボリューム' }, { t: 'が' }, { t: 'あって、' }, { t: 'なかなか' }, { t: 'いける。' },
+        ],
+        en: 'The hamburg steak at family restaurants has real volume and is quite good.',
+      },
+      {
+        seg: [
+          { t: 'ただ、' }, { t: 'ソース' }, { t: 'が' }, { t: 'くどい' }, { t: '日', r: 'ひ' }, { t: 'も' }, { t: 'あり、' }, { t: 'その' }, { t: '時', r: 'とき' }, { t: 'は' }, { t: '物足', r: 'ものた' }, { t: 'りない。' },
+        ],
+        en: 'That said, some days the sauce is too rich, and then it feels unsatisfying.',
+      },
+      {
+        seg: [
+          { t: '一口', r: 'ひとくち' }, { t: 'かじって' }, { t: 'から、' }, { t: 'これ' }, { t: 'は' }, { t: 'うまい' }, { t: 'と' }, { t: '思', r: 'おも' }, { t: 'った。' },
+        ],
+        en: 'After one bite, I thought this is delicious.',
+      },
+      {
+        seg: [
+          { t: '先週', r: 'せんしゅう' }, { t: '、' }, { t: 'ホテル' }, { t: 'の' }, { t: 'バイキング' }, { t: 'で' }, { t: 'フルコース' }, { t: 'を' }, { t: '味', r: 'あじ' }, { t: 'わった。' },
+        ],
+        en: 'Last week I enjoyed a full course at a hotel buffet.',
+      },
+      {
+        seg: [
+          { t: 'トレイ' }, { t: 'に' }, { t: '器', r: 'うつわ' }, { t: 'を' }, { t: '重', r: 'かさ' }, { t: 'ね、' }, { t: '料理', r: 'りょうり' }, { t: 'が' }, { t: 'ずらり' }, { t: 'と' }, { t: '並', r: 'なら' }, { t: 'ぶ' }, { t: '前', r: 'まえ' }, { t: 'を' }, { t: '歩', r: 'ある' }, { t: 'いた。' },
+        ],
+        en: 'I stacked dishes on my tray and walked along the food laid out in a row.',
+      },
+      {
+        seg: [
+          { t: '特製', r: 'とくせい' }, { t: 'の' }, { t: 'ソース' }, { t: 'が' }, { t: 'かかった' }, { t: '魚', r: 'さかな' }, { t: 'は、' }, { t: '生', r: 'なま' }, { t: 'に' }, { t: '近', r: 'ちか' }, { t: 'い' }, { t: '焼', r: 'や' }, { t: 'き' }, { t: '加減', r: 'かげん' }, { t: 'だった。' },
+        ],
+        en: 'The fish with the special sauce was cooked almost rare.',
+      },
+      {
+        seg: [
+          { t: 'なま' }, { t: '物', r: 'もの' }, { t: 'が' }, { t: '苦手', r: 'にがて' }, { t: 'な' }, { t: '人', r: 'ひと' }, { t: 'に' }, { t: 'は' }, { t: '主食', r: 'しゅしょく' }, { t: 'を' }, { t: '勧', r: 'すす' }, { t: 'めた。' },
+        ],
+        en: 'For those who dislike raw food, I recommended the staple dishes.',
+      },
+      {
+        seg: [
+          { t: '注文', r: 'ちゅうもん' }, { t: 'を' }, { t: 'オーダー' }, { t: 'して' }, { t: 'から' }, { t: '遅', r: 'おそ' }, { t: 'かった' }, { t: 'ので、' }, { t: 'そっと' }, { t: '催促', r: 'さいそく' }, { t: 'した。' },
+        ],
+        en: 'Since it was slow after we ordered, I quietly asked them to hurry.',
+      },
+      {
+        seg: [
+          { t: '会計', r: 'かいけい' }, { t: 'の' }, { t: 'とき', r: '・' }, { t: '、' }, { t: '粗末', r: 'そまつ' }, { t: 'な' }, { t: '扱', r: 'あつか' }, { t: 'い' }, { t: 'は' }, { t: '一', r: 'いち' }, { t: 'つ' }, { t: 'も' }, { t: 'なかった。' },
+        ],
+        en: 'At the till, there was not a single instance of shabby treatment.',
+      },
+      {
+        seg: [
+          { t: '渋', r: 'しぶ' }, { t: 'い' }, { t: 'お' }, { t: '茶', r: 'ちゃ' }, { t: 'を' }, { t: '飲', r: 'の' }, { t: 'んで、' }, { t: '食事', r: 'しょくじ' }, { t: 'を' }, { t: '終', r: 'お' }, { t: 'えた。' },
+        ],
+        en: 'I finished the meal with a cup of bitter tea.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 2,
+    section: 4,
+    title: '買い物のこつ',
+    targetWords: [
+      '購入', '買い得', '手頃な', '値引き', 'おまけ', '返品', '返金', '価格', '高価な', '金額', '価値', '品質', '消費税', 'ネットオークション', '名物', '取り寄せる', '扱う', '売り出す', 'チラシ', '切り取る', 'パック', '包装', '試食', '試着', 'わりあい', 'ダブる', 'よす', 'わりと', '実物', '粒', 'スペース',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '新', r: 'あたら' }, { t: 'しい' }, { t: 'パソコン' }, { t: 'を' }, { t: '購入', r: 'こうにゅう' }, { t: 'する' }, { t: 'ため、' }, { t: '三' }, { t: '店', r: 'てん' }, { t: 'の' }, { t: '価格', r: 'かかく' }, { t: 'を' }, { t: '比', r: 'くら' }, { t: 'べた。' },
+        ],
+        en: 'To buy a new computer, I compared prices at three shops.',
+      },
+      {
+        seg: [
+          { t: '高価', r: 'こうか' }, { t: 'な' }, { t: 'モデル' }, { t: 'も' }, { t: 'ある' }, { t: 'が、' }, { t: '手頃', r: 'てごろ' }, { t: 'な' }, { t: '金額', r: 'きんがく' }, { t: 'の' }, { t: 'もの' }, { t: 'を' }, { t: '探', r: 'さが' }, { t: 'した。' },
+        ],
+        en: 'There were expensive models, but I looked for one at a reasonable price.',
+      },
+      {
+        seg: [
+          { t: '品質', r: 'ひんしつ' }, { t: 'と' }, { t: '価値', r: 'かち' }, { t: 'が' }, { t: 'つり' }, { t: '合', r: 'あ' }, { t: 'っている' }, { t: 'か' }, { t: 'どうか' }, { t: 'が' }, { t: '大事', r: 'だいじ' }, { t: 'だ。' },
+        ],
+        en: 'What matters is whether the quality and the value match.',
+      },
+      {
+        seg: [
+          { t: 'チラシ' }, { t: 'の' }, { t: 'クーポン' }, { t: 'を' }, { t: '切', r: 'き' }, { t: 'り' }, { t: '取', r: 'と' }, { t: 'り、' }, { t: '値引', r: 'ねび' }, { t: 'き' }, { t: 'を' }, { t: '受', r: 'う' }, { t: 'けた。' },
+        ],
+        en: 'I cut out the coupon from the flyer and got a discount.',
+      },
+      {
+        seg: [
+          { t: 'お' }, { t: '買', r: 'か' }, { t: 'い' }, { t: '得', r: 'どく' }, { t: 'の' }, { t: '日', r: 'ひ' }, { t: 'に' }, { t: 'は、' }, { t: 'おまけ' }, { t: 'まで' }, { t: 'つけて' }, { t: 'くれた。' },
+        ],
+        en: 'On the bargain day, they even threw in a free extra.',
+      },
+      {
+        seg: [
+          { t: '消費税', r: 'しょうひぜい' }, { t: 'を' }, { t: '入', r: 'い' }, { t: 'れて' }, { t: 'も、' }, { t: 'わりあいに' }, { t: '安', r: 'やす' }, { t: 'かった。' },
+        ],
+        en: 'Even including consumption tax, it was relatively cheap.',
+      },
+      {
+        seg: [
+          { t: '店', r: 'みせ' }, { t: 'に' }, { t: '実物', r: 'じつぶつ' }, { t: 'が' }, { t: 'なく、' }, { t: 'ネットオークション' }, { t: 'で' }, { t: '似', r: 'に' }, { t: 'た' }, { t: '品', r: 'しな' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'つけた。' },
+        ],
+        en: 'The shop had no physical stock, so I found a similar item on an online auction.',
+      },
+      {
+        seg: [
+          { t: '地方', r: 'ちほう' }, { t: 'の' }, { t: '名物', r: 'めいぶつ' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'り' }, { t: '寄', r: 'よ' }, { t: 'せる' }, { t: 'こと' }, { t: 'も' }, { t: 'ある。' },
+        ],
+        en: 'Sometimes I order regional specialties from afar.',
+      },
+      {
+        seg: [
+          { t: 'その' }, { t: '店', r: 'みせ' }, { t: 'は' }, { t: '海外', r: 'かいがい' }, { t: 'の' }, { t: '商品', r: 'しょうひん' }, { t: 'も' }, { t: '扱', r: 'あつか' }, { t: 'っていて、' }, { t: '売', r: 'う' }, { t: 'り' }, { t: '出', r: 'だ' }, { t: 'す' }, { t: 'たび' }, { t: 'に' }, { t: '人', r: 'ひと' }, { t: 'が' }, { t: '並', r: 'なら' }, { t: 'ぶ。' },
+        ],
+        en: 'That shop also handles overseas goods, and people queue every time it launches something.',
+      },
+      {
+        seg: [
+          { t: 'ふるい' }, { t: '服', r: 'ふく' }, { t: 'を' }, { t: '買', r: 'か' }, { t: 'い' }, { t: '換', r: 'か' }, { t: 'える' }, { t: '前', r: 'まえ' }, { t: 'に、' }, { t: 'かならず' }, { t: '試着', r: 'しちゃく' }, { t: 'する。' },
+        ],
+        en: 'Before replacing old clothes, I always try them on.',
+      },
+      {
+        seg: [
+          { t: '食品', r: 'しょくひん' }, { t: 'なら' }, { t: '試食', r: 'ししょく' }, { t: 'を' }, { t: 'して、' }, { t: '粒', r: 'つぶ' }, { t: 'の' }, { t: '大', r: 'おお' }, { t: 'きさ' }, { t: 'まで' }, { t: '確', r: 'たし' }, { t: 'かめる。' },
+        ],
+        en: 'With food, I sample it and check even the size of the grains.',
+      },
+      {
+        seg: [
+          { t: '包装', r: 'ほうそう' }, { t: 'を' }, { t: 'パック' }, { t: 'し' }, { t: '直', r: 'なお' }, { t: 'して' }, { t: 'もらう' }, { t: 'と、' }, { t: 'スペース' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'らない。' },
+        ],
+        en: 'If they repack it for me, it takes up less space.',
+      },
+      {
+        seg: [
+          { t: '同', r: 'おな' }, { t: 'じ' }, { t: '物', r: 'もの' }, { t: 'を' }, { t: 'ダブって' }, { t: '買', r: 'か' }, { t: 'う' }, { t: 'の' }, { t: 'は' }, { t: 'よそう' }, { t: 'と' }, { t: '思', r: 'おも' }, { t: 'い、' }, { t: 'わりと' }, { t: '慎重', r: 'しんちょう' }, { t: 'に' }, { t: '選', r: 'えら' }, { t: 'ぶ。' },
+        ],
+        en: 'I decided to stop buying duplicates, so I choose fairly carefully.',
+      },
+      {
+        seg: [
+          { t: 'サイズ' }, { t: 'が' }, { t: '違', r: 'ちが' }, { t: 'えば' }, { t: '返品', r: 'へんぴん' }, { t: 'し、' }, { t: '返金', r: 'へんきん' }, { t: 'して' }, { t: 'もらえる。' },
+        ],
+        en: 'If the size is wrong, I can return it and get a refund.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 2,
+    section: 5,
+    title: '時のながれ',
+    targetWords: [
+      '現在', '過去', '年月', '月日', '日時', '年代', '年間', '年中', '本年', '日中', '夜間', 'ただ今', '先ほど', '近々', '後日', 'やがて', 'いずれ', '今後', 'すでに', 'あらかじめ', '従来', 'あくる', '一時', '一生', '永遠に', '今日',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '現在', r: 'げんざい' }, { t: 'の' }, { t: '自分', r: 'じぶん' }, { t: 'は、' }, { t: '過去', r: 'かこ' }, { t: 'の' }, { t: '選択', r: 'せんたく' }, { t: 'の' }, { t: '上', r: 'うえ' }, { t: 'に' }, { t: 'ある。' },
+        ],
+        en: 'Who I am now rests on the choices of the past.',
+      },
+      {
+        seg: [
+          { t: '長', r: 'なが' }, { t: 'い' }, { t: '年月', r: 'ねんげつ' }, { t: 'が' }, { t: '過', r: 'す' }, { t: 'ぎ、' }, { t: '月日', r: 'つきひ' }, { t: 'の' }, { t: '早', r: 'はや' }, { t: 'さ' }, { t: 'に' }, { t: '驚', r: 'おどろ' }, { t: 'く。' },
+        ],
+        en: 'Long years have passed, and I am struck by how fast the days go.',
+      },
+      {
+        seg: [
+          { t: '本年', r: 'ほんねん' }, { t: 'の' }, { t: '目標', r: 'もくひょう' }, { t: 'は、' }, { t: '今日', r: 'きょう' }, { t: 'まで' }, { t: 'に' }, { t: 'すでに' }, { t: '三' }, { t: 'つ' }, { t: '決', r: 'き' }, { t: 'めてある。' },
+        ],
+        en: 'As of today, I have already decided on three goals for this year.',
+      },
+      {
+        seg: [
+          { t: '会議', r: 'かいぎ' }, { t: 'の' }, { t: '日時', r: 'にちじ' }, { t: 'は、' }, { t: 'あらかじめ' }, { t: 'メール' }, { t: 'で' }, { t: '知', r: 'し' }, { t: 'らせて' }, { t: 'ある。' },
+        ],
+        en: 'The date and time of the meeting were announced by email in advance.',
+      },
+      {
+        seg: [
+          { t: 'ただ今', r: 'ただいま' }, { t: '、' }, { t: '担当者', r: 'たんとうしゃ' }, { t: 'は' }, { t: '席', r: 'せき' }, { t: 'を' }, { t: '外', r: 'はず' }, { t: 'しております。' },
+        ],
+        en: 'The person in charge is away from their desk at the moment.',
+      },
+      {
+        seg: [
+          { t: '先', r: 'さき' }, { t: 'ほど' }, { t: 'の' }, { t: '電話', r: 'でんわ' }, { t: 'の' }, { t: '件', r: 'けん' }, { t: 'は、' }, { t: '後日', r: 'ごじつ' }, { t: 'あらためて' }, { t: '連絡', r: 'れんらく' }, { t: 'する。' },
+        ],
+        en: 'I will contact you again at a later date about the call just now.',
+      },
+      {
+        seg: [
+          { t: '近々', r: 'ちかぢか' }, { t: '、' }, { t: 'この' }, { t: '年代', r: 'ねんだい' }, { t: 'の' }, { t: '資料', r: 'しりょう' }, { t: 'を' }, { t: '公開', r: 'こうかい' }, { t: 'する' }, { t: '予定', r: 'よてい' }, { t: 'だ。' },
+        ],
+        en: 'We plan to release materials from this era before long.',
+      },
+      {
+        seg: [
+          { t: '従来', r: 'じゅうらい' }, { t: 'の' }, { t: '方法', r: 'ほうほう' }, { t: 'を' }, { t: '変', r: 'か' }, { t: 'えれば、' }, { t: 'やがて' }, { t: '結果', r: 'けっか' }, { t: 'も' }, { t: '変', r: 'か' }, { t: 'わる' }, { t: 'だろう。' },
+        ],
+        en: 'If we change the conventional method, the results will eventually change too.',
+      },
+      {
+        seg: [
+          { t: '日中', r: 'にっちゅう' }, { t: 'は' }, { t: '暑', r: 'あつ' }, { t: 'く、' }, { t: '夜間', r: 'やかん' }, { t: 'に' }, { t: 'なる' }, { t: 'と' }, { t: '風', r: 'かぜ' }, { t: 'が' }, { t: '出', r: 'で' }, { t: 'る。' },
+        ],
+        en: 'It is hot during the day, and a breeze picks up at night.',
+      },
+      {
+        seg: [
+          { t: 'この' }, { t: '工事', r: 'こうじ' }, { t: 'は' }, { t: '一時', r: 'いちじ' }, { t: '' }, { t: '中断', r: 'ちゅうだん' }, { t: 'する' }, { t: 'が、' }, { t: '今後', r: 'こんご' }, { t: 'また' }, { t: '始', r: 'はじ' }, { t: 'まる。' },
+        ],
+        en: 'This construction will pause temporarily but will start again in future.',
+      },
+      {
+        seg: [
+          { t: '年間', r: 'ねんかん' }, { t: 'を' }, { t: '通', r: 'とお' }, { t: 'して、' }, { t: 'この' }, { t: '店', r: 'みせ' }, { t: 'は' }, { t: '年中', r: 'ねんじゅう' }, { t: '' }, { t: '開', r: 'あ' }, { t: 'いている。' },
+        ],
+        en: 'Throughout the year, this shop is open all year round.',
+      },
+      {
+        seg: [
+          { t: 'あくる' }, { t: '日', r: 'ひ' }, { t: '、' }, { t: 'いずれ' }, { t: '必要', r: 'ひつよう' }, { t: 'に' }, { t: 'なる' }, { t: 'と' }, { t: '思', r: 'おも' }, { t: 'って' }, { t: '準備', r: 'じゅんび' }, { t: 'を' }, { t: 'した。' },
+        ],
+        en: 'The next day, thinking it would be needed sooner or later, I made preparations.',
+      },
+      {
+        seg: [
+          { t: '一生', r: 'いっしょう' }, { t: '' }, { t: '忘', r: 'わす' }, { t: 'れない、' }, { t: '永遠' }, { t: 'に' }, { t: '残', r: 'のこ' }, { t: 'る' }, { t: '一日', r: 'いちにち' }, { t: 'だった。' },
+        ],
+        en: 'It was a day I will never forget, one that will remain forever.',
+      },
+    ],
+  },
 ]
