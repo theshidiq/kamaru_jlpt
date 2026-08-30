@@ -6,6 +6,7 @@ import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { PASSAGES_N2 } from '@/lib/passages_n2'
+import { audioUrl } from '@/lib/assets'
 import type { PassageManifest, PassageAudioEntry } from '@/types/passage'
 import type { WordStatus } from '@/types/user'
 
@@ -167,7 +168,7 @@ export function SectionReader() {
       {audio && (
         <audio
           ref={audioRef}
-          src={audio.audioUrl}
+          src={audioUrl(audio.audioUrl)}
           preload="auto"
           onTimeUpdate={() => audioRef.current && setNowMs(audioRef.current.currentTime * 1000)}
           onEnded={() => setPlaying(false)}

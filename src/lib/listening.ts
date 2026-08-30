@@ -2,6 +2,7 @@ import type { ListeningQuestion, ListeningSceneType, ListeningSpeaker, DialogueL
 import type { JlptLevel } from '@/types/user'
 import { JLPT_LEVELS } from '@/types/user'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
+import { audioUrl } from '@/lib/assets'
 
 const VOICE = {
   N: 'Japanese_DependableWoman',    // NARRATOR
@@ -44,7 +45,7 @@ function expand(raw: RawQuestion): ListeningQuestion {
     mondaiType: 'mondai1',
     level: raw.level,
     sceneType: raw.scene as ListeningSceneType,
-    audioUrl: `/audio/listening/${raw.id}.mp3`,
+    audioUrl: audioUrl(`/audio/listening/${raw.id}.mp3`),
     script,
     question: raw.question,
     options: raw.options,

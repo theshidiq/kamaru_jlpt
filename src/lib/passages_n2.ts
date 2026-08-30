@@ -1679,4 +1679,146 @@ export const PASSAGES_N2: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N2',
+    chapter: 5,
+    section: 1,
+    title: '学校に通う',
+    targetWords: [
+      '教わる', '願書', '推薦', '狙う', '意志', '開始', '通常', '担任', '受け持つ', '委員', 'なじむ', '充実', '高等', 'ステップ', '過程', '取り上げる', '欠ける', '優勝な', '修了', 'ふさわしい', '認識', '語学学校',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '高等', r: 'こうとう' }, { t: '' }, { t: '学校', r: 'がっこう' }, { t: 'を' }, { t: '出', r: 'で' }, { t: 'て、' }, { t: '語学', r: 'ごがく' }, { t: '' }, { t: '学校', r: 'がっこう' }, { t: 'に' }, { t: '通', r: 'かよ' }, { t: 'う' }, { t: 'こと' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'After finishing high school, I decided to attend a language school.',
+      },
+      {
+        seg: [
+          { t: '願書', r: 'がんしょ' }, { t: 'を' }, { t: '出', r: 'だ' }, { t: 'す' }, { t: '前', r: 'まえ' }, { t: 'に、' }, { t: '先生', r: 'せんせい' }, { t: 'に' }, { t: '推薦', r: 'すいせん' }, { t: 'を' }, { t: 'お願', r: 'おねが' }, { t: 'いした。' },
+        ],
+        en: 'Before submitting the application, I asked my teacher for a recommendation.',
+      },
+      {
+        seg: [
+          { t: '合格', r: 'ごうかく' }, { t: 'を' }, { t: '狙', r: 'ねら' }, { t: 'う' }, { t: '強', r: 'つよ' }, { t: 'い' }, { t: '意志', r: 'いし' }, { t: 'が' }, { t: 'あった。' },
+        ],
+        en: 'I had a strong will to pass.',
+      },
+      {
+        seg: [
+          { t: '授業', r: 'じゅぎょう' }, { t: 'が' }, { t: '開始', r: 'かいし' }, { t: 'され、' }, { t: '通常', r: 'つうじょう' }, { t: 'の' }, { t: '生活', r: 'せいかつ' }, { t: 'が' }, { t: '始', r: 'はじ' }, { t: 'まった。' },
+        ],
+        en: 'Classes began, and ordinary life started.',
+      },
+      {
+        seg: [
+          { t: '担任', r: 'たんにん' }, { t: 'の' }, { t: '先生', r: 'せんせい' }, { t: 'が' }, { t: 'クラス' }, { t: 'を' }, { t: '受', r: 'う' }, { t: 'け' }, { t: '持', r: 'も' }, { t: 'ち、' }, { t: '多', r: 'おお' }, { t: 'く' }, { t: 'を' }, { t: '教', r: 'おそ' }, { t: 'わった。' },
+        ],
+        en: 'The homeroom teacher took charge of our class, and I learned a great deal.',
+      },
+      {
+        seg: [
+          { t: '委員', r: 'いいん' }, { t: 'を' }, { t: '引', r: 'ひ' }, { t: 'き' }, { t: '受', r: 'う' }, { t: 'けた' }, { t: 'こと' }, { t: 'で、' }, { t: 'クラス' }, { t: 'に' }, { t: 'なじむ' }, { t: 'の' }, { t: 'が' }, { t: '早', r: 'はや' }, { t: 'かった。' },
+        ],
+        en: 'Taking on a committee role helped me fit into the class quickly.',
+      },
+      {
+        seg: [
+          { t: '毎日', r: 'まいにち' }, { t: 'が' }, { t: '充実', r: 'じゅうじつ' }, { t: 'し、' }, { t: 'つぎ' }, { t: 'の' }, { t: 'ステップ' }, { t: 'が' }, { t: '見', r: 'み' }, { t: 'えて' }, { t: 'きた。' },
+        ],
+        en: 'Each day felt full, and the next step came into view.',
+      },
+      {
+        seg: [
+          { t: '学', r: 'まな' }, { t: 'ぶ' }, { t: '過程', r: 'かてい' }, { t: 'で' }, { t: '自分', r: 'じぶん' }, { t: 'に' }, { t: '欠', r: 'か' }, { t: 'けている' }, { t: 'もの' }, { t: 'を' }, { t: '認識', r: 'にんしき' }, { t: 'した。' },
+        ],
+        en: 'In the process of learning, I recognized what I was lacking.',
+      },
+      {
+        seg: [
+          { t: '授業', r: 'じゅぎょう' }, { t: 'で' }, { t: '取', r: 'と' }, { t: 'り' }, { t: '上', r: 'あ' }, { t: 'げられた' }, { t: '話題', r: 'わだい' }, { t: 'は、' }, { t: 'いま' }, { t: 'の' }, { t: '私', r: 'わたし' }, { t: 'に' }, { t: 'ふさわしい' }, { t: 'もの' }, { t: 'だった。' },
+        ],
+        en: 'The topics raised in class were fitting for who I was then.',
+      },
+      {
+        seg: [
+          { t: '課程', r: 'かてい' }, { t: 'を' }, { t: '修了', r: 'しゅうりょう' }, { t: 'した' }, { t: '日', r: 'ひ' }, { t: '、' }, { t: '優勝', r: 'ゆうしょう' }, { t: 'した' }, { t: 'とき' }, { t: 'の' }, { t: 'ような' }, { t: '気分', r: 'きぶん' }, { t: 'だった。' },
+        ],
+        en: 'The day I completed the course, I felt as if I had won a championship.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 5,
+    section: 2,
+    title: '学び方',
+    targetWords: [
+      '学ぶ', '学習', '学力', '教養', '参考書', '書き込む', '書き取る', '記号', '図', '下線', '法則', '志す', '徹夜', '上達', 'こつこつ', '地道な', '根気', '効率的な', '旺盛な', '基礎', '基本', '除く', '現状', 'おろそかな', '可能', '実現', '混同', '複数', '活用',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '語学', r: 'ごがく' }, { t: 'を' }, { t: '学', r: 'まな' }, { t: 'ぶ' }, { t: 'に' }, { t: 'は、' }, { t: '基礎', r: 'きそ' }, { t: 'と' }, { t: '基本', r: 'きほん' }, { t: 'を' }, { t: 'おろそかに' }, { t: 'しない' }, { t: 'こと' }, { t: 'だ。' },
+        ],
+        en: 'To learn a language, do not neglect the fundamentals and the basics.',
+      },
+      {
+        seg: [
+          { t: '参考書', r: 'さんこうしょ' }, { t: 'に' }, { t: '下線', r: 'かせん' }, { t: 'を' }, { t: '引', r: 'ひ' }, { t: 'き、' }, { t: '記号', r: 'きごう' }, { t: 'や' }, { t: '図', r: 'ず' }, { t: 'を' }, { t: '書', r: 'か' }, { t: 'き' }, { t: '込', r: 'こ' }, { t: 'む。' },
+        ],
+        en: 'I underline in the reference book and write in symbols and diagrams.',
+      },
+      {
+        seg: [
+          { t: '聞', r: 'き' }, { t: 'こえた' }, { t: '文', r: 'ぶん' }, { t: 'を' }, { t: '書', r: 'か' }, { t: 'き' }, { t: '取', r: 'と' }, { t: 'る' }, { t: '練習', r: 'れんしゅう' }, { t: 'を、' }, { t: 'こつこつ' }, { t: 'と' }, { t: '続', r: 'つづ' }, { t: 'ける。' },
+        ],
+        en: 'I steadily keep up the practice of writing down what I hear.',
+      },
+      {
+        seg: [
+          { t: '文法', r: 'ぶんぽう' }, { t: 'の' }, { t: '法則', r: 'ほうそく' }, { t: 'を' }, { t: '複数', r: 'ふくすう' }, { t: '' }, { t: '混同', r: 'こんどう' }, { t: 'して、' }, { t: 'よく' }, { t: '間違', r: 'まちが' }, { t: 'えた。' },
+        ],
+        en: 'I confused several grammar rules and often got them wrong.',
+      },
+      {
+        seg: [
+          { t: '効率的', r: 'こうりつてき' }, { t: 'に' }, { t: '学習', r: 'がくしゅう' }, { t: 'する' }, { t: 'ため、' }, { t: '現状', r: 'げんじょう' }, { t: 'を' }, { t: '分', r: 'わ' }, { t: 'けて' }, { t: '考', r: 'かんが' }, { t: 'えた。' },
+        ],
+        en: 'To study efficiently, I broke down my current situation and thought it through.',
+      },
+      {
+        seg: [
+          { t: '地道', r: 'じみち' }, { t: 'な' }, { t: '作業', r: 'さぎょう' }, { t: 'に' }, { t: 'は' }, { t: '根気', r: 'こんき' }, { t: 'が' }, { t: 'いる' }, { t: 'が、' }, { t: '学力', r: 'がくりょく' }, { t: 'は' }, { t: '確実', r: 'かくじつ' }, { t: 'に' }, { t: '上達', r: 'じょうたつ' }, { t: 'する。' },
+        ],
+        en: 'Steady work takes perseverance, but ability improves for certain.',
+      },
+      {
+        seg: [
+          { t: '教養', r: 'きょうよう' }, { t: 'を' }, { t: '身', r: 'み' }, { t: 'に' }, { t: 'つけたい' }, { t: 'という' }, { t: '旺盛', r: 'おうせい' }, { t: 'な' }, { t: '気持', r: 'きも' }, { t: 'ち' }, { t: 'が' }, { t: 'あった。' },
+        ],
+        en: 'I had a vigorous desire to acquire a broad education.',
+      },
+      {
+        seg: [
+          { t: '徹夜', r: 'てつや' }, { t: 'は' }, { t: '体', r: 'からだ' }, { t: 'に' }, { t: '悪', r: 'わる' }, { t: 'い' }, { t: 'ので、' }, { t: 'いま' }, { t: 'は' }, { t: '除', r: 'のぞ' }, { t: 'いている。' },
+        ],
+        en: 'All-nighters are bad for the body, so I have cut them out now.',
+      },
+      {
+        seg: [
+          { t: '通訳', r: 'つうやく' }, { t: 'を' }, { t: '志', r: 'こころざ' }, { t: 'し、' }, { t: 'この' }, { t: '力', r: 'ちから' }, { t: 'を' }, { t: '活用', r: 'かつよう' }, { t: 'したい。' },
+        ],
+        en: 'I aspire to be an interpreter and want to put this ability to use.',
+      },
+      {
+        seg: [
+          { t: '可能', r: 'かのう' }, { t: 'な' }, { t: '限', r: 'かぎ' }, { t: 'り' }, { t: '努力', r: 'どりょく' }, { t: 'して、' }, { t: 'その' }, { t: '夢', r: 'ゆめ' }, { t: 'を' }, { t: '実現', r: 'じつげん' }, { t: 'させる。' },
+        ],
+        en: 'I will make every possible effort and realize that dream.',
+      },
+    ],
+  },
 ]
