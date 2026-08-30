@@ -59,6 +59,12 @@ interface Alignment {
   character_end_times_seconds: number[]
 }
 
+/** The API's romanisation of what it actually said — used as a sanity check. */
+let lastNormalised = ''
+function alignment_normalised(_a: Alignment): string {
+  return lastNormalised
+}
+
 async function tts(text: string): Promise<{ audio: Buffer; alignment: Alignment }> {
   const res = await fetch(
     `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}/with-timestamps`,
@@ -69,8 +75,13 @@ async function tts(text: string): Promise<{ audio: Buffer; alignment: Alignment 
     },
   )
   if (!res.ok) throw new Error(`${res.status} ${(await res.text()).slice(0, 200)}`)
-  const json = await res.json() as { audio_base64: string; alignment: Alignment }
+  const json = await res.json() as {
+    audio_base64: string
+    alignment: Alignment
+    normalized_alignment?: { characters: string[] }
+  }
   if (!json.alignment?.characters?.length) throw new Error('no alignment returned')
+  lastNormalised = (json.normalized_alignment?.characters ?? []).join('')
   return { audio: Buffer.from(json.audio_base64, 'base64'), alignment: json.alignment }
 }
 
@@ -83,14 +94,15 @@ function mapTimings(passage: SectionPassage, a: Alignment): PassageTiming[][] {
   let cursor = 0
   return passage.sentences.map(sentence =>
     sentence.seg.map(token => {
-      const i = text.indexOf(token.t, cursor)
+      const spoken = token.r ?? token.t
+      const i = text.indexOf(spoken, cursor)
       if (i < 0) {
         // Should not happen; fall back to a zero-width marker at the cursor.
-        console.warn(`  warn: token ${JSON.stringify(token.t)} not found in alignment`)
+        console.warn(`  warn: token ${JSON.stringify(spoken)} not found in alignment`)
         const ms = Math.round((a.character_start_times_seconds[cursor] ?? 0) * 1000)
         return { startMs: ms, endMs: ms }
       }
-      const last = i + token.t.length - 1
+      const last = i + spoken.length - 1
       cursor = last + 1
       return {
         startMs: Math.round(a.character_start_times_seconds[i] * 1000),
@@ -100,6 +112,20 @@ function mapTimings(passage: SectionPassage, a: Alignment): PassageTiming[][] {
   )
 }
 
+/**
+ * Text sent to the TTS. Kanji tokens are replaced by their furigana reading.
+ *
+ * ElevenLabs reads Japanese kanji as CHINESE — 私 becomes "Si", 天気 becomes
+ * "Tian Qi" — in every model and regardless of language_code. Feeding it the
+ * kana reading is what makes it speak Japanese. The screen still shows kanji;
+ * only the audio input is kana, and mapTimings walks this same string so the
+ * highlighting stays aligned.
+ */
+function speechText(p: SectionPassage): string {
+  return p.sentences.map(s => s.seg.map(t => t.r ?? t.t).join('')).join('')
+}
+
+/** Text as displayed (kanji), used only for reporting. */
 function passageText(p: SectionPassage): string {
   return p.sentences.map(s => s.seg.map(t => t.t).join('')).join('')
 }
@@ -115,11 +141,11 @@ async function main() {
   const all: SectionPassage[] = PASSAGES_N2
   const todo = all.filter(p => onlyChapter === undefined || p.chapter === onlyChapter)
 
-  const chars = todo.reduce((n, p) => n + passageText(p).length, 0)
+  const chars = todo.reduce((n, p) => n + speechText(p).length, 0)
   console.log(`${todo.length} passage(s), ${chars} characters`)
   console.log(`voice=${VOICE_ID} model=${MODEL_ID}`)
   if (dryRun) {
-    for (const p of todo) console.log(`  ${idOf(p)}  ${passageText(p).length} chars  ${p.title}`)
+    for (const p of todo) console.log(`  ${idOf(p)}  ${speechText(p).length} chars (spoken)  ${p.title}`)
     console.log('\n--dry-run: nothing generated, no credits spent')
     return
   }
@@ -138,9 +164,16 @@ async function main() {
       continue
     }
 
-    const text = passageText(p)
+    const text = speechText(p)
     process.stdout.write(`  gen   ${id}  ${text.length} chars  `)
     const { audio, alignment } = await tts(text)
+
+    // Guard: if the model romanised the text as Chinese pinyin, the audio is
+    // wrong. Kana input should never produce capitalised latin syllables.
+    const norm = alignment_normalised(alignment)
+    if (/\b(Si|Tian|Jia|Xue|Zhong|Ben|Ri|Qi|Fu|Dai)\b/.test(norm)) {
+      throw new Error(`${id}: TTS produced Chinese readings — check the seg[] furigana`)
+    }
     fs.writeFileSync(outPath, audio)
 
     const timings = mapTimings(p, alignment)
