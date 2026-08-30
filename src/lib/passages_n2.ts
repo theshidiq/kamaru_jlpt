@@ -945,4 +945,383 @@ export const PASSAGES_N2: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N2',
+    chapter: 3,
+    section: 1,
+    title: '朝のはじまり',
+    targetWords: [
+      '夜明け', '起床', 'もたれる', 'フレッシュな', '乳製品', '洗い物', '欠かす', '配達', '見出し', '合間', 'てきぱき', '問', '周辺', '周囲', 'あと', 'すれ違う', 'はう', '替える', '整える',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '夜明', r: 'よあ' }, { t: 'け' }, { t: '' }, { t: '前', r: 'まえ' }, { t: 'に' }, { t: '目', r: 'め' }, { t: 'が' }, { t: '覚', r: 'さ' }, { t: 'め、' }, { t: 'そのまま' }, { t: '起床', r: 'きしょう' }, { t: 'する' }, { t: '日', r: 'ひ' }, { t: 'が' }, { t: '増', r: 'ふ' }, { t: 'えた。' },
+        ],
+        en: 'I have more days now when I wake before dawn and simply get up.',
+      },
+      {
+        seg: [
+          { t: '壁', r: 'かべ' }, { t: 'に' }, { t: 'もたれて' }, { t: '外', r: 'そと' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'ると、' }, { t: '周辺', r: 'しゅうへん' }, { t: 'は' }, { t: 'まだ' }, { t: '暗', r: 'くら' }, { t: 'い。' },
+        ],
+        en: 'Leaning against the wall and looking outside, the area around is still dark.',
+      },
+      {
+        seg: [
+          { t: 'フレッシュな' }, { t: '空気', r: 'くうき' }, { t: 'を' }, { t: '入', r: 'い' }, { t: 'れて、' }, { t: 'ベッド' }, { t: 'を' }, { t: '整', r: 'ととの' }, { t: 'える。' },
+        ],
+        en: 'I let in fresh air and make the bed.',
+      },
+      {
+        seg: [
+          { t: '朝食', r: 'ちょうしょく' }, { t: 'に' }, { t: '乳製品', r: 'にゅうせいひん' }, { t: 'を' }, { t: '欠', r: 'か' }, { t: 'かさない' }, { t: 'よう' }, { t: 'に' }, { t: 'している。' },
+        ],
+        en: 'I make sure never to skip dairy at breakfast.',
+      },
+      {
+        seg: [
+          { t: '配達', r: 'はいたつ' }, { t: 'された' }, { t: '新聞', r: 'しんぶん' }, { t: 'の' }, { t: '見出', r: 'みだ' }, { t: 'し' }, { t: 'だけ' }, { t: 'を、' }, { t: 'てきぱき' }, { t: 'と' }, { t: '追', r: 'お' }, { t: 'う。' },
+        ],
+        en: 'I briskly scan just the headlines of the delivered newspaper.',
+      },
+      {
+        seg: [
+          { t: '朝', r: 'あさ' }, { t: 'は' }, { t: 'ろくに' }, { t: '本', r: 'ほん' }, { t: 'を' }, { t: '読', r: 'よ' }, { t: 'む' }, { t: '時間', r: 'じかん' }, { t: 'が' }, { t: 'なく、' }, { t: '一切', r: 'いっさい' }, { t: 'テレビ' }, { t: 'を' }, { t: 'つけない。' },
+        ],
+        en: 'In the morning I have hardly any time to read, and I never turn on the TV.',
+      },
+      {
+        seg: [
+          { t: '洗', r: 'あら' }, { t: 'い' }, { t: '物', r: 'もの' }, { t: 'を' }, { t: '片', r: 'かた' }, { t: 'づける' }, { t: '合間', r: 'あいま' }, { t: 'に、' }, { t: 'シャツ' }, { t: 'を' }, { t: '替', r: 'か' }, { t: 'える。' },
+        ],
+        en: 'In the gaps while clearing the washing up, I change my shirt.',
+      },
+      {
+        seg: [
+          { t: '子', r: 'こ' }, { t: 'ども' }, { t: 'が' }, { t: 'まだ' }, { t: 'はって' }, { t: '動', r: 'うご' }, { t: 'く' }, { t: 'ころ' }, { t: 'は、' }, { t: '周囲', r: 'しゅうい' }, { t: 'に' }, { t: '気', r: 'き' }, { t: 'を' }, { t: '配', r: 'くば' }, { t: 'った。' },
+        ],
+        en: 'When my child was still crawling about, I paid attention to the surroundings.',
+      },
+      {
+        seg: [
+          { t: '駅', r: 'えき' }, { t: 'まで' }, { t: 'の' }, { t: '道', r: 'みち' }, { t: 'で' }, { t: '近所', r: 'きんじょ' }, { t: 'の' }, { t: '人', r: 'ひと' }, { t: 'と' }, { t: 'すれ' }, { t: '違', r: 'ちが' }, { t: 'い、' }, { t: 'あいさつ' }, { t: 'を' }, { t: '交', r: 'か' }, { t: 'わす。' },
+        ],
+        en: 'On the way to the station I pass neighbors and exchange greetings.',
+      },
+      {
+        seg: [
+          { t: 'その' }, { t: 'あと' }, { t: 'の' }, { t: '電車', r: 'でんしゃ' }, { t: 'で、' }, { t: 'その' }, { t: '日', r: 'ひ' }, { t: 'の' }, { t: '問', r: 'とい' }, { t: 'を' }, { t: '考', r: 'かんが' }, { t: 'える。' },
+        ],
+        en: 'Afterwards on the train, I think over the question of the day.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 3,
+    section: 2,
+    title: '一日のリズム',
+    targetWords: [
+      'めりはり', '何度も', 'ほぼ', '寄り道', '食物', '換気', 'いったん', '物干し', '食卓', '後回し', '削る', 'かなえる', '調節', 'ゆったり', '売り買い', '思い浮かべる', '独り言', '風呂場', 'かぐ', '寝つき', '用心', 'メッセージ',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '一日', r: 'いちにち' }, { t: 'に' }, { t: 'めりはり' }, { t: 'を' }, { t: 'つける' }, { t: 'ため、' }, { t: 'ほぼ' }, { t: '同', r: 'おな' }, { t: 'じ' }, { t: '時間', r: 'じかん' }, { t: 'に' }, { t: '動', r: 'うご' }, { t: 'く。' },
+        ],
+        en: 'To give the day some rhythm, I move at almost the same times each day.',
+      },
+      {
+        seg: [
+          { t: '帰', r: 'かえ' }, { t: 'り' }, { t: 'に' }, { t: '寄', r: 'よ' }, { t: 'り' }, { t: '道', r: 'みち' }, { t: 'を' }, { t: 'する' }, { t: 'か' }, { t: '迷', r: 'まよ' }, { t: 'い、' }, { t: 'いったん' }, { t: '家', r: 'いえ' }, { t: 'に' }, { t: '戻', r: 'もど' }, { t: 'る。' },
+        ],
+        en: 'I hesitate over stopping off on the way home, and for now go straight back.',
+      },
+      {
+        seg: [
+          { t: 'まず' }, { t: '窓', r: 'まど' }, { t: 'を' }, { t: '開', r: 'あ' }, { t: 'けて' }, { t: '換気', r: 'かんき' }, { t: 'し、' }, { t: '物干', r: 'ものほ' }, { t: 'し' }, { t: 'の' }, { t: '洗濯物', r: 'せんたくもの' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'り' }, { t: '込', r: 'こ' }, { t: 'む。' },
+        ],
+        en: 'First I open the window to air the room and bring in the laundry from the pole.',
+      },
+      {
+        seg: [
+          { t: '食卓', r: 'しょくたく' }, { t: 'に' }, { t: '食物', r: 'しょくもつ' }, { t: 'を' }, { t: '並', r: 'なら' }, { t: 'べ、' }, { t: '温度', r: 'おんど' }, { t: 'を' }, { t: '調節', r: 'ちょうせつ' }, { t: 'する。' },
+        ],
+        en: 'I set the food on the dining table and adjust the temperature.',
+      },
+      {
+        seg: [
+          { t: '急', r: 'いそ' }, { t: 'ぐ' }, { t: '用事', r: 'ようじ' }, { t: 'が' }, { t: 'なければ、' }, { t: 'ゆったり' }, { t: 'と' }, { t: '食', r: 'た' }, { t: 'べる。' },
+        ],
+        en: 'If there is nothing urgent, I eat at a leisurely pace.',
+      },
+      {
+        seg: [
+          { t: '面倒', r: 'めんどう' }, { t: 'な' }, { t: '用事', r: 'ようじ' }, { t: 'を' }, { t: '後回', r: 'あとまわ' }, { t: 'し' }, { t: 'に' }, { t: 'する' }, { t: 'と、' }, { t: 'あとで' }, { t: '時間', r: 'じかん' }, { t: 'を' }, { t: '削', r: 'けず' }, { t: 'る' }, { t: 'こと' }, { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'Putting off troublesome tasks means cutting into my time later.',
+      },
+      {
+        seg: [
+          { t: '風呂場', r: 'ふろば' }, { t: 'で' }, { t: 'せっけん' }, { t: 'の' }, { t: 'においを' }, { t: 'かぐ' }, { t: 'と、' }, { t: 'その' }, { t: '日', r: 'ひ' }, { t: 'の' }, { t: '疲', r: 'つか' }, { t: 'れ' }, { t: 'が' }, { t: '取', r: 'と' }, { t: 'れる。' },
+        ],
+        en: 'Smelling the soap in the bathroom takes away the day’s tiredness.',
+      },
+      {
+        seg: [
+          { t: '明日', r: 'あした' }, { t: 'の' }, { t: '予定', r: 'よてい' }, { t: 'を' }, { t: '思', r: 'おも' }, { t: 'い' }, { t: '浮', r: 'う' }, { t: 'かべ、' }, { t: 'つい' }, { t: '独', r: 'ひと' }, { t: 'り' }, { t: '言', r: 'ごと' }, { t: 'を' }, { t: '言', r: 'い' }, { t: 'う。' },
+        ],
+        en: 'Picturing tomorrow’s plans, I catch myself talking to myself.',
+      },
+      {
+        seg: [
+          { t: '夢', r: 'ゆめ' }, { t: 'を' }, { t: 'かなえる' }, { t: 'に' }, { t: 'は' }, { t: '健康', r: 'けんこう' }, { t: 'が' }, { t: '先', r: 'さき' }, { t: 'だ' }, { t: 'と、' }, { t: '用心', r: 'ようじん' }, { t: 'して' }, { t: 'はやく' }, { t: '寝', r: 'ね' }, { t: 'る。' },
+        ],
+        en: 'Health comes first if I am to realize my dreams, so I am careful and sleep early.',
+      },
+      {
+        seg: [
+          { t: '寝', r: 'ね' }, { t: 'つき' }, { t: 'が' }, { t: 'よく、' }, { t: 'メッセージ' }, { t: 'の' }, { t: '確認', r: 'かくにん' }, { t: 'も' }, { t: 'せず' }, { t: 'に' }, { t: '眠', r: 'ねむ' }, { t: 'って' }, { t: 'しまう。' },
+        ],
+        en: 'I fall asleep easily and drift off without even checking my messages.',
+      },
+      {
+        seg: [
+          { t: '株', r: 'かぶ' }, { t: 'の' }, { t: '売', r: 'う' }, { t: 'り' }, { t: '買', r: 'か' }, { t: 'い' }, { t: 'を' }, { t: 'する' }, { t: '友人', r: 'ゆうじん' }, { t: 'は、' }, { t: '何度', r: 'なんど' }, { t: 'も' }, { t: '画面', r: 'がめん' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'る' }, { t: 'そうだ。' },
+        ],
+        en: 'A friend who buys and sells shares apparently checks the screen many times.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 3,
+    section: 3,
+    title: '台所しごと',
+    targetWords: [
+      '炊事', '献立', 'リクエスト', '流し', 'ちぎる', '冷ます', '煮える', '味付け', '薄める', '甘み', '工夫', '添える', '挟む', '加減', '固まる', 'なめる', '臭い', '冷める', '余分な', '容器', '賞味期限', '手作り', 'もてなす',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '週末', r: 'しゅうまつ' }, { t: 'の' }, { t: '炊事', r: 'すいじ' }, { t: 'は' }, { t: '私', r: 'わたし' }, { t: 'の' }, { t: '担当', r: 'たんとう' }, { t: 'で、' }, { t: '献立', r: 'こんだて' }, { t: 'から' }, { t: '考', r: 'かんが' }, { t: 'える。' },
+        ],
+        en: 'Weekend cooking is my job, and I start by planning the menu.',
+      },
+      {
+        seg: [
+          { t: '家族', r: 'かぞく' }, { t: 'の' }, { t: 'リクエスト' }, { t: 'を' }, { t: '聞', r: 'き' }, { t: 'いて、' }, { t: '工夫', r: 'くふう' }, { t: 'を' }, { t: '重', r: 'かさ' }, { t: 'ねる。' },
+        ],
+        en: 'I listen to the family’s requests and keep finding ways to improve.',
+      },
+      {
+        seg: [
+          { t: '流', r: 'なが' }, { t: 'し' }, { t: 'で' }, { t: '野菜', r: 'やさい' }, { t: 'を' }, { t: '洗', r: 'あら' }, { t: 'い、' }, { t: 'レタス' }, { t: 'を' }, { t: 'ちぎる。' },
+        ],
+        en: 'I wash the vegetables at the sink and tear the lettuce.',
+      },
+      {
+        seg: [
+          { t: 'なべ' }, { t: 'の' }, { t: '豆', r: 'まめ' }, { t: 'が' }, { t: '煮', r: 'に' }, { t: 'えた' }, { t: 'ら、' }, { t: 'いったん' }, { t: '冷', r: 'さ' }, { t: 'ます。' },
+        ],
+        en: 'Once the beans in the pot are cooked, I let them cool for a while.',
+      },
+      {
+        seg: [
+          { t: '味付', r: 'あじつ' }, { t: 'け' }, { t: 'は' }, { t: '薄', r: 'うす' }, { t: 'めに' }, { t: 'して、' }, { t: 'あとで' }, { t: '加減', r: 'かげん' }, { t: 'する。' },
+        ],
+        en: 'I season it lightly and adjust later.',
+      },
+      {
+        seg: [
+          { t: '甘', r: 'あま' }, { t: 'み' }, { t: 'が' }, { t: '足', r: 'た' }, { t: 'りなければ、' }, { t: 'はちみつ' }, { t: 'を' }, { t: '少', r: 'すこ' }, { t: 'し' }, { t: '添', r: 'そ' }, { t: 'える。' },
+        ],
+        en: 'If it lacks sweetness, I add a little honey.',
+      },
+      {
+        seg: [
+          { t: 'パン' }, { t: 'に' }, { t: 'ハム' }, { t: 'を' }, { t: '挟', r: 'はさ' }, { t: 'み、' }, { t: '余分', r: 'よぶん' }, { t: 'な' }, { t: 'あぶら' }, { t: 'を' }, { t: 'ふき' }, { t: '取', r: 'と' }, { t: 'る。' },
+        ],
+        en: 'I put ham in the bread and wipe off the excess oil.',
+      },
+      {
+        seg: [
+          { t: 'スープ' }, { t: 'が' }, { t: '固', r: 'かた' }, { t: 'まらない' }, { t: 'よう' }, { t: 'に、' }, { t: 'ときどき' }, { t: 'かき' }, { t: '混', r: 'ま' }, { t: 'ぜる。' },
+        ],
+        en: 'I stir now and then so the soup does not set.',
+      },
+      {
+        seg: [
+          { t: '味見', r: 'あじみ' }, { t: 'に' }, { t: 'スプーン' }, { t: 'を' }, { t: 'なめて、' }, { t: '臭', r: 'にお' }, { t: 'い' }, { t: 'も' }, { t: '確', r: 'たし' }, { t: 'かめる。' },
+        ],
+        en: 'I lick the spoon to taste it and check the smell too.',
+      },
+      {
+        seg: [
+          { t: '冷', r: 'さ' }, { t: 'めない' }, { t: 'うち' }, { t: 'に' }, { t: '容器', r: 'ようき' }, { t: 'へ' }, { t: '移', r: 'うつ' }, { t: 'し、' }, { t: '賞味期限', r: 'しょうみきげん' }, { t: 'を' }, { t: '書', r: 'か' }, { t: 'いておく。' },
+        ],
+        en: 'Before it cools I move it into a container and note the best-before date.',
+      },
+      {
+        seg: [
+          { t: '手作', r: 'てづく' }, { t: 'り' }, { t: 'の' }, { t: '料理', r: 'りょうり' }, { t: 'で' }, { t: '客', r: 'きゃく' }, { t: 'を' }, { t: 'もてなす' }, { t: 'の' }, { t: 'は、' }, { t: 'やはり' }, { t: 'うれしい。' },
+        ],
+        en: 'Entertaining guests with home-made food is a real pleasure.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 3,
+    section: 4,
+    title: '家事のくふう',
+    targetWords: [
+      'もれる', 'ごちゃごちゃ', '元', '自動的な', 'さっと', '清掃', '取り除く', '素材', '分類', 'すすぐ', 'ネット', '吸収', '泥', '知恵', '可燃ごみ', '資源ごみ', '粗大ごみ', '古新聞', '分別', 'ごみ袋', '生臭い', '大小', 'しゃぶる', 'おむつ', '双子', '衣類', '入れ替える', '狂う',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '水', r: 'みず' }, { t: 'が' }, { t: 'もれている' }, { t: 'の' }, { t: 'に' }, { t: '気', r: 'き' }, { t: 'づき、' }, { t: '元', r: 'もと' }, { t: 'の' }, { t: '栓', r: 'せん' }, { t: 'を' }, { t: '閉', r: 'し' }, { t: 'めた。' },
+        ],
+        en: 'Noticing water leaking, I shut off the main tap.',
+      },
+      {
+        seg: [
+          { t: '部屋', r: 'へや' }, { t: 'が' }, { t: 'ごちゃごちゃ' }, { t: 'に' }, { t: 'なる' }, { t: '前', r: 'まえ' }, { t: 'に、' }, { t: 'さっと' }, { t: '清掃', r: 'せいそう' }, { t: 'する。' },
+        ],
+        en: 'Before the room gets cluttered, I clean quickly.',
+      },
+      {
+        seg: [
+          { t: '自動的', r: 'じどうてき' }, { t: 'に' }, { t: '動', r: 'うご' }, { t: 'く' }, { t: '掃除機', r: 'そうじき' }, { t: 'が、' }, { t: 'ほこり' }, { t: 'を' }, { t: '吸収', r: 'きゅうしゅう' }, { t: 'して' }, { t: 'くれる。' },
+        ],
+        en: 'The robot vacuum runs automatically and absorbs the dust.',
+      },
+      {
+        seg: [
+          { t: '泥', r: 'どろ' }, { t: 'の' }, { t: 'ついた' }, { t: '衣類', r: 'いるい' }, { t: 'は、' }, { t: 'ネット' }, { t: 'に' }, { t: '入', r: 'い' }, { t: 'れて' }, { t: 'よく' }, { t: 'すすぐ。' },
+        ],
+        en: 'Muddy clothes go in a laundry net and get rinsed well.',
+      },
+      {
+        seg: [
+          { t: '素材', r: 'そざい' }, { t: 'の' }, { t: '表示', r: 'ひょうじ' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'て、' }, { t: '大小', r: 'だいしょう' }, { t: 'に' }, { t: '分類', r: 'ぶんるい' }, { t: 'する。' },
+        ],
+        en: 'I check the fabric label and sort items by size.',
+      },
+      {
+        seg: [
+          { t: '汚', r: 'よご' }, { t: 'れ' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'り' }, { t: '除', r: 'のぞ' }, { t: 'く' }, { t: '知恵', r: 'ちえ' }, { t: 'は、' }, { t: '母', r: 'はは' }, { t: 'から' }, { t: '教', r: 'おそ' }, { t: 'わった。' },
+        ],
+        en: 'The know-how for removing stains I learned from my mother.',
+      },
+      {
+        seg: [
+          { t: '生臭', r: 'なまぐさ' }, { t: 'い' }, { t: 'ごみ' }, { t: 'は' }, { t: 'ごみ' }, { t: '袋', r: 'ぶくろ' }, { t: 'を' }, { t: '二重', r: 'にじゅう' }, { t: 'に' }, { t: 'する。' },
+        ],
+        en: 'For fishy-smelling rubbish I double up the bin bags.',
+      },
+      {
+        seg: [
+          { t: '可燃', r: 'かねん' }, { t: 'ごみ' }, { t: '、' }, { t: '資源', r: 'しげん' }, { t: 'ごみ' }, { t: '、' }, { t: '粗大', r: 'そだい' }, { t: 'ごみ' }, { t: 'を' }, { t: '分別', r: 'ぶんべつ' }, { t: 'する。' },
+        ],
+        en: 'I separate burnable rubbish, recyclables and bulky waste.',
+      },
+      {
+        seg: [
+          { t: '古新聞', r: 'ふるしんぶん' }, { t: 'は' }, { t: 'まとめて、' }, { t: '月', r: 'つき' }, { t: 'に' }, { t: '一' }, { t: '度', r: 'ど' }, { t: '' }, { t: '出', r: 'だ' }, { t: 'す。' },
+        ],
+        en: 'I bundle the old newspapers and put them out once a month.',
+      },
+      {
+        seg: [
+          { t: '双子', r: 'ふたご' }, { t: 'の' }, { t: '世話', r: 'せわ' }, { t: 'で' }, { t: 'おむつ' }, { t: 'を' }, { t: '何度', r: 'なんど' }, { t: 'も' }, { t: '入', r: 'い' }, { t: 'れ' }, { t: '替', r: 'か' }, { t: 'える。' },
+        ],
+        en: 'Caring for twins, I change nappies over and over.',
+      },
+      {
+        seg: [
+          { t: '赤', r: 'あか' }, { t: 'ちゃん' }, { t: 'は' }, { t: 'なんでも' }, { t: 'しゃぶる' }, { t: 'ので、' }, { t: '目', r: 'め' }, { t: 'が' }, { t: '離', r: 'はな' }, { t: 'せない。' },
+        ],
+        en: 'Babies suck on anything, so I cannot take my eyes off them.',
+      },
+      {
+        seg: [
+          { t: '予定', r: 'よてい' }, { t: 'が' }, { t: '狂', r: 'くる' }, { t: 'う' }, { t: '日', r: 'ひ' }, { t: 'も' }, { t: 'ある' }, { t: 'が、' }, { t: 'それ' }, { t: 'も' }, { t: '生活', r: 'せいかつ' }, { t: 'だ。' },
+        ],
+        en: 'Some days the plan falls apart, but that too is life.',
+      },
+    ],
+  },
+  {
+    level: 'N2',
+    chapter: 3,
+    section: 5,
+    title: '引っ越しの日',
+    targetWords: [
+      '処分', '不用品', 'はがす', '束', 'しばる', '段ボール', 'ガムテープ', '押し込む', 'リスト', '引っ掛かる', '持ち上げる', '担ぐ', 'くたびれる', 'すき間', '中身', 'さっさと', '吊るす', 'まさに', '居心地', '一変', 'アンテナ', 'いっそ',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '引', r: 'ひ' }, { t: 'っ' }, { t: '越', r: 'こ' }, { t: 'し' }, { t: 'の' }, { t: '前', r: 'まえ' }, { t: 'に、' }, { t: '不用品', r: 'ふようひん' }, { t: 'を' }, { t: '処分', r: 'しょぶん' }, { t: 'する。' },
+        ],
+        en: 'Before moving, I dispose of things I no longer need.',
+      },
+      {
+        seg: [
+          { t: '本', r: 'ほん' }, { t: 'を' }, { t: '束', r: 'たば' }, { t: 'に' }, { t: 'して' }, { t: 'ひも' }, { t: 'で' }, { t: 'しばり、' }, { t: '古', r: 'ふる' }, { t: 'い' }, { t: 'シール' }, { t: 'を' }, { t: 'はがす。' },
+        ],
+        en: 'I tie the books into bundles with string and peel off the old stickers.',
+      },
+      {
+        seg: [
+          { t: '段', r: 'だん' }, { t: 'ボール' }, { t: 'に' }, { t: 'ガムテープ' }, { t: 'を' }, { t: '貼', r: 'は' }, { t: 'り、' }, { t: 'リスト' }, { t: 'を' }, { t: '作', r: 'つく' }, { t: 'る。' },
+        ],
+        en: 'I tape up the cardboard boxes and make a list.',
+      },
+      {
+        seg: [
+          { t: 'すき' }, { t: '間', r: 'ま' }, { t: 'に' }, { t: '小物', r: 'こもの' }, { t: 'を' }, { t: '押', r: 'お' }, { t: 'し' }, { t: '込', r: 'こ' }, { t: 'み、' }, { t: '中身', r: 'なかみ' }, { t: 'を' }, { t: '書', r: 'か' }, { t: 'いておく。' },
+        ],
+        en: 'I push small items into the gaps and write what is inside.',
+      },
+      {
+        seg: [
+          { t: '重', r: 'おも' }, { t: 'い' }, { t: '箱', r: 'はこ' }, { t: 'を' }, { t: '持', r: 'も' }, { t: 'ち' }, { t: '上', r: 'あ' }, { t: 'げ、' }, { t: '肩', r: 'かた' }, { t: 'に' }, { t: '担', r: 'かつ' }, { t: 'いで' }, { t: '運', r: 'はこ' }, { t: 'ぶ。' },
+        ],
+        en: 'I lift the heavy boxes and carry them on my shoulder.',
+      },
+      {
+        seg: [
+          { t: '角', r: 'かど' }, { t: 'に' }, { t: '引', r: 'ひ' }, { t: 'っ' }, { t: '掛', r: 'か' }, { t: 'かって、' }, { t: 'さっさと' }, { t: 'は' }, { t: '進', r: 'すす' }, { t: 'まない。' },
+        ],
+        en: 'They catch on corners, so it does not go quickly.',
+      },
+      {
+        seg: [
+          { t: 'まさに' }, { t: 'くたびれる' }, { t: '作業', r: 'さぎょう' }, { t: 'だ' }, { t: 'が、' }, { t: '終', r: 'お' }, { t: 'われば' }, { t: '気持', r: 'きも' }, { t: 'ちがいい。' },
+        ],
+        en: 'It is truly exhausting work, but it feels good when it is done.',
+      },
+      {
+        seg: [
+          { t: '新', r: 'あたら' }, { t: 'しい' }, { t: '部屋', r: 'へや' }, { t: 'で' }, { t: 'カーテン' }, { t: 'を' }, { t: '吊', r: 'つ' }, { t: 'るし、' }, { t: 'アンテナ' }, { t: 'を' }, { t: 'つな', r: '・' }, { t: 'ぐ。' },
+        ],
+        en: 'In the new room I hang the curtains and connect the aerial.',
+      },
+      {
+        seg: [
+          { t: 'ながめ' }, { t: 'が' }, { t: '変', r: 'か' }, { t: 'わって、' }, { t: 'きぶん' }, { t: 'が' }, { t: '一変', r: 'いっぺん' }, { t: 'した。' },
+        ],
+        en: 'The view changed, and my mood was transformed.',
+      },
+      {
+        seg: [
+          { t: '居心地', r: 'いごこち' }, { t: 'が' }, { t: 'よく、' }, { t: 'いっそ' }, { t: 'ここ' }, { t: 'に' }, { t: '長', r: 'なが' }, { t: 'く' }, { t: '住', r: 'す' }, { t: 'みたい' }, { t: 'と' }, { t: '思', r: 'おも' }, { t: 'う。' },
+        ],
+        en: 'It is comfortable here — I would rather just live here a long time.',
+      },
+    ],
+  },
 ]
