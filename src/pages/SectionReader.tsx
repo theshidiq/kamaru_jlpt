@@ -34,7 +34,7 @@ export function SectionReader() {
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
-    fetch('/audio/passages/manifest.json')
+    fetch(audioUrl('/audio/passages/manifest.json'))
       .then(r => r.json())
       .then((m: PassageManifest) => {
         const id = `${level.toLowerCase()}-${ch}-${sec}`

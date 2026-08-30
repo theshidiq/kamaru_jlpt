@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 # Upload public/audio/** to an R2 bucket and print the env var to set.
 #
-# One-time setup (dashboard, needs your login):
-#   1. Cloudflare dashboard → R2 → Enable
-#   2. Create bucket:  npx wrangler r2 bucket create kamaru-audio
-#   3. R2 → kamaru-audio → Settings → Public access → Allow
-#   4. Copy the public bucket URL (https://pub-<hash>.r2.dev)
+# One-time setup. Only step 1 needs the dashboard (it takes billing terms):
+#   1. Cloudflare dashboard -> R2 -> Enable
+#   2. npx wrangler r2 bucket create kamaru-audio
+#   3. npx wrangler r2 bucket dev-url enable kamaru-audio   (prints the URL)
+#   4. npx wrangler r2 bucket cors set kamaru-audio --file r2-cors.json
+#
+# Step 4 is NOT optional. Without a CORS rule the r2.dev domain serves media
+# fine but blocks the manifest fetch, so the reader silently renders with no
+# player at all -- the audio element is gated on the manifest having loaded.
 #
 # Then:  ./scripts/sync-audio-r2.sh kamaru-audio
 set -euo pipefail

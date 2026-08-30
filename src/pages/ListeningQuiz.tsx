@@ -12,6 +12,7 @@ import { loadListeningQuestions, generateListeningQuiz } from '@/lib/listening'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import type { ListeningQuestion } from '@/types/listening'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
+import { audioUrl } from '@/lib/assets'
 
 type Phase = 'loading' | 'intro-instructions' | 'intro-example' | 'quiz' | 'results'
 
@@ -134,7 +135,7 @@ export function ListeningQuiz() {
         <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4 space-y-5">
           <audio
             ref={introRef}
-            src="/audio/listening/intro-instructions.mp3"
+            src={audioUrl('/audio/listening/intro-instructions.mp3')}
             preload="auto"
             onLoadedMetadata={() => { const d = introRef.current?.duration; if (d && isFinite(d)) setInstrDuration(d) }}
             onDurationChange={() => { const d = introRef.current?.duration; if (d && isFinite(d)) setInstrDuration(d) }}
@@ -214,7 +215,7 @@ export function ListeningQuiz() {
         <div className="flex flex-col items-center min-h-[60vh] px-4 space-y-4 pt-4">
           <audio
             ref={exampleRef}
-            src="/audio/listening/intro-example.mp3"
+            src={audioUrl('/audio/listening/intro-example.mp3')}
             preload="auto"
             onLoadedMetadata={() => { const d = exampleRef.current?.duration; if (d && isFinite(d)) setExDuration(d) }}
             onDurationChange={() => { const d = exampleRef.current?.duration; if (d && isFinite(d)) setExDuration(d) }}
