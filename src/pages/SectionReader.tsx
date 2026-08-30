@@ -9,6 +9,8 @@ import { PASSAGES_N2 } from '@/lib/passages_n2'
 import type { PassageManifest, PassageAudioEntry } from '@/types/passage'
 import type { WordStatus } from '@/types/user'
 
+const SPEEDS = [0.5, 0.75, 1, 1.25] as const
+
 export function SectionReader() {
   const { chapter, section } = useParams()
   const navigate = useNavigate()
@@ -25,6 +27,7 @@ export function SectionReader() {
   const [showFurigana, setShowFurigana] = useState(true)
   const [showEnglish, setShowEnglish] = useState(false)
   const [playing, setPlaying] = useState(false)
+  const [rate, setRate] = useState(1)
   const [nowMs, setNowMs] = useState(0)
   const [picked, setPicked] = useState<{ word: string; ch: number; sec: number } | null>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
@@ -50,6 +53,10 @@ export function SectionReader() {
     })
   }
   const active = { s: activeS, w: activeW }
+
+  useEffect(() => {
+    if (audioRef.current) audioRef.current.playbackRate = rate
+  }, [rate, audio])
 
   function toggle() {
     const a = audioRef.current
@@ -120,6 +127,23 @@ export function SectionReader() {
             >
               <RiRestartLine size={18} />
             </button>
+
+            {/* Playback speed — timings scale with the rate, so highlighting stays in sync */}
+            <div className="flex items-center rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+              {SPEEDS.map(sp => (
+                <button
+                  key={sp}
+                  onClick={() => setRate(sp)}
+                  className={`text-xs font-semibold px-2.5 py-2 transition-colors ${
+                    rate === sp
+                      ? 'bg-indigo-600 text-white'
+                      : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                  }`}
+                >
+                  {sp}×
+                </button>
+              ))}
+            </div>
           </>
         )}
         {[
