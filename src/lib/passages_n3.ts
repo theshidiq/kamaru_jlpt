@@ -1404,4 +1404,455 @@ export const PASSAGES_N3: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N3',
+    chapter: 4,
+    section: 1,
+    title: '町のようす',
+    targetWords: [
+      '商店街', 'にぎやかな', '高層ビル', '建つ', '水族館', '博物館', '出入り口', '自動ドア', '入館料',
+      '混雑', '行列', '休館日', 'ホール', '使用料', '無料', '老人ホーム', '目印', '歩道橋', 'タワー',
+      'ライト', '居酒屋', '八百屋', '正面', 'そば', 'コンクリート', '地方', '地域', '郊外', '中心',
+      '移転', '工事', '空き地',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '駅', r: 'えき' }, { t: 'の' }, { t: '正面', r: 'しょうめん' }, { t: 'に' }, { t: '商店街', r: 'しょうてんがい' },
+          { t: 'が' }, { t: 'あり、' }, { t: '夕方', r: 'ゆうがた' }, { t: 'は' }, { t: 'にぎやか' },
+          { t: 'だ。' },
+        ],
+        en: 'There is a shopping street directly opposite the station, and in the evening it is lively.',
+      },
+      {
+        seg: [
+          { t: '八百屋', r: 'やおや' }, { t: 'の' }, { t: 'そば' }, { t: 'に' }, { t: '居酒屋', r: 'いざかや' },
+          { t: 'が' }, { t: 'でき、' }, { t: 'その' }, { t: '隣', r: 'となり' }, { t: 'は' },
+          { t: '空', r: 'あ' }, { t: 'き' }, { t: '地', r: 'ち' }, { t: 'の' }, { t: 'まま' },
+          { t: 'だ。' },
+        ],
+        en: 'An izakaya has opened beside the greengrocer, and the plot next to it is still a vacant lot.',
+      },
+      {
+        seg: [
+          { t: '町', r: 'まち' }, { t: 'の' }, { t: '中心', r: 'ちゅうしん' }, { t: 'に' }, { t: 'は' },
+          { t: '高層', r: 'こうそう' }, { t: 'ビル' }, { t: 'が' }, { t: '建', r: 'た' }, { t: 'ち、' },
+          { t: 'コンクリート' }, { t: 'の' }, { t: 'タワー' }, { t: 'が' }, { t: '目印', r: 'めじるし' },
+          { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'A high-rise stands in the town centre, and the concrete tower serves as a landmark.',
+      },
+      {
+        seg: [
+          { t: '夜', r: 'よる' }, { t: 'は' }, { t: 'ライト' }, { t: 'が' }, { t: 'つき、' },
+          { t: '歩道橋', r: 'ほどうきょう' }, { t: 'の' }, { t: '上', r: 'うえ' }, { t: 'から' }, { t: 'よく' },
+          { t: '見', r: 'み' }, { t: 'える。' },
+        ],
+        en: 'At night the lights come on, and it is clearly visible from the footbridge.',
+      },
+      {
+        seg: [
+          { t: '水族館', r: 'すいぞくかん' }, { t: 'と' }, { t: '博物館', r: 'はくぶつかん' }, { t: 'は' }, { t: '郊外', r: 'こうがい' },
+          { t: 'に' }, { t: 'あり、' }, { t: '入館料', r: 'にゅうかんりょう' }, { t: 'は' }, { t: '子', r: 'こ' },
+          { t: 'ども' }, { t: 'が' }, { t: '無料', r: 'むりょう' }, { t: 'だ。' },
+        ],
+        en: 'The aquarium and museum are in the suburbs, and admission is free for children.',
+      },
+      {
+        seg: [
+          { t: '休日', r: 'きゅうじつ' }, { t: 'は' }, { t: '混雑', r: 'こんざつ' }, { t: 'して' }, { t: '行列', r: 'ぎょうれつ' },
+          { t: 'が' }, { t: 'でき、' }, { t: '自動', r: 'じどう' }, { t: 'ドア' }, { t: 'の' },
+          { t: '出入', r: 'でい' }, { t: 'り' }, { t: '口', r: 'ぐち' }, { t: 'が' }, { t: 'せまく' },
+          { t: '感', r: 'かん' }, { t: 'じる。' },
+        ],
+        en: 'On holidays it is crowded and queues form, and the automatic door’s entrance feels narrow.',
+      },
+      {
+        seg: [
+          { t: '休館日', r: 'きゅうかんび' }, { t: 'を' }, { t: '確', r: 'たし' }, { t: 'かめて' }, { t: 'から' },
+          { t: '出', r: 'で' }, { t: 'かける' }, { t: 'と、' }, { t: 'むだ' }, { t: 'が' },
+          { t: 'ない。' },
+        ],
+        en: 'If you check the closing day before setting out, there is no waste.',
+      },
+      {
+        seg: [
+          { t: 'ホール' }, { t: 'の' }, { t: '使用料', r: 'しようりょう' }, { t: 'は' }, { t: '地域', r: 'ちいき' },
+          { t: 'の' }, { t: '人', r: 'ひと' }, { t: 'に' }, { t: 'は' }, { t: '安', r: 'やす' },
+          { t: 'い。' },
+        ],
+        en: 'The hall’s usage fee is cheap for people of the area.',
+      },
+      {
+        seg: [
+          { t: '地方', r: 'ちほう' }, { t: 'から' }, { t: '移転', r: 'いてん' }, { t: 'して' }, { t: 'きた' },
+          { t: '老人', r: 'ろうじん' }, { t: 'ホーム' }, { t: 'の' }, { t: '前', r: 'まえ' }, { t: 'で、' },
+          { t: 'いま' }, { t: 'も' }, { t: '工事', r: 'こうじ' }, { t: 'が' }, { t: '続', r: 'つづ' },
+          { t: 'いて' }, { t: 'いる。' },
+        ],
+        en: 'In front of the nursing home that relocated from the countryside, construction still continues.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 4,
+    section: 2,
+    title: '町を歩く',
+    targetWords: [
+      '人ごみ', '都会', 'ぶらぶら', 'うろうろ', '通りかかる', '通り過ぎる', '徒歩', '方向', '遠回り',
+      '近道', '距離', '追いかける', '追いつく', '追い越す', '突き当たり', '立ち止まる', '横切る', '見かける',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '休', r: 'やす' }, { t: 'み' }, { t: 'の' }, { t: '日', r: 'ひ' }, { t: 'は、' },
+          { t: '都会', r: 'とかい' }, { t: 'の' }, { t: '人', r: 'ひと' }, { t: 'ごみ' }, { t: 'を' },
+          { t: 'ぶらぶら' }, { t: '歩', r: 'ある' }, { t: 'く' }, { t: 'の' }, { t: 'が' },
+          { t: '好', r: 'す' }, { t: 'き' }, { t: 'だ。' },
+        ],
+        en: 'On days off I like to stroll through the city crowds.',
+      },
+      {
+        seg: [
+          { t: '地図', r: 'ちず' }, { t: 'を' }, { t: '見', r: 'み' }, { t: 'ながら' }, { t: 'うろうろ' },
+          { t: 'して' }, { t: 'いる' }, { t: '人', r: 'ひと' }, { t: 'を、' }, { t: 'よく' },
+          { t: '見', r: 'み' }, { t: 'かける。' },
+        ],
+        en: 'I often spot people loitering about while looking at a map.',
+      },
+      {
+        seg: [
+          { t: '駅', r: 'えき' }, { t: 'から' }, { t: '徒歩', r: 'とほ' }, { t: '十分', r: 'じっぷん、' }, { t: '距離', r: 'きょり' },
+          { t: 'は' }, { t: '短', r: 'みじか' }, { t: 'い' }, { t: 'が' }, { t: '方向', r: 'ほうこう' },
+          { t: 'が' }, { t: '分', r: 'わ' }, { t: 'かり' }, { t: 'にくい。' },
+        ],
+        en: 'Ten minutes on foot from the station — the distance is short but the direction is hard to work out.',
+      },
+      {
+        seg: [
+          { t: '近道', r: 'ちかみち' }, { t: 'を' }, { t: '通', r: 'とお' }, { t: 'る' }, { t: 'つもり' },
+          { t: 'が、' }, { t: 'かえって' }, { t: '遠回', r: 'とおまわ' }, { t: 'り' }, { t: 'に' },
+          { t: 'なった。' },
+        ],
+        en: 'I meant to take a shortcut but ended up going the long way round instead.',
+      },
+      {
+        seg: [
+          { t: '道', r: 'みち' }, { t: 'の' }, { t: '突', r: 'つ' }, { t: 'き' }, { t: '当', r: 'あ' },
+          { t: 'たり' }, { t: 'で' }, { t: '立', r: 'た' }, { t: 'ち' }, { t: '止', r: 'ど' },
+          { t: 'まり、' }, { t: '通', r: 'とお' }, { t: 'りかかった' }, { t: '人', r: 'ひと' }, { t: 'に' },
+          { t: '道', r: 'みち' }, { t: 'を' }, { t: '聞', r: 'き' }, { t: 'いた。' },
+        ],
+        en: 'I stopped at the end of the road and asked someone who happened to pass by for directions.',
+      },
+      {
+        seg: [
+          { t: '前', r: 'まえ' }, { t: 'を' }, { t: '歩', r: 'ある' }, { t: 'く' }, { t: '友人', r: 'ゆうじん' },
+          { t: 'を' }, { t: '追', r: 'お' }, { t: 'いかけ、' }, { t: '走', r: 'はし' }, { t: 'って' },
+          { t: 'ようやく' }, { t: '追', r: 'お' }, { t: 'いついた。' },
+        ],
+        en: 'I chased after the friend walking ahead and finally caught up at a run.',
+      },
+      {
+        seg: [
+          { t: '自転車', r: 'じてんしゃ' }, { t: 'が' }, { t: '私', r: 'わたし' }, { t: 'を' }, { t: '追', r: 'お' },
+          { t: 'い' }, { t: '越', r: 'こ' }, { t: 'し、' }, { t: '横断歩道', r: 'おうだんほどう' }, { t: 'を' },
+          { t: '横切', r: 'よこぎ' }, { t: 'って' }, { t: '行', r: 'い' }, { t: 'った。' },
+        ],
+        en: 'A bicycle overtook me and went across the crossing.',
+      },
+      {
+        seg: [
+          { t: '店', r: 'みせ' }, { t: 'の' }, { t: '前', r: 'まえ' }, { t: 'を' }, { t: '通', r: 'とお' },
+          { t: 'り' }, { t: '過', r: 'す' }, { t: 'ぎて' }, { t: 'から、' }, { t: '戻', r: 'もど' },
+          { t: 'る' }, { t: 'こと' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'After passing the shop I decided to go back.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 4,
+    section: 3,
+    title: '電車と新幹線',
+    targetWords: [
+      '行き先', '往復', '片道', '各駅停車', '急行', '始発', '終電', '終点', '上り', '下り', 'JR',
+      '私鉄', '経由', '定期券', '有効期限', '窓口', '販売', '通路側', '改札', '指定席', '車内アナウンス',
+      '車掌', 'ホーム', '線路', '踏切', '乗り遅れる', '乗り換える', '乗り越す', '乗り過ごす', '踏む',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '窓口', r: 'まどぐち' }, { t: 'で' }, { t: '行', r: 'い' }, { t: 'き' }, { t: '先', r: 'さき' },
+          { t: 'を' }, { t: '告', r: 'つ' }, { t: 'げ、' }, { t: '往復', r: 'おうふく' }, { t: 'の' },
+          { t: '切符', r: 'きっぷ' }, { t: 'を' }, { t: '買', r: 'か' }, { t: 'った。' },
+        ],
+        en: 'I told the counter my destination and bought a return ticket.',
+      },
+      {
+        seg: [
+          { t: '片道', r: 'かたみち' }, { t: 'だけ' }, { t: 'なら' }, { t: '安', r: 'やす' }, { t: 'い' },
+          { t: 'が、' }, { t: '指定席', r: 'していせき' }, { t: 'は' }, { t: '別料金', r: 'べつりょうきん' }, { t: 'だ。' },
+        ],
+        en: 'One way alone is cheap, but a reserved seat costs extra.',
+      },
+      {
+        seg: [
+          { t: '通路側', r: 'つうろがわ' }, { t: 'の' }, { t: '席', r: 'せき' }, { t: 'が' }, { t: 'よかった' },
+          { t: 'が、' }, { t: '販売', r: 'はんばい' }, { t: 'は' }, { t: 'もう' }, { t: '終', r: 'お' },
+          { t: 'わって' }, { t: 'いた。' },
+        ],
+        en: 'I wanted an aisle seat, but sales had already ended.',
+      },
+      {
+        seg: [
+          { t: '急行', r: 'きゅうこう' }, { t: 'に' }, { t: '乗', r: 'の' }, { t: 'り' }, { t: '遅', r: 'おく' },
+          { t: 'れた' }, { t: 'ので、' }, { t: '各駅停車', r: 'かくえきていしゃ' }, { t: 'で' }, { t: '行', r: 'い' },
+          { t: 'く' }, { t: 'こと' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'I missed the express, so I decided to go by local train.',
+      },
+      {
+        seg: [
+          { t: 'JR' }, { t: 'から' }, { t: '私鉄', r: 'してつ' }, { t: 'に' }, { t: '乗', r: 'の' },
+          { t: 'り' }, { t: '換', r: 'か' }, { t: 'え、' }, { t: '途中', r: 'とちゅう' }, { t: 'の' },
+          { t: '駅', r: 'えき' }, { t: 'を' }, { t: '経由', r: 'けいゆ' }, { t: 'する。' },
+        ],
+        en: 'I change from JR to a private line and go via a station on the way.',
+      },
+      {
+        seg: [
+          { t: '上', r: 'のぼ' }, { t: 'り' }, { t: 'の' }, { t: 'ホーム' }, { t: 'と' },
+          { t: '下', r: 'くだ' }, { t: 'り' }, { t: 'の' }, { t: 'ホーム' }, { t: 'を' },
+          { t: 'まちがえ、' }, { t: '改札', r: 'かいさつ' }, { t: 'を' }, { t: '出', r: 'で' }, { t: '直', r: 'なお' },
+          { t: 'した。' },
+        ],
+        en: 'I mistook the inbound platform for the outbound one and went back out through the gate.',
+      },
+      {
+        seg: [
+          { t: '定期券', r: 'ていきけん' }, { t: 'の' }, { t: '有効期限', r: 'ゆうこうきげん' }, { t: 'が' }, { t: '切', r: 'き' },
+          { t: 'れて' }, { t: 'いて、' }, { t: 'あわてた。' },
+        ],
+        en: 'My commuter pass had expired, and I panicked.',
+      },
+      {
+        seg: [
+          { t: '車内', r: 'しゃない' }, { t: 'アナウンス' }, { t: 'を' }, { t: '聞', r: 'き' }, { t: 'き' },
+          { t: '逃', r: 'のが' }, { t: 'し、' }, { t: '終点', r: 'しゅうてん' }, { t: 'まで' }, { t: '乗', r: 'の' },
+          { t: 'り' }, { t: '過', r: 'す' }, { t: 'ごした。' },
+        ],
+        en: 'I missed the in-train announcement and rode past my stop to the terminus.',
+      },
+      {
+        seg: [
+          { t: '車掌', r: 'しゃしょう' }, { t: 'に' }, { t: '相談', r: 'そうだん' }, { t: 'し、' }, { t: '乗', r: 'の' },
+          { t: 'り' }, { t: '越', r: 'こ' }, { t: 'した' }, { t: '分', r: 'ぶん' }, { t: 'を' },
+          { t: '払', r: 'はら' }, { t: 'った。' },
+        ],
+        en: 'I consulted the conductor and paid for the distance I had ridden past.',
+      },
+      {
+        seg: [
+          { t: '線路', r: 'せんろ' }, { t: 'の' }, { t: 'そば' }, { t: 'の' }, { t: '踏切', r: 'ふみきり' },
+          { t: 'を' }, { t: 'わたる' }, { t: 'とき' }, { t: 'は、' }, { t: '足元', r: 'あしもと' },
+          { t: 'を' }, { t: 'よく' }, { t: '踏', r: 'ふ' }, { t: 'みしめる。' },
+        ],
+        en: 'When crossing the railway crossing beside the track, I tread firmly.',
+      },
+      {
+        seg: [
+          { t: '始発', r: 'しはつ' }, { t: 'で' }, { t: '出', r: 'で' }, { t: 'れば、' }, { t: '終電', r: 'しゅうでん' },
+          { t: 'を' }, { t: '気', r: 'き' }, { t: 'に' }, { t: 'せず' }, { t: '済', r: 'す' },
+          { t: 'む。' },
+        ],
+        en: 'If I leave on the first train, I need not worry about the last one.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 4,
+    section: 4,
+    title: 'バス',
+    targetWords: [
+      'バス停', '乗車口', '乗客', '乗車', '発車', '通過', '停車', '下車', '交通費', 'バス代',
+      '払い戻す', '定員', 'つめる', 'がらがらな', 'すく', '満員', 'ぎっしり', '時刻', '優先席',
+      '立ち上がる', 'ゆずる', 'かかる', 'ブレーキ',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: 'バス停', r: 'てい' }, { t: 'で' }, { t: '時刻', r: 'じこく' }, { t: 'を' }, { t: '確', r: 'たし' },
+          { t: 'かめ、' }, { t: '乗車口', r: 'じょうしゃぐち' }, { t: 'から' }, { t: '乗車', r: 'じょうしゃ' }, { t: 'する。' },
+        ],
+        en: 'I check the time at the bus stop and board through the boarding door.',
+      },
+      {
+        seg: [
+          { t: '朝', r: 'あさ' }, { t: 'の' }, { t: 'バス' }, { t: 'は' }, { t: '満員', r: 'まんいん' },
+          { t: 'で、' }, { t: '乗客', r: 'じょうきゃく' }, { t: 'が' }, { t: 'ぎっしり' }, { t: '立', r: 'た' },
+          { t: 'って' }, { t: 'いる。' },
+        ],
+        en: 'The morning bus is full, with passengers standing packed tightly.',
+      },
+      {
+        seg: [
+          { t: '少', r: 'すこ' }, { t: 'し' }, { t: 'つめて' }, { t: 'ください' }, { t: 'と' },
+          { t: '言', r: 'い' }, { t: 'われ、' }, { t: 'みんな' }, { t: 'が' }, { t: '奥', r: 'おく' },
+          { t: 'へ' }, { t: '動', r: 'うご' }, { t: 'いた。' },
+        ],
+        en: 'We were asked to move up a little, and everyone shifted toward the back.',
+      },
+      {
+        seg: [
+          { t: '昼', r: 'ひる' }, { t: 'ごろ' }, { t: 'は' }, { t: 'すいて、' }, { t: 'がらがら' },
+          { t: 'の' }, { t: 'こと' }, { t: 'も' }, { t: 'ある。' },
+        ],
+        en: 'Around midday it thins out, and sometimes it is quite empty.',
+      },
+      {
+        seg: [
+          { t: '定員', r: 'ていいん' }, { t: 'を' }, { t: 'こえる' }, { t: 'と、' }, { t: '次', r: 'つぎ' },
+          { t: 'の' }, { t: 'バス停', r: 'てい' }, { t: 'を' }, { t: '通過', r: 'つうか' }, { t: 'する' },
+          { t: 'そう' }, { t: 'だ。' },
+        ],
+        en: 'If it exceeds capacity, apparently it passes the next stop without stopping.',
+      },
+      {
+        seg: [
+          { t: '優先席', r: 'ゆうせんせき' }, { t: 'の' }, { t: '前', r: 'まえ' }, { t: 'で、' }, { t: '若', r: 'わか' },
+          { t: 'い' }, { t: '人', r: 'ひと' }, { t: 'が' }, { t: '立', r: 'た' }, { t: 'ち' },
+          { t: '上', r: 'あ' }, { t: 'がって' }, { t: '席', r: 'せき' }, { t: 'を' }, { t: 'ゆずった。' },
+        ],
+        en: 'In front of the priority seats, a young person stood up and gave up their seat.',
+      },
+      {
+        seg: [
+          { t: '急', r: 'きゅう' }, { t: 'な' }, { t: 'ブレーキ' }, { t: 'で' }, { t: '体', r: 'からだ' },
+          { t: 'が' }, { t: '揺', r: 'ゆ' }, { t: 'れ、' }, { t: '停車', r: 'ていしゃ' }, { t: 'して' },
+          { t: 'から' }, { t: '下車', r: 'げしゃ' }, { t: 'した。' },
+        ],
+        en: 'My body swayed with a sudden brake, and I got off after it had stopped.',
+      },
+      {
+        seg: [
+          { t: 'バス代', r: 'だい' }, { t: 'と' }, { t: '電車代', r: 'でんしゃだい' }, { t: 'を' }, { t: '合', r: 'あ' },
+          { t: 'わせた' }, { t: '交通費', r: 'こうつうひ' }, { t: 'は、' }, { t: '会社', r: 'かいしゃ' }, { t: 'が' },
+          { t: '払', r: 'はら' }, { t: 'い' }, { t: '戻', r: 'もど' }, { t: 'して' }, { t: 'くれる。' },
+        ],
+        en: 'The company refunds the travel expenses combining bus and train fares.',
+      },
+      {
+        seg: [
+          { t: '発車', r: 'はっしゃ' }, { t: 'まで' }, { t: '五分', r: 'ごふん、' }, { t: '会社', r: 'かいしゃ' }, { t: 'まで' },
+          { t: 'は' }, { t: '三十分', r: 'さんじっぷん' }, { t: 'かかる。' },
+        ],
+        en: 'Five minutes until departure, and it takes thirty minutes to the office.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 4,
+    section: 5,
+    title: '車の運転',
+    targetWords: [
+      'ドライブ', '乗せる', '助手席', 'シートベルト', 'カーナビ', '道路', '渋滞', '速度', '高速道路',
+      '安全', '列', '割り込む', '駐車違反', 'スピード違反', '飲酒運転', 'アクセル', 'カーブ', 'ゆるい',
+      'パンク', '一方通行', '通行止め', '運転免許証', 'ぶつかる', 'ひく', 'ハンドル', 'トランク', 'エンジン',
+      '中古車', 'トラック',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '中古車', r: 'ちゅうこしゃ' }, { t: 'を' }, { t: '買', r: 'か' }, { t: 'い、' }, { t: '友人', r: 'ゆうじん' },
+          { t: 'を' }, { t: '助手席', r: 'じょしゅせき' }, { t: 'に' }, { t: '乗', r: 'の' }, { t: 'せて' },
+          { t: 'ドライブ' }, { t: 'に' }, { t: '出', r: 'で' }, { t: 'た。' },
+        ],
+        en: 'I bought a used car and set out for a drive with a friend in the passenger seat.',
+      },
+      {
+        seg: [
+          { t: 'エンジン' }, { t: 'を' }, { t: 'かける' }, { t: '前', r: 'まえ' }, { t: 'に、' },
+          { t: 'シートベルト' }, { t: 'を' }, { t: '締', r: 'し' }, { t: 'め、' }, { t: 'カーナビ' },
+          { t: 'を' }, { t: 'セット' }, { t: 'する。' },
+        ],
+        en: 'Before starting the engine, I fasten the seat belt and set the car navigation.',
+      },
+      {
+        seg: [
+          { t: '高速道路', r: 'こうそくどうろ' }, { t: 'は' }, { t: '渋滞', r: 'じゅうたい' }, { t: 'して' }, { t: 'いて、' },
+          { t: '車', r: 'くるま' }, { t: 'の' }, { t: '列', r: 'れつ' }, { t: 'が' }, { t: '長', r: 'なが' },
+          { t: 'く' }, { t: '続', r: 'つづ' }, { t: 'いた。' },
+        ],
+        en: 'The expressway was congested, and the line of cars stretched on and on.',
+      },
+      {
+        seg: [
+          { t: '速度', r: 'そくど' }, { t: 'を' }, { t: '落', r: 'お' }, { t: 'とし、' }, { t: 'ハンドル' },
+          { t: 'を' }, { t: 'しっかり' }, { t: '持', r: 'も' }, { t: 'って' }, { t: 'ゆるい' },
+          { t: 'カーブ' }, { t: 'を' }, { t: '曲', r: 'ま' }, { t: 'がる。' },
+        ],
+        en: 'I reduce speed, hold the steering wheel firmly and take the gentle curve.',
+      },
+      {
+        seg: [
+          { t: '前', r: 'まえ' }, { t: 'の' }, { t: '車', r: 'くるま' }, { t: 'が' }, { t: '急', r: 'きゅう' },
+          { t: 'に' }, { t: '割', r: 'わ' }, { t: 'り' }, { t: '込', r: 'こ' }, { t: 'み、' },
+          { t: '危', r: 'あぶ' }, { t: 'うく' }, { t: 'ぶつかる' }, { t: 'ところ' }, { t: 'だった。' },
+        ],
+        en: 'The car in front cut in suddenly and we nearly collided.',
+      },
+      {
+        seg: [
+          { t: 'アクセル' }, { t: 'を' }, { t: 'ふみすぎて、' }, { t: 'スピード違反', r: 'いはん' }, { t: 'に' },
+          { t: 'なる' }, { t: '人', r: 'ひと' }, { t: 'も' }, { t: 'いる。' },
+        ],
+        en: 'Some people press the accelerator too hard and commit a speeding violation.',
+      },
+      {
+        seg: [
+          { t: '飲酒運転', r: 'いんしゅうんてん' }, { t: 'も' }, { t: '駐車違反', r: 'ちゅうしゃいはん' }, { t: 'も、' }, { t: '絶対', r: 'ぜったい' },
+          { t: 'に' }, { t: 'して' }, { t: 'は' }, { t: 'いけない。' },
+        ],
+        en: 'Neither drunk driving nor a parking violation must ever be committed.',
+      },
+      {
+        seg: [
+          { t: 'この' }, { t: '道', r: 'みち' }, { t: 'は' }, { t: '一方通行', r: 'いっぽうつうこう' }, { t: 'で、' },
+          { t: '先', r: 'さき' }, { t: 'は' }, { t: '工事', r: 'こうじ' }, { t: 'の' }, { t: 'ため' },
+          { t: '通行止', r: 'つうこうど' }, { t: 'め' }, { t: 'だった。' },
+        ],
+        en: 'This road is one-way, and ahead it was closed for construction.',
+      },
+      {
+        seg: [
+          { t: 'タイヤ' }, { t: 'が' }, { t: 'パンク' }, { t: 'し、' }, { t: 'トランク' },
+          { t: 'から' }, { t: '道具', r: 'どうぐ' }, { t: 'を' }, { t: '出', r: 'だ' }, { t: 'した。' },
+        ],
+        en: 'The tyre got a puncture, and I took the tools out of the boot.',
+      },
+      {
+        seg: [
+          { t: '大', r: 'おお' }, { t: 'きな' }, { t: 'トラック' }, { t: 'の' }, { t: 'そば' },
+          { t: 'を' }, { t: '通', r: 'とお' }, { t: 'る' }, { t: 'とき' }, { t: 'は、' },
+          { t: '安全', r: 'あんぜん' }, { t: 'の' }, { t: 'ため' }, { t: '速度', r: 'そくど' }, { t: 'を' },
+          { t: '落', r: 'お' }, { t: 'とす。' },
+        ],
+        en: 'When passing beside a large truck, I slow down for safety.',
+      },
+      {
+        seg: [
+          { t: '人', r: 'ひと' }, { t: 'を' }, { t: 'ひく' }, { t: 'こと' }, { t: 'の' },
+          { t: 'ない' }, { t: 'よう、' }, { t: '運転免許証', r: 'うんてんめんきょしょう' }, { t: 'を' }, { t: '持', r: 'も' },
+          { t: 'つ' }, { t: '者', r: 'もの' }, { t: 'は' }, { t: '常', r: 'つね' }, { t: 'に' },
+          { t: '気', r: 'き' }, { t: 'を' }, { t: 'つける。' },
+        ],
+        en: 'So as never to run anyone over, those holding a driver’s licence must always take care.',
+      },
+    ],
+  },
 ]
