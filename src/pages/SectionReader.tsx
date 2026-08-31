@@ -253,7 +253,13 @@ export function SectionReader() {
         <button
           onClick={toggle}
           aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
-          className="fixed bottom-8 right-5 z-40 flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
+          // bottom-40 (160px) clears the mobile tab bar (81px incl. its
+          // safe-area padding) with room to spare, landing in the natural
+          // thumb arc rather than hard against the bar; md:bottom-8 drops
+          // back down where that bar is hidden. z-50 matches the bar so this
+          // is never painted behind it.
+          className="fixed bottom-40 md:bottom-8 right-5 z-50 flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
+          style={{ marginBottom: 'env(safe-area-inset-bottom, 0px)' }}
         >
           {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
         </button>
