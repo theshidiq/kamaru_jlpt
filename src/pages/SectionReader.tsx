@@ -54,9 +54,11 @@ export function SectionReader() {
   }, [level, ch, sec])
 
   // Which token is being spoken right now
+  // Held while paused too: pausing mid-sentence to shadow a line is the main
+  // way this page is used, and clearing the highlight there loses your place.
   let activeS = -1
   let activeW = -1
-  if (audio && playing) {
+  if (audio) {
     audio.timings.forEach((row, si) => {
       row.forEach((tm, wi) => {
         if (nowMs >= tm.startMs && nowMs < tm.endMs) { activeS = si; activeW = wi }
@@ -68,6 +70,22 @@ export function SectionReader() {
   useEffect(() => {
     if (audioRef.current) audioRef.current.playbackRate = rate
   }, [rate, audio])
+
+  // Track playback position with rAF rather than the element's timeupdate
+  // event. timeupdate fires only about every 265ms, but the median passage
+  // token lasts 240ms — over half of them are shorter than one interval, so
+  // the highlight skips tokens entirely and lags audibly behind the voice.
+  useEffect(() => {
+    if (!playing) return
+    let raf = 0
+    const tick = () => {
+      const a = audioRef.current
+      if (a) setNowMs(a.currentTime * 1000)
+      raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [playing])
 
   // Show a floating play/pause once the inline controls scroll out of view.
   // Passages run long, and shadowing means pausing every sentence — without
@@ -198,6 +216,7 @@ export function SectionReader() {
           ref={audioRef}
           src={audioUrl(audio.audioUrl)}
           preload="auto"
+          // Coarse fallback; the rAF loop above drives this during playback.
           onTimeUpdate={() => audioRef.current && setNowMs(audioRef.current.currentTime * 1000)}
           onEnded={() => setPlaying(false)}
           onPause={() => setPlaying(false)}
