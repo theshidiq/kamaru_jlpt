@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
+import { createPortal } from 'react-dom'
 import { useParams, useNavigate } from 'react-router-dom'
 import { RiPlayFill, RiPauseFill, RiRestartLine } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
@@ -248,21 +249,25 @@ export function SectionReader() {
           Passages run long and shadowing means pausing every sentence, so
           without this you have to scroll back to the top for every pause.
           Hidden while the word sheet is open: that sheet owns the bottom of
-          the screen on narrow viewports and has its own controls. */}
-      {audio && controlsHidden && !detail && (
+          the screen on narrow viewports and has its own controls.
+
+          Portalled to <body> because PageWrapper animates with a transform,
+          and a transformed ancestor becomes the containing block for
+          position: fixed — inside it, top-1/2 resolves against the full page
+          height rather than the viewport. */}
+      {audio && controlsHidden && !detail && createPortal(
         <button
           onClick={toggle}
           aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
-          // bottom-40 (160px) clears the mobile tab bar (81px incl. its
-          // safe-area padding) with room to spare, landing in the natural
-          // thumb arc rather than hard against the bar; md:bottom-8 drops
-          // back down where that bar is hidden. z-50 matches the bar so this
-          // is never painted behind it.
-          className="fixed bottom-40 md:bottom-8 right-5 z-50 flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
-          style={{ marginBottom: 'env(safe-area-inset-bottom, 0px)' }}
+          // Vertically centred on the right edge, where the thumb rests
+          // naturally while holding the phone — and clear of the mobile tab
+          // bar without needing to reason about its height. z-50 matches the
+          // bar so this is never painted behind it.
+          className="fixed top-1/2 -translate-y-1/2 right-5 z-50 flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
         >
           {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
-        </button>
+        </button>,
+        document.body,
       )}
 
       {/* Word detail */}
