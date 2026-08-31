@@ -507,4 +507,458 @@ export const PASSAGES_N3: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N3',
+    chapter: 2,
+    section: 1,
+    title: '日づけと時間',
+    targetWords: [
+      '本日', '明日', '前日', '翌日', 'しあさって', '先おととい', '昨日', '昨年', '先日', '再来週',
+      '先々週', '上旬', '中旬', '下旬', '深夜', '未来', '数日', '以降',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '本日', r: 'ほんじつ' }, { t: 'は' }, { t: '六月', r: 'ろくがつ' }, { t: 'の' }, { t: '上旬', r: 'じょうじゅん、' },
+          { t: '会議', r: 'かいぎ' }, { t: 'の' }, { t: '予定', r: 'よてい' }, { t: 'を' }, { t: '決', r: 'き' },
+          { t: 'める' }, { t: '日', r: 'ひ' }, { t: 'だ。' },
+        ],
+        en: 'Today is early June, the day for deciding the meeting schedule.',
+      },
+      {
+        seg: [
+          { t: '昨日', r: 'さくじつ' }, { t: '届', r: 'とど' }, { t: 'いた' }, { t: '資料', r: 'しりょう' }, { t: 'を' },
+          { t: '読', r: 'よ' }, { t: 'み、' }, { t: '明日', r: 'あす' }, { t: 'まで' }, { t: 'に' },
+          { t: '返事', r: 'へんじ' }, { t: 'を' }, { t: '出', r: 'だ' }, { t: 'す。' },
+        ],
+        en: 'I will read the documents that arrived yesterday and reply by tomorrow.',
+      },
+      {
+        seg: [
+          { t: '前日', r: 'ぜんじつ' }, { t: 'に' }, { t: '準備', r: 'じゅんび' }, { t: 'を' }, { t: '済', r: 'す' },
+          { t: 'ませ、' }, { t: '翌日', r: 'よくじつ' }, { t: 'は' }, { t: '早', r: 'はや' }, { t: 'く' },
+          { t: '出', r: 'で' }, { t: 'られる' }, { t: 'よう' }, { t: 'に' }, { t: 'する。' },
+        ],
+        en: 'I finish the preparation the day before so I can leave early the next day.',
+      },
+      {
+        seg: [
+          { t: 'しあさって' }, { t: 'は' }, { t: '中旬', r: 'ちゅうじゅん' }, { t: 'に' }, { t: '入', r: 'はい' },
+          { t: 'り、' }, { t: '下旬', r: 'げじゅん' }, { t: 'に' }, { t: 'は' }, { t: '出張', r: 'しゅっちょう' },
+          { t: 'が' }, { t: 'ある。' },
+        ],
+        en: 'Three days from now we enter mid-month, and at the end of the month there is a business trip.',
+      },
+      {
+        seg: [
+          { t: '先々週', r: 'せんせんしゅう' }, { t: 'も' }, { t: '先日', r: 'せんじつ' }, { t: 'も' }, { t: '忙', r: 'いそが' },
+          { t: 'しく、' }, { t: '深夜', r: 'しんや' }, { t: 'まで' }, { t: '仕事', r: 'しごと' }, { t: 'が' },
+          { t: '続', r: 'つづ' }, { t: 'いた。' },
+        ],
+        en: 'Both the week before last and the other day were busy, with work continuing late into the night.',
+      },
+      {
+        seg: [
+          { t: '再来週', r: 'さらいしゅう' }, { t: '以降', r: 'いこう' }, { t: 'は' }, { t: '少', r: 'すこ' }, { t: 'し' },
+          { t: '落', r: 'お' }, { t: 'ち' }, { t: '着', r: 'つ' }, { t: 'く' }, { t: 'だろう。' },
+        ],
+        en: 'From the week after next onward things should settle down a little.',
+      },
+      {
+        seg: [
+          { t: '昨年', r: 'さくねん' }, { t: 'の' }, { t: 'いま' }, { t: 'ごろ' }, { t: 'を' },
+          { t: '思', r: 'おも' }, { t: 'い' }, { t: '出', r: 'だ' }, { t: 'す' }, { t: 'と、' },
+          { t: '数日', r: 'すうじつ' }, { t: 'で' }, { t: '状況', r: 'じょうきょう' }, { t: 'が' }, { t: '変', r: 'か' },
+          { t: 'わった。' },
+        ],
+        en: 'Remembering this time last year, the situation changed in a few days.',
+      },
+      {
+        seg: [
+          { t: '先', r: 'さき' }, { t: 'おととい' }, { t: '立', r: 'た' }, { t: 'てた' }, { t: '計画', r: 'けいかく' },
+          { t: 'が、' }, { t: '未来', r: 'みらい' }, { t: 'を' }, { t: '少', r: 'すこ' }, { t: 'し' },
+          { t: '変', r: 'か' }, { t: 'える' }, { t: 'か' }, { t: 'も' }, { t: 'しれない。' },
+        ],
+        en: 'The plan I made three days ago may change the future a little.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 2,
+    section: 2,
+    title: '食べること',
+    targetWords: [
+      '朝食', 'モーニング', '昼食', 'ランチ', '夕食', 'ディナー', 'デザート', 'おやつ', 'おかず', '弁当',
+      '自炊', '外食', 'グルメ', 'おごる', '食欲', '注文', '乾杯', 'かむ', '味わう', 'お代わり',
+      '残す', '残り物', 'もったいない', '済ませる', '済む', '量', 'バランス',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '朝食', r: 'ちょうしょく' }, { t: 'は' }, { t: '家', r: 'いえ' }, { t: 'で' }, { t: '済', r: 'す' },
+          { t: 'ませ、' }, { t: '昼食', r: 'ちゅうしょく' }, { t: 'は' }, { t: '弁当', r: 'べんとう' }, { t: 'を' },
+          { t: '持', r: 'も' }, { t: 'って' }, { t: '行', r: 'い' }, { t: 'く。' },
+        ],
+        en: 'I have breakfast at home and take a boxed lunch for lunch.',
+      },
+      {
+        seg: [
+          { t: '近', r: 'ちか' }, { t: 'く' }, { t: 'の' }, { t: '店', r: 'みせ' }, { t: 'の' },
+          { t: 'モーニング' }, { t: 'も' }, { t: '安', r: 'やす' }, { t: 'く、' }, { t: 'たまに' },
+          { t: 'そこ' }, { t: 'で' }, { t: '済', r: 'す' }, { t: 'む。' },
+        ],
+        en: 'The morning set at a nearby shop is cheap too, and sometimes that suffices.',
+      },
+      {
+        seg: [
+          { t: '同僚', r: 'どうりょう' }, { t: 'と' }, { t: 'ランチ' }, { t: 'に' }, { t: '行', r: 'い' },
+          { t: 'き、' }, { t: '日替', r: 'ひが' }, { t: 'わり' }, { t: 'を' }, { t: '注文', r: 'ちゅうもん' },
+          { t: 'した。' },
+        ],
+        en: 'I went for lunch with a colleague and ordered the daily special.',
+      },
+      {
+        seg: [
+          { t: '夕食', r: 'ゆうしょく' }, { t: 'は' }, { t: '自炊', r: 'じすい' }, { t: 'が' }, { t: '多', r: 'おお' },
+          { t: 'い' }, { t: 'が、' }, { t: '週末', r: 'しゅうまつ' }, { t: 'は' }, { t: '外食', r: 'がいしょく' },
+          { t: 'も' }, { t: 'する。' },
+        ],
+        en: 'For dinner I mostly cook for myself, but at weekends I eat out too.',
+      },
+      {
+        seg: [
+          { t: '友人', r: 'ゆうじん' }, { t: 'は' }, { t: 'グルメ' }, { t: 'で、' }, { t: 'ディナー' },
+          { t: 'の' }, { t: '店', r: 'みせ' }, { t: 'を' }, { t: 'よく' }, { t: '知', r: 'し' },
+          { t: 'って' }, { t: 'いる。' },
+        ],
+        en: 'My friend is a foodie and knows dinner restaurants well.',
+      },
+      {
+        seg: [
+          { t: '先日', r: 'せんじつ' }, { t: 'は' }, { t: '彼', r: 'かれ' }, { t: 'が' }, { t: 'おごって' },
+          { t: 'くれ、' }, { t: 'みんな' }, { t: 'で' }, { t: '乾杯', r: 'かんぱい' }, { t: 'した。' },
+        ],
+        en: 'The other day he treated us, and we all drank a toast.',
+      },
+      {
+        seg: [
+          { t: '食欲', r: 'しょくよく' }, { t: 'が' }, { t: 'ある' }, { t: '日', r: 'ひ' }, { t: 'は、' },
+          { t: 'ご飯', r: 'はん' }, { t: 'を' }, { t: 'お' }, { t: '代', r: 'か' }, { t: 'わり' },
+          { t: 'する。' },
+        ],
+        en: 'On days when I have an appetite, I have a second helping of rice.',
+      },
+      {
+        seg: [
+          { t: 'よく' }, { t: 'かんで' }, { t: '味', r: 'あじ' }, { t: 'わえば、' }, { t: '少', r: 'すく' },
+          { t: 'ない' }, { t: '量', r: 'りょう' }, { t: 'でも' }, { t: '満足', r: 'まんぞく' }, { t: 'できる。' },
+        ],
+        en: 'If you chew well and savour it, even a small portion is satisfying.',
+      },
+      {
+        seg: [
+          { t: 'おかず' }, { t: 'を' }, { t: '残', r: 'のこ' }, { t: 'す' }, { t: 'の' },
+          { t: 'は' }, { t: 'もったいない' }, { t: 'ので、' }, { t: '残', r: 'のこ' }, { t: 'り' },
+          { t: '物', r: 'もの' }, { t: 'は' }, { t: '翌日', r: 'よくじつ' }, { t: 'に' }, { t: '食', r: 'た' },
+          { t: 'べる。' },
+        ],
+        en: 'It is a shame to leave side dishes uneaten, so I eat the leftovers the next day.',
+      },
+      {
+        seg: [
+          { t: 'おやつ' }, { t: 'と' }, { t: 'デザート' }, { t: 'は' }, { t: '別', r: 'べつ' },
+          { t: 'だ' }, { t: 'と、' }, { t: '妹', r: 'いもうと' }, { t: 'は' }, { t: '言', r: 'い' },
+          { t: 'う。' },
+        ],
+        en: 'My sister says that an afternoon snack and dessert are different things.',
+      },
+      {
+        seg: [
+          { t: '栄養', r: 'えいよう' }, { t: 'の' }, { t: 'バランス' }, { t: 'を' }, { t: '考', r: 'かんが' },
+          { t: 'える' }, { t: 'の' }, { t: 'が、' }, { t: 'いちばん' }, { t: '難', r: 'むずか' },
+          { t: 'しい。' },
+        ],
+        en: 'Thinking about nutritional balance is the hardest part.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 2,
+    section: 3,
+    title: '台所の道具',
+    targetWords: [
+      'なべ', 'フライパン', '包丁', 'まな板', 'おたま', 'しゃもじ', '大さじ', '炊飯器', '流し台',
+      '電子レンジ', 'ガスレンジ', '調味料', 'サラダ油', '食品', '切らす', 'くさる', 'アルミホイル', 'ラップ',
+      'おしぼり',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: 'まな板', r: 'まないた' }, { t: 'の' }, { t: '上', r: 'うえ' }, { t: 'で、' }, { t: '包丁', r: 'ほうちょう' },
+          { t: 'を' }, { t: '使', r: 'つか' }, { t: 'って' }, { t: '野菜', r: 'やさい' }, { t: 'を' },
+          { t: '切', r: 'き' }, { t: 'る。' },
+        ],
+        en: 'On the cutting board, I cut vegetables with a kitchen knife.',
+      },
+      {
+        seg: [
+          { t: 'フライパン' }, { t: 'に' }, { t: 'サラダ油', r: 'あぶら' }, { t: 'を' }, { t: '大', r: 'おお' },
+          { t: 'さじ' }, { t: '一杯', r: 'いっぱい' }, { t: '入', r: 'い' }, { t: 'れ、' }, { t: 'ガスレンジ' },
+          { t: 'に' }, { t: 'かける。' },
+        ],
+        en: 'I put a tablespoon of cooking oil in the frying pan and set it on the gas stove.',
+      },
+      {
+        seg: [
+          { t: 'なべ' }, { t: 'の' }, { t: '中', r: 'なか' }, { t: 'を' }, { t: 'おたま' },
+          { t: 'で' }, { t: 'まぜ、' }, { t: '味', r: 'あじ' }, { t: 'を' }, { t: 'ととのえる。' },
+        ],
+        en: 'I stir the inside of the pot with a ladle and adjust the taste.',
+      },
+      {
+        seg: [
+          { t: '炊飯器', r: 'すいはんき' }, { t: 'の' }, { t: 'ご飯', r: 'はん' }, { t: 'を、' }, { t: 'しゃもじ' },
+          { t: 'で' }, { t: '軽', r: 'かる' }, { t: 'く' }, { t: 'まぜる。' },
+        ],
+        en: 'I lightly mix the rice in the rice cooker with a rice paddle.',
+      },
+      {
+        seg: [
+          { t: '残', r: 'のこ' }, { t: 'った' }, { t: '分', r: 'ぶん' }, { t: 'は' }, { t: 'ラップ' },
+          { t: 'を' }, { t: 'かけ、' }, { t: '電子', r: 'でんし' }, { t: 'レンジ' }, { t: 'で' },
+          { t: '温', r: 'あたた' }, { t: 'め' }, { t: '直', r: 'なお' }, { t: 'す。' },
+        ],
+        en: 'I cover what is left with plastic wrap and reheat it in the microwave.',
+      },
+      {
+        seg: [
+          { t: '魚', r: 'さかな' }, { t: 'は' }, { t: 'アルミホイル' }, { t: 'に' }, { t: '包', r: 'つつ' },
+          { t: 'んで' }, { t: '焼', r: 'や' }, { t: 'く' }, { t: 'と' }, { t: 'よい。' },
+        ],
+        en: 'It is good to wrap fish in aluminium foil and grill it.',
+      },
+      {
+        seg: [
+          { t: '調味料', r: 'ちょうみりょう' }, { t: 'を' }, { t: '切', r: 'き' }, { t: 'らして' }, { t: 'しまい、' },
+          { t: '買', r: 'か' }, { t: 'い' }, { t: 'に' }, { t: '行', r: 'い' }, { t: 'った。' },
+        ],
+        en: 'I ran out of seasoning and went to buy some.',
+      },
+      {
+        seg: [
+          { t: '食品', r: 'しょくひん' }, { t: 'は' }, { t: 'くさる' }, { t: '前', r: 'まえ' }, { t: 'に' },
+          { t: '使', r: 'つか' }, { t: 'い' }, { t: '切', r: 'き' }, { t: 'りたい。' },
+        ],
+        en: 'I want to use up food before it goes bad.',
+      },
+      {
+        seg: [
+          { t: '流し台', r: 'ながしだい' }, { t: 'を' }, { t: 'きれい' }, { t: 'に' }, { t: 'して、' },
+          { t: 'おしぼり' }, { t: 'を' }, { t: '用意', r: 'ようい' }, { t: 'する。' },
+        ],
+        en: 'I clean the sink and prepare wet towels.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 2,
+    section: 4,
+    title: '作り方',
+    targetWords: [
+      '刻む', '割る', 'むく', '加える', '少々', '揚げる', '煮る', 'ゆでる', '蒸す', 'くるむ',
+      'にぎる', '熱する', 'こげる', '取り出す', '塗る', '温める', '冷やす', 'ぬるい', '水分', '沸かす',
+      '注ぐ', '味見', '手間', '手軽な', 'でき上がり', '分ける', 'つまむ', '塩辛い', 'すっぱい', '冷凍',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '玉', r: 'たま' }, { t: 'ねぎ' }, { t: 'の' }, { t: '皮', r: 'かわ' }, { t: 'を' },
+          { t: 'むき、' }, { t: '細', r: 'こま' }, { t: 'かく' }, { t: '刻', r: 'きざ' }, { t: 'む。' },
+        ],
+        en: 'I peel the onion and chop it finely.',
+      },
+      {
+        seg: [
+          { t: '卵', r: 'たまご' }, { t: 'を' }, { t: '割', r: 'わ' }, { t: 'って' }, { t: '加', r: 'くわ' },
+          { t: 'え、' }, { t: '塩', r: 'しお' }, { t: 'を' }, { t: '少々', r: 'しょうしょう' }, { t: 'ふる。' },
+        ],
+        en: 'I crack in an egg, add it, and sprinkle a little salt.',
+      },
+      {
+        seg: [
+          { t: '湯', r: 'ゆ' }, { t: 'を' }, { t: '沸', r: 'わ' }, { t: 'かして' }, { t: '野菜', r: 'やさい' },
+          { t: 'を' }, { t: 'ゆで、' }, { t: '別', r: 'べつ' }, { t: 'の' }, { t: 'なべ' },
+          { t: 'で' }, { t: '肉', r: 'にく' }, { t: 'を' }, { t: '煮', r: 'に' }, { t: 'る。' },
+        ],
+        en: 'I boil water and boil the vegetables, and simmer the meat in another pot.',
+      },
+      {
+        seg: [
+          { t: '油', r: 'あぶら' }, { t: 'を' }, { t: 'よく' }, { t: '熱', r: 'ねっ' }, { t: 'して' },
+          { t: 'から' }, { t: '揚', r: 'あ' }, { t: 'げる' }, { t: 'と、' }, { t: 'こげ' },
+          { t: 'にくい。' },
+        ],
+        en: 'If you heat the oil well before deep-frying, it is less likely to burn.',
+      },
+      {
+        seg: [
+          { t: '蒸', r: 'む' }, { t: 'した' }, { t: 'ご飯', r: 'はん' }, { t: 'を' }, { t: 'にぎり、' },
+          { t: 'のり' }, { t: 'で' }, { t: 'くるむ。' },
+        ],
+        en: 'I shape the steamed rice with my hands and wrap it in seaweed.',
+      },
+      {
+        seg: [
+          { t: 'パン' }, { t: 'に' }, { t: 'バター' }, { t: 'を' }, { t: '塗', r: 'ぬ' },
+          { t: 'り、' }, { t: 'スープ' }, { t: 'を' }, { t: '器', r: 'うつわ' }, { t: 'に' },
+          { t: '注', r: 'そそ' }, { t: 'ぐ。' },
+        ],
+        en: 'I spread butter on the bread and pour the soup into a bowl.',
+      },
+      {
+        seg: [
+          { t: 'でき' }, { t: '上', r: 'あ' }, { t: 'がり' }, { t: 'の' }, { t: '前', r: 'まえ' },
+          { t: 'に' }, { t: '味見', r: 'あじみ' }, { t: 'を' }, { t: 'して、' }, { t: '塩辛', r: 'しおから' },
+          { t: 'すぎない' }, { t: 'か' }, { t: '確', r: 'たし' }, { t: 'かめる。' },
+        ],
+        en: 'Before it is finished I taste it and check that it is not too salty.',
+      },
+      {
+        seg: [
+          { t: 'すっぱい' }, { t: '味', r: 'あじ' }, { t: 'が' }, { t: '足', r: 'た' }, { t: 'りない' },
+          { t: 'とき' }, { t: 'は、' }, { t: 'レモン' }, { t: 'を' }, { t: 'つまんで' },
+          { t: '加', r: 'くわ' }, { t: 'える。' },
+        ],
+        en: 'When the sour taste is lacking, I pick up a lemon and add some.',
+      },
+      {
+        seg: [
+          { t: '熱', r: 'あつ' }, { t: 'い' }, { t: 'もの' }, { t: 'は' }, { t: '少', r: 'すこ' },
+          { t: 'し' }, { t: '冷', r: 'ひ' }, { t: 'やし、' }, { t: 'ぬるい' }, { t: 'もの' },
+          { t: 'は' }, { t: '温', r: 'あたた' }, { t: 'め' }, { t: '直', r: 'なお' }, { t: 'す。' },
+        ],
+        en: 'I cool hot things a little and reheat lukewarm ones.',
+      },
+      {
+        seg: [
+          { t: 'なべ' }, { t: 'から' }, { t: '取', r: 'と' }, { t: 'り' }, { t: '出', r: 'だ' },
+          { t: 'して' }, { t: '皿', r: 'さら' }, { t: 'に' }, { t: '分', r: 'わ' }, { t: 'け、' },
+          { t: '水分', r: 'すいぶん' }, { t: 'を' }, { t: 'きる。' },
+        ],
+        en: 'I take it out of the pot, divide it onto plates, and drain the moisture.',
+      },
+      {
+        seg: [
+          { t: '手間', r: 'てま' }, { t: 'の' }, { t: 'かかる' }, { t: '料理', r: 'りょうり' }, { t: 'も' },
+          { t: 'ある' }, { t: 'が、' }, { t: '手軽', r: 'てがる' }, { t: 'な' }, { t: 'もの' },
+          { t: 'は' }, { t: '冷凍', r: 'れいとう' }, { t: 'して' }, { t: 'おく。' },
+        ],
+        en: 'Some dishes take time and effort, but simple ones I freeze in advance.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 2,
+    section: 5,
+    title: '家事',
+    targetWords: [
+      'ちらかる', '片付ける', '清潔な', '掃く', 'ほうき', 'ちりとり', '掃除機', 'ふく', 'ぞうきん',
+      'バケツ', 'しぼる', 'こぼす', '洗剤', 'かび', 'ほこり', 'みがく', 'ブラシ', 'あわ', '臭う',
+      '洗濯物', '汚れ', '干す', '乾燥', 'たたむ', 'アイロン', '敷く', '育児', '起こす', '糸', '針',
+      '生ごみ', '空き缶', '出す',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '部屋', r: 'へや' }, { t: 'が' }, { t: 'ちらかって' }, { t: 'いた' }, { t: 'ので、' },
+          { t: 'まず' }, { t: '片付', r: 'かたづ' }, { t: 'ける' }, { t: 'こと' }, { t: 'に' },
+          { t: 'した。' },
+        ],
+        en: 'The room was messy, so first I decided to tidy up.',
+      },
+      {
+        seg: [
+          { t: 'ほうき' }, { t: 'で' }, { t: '掃', r: 'は' }, { t: 'き、' }, { t: 'ちりとり' },
+          { t: 'で' }, { t: 'ごみ' }, { t: 'を' }, { t: '集', r: 'あつ' }, { t: 'め、' },
+          { t: '最後', r: 'さいご' }, { t: 'に' }, { t: '掃除機', r: 'そうじき' }, { t: 'を' }, { t: 'かける。' },
+        ],
+        en: 'I sweep with a broom, collect the rubbish with a dustpan, and finally vacuum.',
+      },
+      {
+        seg: [
+          { t: 'バケツ' }, { t: 'の' }, { t: '水', r: 'みず' }, { t: 'で' }, { t: 'ぞうきん' },
+          { t: 'を' }, { t: 'しぼり、' }, { t: '棚', r: 'たな' }, { t: 'の' }, { t: 'ほこり' },
+          { t: 'を' }, { t: 'ふく。' },
+        ],
+        en: 'I wring out a cloth in the bucket water and wipe the dust from the shelf.',
+      },
+      {
+        seg: [
+          { t: '洗剤', r: 'せんざい' }, { t: 'の' }, { t: 'あわ' }, { t: 'で' }, { t: 'ブラシ' },
+          { t: 'を' }, { t: '使', r: 'つか' }, { t: 'い、' }, { t: 'かび' }, { t: 'を' },
+          { t: 'みがき' }, { t: '落', r: 'お' }, { t: 'とす。' },
+        ],
+        en: 'Using a brush with detergent lather, I scrub off the mould.',
+      },
+      {
+        seg: [
+          { t: '水', r: 'みず' }, { t: 'を' }, { t: 'こぼして' }, { t: 'しまった' }, { t: 'が、' },
+          { t: 'すぐ' }, { t: 'ふけば' }, { t: '汚', r: 'よご' }, { t: 'れ' }, { t: 'は' },
+          { t: '残', r: 'のこ' }, { t: 'らない。' },
+        ],
+        en: 'I spilled water, but if you wipe it right away no stain remains.',
+      },
+      {
+        seg: [
+          { t: '臭', r: 'にお' }, { t: 'い' }, { t: 'が' }, { t: '気', r: 'き' }, { t: 'に' },
+          { t: 'なる' }, { t: '生', r: 'なま' }, { t: 'ごみ' }, { t: 'と' }, { t: '空', r: 'あ' },
+          { t: 'き' }, { t: '缶', r: 'かん' }, { t: 'は、' }, { t: '朝', r: 'あさ' }, { t: 'に' },
+          { t: '出', r: 'だ' }, { t: 'す。' },
+        ],
+        en: 'Food waste and empty cans, whose smell bothers me, I take out in the morning.',
+      },
+      {
+        seg: [
+          { t: '洗濯物', r: 'せんたくもの' }, { t: 'を' }, { t: '干', r: 'ほ' }, { t: 'し、' }, { t: '乾燥', r: 'かんそう' },
+          { t: 'したら' }, { t: 'たたむ。' },
+        ],
+        en: 'I hang out the laundry and fold it once it has dried.',
+      },
+      {
+        seg: [
+          { t: 'しわ' }, { t: 'が' }, { t: 'ついた' }, { t: 'シャツ' }, { t: 'に' },
+          { t: 'は、' }, { t: 'アイロン' }, { t: 'を' }, { t: 'かける。' },
+        ],
+        en: 'For a shirt that has creased, I iron it.',
+      },
+      {
+        seg: [
+          { t: 'ボタン' }, { t: 'が' }, { t: '取', r: 'と' }, { t: 'れた' }, { t: 'ので、' },
+          { t: '糸', r: 'いと' }, { t: 'と' }, { t: '針', r: 'はり' }, { t: 'で' }, { t: '直', r: 'なお' },
+          { t: 'した。' },
+        ],
+        en: 'A button came off, so I fixed it with thread and a needle.',
+      },
+      {
+        seg: [
+          { t: 'ふとん' }, { t: 'を' }, { t: '敷', r: 'し' }, { t: 'き、' }, { t: '清潔', r: 'せいけつ' },
+          { t: 'な' }, { t: 'シーツ' }, { t: 'に' }, { t: '替', r: 'か' }, { t: 'える。' },
+        ],
+        en: 'I lay out the futon and change to clean sheets.',
+      },
+      {
+        seg: [
+          { t: '育児', r: 'いくじ' }, { t: 'を' }, { t: 'し' }, { t: 'ながら' }, { t: 'の' },
+          { t: '家事', r: 'かじ' }, { t: 'は' }, { t: '大変', r: 'たいへん' }, { t: 'で、' }, { t: '子', r: 'こ' },
+          { t: 'ども' }, { t: 'を' }, { t: '起', r: 'お' }, { t: 'こす' }, { t: '時間', r: 'じかん' },
+          { t: 'も' }, { t: '決', r: 'き' }, { t: 'まって' }, { t: 'いる。' },
+        ],
+        en: 'Housework while raising children is hard, and even the time to wake them is fixed.',
+      },
+    ],
+  },
 ]
