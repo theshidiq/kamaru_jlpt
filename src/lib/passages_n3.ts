@@ -1855,4 +1855,483 @@ export const PASSAGES_N3: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N3',
+    chapter: 5,
+    section: 1,
+    title: '学校で',
+    targetWords: [
+      '入学式', '卒業式', '通学', '学年', '学期', '欠席', '遅れる', '遅刻', 'サボる', '集中',
+      'うとうと', '居眠り', '寝不足', '期間', '期限', '時間割', '項目', '座席', '締め切り', '開く',
+      '一応', 'きちんと', 'きっかけ', 'かしこい', '貸し出し', '返却', '名札', '給食', '体育',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '四月', r: 'しがつ' }, { t: 'の' }, { t: '入学式', r: 'にゅうがくしき' }, { t: 'で、' }, { t: '新', r: 'あたら' },
+          { t: 'しい' }, { t: '学年', r: 'がくねん' }, { t: 'が' }, { t: '始', r: 'はじ' }, { t: 'まった。' },
+        ],
+        en: 'With the entrance ceremony in April, the new school year began.',
+      },
+      {
+        seg: [
+          { t: '通学', r: 'つうがく' }, { t: 'に' }, { t: '一時間', r: 'いちじかん' }, { t: 'かかる' }, { t: 'ので、' },
+          { t: '朝', r: 'あさ' }, { t: 'は' }, { t: '少', r: 'すこ' }, { t: 'し' }, { t: '早', r: 'はや' },
+          { t: 'い。' },
+        ],
+        en: 'The commute to school takes an hour, so mornings are a little early.',
+      },
+      {
+        seg: [
+          { t: '電車', r: 'でんしゃ' }, { t: 'が' }, { t: '遅', r: 'おく' }, { t: 'れて' }, { t: '遅刻', r: 'ちこく' },
+          { t: 'し' }, { t: 'そう' }, { t: 'に' }, { t: 'なり、' }, { t: 'あわてた。' },
+        ],
+        en: 'The train was delayed and I nearly arrived late, which flustered me.',
+      },
+      {
+        seg: [
+          { t: '欠席', r: 'けっせき' }, { t: 'も' }, { t: 'サボる' }, { t: 'こと' }, { t: 'も' },
+          { t: 'せず、' }, { t: 'きちんと' }, { t: '通', r: 'かよ' }, { t: 'って' }, { t: 'いる。' },
+        ],
+        en: 'I neither miss class nor skip it, and attend properly.',
+      },
+      {
+        seg: [
+          { t: '寝不足', r: 'ねぶそく' }, { t: 'の' }, { t: '日', r: 'ひ' }, { t: 'は' }, { t: '集中', r: 'しゅうちゅう' },
+          { t: 'できず、' }, { t: 'うとうと' }, { t: 'して' }, { t: '居眠', r: 'いねむ' }, { t: 'り' },
+          { t: 'を' }, { t: 'して' }, { t: 'しまう。' },
+        ],
+        en: 'On days when I lack sleep I cannot concentrate, and I doze off and fall asleep.',
+      },
+      {
+        seg: [
+          { t: '時間割', r: 'じかんわり' }, { t: 'を' }, { t: '開', r: 'ひら' }, { t: 'き、' }, { t: '項目', r: 'こうもく' },
+          { t: 'ごと' }, { t: 'に' }, { t: '締', r: 'し' }, { t: 'め' }, { t: '切', r: 'き' },
+          { t: 'り' }, { t: 'を' }, { t: '書', r: 'か' }, { t: 'き' }, { t: '込', r: 'こ' },
+          { t: 'む。' },
+        ],
+        en: 'I open the timetable and write in the deadline for each item.',
+      },
+      {
+        seg: [
+          { t: 'レポート' }, { t: 'の' }, { t: '期限', r: 'きげん' }, { t: 'まで' }, { t: 'の' },
+          { t: '期間', r: 'きかん' }, { t: 'は、' }, { t: '一応', r: 'いちおう' }, { t: '二週間', r: 'にしゅうかん' }, { t: 'ある。' },
+        ],
+        en: 'The period until the report deadline is, for now, two weeks.',
+      },
+      {
+        seg: [
+          { t: '図書館', r: 'としょかん' }, { t: 'の' }, { t: '貸', r: 'か' }, { t: 'し' }, { t: '出', r: 'だ' },
+          { t: 'し' }, { t: 'は' }, { t: '一人', r: 'ひとり' }, { t: '五冊', r: 'ごさつ、' }, { t: '返却', r: 'へんきゃく' },
+          { t: 'も' }, { t: '忘', r: 'わす' }, { t: 'れない。' },
+        ],
+        en: 'The library lends five books per person, and I do not forget the return either.',
+      },
+      {
+        seg: [
+          { t: '名札', r: 'なふだ' }, { t: 'を' }, { t: 'つけた' }, { t: '一年生', r: 'いちねんせい' }, { t: 'が、' },
+          { t: '座席', r: 'ざせき' }, { t: 'を' }, { t: 'さがして' }, { t: 'いた。' },
+        ],
+        en: 'A first-year wearing a name tag was looking for a seat.',
+      },
+      {
+        seg: [
+          { t: '給食', r: 'きゅうしょく' }, { t: 'の' }, { t: 'あと' }, { t: 'の' }, { t: '体育', r: 'たいいく' },
+          { t: 'は、' }, { t: '少', r: 'すこ' }, { t: 'し' }, { t: 'つらい。' },
+        ],
+        en: 'PE after the school lunch is a little hard.',
+      },
+      {
+        seg: [
+          { t: 'かしこい' }, { t: '友人', r: 'ゆうじん' }, { t: 'の' }, { t: '一言', r: 'ひとこと' }, { t: 'が、' },
+          { t: '勉強', r: 'べんきょう' }, { t: 'を' }, { t: '始', r: 'はじ' }, { t: 'める' }, { t: 'きっかけ' },
+          { t: 'に' }, { t: 'なった。' },
+        ],
+        en: 'A clever friend’s single remark became the trigger for me to start studying.',
+      },
+      {
+        seg: [
+          { t: '三月', r: 'さんがつ' }, { t: 'の' }, { t: '卒業式', r: 'そつぎょうしき' }, { t: 'で、' }, { t: 'この' },
+          { t: '学期', r: 'がっき' }, { t: 'も' }, { t: '終', r: 'お' }, { t: 'わる。' },
+        ],
+        en: 'With the graduation ceremony in March, this term too comes to an end.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 5,
+    section: 2,
+    title: '勉強する',
+    targetWords: [
+      '単語', 'アクセント', '暗記', '記憶', 'くり返す', '聞き取る', '聞き返す', '聞き直す', '言い直す',
+      '英会話', '入門', '下書き', '清書', '表れる', '物語', '教科', '科目', '足し算', 'イコール',
+      'グラフ', '三角形', '定規', 'センチ', '自習', 'ローマ字', '補講', 'けずる',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '新', r: 'あたら' }, { t: 'しい' }, { t: '単語', r: 'たんご' }, { t: 'を' }, { t: '暗記', r: 'あんき' },
+          { t: 'し、' }, { t: 'アクセント' }, { t: 'も' }, { t: '声', r: 'こえ' }, { t: 'に' },
+          { t: '出', r: 'だ' }, { t: 'して' }, { t: '覚', r: 'おぼ' }, { t: 'える。' },
+        ],
+        en: 'I memorise new words and learn their accent by saying them aloud.',
+      },
+      {
+        seg: [
+          { t: 'くり' }, { t: '返', r: 'かえ' }, { t: 'す' }, { t: 'ほど' }, { t: '記憶', r: 'きおく' },
+          { t: 'に' }, { t: '残', r: 'のこ' }, { t: 'り、' }, { t: '力', r: 'ちから' }, { t: 'が' },
+          { t: '表', r: 'あらわ' }, { t: 'れて' }, { t: 'くる。' },
+        ],
+        en: 'The more I repeat, the more it stays in memory and my ability shows.',
+      },
+      {
+        seg: [
+          { t: '聞', r: 'き' }, { t: 'き' }, { t: '取', r: 'と' }, { t: 'れない' }, { t: 'ところ' },
+          { t: 'は' }, { t: '聞', r: 'き' }, { t: 'き' }, { t: '返', r: 'かえ' }, { t: 'し、' },
+          { t: 'もう' }, { t: '一度', r: 'いちど' }, { t: '聞', r: 'き' }, { t: 'き' }, { t: '直', r: 'なお' },
+          { t: 'す。' },
+        ],
+        en: 'Where I cannot catch what is said I ask again, and listen once more.',
+      },
+      {
+        seg: [
+          { t: 'うまく' }, { t: '言', r: 'い' }, { t: 'えなかった' }, { t: 'とき' }, { t: 'は、' },
+          { t: 'ゆっくり' }, { t: '言', r: 'い' }, { t: 'い' }, { t: '直', r: 'なお' }, { t: 'す。' },
+        ],
+        en: 'When I cannot say it well, I rephrase it slowly.',
+      },
+      {
+        seg: [
+          { t: '英会話', r: 'えいかいわ' }, { t: 'の' }, { t: '入門', r: 'にゅうもん' }, { t: 'の' }, { t: 'クラス' },
+          { t: 'で、' }, { t: '短', r: 'みじか' }, { t: 'い' }, { t: '物語', r: 'ものがたり' }, { t: 'を' },
+          { t: '読', r: 'よ' }, { t: 'んだ。' },
+        ],
+        en: 'In the introductory English conversation class we read a short story.',
+      },
+      {
+        seg: [
+          { t: '下書', r: 'したが' }, { t: 'き' }, { t: 'を' }, { t: 'して' }, { t: 'から' },
+          { t: '清書', r: 'せいしょ' }, { t: 'する' }, { t: 'と、' }, { t: 'まちがい' }, { t: 'が' },
+          { t: '減', r: 'へ' }, { t: 'る。' },
+        ],
+        en: 'If you make a rough draft before writing the fair copy, mistakes decrease.',
+      },
+      {
+        seg: [
+          { t: '得意', r: 'とくい' }, { t: 'な' }, { t: '教科', r: 'きょうか' }, { t: 'も' }, { t: '苦手', r: 'にがて' },
+          { t: 'な' }, { t: '科目', r: 'かもく' }, { t: 'も、' }, { t: '自習', r: 'じしゅう' }, { t: 'の' },
+          { t: '時間', r: 'じかん' }, { t: 'に' }, { t: '進', r: 'すす' }, { t: 'める。' },
+        ],
+        en: 'Both subjects I am good at and ones I am weak at, I work on during self-study.',
+      },
+      {
+        seg: [
+          { t: 'えんぴつ' }, { t: 'を' }, { t: 'けずり、' }, { t: '定規', r: 'じょうぎ' }, { t: 'で' },
+          { t: '十', r: 'じゅう' }, { t: 'センチ' }, { t: 'の' }, { t: '線', r: 'せん' }, { t: 'を' },
+          { t: '引', r: 'ひ' }, { t: 'く。' },
+        ],
+        en: 'I sharpen my pencil and draw a ten-centimetre line with a ruler.',
+      },
+      {
+        seg: [
+          { t: '三角形', r: 'さんかっけい' }, { t: 'の' }, { t: '面積', r: 'めんせき' }, { t: 'を' }, { t: '足', r: 'た' },
+          { t: 'し' }, { t: '算', r: 'ざん' }, { t: 'で' }, { t: '求', r: 'もと' }, { t: 'め、' },
+          { t: 'グラフ' }, { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'I found the area of the triangle by addition and made it into a graph.',
+      },
+      {
+        seg: [
+          { t: '答', r: 'こた' }, { t: 'え' }, { t: 'が' }, { t: 'イコール' }, { t: 'で' },
+          { t: '結', r: 'むす' }, { t: 'ばれる' }, { t: 'と、' }, { t: 'すっきり' }, { t: 'する。' },
+        ],
+        en: 'When the answers are joined by an equals sign, it feels satisfying.',
+      },
+      {
+        seg: [
+          { t: 'ローマ字', r: 'じ' }, { t: 'の' }, { t: '書', r: 'か' }, { t: 'き方', r: 'かた' }, { t: 'は、' },
+          { t: '補講', r: 'ほこう' }, { t: 'で' }, { t: 'もう' }, { t: '一度', r: 'いちど' }, { t: '習', r: 'なら' },
+          { t: 'った。' },
+        ],
+        en: 'I learned how to write romaji once more in a supplementary lesson.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 5,
+    section: 3,
+    title: '日本の大学',
+    targetWords: [
+      '学部', '文系', '理系', '学科', '専攻', '前期', '学費', '奨学金', '公立', '私立', '教授',
+      '講義', 'えらい', 'ゼミ', 'テーマ', '手続き', '日付', '筆者', '内容', 'まとめる', '仕上げる',
+      '提出', '進路', '大学院', '進学', '一人暮らし', 'アルバイト', '時給', '寮', '休学', '退学',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '高校', r: 'こうこう' }, { t: 'の' }, { t: '終', r: 'お' }, { t: 'わり' }, { t: 'に' },
+          { t: '進路', r: 'しんろ' }, { t: 'を' }, { t: '考', r: 'かんが' }, { t: 'え、' }, { t: '大学', r: 'だいがく' },
+          { t: 'へ' }, { t: 'の' }, { t: '進学', r: 'しんがく' }, { t: 'を' }, { t: '決', r: 'き' },
+          { t: 'めた。' },
+        ],
+        en: 'At the end of high school I thought about my future course and decided to go on to university.',
+      },
+      {
+        seg: [
+          { t: '文系', r: 'ぶんけい' }, { t: 'か' }, { t: '理系', r: 'りけい' }, { t: 'か' }, { t: 'で' },
+          { t: '迷', r: 'まよ' }, { t: 'い、' }, { t: 'いま' }, { t: 'の' }, { t: '学部', r: 'がくぶ' },
+          { t: 'と' }, { t: '学科', r: 'がっか' }, { t: 'を' }, { t: '選', r: 'えら' }, { t: 'んだ。' },
+        ],
+        en: 'I hesitated between humanities and sciences, and chose my present faculty and department.',
+      },
+      {
+        seg: [
+          { t: '公立', r: 'こうりつ' }, { t: 'より' }, { t: '私立', r: 'しりつ' }, { t: 'の' }, { t: 'ほう' },
+          { t: 'が' }, { t: '学費', r: 'がくひ' }, { t: 'が' }, { t: '高', r: 'たか' }, { t: 'く、' },
+          { t: '奨学金', r: 'しょうがくきん' }, { t: 'を' }, { t: '申', r: 'もう' }, { t: 'し' }, { t: '込', r: 'こ' },
+          { t: 'んだ。' },
+        ],
+        en: 'Private universities have higher tuition than public ones, so I applied for a scholarship.',
+      },
+      {
+        seg: [
+          { t: '前期', r: 'ぜんき' }, { t: 'の' }, { t: '講義', r: 'こうぎ' }, { t: 'で' }, { t: 'は、' },
+          { t: 'えらい' }, { t: '教授', r: 'きょうじゅ' }, { t: 'の' }, { t: '話', r: 'はなし' }, { t: 'を' },
+          { t: '聞', r: 'き' }, { t: 'く' }, { t: '機会', r: 'きかい' }, { t: 'が' }, { t: 'あった。' },
+        ],
+        en: 'In the first term’s lectures I had the chance to hear a distinguished professor speak.',
+      },
+      {
+        seg: [
+          { t: 'ゼミ' }, { t: 'の' }, { t: 'テーマ' }, { t: 'を' }, { t: '決', r: 'き' },
+          { t: 'め、' }, { t: '筆者', r: 'ひっしゃ' }, { t: 'の' }, { t: '主張', r: 'しゅちょう' }, { t: 'を' },
+          { t: 'まとめる。' },
+        ],
+        en: 'I decide on the seminar theme and summarise the author’s argument.',
+      },
+      {
+        seg: [
+          { t: '内容', r: 'ないよう' }, { t: 'を' }, { t: '仕上', r: 'しあ' }, { t: 'げ、' }, { t: '日付', r: 'ひづけ' },
+          { t: 'を' }, { t: '書', r: 'か' }, { t: 'いて' }, { t: '提出', r: 'ていしゅつ' }, { t: 'した。' },
+        ],
+        en: 'I completed the content, wrote the date and submitted it.',
+      },
+      {
+        seg: [
+          { t: '手続', r: 'てつづ' }, { t: 'き' }, { t: 'が' }, { t: '多', r: 'おお' }, { t: 'く、' },
+          { t: '窓口', r: 'まどぐち' }, { t: 'を' }, { t: '何度', r: 'なんど' }, { t: 'も' }, { t: 'たずねた。' },
+        ],
+        en: 'There was a lot of paperwork, and I visited the counter many times.',
+      },
+      {
+        seg: [
+          { t: '寮', r: 'りょう' }, { t: 'を' }, { t: '出', r: 'で' }, { t: 'て' }, { t: '一人暮', r: 'ひとりぐ' },
+          { t: 'らし' }, { t: 'を' }, { t: '始', r: 'はじ' }, { t: 'め、' }, { t: 'アルバイト' },
+          { t: 'も' }, { t: '探', r: 'さが' }, { t: 'した。' },
+        ],
+        en: 'I left the dormitory, began living alone and looked for a part-time job.',
+      },
+      {
+        seg: [
+          { t: '時給', r: 'じきゅう' }, { t: 'は' }, { t: '高', r: 'たか' }, { t: 'く' }, { t: 'ない' },
+          { t: 'が、' }, { t: '続', r: 'つづ' }, { t: 'けられる' }, { t: '仕事', r: 'しごと' }, { t: 'だ。' },
+        ],
+        en: 'The hourly wage is not high, but it is work I can keep doing.',
+      },
+      {
+        seg: [
+          { t: '休学', r: 'きゅうがく' }, { t: 'する' }, { t: '人', r: 'ひと' }, { t: 'も' }, { t: '退学', r: 'たいがく' },
+          { t: 'する' }, { t: '人', r: 'ひと' }, { t: 'も' }, { t: 'いる' }, { t: '中', r: 'なか' },
+          { t: 'で、' }, { t: '大学院', r: 'だいがくいん' }, { t: 'を' }, { t: '目指', r: 'めざ' }, { t: 'す' },
+          { t: '友人', r: 'ゆうじん' }, { t: 'も' }, { t: 'いる。' },
+        ],
+        en: 'Among those who take leave or drop out, there are also friends aiming for graduate school.',
+      },
+      {
+        seg: [
+          { t: '専攻', r: 'せんこう' }, { t: 'を' }, { t: '生', r: 'い' }, { t: 'かせる' }, { t: '道', r: 'みち' },
+          { t: 'を、' }, { t: 'いま' }, { t: 'も' }, { t: '探', r: 'さが' }, { t: 'して' },
+          { t: 'いる。' },
+        ],
+        en: 'I am still searching for a path where I can make use of my major.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 5,
+    section: 4,
+    title: '試験',
+    targetWords: [
+      '受験', '受験生', '合格', '配る', '氏名', '裏返す', '問い', '解く', '正解', '正確', 'すらすら',
+      'ちっとも', 'カンニング', 'ぎりぎり', '余る', '適当な', 'でたらめ', '間違い', '優れる', '実力',
+      '結果', '少数', '可能性', 'あきらめる', '掲示板',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '受験生', r: 'じゅけんせい' }, { t: 'に' }, { t: 'とって、' }, { t: '受験', r: 'じゅけん' }, { t: 'の' },
+          { t: '日', r: 'ひ' }, { t: 'は' }, { t: '一年', r: 'いちねん' }, { t: 'で' }, { t: 'いちばん' },
+          { t: '長', r: 'なが' }, { t: 'い。' },
+        ],
+        en: 'For an exam candidate, the day of the exam is the longest of the year.',
+      },
+      {
+        seg: [
+          { t: '問題用紙', r: 'もんだいようし' }, { t: 'が' }, { t: '配', r: 'くば' }, { t: 'られ、' }, { t: '氏名', r: 'しめい' },
+          { t: 'を' }, { t: '書', r: 'か' }, { t: 'いて' }, { t: 'から' }, { t: '裏返', r: 'うらがえ' },
+          { t: 'す。' },
+        ],
+        en: 'The question papers are handed out; I write my name and turn it over.',
+      },
+      {
+        seg: [
+          { t: '最初', r: 'さいしょ' }, { t: 'の' }, { t: '問', r: 'と' }, { t: 'い' }, { t: 'は' },
+          { t: 'すらすら' }, { t: '解', r: 'と' }, { t: 'けた' }, { t: 'が、' }, { t: '次', r: 'つぎ' },
+          { t: 'は' }, { t: 'ちっとも' }, { t: '分', r: 'わ' }, { t: 'からなかった。' },
+        ],
+        en: 'I solved the first question smoothly, but the next I did not understand at all.',
+      },
+      {
+        seg: [
+          { t: '適当', r: 'てきとう' }, { t: 'に' }, { t: '答', r: 'こた' }, { t: 'える' }, { t: 'の' },
+          { t: 'は' }, { t: 'でたらめ' }, { t: 'と' }, { t: '同', r: 'おな' }, { t: 'じ' },
+          { t: 'だ' }, { t: 'と' }, { t: '思', r: 'おも' }, { t: 'い、' }, { t: '落', r: 'お' },
+          { t: 'ち' }, { t: '着', r: 'つ' }, { t: 'いて' }, { t: '考', r: 'かんが' }, { t: 'えた。' },
+        ],
+        en: 'Thinking that answering slapdash is the same as nonsense, I thought calmly.',
+      },
+      {
+        seg: [
+          { t: '正確', r: 'せいかく' }, { t: 'に' }, { t: '書', r: 'か' }, { t: 'けば、' }, { t: '正解', r: 'せいかい' },
+          { t: 'に' }, { t: '近', r: 'ちか' }, { t: 'づく。' },
+        ],
+        en: 'If you write accurately, you get closer to the correct answer.',
+      },
+      {
+        seg: [
+          { t: 'カンニング' }, { t: 'を' }, { t: 'する' }, { t: '人', r: 'ひと' }, { t: 'は' },
+          { t: '少数', r: 'しょうすう' }, { t: 'だ' }, { t: 'が、' }, { t: '見', r: 'み' }, { t: 'つかれば' },
+          { t: '大', r: 'おお' }, { t: 'きな' }, { t: '間違', r: 'まちが' }, { t: 'い' }, { t: 'に' },
+          { t: 'なる。' },
+        ],
+        en: 'Those who cheat are a minority, but if caught it becomes a serious mistake.',
+      },
+      {
+        seg: [
+          { t: '時間', r: 'じかん' }, { t: 'は' }, { t: 'ぎりぎり' }, { t: 'で、' }, { t: '見直', r: 'みなお' },
+          { t: 'す' }, { t: '時間', r: 'じかん' }, { t: 'は' }, { t: '余', r: 'あま' }, { t: 'らなかった。' },
+        ],
+        en: 'Time was just barely enough; none was left over for checking.',
+      },
+      {
+        seg: [
+          { t: '実力', r: 'じつりょく' }, { t: 'が' }, { t: '優', r: 'すぐ' }, { t: 'れて' }, { t: 'いる' },
+          { t: '人', r: 'ひと' }, { t: 'でも、' }, { t: '結果', r: 'けっか' }, { t: 'は' }, { t: '分', r: 'わ' },
+          { t: 'からない。' },
+        ],
+        en: 'Even for someone whose true ability is excellent, the result is unknown.',
+      },
+      {
+        seg: [
+          { t: '掲示板', r: 'けいじばん' }, { t: 'の' }, { t: '前', r: 'まえ' }, { t: 'で、' }, { t: '合格', r: 'ごうかく' },
+          { t: 'の' }, { t: '番号', r: 'ばんごう' }, { t: 'を' }, { t: 'さがした。' },
+        ],
+        en: 'In front of the notice board, I searched for my pass number.',
+      },
+      {
+        seg: [
+          { t: '可能性', r: 'かのうせい' }, { t: 'が' }, { t: 'ある' }, { t: '限', r: 'かぎ' }, { t: 'り、' },
+          { t: 'あきらめる' }, { t: '必要', r: 'ひつよう' }, { t: 'は' }, { t: 'ない。' },
+        ],
+        en: 'As long as there is a possibility, there is no need to give up.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 5,
+    section: 5,
+    title: 'もっとがんばろう',
+    targetWords: [
+      '知識', '理解', '目指す', '試す', '自信', 'やる気', 'くやしい', 'レベル', '利口', 'さっそく',
+      'ざっと', 'しっかり', 'じっくり', '相当', 'まあまあ', '努力', 'なまける', '得意な', '苦手な',
+      'マスター', '問い合わせる',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '新', r: 'あたら' }, { t: 'しい' }, { t: '知識', r: 'ちしき' }, { t: 'を' }, { t: '増', r: 'ふ' },
+          { t: 'やす' }, { t: 'こと' }, { t: 'が、' }, { t: 'いまの' }, { t: '目標', r: 'もくひょう' },
+          { t: 'だ。' },
+        ],
+        en: 'Increasing my knowledge is my current goal.',
+      },
+      {
+        seg: [
+          { t: 'ざっと' }, { t: '目', r: 'め' }, { t: 'を' }, { t: '通', r: 'とお' }, { t: 'した' },
+          { t: 'あと、' }, { t: 'じっくり' }, { t: '読', r: 'よ' }, { t: 'み' }, { t: '直', r: 'なお' },
+          { t: 'して' }, { t: '理解', r: 'りかい' }, { t: 'を' }, { t: '深', r: 'ふか' }, { t: 'める。' },
+        ],
+        en: 'After glancing through it, I reread it carefully and deepen my understanding.',
+      },
+      {
+        seg: [
+          { t: '苦手', r: 'にがて' }, { t: 'な' }, { t: '分野', r: 'ぶんや' }, { t: 'は' }, { t: 'しっかり' },
+          { t: '復習', r: 'ふくしゅう' }, { t: 'し、' }, { t: '得意', r: 'とくい' }, { t: 'な' }, { t: '分野', r: 'ぶんや' },
+          { t: 'で' }, { t: '自信', r: 'じしん' }, { t: 'を' }, { t: 'つける。' },
+        ],
+        en: 'I review my weak areas thoroughly and build confidence in my strong ones.',
+      },
+      {
+        seg: [
+          { t: '試験', r: 'しけん' }, { t: 'の' }, { t: '結果', r: 'けっか' }, { t: 'は' }, { t: 'まあまあ' },
+          { t: 'で、' }, { t: 'くやしい' }, { t: '気持', r: 'きも' }, { t: 'ち' }, { t: 'も' },
+          { t: '残', r: 'のこ' }, { t: 'った。' },
+        ],
+        en: 'The exam result was so-so, and a frustrated feeling remained.',
+      },
+      {
+        seg: [
+          { t: '相当', r: 'そうとう' }, { t: '努力', r: 'どりょく' }, { t: 'した' }, { t: 'つもり' }, { t: 'でも、' },
+          { t: 'レベル' }, { t: 'は' }, { t: 'すぐ' }, { t: 'に' }, { t: 'は' },
+          { t: '上', r: 'あ' }, { t: 'がらない。' },
+        ],
+        en: 'Even when I think I have made considerable effort, the level does not rise at once.',
+      },
+      {
+        seg: [
+          { t: 'なまけて' }, { t: 'しまう' }, { t: '日', r: 'ひ' }, { t: 'も' }, { t: 'ある' },
+          { t: 'が、' }, { t: 'やる気', r: 'き' }, { t: 'は' }, { t: '消', r: 'き' }, { t: 'えない。' },
+        ],
+        en: 'There are days when I slack off, but the motivation does not disappear.',
+      },
+      {
+        seg: [
+          { t: '分', r: 'わ' }, { t: 'からない' }, { t: 'こと' }, { t: 'は、' }, { t: 'さっそく' },
+          { t: '先生', r: 'せんせい' }, { t: 'に' }, { t: '問', r: 'と' }, { t: 'い' }, { t: '合', r: 'あ' },
+          { t: 'わせる。' },
+        ],
+        en: 'What I do not understand, I ask the teacher about right away.',
+      },
+      {
+        seg: [
+          { t: '利口', r: 'りこう' }, { t: 'な' }, { t: 'やり方', r: 'かた' }, { t: 'を' }, { t: '試', r: 'ため' },
+          { t: 'し' }, { t: 'ながら、' }, { t: '少', r: 'すこ' }, { t: 'し' }, { t: 'ずつ' },
+          { t: 'マスター' }, { t: 'して' }, { t: 'いく。' },
+        ],
+        en: 'Trying out clever methods, I gradually master it.',
+      },
+      {
+        seg: [
+          { t: '高', r: 'たか' }, { t: 'い' }, { t: 'ところ' }, { t: 'を' }, { t: '目指', r: 'めざ' },
+          { t: 'す' }, { t: '人', r: 'ひと' }, { t: 'ほど、' }, { t: '静', r: 'しず' }, { t: 'か' },
+          { t: 'に' }, { t: '続', r: 'つづ' }, { t: 'けて' }, { t: 'いる。' },
+        ],
+        en: 'The higher someone aims, the more quietly they keep going.',
+      },
+    ],
+  },
 ]
