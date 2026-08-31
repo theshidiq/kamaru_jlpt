@@ -961,4 +961,447 @@ export const PASSAGES_N3: SectionPassage[] = [
       },
     ],
   },
+  {
+    level: 'N3',
+    chapter: 3,
+    section: 1,
+    title: '住まい',
+    targetWords: [
+      '住まい', 'リビング', '居間', '家電', 'エアコン', 'クーラー', '暖める', '天井', '床', 'カーペット',
+      'ざぶとん', 'ソファー', 'クッション', 'どかす', 'コンセント', 'スイッチ', 'ドライヤー', '蛇口',
+      'ひねる', '実家', '家賃', '物置', '日当たり', '内側',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: 'いま' }, { t: 'の' }, { t: '住', r: 'す' }, { t: 'まい' }, { t: 'は' },
+          { t: '駅', r: 'えき' }, { t: 'に' }, { t: '近', r: 'ちか' }, { t: 'く、' }, { t: '家賃', r: 'やちん' },
+          { t: 'の' }, { t: 'わり' }, { t: 'に' }, { t: '日当', r: 'ひあ' }, { t: 'たり' },
+          { t: 'が' }, { t: 'よい。' },
+        ],
+        en: 'My current home is near the station and, for the rent, gets good sunlight.',
+      },
+      {
+        seg: [
+          { t: 'リビング' }, { t: 'に' }, { t: 'は' }, { t: 'ソファー' }, { t: 'と' },
+          { t: 'クッション、' }, { t: '居間', r: 'いま' }, { t: 'に' }, { t: 'は' }, { t: 'ざぶとん' },
+          { t: 'を' }, { t: '置', r: 'お' }, { t: 'いて' }, { t: 'いる。' },
+        ],
+        en: 'In the living room there is a sofa and cushions, and in the Japanese-style room floor cushions.',
+      },
+      {
+        seg: [
+          { t: '床', r: 'ゆか' }, { t: 'に' }, { t: 'カーペット' }, { t: 'を' }, { t: '敷', r: 'し' },
+          { t: 'く' }, { t: 'と、' }, { t: '部屋', r: 'へや' }, { t: 'が' }, { t: '暖', r: 'あたた' },
+          { t: 'まり' }, { t: 'やすい。' },
+        ],
+        en: 'Laying a carpet on the floor makes the room warm up easily.',
+      },
+      {
+        seg: [
+          { t: '夏', r: 'なつ' }, { t: 'は' }, { t: 'クーラー、' }, { t: '冬', r: 'ふゆ' }, { t: 'は' },
+          { t: 'エアコン' }, { t: 'を' }, { t: '使', r: 'つか' }, { t: 'い、' }, { t: 'スイッチ' },
+          { t: '一', r: 'ひと' }, { t: 'つ' }, { t: 'で' }, { t: '切', r: 'き' }, { t: 'り' },
+          { t: '替', r: 'か' }, { t: 'える。' },
+        ],
+        en: 'In summer the cooler and in winter the air conditioner — I switch between them with one switch.',
+      },
+      {
+        seg: [
+          { t: 'コンセント' }, { t: 'が' }, { t: '天井', r: 'てんじょう' }, { t: 'の' }, { t: '近', r: 'ちか' },
+          { t: 'く' }, { t: 'に' }, { t: 'あり、' }, { t: 'ドライヤー' }, { t: 'の' },
+          { t: 'コード' }, { t: 'が' }, { t: '届', r: 'とど' }, { t: 'かない。' },
+        ],
+        en: 'The socket is near the ceiling and the hair dryer’s cord will not reach.',
+      },
+      {
+        seg: [
+          { t: '家電', r: 'かでん' }, { t: 'を' }, { t: 'どかして、' }, { t: '内側', r: 'うちがわ' }, { t: 'の' },
+          { t: 'ほこり' }, { t: 'を' }, { t: '取', r: 'と' }, { t: 'った。' },
+        ],
+        en: 'I moved the appliances out of the way and removed the dust from inside.',
+      },
+      {
+        seg: [
+          { t: '蛇口', r: 'じゃぐち' }, { t: 'を' }, { t: 'ひねる' }, { t: 'と、' }, { t: '水', r: 'みず' },
+          { t: 'の' }, { t: '音', r: 'おと' }, { t: 'だけ' }, { t: 'が' }, { t: '響', r: 'ひび' },
+          { t: 'く。' },
+        ],
+        en: 'When I turn the tap, only the sound of water echoes.',
+      },
+      {
+        seg: [
+          { t: '使', r: 'つか' }, { t: 'わない' }, { t: 'もの' }, { t: 'は' }, { t: '物置', r: 'ものおき' },
+          { t: 'に' }, { t: 'しまい、' }, { t: '実家', r: 'じっか' }, { t: 'から' }, { t: '送', r: 'おく' },
+          { t: 'られた' }, { t: '箱', r: 'はこ' }, { t: 'も' }, { t: 'そこ' }, { t: 'に' },
+          { t: 'ある。' },
+        ],
+        en: 'I store what I do not use in the shed, and the boxes sent from my parents’ home are there too.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 3,
+    section: 2,
+    title: 'お金と銀行',
+    targetWords: [
+      '札', 'コイン', '小銭', '生活費', '食費', '光熱費', '交際費', '公共料金', 'こづかい', '節約',
+      'ぜいたく', '割り勘', 'レンタル', '支払う', '支払い', '勘定', '口座', 'キャッシュカード', '暗証番号',
+      '預金', 'ためる', 'たまる', '引き出す', '振り込む', '送金', '通帳記入',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '毎月', r: 'まいつき' }, { t: 'の' }, { t: '生活費', r: 'せいかつひ' }, { t: 'を、' }, { t: '食費', r: 'しょくひ' },
+          { t: 'と' }, { t: '光熱費', r: 'こうねつひ' }, { t: 'に' }, { t: '分', r: 'わ' }, { t: 'けて' },
+          { t: '考', r: 'かんが' }, { t: 'える。' },
+        ],
+        en: 'I think of each month’s living expenses divided into food and utility costs.',
+      },
+      {
+        seg: [
+          { t: '公共料金', r: 'こうきょうりょうきん' }, { t: 'は' }, { t: '口座', r: 'こうざ' }, { t: 'から' }, { t: '自動', r: 'じどう' },
+          { t: 'で' }, { t: '支払', r: 'しはら' }, { t: 'われる。' },
+        ],
+        en: 'The utility charges are paid automatically from my account.',
+      },
+      {
+        seg: [
+          { t: '交際費', r: 'こうさいひ' }, { t: 'を' }, { t: '節約', r: 'せつやく' }, { t: 'する' }, { t: 'ため、' },
+          { t: '友人', r: 'ゆうじん' }, { t: 'と' }, { t: 'は' }, { t: '割', r: 'わ' }, { t: 'り' },
+          { t: '勘', r: 'かん' }, { t: 'に' }, { t: 'する。' },
+        ],
+        en: 'To economise on entertainment expenses, I split the bill with friends.',
+      },
+      {
+        seg: [
+          { t: 'ぜいたく' }, { t: 'を' }, { t: 'せず、' }, { t: '少', r: 'すこ' }, { t: 'し' },
+          { t: 'ずつ' }, { t: '預金', r: 'よきん' }, { t: 'を' }, { t: 'ためる。' },
+        ],
+        en: 'Without extravagance, I save up my deposits little by little.',
+      },
+      {
+        seg: [
+          { t: '小銭', r: 'こぜに' }, { t: 'や' }, { t: 'コイン' }, { t: 'が' }, { t: 'たまったら、' },
+          { t: 'まとめて' }, { t: '銀行', r: 'ぎんこう' }, { t: 'へ' }, { t: '持', r: 'も' }, { t: 'って' },
+          { t: '行', r: 'い' }, { t: 'く。' },
+        ],
+        en: 'When small change and coins accumulate, I take them to the bank together.',
+      },
+      {
+        seg: [
+          { t: 'キャッシュカード' }, { t: 'と' }, { t: '暗証番号', r: 'あんしょうばんごう' }, { t: 'で、' }, { t: 'お' },
+          { t: '札', r: 'さつ' }, { t: 'を' }, { t: '引', r: 'ひ' }, { t: 'き' }, { t: '出', r: 'だ' },
+          { t: 'す。' },
+        ],
+        en: 'With my cash card and PIN, I withdraw banknotes.',
+      },
+      {
+        seg: [
+          { t: '家賃', r: 'やちん' }, { t: 'は' }, { t: '毎月', r: 'まいつき' }, { t: '振', r: 'ふ' }, { t: 'り' },
+          { t: '込', r: 'こ' }, { t: 'み、' }, { t: '実家', r: 'じっか' }, { t: 'へ' }, { t: 'の' },
+          { t: '送金', r: 'そうきん' }, { t: 'も' }, { t: '忘', r: 'わす' }, { t: 'れない。' },
+        ],
+        en: 'I transfer the rent every month and do not forget the remittance to my parents’ home either.',
+      },
+      {
+        seg: [
+          { t: '通帳', r: 'つうちょう' }, { t: '記入', r: 'きにゅう' }, { t: 'を' }, { t: 'すれば、' }, { t: '支払', r: 'しはら' },
+          { t: 'い' }, { t: 'の' }, { t: '記録', r: 'きろく' }, { t: 'が' }, { t: 'すぐ' },
+          { t: '分', r: 'わ' }, { t: 'かる。' },
+        ],
+        en: 'If I update my bankbook, the record of payments is immediately clear.',
+      },
+      {
+        seg: [
+          { t: '店', r: 'みせ' }, { t: 'で' }, { t: '勘定', r: 'かんじょう' }, { t: 'を' }, { t: '頼', r: 'たの' },
+          { t: 'み、' }, { t: 'レンタル' }, { t: '代', r: 'だい' }, { t: 'も' }, { t: '一緒', r: 'いっしょ' },
+          { t: 'に' }, { t: '払', r: 'はら' }, { t: 'った。' },
+        ],
+        en: 'I asked for the bill at the shop and paid the rental fee together with it.',
+      },
+      {
+        seg: [
+          { t: 'こづかい' }, { t: 'の' }, { t: '中', r: 'なか' }, { t: 'で' }, { t: 'やりくり' },
+          { t: 'する' }, { t: 'の' }, { t: 'が、' }, { t: 'いちばん' }, { t: 'の' },
+          { t: '練習', r: 'れんしゅう' }, { t: 'だ。' },
+        ],
+        en: 'Managing within one’s pocket money is the best practice of all.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 3,
+    section: 3,
+    title: '買い物',
+    targetWords: [
+      '品物', '現金', 'クレジットカード', '一回払い', '合計', '代金', '税込', '請求書', '領収書',
+      '売り切れ', '品切れ', '日替わり', '割引', '半額', '特売日', 'たった', '得', '損', 'おまけ',
+      'むだ', 'むだづかい', '寄る', 'ついでに', 'レジ袋', '定休日',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '今日', r: 'きょう' }, { t: 'は' }, { t: '特売日', r: 'とくばいび' }, { t: 'な' }, { t: 'ので、' },
+          { t: '帰', r: 'かえ' }, { t: 'り' }, { t: 'に' }, { t: 'スーパー' }, { t: 'に' },
+          { t: '寄', r: 'よ' }, { t: 'った。' },
+        ],
+        en: 'Today is a bargain day, so I stopped by the supermarket on the way home.',
+      },
+      {
+        seg: [
+          { t: 'ついでに' }, { t: '隣', r: 'となり' }, { t: 'の' }, { t: '店', r: 'みせ' }, { t: 'も' },
+          { t: '見', r: 'み' }, { t: 'た' }, { t: 'が、' }, { t: '定休日', r: 'ていきゅうび' }, { t: 'だった。' },
+        ],
+        en: 'While I was at it I looked at the shop next door, but it was their regular closing day.',
+      },
+      {
+        seg: [
+          { t: '目当', r: 'めあ' }, { t: 'て' }, { t: 'の' }, { t: '品物', r: 'しなもの' }, { t: 'は' },
+          { t: '売', r: 'う' }, { t: 'り' }, { t: '切', r: 'き' }, { t: 'れ' }, { t: 'で、' },
+          { t: '別', r: 'べつ' }, { t: 'の' }, { t: '色', r: 'いろ' }, { t: 'も' }, { t: '品切', r: 'しなぎ' },
+          { t: 'れ' }, { t: 'だった。' },
+        ],
+        en: 'The item I was after was sold out, and another colour was out of stock too.',
+      },
+      {
+        seg: [
+          { t: '日替', r: 'ひが' }, { t: 'わり' }, { t: 'の' }, { t: '弁当', r: 'べんとう' }, { t: 'が' },
+          { t: '半額', r: 'はんがく' }, { t: 'に' }, { t: 'なり、' }, { t: 'たった' }, { t: '三百円', r: 'さんびゃくえん' },
+          { t: 'だった。' },
+        ],
+        en: 'The daily special bento was half price — only three hundred yen.',
+      },
+      {
+        seg: [
+          { t: '割引', r: 'わりびき' }, { t: 'の' }, { t: 'おかげ' }, { t: 'で' }, { t: '合計', r: 'ごうけい' },
+          { t: 'は' }, { t: '安', r: 'やす' }, { t: 'く、' }, { t: 'とても' }, { t: '得', r: 'とく' },
+          { t: 'を' }, { t: 'した' }, { t: '気分', r: 'きぶん' }, { t: 'だ。' },
+        ],
+        en: 'Thanks to the discount the total was cheap, and I felt I had got a real bargain.',
+      },
+      {
+        seg: [
+          { t: '代金', r: 'だいきん' }, { t: 'は' }, { t: '現金', r: 'げんきん' }, { t: 'で' }, { t: '払', r: 'はら' },
+          { t: 'わず、' }, { t: 'クレジットカード' }, { t: 'の' }, { t: '一回払', r: 'いっかいばら' }, { t: 'い' },
+          { t: 'に' }, { t: 'した。' },
+        ],
+        en: 'I did not pay the price in cash but used a credit card in a single payment.',
+      },
+      {
+        seg: [
+          { t: '税込', r: 'ぜいこみ' }, { t: 'の' }, { t: '金額', r: 'きんがく' }, { t: 'を' }, { t: '確', r: 'たし' },
+          { t: 'かめ、' }, { t: '領収書', r: 'りょうしゅうしょ' }, { t: 'を' }, { t: 'もらう。' },
+        ],
+        en: 'I check the tax-included amount and receive a receipt.',
+      },
+      {
+        seg: [
+          { t: '請求書', r: 'せいきゅうしょ' }, { t: 'は' }, { t: 'あとで' }, { t: '届', r: 'とど' }, { t: 'く' },
+          { t: 'ので、' }, { t: 'なくさない' }, { t: 'よう' }, { t: 'に' }, { t: 'する。' },
+        ],
+        en: 'The invoice arrives later, so I make sure not to lose it.',
+      },
+      {
+        seg: [
+          { t: '小', r: 'ちい' }, { t: 'さな' }, { t: 'おまけ' }, { t: 'が' }, { t: 'ついて' },
+          { t: 'きて、' }, { t: '子', r: 'こ' }, { t: 'ども' }, { t: 'が' }, { t: '喜', r: 'よろこ' },
+          { t: 'んだ。' },
+        ],
+        en: 'A small free extra came with it, and the children were delighted.',
+      },
+      {
+        seg: [
+          { t: 'レジ袋', r: 'ぶくろ' }, { t: 'を' }, { t: '断', r: 'ことわ' }, { t: 'る' }, { t: 'の' },
+          { t: 'は、' }, { t: 'むだ' }, { t: 'を' }, { t: '減', r: 'へ' }, { t: 'らす' },
+          { t: '一歩', r: 'いっぽ' }, { t: 'だ。' },
+        ],
+        en: 'Declining a plastic bag is a step toward reducing waste.',
+      },
+      {
+        seg: [
+          { t: '安', r: 'やす' }, { t: 'い' }, { t: 'から' }, { t: 'と' }, { t: '買', r: 'か' },
+          { t: 'いすぎる' }, { t: 'と、' }, { t: 'かえって' }, { t: 'むだづかい' }, { t: 'に' },
+          { t: 'なり' }, { t: '損', r: 'そん' }, { t: 'を' }, { t: 'する。' },
+        ],
+        en: 'Buying too much just because it is cheap becomes wasteful spending and a loss instead.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 3,
+    section: 4,
+    title: '朝から夜まで',
+    targetWords: [
+      '覚ます', '覚める', '明ける', '支度', '合わせる', 'しまう', 'そる', 'とかす', 'そろえる', '昼寝',
+      '腰かける', '暮れる', 'おしゃべり', 'リラックス', 'ふだん', 'ふだん着', '相変わらず', 'たいてい',
+      '夜ふかし', '電源', '充電', 'セット', 'なでる', 'ぐっすり', '運',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '夜', r: 'よる' }, { t: 'が' }, { t: '明', r: 'あ' }, { t: 'ける' }, { t: 'ころ、' },
+          { t: '目', r: 'め' }, { t: 'が' }, { t: '覚', r: 'さ' }, { t: 'めて' }, { t: '目', r: 'め' },
+          { t: 'を' }, { t: '覚', r: 'さ' }, { t: 'ます。' },
+        ],
+        en: 'Around daybreak I wake up and rouse myself.',
+      },
+      {
+        seg: [
+          { t: 'たいてい' }, { t: 'は' }, { t: '六時', r: 'ろくじ' }, { t: 'に' }, { t: 'セット' },
+          { t: 'した' }, { t: '目覚', r: 'めざ' }, { t: 'まし' }, { t: 'で' }, { t: '起', r: 'お' },
+          { t: 'きる。' },
+        ],
+        en: 'Usually I get up with the alarm set for six.',
+      },
+      {
+        seg: [
+          { t: 'ひげ' }, { t: 'を' }, { t: 'そり、' }, { t: '髪', r: 'かみ' }, { t: 'を' },
+          { t: 'とかして、' }, { t: '出', r: 'で' }, { t: 'かける' }, { t: '支度', r: 'したく' }, { t: 'を' },
+          { t: 'する。' },
+        ],
+        en: 'I shave, comb my hair, and get ready to go out.',
+      },
+      {
+        seg: [
+          { t: '服', r: 'ふく' }, { t: 'を' }, { t: '合', r: 'あ' }, { t: 'わせ、' }, { t: 'ふだん' },
+          { t: 'は' }, { t: 'ふだん着', r: 'ぎ' }, { t: 'で' }, { t: '過', r: 'す' }, { t: 'ごす。' },
+        ],
+        en: 'I match my clothes; usually I spend the day in casual wear.',
+      },
+      {
+        seg: [
+          { t: '使', r: 'つか' }, { t: 'った' }, { t: 'もの' }, { t: 'を' }, { t: 'しまい、' },
+          { t: '靴', r: 'くつ' }, { t: 'を' }, { t: 'そろえて' }, { t: '出', r: 'で' }, { t: 'る。' },
+        ],
+        en: 'I put away what I used and line up my shoes before leaving.',
+      },
+      {
+        seg: [
+          { t: '昼', r: 'ひる' }, { t: 'は' }, { t: '短', r: 'みじか' }, { t: 'い' }, { t: '昼寝', r: 'ひるね' },
+          { t: 'を' }, { t: 'し、' }, { t: 'ソファー' }, { t: 'に' }, { t: '腰', r: 'こし' },
+          { t: 'かけて' }, { t: 'リラックス' }, { t: 'する。' },
+        ],
+        en: 'At midday I take a short nap and relax sitting on the sofa.',
+      },
+      {
+        seg: [
+          { t: '日', r: 'ひ' }, { t: 'が' }, { t: '暮', r: 'く' }, { t: 'れる' }, { t: 'と、' },
+          { t: '家族', r: 'かぞく' }, { t: 'と' }, { t: 'おしゃべり' }, { t: 'を' }, { t: 'する' },
+          { t: '時間', r: 'じかん' }, { t: 'に' }, { t: 'なる。' },
+        ],
+        en: 'When the sun sets, it becomes time to chat with the family.',
+      },
+      {
+        seg: [
+          { t: '猫', r: 'ねこ' }, { t: 'を' }, { t: 'なでて' }, { t: 'いる' }, { t: 'うち' },
+          { t: 'に、' }, { t: '相変', r: 'あいか' }, { t: 'わらず' }, { t: '夜', r: 'よ' }, { t: 'ふかし' },
+          { t: 'を' }, { t: 'して' }, { t: 'しまう。' },
+        ],
+        en: 'While stroking the cat, as always I end up staying up late.',
+      },
+      {
+        seg: [
+          { t: '寝', r: 'ね' }, { t: 'る' }, { t: '前', r: 'まえ' }, { t: 'に' }, { t: '電源', r: 'でんげん' },
+          { t: 'を' }, { t: '切', r: 'き' }, { t: 'り、' }, { t: '携帯', r: 'けいたい' }, { t: 'を' },
+          { t: '充電', r: 'じゅうでん' }, { t: 'する。' },
+        ],
+        en: 'Before sleeping I turn off the power and charge my phone.',
+      },
+      {
+        seg: [
+          { t: 'ぐっすり' }, { t: '眠', r: 'ねむ' }, { t: 'れた' }, { t: '日', r: 'ひ' }, { t: 'は、' },
+          { t: '運', r: 'うん' }, { t: 'が' }, { t: 'よい' }, { t: '一日', r: 'いちにち' }, { t: 'に' },
+          { t: 'なる' }, { t: '気', r: 'き' }, { t: 'が' }, { t: 'する。' },
+        ],
+        en: 'On days when I sleep soundly, I feel it will be a lucky day.',
+      },
+    ],
+  },
+  {
+    level: 'N3',
+    chapter: 3,
+    section: 5,
+    title: 'そのほかの暮らし',
+    targetWords: [
+      '日常', '常に', '出迎え', '出迎える', '見送り', '見送る', '郵送', '小包', '送料', 'あて先',
+      'あて名', '差出人', 'とりあえず', '出前', 'ほどく', '留守番電話', 'よく', '早め', 'リサイクル',
+      'どける',
+    ],
+    sentences: [
+      {
+        seg: [
+          { t: '日常', r: 'にちじょう' }, { t: 'の' }, { t: '中', r: 'なか' }, { t: 'に' }, { t: 'は、' },
+          { t: '小', r: 'ちい' }, { t: 'さな' }, { t: 'やりとり' }, { t: 'が' }, { t: '常', r: 'つね' },
+          { t: 'に' }, { t: 'ある。' },
+        ],
+        en: 'In everyday life there are always small exchanges.',
+      },
+      {
+        seg: [
+          { t: '友人', r: 'ゆうじん' }, { t: 'が' }, { t: '来', r: 'く' }, { t: 'る' }, { t: '日', r: 'ひ' },
+          { t: 'は' }, { t: '駅', r: 'えき' }, { t: 'まで' }, { t: '出迎', r: 'でむか' }, { t: 'え' },
+          { t: 'に' }, { t: '行', r: 'い' }, { t: 'き、' }, { t: '帰', r: 'かえ' }, { t: 'り' },
+          { t: 'は' }, { t: '見送', r: 'みおく' }, { t: 'る。' },
+        ],
+        en: 'On the day a friend comes I go to the station to meet them, and see them off on the way back.',
+      },
+      {
+        seg: [
+          { t: '出迎', r: 'でむか' }, { t: 'えた' }, { t: 'あと、' }, { t: 'とりあえず' }, { t: 'お茶', r: 'ちゃ' },
+          { t: 'を' }, { t: '出', r: 'だ' }, { t: 'す。' },
+        ],
+        en: 'After meeting them, for now I serve tea.',
+      },
+      {
+        seg: [
+          { t: '見送', r: 'みおく' }, { t: 'り' }, { t: 'の' }, { t: 'あと、' }, { t: '郵便局', r: 'ゆうびんきょく' },
+          { t: 'へ' }, { t: '小包', r: 'こづつみ' }, { t: 'を' }, { t: '出', r: 'だ' }, { t: 'しに' },
+          { t: '行', r: 'い' }, { t: 'った。' },
+        ],
+        en: 'After seeing them off, I went to the post office to send a parcel.',
+      },
+      {
+        seg: [
+          { t: 'あて先', r: 'さき' }, { t: 'と' }, { t: 'あて名', r: 'な、' }, { t: '差出人', r: 'さしだしにん' }, { t: 'を' },
+          { t: '書', r: 'か' }, { t: 'き、' }, { t: '送料', r: 'そうりょう' }, { t: 'を' }, { t: '確', r: 'たし' },
+          { t: 'かめる。' },
+        ],
+        en: 'I write the destination, the addressee and the sender, and check the postage.',
+      },
+      {
+        seg: [
+          { t: '郵送', r: 'ゆうそう' }, { t: 'は' }, { t: '早', r: 'はや' }, { t: 'め' }, { t: 'に' },
+          { t: '頼', r: 'たの' }, { t: 'む' }, { t: 'ほう' }, { t: 'が' }, { t: 'よい。' },
+        ],
+        en: 'It is better to arrange posting ahead of time.',
+      },
+      {
+        seg: [
+          { t: '留守番電話', r: 'るすばんでんわ' }, { t: 'に、' }, { t: 'よく' }, { t: '同', r: 'おな' }, { t: 'じ' },
+          { t: '人', r: 'ひと' }, { t: 'から' }, { t: 'の' }, { t: '伝言', r: 'でんごん' }, { t: 'が' },
+          { t: '入', r: 'はい' }, { t: 'って' }, { t: 'いる。' },
+        ],
+        en: 'There are often messages from the same person on the answering machine.',
+      },
+      {
+        seg: [
+          { t: '疲', r: 'つか' }, { t: 'れた' }, { t: '日', r: 'ひ' }, { t: 'は' }, { t: '出前', r: 'でまえ' },
+          { t: 'を' }, { t: '頼', r: 'たの' }, { t: 'み、' }, { t: '荷物', r: 'にもつ' }, { t: 'を' },
+          { t: 'どけて' }, { t: '場所', r: 'ばしょ' }, { t: 'を' }, { t: '作', r: 'つく' }, { t: 'る。' },
+        ],
+        en: 'On tired days I order delivery and move the luggage aside to make space.',
+      },
+      {
+        seg: [
+          { t: '包', r: 'つつ' }, { t: 'み' }, { t: 'を' }, { t: 'ほどき、' }, { t: '箱', r: 'はこ' },
+          { t: 'は' }, { t: 'リサイクル' }, { t: 'に' }, { t: '出', r: 'だ' }, { t: 'す。' },
+        ],
+        en: 'I untie the wrapping and put the box out for recycling.',
+      },
+    ],
+  },
 ]
