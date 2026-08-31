@@ -16,6 +16,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { PASSAGES_N2 } from '../src/lib/passages_n2'
+import { PASSAGES_N3 } from '../src/lib/passages_n3'
 import type { SectionPassage, PassageAudioEntry, PassageManifest, PassageTiming } from '../src/types/passage'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -49,6 +50,7 @@ function arg(name: string): string | undefined {
   const i = args.indexOf(`--${name}`)
   return i >= 0 ? args[i + 1] : undefined
 }
+const onlyLevel = arg('level')?.toUpperCase()
 const onlyChapter = arg('chapter') ? Number(arg('chapter')) : undefined
 const onlySection = arg('section') ? Number(arg('section')) : undefined
 const dryRun = args.includes('--dry-run')
@@ -137,8 +139,9 @@ function idOf(p: SectionPassage): string {
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true })
 
-  const all: SectionPassage[] = PASSAGES_N2
+  const all: SectionPassage[] = [...PASSAGES_N2, ...PASSAGES_N3]
   const todo = all.filter(p =>
+    (onlyLevel === undefined || p.level === onlyLevel) &&
     (onlyChapter === undefined || p.chapter === onlyChapter) &&
     (onlySection === undefined || p.section === onlySection))
 

@@ -5,12 +5,15 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
-import { PASSAGES_N2 } from '@/lib/passages_n2'
+import { PASSAGE_BANK } from '@/lib/passages'
 import { audioUrl } from '@/lib/assets'
 import type { PassageManifest, PassageAudioEntry } from '@/types/passage'
 import type { WordStatus } from '@/types/user'
 
 const SPEEDS = [0.5, 0.75, 1, 1.25] as const
+
+/** Cache key for the passage manifest; replaced at build time. */
+const BUILD_ID = __BUILD_ID__
 
 export function SectionReader() {
   const { chapter, section } = useParams()
@@ -20,7 +23,7 @@ export function SectionReader() {
 
   const ch = Number(chapter), sec = Number(section)
   const passage = useMemo(
-    () => PASSAGES_N2.find(p => p.level === level && p.chapter === ch && p.section === sec),
+    () => PASSAGE_BANK[level].find(p => p.chapter === ch && p.section === sec),
     [level, ch, sec],
   )
 
@@ -34,7 +37,11 @@ export function SectionReader() {
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
-    fetch(audioUrl('/audio/passages/manifest.json'))
+    // R2's r2.dev domain sends no Cache-Control, so browsers apply heuristic
+    // caching and can serve a stale manifest after new passages are added --
+    // the entry is missing, so the player silently never renders. BUILD_ID
+    // changes per build, which scopes the cache to a deployment.
+    fetch(audioUrl(`/audio/passages/manifest.json?v=${BUILD_ID}`))
       .then(r => r.json())
       .then((m: PassageManifest) => {
         const id = `${level.toLowerCase()}-${ch}-${sec}`
