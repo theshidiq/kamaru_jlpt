@@ -35,6 +35,8 @@ export function SectionReader() {
   const [nowMs, setNowMs] = useState(0)
   const [picked, setPicked] = useState<{ word: string; ch: number; sec: number } | null>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
+  const controlsRef = useRef<HTMLDivElement>(null)
+  const [controlsHidden, setControlsHidden] = useState(false)
 
   useEffect(() => {
     // R2's r2.dev domain sends no Cache-Control, so browsers apply heuristic
@@ -65,6 +67,24 @@ export function SectionReader() {
   useEffect(() => {
     if (audioRef.current) audioRef.current.playbackRate = rate
   }, [rate, audio])
+
+  // Show a floating play/pause once the inline controls scroll out of view.
+  // Passages run long, and shadowing means pausing every sentence — without
+  // this you have to scroll back to the top for every pause.
+  //
+  // A scroll listener rather than IntersectionObserver: this component
+  // early-returns before the controls exist (no passage, or audio still
+  // loading), so an observer registered against the ref can end up bound to
+  // nothing and never re-run.
+  useEffect(() => {
+    function onScroll() {
+      const el = controlsRef.current
+      setControlsHidden(!!el && el.getBoundingClientRect().bottom < 0)
+    }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  })
 
   function toggle() {
     const a = audioRef.current
@@ -118,7 +138,7 @@ export function SectionReader() {
       </p>
 
       {/* Controls */}
-      <div className="flex flex-wrap items-center gap-2 mb-5">
+      <div ref={controlsRef} className="flex flex-wrap items-center gap-2 mb-5">
         {audio && (
           <>
             <button
@@ -224,9 +244,26 @@ export function SectionReader() {
         ))}
       </div>
 
+      {/* Floating play/pause — appears once the inline controls scroll away.
+          Passages run long and shadowing means pausing every sentence, so
+          without this you have to scroll back to the top for every pause.
+          Hidden while the word sheet is open: that sheet owns the bottom of
+          the screen on narrow viewports and has its own controls. */}
+      {audio && controlsHidden && !detail && (
+        <button
+          onClick={toggle}
+          aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
+          className="fixed bottom-8 right-5 z-40 flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
+        >
+          {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
+        </button>
+      )}
+
       {/* Word detail */}
       {detail && (
-        <div className="fixed inset-x-0 bottom-0 z-50 md:relative md:mt-4">
+        <div
+          className="fixed inset-x-0 bottom-0 z-50 md:relative md:mt-4"
+        >
           <div className="bg-white dark:bg-gray-800 border-t md:border border-gray-200 dark:border-gray-700 md:rounded-xl p-5 shadow-lg max-w-5xl mx-auto">
             <div className="flex items-start justify-between gap-4">
               <div>
