@@ -215,6 +215,12 @@ async function main() {
 
     fs.writeFileSync(outPath, audio)
 
+    // Guard: the alignment must describe the audio we just wrote. eleven_v3
+    // is non-deterministic — the same text re-rendered varies by a second or
+    // more — so timings are only valid for the exact render they came from.
+    // Regenerating an mp3 while keeping an older entry's timings silently
+    // desynchronises the highlight, which is how n2-1-1..4 drifted by up to
+    // 4.8s. Writing both here from one response is what keeps them paired.
     const timings = mapTimings(p, alignment)
     const durationMs = Math.round(
       alignment.character_end_times_seconds[alignment.character_end_times_seconds.length - 1] * 1000,
