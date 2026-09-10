@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { createPortal } from 'react-dom'
 import { useParams, useNavigate } from 'react-router-dom'
-import { RiPlayFill, RiPauseFill, RiRestartLine } from '@remixicon/react'
+import { RiPlayFill, RiPauseFill, RiRestartLine, RiArrowLeftSLine, RiArrowRightSLine } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
@@ -27,6 +27,21 @@ export function SectionReader() {
     () => PASSAGE_BANK[level].find(p => p.chapter === ch && p.section === sec),
     [level, ch, sec],
   )
+
+  // Neighbouring sections in reading order across the whole level, so Next
+  // rolls from chapter 1 section 5 into chapter 2 section 1 rather than
+  // dead-ending. PASSAGE_BANK is authored in order; sort defensively so a
+  // future out-of-order entry cannot scramble navigation.
+  const { prev, next } = useMemo(() => {
+    const all = [...PASSAGE_BANK[level]].sort(
+      (a, b) => a.chapter - b.chapter || a.section - b.section,
+    )
+    const i = all.findIndex(p => p.chapter === ch && p.section === sec)
+    return {
+      prev: i > 0 ? all[i - 1] : null,
+      next: i >= 0 && i < all.length - 1 ? all[i + 1] : null,
+    }
+  }, [level, ch, sec])
 
   const [audio, setAudio] = useState<PassageAudioEntry | null>(null)
   const [showFurigana, setShowFurigana] = useState(true)
@@ -145,6 +160,43 @@ export function SectionReader() {
   const detail = picked ? lookup(picked.word) : null
   const status: WordStatus = detail ? (wordStatuses[detail.wordClean] ?? 'new') : 'new'
 
+  /**
+   * Prev/next section links. Rendered twice — above the passage and below it —
+   * because passages are long enough that scrolling back up to advance is the
+   * same friction the floating play button solves.
+   */
+  function sectionNav(placement: 'top' | 'bottom') {
+    const cls =
+      'flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-lg border transition-colors ' +
+      'border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 ' +
+      'hover:bg-gray-50 dark:hover:bg-gray-800 disabled:opacity-40 disabled:pointer-events-none'
+    return (
+      <div className={`flex items-center justify-between gap-2 ${placement === 'top' ? 'mb-4' : 'mt-6'}`}>
+        <button
+          className={cls}
+          disabled={!prev}
+          onClick={() => { if (prev) { window.scrollTo(0, 0); navigate(`/read/${prev.chapter}/${prev.section}`) } }}
+          title={prev ? prev.title : undefined}
+        >
+          <RiArrowLeftSLine size={18} />
+          {t('prev', lang)}
+        </button>
+        <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">
+          {ch} · {sec}
+        </span>
+        <button
+          className={cls}
+          disabled={!next}
+          onClick={() => { if (next) { window.scrollTo(0, 0); navigate(`/read/${next.chapter}/${next.section}`) } }}
+          title={next ? next.title : undefined}
+        >
+          {t('next', lang)}
+          <RiArrowRightSLine size={18} />
+        </button>
+      </div>
+    )
+  }
+
   return (
     <PageWrapper>
       <button onClick={() => navigate(-1)} className="text-sm text-gray-500 dark:text-gray-400 mb-3">
@@ -155,6 +207,8 @@ export function SectionReader() {
       <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
         {t('chapter', lang)} {ch} · {t('section', lang)} {sec} · {passage.targetWords.length} {t('words', lang)}
       </p>
+
+      {sectionNav('top')}
 
       {/* Controls */}
       <div ref={controlsRef} className="flex flex-wrap items-center gap-2 mb-5">
@@ -213,11 +267,16 @@ export function SectionReader() {
 
       {audio && (
         <audio
+          // Keyed per section so navigating remounts the element rather than
+          // reusing it — a fresh <audio> starts paused at 0, which resets
+          // playback without a state-clearing effect.
+          key={`${level}-${ch}-${sec}`}
           ref={audioRef}
           src={audioUrl(audio.audioUrl)}
           preload="auto"
           // Coarse fallback; the rAF loop above drives this during playback.
           onTimeUpdate={() => audioRef.current && setNowMs(audioRef.current.currentTime * 1000)}
+          onLoadedMetadata={() => { setPlaying(false); setNowMs(0) }}
           onEnded={() => setPlaying(false)}
           onPause={() => setPlaying(false)}
         />
@@ -275,17 +334,43 @@ export function SectionReader() {
           position: fixed — inside it, top-1/2 resolves against the full page
           height rather than the viewport. */}
       {audio && controlsHidden && !detail && createPortal(
-        <button
-          onClick={toggle}
-          aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
-          // Vertically centred on the right edge, where the thumb rests
-          // naturally while holding the phone — and clear of the mobile tab
-          // bar without needing to reason about its height. z-50 matches the
-          // bar so this is never painted behind it.
-          className="fixed top-1/2 -translate-y-1/2 right-5 z-50 flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
-        >
-          {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
-        </button>,
+        // Vertically centred on the right edge, where the thumb rests while
+        // holding the phone — and clear of the mobile tab bar without needing
+        // to reason about its height. z-50 matches the bar so nothing here is
+        // painted behind it.
+        <div className="fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2">
+          <button
+            onClick={toggle}
+            aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
+            className="flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
+          >
+            {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
+          </button>
+
+          {/* The same furigana / English toggles as the inline control bar, so they
+              stay reachable once it has scrolled away. Smaller and muted, so
+              play/pause stays the obvious primary action. */}
+          {[
+            // あ reads as the furigana toggle at a glance; the truncated word
+            // ('Fu') would not, and the label is the same in both languages.
+            { label: 'あ', on: showFurigana, set: () => setShowFurigana(v => !v), full: t('furigana', lang) },
+            { label: 'EN', on: showEnglish, set: () => setShowEnglish(v => !v), full: 'EN' },
+          ].map(o => (
+            <button
+              key={o.full}
+              onClick={o.set}
+              aria-pressed={o.on}
+              aria-label={o.full}
+              className={`flex items-center justify-center h-10 w-10 rounded-full text-xs font-bold shadow-lg border transition-colors ${
+                o.on
+                  ? 'bg-indigo-600 border-indigo-600 text-white'
+                  : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400'
+              }`}
+            >
+              {o.label}
+            </button>
+          ))}
+        </div>,
         document.body,
       )}
 
@@ -325,6 +410,8 @@ export function SectionReader() {
       {!audio && (
         <p className="text-xs text-gray-400 mt-4">{t('readerNoAudio', lang)}</p>
       )}
+
+      {sectionNav('bottom')}
     </PageWrapper>
   )
 }
