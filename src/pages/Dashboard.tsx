@@ -6,7 +6,8 @@ import { useProgress } from '@/hooks/useProgress'
 import { LEVEL_CONFIG, getSectionTitleLang, getChapterTitleLang, DEFAULT_LEVEL } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
-import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine } from '@remixicon/react'
+import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine, RiVolumeUpLine } from '@remixicon/react'
+import { PASSAGE_BANK } from '@/lib/passages'
 
 export function Dashboard() {
   const navigate = useNavigate()
@@ -15,6 +16,14 @@ export function Dashboard() {
   const progress = useProgress()
 
   const level = user?.jlpt_level ?? DEFAULT_LEVEL
+
+  // Only offer Read when today's section actually has a passage. Today's
+  // section cycles through all of them, but the reader is only written as far
+  // as N2 (all 60) and N3 (25 of 60) — without this the button would lead to
+  // the "no passage yet" page most days on N3.
+  const hasPassage = PASSAGE_BANK[level].some(
+    p => p.chapter === todayChapter && p.section === todaySection,
+  )
   const TOTAL_SECTIONS = LEVEL_CONFIG[level].totalSections
   const daysUntilExam = user?.target_exam_date
     ? Math.max(0, Math.ceil((new Date(user.target_exam_date).getTime() - Date.now()) / 86400000))
@@ -75,12 +84,23 @@ export function Dashboard() {
               <p className="text-sm text-white/80">{t('streak', lang)}</p>
               <p className="text-2xl font-bold flex items-center gap-1.5">{progress.streak} days <RiFireLine size={20} className="text-orange-400" /></p>
             </div>
-            <button
-              onClick={() => navigate('/study')}
-              className="bg-white text-indigo-700 font-semibold px-4 md:px-5 py-3 rounded-xl hover:bg-indigo-50 transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
-            >
-              {t('studyNow', lang)} →
-            </button>
+            <div className="flex items-center gap-2">
+              {hasPassage && (
+                <button
+                  onClick={() => navigate(`/read/${todayChapter}/${todaySection}`)}
+                  className="flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-3 rounded-xl transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
+                >
+                  <RiVolumeUpLine size={18} />
+                  {t('readNow', lang)}
+                </button>
+              )}
+              <button
+                onClick={() => navigate('/study')}
+                className="bg-white text-indigo-700 font-semibold px-4 md:px-5 py-3 rounded-xl hover:bg-indigo-50 transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
+              >
+                {t('studyNow', lang)} →
+              </button>
+            </div>
           </div>
         </div>
 

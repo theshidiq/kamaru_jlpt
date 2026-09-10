@@ -18,6 +18,7 @@ const strings = {
     study: 'Study',
     // Actions
     studyNow: 'Study Now',
+    readNow: 'Read',
     continue: 'Continue',
     cancel: 'Cancel',
     back: '← Back',
@@ -187,6 +188,7 @@ const strings = {
     study: 'Belajar',
     // Actions
     studyNow: 'Mulai Belajar',
+    readNow: 'Baca',
     continue: 'Lanjutkan',
     cancel: 'Batal',
     back: '← Kembali',
