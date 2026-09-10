@@ -10,7 +10,7 @@
  * UserProfile whose id starts with `local-`.
  */
 import { supabase } from '@/lib/supabase'
-import type { UserProfile, WordStatus } from '@/types/user'
+import type { UserProfile, WordStatus, JlptLevel } from '@/types/user'
 import type { DailySession, QuizAttempt } from '@/hooks/useProgress'
 
 // ─── Keys ─────────────────────────────────────────────────────────────────────
@@ -20,6 +20,7 @@ export const LS_KEYS = {
   quizAttempts: 'kamaru:quiz_attempts',
   dailySessions: 'kamaru:daily_sessions',
   mockAttempts: 'kamaru:mock_attempts',
+  lastRead: 'kamaru:last_read',
 } as const
 
 const ATTEMPT_CAP = 200
@@ -82,6 +83,31 @@ function newId(): string {
   } catch {
     return `${Date.now()}-${Math.random().toString(16).slice(2)}`
   }
+}
+
+/**
+ * The passage section last opened in the reader, so the Dashboard can offer
+ * "continue where you left off" instead of always pointing at today's section.
+ *
+ * Deliberately local-only and not part of the Supabase store or the backup
+ * payload: it is a per-device convenience, not progress worth syncing, and
+ * resuming on a phone where you never read anything would be wrong.
+ */
+export interface LastRead {
+  level: JlptLevel
+  chapter: number
+  section: number
+  /** ISO date, so the Dashboard can hide a stale pointer. */
+  at: string
+}
+
+export function saveLastRead(entry: LastRead): void {
+  write(LS_KEYS.lastRead, entry)
+}
+
+export function loadLastRead(): LastRead | null {
+  const v = read<LastRead | null>(LS_KEYS.lastRead, null)
+  return v && typeof v.chapter === 'number' && typeof v.section === 'number' ? v : null
 }
 
 export function createGuestProfile(displayName?: string): UserProfile {

@@ -8,6 +8,7 @@ import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { PASSAGE_BANK } from '@/lib/passages'
 import { audioUrl } from '@/lib/assets'
+import { saveLastRead } from '@/lib/storage'
 import type { PassageManifest, PassageAudioEntry } from '@/types/passage'
 import type { WordStatus } from '@/types/user'
 
@@ -59,6 +60,11 @@ export function SectionReader() {
     // caching and can serve a stale manifest after new passages are added --
     // the entry is missing, so the player silently never renders. BUILD_ID
     // changes per build, which scopes the cache to a deployment.
+    // Remember where the reader was last open so the Dashboard can offer to
+    // resume here. Recorded on open rather than on play: opening a section is
+    // already the intent to read it.
+    saveLastRead({ level, chapter: ch, section: sec, at: new Date().toISOString() })
+
     fetch(audioUrl(`/audio/passages/manifest.json?v=${BUILD_ID}`))
       .then(r => r.json())
       .then((m: PassageManifest) => {

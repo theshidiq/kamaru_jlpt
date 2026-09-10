@@ -19,6 +19,7 @@ const strings = {
     // Actions
     studyNow: 'Study Now',
     readNow: 'Read',
+    continueReading: 'Continue reading',
     continue: 'Continue',
     cancel: 'Cancel',
     back: '← Back',
@@ -189,6 +190,7 @@ const strings = {
     // Actions
     studyNow: 'Mulai Belajar',
     readNow: 'Baca',
+    continueReading: 'Lanjutkan bacaan',
     continue: 'Lanjutkan',
     cancel: 'Batal',
     back: '← Kembali',

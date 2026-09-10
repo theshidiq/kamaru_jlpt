@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
@@ -8,6 +9,7 @@ import { t } from '@/lib/i18n'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine, RiVolumeUpLine } from '@remixicon/react'
 import { PASSAGE_BANK } from '@/lib/passages'
+import { loadLastRead } from '@/lib/storage'
 
 export function Dashboard() {
   const navigate = useNavigate()
@@ -24,6 +26,22 @@ export function Dashboard() {
   const hasPassage = PASSAGE_BANK[level].some(
     p => p.chapter === todayChapter && p.section === todaySection,
   )
+
+  // Where the reader was last open, if it is still a real passage at this
+  // level. Shown as a separate "continue" row rather than repointing the Read
+  // button: today's section is the plan, and silently sending you somewhere
+  // else would hide that you had drifted off it.
+  const lastRead = useMemo(() => {
+    const lr = loadLastRead()
+    if (!lr || lr.level !== level) return null
+    const exists = PASSAGE_BANK[level].some(
+      p => p.chapter === lr.chapter && p.section === lr.section,
+    )
+    if (!exists) return null
+    // Already offered by the Read button when it is the same section.
+    if (lr.chapter === todayChapter && lr.section === todaySection) return null
+    return lr
+  }, [level, todayChapter, todaySection])
   const TOTAL_SECTIONS = LEVEL_CONFIG[level].totalSections
   const daysUntilExam = user?.target_exam_date
     ? Math.max(0, Math.ceil((new Date(user.target_exam_date).getTime() - Date.now()) / 86400000))
@@ -103,6 +121,33 @@ export function Dashboard() {
             </div>
           </div>
         </div>
+
+        {/* Continue reading — only when the reader was last open somewhere
+            other than today's section, so it adds a route rather than
+            duplicating the Read button above. */}
+        {lastRead && (
+          <button
+            onClick={() => navigate(`/read/${lastRead.chapter}/${lastRead.section}`)}
+            className="md:col-span-2 flex items-center justify-between gap-3 w-full text-left bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
+          >
+            <span className="flex items-center gap-3 min-w-0">
+              <span className="shrink-0 h-10 w-10 rounded-full bg-indigo-50 dark:bg-indigo-900/40 flex items-center justify-center text-indigo-600 dark:text-indigo-300">
+                <RiVolumeUpLine size={20} />
+              </span>
+              <span className="min-w-0">
+                <span className="block text-sm font-semibold text-gray-900 dark:text-white">
+                  {t('continueReading', lang)}
+                </span>
+                <span className="block text-xs text-gray-500 dark:text-gray-400 truncate">
+                  {t('chapter', lang)} {lastRead.chapter} · {t('section', lang)} {lastRead.section}
+                </span>
+              </span>
+            </span>
+            <span className="shrink-0 text-indigo-600 dark:text-indigo-400 text-sm font-medium">
+              {t('continue', lang)} →
+            </span>
+          </button>
+        )}
 
         {/* Mastery stats */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700">
