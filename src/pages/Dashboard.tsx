@@ -4,6 +4,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
 import { useProgress } from '@/hooks/useProgress'
+import { usePlanSection } from '@/hooks/usePlanSection'
 import { LEVEL_CONFIG, getSectionTitleLang, getChapterTitleLang, DEFAULT_LEVEL } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
@@ -13,9 +14,10 @@ import { loadLastRead } from '@/lib/storage'
 
 export function Dashboard() {
   const navigate = useNavigate()
-  const { user, wordStatuses, todayChapter, todaySection, todayDaysElapsed, vocab, preferredLanguage: lang } = useAppStore()
+  const { user, wordStatuses, vocab, preferredLanguage: lang } = useAppStore()
   const { isLoading } = useVocab()
   const progress = useProgress()
+  const { chapter: planChapter, section: planSection, index: planIndex } = usePlanSection()
 
   const level = user?.jlpt_level ?? DEFAULT_LEVEL
 
@@ -24,7 +26,7 @@ export function Dashboard() {
   // as N2 (all 60) and N3 (25 of 60) — without this the button would lead to
   // the "no passage yet" page most days on N3.
   const hasPassage = PASSAGE_BANK[level].some(
-    p => p.chapter === todayChapter && p.section === todaySection,
+    p => p.chapter === planChapter && p.section === planSection,
   )
 
   // Where the reader was last open, if it is still a real passage at this
@@ -43,12 +45,12 @@ export function Dashboard() {
   // button that always jumped back to today's section made resuming
   // impossible from here. The label names the target so it is never a
   // surprise which section opens.
-  const readTarget = lastRead ?? (hasPassage ? { chapter: todayChapter, section: todaySection } : null)
+  const readTarget = lastRead ?? (hasPassage ? { chapter: planChapter, section: planSection } : null)
 
   // Offer the plan's section separately whenever Read is pointing elsewhere.
   const todaysPassageRow =
     hasPassage && readTarget !== null &&
-    !(readTarget.chapter === todayChapter && readTarget.section === todaySection)
+    !(readTarget.chapter === planChapter && readTarget.section === planSection)
   const TOTAL_SECTIONS = LEVEL_CONFIG[level].totalSections
   const daysUntilExam = user?.target_exam_date
     ? Math.max(0, Math.ceil((new Date(user.target_exam_date).getTime() - Date.now()) / 86400000))
@@ -66,7 +68,7 @@ export function Dashboard() {
     { name: t('new', lang), value: newCount, color: '#e5e7eb' },
   ]
 
-  const todayWord = vocab.find(v => v.chapter === todayChapter && v.section === todaySection)
+  const todayWord = vocab.find(v => v.chapter === planChapter && v.section === planSection)
   const todaySectionTitle = todayWord ? getSectionTitleLang(todayWord, lang) : ''
   const todayChapterTitle = todayWord ? getChapterTitleLang(todayWord, lang) : ''
 
@@ -84,13 +86,13 @@ export function Dashboard() {
         {/* Today's Study Card — full-width on mobile */}
         <div className="md:col-span-2 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-5 md:p-6 text-white">
           <div className="flex items-center gap-2 mb-1 flex-wrap">
-            <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">Day {todayDaysElapsed + 1} / {TOTAL_SECTIONS}</span>
+            <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">{t('section', lang)} {planIndex + 1} / {TOTAL_SECTIONS}</span>
             {daysUntilExam !== null && (
               <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">{daysUntilExam} {lang === 'id' ? 'hari lagi' : 'days to exam'}</span>
             )}
           </div>
           <h2 className="text-lg md:text-xl font-bold mt-2">
-            {t('chapter', lang)} {todayChapter} · {t('section', lang)} {todaySection}
+            {t('chapter', lang)} {planChapter} · {t('section', lang)} {planSection}
           </h2>
           {todaySectionTitle && (
             <p className="text-sm text-white/80 mt-0.5">{todayChapterTitle} · {todaySectionTitle}</p>
@@ -100,7 +102,7 @@ export function Dashboard() {
           <div className="w-full bg-white/20 rounded-full h-2 mb-4">
             <div
               className="bg-white rounded-full h-2 transition-all"
-              style={{ width: `${Math.round((todayDaysElapsed / TOTAL_SECTIONS) * 100)}%` }}
+              style={{ width: `${Math.round((planIndex / TOTAL_SECTIONS) * 100)}%` }}
             />
           </div>
 
@@ -140,7 +142,7 @@ export function Dashboard() {
             duplicating the button above. */}
         {todaysPassageRow && (
           <button
-            onClick={() => navigate(`/read/${todayChapter}/${todaySection}`)}
+            onClick={() => navigate(`/read/${planChapter}/${planSection}`)}
             className="md:col-span-2 flex items-center justify-between gap-3 w-full text-left bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
           >
             <span className="flex items-center gap-3 min-w-0">
@@ -152,7 +154,7 @@ export function Dashboard() {
                   {t('todaysPassage', lang)}
                 </span>
                 <span className="block text-xs text-gray-500 dark:text-gray-400 truncate">
-                  {t('chapter', lang)} {todayChapter} · {t('section', lang)} {todaySection}
+                  {t('chapter', lang)} {planChapter} · {t('section', lang)} {planSection}
                 </span>
               </span>
             </span>

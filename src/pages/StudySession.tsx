@@ -14,6 +14,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import type { QuizQuestion, QuizResult } from '@/types/quiz'
 import type { WordStatus } from '@/types/user'
 import { RiCheckDoubleLine } from '@remixicon/react'
+import { usePlanSection } from '@/hooks/usePlanSection'
 
 type Stage = 'intro' | 'flashcards' | 'mini-quiz' | 'quiz-results' | 'self-rating' | 'complete'
 
@@ -26,7 +27,8 @@ const STATUS_COLORS: Record<WordStatus, string> = {
 export function StudySession() {
   const navigate = useNavigate()
   const { vocab } = useVocab()
-  const { user, todayChapter, todaySection, wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
+  const { user, wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
+  const { chapter: todayChapter, section: todaySection } = usePlanSection()
 
   const [stage, setStage] = useState<Stage>('intro')
   const [cardIndex, setCardIndex] = useState(0)

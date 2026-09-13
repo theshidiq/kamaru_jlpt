@@ -6,11 +6,13 @@ import { useAppStore } from '@/store/useAppStore'
 import { getChapterTitleLang, getSectionTitleLang } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
 import { RiArrowRightSLine } from '@remixicon/react'
+import { usePlanSection } from '@/hooks/usePlanSection'
 
 export function FlashcardPicker() {
   const navigate = useNavigate()
   const { chapters, isLoading } = useVocab()
-  const { preferredLanguage: lang, todayChapter, todaySection } = useAppStore()
+  const { preferredLanguage: lang } = useAppStore()
+  const { chapter: todayChapter, section: todaySection } = usePlanSection()
   const [selectedChapter, setSelectedChapter] = useState<number>(todayChapter)
 
   const chapterData = chapters.find(c => c.chapter === selectedChapter)
