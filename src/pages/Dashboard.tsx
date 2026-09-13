@@ -28,20 +28,27 @@ export function Dashboard() {
   )
 
   // Where the reader was last open, if it is still a real passage at this
-  // level. Shown as a separate "continue" row rather than repointing the Read
-  // button: today's section is the plan, and silently sending you somewhere
-  // else would hide that you had drifted off it.
+  // level.
   const lastRead = useMemo(() => {
     const lr = loadLastRead()
     if (!lr || lr.level !== level) return null
     const exists = PASSAGE_BANK[level].some(
       p => p.chapter === lr.chapter && p.section === lr.section,
     )
-    if (!exists) return null
-    // Already offered by the Read button when it is the same section.
-    if (lr.chapter === todayChapter && lr.section === todaySection) return null
-    return lr
-  }, [level, todayChapter, todaySection])
+    return exists ? lr : null
+  }, [level])
+
+  // Read resumes where you left off, falling back to today's section on a
+  // first run. Reading rarely stays in step with the date-based plan, and a
+  // button that always jumped back to today's section made resuming
+  // impossible from here. The label names the target so it is never a
+  // surprise which section opens.
+  const readTarget = lastRead ?? (hasPassage ? { chapter: todayChapter, section: todaySection } : null)
+
+  // Offer the plan's section separately whenever Read is pointing elsewhere.
+  const todaysPassageRow =
+    hasPassage && readTarget !== null &&
+    !(readTarget.chapter === todayChapter && readTarget.section === todaySection)
   const TOTAL_SECTIONS = LEVEL_CONFIG[level].totalSections
   const daysUntilExam = user?.target_exam_date
     ? Math.max(0, Math.ceil((new Date(user.target_exam_date).getTime() - Date.now()) / 86400000))
@@ -103,13 +110,18 @@ export function Dashboard() {
               <p className="text-2xl font-bold flex items-center gap-1.5">{progress.streak} days <RiFireLine size={20} className="text-orange-400" /></p>
             </div>
             <div className="flex items-center gap-2">
-              {hasPassage && (
+              {readTarget && (
                 <button
-                  onClick={() => navigate(`/read/${todayChapter}/${todaySection}`)}
-                  className="flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-3 rounded-xl transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
+                  onClick={() => navigate(`/read/${readTarget.chapter}/${readTarget.section}`)}
+                  className="flex flex-col items-center gap-0.5 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-xl transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
                 >
-                  <RiVolumeUpLine size={18} />
-                  {t('readNow', lang)}
+                  <span className="flex items-center gap-1.5">
+                    <RiVolumeUpLine size={18} />
+                    {t('readNow', lang)}
+                  </span>
+                  <span className="text-[11px] font-normal text-white/75 leading-none">
+                    {readTarget.chapter}·{readTarget.section}
+                  </span>
                 </button>
               )}
               <button
@@ -122,12 +134,13 @@ export function Dashboard() {
           </div>
         </div>
 
-        {/* Continue reading — only when the reader was last open somewhere
-            other than today's section, so it adds a route rather than
-            duplicating the Read button above. */}
-        {lastRead && (
+        {/* Today's passage — the complement of the Read button now that it
+            resumes. Shown only when the plan's section differs from where
+            reading left off, so the date-based route stays reachable without
+            duplicating the button above. */}
+        {todaysPassageRow && (
           <button
-            onClick={() => navigate(`/read/${lastRead.chapter}/${lastRead.section}`)}
+            onClick={() => navigate(`/read/${todayChapter}/${todaySection}`)}
             className="md:col-span-2 flex items-center justify-between gap-3 w-full text-left bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
           >
             <span className="flex items-center gap-3 min-w-0">
@@ -136,10 +149,10 @@ export function Dashboard() {
               </span>
               <span className="min-w-0">
                 <span className="block text-sm font-semibold text-gray-900 dark:text-white">
-                  {t('continueReading', lang)}
+                  {t('todaysPassage', lang)}
                 </span>
                 <span className="block text-xs text-gray-500 dark:text-gray-400 truncate">
-                  {t('chapter', lang)} {lastRead.chapter} · {t('section', lang)} {lastRead.section}
+                  {t('chapter', lang)} {todayChapter} · {t('section', lang)} {todaySection}
                 </span>
               </span>
             </span>
