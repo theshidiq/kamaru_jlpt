@@ -18,7 +18,8 @@ export interface PassageSentence {
 
 /**
  * Business text formats (BJT). Absent means a plain narrative passage — the
- * JLPT ones, which also have audio. Formatted passages are text-only.
+ * JLPT ones. Both kinds can have audio: BJT texts are voiced line by line by
+ * scripts/generate-bjt-passages.ts, one voice per speaker.
  */
 export type PassageFormat = 'email' | 'chat' | 'phone' | 'meeting' | 'memo' | 'notice' | 'letter'
 

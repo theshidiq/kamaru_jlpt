@@ -8,6 +8,9 @@ interface Props {
   renderTokens: (sentence: PassageSentence, index: number) => ReactNode
   showEnglish: boolean
   lang: 'id' | 'en'
+  /** With audio: tapping a line plays from it, and the line being spoken is lit. */
+  onSentence?: (index: number) => void
+  activeSentence?: number
 }
 
 const LABEL: Record<PassageFormat, { en: string; id: string; icon: string }> = {
@@ -26,8 +29,13 @@ const LABEL: Record<PassageFormat, { en: string; id: string; icon: string }> = {
  * talking; chat shows bubbles. Every line still renders through the reader's
  * own token renderer, so word lookup works the same in all of them.
  */
-export function FormattedPassage({ format, sentences, renderTokens, showEnglish, lang }: Props) {
+export function FormattedPassage({ format, sentences, renderTokens, showEnglish, lang, onSentence, activeSentence }: Props) {
   const label = LABEL[format]
+  // Tap-to-play and the spoken-line highlight, for whichever element holds a line.
+  const line = (i: number, lit = 'bg-indigo-50/70 dark:bg-indigo-900/20') => ({
+    onClick: onSentence ? () => onSentence(i) : undefined,
+    className: `${onSentence ? 'cursor-pointer' : ''} ${activeSentence === i ? lit : ''} rounded-lg transition-colors`,
+  })
   const english = (s: PassageSentence, cls = '') =>
     showEnglish && <p className={`text-sm text-gray-500 dark:text-gray-400 mt-1 ${cls}`}>{s.en}</p>
 
@@ -52,7 +60,8 @@ export function FormattedPassage({ format, sentences, renderTokens, showEnglish,
                   <span className="text-[11px] text-gray-400 mb-1 px-1">{s.speaker}</span>
                 )}
                 <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-2 ${
+                  onClick={line(i).onClick}
+                  className={`max-w-[85%] rounded-2xl px-4 py-2 ${onSentence ? 'cursor-pointer' : ''} ${activeSentence === i ? 'ring-2 ring-amber-400' : ''} ${
                     mine
                       ? 'bg-indigo-600 text-white rounded-br-sm'
                       : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 rounded-bl-sm'
@@ -83,7 +92,7 @@ export function FormattedPassage({ format, sentences, renderTokens, showEnglish,
         {chip}
         <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 md:p-6 shadow-sm space-y-4">
           {sentences.map((s, i) => (
-            <div key={i} className="flex gap-3">
+            <div key={i} onClick={line(i).onClick} className={`flex gap-3 -mx-2 px-2 ${line(i).className}`}>
               <span className={`shrink-0 w-16 text-xs font-bold pt-2 font-jp ${tone[speakers.indexOf(s.speaker ?? '') % tone.length]}`}>
                 {sentences[i - 1]?.speaker !== s.speaker ? s.speaker : ''}
               </span>
@@ -111,7 +120,7 @@ export function FormattedPassage({ format, sentences, renderTokens, showEnglish,
         {header.length > 0 && (
           <div className="bg-gray-50 dark:bg-gray-900/40 border-b border-gray-200 dark:border-gray-700 px-5 py-3 space-y-1">
             {header.map(({ s, i }) => (
-              <div key={i}>
+              <div key={i} {...line(i)}>
                 <p className="font-jp text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{renderTokens(s, i)}</p>
                 {english(s, 'text-xs mt-0')}
               </div>
@@ -120,7 +129,7 @@ export function FormattedPassage({ format, sentences, renderTokens, showEnglish,
         )}
         <div className="px-5 md:px-7 py-5 space-y-3">
           {body.map(({ s, i }) => (
-            <div key={i}>
+            <div key={i} onClick={line(i).onClick} className={`-mx-2 px-2 py-0.5 ${line(i).className}`}>
               <p className="font-jp text-base md:text-lg leading-loose text-gray-900 dark:text-gray-100">{renderTokens(s, i)}</p>
               {english(s)}
             </div>
@@ -128,7 +137,7 @@ export function FormattedPassage({ format, sentences, renderTokens, showEnglish,
           {sign.length > 0 && (
             <div className="pt-3 mt-2 border-t border-dashed border-gray-200 dark:border-gray-700 text-right space-y-0.5">
               {sign.map(({ s, i }) => (
-                <div key={i}>
+                <div key={i} {...line(i)}>
                   <p className="font-jp text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{renderTokens(s, i)}</p>
                   {english(s, 'text-xs mt-0')}
                 </div>
