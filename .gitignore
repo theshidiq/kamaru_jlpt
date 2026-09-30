@@ -28,3 +28,6 @@ dist-ssr
 # Audio is served from R2 (see scripts/sync-audio-r2.sh); recover a local
 # copy with: ./scripts/pull-audio-r2.sh, or from git history at ee912f5.
 public/audio/
+
+# Video project (video/): renders are rebuilt with `npm run render`
+video/out/
