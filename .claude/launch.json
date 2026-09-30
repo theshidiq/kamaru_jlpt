@@ -3,6 +3,8 @@
   "configurations": [
     {
       "name": "kamaru-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
       "url": "http://localhost:1997",
       "port": 1997
     }

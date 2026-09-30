@@ -29,6 +29,14 @@ episode and a portrait short. It is separate from the app (own
    - `npx remotion render src/index.ts <id> out/<id>.mp4`
    - `npx remotion render src/index.ts <id>-short out/<id>-short.mp4`
 
+5. Put it in the app: `npx tsx scripts/export-app.ts <id>` stitches the clips
+   into one MP3 and writes the lesson timeline to
+   `../public/audio/lessons/<id>.{mp3,json}`. Upload both to R2:
+   - `npx wrangler r2 object put kamaru-audio/audio/lessons/<file> --file ../public/audio/lessons/<file> --remote`
+
+   Then add the section to `LESSONS` in `src/lib/lessons.ts`. The
+   `/lesson/:chapter/:section` page plays it.
+
 Pacing (gaps, quiz thinking time) lives in `src/timeline.ts`; scenes are
 code-drawn SVG in `src/art/` (no AI images, per the app's convention).
 

@@ -68,6 +68,7 @@ src/
 | `/progress` | Progress | Charts (recharts) |
 | `/leaderboard` | Leaderboard | Friends ranking |
 | `/flashcard` | FlashcardPicker | Section flashcard picker |
+| `/lesson/:chapter/:section` | LessonPlayer | Audio lesson (episode built in `video/`) |
 
 ---
 

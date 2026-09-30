@@ -8,9 +8,10 @@ import { usePlanSection } from '@/hooks/usePlanSection'
 import { LEVEL_CONFIG, getSectionTitleLang, getChapterTitleLang, DEFAULT_LEVEL } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
-import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine, RiVolumeUpLine } from '@remixicon/react'
+import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine, RiVolumeUpLine, RiHeadphoneLine } from '@remixicon/react'
 import { PASSAGE_BANK } from '@/lib/passages'
 import { loadLastRead } from '@/lib/storage'
+import { lessonFor } from '@/lib/lessons'
 
 export function Dashboard() {
   const navigate = useNavigate()
@@ -51,6 +52,7 @@ export function Dashboard() {
   const todaysPassageRow =
     hasPassage && readTarget !== null &&
     !(readTarget.chapter === planChapter && readTarget.section === planSection)
+  const planLesson = lessonFor(level, planChapter, planSection)
   const TOTAL_SECTIONS = LEVEL_CONFIG[level].totalSections
   const daysUntilExam = user?.target_exam_date
     ? Math.max(0, Math.ceil((new Date(user.target_exam_date).getTime() - Date.now()) / 86400000))
@@ -195,6 +197,28 @@ export function Dashboard() {
             </>
           )}
         </div>
+        {/* The plan section's audio lesson, when it has one. After the mastery
+            card, so that card keeps its place beside the plan card. */}
+        {planLesson && (
+          <button
+            onClick={() => navigate(`/lesson/${planChapter}/${planSection}`)}
+            className="md:col-span-3 flex items-center justify-between gap-3 w-full text-left bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
+          >
+            <span className="flex items-center gap-3 min-w-0">
+              <span className="shrink-0 h-10 w-10 rounded-full bg-indigo-50 dark:bg-indigo-900/40 flex items-center justify-center text-indigo-600 dark:text-indigo-300">
+                <RiHeadphoneLine size={20} />
+              </span>
+              <span className="min-w-0">
+                <span className="block text-sm font-semibold text-gray-900 dark:text-white">{t('lesson', lang)}</span>
+                <span className="block text-xs text-gray-500 dark:text-gray-400 truncate">
+                  {t('chapter', lang)} {planChapter} · {t('section', lang)} {planSection} · {t('lessonMinutes', lang, { n: planLesson.minutes })}
+                </span>
+              </span>
+            </span>
+            <span className="shrink-0 text-indigo-600 dark:text-indigo-400 text-sm font-medium">▶</span>
+          </button>
+        )}
+
       </div>
 
       {/* Recent quiz attempts */}

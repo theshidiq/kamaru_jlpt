@@ -3,9 +3,11 @@ import { useParams, Link, useSearchParams, useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
 import { useAppStore } from '@/store/useAppStore'
-import { getSection, buildChapterMap, getMeaning } from '@/lib/vocab'
+import { getSection, buildChapterMap, getMeaning, DEFAULT_LEVEL } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
-import { PASSAGES_N2 } from '@/lib/passages_n2'
+import { PASSAGE_BANK } from '@/lib/passages'
+import { lessonFor } from '@/lib/lessons'
+import { RiHeadphoneLine } from '@remixicon/react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
 
@@ -92,7 +94,8 @@ export function VocabSection() {
   const ch = Number(chapter)
   const sec = Number(section)
   const { vocab, isLoading } = useVocab()
-  const { wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
+  const { user, wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
+  const level = user?.jlpt_level ?? DEFAULT_LEVEL
   const [searchParams] = useSearchParams()
   const [view, setView] = useState<'list' | 'flashcard'>(
     searchParams.get('view') === 'flashcard' ? 'flashcard' : 'list'
@@ -124,7 +127,10 @@ export function VocabSection() {
   }
 
   const words = getSection(vocab, ch, sec)
-  const hasPassage = PASSAGES_N2.some(p => p.chapter === ch && p.section === sec)
+  // The current level's bank: checking N2 alone showed a dead Read button on
+  // BJT and N3 sections that N2 happens to have and they don't.
+  const hasPassage = PASSAGE_BANK[level].some(p => p.chapter === ch && p.section === sec)
+  const lesson = lessonFor(level, ch, sec)
   const shuffledWords = useMemo(() => [...words].sort(() => Math.random() - 0.5), [ch, sec, words.length])
 
   if (isLoading) return <PageWrapper><div className="text-center py-10 text-gray-400">Loading...</div></PageWrapper>
@@ -166,7 +172,7 @@ export function VocabSection() {
       </div>
 
       {/* View toggle */}
-      <div className="flex gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-4">
         {(['list', 'flashcard'] as const).map(v => (
           <button
             key={v}
@@ -186,6 +192,15 @@ export function VocabSection() {
             className="px-5 py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 hover:bg-rose-100 dark:hover:bg-rose-900/30"
           >
             {t('readTitle', lang)}
+          </button>
+        )}
+        {lesson && (
+          <button
+            onClick={() => navigate(`/lesson/${ch}/${sec}`)}
+            className="flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] bg-indigo-50 dark:bg-indigo-900/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/30"
+          >
+            <RiHeadphoneLine size={16} />
+            {t('lesson', lang)}
           </button>
         )}
       </div>
