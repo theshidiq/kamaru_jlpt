@@ -164,6 +164,7 @@ export interface NewDailySession {
   section: number
   self_rating: string | null
   completed_at: string
+  level?: JlptLevel
 }
 
 export interface ProgressStore {
@@ -211,14 +212,18 @@ export const localStore: ProgressStore = {
 
   async upsertDailySession(_userId, session) {
     const all = read<DailySession[]>(LS_KEYS.dailySessions, [])
-    // One session per day — replace same-date entry (mirrors the DB's
-    // onConflict: 'user_id,session_date').
-    const rest = all.filter(s => s.session_date !== session.session_date)
+    // One session per day per level. Keyed on the level too so that studying
+    // BJT and N2 on the same day keeps both, since the plan for each level is
+    // derived from its own completed sections.
+    const rest = all.filter(
+      s => !(s.session_date === session.session_date && (s.level ?? null) === (session.level ?? null)),
+    )
     rest.unshift({
       session_date: session.session_date,
       self_rating: session.self_rating,
       chapter: session.chapter,
       section: session.section,
+      ...(session.level ? { level: session.level } : {}),
     })
     write(LS_KEYS.dailySessions, rest)
   },
@@ -301,8 +306,17 @@ export const supabaseStore: ProgressStore = {
 
   async upsertDailySession(userId, session) {
     await withFallback(
+      // daily_sessions has no level column, so it is left out rather than
+      // sent to a table that would reject the whole row.
       () => supabase.from('daily_sessions').upsert(
-        { user_id: userId, ...session },
+        {
+          user_id: userId,
+          session_date: session.session_date,
+          chapter: session.chapter,
+          section: session.section,
+          self_rating: session.self_rating,
+          completed_at: session.completed_at,
+        },
         { onConflict: 'user_id,session_date' },
       ),
       () => localStore.upsertDailySession(userId, session),

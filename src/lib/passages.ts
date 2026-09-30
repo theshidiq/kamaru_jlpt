@@ -13,4 +13,5 @@ export const PASSAGE_BANK: Record<JlptLevel, SectionPassage[]> = {
   N4: [],
   N3: PASSAGES_N3,
   N2: PASSAGES_N2,
+  BJT: [],
 }

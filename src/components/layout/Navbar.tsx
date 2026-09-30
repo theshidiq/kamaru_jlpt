@@ -7,6 +7,7 @@ import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { isGuest, clearLocalProfile, exportProgress, importProgress } from '@/lib/storage'
 import toast from 'react-hot-toast'
+import { levelLabel } from '@/types/user'
 
 export function Navbar() {
   const { user, darkMode, toggleDarkMode, resetWordStatuses, preferredLanguage, setLanguage, setUser } = useAppStore()
@@ -178,7 +179,7 @@ export function Navbar() {
                   <div className="px-4 py-3 border-b border-gray-100 dark:border-gray-700">
                     <p className="text-sm font-semibold text-gray-900 dark:text-white truncate">{user.display_name}</p>
                     <span className="inline-block mt-0.5 text-xs font-medium px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300">
-                      JLPT {user.jlpt_level ?? DEFAULT_LEVEL}
+                      {levelLabel(user.jlpt_level ?? DEFAULT_LEVEL)}
                     </span>
                   </div>
 

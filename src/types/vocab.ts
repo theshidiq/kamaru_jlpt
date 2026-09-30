@@ -14,6 +14,8 @@ export interface VocabWord {
   chapter_title_en?: string
   section_title_en?: string
   furigana?: string   // hiragana reading from dataset
+  /** BJT only: the JLPT list this word was already studied in, shown as a review badge. */
+  alsoIn?: 'N2' | 'N3'
   example?: {
     jp: string
     en: string

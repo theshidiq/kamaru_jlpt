@@ -4,7 +4,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
-import { getSection, getMeaning } from '@/lib/vocab'
+import { getSection, getMeaning, DEFAULT_LEVEL } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
 import { generateVocabQuiz } from '@/lib/quiz'
 import { QuizRunner } from '@/components/quiz/QuizRunner'
@@ -58,6 +58,7 @@ export function StudySession() {
           section: todaySection,
           self_rating: selfRating,
           completed_at: new Date().toISOString(),
+          level: user.jlpt_level ?? DEFAULT_LEVEL,
         },
       )
       toast.success(lang === 'id' ? 'Sesi selesai! Hebat 🎉' : 'Session complete! Well done 🎉')

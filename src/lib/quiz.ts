@@ -9,12 +9,15 @@ const GRAMMAR_BANK: Record<JlptLevel, typeof GRAMMAR_QUESTIONS> = {
   N4: GRAMMAR_QUESTIONS,
   N3: GRAMMAR_QUESTIONS_N3,
   N2: GRAMMAR_QUESTIONS_N2,
+  // No BJT grammar bank yet; its business Japanese assumes about N2.
+  BJT: GRAMMAR_QUESTIONS_N2,
 }
 
 const READING_BANK: Record<JlptLevel, typeof READING_PASSAGES> = {
   N4: READING_PASSAGES,
   N3: READING_PASSAGES_N3,
   N2: READING_PASSAGES_N2,
+  BJT: READING_PASSAGES_N2,
 }
 
 let questionCounter = 0

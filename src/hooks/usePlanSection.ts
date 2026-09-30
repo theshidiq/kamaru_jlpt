@@ -24,7 +24,11 @@ export function usePlanSection() {
 
   return useMemo(() => {
     const { sectionsPerChapter, totalSections } = LEVEL_CONFIG[level]
-    const furthest = progress.sessions.reduce((max, ses) => {
+    // Only this level's sessions. Sessions saved before levels were recorded
+    // have no level; they came from JLPT study, so they count for the JLPT
+    // levels but not for BJT, which starts from its first section.
+    const own = progress.sessions.filter(s => s.level ? s.level === level : level !== 'BJT')
+    const furthest = own.reduce((max, ses) => {
       const idx = (ses.chapter - 1) * sectionsPerChapter + (ses.section - 1)
       return idx > max ? idx : max
     }, -1)

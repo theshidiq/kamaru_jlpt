@@ -12,6 +12,9 @@ export const LEVEL_CONFIG: Record<
   N4: { totalSections: 42, chapters: 7, sectionsPerChapter: 6, file: '/jtest_n4_vocab.json', words: 894 },
   N3: { totalSections: 60, chapters: 12, sectionsPerChapter: 5, file: '/jtest_n3_vocab.json', words: 1390 },
   N2: { totalSections: 60, chapters: 12, sectionsPerChapter: 5, file: '/jtest_n2_vocab.json', words: 1546 },
+  // 25-word sections ordered by how often each word appears in the official
+  // BJT guide; the last chapter is short, so 63 sections rather than 65.
+  BJT: { totalSections: 63, chapters: 13, sectionsPerChapter: 5, file: '/bjt_vocab.json', words: 1573 },
 }
 
 export function getTodaySectionForLevel(level: JlptLevel, startDate?: string | null) {
@@ -63,6 +66,7 @@ export async function loadVocab(level: JlptLevel = DEFAULT_LEVEL): Promise<Vocab
     chapter_title_en?: string
     section_title_en?: string
     furigana?: string
+    alsoIn?: 'N2' | 'N3'
     example?: { jp: string; en: string; seg: { t: string; r?: string }[] }
   }> = await res.json()
 

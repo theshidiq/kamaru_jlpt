@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '@/store/useAppStore'
 import { LEVEL_CONFIG, DEFAULT_LEVEL } from '@/lib/vocab'
-import { JLPT_LEVELS, type JlptLevel } from '@/types/user'
+import { JLPT_LEVELS, levelLabel, type JlptLevel } from '@/types/user'
 import { t } from '@/lib/i18n'
 
 const LEVEL_STYLE: Record<
@@ -27,6 +27,12 @@ const LEVEL_STYLE: Record<
     bg: 'bg-indigo-50 dark:bg-indigo-900/20',
     border: 'border-indigo-300 dark:border-indigo-700',
   },
+  BJT: {
+    sub: { id: 'Bahasa Jepang Bisnis', en: 'Business Japanese' },
+    color: 'text-rose-600 dark:text-rose-400',
+    bg: 'bg-rose-50 dark:bg-rose-900/20',
+    border: 'border-rose-300 dark:border-rose-700',
+  },
 }
 
 export function LevelSelect() {
@@ -44,7 +50,7 @@ export function LevelSelect() {
 
   const levels = JLPT_LEVELS.map(level => ({
     level,
-    label: `JLPT ${level}`,
+    label: levelLabel(level),
     sub: LEVEL_STYLE[level].sub[lang],
     color: LEVEL_STYLE[level].color,
     bg: LEVEL_STYLE[level].bg,

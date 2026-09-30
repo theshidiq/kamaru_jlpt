@@ -1,3 +1,4 @@
+import type { JlptLevel } from '@/types/user'
 import { useState, useEffect } from 'react'
 import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
@@ -7,6 +8,8 @@ export interface DailySession {
   self_rating: string | null
   chapter: number
   section: number
+  /** Level the section belongs to. Absent on sessions saved before BJT existed. */
+  level?: JlptLevel
 }
 
 export interface QuizAttempt {

@@ -221,8 +221,10 @@ export function VocabSection() {
             {words.map((w, i) => {
               const status = (wordStatuses[w.wordClean] ?? 'new') as WordStatus
               const cardRevealed = revealedCards[w.wordClean] !== false // default true
-              const exMeaning = getMeaning(w, lang)
-              const example = w.example ?? { jp: `${w.wordClean}を使います。`, en: `We use "${exMeaning}".`, id: `Kami menggunakan "${exMeaning}".`, seg: [{ t: w.wordClean }, { t: 'を使います。' }] }
+              // No placeholder when a word has no example: the old
+              // "{word}を使います。" filler is ungrammatical for most words that
+              // are not nouns (恐れ入るを使います), so show nothing instead.
+              const example = w.example
               // furigana and meaning visible only when card is revealed AND global toggle is on
               const furiganaVisible = cardRevealed && showFurigana
               const meaningVisible = cardRevealed && showMeaning
@@ -250,6 +252,14 @@ export function VocabSection() {
                             {w.wordClean}
                           </span>
                           {w.isSuruVerb && <span className="ml-1.5 text-xs text-indigo-400 align-middle">する</span>}
+                          {w.alsoIn && (
+                            <span
+                              className="ml-1.5 text-[10px] font-semibold px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 align-middle"
+                              title={`Also in your ${w.alsoIn} list`}
+                            >
+                              {w.alsoIn}
+                            </span>
+                          )}
                         </div>
                       </div>
                       {/* Status badge — tap to revert one step */}
@@ -286,7 +296,7 @@ export function VocabSection() {
                   </div>
 
                   {/* Example sentence */}
-                  {showExample && (
+                  {showExample && example && (
                     <div className="border-t border-gray-100 dark:border-gray-700 px-4 py-3 space-y-1">
                       <p className="font-jp text-sm text-gray-800 dark:text-gray-200 leading-loose">
                         {furiganaVisible && example.seg
