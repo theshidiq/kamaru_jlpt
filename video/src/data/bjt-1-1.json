@@ -6,6 +6,37 @@
  "title": "敬語とビジネスの基本",
  "titleEn": "Keigo & business basics",
  "label": "BJT · 第1課",
+ "blocks": {
+  "keigo": {
+   "jp": "敬語の言葉",
+   "en": "Keigo words",
+   "scene": "office"
+  },
+  "trade": {
+   "jp": "取引の言葉",
+   "en": "Doing business",
+   "scene": "meeting"
+  },
+  "sales": {
+   "jp": "商品と販売",
+   "en": "Products & sales",
+   "scene": "store"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "申し上げる",
+  "伺う"
+ ],
+ "screen": {
+  "subject": "件名：新製品のご案内",
+  "line": "高橋様が申し上げたとおり",
+  "mark": true
+ },
  "segments": [
   {
    "type": "intro",
@@ -623,6 +654,7 @@
      ],
      "id": "01a",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 3840,
      "audio": "audio/bjt-1-1/01a.mp3"
     },
@@ -812,6 +844,7 @@
      ],
      "id": "01b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 6080,
      "audio": "audio/bjt-1-1/01b.mp3"
     },
@@ -1074,6 +1107,7 @@
      ],
      "id": "01c",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 6320,
      "audio": "audio/bjt-1-1/01c.mp3"
     },
@@ -1154,6 +1188,7 @@
      ],
      "id": "01d",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 1280,
      "audio": "audio/bjt-1-1/01d.mp3"
     },
@@ -1494,6 +1529,7 @@
      ],
      "id": "01e",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 8320,
      "audio": "audio/bjt-1-1/01e.mp3"
     },
@@ -1644,6 +1680,7 @@
      ],
      "id": "01f",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 3040,
      "audio": "audio/bjt-1-1/01f.mp3"
     },
@@ -1919,6 +1956,7 @@
      ],
      "id": "01g",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 6720,
      "audio": "audio/bjt-1-1/01g.mp3"
     },
@@ -2085,6 +2123,7 @@
      ],
      "id": "01h",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 3760,
      "audio": "audio/bjt-1-1/01h.mp3"
     }
@@ -2714,6 +2753,7 @@
      "role": "example",
      "id": "03b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2480,
      "audio": "audio/bjt-1-1/03b.mp3"
     }
@@ -3002,6 +3042,7 @@
      "role": "example",
      "id": "04b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 2880,
      "audio": "audio/bjt-1-1/04b.mp3"
     }
@@ -3297,6 +3338,7 @@
      "role": "example",
      "id": "05b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2720,
      "audio": "audio/bjt-1-1/05b.mp3"
     }
@@ -3622,6 +3664,7 @@
      "role": "example",
      "id": "06b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 3520,
      "audio": "audio/bjt-1-1/06b.mp3"
     }
@@ -3934,6 +3977,7 @@
      "role": "example",
      "id": "07b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 3040,
      "audio": "audio/bjt-1-1/07b.mp3"
     }
@@ -4214,6 +4258,7 @@
      "role": "example",
      "id": "08b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 1920,
      "audio": "audio/bjt-1-1/08b.mp3"
     }
@@ -4470,6 +4515,7 @@
      "role": "example",
      "id": "09b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2320,
      "audio": "audio/bjt-1-1/09b.mp3"
     }
@@ -4669,6 +4715,7 @@
      "role": "example",
      "id": "10b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 2320,
      "audio": "audio/bjt-1-1/10b.mp3"
     }
@@ -5018,6 +5065,7 @@
      "role": "example",
      "id": "11b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2640,
      "audio": "audio/bjt-1-1/11b.mp3"
     }
@@ -5399,6 +5447,7 @@
      "role": "example",
      "id": "12b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 3040,
      "audio": "audio/bjt-1-1/12b.mp3"
     }
@@ -5739,6 +5788,7 @@
      "role": "example",
      "id": "13b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2080,
      "audio": "audio/bjt-1-1/13b.mp3"
     }
@@ -5943,6 +5993,7 @@
      "role": "example",
      "id": "14b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 1760,
      "audio": "audio/bjt-1-1/14b.mp3"
     }
@@ -6296,6 +6347,7 @@
      "role": "example",
      "id": "16b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2800,
      "audio": "audio/bjt-1-1/16b.mp3"
     }
@@ -6624,6 +6676,7 @@
      "role": "example",
      "id": "17b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 3280,
      "audio": "audio/bjt-1-1/17b.mp3"
     }
@@ -6878,6 +6931,7 @@
      "role": "example",
      "id": "18b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2480,
      "audio": "audio/bjt-1-1/18b.mp3"
     }
@@ -7196,6 +7250,7 @@
      "role": "example",
      "id": "19b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 3040,
      "audio": "audio/bjt-1-1/19b.mp3"
     }
@@ -7567,6 +7622,7 @@
      "role": "example",
      "id": "21b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 3120,
      "audio": "audio/bjt-1-1/21b.mp3"
     }
@@ -7857,6 +7913,7 @@
      "role": "example",
      "id": "22b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 3120,
      "audio": "audio/bjt-1-1/22b.mp3"
     }
@@ -8088,6 +8145,7 @@
      "role": "example",
      "id": "23b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2960,
      "audio": "audio/bjt-1-1/23b.mp3"
     }
@@ -8303,6 +8361,7 @@
      "role": "example",
      "id": "24b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 2400,
      "audio": "audio/bjt-1-1/24b.mp3"
     }
@@ -8568,6 +8627,7 @@
      "role": "example",
      "id": "25b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2880,
      "audio": "audio/bjt-1-1/25b.mp3"
     }
@@ -8783,6 +8843,7 @@
      "role": "example",
      "id": "26b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 2480,
      "audio": "audio/bjt-1-1/26b.mp3"
     }
@@ -9014,6 +9075,7 @@
      "role": "example",
      "id": "27b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2960,
      "audio": "audio/bjt-1-1/27b.mp3"
     }
@@ -9320,6 +9382,7 @@
      "role": "example",
      "id": "28b",
      "name": "鈴木",
+     "cast": "staff",
      "durationMs": 2880,
      "audio": "audio/bjt-1-1/28b.mp3"
     }
@@ -9617,6 +9680,7 @@
      "role": "example",
      "id": "29b",
      "name": "中村部長",
+     "cast": "boss",
      "durationMs": 2400,
      "audio": "audio/bjt-1-1/29b.mp3"
     }

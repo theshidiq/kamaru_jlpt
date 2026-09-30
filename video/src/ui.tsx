@@ -6,13 +6,7 @@ import type { Line, Segment, Unit } from './timeline'
 export const FONT = "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif"
 export const INDIGO = '#1e1b4b'
 
-export const BLOCKS: Record<string, { jp: string; en: string }> = {
-  keigo: { jp: '敬語の言葉', en: 'Keigo words' },
-  trade: { jp: '取引の言葉', en: 'Doing business' },
-  sales: { jp: '商品と販売', en: 'Products & sales' },
-  quiz: { jp: '確認クイズ', en: 'Quiz' },
-}
-const SPEAKER_COLOR: Record<string, string> = { nakamura: '#60a5fa', suzuki: '#f472b6', host: '#a5b4fc' }
+const CAST_COLOR: Record<string, string> = { boss: '#60a5fa', staff: '#f472b6' }
 
 /** ms into the current <Sequence>, plus the frame on the episode clock. */
 export function useClock(seg: Segment) {
@@ -64,7 +58,7 @@ export function SpeakerChip({ line, size = 26 }: { line: Line; size?: number }) 
   if (line.sp === 'host') return null
   return (
     <span style={{ display: 'inline-block', fontSize: size, fontWeight: 700, padding: `${size * 0.2}px ${size * 0.7}px`, borderRadius: 999,
-      background: SPEAKER_COLOR[line.sp] ?? '#a5b4fc', color: INDIGO, marginBottom: size * 0.5 }}>{line.name}</span>
+      background: CAST_COLOR[line.cast ?? ''] ?? '#a5b4fc', color: INDIGO, marginBottom: size * 0.5 }}>{line.name}</span>
   )
 }
 

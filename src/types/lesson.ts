@@ -9,6 +9,7 @@ export interface LessonLine {
   id: string
   sp: string            // 'host' | a character key
   name: string          // speaker's display name
+  cast?: 'boss' | 'staff' // their role in the conversation
   role?: 'explain' | 'example' | 'ask' | 'reveal'
   en: string
   at: number
@@ -35,5 +36,6 @@ export interface Lesson {
   label: string
   durationMs: number
   audioUrl: string
+  blocks: Record<string, { jp: string; en: string }>
   segments: LessonSegment[]
 }

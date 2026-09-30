@@ -37,12 +37,14 @@ export function Person({
   x, y, h, t = 0, hair = 'short', hairColor = '#2b2118', skin = SKIN,
   top = 'shirt', topColor = '#4f6d8f', bottom = 'pants', bottomColor = '#2f3542',
   apron, tie = '#9b2f3a', armL = [8, 4], armR = [8, 4], pose = 'stand',
-  child = false, female = false, flip = false, shoes = '#2a2a2e', held, itemR,
+  child = false, female = false, flip = false, back = false, shoes = '#2a2a2e', held, itemR,
 }: {
   x: number; y: number; h: number; t?: number; hair?: Hair; hairColor?: string; skin?: string
   top?: Top; topColor?: string; bottom?: 'pants' | 'skirt' | 'shorts'; bottomColor?: string
   apron?: string; tie?: string; armL?: Arm; armR?: Arm; pose?: 'stand' | 'seiza' | 'chair'
   child?: boolean; female?: boolean; flip?: boolean; shoes?: string
+  /** seen from behind: no collar, tie or apron, and hair over the whole head */
+  back?: boolean
   /** drawn over the chest, under the arms (a newspaper the hands hold) */
   held?: ReactNode
   /** drawn at the right hand */
@@ -66,7 +68,7 @@ export function Person({
     return (
       <g>
         <path d={whole} stroke="rgba(0,0,0,0.16)" strokeWidth={7.6} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        {top === 'tshirt' && <path d={whole} stroke={skin} strokeWidth={5.4} fill="none" strokeLinecap="round" strokeLinejoin="round" />}
+        {!back && top === 'tshirt' && <path d={whole} stroke={skin} strokeWidth={5.4} fill="none" strokeLinecap="round" strokeLinejoin="round" />}
         <path d={sleeve} stroke={topColor} strokeWidth={6.4} fill="none" strokeLinecap="round" strokeLinejoin="round" />
         {top === 'suit' && <circle cx={hx - side * 0.6 * Math.sin(rad(f))} cy={hy - 0.6 * Math.cos(rad(f))} r={2.9} fill="#f4f4f4" />}
         <circle cx={hx} cy={hy} r={3.1} fill={skin} stroke="rgba(0,0,0,0.12)" strokeWidth={0.6} />
@@ -130,7 +132,7 @@ export function Person({
         <g transform={`scale(${sx} 1)`}>
           <path d={torso} fill={topColor} />
           <path d={torsoShade} fill="rgba(0,0,0,0.1)" />
-          {top === 'suit' && (
+          {!back && top === 'suit' && (
             <>
               <path d="M -3.8 -77.5 L 3.8 -77.5 L 0 -62 Z" fill="#f6f6f4" />
               {tie !== 'none' && <path d="M -1.2 -76.4 L 1.2 -76.4 L 1.9 -64.5 L 0 -61.4 L -1.9 -64.5 Z" fill={tie} />}
@@ -138,14 +140,14 @@ export function Person({
               <circle cx="0" cy="-55" r="0.9" fill={shade(topColor, 0.6)} /><circle cx="0" cy="-49.5" r="0.9" fill={shade(topColor, 0.6)} />
             </>
           )}
-          {top === 'shirt' && (
+          {!back && top === 'shirt' && (
             <>
               <path d="M -4.2 -77.6 L 0 -73.6 L -1.4 -70.6 L -5.4 -75.4 Z M 4.2 -77.6 L 0 -73.6 L 1.4 -70.6 L 5.4 -75.4 Z" fill={shade(topColor, 1.18)} />
               {[-67, -61, -55, -50].map(cy => <circle key={cy} cx="0" cy={cy} r="0.7" fill={shade(topColor, 0.6)} />)}
             </>
           )}
           {top === 'tshirt' && <path d="M -3.6 -77.6 Q 0 -73.4 3.6 -77.6 Z" fill={SKIN2} />}
-          {top === 'blouse' && <path d="M -4.4 -77.6 Q 0 -70.5 4.4 -77.6 Q 0 -75 -4.4 -77.6 Z" fill="#fbf7f0" />}
+          {!back && top === 'blouse' && <path d="M -4.4 -77.6 Q 0 -70.5 4.4 -77.6 Q 0 -75 -4.4 -77.6 Z" fill="#fbf7f0" />}
           {top === 'sweater' && (
             <>
               <path d="M -3.8 -77.6 Q 0 -74 3.8 -77.6" stroke={shade(topColor, 0.7)} strokeWidth={1.4} fill="none" />
@@ -155,7 +157,7 @@ export function Person({
           {(top === 'shirt' || top === 'tshirt') && bottom === 'pants' && !apron && pose === 'stand' && (
             <rect x="-10.8" y="-48.4" width="21.6" height="2" fill={shade(bottomColor, 0.6)} />
           )}
-          {apron && (
+          {!back && apron && (
             <>
               <path d="M -6 -79 L -5.4 -71.5 M 6 -79 L 5.4 -71.5" stroke={shade(apron, 0.8)} strokeWidth={1.1} />
               <path d="M -6 -72 L 6 -72 L 6.5 -58 L 9.6 -57 L 10 -29 Q 0 -27.5 -10 -29 L -9.6 -57 L -6.5 -58 Z" fill={apron} />
@@ -169,7 +171,9 @@ export function Person({
           <ellipse cx="7.1" cy="-88.3" rx="1.6" ry="2.4" fill={SKIN2} />
           <ellipse cx="0" cy="-89" rx="7.2" ry="8.4" fill={skin} />
           <path d="M 3 -83 Q 5.6 -85 6.6 -89 Q 6 -84 3 -83 Z" fill="rgba(0,0,0,0.06)" />
-          <path d={hairFront} fill={hairColor} />
+          {back
+            ? <ellipse cx="0" cy="-90" rx="7.7" ry="9.2" fill={hairColor} />
+            : <path d={hairFront} fill={hairColor} />}
           {hair !== 'receding' && <path d="M -4.2 -97.2 Q 0 -98.8 4.2 -97.2" stroke={hairHi} strokeWidth={1.1} fill="none" strokeLinecap="round" opacity={0.5} />}
           {hair === 'long' && <path d="M 5.4 -86 Q 9.6 -84 10 -69 L 6.8 -68.4 Q 7 -80 5.2 -84 Z M -5.4 -86 Q -9.6 -84 -10 -69 L -6.8 -68.4 Q -7 -80 -5.2 -84 Z" fill={hairColor} />}
           {hair === 'ponytail' && <rect x="6.2" y="-93" width="2.4" height="2.4" rx="1" fill="#e2574c" />}

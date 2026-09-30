@@ -1,7 +1,7 @@
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion'
-import { BLOCK_SCENE, FOCUS } from './art/scenes'
+import { DEFAULT_SCREEN, FOCUS, ScreenTextContext } from './art/scenes'
 import { lineAt, type Episode as Ep, type Segment } from './timeline'
-import { BLOCKS, Chip, FONT, INDIGO, Karaoke, Ruby, SceneFill, SpeakerChip, useClock, usePop, WordCard, WordLines } from './ui'
+import { Chip, FONT, INDIGO, Karaoke, Ruby, SceneFill, SpeakerChip, useClock, usePop, WordCard, WordLines } from './ui'
 
 const W = 1920, PIC = 810 // scene area height; subtitles get the band below it
 
@@ -49,7 +49,7 @@ function Intro({ seg, ep }: { seg: Segment; ep: Ep }) {
       <div style={{ position: 'absolute', left: 120, top: 190, opacity: pop, transform: `translateY(${(1 - pop) * 30}px)` }}>
         <div style={{ fontSize: 34, fontWeight: 700, color: '#c7d2fe', letterSpacing: 3 }}>華丸 ビジネス日本語 · {ep.label}</div>
         <div style={{ fontSize: 110, fontWeight: 900, marginTop: 14, textShadow: '0 6px 24px rgba(0,0,0,0.4)' }}>{ep.title}</div>
-        <div style={{ fontSize: 40, marginTop: 10, color: '#e0e7ff' }}>{ep.titleEn} · 25 words</div>
+        <div style={{ fontSize: 40, marginTop: 10, color: '#e0e7ff' }}>{ep.titleEn} · {ep.segments.filter(s => s.type === 'word').length} words</div>
       </div>
       <Band seg={seg} ms={ms} />
     </>
@@ -59,7 +59,7 @@ function Intro({ seg, ep }: { seg: Segment; ep: Ep }) {
 function Scene({ seg }: { seg: Segment }) {
   const { ms, global } = useClock(seg)
   const line = lineAt(seg, ms)
-  const speaking = line && ms < line.at + line.durationMs ? line.sp : undefined
+  const speaking = line && ms < line.at + line.durationMs ? line.cast : undefined
   return (
     <>
       <Picture scene={seg.scene ?? 'office'} frame={global} speaker={speaking} />
@@ -69,13 +69,13 @@ function Scene({ seg }: { seg: Segment }) {
   )
 }
 
-function Bridge({ seg, count }: { seg: Segment; count: number }) {
+function Bridge({ seg, ep, count }: { seg: Segment; ep: Ep; count: number }) {
   const { ms, global } = useClock(seg)
   const pop = usePop(4)
-  const b = BLOCKS[seg.block ?? 'keigo']
+  const b = ep.blocks[seg.block ?? '']
   return (
     <>
-      <Picture scene={BLOCK_SCENE[seg.block ?? 'keigo']} frame={global} shade={0.45} />
+      <Picture scene={b.scene} frame={global} shade={0.45} />
       <div style={{ position: 'absolute', top: 0, left: 0, width: W, height: PIC, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
         opacity: pop, transform: `scale(${0.9 + 0.1 * pop})` }}>
         <div style={{ fontSize: 120, fontWeight: 900, textShadow: '0 6px 24px rgba(0,0,0,0.4)' }}>{b.jp}</div>
@@ -86,15 +86,15 @@ function Bridge({ seg, count }: { seg: Segment; count: number }) {
   )
 }
 
-function Word({ seg }: { seg: Segment }) {
+function Word({ seg, ep }: { seg: Segment; ep: Ep }) {
   const { ms, global, fps } = useClock(seg)
   const fade = interpolate(ms, [0, (8 / fps) * 1000], [0, 1], { extrapolateRight: 'clamp' })
-  const b = BLOCKS[seg.block ?? 'keigo']
+  const b = ep.blocks[seg.block ?? '']
   return (
     <>
       {/* the block's scene, sliced into the right-hand window */}
       <div style={{ position: 'absolute', left: 1100, top: 0, width: 820, height: 1080, overflow: 'hidden' }}>
-        <SceneFill scene={BLOCK_SCENE[seg.block ?? 'keigo']} frame={global} zoom={false} focus={FOCUS[BLOCK_SCENE[seg.block ?? 'keigo']]} width={820} />
+        <SceneFill scene={b.scene} frame={global} zoom={false} focus={FOCUS[b.scene]} width={820} />
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(90deg, ${INDIGO} 0%, rgba(30,27,75,0) 22%)` }} />
       </div>
       <div style={{ position: 'absolute', left: 0, top: 0, width: 1100, height: 1080, background: `linear-gradient(160deg, ${INDIGO} 0%, #312e81 70%, #3b2a86 100%)` }} />
@@ -189,16 +189,18 @@ export const Episode = ({ ep }: { ep: Ep & { durationMs: number } }) => {
   const count = (block?: string) => block === 'quiz' ? quizzes : words.filter(w => w.block === block).length
   return (
     <AbsoluteFill style={{ background: INDIGO, fontFamily: FONT, color: 'white' }}>
+      <ScreenTextContext.Provider value={ep.screen ?? DEFAULT_SCREEN}>
       {ep.segments.map((s, i) => (
         <Sequence key={i} from={f(s.at)} durationInFrames={f(s.dur)}>
           {s.type === 'intro' && <Intro seg={s} ep={ep} />}
           {s.type === 'scene' && <Scene seg={s} />}
-          {s.type === 'bridge' && <Bridge seg={s} count={count(s.block)} />}
-          {s.type === 'word' && <Word seg={s} />}
+          {s.type === 'bridge' && <Bridge seg={s} ep={ep} count={count(s.block)} />}
+          {s.type === 'word' && <Word seg={s} ep={ep} />}
           {s.type === 'quiz' && <Quiz seg={s} of={quizzes} />}
           {s.type === 'outro' && <Outro seg={s} words={words} />}
         </Sequence>
       ))}
+      </ScreenTextContext.Provider>
       <Voices ep={ep} />
       <div style={{ position: 'absolute', left: 0, bottom: 0, height: 6, width: `${(frame / f(ep.durationMs)) * 100}%`, background: '#fcd34d' }} />
     </AbsoluteFill>

@@ -14,15 +14,9 @@ import type { WordStatus } from '@/types/user'
 const SPEEDS = [0.75, 1, 1.25] as const
 const BUILD_ID = __BUILD_ID__
 const STATUS_NEXT: Record<WordStatus, WordStatus> = { new: 'learning', learning: 'known', known: 'new' }
-const BLOCK_TITLE: Record<string, { jp: string; en: string }> = {
-  keigo: { jp: '敬語の言葉', en: 'Keigo words' },
-  trade: { jp: '取引の言葉', en: 'Doing business' },
-  sales: { jp: '商品と販売', en: 'Products & sales' },
-  quiz: { jp: '確認クイズ', en: 'Quiz' },
-}
-const SPEAKER_CHIP: Record<string, string> = {
-  nakamura: 'bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-200',
-  suzuki: 'bg-pink-100 text-pink-800 dark:bg-pink-900/40 dark:text-pink-200',
+const CAST_CHIP: Record<string, string> = {
+  boss: 'bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-200',
+  staff: 'bg-pink-100 text-pink-800 dark:bg-pink-900/40 dark:text-pink-200',
 }
 
 function clock(ms: number) {
@@ -174,7 +168,7 @@ export function LessonPlayer() {
   // component type every frame, and React would remount the whole transcript.
   function renderSegment(s: LessonSegment) {
     if (s.type === 'bridge') {
-      const b = BLOCK_TITLE[s.block ?? ''] ?? null
+      const b = lesson?.blocks?.[s.block ?? ''] ?? null
       return (
         <div className="pt-4">
           {b && <h2 className="font-jp text-lg font-bold text-gray-900 dark:text-white">{b.jp} <span className="text-sm font-normal text-gray-500 dark:text-gray-400">· {b.en}</span></h2>}
@@ -189,7 +183,7 @@ export function LessonPlayer() {
           <div className="space-y-2">
             {s.lines.map(l => (
               <div key={l.id}>
-                <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${SPEAKER_CHIP[l.sp] ?? 'bg-gray-100 text-gray-700'}`}>{l.name}</span>
+                <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${CAST_CHIP[l.cast ?? ''] ?? 'bg-gray-100 text-gray-700'}`}>{l.name}</span>
                 <LineText {...lineProps(l)} />
               </div>
             ))}

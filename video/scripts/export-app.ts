@@ -42,6 +42,7 @@ execFileSync('ffmpeg', ['-v', 'error', '-y', ...inputs, '-filter_complex', filte
 const lesson = {
   id, level: raw.level, chapter: raw.chapter, section: raw.section,
   title: ep.title, titleEn: ep.titleEn, label: ep.label, durationMs: ep.durationMs,
+  blocks: Object.fromEntries(Object.entries(ep.blocks).map(([k, b]) => [k, { jp: b.jp, en: b.en }])),
   audioUrl: `/audio/lessons/${id}.mp3`,
   // Line times become absolute; unit times stay relative to their line.
   segments: ep.segments.map(({ lines, dur: _dur, scene: _scene, ...s }) => ({

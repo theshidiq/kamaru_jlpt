@@ -3,10 +3,15 @@
  * Landscape shows all of it; portrait and the word panel slice the middle,
  * so the people stay inside x 377–1543.
  */
-import type { ReactNode } from 'react'
+import { createContext, useContext, type ReactNode } from 'react'
 import { Clouds, Frame, JP, Person, rnd, type SceneProps } from './people'
 
 const SUIT = '#2f3a4f', SUIT_W = '#3a4254'
+
+/** What the office monitor shows; each episode sets its own. `mark` adds a red squiggle under the line. */
+export type ScreenText = { subject: string; line: string; mark?: boolean }
+export const DEFAULT_SCREEN: ScreenText = { subject: '件名：新製品のご案内', line: '高橋様が申し上げたとおり', mark: true }
+export const ScreenTextContext = createContext<ScreenText>(DEFAULT_SCREEN)
 
 /** Three bouncing dots over whoever is talking. */
 function Talking({ x, y, frame }: { x: number; y: number; frame: number }) {
@@ -46,9 +51,10 @@ function CitySkyline({ x, y, w, h, frame }: { x: number; y: number; w: number; h
   )
 }
 
-// ─── Office: 中村部長 at 鈴木's desk, going over the email ───────────────
+// ─── Office: the boss at the staff member's desk, going over a document ──
 
 export function OfficeScene({ frame, speaker }: SceneProps) {
+  const screen = useContext(ScreenTextContext)
   return (
     <Frame id="office" sky={['#eef1f4', '#e1e6eb']}>
       {/* window wall */}
@@ -77,7 +83,7 @@ export function OfficeScene({ frame, speaker }: SceneProps) {
       <path d="M 470 800 L 570 800 L 556 900 L 484 900 Z" fill="#e7e2d8" />
       {[[500, 760, 44], [545, 740, 50], [520, 700, 40], [480, 720, 34]].map(([cx, cy, r], i) => <circle key={i} cx={cx} cy={cy} r={r} fill={['#5f9a5a', '#6fae66', '#7fbd73', '#5a8f55'][i]} />)}
 
-      {/* 鈴木, seated behind her desk; chair back first */}
+      {/* the staff member, seated behind her desk; chair back first */}
       <rect x="1000" y="640" width="170" height="220" rx="30" fill="#3d4450" />
       <Person x={1085} y={1010} h={560} t={frame} pose="chair" female hair="bob" hairColor="#3a2519"
         top="suit" topColor={SUIT_W} tie="none" bottom="skirt" bottomColor={SUIT_W} armL={[35, -80]} armR={[35, -80]} />
@@ -90,21 +96,21 @@ export function OfficeScene({ frame, speaker }: SceneProps) {
       <rect x="690" y="560" width="340" height="210" rx="12" fill="#1f2937" />
       <rect x="704" y="574" width="312" height="182" rx="4" fill="#f8fafc" />
       <rect x="704" y="574" width="312" height="30" fill="#2563eb" />
-      <text x="716" y="596" fontSize="17" fontWeight="700" fill="#fff" fontFamily={JP}>件名：新製品のご案内</text>
+      <text x="716" y="596" fontSize="17" fontWeight="700" fill="#fff" fontFamily={JP}>{screen.subject}</text>
       {[622, 648].map(ly => <rect key={ly} x="718" y={ly} width={ly === 622 ? 240 : 200} height="9" rx="4" fill="#cbd5e1" />)}
-      <text x="718" y="690" fontSize="19" fill="#1f2937" fontFamily={JP}>高橋様が申し上げたとおり</text>
-      <path d="M 790 698 q 6 -6 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0" stroke="#ef4444" strokeWidth="3" fill="none" />
+      <text x="718" y="690" fontSize="19" fill="#1f2937" fontFamily={JP}>{screen.line}</text>
+      {screen.mark && <path d="M 790 698 q 6 -6 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0" stroke="#ef4444" strokeWidth="3" fill="none" />}
       {[716, 742].map(ly => <rect key={ly} x="718" y={ly} width={ly === 716 ? 260 : 180} height="9" rx="4" fill="#cbd5e1" />)}
       <rect x="1180" y="770" width="46" height="36" rx="8" fill="#f59e0b" />
       <path d="M 1226 780 q 18 8 0 20" stroke="#f59e0b" strokeWidth="6" fill="none" />
       {[0, 1, 2].map(k => <rect key={k} x={1060 - k * 4} y={794 - k * 7} width="92" height="10" fill={k % 2 ? '#fff' : '#f1f5f9'} stroke="#cbd5e1" strokeWidth="1.5" />)}
 
-      {/* 中村部長, pointing at the screen */}
+      {/* the boss, pointing at the screen */}
       <Person x={1400} y={1010} h={590} t={frame} hair="short" hairColor="#3f3f46" top="suit" topColor={SUIT}
         bottomColor={SUIT} armL={[64, 88]} armR={[10, 6]} />
 
-      {speaker === 'suzuki' && <Talking x={1150} y={560} frame={frame} />}
-      {speaker === 'nakamura' && <Talking x={1470} y={390} frame={frame} />}
+      {speaker === 'staff' && <Talking x={1150} y={560} frame={frame} />}
+      {speaker === 'boss' && <Talking x={1470} y={390} frame={frame} />}
     </Frame>
   )
 }
@@ -208,10 +214,45 @@ export function StoreScene({ frame }: SceneProps) {
   )
 }
 
-export const SCENES: Record<string, (p: SceneProps) => ReactNode> = {
-  office: OfficeScene, meeting: MeetingScene, store: StoreScene,
+// ─── Training room: a lecturer at the whiteboard, trainees from behind ───
+
+export function TrainingScene({ frame }: SceneProps) {
+  return (
+    <Frame id="training" sky={['#f5f3ee', '#ebe7df']}>
+      {/* whiteboard with the session plan */}
+      <rect x="760" y="150" width="660" height="420" rx="10" fill="#fbfcfd" stroke="#aab3bc" strokeWidth="10" />
+      <rect x="780" y="566" width="620" height="14" rx="4" fill="#aab3bc" />
+      <text x="820" y="240" fontSize="56" fontWeight="800" fill="#1d4ed8" fontFamily={JP}>新人研修</text>
+      {['ビジネスマナー', '敬語の使い方', '電話の対応'].map((l, i) => (
+        <text key={l} x="840" y={330 + i * 70} fontSize="40" fill="#334155" fontFamily={JP}>・{l}</text>
+      ))}
+      <path d="M 1250 470 q 40 -60 90 -20" stroke="#ef4444" strokeWidth="6" fill="none" strokeLinecap="round" />
+      {/* landscape-only: window, clock, projector */}
+      <rect x="80" y="160" width="360" height="460" fill="#cfe4f3" stroke="#9aa4ae" strokeWidth="12" />
+      <line x1="260" y1="160" x2="260" y2="620" stroke="#9aa4ae" strokeWidth="8" />
+      <Clouds frame={frame} y={190} seed={5} />
+      <rect x="0" y="0" width="80" height="700" fill="#f5f3ee" />
+      <circle cx="1640" cy="160" r="46" fill="#fff" stroke="#9aa4ae" strokeWidth="6" />
+      <path d="M 1640 160 L 1640 132 M 1640 160 L 1660 170" stroke="#334155" strokeWidth="5" strokeLinecap="round" />
+      <rect x="1540" y="620" width="300" height="260" fill="#d9dee3" />
+      <rect x="1600" y="580" width="180" height="50" rx="8" fill="#475569" />
+
+      <rect y="860" width="1920" height="220" fill="#c9bfae" />
+      {/* the lecturer, pointing at the board */}
+      <Person x={610} y={900} h={540} t={frame} female hair="bun" hairColor="#3a2519" top="suit" topColor="#4b5563"
+        tie="none" bottom="skirt" bottomColor="#4b5563" armR={[88, 112]} armL={[10, 6]} />
+      {/* long desk, then the trainees from behind in the front row */}
+      <rect x="360" y="840" width="1200" height="24" rx="6" fill="#e6d3b5" />
+      {[[650, '#2b2118', 'short', '#334155'], [960, '#3a2519', 'bob', '#475569'], [1270, '#1f1a17', 'short', '#1e3a5f']].map(([x, hc, hs, c], i) => (
+        <Person key={i} x={x as number} y={1260} h={640} t={frame + i * 20} back pose="chair" female={hs === 'bob'}
+          hair={hs as 'short' | 'bob'} hairColor={hc as string} top="suit" topColor={c as string} bottomColor={c as string} tie="none" />
+      ))}
+    </Frame>
+  )
 }
-/** Which scene sits behind each block of words. */
-export const BLOCK_SCENE: Record<string, string> = { keigo: 'office', trade: 'meeting', sales: 'store', quiz: 'office' }
+
+export const SCENES: Record<string, (p: SceneProps) => ReactNode> = {
+  office: OfficeScene, meeting: MeetingScene, store: StoreScene, training: TrainingScene,
+}
 /** Canvas x to centre a narrow window on, so it frames the people. */
-export const FOCUS: Record<string, number> = { office: 1170, meeting: 960, store: 980 }
+export const FOCUS: Record<string, number> = { office: 1170, meeting: 960, store: 980, training: 900 }

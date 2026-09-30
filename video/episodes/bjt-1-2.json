@@ -1,0 +1,699 @@
+{
+ "id": "bjt-1-2",
+ "level": "BJT",
+ "chapter": 1,
+ "section": 2,
+ "title": "職場と会議の言葉",
+ "titleEn": "Workplace & meetings",
+ "label": "BJT · 第2課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "tanaka": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "田中課長",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "tanaka",
+  "kimura"
+ ],
+ "blocks": {
+  "people": {
+   "jp": "会社と人",
+   "en": "People at work",
+   "scene": "office"
+  },
+  "docs": {
+   "jp": "会議と資料",
+   "en": "Meetings & documents",
+   "scene": "meeting"
+  },
+  "work": {
+   "jp": "依頼と研修",
+   "en": "Requests & training",
+   "scene": "training"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "担当"
+ ],
+ "screen": {
+  "subject": "明日の会議資料（作成中）",
+  "line": "予算：研修・講師への謝礼"
+ },
+ "readings": {
+  "第二課": "だいにか",
+  "謝礼": "しゃれい",
+  "経緯": "けいい",
+  "総務": "そうむ",
+  "三人": "さんにん",
+  "報告書": "ほうこくしょ",
+  "折り返し": "おりかえし",
+  "三時": "さんじ",
+  "第一": "だいいち",
+  "第二": "だいに",
+  "十部": "じゅうぶ",
+  "五つ": "いつつ",
+  "二つ": "ふたつ",
+  "積極的": "せっきょくてき",
+  "翻訳": "ほんやく",
+  "外部": "がいぶ",
+  "新入社員": "しんにゅうしゃいん",
+  "四月": "しがつ",
+  "対応": "たいおう",
+  "山口": "やまぐち",
+  "田中": "たなか",
+  "木村": "きむら",
+  "部長": "ぶちょう",
+  "契約": "けいやく",
+  "改善策": "かいぜんさく",
+  "見積書": "みつもりしょ",
+  "苦情": "くじょう",
+  "今年": "ことし",
+  "方": "かた"
+ },
+ "speakKana": [
+  "第二課",
+  "三人",
+  "三時",
+  "十部",
+  "五つ",
+  "二つ",
+  "四月",
+  "第一",
+  "第二",
+  "方"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第二課。職場の人や、会議でよく使う言葉を、二十五個勉強します。",
+     "en": "Today is lesson 2: 25 words for the people you work with and for meetings."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、課長と部下の会話を聞いてみましょう。",
+     "en": "First, let's listen to a section chief and a team member."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "tanaka",
+     "jp": "木村さん、明日の会議の資料はどうなっていますか。",
+     "en": "Kimura, how are the materials for tomorrow's meeting coming along?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "今、作成中です。午後にはお送りできると思います。",
+     "en": "I'm making them now. I think I can send them this afternoon."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "ありがとう。予算の項目を一つ追加してもらえますか。",
+     "en": "Thanks. Could you add one budget item?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "承知しました。先週の研修の予算ですね。",
+     "en": "Understood. The budget for last week's training, right?"
+    },
+    {
+     "sp": "tanaka",
+     "jp": "そうです。講師への謝礼も入れておいてください。",
+     "en": "Yes. Please include the lecturer's fee as well."
+    },
+    {
+     "sp": "kimura",
+     "jp": "かしこまりました。それから、株式会社ミナト商事からのクレームの件ですが、担当者の方から文書で連絡がありました。",
+     "en": "Certainly. Also, about the complaint from Minato Trading Co., Ltd. — their person in charge contacted us in writing."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "どんな内容でしたか。",
+     "en": "What did it say?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "納品が遅れたことへの苦情です。私の立場では判断が難しいので、課長のご意見を伺えますか。",
+     "en": "It's a complaint about the late delivery. It's hard to judge from my position, so may I ask for your opinion?"
+    },
+    {
+     "sp": "tanaka",
+     "jp": "わかりました。その件は会議で私から発言します。資料には、経緯を省略せずに書いておいてください。",
+     "en": "All right. I'll raise it myself at the meeting. In the materials, write out what happened without leaving anything out."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。改善策の提案も一緒に載せます。",
+     "en": "Yes. I'll include a proposal for improvements as well."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "助かります。会議室の予約は、総務の担当に依頼しましたか。",
+     "en": "That helps. Did you ask the person in charge at General Affairs to book the meeting room?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい、第二会議室を押さえました。資料の管理も私が担当しますので、修正があればいつでもおっしゃってください。",
+     "en": "Yes, I've reserved Meeting Room 2. I'll look after the materials too, so tell me any time you want changes."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "ありがとう。私の上司の山口部長にも見ていただくので、よろしくお願いします。",
+     "en": "Thanks. My own boss, Manager Yamaguchi, will look at them too, so please do a careful job."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "それと、部下の待遇について社員から意見が出ているので、その件も少し話したいと思います。",
+     "en": "One more thing: staff have raised opinions about how our team members are treated, so I'd like to discuss that briefly too."
+    },
+    {
+     "sp": "kimura",
+     "jp": "承知いたしました。",
+     "en": "Understood."
+    }
+   ]
+  },
+  {
+   "type": "bridge",
+   "block": "people",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、会社と人の言葉です。",
+     "en": "Now let's go through today's words one by one. First, words for companies and people."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "株式会社",
+   "explain": {
+    "jp": "株を持つ人がお金を出して作る会社です。会社の名前によく付きます。",
+    "en": "A company funded by its shareholders; often part of a company's name."
+   },
+   "example": {
+    "jp": "株式会社ミナト商事と、新しい契約を結びました。",
+    "en": "We signed a new contract with Minato Trading Co., Ltd."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "商事",
+   "explain": {
+    "jp": "物を売り買いする商売のことです。会社の名前によく使われます。",
+    "en": "The business of buying and selling; often used in company names."
+   },
+   "example": {
+    "jp": "父は、商事会社で働いています。",
+    "en": "My father works at a trading company."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "社員",
+   "explain": {
+    "jp": "会社で働いている人です。",
+    "en": "A person who works for a company."
+   },
+   "example": {
+    "jp": "新しい社員が、三人入りました。",
+    "en": "Three new employees joined."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "上司",
+   "explain": {
+    "jp": "自分より立場が上の人です。",
+    "en": "Someone above you at work."
+   },
+   "example": {
+    "jp": "上司に、報告書を出しました。",
+    "en": "I handed the report to my boss."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "部下",
+   "explain": {
+    "jp": "自分より立場が下で、一緒に働く人です。",
+    "en": "Someone below you whom you work with."
+   },
+   "example": {
+    "jp": "課長は、部下の話をよく聞きます。",
+    "en": "The section chief listens carefully to their team."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "課長",
+   "explain": {
+    "jp": "会社の中の、課のリーダーです。",
+    "en": "The head of a section in a company."
+   },
+   "example": {
+    "jp": "課長、少しよろしいでしょうか。",
+    "en": "Excuse me, do you have a moment? (to the section chief)"
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "担当",
+   "explain": {
+    "jp": "ある仕事を、自分の役目として受け持つことです。",
+    "en": "Taking charge of a piece of work as your role."
+   },
+   "example": {
+    "jp": "この件は、私が担当します。",
+    "en": "I'll handle this matter."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "担当者",
+   "explain": {
+    "jp": "その仕事を担当している人です。",
+    "en": "The person in charge of that work."
+   },
+   "example": {
+    "jp": "担当者から、折り返しお電話します。",
+    "en": "The person in charge will call you back."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "立場",
+   "explain": {
+    "jp": "会社や人の中での、自分の位置や役割です。",
+    "en": "Your place or role among people or in a company."
+   },
+   "example": {
+    "jp": "相手の立場になって、考えてみましょう。",
+    "en": "Try thinking from the other person's position."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "待遇",
+   "explain": {
+    "jp": "給料や休みなど、働く条件のことです。",
+    "en": "Working conditions such as pay and time off."
+   },
+   "example": {
+    "jp": "この会社は、社員の待遇がいいです。",
+    "en": "This company treats its employees well."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "docs",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、会議と資料の言葉です。",
+     "en": "Next, words for meetings and documents."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "会議室",
+   "explain": {
+    "jp": "会議をするための部屋です。",
+    "en": "A room for holding meetings."
+   },
+   "example": {
+    "jp": "三時から、第一会議室を使います。",
+    "en": "We'll use Meeting Room 1 from three o'clock."
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "資料",
+   "explain": {
+    "jp": "会議や仕事で使う、情報をまとめたものです。",
+    "en": "Information put together for a meeting or for work."
+   },
+   "example": {
+    "jp": "会議の資料を、十部コピーしてください。",
+    "en": "Please make ten copies of the meeting materials."
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "文書",
+   "explain": {
+    "jp": "文字で書かれた書類のことです。",
+    "en": "A paper written out in text."
+   },
+   "example": {
+    "jp": "大切な連絡は、文書で残しましょう。",
+    "en": "Keep important communication in writing."
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "作成",
+   "explain": {
+    "jp": "書類や資料などを作ることです。",
+    "en": "Making documents, materials and so on."
+   },
+   "example": {
+    "jp": "今、見積書を作成しています。",
+    "en": "I'm preparing the quote now."
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "項目",
+   "explain": {
+    "jp": "表や書類の中の、一つ一つの部分です。",
+    "en": "Each individual part of a table or document."
+   },
+   "example": {
+    "jp": "アンケートの項目を、五つに増やしました。",
+    "en": "We increased the survey to five items."
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "追加",
+   "explain": {
+    "jp": "あとから、さらに加えることです。",
+    "en": "Adding something more afterwards."
+   },
+   "example": {
+    "jp": "注文を、二つ追加してもいいですか。",
+    "en": "May I add two more to the order?"
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "省略",
+   "explain": {
+    "jp": "一部を短くしたり、書かなかったりすることです。",
+    "en": "Shortening part of something, or leaving it out."
+   },
+   "example": {
+    "jp": "時間がないので、説明は省略します。",
+    "en": "We're short of time, so I'll skip the explanation."
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "発言",
+   "explain": {
+    "jp": "会議などで、意見を言うことです。",
+    "en": "Giving your opinion, for example in a meeting."
+   },
+   "example": {
+    "jp": "会議では、積極的に発言しましょう。",
+    "en": "Speak up actively in meetings."
+   }
+  },
+  {
+   "type": "word",
+   "block": "docs",
+   "word": "提案",
+   "explain": {
+    "jp": "考えや計画を、相手に出すことです。",
+    "en": "Putting an idea or plan forward to someone."
+   },
+   "example": {
+    "jp": "新しいサービスを、お客様に提案しました。",
+    "en": "We proposed a new service to the customer."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "work",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、依頼と研修の言葉です。",
+     "en": "Last, words for requests and training."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "依頼",
+   "explain": {
+    "jp": "人に、何かをしてほしいと頼むことです。",
+    "en": "Asking someone to do something for you."
+   },
+   "example": {
+    "jp": "翻訳を、外部の会社に依頼しました。",
+    "en": "We asked an outside company to do the translation."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "予算",
+   "explain": {
+    "jp": "使えるお金として、前もって決めた金額です。",
+    "en": "An amount of money decided in advance for spending."
+   },
+   "example": {
+    "jp": "予算が足りないので、計画を見直します。",
+    "en": "The budget is short, so we'll revise the plan."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "管理",
+   "explain": {
+    "jp": "物や人を、きちんとまとめて見ることです。",
+    "en": "Keeping things or people properly in order."
+   },
+   "example": {
+    "jp": "パスワードは、きちんと管理してください。",
+    "en": "Please manage your passwords carefully."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "研修",
+   "explain": {
+    "jp": "仕事に必要なことを、学ぶための勉強会です。",
+    "en": "Sessions for learning what the job needs."
+   },
+   "example": {
+    "jp": "新入社員は、四月に研修を受けます。",
+    "en": "New employees receive training in April."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "講師",
+   "explain": {
+    "jp": "研修や授業で、教える人です。",
+    "en": "The person who teaches a training session or class."
+   },
+   "example": {
+    "jp": "今日の研修の講師は、山田先生です。",
+    "en": "Today's training is led by Mr Yamada."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "クレーム",
+   "explain": {
+    "jp": "お客様からの、苦情のことです。",
+    "en": "A complaint from a customer."
+   },
+   "example": {
+    "jp": "クレームには、すぐに、ていねいに対応します。",
+    "en": "We respond to complaints quickly and politely."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "その件は、私が（　　）します。",
+   "promptEn": "I'll ___ that matter.",
+   "choices": [
+    "担当",
+    "待遇",
+    "講師",
+    "項目"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。その件は、私が担当します。",
+    "en": "The answer is 1: 担当, I'll handle that matter."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "会議の（　　）を、十部コピーしてください。",
+   "promptEn": "Please make ten copies of the meeting ___.",
+   "choices": [
+    "立場",
+    "部下",
+    "資料",
+    "依頼"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。会議の資料を、十部コピーしてください。",
+    "en": "The answer is 3: 資料, the meeting materials."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "自分より立場が上の人は、どれですか。",
+   "promptEn": "Which is someone above you at work?",
+   "choices": [
+    "部下",
+    "上司",
+    "社員",
+    "担当者"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第三問。自分より立場が上の人は、どれですか。",
+    "en": "Question 3. Which is someone above you at work?"
+   },
+   "reveal": {
+    "jp": "正解は二番、上司です。部下は、自分より立場が下の人です。",
+    "en": "The answer is 2: 上司. 部下 is someone below you."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "時間がないので、説明は（　　）します。",
+   "promptEn": "We're short of time, so I'll ___ the explanation.",
+   "choices": [
+    "追加",
+    "提案",
+    "作成",
+    "省略"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。時間がないので、説明は省略します。",
+    "en": "The answer is 4: 省略, I'll skip the explanation."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "研修で教える人を、何と言いますか。",
+   "promptEn": "What do you call the person who teaches a training session?",
+   "choices": [
+    "講師",
+    "課長",
+    "商事",
+    "管理"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第五問。研修で教える人を、何と言いますか。",
+    "en": "Question 5. What do you call the person who teaches a training session?"
+   },
+   "reveal": {
+    "jp": "正解は一番、講師です。",
+    "en": "The answer is 1: 講師."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、職場と会議の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words for the workplace and meetings."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

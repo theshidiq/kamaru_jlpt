@@ -8,6 +8,7 @@ and write the timeline the Remotion project renders.
 Needs: pip install janome, ffprobe on PATH, ELEVENLABS_API_KEY in the repo .env.
 
 Input:  video/episodes/<id>.json          (the script: what is said, by whom)
+        video/episodes/_shared.json       (readings every episode uses)
 Output: video/public/audio/<id>/<line>.mp3 (+ .json alignment cache)
         video/src/data/<id>.json          (units with per-unit start/end ms)
 
@@ -121,6 +122,9 @@ def main():
     ep_id = sys.argv[1]
     dry = '--dry' in sys.argv
     ep = json.load(open(os.path.join(VIDEO, 'episodes', f'{ep_id}.json'), encoding='utf-8'))
+    shared = json.load(open(os.path.join(VIDEO, 'episodes', '_shared.json'), encoding='utf-8'))
+    ep['readings'] = {**shared['readings'], **ep['readings']}
+    ep['speakKana'] = [*shared['speakKana'], *ep['speakKana']]
     vocab = json.load(open(os.path.join(ROOT, 'public', 'bjt_vocab.json'), encoding='utf-8'))
     E = Episode(ep, vocab)
     by_word = {w['word']: w for w in E.words}
@@ -152,6 +156,8 @@ def main():
             l.pop('jp', None)
             l['id'] = f'{si:02d}{chr(97 + k)}'
             l['name'] = ep['voices'][l['sp']]['name']
+            if ep['voices'][l['sp']].get('cast'):
+                l['cast'] = ep['voices'][l['sp']]['cast']  # who they are in the scene
             l['text'] = ''.join(u['speak'] for u in l['units'])
         seg['lines'] = lines
         segs.append(seg)
@@ -207,7 +213,7 @@ def main():
         for k in ('hash', 'text'):
             l.pop(k)
 
-    out = {k: ep[k] for k in ('id', 'level', 'chapter', 'section', 'title', 'titleEn', 'label')}
+    out = {k: ep[k] for k in ('id', 'level', 'chapter', 'section', 'title', 'titleEn', 'label', 'blocks', 'short', 'screen') if k in ep}
     out['segments'] = segs
     os.makedirs(os.path.join(VIDEO, 'src', 'data'), exist_ok=True)
     path = os.path.join(VIDEO, 'src', 'data', f'{ep_id}.json')

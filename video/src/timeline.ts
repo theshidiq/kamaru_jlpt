@@ -6,6 +6,7 @@ export type Part = { t: string; r?: string }
 export type Unit = { t: string; parts: Part[]; start: number; end: number; word?: string }
 export type Line = {
   id: string; sp: string; name: string; units: Unit[]; en: string; role?: string
+  cast?: string // who they are in the scene: 'boss' | 'staff'
   audio: string; durationMs: number
   at: number // ms from the start of its segment
 }
@@ -17,7 +18,14 @@ export type Segment = {
   lines: Line[]
   at: number; dur: number // ms, on the episode clock
 }
-export type Episode = { id: string; title: string; titleEn: string; label: string; segments: Segment[] }
+export type Block = { jp: string; en: string; scene: string }
+export type Episode = {
+  id: string; title: string; titleEn: string; label: string
+  blocks: Record<string, Block>
+  short?: string[] // words the portrait short covers after the conversation
+  screen?: { subject: string; line: string; mark?: boolean } // the office monitor
+  segments: Segment[]
+}
 
 const LEAD_IN = 500      // before a segment's first line
 const BETWEEN = 450      // between lines
