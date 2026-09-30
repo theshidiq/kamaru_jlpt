@@ -3,7 +3,10 @@ import { DEFAULT_SCREEN, FOCUS, ScreenTextContext } from './art/scenes'
 import { lineAt, type Episode as Ep, type Segment } from './timeline'
 import { Chip, FONT, INDIGO, Karaoke, Ruby, SceneFill, SpeakerChip, useClock, usePop, WordCard, WordLines } from './ui'
 
-const W = 1920, PIC = 810 // scene area height; subtitles get the band below it
+// The picture takes the top PIC px; the spoken line gets the band below it,
+// sized so it reads from across a room, not just up close.
+const W = 1920, PIC = 690
+const BAND = { size: 56, long: 50, rt: 26, en: 32, chip: 30 }
 
 /** Voice clips, one <Sequence> per line, on the episode clock. */
 export function Voices({ ep }: { ep: Ep }) {
@@ -24,8 +27,14 @@ function Band({ seg, ms }: { seg: Segment; ms: number }) {
   const line = lineAt(seg, ms)
   return (
     <div style={{ position: 'absolute', top: PIC, left: 0, width: W, height: 1080 - PIC, background: INDIGO }}>
-      <div style={{ position: 'absolute', left: 120, right: 120, top: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-        {line && <div><SpeakerChip line={line} /><Karaoke line={line} ms={ms} size={44} en={27} /></div>}
+      <div style={{ position: 'absolute', left: 110, right: 110, top: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        {line && (
+          <div>
+            <SpeakerChip line={line} size={BAND.chip} />
+            {/* a long line drops a size so it stays on two lines */}
+            <Karaoke line={line} ms={ms} size={line.units.reduce((n, u) => n + u.t.length, 0) > 58 ? BAND.long : BAND.size} en={BAND.en} />
+          </div>
+        )}
       </div>
     </div>
   )
@@ -45,7 +54,7 @@ function Intro({ seg, ep }: { seg: Segment; ep: Ep }) {
   const pop = usePop(6)
   return (
     <>
-      <Picture scene="office" frame={global} shade={0.35} />
+      <Picture scene="office" frame={global} shade={0.55} />
       <div style={{ position: 'absolute', left: 120, top: 190, opacity: pop, transform: `translateY(${(1 - pop) * 30}px)` }}>
         <div style={{ fontSize: 34, fontWeight: 700, color: '#c7d2fe', letterSpacing: 3 }}>華丸 ビジネス日本語 · {ep.label}</div>
         <div style={{ fontSize: 110, fontWeight: 900, marginTop: 14, textShadow: '0 6px 24px rgba(0,0,0,0.4)' }}>{ep.title}</div>
@@ -63,7 +72,7 @@ function Scene({ seg }: { seg: Segment }) {
   return (
     <>
       <Picture scene={seg.scene ?? 'office'} frame={global} speaker={speaking} />
-      <div style={{ position: 'absolute', left: 64, top: 48 }}><Chip size={28}>会話 · Conversation</Chip></div>
+      <div style={{ position: 'absolute', right: 64, top: 48 }}><Chip size={30} color="rgba(30,27,75,0.85)">{seg.label ? `${seg.label.jp} · ${seg.label.en}` : '会話 · Conversation'}</Chip></div>
       <Band seg={seg} ms={ms} />
     </>
   )
@@ -109,7 +118,7 @@ function Word({ seg, ep }: { seg: Segment; ep: Ep }) {
           </div>
         </div>
         <WordCard seg={seg} />
-        <WordLines seg={seg} ms={ms} size={40} en={25} />
+        <WordLines seg={seg} ms={ms} size={48} en={30} />
       </div>
     </>
   )

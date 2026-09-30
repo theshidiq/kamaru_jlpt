@@ -19,6 +19,8 @@ export interface LessonLine {
 export interface LessonSegment {
   type: 'intro' | 'scene' | 'bridge' | 'word' | 'quiz' | 'outro'
   block?: string
+  /** the reading part's kind: 会議, 報告書, お知らせ… (default: a conversation) */
+  label?: { jp: string; en: string }
   at: number
   lines: LessonLine[]
   // word

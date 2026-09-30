@@ -1,0 +1,681 @@
+{
+ "id": "bjt-1-3",
+ "level": "BJT",
+ "chapter": 1,
+ "section": 3,
+ "title": "研修と話し合いの言葉",
+ "titleEn": "Training & discussion",
+ "label": "BJT · 第3課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "nakamura": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "中村",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "nakamura",
+  "kimura"
+ ],
+ "blocks": {
+  "talk": {
+   "jp": "話し合いと連絡",
+   "en": "Discussion & contact",
+   "scene": "meeting"
+  },
+  "think": {
+   "jp": "考える力",
+   "en": "Thinking & understanding",
+   "scene": "training"
+  },
+  "form": {
+   "jp": "ようすと形",
+   "en": "Situations & forms",
+   "scene": "office"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "把握"
+ ],
+ "screen": {
+  "subject": "新入社員研修（案）",
+  "line": "ロールプレイ中心に変更"
+ },
+ "readings": {
+  "第三課": "だいさんか",
+  "お預かり": "おあずかり",
+  "宛先": "あてさき",
+  "原因": "げんいん",
+  "法律": "ほうりつ",
+  "十人": "じゅうにん",
+  "現在": "げんざい",
+  "出来事": "できごと",
+  "詳しく": "くわしく",
+  "社長": "しゃちょう",
+  "三時": "さんじ",
+  "田中": "たなか",
+  "中村": "なかむら",
+  "木村": "きむら"
+ },
+ "speakKana": [
+  "第三課",
+  "十人",
+  "三時"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第三課。研修と話し合いの言葉を、二十五個勉強します。",
+     "en": "Today is lesson 3: 25 words — training & discussion."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、新入社員の研修について話し合う会議を聞いてみましょう。",
+     "en": "First, let's listen to a meeting about training for new employees."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "label": {
+    "jp": "会議",
+    "en": "Meeting"
+   },
+   "lines": [
+    {
+     "sp": "nakamura",
+     "jp": "今日は、来月の新入社員研修の内容について検討したいと思います。",
+     "en": "Today I'd like to discuss the content of next month's new-employee training."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。去年の研修では、電話の場面で適切に対応できない新人が多かったです。",
+     "en": "Yes. In last year's training, many new staff couldn't respond appropriately on the phone."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "具体的には、どんな課題がありましたか。",
+     "en": "Specifically, what problems were there?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "相手の用件を正しく把握できない場合がありました。伝言を受けても、内容を確認せずに電話を切ってしまうんです。",
+     "en": "Sometimes they couldn't correctly grasp what the caller wanted. Even when they took a message, they hung up without confirming it."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "なるほど。敬語の知識があっても、実際のコミュニケーションで使えるとは限りませんね。",
+     "en": "I see. Knowing keigo doesn't mean you can use it in real communication."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。ですから今年は、講義の形式を変更して、ロールプレイを中心にしたいと考えています。",
+     "en": "Right. So this year I want to change the format from lectures to mainly role-play."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "いいですね。ロールプレイでは、どんな人物を想定しますか。",
+     "en": "Good. What kind of people will the role-plays assume?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "急いでいる取引先や、怒っているお客様など、いくつかの状況を用意します。",
+     "en": "I'll prepare several situations, such as a client in a hurry or an angry customer."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "相手の気持ちを理解して、落ち着いて問いかける練習も必要ですね。",
+     "en": "They also need practice understanding how the other person feels and asking questions calmly."
+    },
+    {
+     "sp": "kimura",
+     "jp": "おっしゃるとおりです。最後に、学んだことを一人ずつ述べる時間も設けます。",
+     "en": "Exactly. At the end, I'll also set aside time for each person to state what they learned."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "評価はどうしますか。",
+     "en": "How will you assess them?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "表現の正確さだけでなく、相手に合わせて対応を変える能力も見ます。",
+     "en": "I'll look not only at accurate expression but also at the ability to adjust to the other person."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "わかりました。研修にかかわる先輩社員にも、協力をお願いしておいてください。",
+     "en": "Understood. Please also ask the senior staff involved in the training for their cooperation."
+    },
+    {
+     "sp": "kimura",
+     "jp": "承知しました。資料の最後の部分は中村さんにも確認していただけますか。案ができたら連絡します。",
+     "en": "Will do. Could you also check the last part of the materials? I'll contact you when the draft is ready."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "もちろんです。効果を数字で示すことができれば、部長への報告もしやすいですね。",
+     "en": "Of course. If we can show the results in numbers, reporting to the manager will be easier too."
+    }
+   ]
+  },
+  {
+   "type": "bridge",
+   "block": "talk",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、話し合いと連絡の言葉です。",
+     "en": "Now let's go through today's words one by one. First: discussion & contact."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "検討",
+   "explain": {
+    "jp": "よく考えて、調べることです。",
+    "en": "Thinking something over carefully."
+   },
+   "example": {
+    "jp": "新しい案を、来週までに検討します。",
+    "en": "We'll consider the new plan by next week."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "連絡",
+   "explain": {
+    "jp": "相手に、情報を知らせることです。",
+    "en": "Letting someone know information."
+   },
+   "example": {
+    "jp": "遅れる場合は、すぐに連絡してください。",
+    "en": "If you'll be late, let us know right away."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "伝言",
+   "explain": {
+    "jp": "ほかの人を通して伝える、メッセージです。",
+    "en": "A message passed on through someone else."
+   },
+   "example": {
+    "jp": "田中さんから、伝言をお預かりしています。",
+    "en": "I have a message for you from Tanaka."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "確認",
+   "explain": {
+    "jp": "正しいかどうか、しっかり確かめることです。",
+    "en": "Checking carefully that something is right."
+   },
+   "example": {
+    "jp": "送る前に、宛先を確認しましょう。",
+    "en": "Check the address before you send it."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "述べる",
+   "explain": {
+    "jp": "考えや意見を、言葉で言うことです。",
+    "en": "Putting your thoughts or opinion into words."
+   },
+   "example": {
+    "jp": "会議で、自分の意見を述べました。",
+    "en": "I stated my opinion at the meeting."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "問いかける",
+   "explain": {
+    "jp": "相手に、質問をすることです。",
+    "en": "Putting a question to someone."
+   },
+   "example": {
+    "jp": "講師は、みんなに問いかけました。",
+    "en": "The lecturer put a question to everyone."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "コミュニケーション",
+   "explain": {
+    "jp": "人と人が、気持ちや情報を伝え合うことです。",
+    "en": "People sharing feelings and information with each other."
+   },
+   "example": {
+    "jp": "チームのコミュニケーションを、大切にしています。",
+    "en": "We value communication within the team."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "対応",
+   "explain": {
+    "jp": "相手や状況に合わせて、行動することです。",
+    "en": "Acting to suit the person or the situation."
+   },
+   "example": {
+    "jp": "お客様の質問に、すぐ対応しました。",
+    "en": "I dealt with the customer's question right away."
+   }
+  },
+  {
+   "type": "word",
+   "block": "talk",
+   "word": "表現",
+   "explain": {
+    "jp": "考えや気持ちを、言葉などで表すことです。",
+    "en": "Showing thoughts or feelings, for example in words."
+   },
+   "example": {
+    "jp": "ビジネスでは、ていねいな表現を使います。",
+    "en": "In business we use polite expressions."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "think",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、考える力の言葉です。",
+     "en": "Next: thinking & understanding."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "理解",
+   "explain": {
+    "jp": "意味や内容が、よくわかることです。",
+    "en": "Understanding the meaning or content well."
+   },
+   "example": {
+    "jp": "説明を聞いて、内容を理解しました。",
+    "en": "I listened to the explanation and understood it."
+   }
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "把握",
+   "explain": {
+    "jp": "全体のようすを、しっかりつかむことです。",
+    "en": "Getting a firm grasp of the whole picture."
+   },
+   "example": {
+    "jp": "まず、問題の原因を把握しましょう。",
+    "en": "First, let's get a clear picture of the cause."
+   }
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "知識",
+   "explain": {
+    "jp": "勉強や経験で、知っていることです。",
+    "en": "What you know from study or experience."
+   },
+   "example": {
+    "jp": "法律の知識が、仕事に役立ちました。",
+    "en": "Knowledge of the law helped in my work."
+   }
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "能力",
+   "explain": {
+    "jp": "物事ができる力です。",
+    "en": "The ability to do things."
+   },
+   "example": {
+    "jp": "この仕事には、日本語の能力が必要です。",
+    "en": "This job requires Japanese ability."
+   }
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "課題",
+   "explain": {
+    "jp": "これから解決しなければならない問題です。",
+    "en": "A problem that still has to be solved."
+   },
+   "example": {
+    "jp": "来年の課題は、コストを下げることです。",
+    "en": "Next year's challenge is lowering costs."
+   }
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "適切",
+   "explain": {
+    "jp": "その場に、ちょうど合っていることです。",
+    "en": "Being just right for the situation."
+   },
+   "example": {
+    "jp": "状況に合わせて、適切な言葉を選びます。",
+    "en": "Choose words that fit the situation."
+   }
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "示す",
+   "explain": {
+    "jp": "相手に、わかるように見せることです。",
+    "en": "Showing something so that it is clear."
+   },
+   "example": {
+    "jp": "グラフで、結果を示します。",
+    "en": "I'll show the results in a graph."
+   }
+  },
+  {
+   "type": "word",
+   "block": "think",
+   "word": "かかわる",
+   "explain": {
+    "jp": "あることと、関係を持つことです。",
+    "en": "Being connected with or involved in something."
+   },
+   "example": {
+    "jp": "このプロジェクトには、十人がかかわっています。",
+    "en": "Ten people are involved in this project."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "form",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、ようすと形の言葉です。",
+     "en": "Last: situations & forms."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "場合",
+   "explain": {
+    "jp": "そうなったときのことです。",
+    "en": "The case when something happens."
+   },
+   "example": {
+    "jp": "雨の場合は、会議室で行います。",
+    "en": "If it rains, we'll hold it in the meeting room."
+   }
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "状況",
+   "explain": {
+    "jp": "そのときの、物事のようすです。",
+    "en": "How things stand at that moment."
+   },
+   "example": {
+    "jp": "現在の状況を、報告してください。",
+    "en": "Please report the current situation."
+   }
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "場面",
+   "explain": {
+    "jp": "ある出来事が起こる、その時や場所です。",
+    "en": "The time or place where something happens."
+   },
+   "example": {
+    "jp": "電話の場面で、よく使う表現です。",
+    "en": "It's an expression often used on the phone."
+   }
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "内容",
+   "explain": {
+    "jp": "話や文章の、中身のことです。",
+    "en": "What a talk or text actually says."
+   },
+   "example": {
+    "jp": "メールの内容を、もう一度読みました。",
+    "en": "I read the content of the email again."
+   }
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "形式",
+   "explain": {
+    "jp": "決まった形や、やり方です。",
+    "en": "A set form or way of doing something."
+   },
+   "example": {
+    "jp": "報告書は、この形式で書いてください。",
+    "en": "Please write the report in this format."
+   }
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "部分",
+   "explain": {
+    "jp": "全体の中の、一つの所です。",
+    "en": "One part of the whole."
+   },
+   "example": {
+    "jp": "この部分を、もう少し詳しく説明します。",
+    "en": "I'll explain this part in a bit more detail."
+   }
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "人物",
+   "explain": {
+    "jp": "ある人のことです。",
+    "en": "A particular person."
+   },
+   "example": {
+    "jp": "写真の人物は、うちの社長です。",
+    "en": "The person in the photo is our company president."
+   }
+  },
+  {
+   "type": "word",
+   "block": "form",
+   "word": "変更",
+   "explain": {
+    "jp": "決めたことを、変えることです。",
+    "en": "Changing something that was decided."
+   },
+   "example": {
+    "jp": "会議の時間が、三時に変更になりました。",
+    "en": "The meeting time was changed to three."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "会議で、自分の意見を（　　）ました。",
+   "promptEn": "I ___ my opinion at the meeting.",
+   "choices": [
+    "述べ",
+    "変更し",
+    "対応し",
+    "把握し"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。会議で、自分の意見を述べました。",
+    "en": "The answer is 1: 述べました, I stated my opinion."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "遅れる場合は、すぐに（　　）してください。",
+   "promptEn": "If you'll be late, ___ us right away.",
+   "choices": [
+    "知識",
+    "形式",
+    "連絡",
+    "人物"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。遅れる場合は、すぐに連絡してください。",
+    "en": "The answer is 3: 連絡, let us know."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "全体のようすを、しっかりつかむこと。",
+   "promptEn": "Getting a firm grasp of the whole picture.",
+   "choices": [
+    "表現",
+    "把握",
+    "場面",
+    "内容"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第三問。全体のようすを、しっかりつかむことを、何と言いますか。",
+    "en": "Question 3. What do you call getting a firm grasp of the whole picture?"
+   },
+   "reveal": {
+    "jp": "正解は二番、把握です。",
+    "en": "The answer is 2: 把握."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "会議の時間が、三時に（　　）になりました。",
+   "promptEn": "The meeting time was ___ to three.",
+   "choices": [
+    "確認",
+    "検討",
+    "課題",
+    "変更"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。会議の時間が、三時に変更になりました。",
+    "en": "The answer is 4: 変更, it was changed."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "状況に合わせて、（　　）な言葉を選びます。",
+   "promptEn": "Choose ___ words for the situation.",
+   "choices": [
+    "適切",
+    "部分",
+    "伝言",
+    "人物"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。状況に合わせて、適切な言葉を選びます。",
+    "en": "The answer is 1: 適切, appropriate words."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、研修と話し合いの言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: training & discussion."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

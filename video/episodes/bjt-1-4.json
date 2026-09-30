@@ -1,0 +1,679 @@
+{
+ "id": "bjt-1-4",
+ "level": "BJT",
+ "chapter": 1,
+ "section": 4,
+ "title": "報告書とデータの言葉",
+ "titleEn": "Reports & data",
+ "label": "BJT · 第4課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "riku": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "例文"
+  },
+  "sakura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "例文"
+  }
+ },
+ "exampleVoices": [
+  "riku",
+  "sakura"
+ ],
+ "blocks": {
+  "data": {
+   "jp": "データを読む",
+   "en": "Reading data",
+   "scene": "meeting"
+  },
+  "decide": {
+   "jp": "考えて決める",
+   "en": "Thinking & deciding",
+   "scene": "office"
+  },
+  "people": {
+   "jp": "人と行動",
+   "en": "People & behaviour",
+   "scene": "store"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "踏まえる"
+ ],
+ "screen": {
+  "subject": "顧客アンケート結果",
+  "line": "購入の条件：価格（約6割）"
+ },
+ "readings": {
+  "第四課": "だいよんか",
+  "週三日": "しゅうみっか",
+  "勤務": "きんむ",
+  "売り上げ": "うりあげ",
+  "変化": "へんか",
+  "想像": "そうぞう",
+  "片付ける": "かたづける",
+  "今日中": "きょうじゅう",
+  "機能": "きのう",
+  "意志": "いし",
+  "行い": "おこない",
+  "評価": "ひょうか",
+  "習慣": "しゅうかん",
+  "劇": "げき",
+  "三つ": "みっつ"
+ },
+ "speakKana": [
+  "第四課",
+  "週三日"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第四課。報告書とデータの言葉を、二十五個勉強します。",
+     "en": "Today is lesson 4: 25 words — reports & data."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、アンケートの結果をまとめた報告書を聞いてみましょう。",
+     "en": "First, let's listen to a report on the results of a customer survey."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "meeting",
+   "label": {
+    "jp": "報告書",
+    "en": "Report"
+   },
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "件名：顧客アンケートの結果について",
+     "en": "Subject: Results of the customer survey"
+    },
+    {
+     "sp": "host",
+     "jp": "宛先：営業部各位",
+     "en": "To: All Sales Department staff"
+    },
+    {
+     "sp": "host",
+     "jp": "今回の顧客アンケートの結果を、以下のとおり報告します。",
+     "en": "I report the results of this customer survey as follows."
+    },
+    {
+     "sp": "host",
+     "jp": "回答者の約六割が、購入の際に最も重視する条件として「価格」を挙げました。",
+     "en": "About 60% of respondents named price as the condition they value most when buying."
+    },
+    {
+     "sp": "host",
+     "jp": "また、「価格が高いと感じる」という項目に「当てはまる」と答えた人は、全体の四割でした。",
+     "en": "And 40% of everyone answered 'applies to me' for the item 'I feel prices are high'."
+    },
+    {
+     "sp": "host",
+     "jp": "ところが、実際に購入された商品を見ると、価格より使いやすさで選んだ人が多いことが読み取れます。",
+     "en": "However, looking at the products actually bought, we can see that many chose on ease of use rather than price."
+    },
+    {
+     "sp": "host",
+     "jp": "この矛盾を解く鍵は、自由回答にありました。",
+     "en": "The key to solving this contradiction was in the free-text answers."
+    },
+    {
+     "sp": "host",
+     "jp": "お客様は安さを求めながらも、最終的には日常での使いやすさで判断していると推測されます。",
+     "en": "It seems customers look for low prices but in the end judge on how easy a product is to use every day."
+    },
+    {
+     "sp": "host",
+     "jp": "数字が人間の行動をそのまま表すとは限らない、という点が大きなポイントです。",
+     "en": "The main point is that the numbers don't necessarily reflect people's behaviour as it is."
+    },
+    {
+     "sp": "host",
+     "jp": "さらに、「店員のセリフが丁寧だった」という声も目立ちました。接客という行為そのものが、購入の決め手になっていると考えられます。",
+     "en": "Furthermore, many said 'the staff member's words were polite'. The act of serving customers itself seems to be a deciding factor."
+    },
+    {
+     "sp": "host",
+     "jp": "ただし、店舗によって結果が大きく異なるため、地域ごとの分析も必要です。",
+     "en": "However, results differ greatly between stores, so an analysis by region is also needed."
+    },
+    {
+     "sp": "host",
+     "jp": "話題になっている新製品については、可能であれば店頭での聞き取りも行いたいと考えています。",
+     "en": "For the new product people are talking about, I'd like to also interview customers in store if possible."
+    },
+    {
+     "sp": "host",
+     "jp": "以上を踏まえ、来月から接客の基本を見直す研修を行うことを提案します。",
+     "en": "Based on the above, I propose training from next month to review the basics of customer service."
+    },
+    {
+     "sp": "host",
+     "jp": "なお、回答データの処理は情報システム部に依頼済みです。",
+     "en": "Note that the processing of the response data has already been requested from IT."
+    },
+    {
+     "sp": "host",
+     "jp": "企画部 木村",
+     "en": "Kimura, Planning Department"
+    }
+   ]
+  },
+  {
+   "type": "bridge",
+   "block": "data",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、データを読むの言葉です。",
+     "en": "Now let's go through today's words one by one. First: reading data."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "結果",
+   "explain": {
+    "jp": "あることをして、最後に出たものです。",
+    "en": "What comes out at the end of something."
+   },
+   "example": {
+    "jp": "テストの結果は、来週わかります。",
+    "en": "The test results come out next week."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "条件",
+   "explain": {
+    "jp": "何かを決めるときに、必要なことです。",
+    "en": "What is required when deciding something."
+   },
+   "example": {
+    "jp": "この仕事の条件は、週三日の勤務です。",
+    "en": "The condition for this job is working three days a week."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "最も",
+   "explain": {
+    "jp": "いちばん、という意味です。",
+    "en": "Means \"the most\"."
+   },
+   "example": {
+    "jp": "この商品が、最も人気があります。",
+    "en": "This product is the most popular."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "実際",
+   "explain": {
+    "jp": "本当の、ようすやことです。",
+    "en": "How things really are."
+   },
+   "example": {
+    "jp": "実際に使ってみると、とても便利でした。",
+    "en": "When I actually used it, it was very handy."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "読み取る",
+   "explain": {
+    "jp": "文章や数字から、意味をつかむことです。",
+    "en": "Grasping the meaning from a text or figures."
+   },
+   "example": {
+    "jp": "グラフから、売り上げの変化を読み取ります。",
+    "en": "We read the change in sales from the graph."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "当てはまる",
+   "explain": {
+    "jp": "条件や説明に、ちょうど合うことです。",
+    "en": "Fitting a condition or description exactly."
+   },
+   "example": {
+    "jp": "次の中から、当てはまるものを選んでください。",
+    "en": "Choose the one that applies from the following."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "推測",
+   "explain": {
+    "jp": "わかっていることから、考えて想像することです。",
+    "en": "Working something out from what you know."
+   },
+   "example": {
+    "jp": "データから、来年の売り上げを推測します。",
+    "en": "We estimate next year's sales from the data."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "解く",
+   "explain": {
+    "jp": "問題の答えを、見つけることです。",
+    "en": "Finding the answer to a problem."
+   },
+   "example": {
+    "jp": "難しい問題を、みんなで解きました。",
+    "en": "We solved a difficult problem together."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "decide",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、考えて決めるの言葉です。",
+     "en": "Next: thinking & deciding."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "判断",
+   "explain": {
+    "jp": "考えて、どうするか決めることです。",
+    "en": "Thinking and deciding what to do."
+   },
+   "example": {
+    "jp": "最後は、部長が判断します。",
+    "en": "The department manager makes the final call."
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "踏まえる",
+   "explain": {
+    "jp": "あることを、考えの元にすることです。",
+    "en": "Basing your thinking on something."
+   },
+   "example": {
+    "jp": "お客様の意見を踏まえて、計画を立てました。",
+    "en": "We made the plan based on customer opinions."
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "求める",
+   "explain": {
+    "jp": "相手に、何かをほしいと言うことです。",
+    "en": "Asking someone for something you want."
+   },
+   "example": {
+    "jp": "お客様は、早い対応を求めています。",
+    "en": "Customers want a quick response."
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "処理",
+   "explain": {
+    "jp": "仕事や問題を、片付けることです。",
+    "en": "Dealing with a task or problem."
+   },
+   "example": {
+    "jp": "今日中に、このデータを処理します。",
+    "en": "I'll process this data by the end of today."
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "可能",
+   "explain": {
+    "jp": "できる、ということです。",
+    "en": "Being possible."
+   },
+   "example": {
+    "jp": "明日の納品は、可能ですか。",
+    "en": "Is delivery tomorrow possible?"
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "基本",
+   "explain": {
+    "jp": "物事の、いちばん大切な元です。",
+    "en": "The most important foundation of something."
+   },
+   "example": {
+    "jp": "あいさつは、ビジネスの基本です。",
+    "en": "Greetings are the basics of business."
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "ポイント",
+   "explain": {
+    "jp": "大切なところのことです。",
+    "en": "The important part."
+   },
+   "example": {
+    "jp": "今日の話のポイントは、三つあります。",
+    "en": "Today's talk has three key points."
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "今回",
+   "explain": {
+    "jp": "この度、このときのことです。",
+    "en": "This time."
+   },
+   "example": {
+    "jp": "今回の会議は、オンラインで行います。",
+    "en": "This time the meeting will be held online."
+   }
+  },
+  {
+   "type": "word",
+   "block": "decide",
+   "word": "さらに",
+   "explain": {
+    "jp": "その上に、もっと、という意味です。",
+    "en": "Means \"on top of that\", \"even more\"."
+   },
+   "example": {
+    "jp": "さらに、新しい機能も追加しました。",
+    "en": "On top of that, we added a new feature."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "people",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、人と行動の言葉です。",
+     "en": "Last: people & behaviour."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "人間",
+   "explain": {
+    "jp": "人のことです。",
+    "en": "A human being; people."
+   },
+   "example": {
+    "jp": "人間は、間違えることもあります。",
+    "en": "People sometimes make mistakes."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "行動",
+   "explain": {
+    "jp": "何かを、実際にすることです。",
+    "en": "Actually doing something."
+   },
+   "example": {
+    "jp": "話すだけでなく、すぐに行動しましょう。",
+    "en": "Don't just talk; act right away."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "行為",
+   "explain": {
+    "jp": "人が、自分の意志でする行いです。",
+    "en": "Something a person does by choice."
+   },
+   "example": {
+    "jp": "お客様を助けた行為が、評価されました。",
+    "en": "The act of helping a customer was praised."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "表す",
+   "explain": {
+    "jp": "気持ちや考えを、形にして見せることです。",
+    "en": "Giving a feeling or idea a visible form."
+   },
+   "example": {
+    "jp": "この数字は、売り上げを表しています。",
+    "en": "This figure shows sales."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "異なる",
+   "explain": {
+    "jp": "同じではない、ちがう、という意味です。",
+    "en": "Not the same; different."
+   },
+   "example": {
+    "jp": "国によって、習慣が異なります。",
+    "en": "Customs differ from country to country."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "日常",
+   "explain": {
+    "jp": "いつもの、毎日の生活のことです。",
+    "en": "Ordinary everyday life."
+   },
+   "example": {
+    "jp": "日常の会話と、ビジネスの会話は違います。",
+    "en": "Everyday talk differs from business talk."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "話題",
+   "explain": {
+    "jp": "話の中心になっていることです。",
+    "en": "What people are talking about."
+   },
+   "example": {
+    "jp": "この新製品は、今、話題になっています。",
+    "en": "This new product is getting a lot of attention."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "セリフ",
+   "explain": {
+    "jp": "話す言葉のことです。ドラマや劇でよく使います。",
+    "en": "Spoken lines, as in a drama or play."
+   },
+   "example": {
+    "jp": "店員のセリフは、マニュアルで決めています。",
+    "en": "Staff lines are set out in the manual."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "この商品が、（　　）人気があります。",
+   "promptEn": "This product is ___ popular.",
+   "choices": [
+    "最も",
+    "さらに",
+    "実際",
+    "今回"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。この商品が、最も人気があります。",
+    "en": "The answer is 1: 最も, the most popular."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "お客様の意見を（　　）、計画を立てました。",
+   "promptEn": "We made the plan ___ customer opinions.",
+   "choices": [
+    "求めて",
+    "踏まえて",
+    "異なって",
+    "解いて"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。お客様の意見を踏まえて、計画を立てました。",
+    "en": "The answer is 2: 踏まえて, based on."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "国によって、習慣が（　　）。",
+   "promptEn": "Customs ___ from country to country.",
+   "choices": [
+    "当てはまります",
+    "表します",
+    "異なります",
+    "処理します"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。国によって、習慣が異なります。",
+    "en": "The answer is 3: 異なります, they differ."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "わかっていることから、考えて想像すること。",
+   "promptEn": "Working something out from what you know.",
+   "choices": [
+    "判断",
+    "行為",
+    "条件",
+    "推測"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第四問。わかっていることから、考えて想像することを、何と言いますか。",
+    "en": "Question 4. What do you call working something out from what you know?"
+   },
+   "reveal": {
+    "jp": "正解は四番、推測です。",
+    "en": "The answer is 4: 推測."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "明日の納品は、（　　）ですか。",
+   "promptEn": "Is delivery tomorrow ___?",
+   "choices": [
+    "可能",
+    "話題",
+    "日常",
+    "基本"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。明日の納品は、可能ですか。",
+    "en": "The answer is 1: 可能, possible."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、報告書とデータの言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: reports & data."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

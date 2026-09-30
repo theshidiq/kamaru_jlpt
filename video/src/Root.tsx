@@ -2,6 +2,9 @@ import { Fragment } from 'react'
 import { Composition } from 'remotion'
 import ep11 from './data/bjt-1-1.json'
 import ep12 from './data/bjt-1-2.json'
+import ep13 from './data/bjt-1-3.json'
+import ep14 from './data/bjt-1-4.json'
+import ep15 from './data/bjt-1-5.json'
 import { Episode } from './Episode'
 import { Short } from './Short'
 import { schedule } from './timeline'
@@ -10,7 +13,7 @@ export const FPS = 30
 type Raw = Parameters<typeof schedule>[0]
 
 /** Every built episode. Add its data import here after build-episode.py. */
-const EPISODES = [ep11, ep12] as unknown as Raw[]
+const EPISODES = [ep11, ep12, ep13, ep14, ep15] as unknown as Raw[]
 const frames = (ms: number) => Math.ceil((ms / 1000) * FPS)
 
 export const Root = () => (

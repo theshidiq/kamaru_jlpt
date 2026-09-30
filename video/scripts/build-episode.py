@@ -17,7 +17,7 @@ one example sentence costs one line of credits, not the whole episode.
 eleven_v3 is used because it is the only model that reads Japanese kanji
 correctly; its takes are not deterministic, so never regenerate "to check".
 """
-import base64, hashlib, json, os, re, subprocess, sys, urllib.request
+import base64, hashlib, json, os, re, shutil, subprocess, sys, urllib.request
 from janome.tokenizer import Tokenizer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -84,7 +84,9 @@ class Episode:
                 s = ''.join(x[0] for x in raw[i:j])
                 if s in self.read or s in self.vocab_read:
                     r = self.read.get(s) or self.vocab_read.get(s) or ''.join(x[1] for x in raw[i:j])
-                    out.append(self.unit(s, r if KANJI.search(s) else ''))
+                    # kana-only words still take their reading when listed in
+                    # speakKana (BJT -> ビージェーティー); ruby_parts adds no furigana
+                    out.append(self.unit(s, r if KANJI.search(s) or s in self.kana else ''))
                     i = j
                     break
             else:
@@ -110,6 +112,29 @@ def tts(key, voice, text):
         headers={'xi-api-key': key, 'Content-Type': 'application/json'})
     with urllib.request.urlopen(req, timeout=120) as res:
         return json.load(res)
+
+
+def passage_clips(voices):
+    """Read Along clips (audio-src/passages/), keyed by (voice id, displayed text).
+
+    A lesson whose reading part is the section's passage reuses these for free.
+    Their cache stores per-displayed-character times rather than the raw
+    alignment, and the voice only inside the hash, so match on that.
+    """
+    out = {}
+    root = os.path.join(ROOT, 'audio-src', 'passages')
+    if not os.path.isdir(root):
+        return out
+    for d in sorted(os.listdir(root)):
+        for f in sorted(os.listdir(os.path.join(root, d))):
+            if not f.endswith('.json'):
+                continue
+            meta = json.load(open(os.path.join(root, d, f), encoding='utf-8'))
+            spoken = meta.get('spoken', meta['text'])
+            for v in voices:
+                if hashlib.sha1(f'{MODEL}|{v}|{spoken}'.encode()).hexdigest()[:12] == meta['hash']:
+                    out[(v, meta['text'])] = (os.path.join(root, d, f[:-5] + '.mp3'), meta['chars'])
+    return out
 
 
 def duration_ms(path):
@@ -171,9 +196,22 @@ def main():
         cache = os.path.join(audio_dir, l['id'] + '.json')
         if not (os.path.exists(cache) and json.load(open(cache))['hash'] == l['hash']):
             todo.append(l)
+    # Lines a Read Along passage already voiced: copied, not paid for.
+    reuse = passage_clips({v['id'] for v in ep['voices'].values()})
+    for l in list(todo):
+        hit = reuse.get((ep['voices'][l['sp']]['id'], ''.join(u['t'] for u in l['units'])))
+        if hit:
+            mp3, chars_at = hit
+            if not dry:
+                shutil.copyfile(mp3, os.path.join(audio_dir, l['id'] + '.mp3'))
+                json.dump({'hash': l['hash'], 'text': l['text'], 'chars': chars_at, 'source': os.path.relpath(mp3, ROOT)},
+                          open(os.path.join(audio_dir, l['id'] + '.json'), 'w'), ensure_ascii=False)
+            todo.remove(l)
+            l['reused'] = True
+    reused = sum(1 for l in all_lines if l.get('reused'))
     chars = sum(len(l['text']) for l in todo)
     print(f'{len(all_lines)} lines, {sum(len(l["text"]) for l in all_lines)} chars total; '
-          f'{len(todo)} to voice = {chars} chars ≈ {chars * CREDITS_PER_CHAR:.0f} credits')
+          f'{reused} reused from Read Along; {len(todo)} to voice = {chars} chars ≈ {chars * CREDITS_PER_CHAR:.0f} credits')
     if dry:
         for l in all_lines:
             print(f"  {l['id']} {l['sp']:9} {' '.join(u['t'] + ('(' + '/'.join(p['r'] for p in u['parts'] if 'r' in p) + ')' if any('r' in p for p in u['parts']) else '') + ('*' if u.get('word') else '') for u in l['units'])}")
@@ -194,8 +232,19 @@ def main():
     # 3. timings: map each unit's spoken characters onto the alignment
     for l in all_lines:
         cache = json.load(open(os.path.join(audio_dir, l['id'] + '.json')))
-        al = cache['alignment']
         l['durationMs'] = duration_ms(os.path.join(audio_dir, l['id'] + '.mp3'))
+        if 'chars' in cache:  # reused Read Along clip: times per displayed character
+            off = 0
+            for u in l['units']:
+                n = len(u['t'])
+                u['start'], u['end'] = round(cache['chars'][off][0]), round(cache['chars'][off + n - 1][1])
+                off += n
+                u.pop('speak')
+            l['audio'] = f'audio/{ep_id}/{l["id"]}.mp3'
+            for k in ('hash', 'text', 'reused'):
+                l.pop(k, None)
+            continue
+        al = cache['alignment']
         starts, ends = al['character_start_times_seconds'], al['character_end_times_seconds']
         exact = ''.join(al['characters']) == l['text']
         if not exact:
@@ -210,8 +259,8 @@ def main():
             off = b
             u.pop('speak')
         l['audio'] = f'audio/{ep_id}/{l["id"]}.mp3'
-        for k in ('hash', 'text'):
-            l.pop(k)
+        for k in ('hash', 'text', 'reused'):
+            l.pop(k, None)
 
     out = {k: ep[k] for k in ('id', 'level', 'chapter', 'section', 'title', 'titleEn', 'label', 'blocks', 'short', 'screen') if k in ep}
     out['segments'] = segs

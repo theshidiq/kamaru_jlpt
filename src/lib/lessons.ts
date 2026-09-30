@@ -8,6 +8,9 @@ import type { JlptLevel } from '@/types/user'
 const LESSONS: { level: JlptLevel; chapter: number; section: number; id: string; minutes: number }[] = [
   { level: 'BJT', chapter: 1, section: 1, id: 'bjt-1-1', minutes: 7 },
   { level: 'BJT', chapter: 1, section: 2, id: 'bjt-1-2', minutes: 8 },
+  { level: 'BJT', chapter: 1, section: 3, id: 'bjt-1-3', minutes: 8 },
+  { level: 'BJT', chapter: 1, section: 4, id: 'bjt-1-4', minutes: 8 },
+  { level: 'BJT', chapter: 1, section: 5, id: 'bjt-1-5', minutes: 8 },
 ]
 
 export function lessonFor(level: JlptLevel, chapter: number, section: number) {

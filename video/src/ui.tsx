@@ -5,6 +5,7 @@ import type { Line, Segment, Unit } from './timeline'
 
 export const FONT = "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif"
 export const INDIGO = '#1e1b4b'
+const PUNCT = /^[\s、。，．！？!?「」『』（）()・…ー]+$/
 
 const CAST_COLOR: Record<string, string> = { boss: '#60a5fa', staff: '#f472b6' }
 
@@ -38,10 +39,12 @@ export function Karaoke({ line, ms, size, en, dark = false }: { line: Line; ms: 
     <div>
       <p style={{ fontSize: size, lineHeight: 1.9, margin: 0, fontWeight: 600, color: base }}>
         <Ruby units={line.units} rt={size * 0.46} highlight={i => {
-          const u = line.units[i], done = u.end <= t, now = u.start <= t && t < u.end
+          // Punctuation is timed like any unit but never lit: a yellow box
+          // around 。 reads as a glitch, not as the voice's position.
+          const u = line.units[i], done = u.end <= t, now = u.start <= t && t < u.end && !PUNCT.test(u.t)
           return {
             color: now ? INDIGO : base,
-            opacity: done || now || t >= line.durationMs ? 1 : 0.4,
+            opacity: done || now || t >= line.durationMs ? 1 : 0.6,
             background: now ? '#fcd34d' : 'transparent',
             borderRadius: 8, padding: now ? '0 3px' : 0,
             textDecoration: u.word ? `underline dotted ${dark ? '#818cf8' : '#a5b4fc'}` : 'none',

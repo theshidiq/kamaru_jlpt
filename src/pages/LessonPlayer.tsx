@@ -180,11 +180,16 @@ export function LessonPlayer() {
     if (s.type === 'scene') {
       return (
         <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 md:p-5 shadow-sm">
-          <p className="text-xs font-semibold text-gray-400 dark:text-gray-500 mb-2">会話 · {t('conversation', lang)}</p>
+          <p className="text-xs font-semibold text-gray-400 dark:text-gray-500 mb-2">
+            {s.label ? `${s.label.jp} · ${s.label.en}` : `会話 · ${t('conversation', lang)}`}
+          </p>
           <div className="space-y-2">
             {s.lines.map(l => (
               <div key={l.id}>
-                <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${CAST_CHIP[l.cast ?? ''] ?? 'bg-gray-100 text-gray-700'}`}>{l.name}</span>
+                {/* a document is read by the narrator: no speaker to name */}
+                {l.sp !== 'host' && (
+                  <span className={`inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${CAST_CHIP[l.cast ?? ''] ?? 'bg-gray-100 text-gray-700'}`}>{l.name}</span>
+                )}
                 <LineText {...lineProps(l)} />
               </div>
             ))}

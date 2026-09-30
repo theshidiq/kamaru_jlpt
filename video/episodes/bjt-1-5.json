@@ -1,0 +1,686 @@
+{
+ "id": "bjt-1-5",
+ "level": "BJT",
+ "chapter": 1,
+ "section": 5,
+ "title": "BJTテストの言葉",
+ "titleEn": "BJT test words",
+ "label": "BJT · 第5課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "riku": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "例文"
+  },
+  "sakura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "例文"
+  }
+ },
+ "exampleVoices": [
+  "riku",
+  "sakura"
+ ],
+ "blocks": {
+  "test": {
+   "jp": "BJTのテスト",
+   "en": "The BJT test",
+   "scene": "training"
+  },
+  "answer": {
+   "jp": "問題と答え",
+   "en": "Questions & answers",
+   "scene": "office"
+  },
+  "work": {
+   "jp": "仕事で大切なこと",
+   "en": "What matters at work",
+   "scene": "meeting"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "聴読解"
+ ],
+ "screen": {
+  "subject": "BJT模擬テストのお知らせ",
+  "line": "聴解・聴読解・読解"
+ },
+ "readings": {
+  "第五課": "だいごか",
+  "BJT": "ビージェーティー",
+  "本番": "ほんばん",
+  "一回": "いっかい",
+  "流れ": "なが",
+  "表示": "ひょうじ",
+  "候補": "こうほ",
+  "四つ": "よっつ",
+  "全問": "ぜんもん",
+  "三十分": "さんじゅっぷん",
+  "辞書": "じしょ",
+  "入力": "にゅうりょく",
+  "見学": "けんがく",
+  "量": "りょう",
+  "約束": "やくそく",
+  "希望": "きぼう",
+  "注意": "ちゅうい",
+  "売り上げ": "うりあげ",
+  "聴読解": "ちょうどっかい"
+ },
+ "speakKana": [
+  "第五課",
+  "BJT",
+  "三十分",
+  "聴読解",
+  "一回"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第五課。BJTテストの言葉を、二十五個勉強します。",
+     "en": "Today is lesson 5: 25 words — BJT test words."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、社内のお知らせを聞いてみましょう。",
+     "en": "First, let's listen to a notice sent round the company."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "training",
+   "label": {
+    "jp": "お知らせ",
+    "en": "Notice"
+   },
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "件名：BJT模擬テスト実施のお知らせ",
+     "en": "Subject: Notice of a BJT mock test"
+    },
+    {
+     "sp": "host",
+     "jp": "宛先：社員各位",
+     "en": "To: All employees"
+    },
+    {
+     "sp": "host",
+     "jp": "人事部より、BJT模擬テストの実施についてお知らせします。",
+     "en": "HR is announcing a BJT mock test."
+    },
+    {
+     "sp": "host",
+     "jp": "ビジネスの現場で日本語が正確に通じるかどうかは、業務上とても重要です。",
+     "en": "Whether your Japanese gets across accurately in real business situations is very important for your work."
+    },
+    {
+     "sp": "host",
+     "jp": "そこで、日本語の力を客観的に測る機会として、来月、社内で模擬テストを行います。希望者は誰でも受験できます。",
+     "en": "So, as a chance to measure your Japanese objectively, we will hold a mock test in-house next month. Anyone who wishes can take it."
+    },
+    {
+     "sp": "host",
+     "jp": "テストは聴解、聴読解、読解の三部で構成されています。",
+     "en": "The test has three parts: listening, listening-and-reading, and reading."
+    },
+    {
+     "sp": "host",
+     "jp": "聴解では音声を聞き、画面に表示された選択肢から答えを選びます。",
+     "en": "In listening, you hear audio and choose an answer from the options shown on screen."
+    },
+    {
+     "sp": "host",
+     "jp": "読解では、文脈から判断して空欄に入る語句を選ぶ問題も出題されます。",
+     "en": "In reading, there are also questions where you judge from context and choose the words that go in a blank."
+    },
+    {
+     "sp": "host",
+     "jp": "解答はすべてパソコンで行います。正解・不正解だけでなく、どの分野が弱いかも結果に表示されます。",
+     "en": "All answers are made on a computer. The results show not only correct and incorrect answers but also which areas are weak."
+    },
+    {
+     "sp": "host",
+     "jp": "受験日は、業務の予定に応じて二つの日程から選べます。",
+     "en": "You can choose between two test dates depending on your work schedule."
+    },
+    {
+     "sp": "host",
+     "jp": "最近、お客様への対応で不適切な表現があったという報告が増えています。敬語の使い方を見直す機会としても、ぜひご活用ください。",
+     "en": "Recently there have been more reports of inappropriate expressions when dealing with customers. Please also use this as a chance to review your keigo."
+    },
+    {
+     "sp": "host",
+     "jp": "自分の日本語の力を正しく認識することが、上達への第一歩です。",
+     "en": "Recognizing your own level of Japanese accurately is the first step to improving."
+    },
+    {
+     "sp": "host",
+     "jp": "当然ですが、テストの結果が人事評価に影響することはありません。",
+     "en": "Needless to say, the results will not affect your performance evaluation."
+    },
+    {
+     "sp": "host",
+     "jp": "前回に比べて申し込みが大幅に増えているため、早めにお申し込みください。",
+     "en": "Applications are well up on last time, so please apply early."
+    },
+    {
+     "sp": "host",
+     "jp": "人事部",
+     "en": "Human Resources"
+    }
+   ]
+  },
+  {
+   "type": "bridge",
+   "block": "test",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、BJTのテストの言葉です。",
+     "en": "Now let's go through today's words one by one. First: the BJT test."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "受験",
+   "explain": {
+    "jp": "試験を受けることです。",
+    "en": "Taking an exam."
+   },
+   "example": {
+    "jp": "来月、BJTを受験します。",
+    "en": "I'm taking the BJT next month."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "模擬",
+   "explain": {
+    "jp": "本物に似せて、行うことです。",
+    "en": "Doing something as a rehearsal of the real thing."
+   },
+   "example": {
+    "jp": "本番の前に、模擬テストを受けましょう。",
+    "en": "Take a mock test before the real one."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "出題",
+   "explain": {
+    "jp": "試験などで、問題を出すことです。",
+    "en": "Setting a question, as in an exam."
+   },
+   "example": {
+    "jp": "敬語の問題が、よく出題されます。",
+    "en": "Keigo questions come up often."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "聴解",
+   "explain": {
+    "jp": "聞いて、内容を理解することです。",
+    "en": "Understanding by listening."
+   },
+   "example": {
+    "jp": "聴解の問題では、会話を聞いて答えます。",
+    "en": "In listening questions you answer after hearing a conversation."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "聴読解",
+   "explain": {
+    "jp": "聞くことと、資料を読むことを、合わせて理解することです。",
+    "en": "Understanding by listening and reading material together."
+   },
+   "example": {
+    "jp": "聴読解では、グラフを見ながら音声を聞きます。",
+    "en": "In listening-reading you hear audio while looking at a graph."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "読解",
+   "explain": {
+    "jp": "文章を読んで、内容を理解することです。",
+    "en": "Understanding a text by reading it."
+   },
+   "example": {
+    "jp": "読解は、時間が足りなくなりやすいです。",
+    "en": "Reading comprehension easily runs out of time."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "音声",
+   "explain": {
+    "jp": "人の声や、機械から出る音です。",
+    "en": "Voices, or sound from a machine."
+   },
+   "example": {
+    "jp": "音声は、一回しか流れません。",
+    "en": "The audio is played only once."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "画面",
+   "explain": {
+    "jp": "パソコンやスマホの、表示が出るところです。",
+    "en": "The part of a computer or phone that shows things."
+   },
+   "example": {
+    "jp": "答えは、画面で選びます。",
+    "en": "You choose your answers on the screen."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "answer",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、問題と答えの言葉です。",
+     "en": "Next: questions & answers."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "選択肢",
+   "explain": {
+    "jp": "答えを選ぶための、いくつかの候補です。",
+    "en": "The choices you pick an answer from."
+   },
+   "example": {
+    "jp": "四つの選択肢から、一つ選んでください。",
+    "en": "Choose one of the four options."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "正解",
+   "explain": {
+    "jp": "正しい答えです。",
+    "en": "The right answer."
+   },
+   "example": {
+    "jp": "全問正解は、とても難しいです。",
+    "en": "Getting every question right is very hard."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "不正解",
+   "explain": {
+    "jp": "間違った答えです。",
+    "en": "A wrong answer."
+   },
+   "example": {
+    "jp": "不正解だった問題を、もう一度解きましょう。",
+    "en": "Redo the questions you got wrong."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "解答",
+   "explain": {
+    "jp": "問題に、答えを出すことです。",
+    "en": "Giving an answer to a question."
+   },
+   "example": {
+    "jp": "解答の時間は、三十分です。",
+    "en": "You have thirty minutes to answer."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "空欄",
+   "explain": {
+    "jp": "何も書いていない、空いているところです。",
+    "en": "An empty space with nothing written in it."
+   },
+   "example": {
+    "jp": "空欄に、名前を書いてください。",
+    "en": "Write your name in the blank."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "語句",
+   "explain": {
+    "jp": "言葉や、言葉のまとまりのことです。",
+    "en": "A word or a group of words."
+   },
+   "example": {
+    "jp": "分からない語句は、辞書で調べます。",
+    "en": "Look up words you don't know in a dictionary."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "文脈",
+   "explain": {
+    "jp": "文章の中の、話の流れです。",
+    "en": "The flow of meaning in a text."
+   },
+   "example": {
+    "jp": "知らない言葉も、文脈から意味がわかります。",
+    "en": "You can tell what an unknown word means from context."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "正確",
+   "explain": {
+    "jp": "正しくて、間違いがないことです。",
+    "en": "Correct, with no mistakes."
+   },
+   "example": {
+    "jp": "数字は、正確に入力してください。",
+    "en": "Please enter the figures accurately."
+   }
+  },
+  {
+   "type": "word",
+   "block": "answer",
+   "word": "測る",
+   "explain": {
+    "jp": "長さや力などを、調べて数字にすることです。",
+    "en": "Checking length, ability and so on as a number."
+   },
+   "example": {
+    "jp": "このテストで、日本語の力を測ります。",
+    "en": "This test measures your Japanese."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "work",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、仕事で大切なことの言葉です。",
+     "en": "Last: what matters at work."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "現場",
+   "explain": {
+    "jp": "実際に仕事をしている場所です。",
+    "en": "The place where the work is actually done."
+   },
+   "example": {
+    "jp": "工場の現場を、見学しました。",
+    "en": "We toured the factory floor."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "重要",
+   "explain": {
+    "jp": "とても大切なことです。",
+    "en": "Very important."
+   },
+   "example": {
+    "jp": "これは、重要な会議です。",
+    "en": "This is an important meeting."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "認識",
+   "explain": {
+    "jp": "物事を、はっきりわかることです。",
+    "en": "Clearly recognising how things are."
+   },
+   "example": {
+    "jp": "問題の大きさを、正しく認識しましょう。",
+    "en": "Let's correctly recognise how big the problem is."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "不適切",
+   "explain": {
+    "jp": "その場に、合っていないことです。",
+    "en": "Not suited to the situation."
+   },
+   "example": {
+    "jp": "不適切な表現に、注意してください。",
+    "en": "Watch out for inappropriate expressions."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "大幅",
+   "explain": {
+    "jp": "数や量の変わり方が、とても大きいことです。",
+    "en": "A very large change in number or amount."
+   },
+   "example": {
+    "jp": "売り上げが、大幅に増えました。",
+    "en": "Sales rose sharply."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "当然",
+   "explain": {
+    "jp": "そうなるのが、あたりまえなことです。",
+    "en": "Only natural; to be expected."
+   },
+   "example": {
+    "jp": "約束の時間を守るのは、当然です。",
+    "en": "Keeping to the agreed time is only natural."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "応じる",
+   "explain": {
+    "jp": "相手や状況に、合わせることです。",
+    "en": "Adapting to the person or the situation."
+   },
+   "example": {
+    "jp": "お客様の希望に応じて、プランを変えます。",
+    "en": "We change the plan to suit the customer's wishes."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "通じる",
+   "explain": {
+    "jp": "言葉や気持ちが、相手にわかることです。",
+    "en": "When your words or feelings get across."
+   },
+   "example": {
+    "jp": "私の日本語が、お客様に通じました。",
+    "en": "The customer understood my Japanese."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "四つの（　　）から、一つ選んでください。",
+   "promptEn": "Choose one of the four ___.",
+   "choices": [
+    "空欄",
+    "選択肢",
+    "語句",
+    "音声"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。四つの選択肢から、一つ選んでください。",
+    "en": "The answer is 2: 選択肢, options."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "知らない言葉も、（　　）から意味がわかります。",
+   "promptEn": "You can tell an unknown word from its ___.",
+   "choices": [
+    "画面",
+    "現場",
+    "文脈",
+    "模擬"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。知らない言葉も、文脈から意味がわかります。",
+    "en": "The answer is 3: 文脈, context."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "聞くことと、資料を読むことを、合わせて理解する問題は？",
+   "promptEn": "Which section combines listening with reading material?",
+   "choices": [
+    "読解",
+    "聴解",
+    "解答",
+    "聴読解"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第三問。聞くことと、資料を読むことを、合わせて理解する問題は、どれですか。",
+    "en": "Question 3. Which section combines listening with reading material?"
+   },
+   "reveal": {
+    "jp": "正解は四番、聴読解です。",
+    "en": "The answer is 4: 聴読解."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "私の日本語が、お客様に（　　）。",
+   "promptEn": "My Japanese ___ the customer.",
+   "choices": [
+    "通じました",
+    "測りました",
+    "応じました",
+    "受験しました"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。私の日本語が、お客様に通じました。",
+    "en": "The answer is 1: 通じました, got across to."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "売り上げが、（　　）に増えました。",
+   "promptEn": "Sales rose ___.",
+   "choices": [
+    "当然",
+    "大幅",
+    "正確",
+    "重要"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。売り上げが、大幅に増えました。",
+    "en": "The answer is 2: 大幅, sharply."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、BJTテストの言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: BJT test words."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}
