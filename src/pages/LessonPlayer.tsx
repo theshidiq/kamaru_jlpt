@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useNavigate, useParams } from 'react-router-dom'
-import { RiPauseFill, RiPlayFill, RiReplay10Line, RiForward10Line, RiBookReadLine, RiHeadphoneLine } from '@remixicon/react'
+import { RiPauseFill, RiPlayFill, RiReplay10Line, RiForward10Line, RiBookReadLine, RiHeadphoneLine, RiArrowLeftSLine, RiArrowRightSLine } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { audioUrl } from '@/lib/assets'
-import { lessonFor } from '@/lib/lessons'
+import { lessonFor, lessonNeighbours } from '@/lib/lessons'
 import { PASSAGE_BANK } from '@/lib/passages'
 import type { Lesson, LessonLine, LessonPart, LessonSegment } from '@/types/lesson'
 import type { WordStatus } from '@/types/user'
@@ -63,7 +63,16 @@ function LineText({ line, t, furigana, english, onSeek }: {
   )
 }
 
+/**
+ * Keyed on the section, so Prev/Next remounts the page: playback, the
+ * position and quiz answers all start fresh instead of carrying over.
+ */
 export function LessonPlayer() {
+  const { chapter, section } = useParams()
+  return <LessonPage key={`${chapter}-${section}`} />
+}
+
+function LessonPage() {
   const { chapter, section } = useParams()
   const navigate = useNavigate()
   const { user, vocab, preferredLanguage: lang, wordStatuses, setWordStatus } = useAppStore()
@@ -164,6 +173,34 @@ export function LessonPlayer() {
 
   const lineT = (l: LessonLine) => (current?.id === l.id ? nowMs - l.at : null)
   const lineProps = (l: LessonLine) => ({ line: l, t: lineT(l), furigana, english, onSeek: () => seek(l.at) })
+
+  /**
+   * Prev/next lesson, above the transcript and again at its end — the same
+   * pair as the Read Along page, so finishing a lesson leads straight on.
+   */
+  function lessonNav(placement: 'top' | 'bottom') {
+    const { prev, next } = lessonNeighbours(level, ch, sec)
+    const cls =
+      'flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-lg border transition-colors ' +
+      'border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 ' +
+      'hover:bg-gray-50 dark:hover:bg-gray-800 disabled:opacity-40 disabled:pointer-events-none'
+    const go = (n: { chapter: number; section: number } | null) => {
+      if (!n) return
+      window.scrollTo(0, 0)
+      navigate(`/lesson/${n.chapter}/${n.section}`)
+    }
+    return (
+      <div className={`flex items-center justify-between gap-2 ${placement === 'top' ? 'mb-4' : 'mt-6'}`}>
+        <button className={cls} disabled={!prev} onClick={() => go(prev)}>
+          <RiArrowLeftSLine size={18} />{t('prev', lang)}
+        </button>
+        <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">{ch} · {sec}</span>
+        <button className={cls} disabled={!next} onClick={() => go(next)}>
+          {t('next', lang)}<RiArrowRightSLine size={18} />
+        </button>
+      </div>
+    )
+  }
 
   // A render function, not a component: defined in here it would be a new
   // component type every frame, and React would remount the whole transcript.
@@ -295,9 +332,11 @@ export function LessonPlayer() {
           </button>
         )}
 
+        {lessonNav('top')}
         <div className="space-y-3">
           {lesson.segments.map((s, i) => <div key={i}>{renderSegment(s)}</div>)}
         </div>
+        {lessonNav('bottom')}
       </div>
 
       <audio

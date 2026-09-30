@@ -16,3 +16,10 @@ const LESSONS: { level: JlptLevel; chapter: number; section: number; id: string;
 export function lessonFor(level: JlptLevel, chapter: number, section: number) {
   return LESSONS.find(l => l.level === level && l.chapter === chapter && l.section === section) ?? null
 }
+
+/** The lessons before and after this one in its level, in chapter/section order. */
+export function lessonNeighbours(level: JlptLevel, chapter: number, section: number) {
+  const all = LESSONS.filter(l => l.level === level).sort((a, b) => a.chapter - b.chapter || a.section - b.section)
+  const i = all.findIndex(l => l.chapter === chapter && l.section === section)
+  return { prev: i > 0 ? all[i - 1] : null, next: i >= 0 && i < all.length - 1 ? all[i + 1] : null }
+}
