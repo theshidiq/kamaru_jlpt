@@ -306,10 +306,20 @@ export function Navbar() {
                 )
               })}
             </nav>
-            <div className="border-t border-gray-200 dark:border-gray-700 px-4 py-3 safe-area-bottom">
-              <p className="text-sm font-semibold text-gray-900 dark:text-white truncate">{user.display_name}</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">{levelLabel(user.jlpt_level ?? DEFAULT_LEVEL)}</p>
-            </div>
+            {/* Current level, tappable. Levels (including BJT) are otherwise
+                only reachable from the avatar menu, which is easy to miss. */}
+            <button
+              onClick={() => { closeDrawer(); navigate('/level-select') }}
+              className="border-t border-gray-200 dark:border-gray-700 px-4 py-3 safe-area-bottom text-left flex items-center justify-between gap-3 hover:bg-gray-50 dark:hover:bg-gray-800"
+            >
+              <span className="min-w-0">
+                <span className="block text-sm font-semibold text-gray-900 dark:text-white truncate">{user.display_name}</span>
+                <span className="block text-xs text-gray-500 dark:text-gray-400">{levelLabel(user.jlpt_level ?? DEFAULT_LEVEL)}</span>
+              </span>
+              <span className="shrink-0 text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+                {t('changeLevel', lang)} ›
+              </span>
+            </button>
           </aside>
         </div>
       )}
