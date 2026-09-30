@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useNavigate, useParams } from 'react-router-dom'
-import { RiPauseFill, RiPlayFill, RiReplay10Line, RiForward10Line } from '@remixicon/react'
+import { RiPauseFill, RiPlayFill, RiReplay10Line, RiForward10Line, RiBookReadLine, RiHeadphoneLine } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { audioUrl } from '@/lib/assets'
 import { lessonFor } from '@/lib/lessons'
+import { PASSAGE_BANK } from '@/lib/passages'
 import type { Lesson, LessonLine, LessonPart, LessonSegment } from '@/types/lesson'
 import type { WordStatus } from '@/types/user'
 
@@ -272,11 +273,22 @@ export function LessonPlayer() {
     <PageWrapper>
       <div className="pb-32">
         <button onClick={() => navigate(-1)} className="text-sm text-gray-500 dark:text-gray-400 mb-3">{t('back', lang)}</button>
-        <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">{t('lesson', lang)} · {lesson.label}</p>
+        <p className="flex items-center gap-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+          <RiHeadphoneLine size={14} />{t('lesson', lang)} · {lesson.label}
+        </p>
         <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white font-jp">{lesson.title}</h1>
         <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
           {lesson.titleEn} · {lesson.segments.filter(s => s.type === 'word').length} {t('words', lang)} · {clock(lesson.durationMs)}
         </p>
+        {PASSAGE_BANK[level].some(p => p.chapter === ch && p.section === sec) && (
+          <button
+            onClick={() => navigate(`/read/${ch}/${sec}`)}
+            className="flex items-center gap-1.5 text-sm font-medium text-rose-600 dark:text-rose-400 mb-4 -mt-2"
+          >
+            <RiBookReadLine size={16} />
+            {t('readTitle', lang)} · {t('readAlongMinutes', lang)} →
+          </button>
+        )}
 
         <div className="space-y-3">
           {lesson.segments.map((s, i) => <div key={i}>{renderSegment(s)}</div>)}

@@ -7,7 +7,8 @@ import { getSection, buildChapterMap, getMeaning, DEFAULT_LEVEL } from '@/lib/vo
 import { t } from '@/lib/i18n'
 import { PASSAGE_BANK } from '@/lib/passages'
 import { lessonFor } from '@/lib/lessons'
-import { RiHeadphoneLine } from '@remixicon/react'
+import { RiBookReadLine, RiHeadphoneLine } from '@remixicon/react'
+import { ListenCard } from '@/components/ListenCard'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
 
@@ -171,6 +172,33 @@ export function VocabSection() {
         />
       </div>
 
+      {/* The two listening features, as cards that say what each one is:
+          Read Along is the passage read aloud; Lesson is the full class. */}
+      {(hasPassage || lesson) && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+          {hasPassage && (
+            <ListenCard
+              icon={<RiBookReadLine size={22} />}
+              tone="rose"
+              title={t('readTitle', lang)}
+              meta={t('readAlongMinutes', lang)}
+              desc={t('readAlongDesc', lang)}
+              onClick={() => navigate(`/read/${ch}/${sec}`)}
+            />
+          )}
+          {lesson && (
+            <ListenCard
+              icon={<RiHeadphoneLine size={22} />}
+              tone="indigo"
+              title={t('lesson', lang)}
+              meta={t('lessonMinutes', lang, { n: lesson.minutes })}
+              desc={t('lessonDesc', lang)}
+              onClick={() => navigate(`/lesson/${ch}/${sec}`)}
+            />
+          )}
+        </div>
+      )}
+
       {/* View toggle */}
       <div className="flex flex-wrap gap-2 mb-4">
         {(['list', 'flashcard'] as const).map(v => (
@@ -186,23 +214,6 @@ export function VocabSection() {
             {v === 'list' ? t('list', lang) : t('flashcard', lang)}
           </button>
         ))}
-        {hasPassage && (
-          <button
-            onClick={() => navigate(`/read/${ch}/${sec}`)}
-            className="px-5 py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 hover:bg-rose-100 dark:hover:bg-rose-900/30"
-          >
-            {t('readTitle', lang)}
-          </button>
-        )}
-        {lesson && (
-          <button
-            onClick={() => navigate(`/lesson/${ch}/${sec}`)}
-            className="flex items-center gap-1.5 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] bg-indigo-50 dark:bg-indigo-900/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/30"
-          >
-            <RiHeadphoneLine size={16} />
-            {t('lesson', lang)}
-          </button>
-        )}
       </div>
 
       {/* List (card) view */}

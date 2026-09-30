@@ -8,7 +8,7 @@ import { usePlanSection } from '@/hooks/usePlanSection'
 import { LEVEL_CONFIG, getSectionTitleLang, getChapterTitleLang, DEFAULT_LEVEL } from '@/lib/vocab'
 import { t } from '@/lib/i18n'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
-import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine, RiVolumeUpLine, RiHeadphoneLine } from '@remixicon/react'
+import { RiBookOpenLine, RiPencilLine, RiFileTextLine, RiTargetLine, RiFireLine, RiBookReadLine, RiHeadphoneLine } from '@remixicon/react'
 import { PASSAGE_BANK } from '@/lib/passages'
 import { loadLastRead } from '@/lib/storage'
 import { lessonFor } from '@/lib/lessons'
@@ -108,19 +108,21 @@ export function Dashboard() {
             />
           </div>
 
-          <div className="flex items-center justify-between gap-3">
+          {/* On phones the buttons get their own full-width row: side by side
+              with the streak, Read Along pushed Study Now off the card. */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <div>
               <p className="text-sm text-white/80">{t('streak', lang)}</p>
               <p className="text-2xl font-bold flex items-center gap-1.5">{progress.streak} days <RiFireLine size={20} className="text-orange-400" /></p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-stretch gap-2 w-full sm:w-auto">
               {readTarget && (
                 <button
                   onClick={() => navigate(`/read/${readTarget.chapter}/${readTarget.section}`)}
-                  className="flex flex-col items-center gap-0.5 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-xl transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
+                  className="flex-1 sm:flex-none flex flex-col items-center justify-center gap-0.5 bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-2 rounded-xl transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
                 >
                   <span className="flex items-center gap-1.5">
-                    <RiVolumeUpLine size={18} />
+                    <RiBookReadLine size={18} />
                     {t('readNow', lang)}
                   </span>
                   <span className="text-[11px] font-normal text-white/75 leading-none">
@@ -130,7 +132,7 @@ export function Dashboard() {
               )}
               <button
                 onClick={() => navigate('/study')}
-                className="bg-white text-indigo-700 font-semibold px-4 md:px-5 py-3 rounded-xl hover:bg-indigo-50 transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
+                className="flex-1 sm:flex-none bg-white text-indigo-700 font-semibold px-4 md:px-5 py-3 rounded-xl hover:bg-indigo-50 transition-colors text-sm md:text-base min-h-[44px] whitespace-nowrap"
               >
                 {t('studyNow', lang)} →
               </button>
@@ -148,8 +150,8 @@ export function Dashboard() {
             className="md:col-span-2 flex items-center justify-between gap-3 w-full text-left bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
           >
             <span className="flex items-center gap-3 min-w-0">
-              <span className="shrink-0 h-10 w-10 rounded-full bg-indigo-50 dark:bg-indigo-900/40 flex items-center justify-center text-indigo-600 dark:text-indigo-300">
-                <RiVolumeUpLine size={20} />
+              <span className="shrink-0 h-10 w-10 rounded-full bg-rose-50 dark:bg-rose-900/30 flex items-center justify-center text-rose-600 dark:text-rose-300">
+                <RiBookReadLine size={20} />
               </span>
               <span className="min-w-0">
                 <span className="block text-sm font-semibold text-gray-900 dark:text-white">
@@ -197,7 +199,7 @@ export function Dashboard() {
             </>
           )}
         </div>
-        {/* The plan section's audio lesson, when it has one. After the mastery
+        {/* The plan section's Lesson, when it has one. After the mastery
             card, so that card keeps its place beside the plan card. */}
         {planLesson && (
           <button
@@ -211,7 +213,7 @@ export function Dashboard() {
               <span className="min-w-0">
                 <span className="block text-sm font-semibold text-gray-900 dark:text-white">{t('lesson', lang)}</span>
                 <span className="block text-xs text-gray-500 dark:text-gray-400 truncate">
-                  {t('chapter', lang)} {planChapter} · {t('section', lang)} {planSection} · {t('lessonMinutes', lang, { n: planLesson.minutes })}
+                  {t('chapter', lang)} {planChapter} · {t('section', lang)} {planSection} · {t('lessonMinutes', lang, { n: planLesson.minutes })} · {t('lessonDesc', lang)}
                 </span>
               </span>
             </span>

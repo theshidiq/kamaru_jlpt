@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { createPortal } from 'react-dom'
 import { useParams, useNavigate } from 'react-router-dom'
-import { RiPlayFill, RiPauseFill, RiRestartLine, RiArrowLeftSLine, RiArrowRightSLine } from '@remixicon/react'
+import { RiPlayFill, RiPauseFill, RiRestartLine, RiArrowLeftSLine, RiArrowRightSLine, RiBookReadLine, RiHeadphoneLine } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
@@ -9,6 +9,7 @@ import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { PASSAGE_BANK } from '@/lib/passages'
 import { audioUrl } from '@/lib/assets'
 import { saveLastRead } from '@/lib/storage'
+import { lessonFor } from '@/lib/lessons'
 import type { PassageManifest, PassageAudioEntry, PassageSentence } from '@/types/passage'
 import { FormattedPassage } from '@/components/reader/FormattedPassage'
 import type { WordStatus } from '@/types/user'
@@ -46,6 +47,7 @@ export function SectionReader() {
   }, [level, ch, sec])
 
   const [audio, setAudio] = useState<PassageAudioEntry | null>(null)
+  const lesson = lessonFor(level, ch, sec)
   const [showFurigana, setShowFurigana] = useState(true)
   const [showEnglish, setShowEnglish] = useState(false)
   const [playing, setPlaying] = useState(false)
@@ -245,10 +247,24 @@ export function SectionReader() {
         {t('back', lang)}
       </button>
 
+      <p className="flex items-center gap-1 text-xs font-semibold text-rose-600 dark:text-rose-400">
+        <RiBookReadLine size={14} />
+        {t('readTitle', lang)}{audio && ` · ${Math.floor(audio.durationMs / 60000)}:${String(Math.floor(audio.durationMs / 1000) % 60).padStart(2, '0')}`}
+      </p>
       <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white font-jp">{passage.title}</h1>
       <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
         {t('chapter', lang)} {ch} · {t('section', lang)} {sec} · {passage.targetWords.length} {t('words', lang)}
       </p>
+
+      {lesson && (
+        <button
+          onClick={() => navigate(`/lesson/${ch}/${sec}`)}
+          className="flex items-center gap-1.5 text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-4 -mt-2"
+        >
+          <RiHeadphoneLine size={16} />
+          {t('lesson', lang)} · {t('lessonMinutes', lang, { n: lesson.minutes })} →
+        </button>
+      )}
 
       {sectionNav('top')}
 
