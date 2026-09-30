@@ -9,7 +9,8 @@ import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { PASSAGE_BANK } from '@/lib/passages'
 import { audioUrl } from '@/lib/assets'
 import { saveLastRead } from '@/lib/storage'
-import type { PassageManifest, PassageAudioEntry } from '@/types/passage'
+import type { PassageManifest, PassageAudioEntry, PassageSentence } from '@/types/passage'
+import { FormattedPassage } from '@/components/reader/FormattedPassage'
 import type { WordStatus } from '@/types/user'
 
 const SPEEDS = [0.5, 0.75, 1, 1.25] as const
@@ -146,8 +147,43 @@ export function SectionReader() {
     () => vocab.filter(w => w.chapter === ch && w.section === sec),
     [vocab, ch, sec],
   )
+  // Prefix matching lets a conjugated stem find its word (継 → 継ぐ). For the
+  // business passages it is tightened so the leftover must be okurigana:
+  // otherwise 会議 would open 会議室 and 人 would open 人間. The JLPT passages
+  // keep the looser rule, which their multi-kanji verbs rely on (向 → 向き合う).
+  const strictLookup = !!passage?.format
   function lookup(text: string) {
-    return sectionWords.find(w => w.wordClean === text || w.wordClean.startsWith(text))
+    return sectionWords.find(w =>
+      w.wordClean === text ||
+      (w.wordClean.startsWith(text) &&
+        (!strictLookup || /^[\u3040-\u309f]+$/.test(w.wordClean.slice(text.length)))))
+  }
+
+  // One sentence's tokens, shared by every layout so lookup, status colouring
+  // and furigana behave the same in an email as in a narrative passage.
+  function renderTokens(sentence: PassageSentence, si: number) {
+    return sentence.seg.map((tok, wi) => {
+      const hit = lookup(tok.t)
+      const st = hit ? (wordStatuses[hit.wordClean] ?? 'new') : null
+      const isActive = active.s === si && active.w === wi
+      return (
+        <span
+          key={wi}
+          onClick={e => { if (hit) { e.stopPropagation(); setPicked({ word: tok.t, ch, sec }) } }}
+          className={`rounded transition-colors ${isActive ? 'bg-amber-200 dark:bg-amber-500/40' : ''} ${
+            hit ? 'cursor-pointer underline decoration-dotted underline-offset-4 ' : ''
+          }${
+            hit && st === 'known' ? 'decoration-gray-300 dark:decoration-gray-600'
+            : hit && st === 'learning' ? 'decoration-amber-400 text-amber-700 dark:text-amber-300'
+            : hit ? 'decoration-indigo-400 text-indigo-700 dark:text-indigo-300' : ''
+          }`}
+        >
+          {showFurigana && tok.r
+            ? <ruby>{tok.t}<rt className="text-[10px] text-indigo-400">{tok.r}</rt></ruby>
+            : tok.t}
+        </span>
+      )
+    })
   }
 
   if (!passage) {
@@ -289,45 +325,34 @@ export function SectionReader() {
       )}
 
       {/* Passage */}
-      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 md:p-7 shadow-sm space-y-4">
-        {passage.sentences.map((sentence, si) => (
-          <div
-            key={si}
-            onClick={() => audio && playSentence(si)}
-            className={`rounded-lg px-2 py-1.5 -mx-2 transition-colors ${audio ? 'cursor-pointer' : ''} ${
-              active.s === si ? 'bg-indigo-50/70 dark:bg-indigo-900/20' : 'hover:bg-gray-50 dark:hover:bg-gray-700/40'
-            }`}
-          >
-            <p className="font-jp text-lg md:text-xl leading-loose text-gray-900 dark:text-gray-100">
-              {sentence.seg.map((tok, wi) => {
-                const hit = lookup(tok.t)
-                const st = hit ? (wordStatuses[hit.wordClean] ?? 'new') : null
-                const isActive = active.s === si && active.w === wi
-                return (
-                  <span
-                    key={wi}
-                    onClick={e => { if (hit) { e.stopPropagation(); setPicked({ word: tok.t, ch, sec }) } }}
-                    className={`rounded transition-colors ${isActive ? 'bg-amber-200 dark:bg-amber-500/40' : ''} ${
-                      hit ? 'cursor-pointer underline decoration-dotted underline-offset-4 ' : ''
-                    }${
-                      hit && st === 'known' ? 'decoration-gray-300 dark:decoration-gray-600'
-                      : hit && st === 'learning' ? 'decoration-amber-400 text-amber-700 dark:text-amber-300'
-                      : hit ? 'decoration-indigo-400 text-indigo-700 dark:text-indigo-300' : ''
-                    }`}
-                  >
-                    {showFurigana && tok.r
-                      ? <ruby>{tok.t}<rt className="text-[10px] text-indigo-400">{tok.r}</rt></ruby>
-                      : tok.t}
-                  </span>
-                )
-              })}
-            </p>
-            {showEnglish && (
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{sentence.en}</p>
-            )}
-          </div>
-        ))}
-      </div>
+      {passage.format ? (
+        <FormattedPassage
+          format={passage.format}
+          sentences={passage.sentences}
+          renderTokens={renderTokens}
+          showEnglish={showEnglish}
+          lang={lang}
+        />
+      ) : (
+        <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 md:p-7 shadow-sm space-y-4">
+          {passage.sentences.map((sentence, si) => (
+            <div
+              key={si}
+              onClick={() => audio && playSentence(si)}
+              className={`rounded-lg px-2 py-1.5 -mx-2 transition-colors ${audio ? 'cursor-pointer' : ''} ${
+                active.s === si ? 'bg-indigo-50/70 dark:bg-indigo-900/20' : 'hover:bg-gray-50 dark:hover:bg-gray-700/40'
+              }`}
+            >
+              <p className="font-jp text-lg md:text-xl leading-loose text-gray-900 dark:text-gray-100">
+                {renderTokens(sentence, si)}
+              </p>
+              {showEnglish && (
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{sentence.en}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Floating play/pause — appears once the inline controls scroll away.
           Passages run long and shadowing means pausing every sentence, so
@@ -413,7 +438,7 @@ export function SectionReader() {
         </div>
       )}
 
-      {!audio && (
+      {!audio && !passage.format && (
         <p className="text-xs text-gray-400 mt-4">{t('readerNoAudio', lang)}</p>
       )}
 
