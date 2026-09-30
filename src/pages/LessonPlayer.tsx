@@ -276,7 +276,7 @@ export function LessonPlayer() {
 
   return (
     <PageWrapper>
-      <div className="pb-40">
+      <div className="pb-32">
         <button onClick={() => navigate(-1)} className="text-sm text-gray-500 dark:text-gray-400 mb-3">{t('back', lang)}</button>
         <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">{t('lesson', lang)} · {lesson.label}</p>
         <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white font-jp">{lesson.title}</h1>
@@ -299,47 +299,65 @@ export function LessonPlayer() {
         onEnded={() => setPlaying(false)}
       />
 
-      {/* Player bar. Portalled: PageWrapper animates with a transform, which
-          would make it the containing block for position: fixed. */}
+      {/* Portalled: PageWrapper animates with a transform, which would make it
+          the containing block for position: fixed. */}
       {createPortal(
-        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur pb-[env(safe-area-inset-bottom)]">
-          <div className="max-w-5xl mx-auto px-4 pt-2 pb-3">
-            <input
-              type="range" min={0} max={lesson.durationMs} step={100} value={Math.min(nowMs, lesson.durationMs)}
-              onChange={e => seek(Number(e.target.value), playing)}
-              aria-label="Seek"
-              className="w-full accent-indigo-600"
-            />
-            <div className="flex items-center justify-between gap-2 mt-1">
-              <span className="text-xs tabular-nums text-gray-500 dark:text-gray-400 w-24">{clock(nowMs)} / {clock(lesson.durationMs)}</span>
-              <div className="flex items-center gap-3">
-                <button onClick={() => seek(nowMs - 10000, playing)} aria-label="-10s" className="p-2 text-gray-600 dark:text-gray-300"><RiReplay10Line size={24} /></button>
-                <button onClick={toggle} aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
-                  className="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg">
-                  {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
-                </button>
-                <button onClick={() => seek(nowMs + 10000, playing)} aria-label="+10s" className="p-2 text-gray-600 dark:text-gray-300"><RiForward10Line size={24} /></button>
-              </div>
-              <div className="flex items-center gap-1 w-24 justify-end">
-                <button
-                  onClick={() => setRate(r => SPEEDS[(SPEEDS.indexOf(r as typeof SPEEDS[number]) + 1) % SPEEDS.length])}
-                  className="text-xs font-semibold px-2 py-1.5 rounded-md border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 tabular-nums"
-                >{rate}×</button>
-                {[
-                  { label: 'あ', on: furigana, set: () => setFurigana(v => !v), full: t('furigana', lang) },
-                  { label: 'EN', on: english, set: () => setEnglish(v => !v), full: 'EN' },
-                ].map(o => (
-                  <button key={o.full} onClick={o.set} aria-pressed={o.on} aria-label={o.full}
-                    className={`text-xs font-bold h-8 w-8 rounded-md border ${o.on
-                      ? 'bg-indigo-600 border-indigo-600 text-white'
-                      : 'border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400'}`}>
-                    {o.label}
-                  </button>
-                ))}
+        <>
+          {/* Play/pause and the furigana / English toggles on the right edge,
+              where the thumb rests: the same group as the passage reader's. */}
+          <div className="fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2">
+            <button
+              onClick={toggle}
+              aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
+              className="flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
+            >
+              {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
+            </button>
+            {[
+              { label: 'あ', on: furigana, set: () => setFurigana(v => !v), full: t('furigana', lang) },
+              { label: 'EN', on: english, set: () => setEnglish(v => !v), full: 'EN' },
+            ].map(o => (
+              <button
+                key={o.full}
+                onClick={o.set}
+                aria-pressed={o.on}
+                aria-label={o.full}
+                className={`flex items-center justify-center h-10 w-10 rounded-full text-xs font-bold shadow-lg border transition-colors ${
+                  o.on
+                    ? 'bg-indigo-600 border-indigo-600 text-white'
+                    : 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400'
+                }`}
+              >
+                {o.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Position bar: seek, ±10s and speed. Play lives on the side. */}
+          <div className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur pb-[env(safe-area-inset-bottom)]">
+            <div className="max-w-5xl mx-auto px-4 pt-2 pb-2.5">
+              <input
+                type="range" min={0} max={lesson.durationMs} step={100} value={Math.min(nowMs, lesson.durationMs)}
+                onChange={e => seek(Number(e.target.value), playing)}
+                aria-label="Seek"
+                className="w-full accent-indigo-600"
+              />
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs tabular-nums text-gray-500 dark:text-gray-400 w-24">{clock(nowMs)} / {clock(lesson.durationMs)}</span>
+                <div className="flex items-center gap-4">
+                  <button onClick={() => seek(nowMs - 10000, playing)} aria-label="-10s" className="p-1.5 text-gray-600 dark:text-gray-300"><RiReplay10Line size={22} /></button>
+                  <button onClick={() => seek(nowMs + 10000, playing)} aria-label="+10s" className="p-1.5 text-gray-600 dark:text-gray-300"><RiForward10Line size={22} /></button>
+                </div>
+                <div className="flex w-24 justify-end">
+                  <button
+                    onClick={() => setRate(r => SPEEDS[(SPEEDS.indexOf(r as typeof SPEEDS[number]) + 1) % SPEEDS.length])}
+                    className="text-xs font-semibold px-2 py-1.5 rounded-md border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 tabular-nums"
+                  >{rate}×</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>,
+        </>,
         document.body,
       )}
     </PageWrapper>
