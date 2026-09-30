@@ -2,7 +2,10 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useAppStore } from '@/store/useAppStore'
 import { supabase } from '@/lib/supabase'
 import { useState, useRef, useEffect } from 'react'
-import { RiHome4Line, RiBookOpenLine, RiPencilLine, RiBarChart2Line, RiTargetLine, RiSunLine, RiMoonLine } from '@remixicon/react'
+import {
+  RiHome4Line, RiBookOpenLine, RiPencilLine, RiBarChart2Line, RiTargetLine, RiSunLine, RiMoonLine,
+  RiMenuLine, RiCloseLine, RiFileTextLine, RiFileList3Line, RiTrophyLine,
+} from '@remixicon/react'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
 import { isGuest, clearLocalProfile, exportProgress, importProgress } from '@/lib/storage'
@@ -19,23 +22,33 @@ export function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null)
 
   const NAV_LINKS = [
-    { to: '/', label: t('dashboard', lang) },
-    { to: '/study', label: t('todayStudy', lang) },
-    { to: '/vocab', label: t('vocabulary', lang) },
-    { to: '/quiz', label: t('quiz', lang) },
-    { to: '/reading', label: t('reading', lang) },
-    { to: '/mock-exam', label: t('mockExam', lang) },
-    { to: '/progress', label: t('progress', lang) },
-    { to: '/leaderboard', label: t('leaderboard', lang) },
+    { to: '/', label: t('dashboard', lang), Icon: RiHome4Line },
+    { to: '/study', label: t('todayStudy', lang), Icon: RiTargetLine },
+    { to: '/vocab', label: t('vocabulary', lang), Icon: RiBookOpenLine },
+    { to: '/quiz', label: t('quiz', lang), Icon: RiPencilLine },
+    { to: '/reading', label: t('reading', lang), Icon: RiFileTextLine },
+    { to: '/mock-exam', label: t('mockExam', lang), Icon: RiFileList3Line },
+    { to: '/progress', label: t('progress', lang), Icon: RiBarChart2Line },
+    { to: '/leaderboard', label: t('leaderboard', lang), Icon: RiTrophyLine },
   ]
 
-  const BOTTOM_NAV = [
-    { to: '/', label: t('home', lang), Icon: RiHome4Line },
-    { to: '/vocab', label: t('vocab', lang), Icon: RiBookOpenLine },
-    { to: '/quiz', label: t('quiz', lang), Icon: RiPencilLine },
-    { to: '/progress', label: t('progress', lang), Icon: RiBarChart2Line },
-    { to: '/study', label: t('study', lang), Icon: RiTargetLine },
-  ]
+  // Mobile navigation drawer. It replaces the fixed bottom tab bar, which
+  // took 81px of every screen and was rarely used; the drawer costs nothing
+  // until opened and holds all eight links rather than five.
+  const [drawerOpen, setDrawerOpen] = useState(false)
+  const closeDrawer = () => setDrawerOpen(false)
+  useEffect(() => {
+    if (!drawerOpen) return
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setDrawerOpen(false) }
+    document.addEventListener('keydown', onKey)
+    // Keep the page behind the drawer from scrolling while it is open.
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = prev
+    }
+  }, [drawerOpen])
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -111,8 +124,18 @@ export function Navbar() {
       {/* Top nav bar */}
       <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-14 gap-4">
+          {/* Hamburger (mobile) */}
+          <button
+            onClick={() => setDrawerOpen(true)}
+            className="md:hidden -ml-2 w-10 h-10 flex items-center justify-center rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+            aria-label="Menu"
+            aria-expanded={drawerOpen}
+          >
+            <RiMenuLine size={22} />
+          </button>
+
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-1.5 font-bold text-base text-indigo-600 dark:text-indigo-400 shrink-0">
+          <Link to="/" className="flex items-center gap-1.5 font-bold text-base text-indigo-600 dark:text-indigo-400 shrink-0 md:mr-0 mr-auto">
             <img src="/favicon.svg" alt="" className="w-6 h-6 shrink-0" />
             <span className="leading-none">華丸</span>
           </Link>
@@ -245,31 +268,51 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile bottom navigation */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 safe-area-bottom">
-        <div className="flex items-stretch h-20">
-          {BOTTOM_NAV.map(link => {
-            const isActive = location.pathname === link.to
-            return (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`relative flex-1 flex flex-col items-center justify-center gap-1 py-3 text-xs font-medium transition-colors ${
-                  isActive
-                    ? 'text-indigo-600 dark:text-indigo-400'
-                    : 'text-gray-500 dark:text-gray-400'
-                }`}
+      {/* Mobile navigation drawer */}
+      {drawerOpen && (
+        <div className="md:hidden fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-label="Menu">
+          <div className="absolute inset-0 bg-black/40" onClick={closeDrawer} />
+          <aside className="absolute inset-y-0 left-0 w-72 max-w-[85%] bg-white dark:bg-gray-900 shadow-xl flex flex-col animate-[drawerIn_180ms_ease-out]">
+            <div className="flex items-center justify-between h-14 px-4 border-b border-gray-200 dark:border-gray-700">
+              <span className="flex items-center gap-1.5 font-bold text-base text-indigo-600 dark:text-indigo-400">
+                <img src="/favicon.svg" alt="" className="w-6 h-6" />
+                華丸
+              </span>
+              <button
+                onClick={closeDrawer}
+                className="w-10 h-10 -mr-2 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                aria-label="Close menu"
               >
-                <link.Icon size={22} />
-                <span className="leading-none">{link.label}</span>
-                {isActive && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-0.5 bg-indigo-600 dark:bg-indigo-400 rounded-full" />
-                )}
-              </Link>
-            )
-          })}
+                <RiCloseLine size={22} />
+              </button>
+            </div>
+            <nav className="flex-1 overflow-y-auto py-2">
+              {NAV_LINKS.map(({ to, label, Icon }) => {
+                const active = location.pathname === to
+                return (
+                  <Link
+                    key={to}
+                    to={to}
+                    onClick={closeDrawer}
+                    className={`flex items-center gap-3 mx-2 px-3 py-3 rounded-lg text-[15px] font-medium transition-colors ${
+                      active
+                        ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                    }`}
+                  >
+                    <Icon size={20} className={active ? '' : 'text-gray-400 dark:text-gray-500'} />
+                    {label}
+                  </Link>
+                )
+              })}
+            </nav>
+            <div className="border-t border-gray-200 dark:border-gray-700 px-4 py-3 safe-area-bottom">
+              <p className="text-sm font-semibold text-gray-900 dark:text-white truncate">{user.display_name}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">{levelLabel(user.jlpt_level ?? DEFAULT_LEVEL)}</p>
+            </div>
+          </aside>
         </div>
-      </nav>
+      )}
     </>
   )
 }

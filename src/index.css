@@ -14,3 +14,9 @@
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
 }
+
+/* Mobile navigation drawer slides in from the left. */
+@keyframes drawerIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
