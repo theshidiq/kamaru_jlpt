@@ -1,0 +1,715 @@
+{
+ "id": "bjt-3-2",
+ "level": "BJT",
+ "chapter": 3,
+ "section": 2,
+ "title": "会社と人事の言葉",
+ "titleEn": "Company & personnel",
+ "label": "BJT · 第12課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "nakamura": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "中村",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  },
+  "sato": {
+   "id": "iIeTr6tHs1VoWSqmCths",
+   "name": "佐藤"
+  }
+ },
+ "exampleVoices": [
+  "nakamura",
+  "kimura"
+ ],
+ "blocks": {
+  "sales": {
+   "jp": "売り上げと取引",
+   "en": "Sales & dealings",
+   "scene": "meeting"
+  },
+  "people": {
+   "jp": "人と仕事",
+   "en": "People & work",
+   "scene": "office"
+  },
+  "company": {
+   "jp": "会社のこと",
+   "en": "About the company",
+   "scene": "meeting"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "適材適所"
+ ],
+ "screen": {
+  "subject": "販売数と人員配置について",
+  "line": "販売数：前年割れ"
+ },
+ "readings": {
+  "第十二課": "だいじゅうにか",
+  "超えました": "こえました",
+  "規模": "きぼ",
+  "軽い": "かるい",
+  "同士": "どうし",
+  "病院": "びょういん",
+  "雇ったり": "やとったり",
+  "受付": "うけつけ",
+  "任せる": "まかせる",
+  "職場": "しょくば",
+  "仲間": "なかま",
+  "昼ご飯": "ひるごはん",
+  "習わし": "ならわし",
+  "朝礼": "ちょうれい",
+  "出入り": "でいり",
+  "正確さ": "せいかくさ",
+  "領収書": "りょうしゅうしょ",
+  "ご覧": "ごらん",
+  "順番": "じゅんばん",
+  "来年度": "らいねんど",
+  "二階": "にかい",
+  "五人": "ごにん",
+  "十年前": "じゅうねんまえ",
+  "五十年": "ごじゅうねん",
+  "五時": "ごじ",
+  "一万台": "いちまんだい",
+  "三か月": "さんかげつ",
+  "三日間": "みっかかん",
+  "九時": "くじ",
+  "一時間": "いちじかん",
+  "二十人": "にじゅうにん",
+  "三十年": "さんじゅうねん",
+  "何十件": "なんじっけん",
+  "三十分": "さんじゅっぷん",
+  "一日": "いちにち"
+ },
+ "speakKana": [
+  "第十二課",
+  "二階",
+  "五人",
+  "十年前",
+  "五十年",
+  "五時",
+  "一万台",
+  "三か月",
+  "三日間",
+  "九時",
+  "一時間",
+  "二十人",
+  "三十年",
+  "何十件",
+  "三十分",
+  "一日"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第十二課。会社と人事の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 12: 25 words — company & personnel."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、三人の会議を聞いてみましょう。",
+     "en": "First, let's listen to a meeting of three colleagues."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "meeting",
+   "lines": [
+    {
+     "sp": "nakamura",
+     "jp": "では、会議を始めます。資料の下記の事項を、順番に確認しましょう。",
+     "en": "Let's begin. We'll go through the items below in the materials in order."
+    },
+    {
+     "sp": "sato",
+     "jp": "まず、販売数です。今年は、前年割れとなりました。",
+     "en": "First, sales volume. This year we fell below last year."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "原因は何ですか。",
+     "en": "What was the cause?"
+    },
+    {
+     "sp": "sato",
+     "jp": "大型の店舗での集客が、思うようにできませんでした。",
+     "en": "We couldn't draw customers into the large stores as we had hoped."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "株主からも、説明を求められています。当社の製品の特長を、もっと伝える必要がありますね。",
+     "en": "Shareholders are asking for an explanation too. We need to get our products' strengths across better."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。来月から、新しい取り引き先への納入も始まります。",
+     "en": "Yes. Deliveries to a new business partner also start next month."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "いいですね。次に、人の配置についてです。適材適所を考えて、来年度の業務を決めたいと思います。",
+     "en": "Good. Next, staffing. I'd like to plan next year's work with the right person in the right place."
+    },
+    {
+     "sp": "kimura",
+     "jp": "経理部では、事務の仕事が増えて、人が足りないそうです。",
+     "en": "I hear Accounting has more office work and isn't staffed enough."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "経理の経験がある人を、社外から採用することも考えましょう。",
+     "en": "Let's also consider hiring someone with accounting experience from outside."
+    },
+    {
+     "sp": "sato",
+     "jp": "面接は、来月行う予定です。",
+     "en": "Interviews are planned for next month."
+    },
+    {
+     "sp": "kimura",
+     "jp": "新しく入る人には、先輩や同僚がしっかり教えることが大切ですね。",
+     "en": "It's important that senior staff and colleagues teach new people properly."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "そのとおりです。当社には、創立のころから続く慣習もあるので、早めに伝えましょう。",
+     "en": "Exactly. We have customs that go back to when the company was founded, so let's pass those on early."
+    },
+    {
+     "sp": "sato",
+     "jp": "それから、営業はほとんど外出しているので、連絡の方法も決めておきたいです。",
+     "en": "Also, sales staff are out of the office most of the time, so I'd like to settle how we keep in touch."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "わかりました。では、次の会議までに、案をまとめてください。",
+     "en": "All right. Please put together a proposal by the next meeting."
+    }
+   ],
+   "label": {
+    "jp": "会議",
+    "en": "Meeting"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "sales",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、売り上げと取引の言葉です。",
+     "en": "Now let's go through today's words one by one. First: sales & dealings."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "販売数",
+   "explain": {
+    "jp": "商品が売れた数です。",
+    "en": "How many of a product were sold."
+   },
+   "example": {
+    "jp": "新製品の販売数が、一万台を超えました。",
+    "en": "Sales of the new product passed ten thousand units."
+   }
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "前年割れ",
+   "explain": {
+    "jp": "前の年より、数字が下がることです。",
+    "en": "Falling below the previous year's figure."
+   },
+   "example": {
+    "jp": "今月の売り上げは、前年割れでした。",
+    "en": "Sales this month were below last year."
+   }
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "大型",
+   "explain": {
+    "jp": "形や規模が、大きいことです。",
+    "en": "Large in size or scale."
+   },
+   "example": {
+    "jp": "駅の近くに、大型のスーパーができました。",
+    "en": "A large supermarket opened near the station."
+   }
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "集客",
+   "explain": {
+    "jp": "お客様を、集めることです。",
+    "en": "Drawing in customers."
+   },
+   "example": {
+    "jp": "イベントで、集客を増やします。",
+    "en": "We'll bring in more customers with an event."
+   }
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "株主",
+   "explain": {
+    "jp": "会社の株を、持っている人です。",
+    "en": "Someone who owns shares in a company."
+   },
+   "example": {
+    "jp": "株主に、今年の結果を報告します。",
+    "en": "We'll report this year's results to shareholders."
+   }
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "特長",
+   "explain": {
+    "jp": "ほかよりすぐれている、よい点です。",
+    "en": "A strong point that beats the rest."
+   },
+   "example": {
+    "jp": "この商品の特長は、軽いことです。",
+    "en": "This product's strong point is that it is light."
+   }
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "取り引き",
+   "explain": {
+    "jp": "会社同士で、物やお金をやりとりすることです。取引とも書きます。",
+    "en": "Companies exchanging goods or money; also written 取引."
+   },
+   "example": {
+    "jp": "あの会社とは、長く取り引きがあります。",
+    "en": "We've dealt with that company for a long time."
+   }
+  },
+  {
+   "type": "word",
+   "block": "sales",
+   "word": "納入",
+   "explain": {
+    "jp": "注文された品物を、相手に納めることです。",
+    "en": "Supplying ordered goods to a client."
+   },
+   "example": {
+    "jp": "来週、病院に機器を納入します。",
+    "en": "We're delivering equipment to the hospital next week."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "people",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、人と仕事の言葉です。",
+     "en": "Next: people & work."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "採用",
+   "explain": {
+    "jp": "人を雇ったり、意見を取り入れたりすることです。",
+    "en": "Hiring people, or adopting ideas."
+   },
+   "example": {
+    "jp": "今年は、新しい社員を五人採用しました。",
+    "en": "This year we hired five new employees."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "面接",
+   "explain": {
+    "jp": "直接会って、話を聞くことです。",
+    "en": "Meeting someone in person to talk with them."
+   },
+   "example": {
+    "jp": "明日、会社の面接があります。",
+    "en": "I have a job interview tomorrow."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "配置",
+   "explain": {
+    "jp": "人や物を、決まった所に置くことです。",
+    "en": "Putting people or things in set places."
+   },
+   "example": {
+    "jp": "新しいスタッフを、受付に配置しました。",
+    "en": "We placed the new staff at reception."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "適材適所",
+   "explain": {
+    "jp": "その人に合った仕事を、任せることです。",
+    "en": "Giving people the work that suits them."
+   },
+   "example": {
+    "jp": "適材適所で、チームを作りましょう。",
+    "en": "Let's build the team with the right people in the right places."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "先輩",
+   "explain": {
+    "jp": "同じ会社などに、先に入った人です。",
+    "en": "Someone who joined the same company before you."
+   },
+   "example": {
+    "jp": "わからないことは、先輩に聞きます。",
+    "en": "I ask a senior colleague when I don't understand something."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "同僚",
+   "explain": {
+    "jp": "同じ職場で働く、仲間です。",
+    "en": "A co-worker in the same workplace."
+   },
+   "example": {
+    "jp": "同僚と、昼ご飯を食べました。",
+    "en": "I had lunch with a colleague."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "業務",
+   "explain": {
+    "jp": "会社などで、毎日する仕事です。",
+    "en": "The work you do every day at a company."
+   },
+   "example": {
+    "jp": "今日の業務は、五時に終わります。",
+    "en": "Today's work finishes at five."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "事務",
+   "explain": {
+    "jp": "書類を作ったり、整理したりする仕事です。",
+    "en": "Office work such as preparing and filing papers."
+   },
+   "example": {
+    "jp": "私は、事務の仕事をしています。",
+    "en": "I do office work."
+   }
+  },
+  {
+   "type": "word",
+   "block": "people",
+   "word": "外出",
+   "explain": {
+    "jp": "仕事などで、会社の外に出ることです。",
+    "en": "Being out of the office, for work for example."
+   },
+   "example": {
+    "jp": "部長は、ただいま外出しております。",
+    "en": "The department manager is out at the moment."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "company",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、会社のことの言葉です。",
+     "en": "Last: about the company."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "当社",
+   "explain": {
+    "jp": "自分の会社のことです。",
+    "en": "Your own company."
+   },
+   "example": {
+    "jp": "当社は、十年前に創立されました。",
+    "en": "Our company was founded ten years ago."
+   }
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "社外",
+   "explain": {
+    "jp": "会社の外、という意味です。",
+    "en": "Outside the company."
+   },
+   "example": {
+    "jp": "社外の人にも、意見を聞きました。",
+    "en": "We also asked people outside the company for their views."
+   }
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "創立",
+   "explain": {
+    "jp": "会社や学校を、初めて作ることです。",
+    "en": "Founding a company or school."
+   },
+   "example": {
+    "jp": "今年は、創立五十年の記念の年です。",
+    "en": "This year marks the company's 50th anniversary."
+   }
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "慣習",
+   "explain": {
+    "jp": "長い間、続いている習わしです。",
+    "en": "A custom that has continued for a long time."
+   },
+   "example": {
+    "jp": "この会社には、朝礼の慣習があります。",
+    "en": "This company has a custom of morning meetings."
+   }
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "経理",
+   "explain": {
+    "jp": "会社のお金の、出入りを管理する仕事です。",
+    "en": "Managing the money coming into and going out of a company."
+   },
+   "example": {
+    "jp": "経理の仕事には、正確さが必要です。",
+    "en": "Accounting work needs accuracy."
+   }
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "経理部",
+   "explain": {
+    "jp": "経理の仕事をする部署です。",
+    "en": "The department that does the accounting."
+   },
+   "example": {
+    "jp": "領収書は、経理部に出してください。",
+    "en": "Hand your receipts in to Accounting."
+   }
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "下記",
+   "explain": {
+    "jp": "この下に書いてある、という意味です。",
+    "en": "Written below."
+   },
+   "example": {
+    "jp": "詳しくは、下記をご覧ください。",
+    "en": "Please see below for details."
+   }
+  },
+  {
+   "type": "word",
+   "block": "company",
+   "word": "事項",
+   "explain": {
+    "jp": "一つ一つの、内容や事柄です。",
+    "en": "An individual item or matter."
+   },
+   "example": {
+    "jp": "注意事項を、よく読んでください。",
+    "en": "Please read the precautions carefully."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "今月の売り上げは、（　　）でした。",
+   "promptEn": "This month's sales ___.",
+   "choices": [
+    "大型",
+    "前年割れ",
+    "集客",
+    "特長"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。今月の売り上げは、前年割れでした。",
+    "en": "The answer is 2: 前年割れ, below last year."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "同じ職場で働く、仲間のことは？",
+   "promptEn": "Which word means a co-worker in the same workplace?",
+   "choices": [
+    "株主",
+    "先輩",
+    "同僚",
+    "面接"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。同じ職場で働く、仲間のことを、何と言いますか。",
+    "en": "Question 2. Which word means a co-worker in the same workplace?"
+   },
+   "reveal": {
+    "jp": "正解は三番、同僚です。",
+    "en": "The answer is 3: 同僚."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "部長は、ただいま（　　）しております。",
+   "promptEn": "The department manager is ___ at the moment.",
+   "choices": [
+    "配置",
+    "採用",
+    "創立",
+    "外出"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。部長は、ただいま外出しております。",
+    "en": "The answer is 4: 外出, out of the office."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "詳しくは、（　　）をご覧ください。",
+   "promptEn": "Please see ___ for details.",
+   "choices": [
+    "下記",
+    "事項",
+    "慣習",
+    "当社"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。詳しくは、下記をご覧ください。",
+    "en": "The answer is 1: 下記, below."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "その人に合った仕事を、任せることは？",
+   "promptEn": "Which means giving people the work that suits them?",
+   "choices": [
+    "業務",
+    "適材適所",
+    "事務",
+    "経理"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。その人に合った仕事を、任せることを、何と言いますか。",
+    "en": "Question 5. Which means giving people the work that suits them?"
+   },
+   "reveal": {
+    "jp": "正解は二番、適材適所です。",
+    "en": "The answer is 2: 適材適所."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、会社と人事の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: company & personnel."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

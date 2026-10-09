@@ -155,6 +155,9 @@ export function SectionReader() {
   // keep the looser rule, which their multi-kanji verbs rely on (向 → 向き合う).
   const strictLookup = !!passage?.format
   function lookup(text: string) {
+    // A lone hiragana (な, と) is a particle, never a word's stem: it would
+    // otherwise open a kana word that happens to start with it (なにやら).
+    if (strictLookup && /^[\u3040-\u309f]$/.test(text)) return undefined
     return sectionWords.find(w =>
       w.wordClean === text ||
       (w.wordClean.startsWith(text) &&

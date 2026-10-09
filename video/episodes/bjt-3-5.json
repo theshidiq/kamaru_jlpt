@@ -1,0 +1,713 @@
+{
+ "id": "bjt-3-5",
+ "level": "BJT",
+ "chapter": 3,
+ "section": 5,
+ "title": "仕事の進め方の言葉",
+ "titleEn": "Getting work done",
+ "label": "BJT · 第15課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "nakamura": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "中村",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "nakamura",
+  "kimura"
+ ],
+ "blocks": {
+  "plan": {
+   "jp": "予定と流れ",
+   "en": "Schedules & flow",
+   "scene": "office"
+  },
+  "act": {
+   "jp": "取り組む",
+   "en": "Taking it on",
+   "scene": "training"
+  },
+  "ideas": {
+   "jp": "考え方",
+   "en": "Ways of thinking",
+   "scene": "meeting"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "取り組む"
+ ],
+ "screen": {
+  "subject": "地域イベント 本日の流れ",
+  "line": "雨天時：日程を一日早める"
+ },
+ "readings": {
+  "第十五課": "だいじゅうごか",
+  "改まった": "あらたまった",
+  "時期": "じき",
+  "用紙": "ようし",
+  "記入": "きにゅう",
+  "認められて": "みとめられて",
+  "一生懸命": "いっしょうけんめい",
+  "お昼": "おひる",
+  "倉庫": "そうこ",
+  "事故": "じこ",
+  "防ぐ": "ふせぐ",
+  "混雑": "こんざつ",
+  "以外": "いがい",
+  "信頼": "しんらい",
+  "台所": "だいどころ",
+  "町": "まち",
+  "今日中": "きょうじゅう",
+  "住民": "じゅうみん",
+  "混乱": "こんらん",
+  "参加者": "さんかしゃ",
+  "受付": "うけつけ",
+  "方": "かた",
+  "二階": "にかい",
+  "五人": "ごにん",
+  "十年前": "じゅうねんまえ",
+  "五十年": "ごじゅうねん",
+  "五時": "ごじ",
+  "一万台": "いちまんだい",
+  "三か月": "さんかげつ",
+  "三日間": "みっかかん",
+  "九時": "くじ",
+  "一時間": "いちじかん",
+  "二十人": "にじゅうにん",
+  "三十年": "さんじゅうねん",
+  "何十件": "なんじっけん",
+  "三十分": "さんじゅっぷん",
+  "一日": "いちにち"
+ },
+ "speakKana": [
+  "第十五課",
+  "二階",
+  "五人",
+  "十年前",
+  "五十年",
+  "五時",
+  "一万台",
+  "三か月",
+  "三日間",
+  "九時",
+  "一時間",
+  "二十人",
+  "三十年",
+  "何十件",
+  "三十分",
+  "一日"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第十五課。仕事の進め方の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 15: 25 words — getting work done."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、イベントの会場からの電話を聞いてみましょう。",
+     "en": "First, let's listen to a phone call from an event site."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "station",
+   "lines": [
+    {
+     "sp": "kimura",
+     "jp": "はい、木村です。",
+     "en": "Hello, Kimura speaking."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "中村です。今、現地に着きました。本日の作業の流れを、確認させてください。",
+     "en": "It's Nakamura. I've just arrived on site. Let me check how today's work will go."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。高齢の方が多い地域なので、まず住民の方に、体験してもらう予定です。",
+     "en": "Sure. There are many elderly people in the area, so first we'll have residents try it out."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "わかりました。新たなアプリを使う会でしたね。",
+     "en": "I see. It's the session for the new app, right?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。日常的にスマホを使わない方でも、わかるように説明します。",
+     "en": "Yes. We'll explain it so that even people who don't use smartphones day to day can follow."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "公式のサイトには、指定の会場が書いてありますか。",
+     "en": "Does the official website give the designated venue?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。ただ、雨の場合は混乱を避けるために、日程を一日早めることになりました。",
+     "en": "Yes. But to avoid confusion if it rains, we've decided to bring the schedule forward a day."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "え、それは今の資料と矛盾しますね。",
+     "en": "Oh, that contradicts the current materials."
+    },
+    {
+     "sp": "kimura",
+     "jp": "すみません、すぐ直します。それから、説明の時間は三十分に限ることにしました。",
+     "en": "Sorry, I'll fix it right away. Also, we've decided to limit the explanation to thirty minutes."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "いい対策ですね。長いと、他人の話を聞くのは疲れますから。",
+     "en": "Good measure. Listening to someone else talk for a long time is tiring."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。この会は、いわば地域とのつながりそのものだと思います。",
+     "en": "Yes. This session is, so to speak, our connection with the community itself."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "そうですね。参加者の声から、次の企画のヒントを得ることも、大切な要素です。",
+     "en": "True. Getting ideas for the next project from participants is an important part of it, too."
+    },
+    {
+     "sp": "kimura",
+     "jp": "どうしても人が足りないときは、私が受付を引き受けます。",
+     "en": "If we really are short of people, I'll take on reception."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "ありがとう。では、準備にとりかかります。チームのみんなで、しっかり取り組みましょう。",
+     "en": "Thanks. I'll get started on the preparations then. Let's all work on this properly as a team."
+    }
+   ],
+   "label": {
+    "jp": "電話",
+    "en": "Phone call"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "plan",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、予定と流れの言葉です。",
+     "en": "Now let's go through today's words one by one. First: schedules & flow."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "本日",
+   "explain": {
+    "jp": "今日の、改まった言い方です。",
+    "en": "A formal way to say 今日 (today)."
+   },
+   "example": {
+    "jp": "本日は、お越しいただき、ありがとうございます。",
+    "en": "Thank you for coming today."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "日程",
+   "explain": {
+    "jp": "仕事や行事の、予定です。",
+    "en": "The schedule for work or an event."
+   },
+   "example": {
+    "jp": "出張の日程が、決まりました。",
+    "en": "The schedule for the business trip has been set."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "早める",
+   "explain": {
+    "jp": "時期や時間を、前にずらすことです。",
+    "en": "Moving a time or date earlier."
+   },
+   "example": {
+    "jp": "会議を、一時間早めましょう。",
+    "en": "Let's bring the meeting forward an hour."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "流れ",
+   "explain": {
+    "jp": "物事が、進む様子や順番です。",
+    "en": "How things proceed, and in what order."
+   },
+   "example": {
+    "jp": "仕事の流れを、図で説明します。",
+    "en": "I'll explain the workflow with a diagram."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "現地",
+   "explain": {
+    "jp": "実際に、その物事がある場所です。",
+    "en": "The actual place where something is."
+   },
+   "example": {
+    "jp": "明日、現地で確認します。",
+    "en": "I'll check on site tomorrow."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "指定",
+   "explain": {
+    "jp": "はっきりと、決めて示すことです。",
+    "en": "Clearly specifying something."
+   },
+   "example": {
+    "jp": "指定の用紙に、記入してください。",
+    "en": "Please fill in the designated form."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "公式",
+   "explain": {
+    "jp": "おおやけに、認められていることです。",
+    "en": "Officially recognised."
+   },
+   "example": {
+    "jp": "詳しくは、公式サイトをご覧ください。",
+    "en": "See the official website for details."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "新た",
+   "explain": {
+    "jp": "新しい、という意味です。",
+    "en": "New."
+   },
+   "example": {
+    "jp": "新たな計画を、立てました。",
+    "en": "We made a new plan."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "act",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、取り組むの言葉です。",
+     "en": "Next: taking it on."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "取り組む",
+   "explain": {
+    "jp": "物事に、一生懸命あたることです。",
+    "en": "Throwing yourself into something."
+   },
+   "example": {
+    "jp": "チームで、新しい課題に取り組みます。",
+    "en": "The team will tackle a new challenge."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "とりかかる",
+   "explain": {
+    "jp": "仕事などを、始めることです。",
+    "en": "Getting started on a task."
+   },
+   "example": {
+    "jp": "お昼のあと、資料作りにとりかかります。",
+    "en": "After lunch I'll get started on the materials."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "引き受ける",
+   "explain": {
+    "jp": "頼まれたことを、受け持つことです。",
+    "en": "Taking on what you were asked to do."
+   },
+   "example": {
+    "jp": "その仕事は、私が引き受けます。",
+    "en": "I'll take that job on."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "作業",
+   "explain": {
+    "jp": "体や頭を使って、仕事をすることです。",
+    "en": "Working with your hands or head."
+   },
+   "example": {
+    "jp": "午後は、倉庫で作業をします。",
+    "en": "This afternoon I'm working in the warehouse."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "対策",
+   "explain": {
+    "jp": "問題に合わせて、取るやり方です。",
+    "en": "Steps taken to deal with a problem."
+   },
+   "example": {
+    "jp": "事故を防ぐ、対策を考えます。",
+    "en": "We'll think of measures to prevent accidents."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "避ける",
+   "explain": {
+    "jp": "よくないことに、近づかないようにすることです。",
+    "en": "Keeping away from something bad."
+   },
+   "example": {
+    "jp": "混雑を避けて、早く出かけます。",
+    "en": "I'll leave early to avoid the crowds."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "限る",
+   "explain": {
+    "jp": "範囲や数を決めて、それ以上にしないことです。",
+    "en": "Setting a limit and not going beyond it."
+   },
+   "example": {
+    "jp": "参加者は、二十人に限ります。",
+    "en": "Participants are limited to twenty."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "得る",
+   "explain": {
+    "jp": "手に入れることです。",
+    "en": "Getting or gaining something."
+   },
+   "example": {
+    "jp": "この仕事から、多くの経験を得ました。",
+    "en": "I gained a lot of experience from this job."
+   }
+  },
+  {
+   "type": "word",
+   "block": "act",
+   "word": "体験",
+   "explain": {
+    "jp": "自分で、実際にやってみることです。",
+    "en": "Trying something out for yourself."
+   },
+   "example": {
+    "jp": "工場で、ものづくりを体験しました。",
+    "en": "We tried making things at the factory."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "ideas",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、考え方の言葉です。",
+     "en": "Last: ways of thinking."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "他人",
+   "explain": {
+    "jp": "自分以外の、ほかの人です。",
+    "en": "People other than yourself."
+   },
+   "example": {
+    "jp": "他人の意見も、大切にしましょう。",
+    "en": "Value other people's opinions too."
+   }
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "日常的",
+   "explain": {
+    "jp": "毎日のように、普通にあることです。",
+    "en": "An everyday, routine thing."
+   },
+   "example": {
+    "jp": "日本語を、日常的に使っています。",
+    "en": "I use Japanese every day."
+   }
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "高齢",
+   "explain": {
+    "jp": "年を、とっていることです。",
+    "en": "Being elderly."
+   },
+   "example": {
+    "jp": "高齢のお客様には、ゆっくり話します。",
+    "en": "I speak slowly with elderly customers."
+   }
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "矛盾",
+   "explain": {
+    "jp": "話のつじつまが、合わないことです。",
+    "en": "When the parts of a story don't fit together."
+   },
+   "example": {
+    "jp": "二つの資料の内容が、矛盾しています。",
+    "en": "The two documents contradict each other."
+   }
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "要素",
+   "explain": {
+    "jp": "物事を作っている、大切な部分です。",
+    "en": "An important part that makes something up."
+   },
+   "example": {
+    "jp": "信頼は、ビジネスの大切な要素です。",
+    "en": "Trust is an important element of business."
+   }
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "いわば",
+   "explain": {
+    "jp": "たとえて言えば、という意味です。",
+    "en": "So to speak."
+   },
+   "example": {
+    "jp": "この店は、いわば町の台所です。",
+    "en": "This shop is, so to speak, the town's kitchen."
+   }
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "そのもの",
+   "explain": {
+    "jp": "まさにそれ、という意味です。",
+    "en": "The thing itself."
+   },
+   "example": {
+    "jp": "この計画そのものを、見直します。",
+    "en": "We'll rethink the plan itself."
+   }
+  },
+  {
+   "type": "word",
+   "block": "ideas",
+   "word": "どうしても",
+   "explain": {
+    "jp": "何があっても、という意味です。",
+    "en": "No matter what."
+   },
+   "example": {
+    "jp": "この仕事は、どうしても今日中に終わらせたいです。",
+    "en": "I really want to finish this job today, no matter what."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "会議を、一時間（　　）ましょう。",
+   "promptEn": "Let's ___ the meeting by an hour.",
+   "choices": [
+    "避け",
+    "早め",
+    "限り",
+    "得"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。会議を、一時間早めましょう。",
+    "en": "The answer is 2: 早め, bring forward."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "頼まれたことを、受け持つことは？",
+   "promptEn": "Which means taking on what you were asked to do?",
+   "choices": [
+    "取り組む",
+    "とりかかる",
+    "引き受ける",
+    "体験する"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。頼まれたことを、受け持つことを、何と言いますか。",
+    "en": "Question 2. Which means taking on what you were asked to do?"
+   },
+   "reveal": {
+    "jp": "正解は三番、引き受けるです。",
+    "en": "The answer is 3: 引き受ける."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "二つの資料の内容が、（　　）しています。",
+   "promptEn": "The two documents ___ each other.",
+   "choices": [
+    "対策",
+    "要素",
+    "他人",
+    "矛盾"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。二つの資料の内容が、矛盾しています。",
+    "en": "The answer is 4: 矛盾, contradict."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "詳しくは、（　　）サイトをご覧ください。",
+   "promptEn": "See the ___ website for details.",
+   "choices": [
+    "公式",
+    "新た",
+    "現地",
+    "日程"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。詳しくは、公式サイトをご覧ください。",
+    "en": "The answer is 1: 公式, official."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "今日の、改まった言い方は？",
+   "promptEn": "Which is a formal way to say 今日?",
+   "choices": [
+    "日常的",
+    "本日",
+    "高齢",
+    "流れ"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。今日の、改まった言い方は、どれですか。",
+    "en": "Question 5. Which is a formal way to say 今日?"
+   },
+   "reveal": {
+    "jp": "正解は二番、本日です。",
+    "en": "The answer is 2: 本日."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、仕事の進め方の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: getting work done."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

@@ -44,6 +44,7 @@ const SPEAKER_VOICE: Record<string, string> = {
 const SPEAK_AS: Record<string, string> = {
   '何か所': 'なんかしょ', '聴読解': 'ちょうどっかい', 'BJT': 'ビージェーティー',
   '十か所': 'じゅっかしょ', '十日': 'とおか', '三十分': 'さんじゅっぷん', '三冊': 'さんさつ', '三人': 'さんにん', 'IT': 'アイティー',
+  '三十年': 'さんじゅうねん', '三か月': 'さんかげつ', '何十件': 'なんじっけん',
 }
 // Pauses between lines, ms. A change of speaker gets a beat longer, and the
 // header / signature of a document stand apart from its body.

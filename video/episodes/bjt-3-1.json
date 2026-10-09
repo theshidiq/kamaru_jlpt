@@ -1,0 +1,730 @@
+{
+ "id": "bjt-3-1",
+ "level": "BJT",
+ "chapter": 3,
+ "section": 1,
+ "title": "ビジネス敬語の言葉",
+ "titleEn": "Business keigo",
+ "label": "BJT · 第11課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "riku": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "例文"
+  },
+  "sakura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "例文"
+  }
+ },
+ "exampleVoices": [
+  "riku",
+  "sakura"
+ ],
+ "blocks": {
+  "humble": {
+   "jp": "謙譲語と尊敬語",
+   "en": "Humble & respectful forms",
+   "scene": "office"
+  },
+  "polite": {
+   "jp": "丁寧な言葉",
+   "en": "Polite expressions",
+   "scene": "meeting"
+  },
+  "trade": {
+   "jp": "取引の言葉",
+   "en": "Trade words",
+   "scene": "store"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "貴社"
+ ],
+ "screen": {
+  "subject": "新製品の資料と価格改定について",
+  "line": "貴社の売れ行き：好調"
+ },
+ "readings": {
+  "第十一課": "だいじゅういっか",
+  "お手洗い": "おてあらい",
+  "記念品": "きねんひん",
+  "面倒": "めんどう",
+  "受け入れる": "うけいれる",
+  "書き言葉": "かきことば",
+  "発展": "はってん",
+  "祈り": "いのり",
+  "添付": "てんぷ",
+  "気軽": "きがる",
+  "手間": "てま",
+  "お越し": "おこし",
+  "協力": "きょうりょく",
+  "旅行": "りょこう",
+  "野菜": "やさい",
+  "好調": "こうちょう",
+  "納める": "おさめる",
+  "期限": "きげん",
+  "損": "そん",
+  "保険": "ほけん",
+  "生活": "せいかつ",
+  "購買部": "こうばいぶ",
+  "問い合わせ": "といあわせ",
+  "迷惑": "めいわく",
+  "改めて": "あらためて",
+  "見込み": "みこみ",
+  "二階": "にかい",
+  "五人": "ごにん",
+  "十年前": "じゅうねんまえ",
+  "五十年": "ごじゅうねん",
+  "五時": "ごじ",
+  "一万台": "いちまんだい",
+  "三か月": "さんかげつ",
+  "三日間": "みっかかん",
+  "九時": "くじ",
+  "一時間": "いちじかん",
+  "二十人": "にじゅうにん",
+  "三十年": "さんじゅうねん",
+  "何十件": "なんじっけん",
+  "三十分": "さんじゅっぷん",
+  "一日": "いちにち"
+ },
+ "speakKana": [
+  "第十一課",
+  "二階",
+  "五人",
+  "十年前",
+  "五十年",
+  "五時",
+  "一万台",
+  "三か月",
+  "三日間",
+  "九時",
+  "一時間",
+  "二十人",
+  "三十年",
+  "何十件",
+  "三十分",
+  "一日"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第十一課。ビジネス敬語の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 11: 25 words — business keigo."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、取引先に送ったメールを聞いてみましょう。",
+     "en": "First, let's listen to an email sent to a client."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "件名：新製品の資料と価格改定について",
+     "en": "Subject: Materials for the new product, and the price revision"
+    },
+    {
+     "sp": "host",
+     "jp": "宛先：ミナト商事 購買部 山田様",
+     "en": "To: Mr Yamada, Purchasing, Minato Trading"
+    },
+    {
+     "sp": "host",
+     "jp": "ミナト商事 山田様",
+     "en": "Mr Yamada, Minato Trading"
+    },
+    {
+     "sp": "host",
+     "jp": "いつもお世話になっております。サクラ電機の木村でございます。",
+     "en": "Thank you for your continued business. This is Kimura from Sakura Electric."
+    },
+    {
+     "sp": "host",
+     "jp": "先日は、お電話をいただき、ありがとうございました。",
+     "en": "Thank you for your call the other day."
+    },
+    {
+     "sp": "host",
+     "jp": "お電話で「御社の新製品の資料がほしい」とおっしゃっていた件について、ご連絡いたします。",
+     "en": "I am writing about what you said on the phone, that you would like materials on our new product."
+    },
+    {
+     "sp": "host",
+     "jp": "わざわざお問い合わせいただき、心より感謝申し上げます。",
+     "en": "Thank you very much for taking the trouble to ask."
+    },
+    {
+     "sp": "host",
+     "jp": "詳しくは、添付の資料をご確認ください。また、サンプルを一つさしあげたいと存じます。",
+     "en": "For details, please see the attached materials. We would also like to give you a sample."
+    },
+    {
+     "sp": "host",
+     "jp": "ご質問のあった価格についてですが、材料の値上がりにより、来月から費用が上がる見込みです。これは、多くのメーカーで同じ状況でございます。",
+     "en": "As for the price you asked about, material costs are rising, so prices are expected to go up from next month. Many manufacturers are in the same position."
+    },
+    {
+     "sp": "host",
+     "jp": "なお、先日のアンケートでは、貴社の売れ行きが特に好調だと伺いました。",
+     "en": "In the recent survey, we heard that sales at your company are going particularly well."
+    },
+    {
+     "sp": "host",
+     "jp": "納期の件も、承知いたしました。これまでどおり守れるよう努めます。",
+     "en": "We have also noted your request about the delivery date, and will do our best to keep to it as before."
+    },
+    {
+     "sp": "host",
+     "jp": "製品の保障の内容にも、変更はございません。",
+     "en": "There is no change to the product warranty."
+    },
+    {
+     "sp": "host",
+     "jp": "また、先月の出荷の遅れでご迷惑をおかけしたことを、改めて謝罪いたします。",
+     "en": "We would also like to apologise again for the trouble caused by last month's late shipment."
+    },
+    {
+     "sp": "host",
+     "jp": "担当の中村も、ぜひ一度ごあいさつに伺いたいと申しております。",
+     "en": "Nakamura, who looks after your account, would also like to visit and greet you."
+    },
+    {
+     "sp": "host",
+     "jp": "打ち合わせは、弊社の会議室にお呼びすることもできますので、ご都合をお知らせください。",
+     "en": "We could also invite you to our meeting room for the discussion, so please let us know what suits you."
+    },
+    {
+     "sp": "host",
+     "jp": "今後とも、なにぶんよろしくお願い申し上げます。",
+     "en": "We look forward to working with you."
+    },
+    {
+     "sp": "host",
+     "jp": "サクラ電機 営業部 木村",
+     "en": "Kimura, Sales, Sakura Electric"
+    }
+   ],
+   "label": {
+    "jp": "メール",
+    "en": "Email"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "humble",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、謙譲語と尊敬語の言葉です。",
+     "en": "Now let's go through today's words one by one. First: humble & respectful forms."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "おっしゃる",
+   "explain": {
+    "jp": "言うの尊敬語です。相手が言うときに使います。",
+    "en": "Respectful form of 言う, for what someone else says."
+   },
+   "example": {
+    "jp": "部長が、そうおっしゃいました。",
+    "en": "The department manager said so."
+   }
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "存じる",
+   "explain": {
+    "jp": "知る、思うの謙譲語です。",
+    "en": "Humble form of 知る (to know) and 思う (to think)."
+   },
+   "example": {
+    "jp": "その件は、よく存じております。",
+    "en": "I'm well aware of that matter."
+   }
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "申す",
+   "explain": {
+    "jp": "言うの謙譲語です。名前を言うときにも使います。",
+    "en": "Humble form of 言う, also used to give your name."
+   },
+   "example": {
+    "jp": "はじめまして、木村と申します。",
+    "en": "How do you do. My name is Kimura."
+   }
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "ござる",
+   "explain": {
+    "jp": "あるの、とても丁寧な言い方です。ございます、の形で使います。",
+    "en": "A very polite way to say ある, used as ございます."
+   },
+   "example": {
+    "jp": "お手洗いは、二階にございます。",
+    "en": "The restrooms are on the second floor."
+   }
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "さしあげる",
+   "explain": {
+    "jp": "あげるの謙譲語です。",
+    "en": "Humble form of あげる (to give)."
+   },
+   "example": {
+    "jp": "お客様に、記念品をさしあげました。",
+    "en": "We gave the customers a commemorative gift."
+   }
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "お呼び",
+   "explain": {
+    "jp": "呼ぶの丁寧な形です。お呼びします、のように使います。",
+    "en": "Polite form of 呼ぶ (to call), as in お呼びします."
+   },
+   "example": {
+    "jp": "お名前をお呼びするまで、お待ちください。",
+    "en": "Please wait until we call your name."
+   }
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "お世話",
+   "explain": {
+    "jp": "人の面倒を見ることを、丁寧に言う言葉です。",
+    "en": "A polite way to talk about looking after someone."
+   },
+   "example": {
+    "jp": "いつもお世話になっております。",
+    "en": "Thank you for your continued support."
+   }
+  },
+  {
+   "type": "word",
+   "block": "humble",
+   "word": "承知",
+   "explain": {
+    "jp": "相手の言うことを、わかって受け入れることです。",
+    "en": "Understanding and accepting what someone says."
+   },
+   "example": {
+    "jp": "ご依頼の件、承知いたしました。",
+    "en": "Understood regarding your request."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "polite",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、丁寧な言葉の言葉です。",
+     "en": "Next: polite expressions."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "貴社",
+   "explain": {
+    "jp": "相手の会社を、敬って言う言葉です。主に、書き言葉で使います。",
+    "en": "A respectful word for the other company, mainly in writing."
+   },
+   "example": {
+    "jp": "貴社のますますのご発展を、お祈り申し上げます。",
+    "en": "We wish your company continued success."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "御社",
+   "explain": {
+    "jp": "相手の会社を、敬って言う言葉です。主に、話すときに使います。",
+    "en": "A respectful word for the other company, mainly in speech."
+   },
+   "example": {
+    "jp": "御社の製品について、お聞きしたいです。",
+    "en": "I'd like to ask about your company's products."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "お電話",
+   "explain": {
+    "jp": "電話の、丁寧な言い方です。",
+    "en": "The polite way to say 電話 (phone call)."
+   },
+   "example": {
+    "jp": "お電話ありがとうございます。",
+    "en": "Thank you for calling."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "ご連絡",
+   "explain": {
+    "jp": "連絡の、丁寧な言い方です。",
+    "en": "The polite way to say 連絡 (contact)."
+   },
+   "example": {
+    "jp": "結果は、メールでご連絡いたします。",
+    "en": "We'll let you know the result by email."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "ご確認",
+   "explain": {
+    "jp": "確認の、丁寧な言い方です。",
+    "en": "The polite way to say 確認 (check)."
+   },
+   "example": {
+    "jp": "添付の資料を、ご確認ください。",
+    "en": "Please check the attached materials."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "ご質問",
+   "explain": {
+    "jp": "質問の、丁寧な言い方です。",
+    "en": "The polite way to say 質問 (question)."
+   },
+   "example": {
+    "jp": "ご質問があれば、お気軽にどうぞ。",
+    "en": "Feel free to ask if you have any questions."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "なにぶん",
+   "explain": {
+    "jp": "どうか、という気持ちで、お願いするときの言葉です。",
+    "en": "Said when asking a favour, meaning \"kindly\"."
+   },
+   "example": {
+    "jp": "なにぶん、よろしくお願いいたします。",
+    "en": "We kindly ask for your support."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "わざわざ",
+   "explain": {
+    "jp": "特に手間をかけて、という意味です。",
+    "en": "Going to special trouble."
+   },
+   "example": {
+    "jp": "雨の中、わざわざお越しいただき、ありがとうございます。",
+    "en": "Thank you for taking the trouble to come in the rain."
+   }
+  },
+  {
+   "type": "word",
+   "block": "polite",
+   "word": "感謝",
+   "explain": {
+    "jp": "ありがたいと、思うことです。",
+    "en": "Feeling grateful."
+   },
+   "example": {
+    "jp": "皆様のご協力に、感謝しております。",
+    "en": "We're grateful for everyone's cooperation."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "trade",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、取引の言葉の言葉です。",
+     "en": "Last: trade words."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "謝罪",
+   "explain": {
+    "jp": "自分の悪かったことを、正式にあやまることです。",
+    "en": "Formally apologising for your own fault."
+   },
+   "example": {
+    "jp": "会社として、お客様に謝罪しました。",
+    "en": "The company apologised to the customer."
+   }
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "費用",
+   "explain": {
+    "jp": "何かをするのに、かかるお金です。",
+    "en": "The money something costs."
+   },
+   "example": {
+    "jp": "旅行の費用は、会社が出します。",
+    "en": "The company pays for the trip."
+   }
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "値上がり",
+   "explain": {
+    "jp": "物の値段が、上がることです。",
+    "en": "A rise in price."
+   },
+   "example": {
+    "jp": "野菜の値上がりが、続いています。",
+    "en": "Vegetable prices keep rising."
+   }
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "売れ行き",
+   "explain": {
+    "jp": "商品の、売れる様子です。",
+    "en": "How well a product is selling."
+   },
+   "example": {
+    "jp": "新製品の売れ行きは、とても好調です。",
+    "en": "The new product is selling very well."
+   }
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "納期",
+   "explain": {
+    "jp": "品物を、納める期限です。",
+    "en": "The deadline for delivering goods."
+   },
+   "example": {
+    "jp": "納期に、間に合わせます。",
+    "en": "We'll meet the delivery deadline."
+   }
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "アンケート",
+   "explain": {
+    "jp": "意見を聞くための、質問の紙やフォームです。",
+    "en": "A set of questions to collect opinions."
+   },
+   "example": {
+    "jp": "お客様に、アンケートをお願いしました。",
+    "en": "We asked customers to fill in a survey."
+   }
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "メーカー",
+   "explain": {
+    "jp": "製品を作る会社です。",
+    "en": "A company that makes products."
+   },
+   "example": {
+    "jp": "このパソコンは、日本のメーカーの製品です。",
+    "en": "This computer is made by a Japanese manufacturer."
+   }
+  },
+  {
+   "type": "word",
+   "block": "trade",
+   "word": "保障",
+   "explain": {
+    "jp": "損をしないように、守ることです。",
+    "en": "Protecting someone from loss."
+   },
+   "example": {
+    "jp": "この保険で、病気のときの生活が保障されます。",
+    "en": "This insurance protects your livelihood if you fall ill."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "部長が、そう（　　）。",
+   "promptEn": "The department manager ___ so.",
+   "choices": [
+    "申しました",
+    "おっしゃいました",
+    "存じました",
+    "さしあげました"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。部長が、そうおっしゃいました。",
+    "en": "The answer is 2: おっしゃいました. 申しました is humble, so not for your manager."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "相手の会社を、メールで敬って書く言葉は？",
+   "promptEn": "Which word respectfully refers to the other company in writing?",
+   "choices": [
+    "御社",
+    "弊社",
+    "貴社",
+    "当社"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。相手の会社を、メールで敬って書く言葉は、どれですか。",
+    "en": "Question 2. Which word respectfully refers to the other company in writing?"
+   },
+   "reveal": {
+    "jp": "正解は三番、貴社です。話すときは、御社を使います。",
+    "en": "The answer is 3: 貴社. In speech, use 御社."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "はじめまして、木村と（　　）。",
+   "promptEn": "How do you do. My name ___ Kimura.",
+   "choices": [
+    "申します",
+    "おっしゃいます",
+    "ございます",
+    "お呼びします"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。はじめまして、木村と申します。",
+    "en": "The answer is 1: 申します."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "品物を、納める期限は？",
+   "promptEn": "What is the deadline for delivering goods?",
+   "choices": [
+    "費用",
+    "保障",
+    "売れ行き",
+    "納期"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第四問。品物を、納める期限を、何と言いますか。",
+    "en": "Question 4. What is the deadline for delivering goods called?"
+   },
+   "reveal": {
+    "jp": "正解は四番、納期です。",
+    "en": "The answer is 4: 納期."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "ご依頼の件、（　　）いたしました。",
+   "promptEn": "Your request has been ___.",
+   "choices": [
+    "感謝",
+    "承知",
+    "謝罪",
+    "お世話"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。ご依頼の件、承知いたしました。",
+    "en": "The answer is 2: 承知, understood."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、ビジネス敬語の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: business keigo."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

@@ -10,6 +10,11 @@ import ep22 from './data/bjt-2-2.json'
 import ep23 from './data/bjt-2-3.json'
 import ep24 from './data/bjt-2-4.json'
 import ep25 from './data/bjt-2-5.json'
+import ep31 from './data/bjt-3-1.json'
+import ep32 from './data/bjt-3-2.json'
+import ep33 from './data/bjt-3-3.json'
+import ep34 from './data/bjt-3-4.json'
+import ep35 from './data/bjt-3-5.json'
 import { Episode } from './Episode'
 import { Short } from './Short'
 import { schedule } from './timeline'
@@ -18,7 +23,7 @@ export const FPS = 30
 type Raw = Parameters<typeof schedule>[0]
 
 /** Every built episode. Add its data import here after build-episode.py. */
-const EPISODES = [ep11, ep12, ep13, ep14, ep15, ep21, ep22, ep23, ep24, ep25] as unknown as Raw[]
+const EPISODES = [ep11, ep12, ep13, ep14, ep15, ep21, ep22, ep23, ep24, ep25, ep31, ep32, ep33, ep34, ep35] as unknown as Raw[]
 const frames = (ms: number) => Math.ceil((ms / 1000) * FPS)
 
 /**

@@ -32,6 +32,10 @@ READING_FIX = {
     '十か所': 'じゅっかしょ', '十日': 'とおか', '三人': 'さんにん', '三十分': 'さんじゅっぷん', '三冊': 'さんさつ',
     '一日': 'いちにち', '二年': 'にねん', '見積もり': 'みつもり', '保守': 'ほしゅ', '費用': 'ひよう', '広報': 'こうほう',
     '小林': 'こばやし', '山田': 'やまだ', '昇進': 'しょうしん', '若手': 'わかて', '本番': 'ほんばん',
+    '三十年': 'さんじゅうねん', '三か月': 'さんかげつ', '何十件': 'なんじっけん', '満足度': 'まんぞくど', '購買部': 'こうばいぶ',
+    '好調': 'こうちょう', 'その節': 'そのせつ', '住民': 'じゅうみん', '混乱': 'こんらん', '参加者': 'さんかしゃ', '受付': 'うけつけ',
+    '週末': 'しゅうまつ', '来年度': 'らいねんど', '順番': 'じゅんばん', '締め切り': 'しめきり', '見込み': 'みこみ',
+    '問い合わせ': 'といあわせ', '迷惑': 'めいわく', '改めて': 'あらためて',
 }
 
 KANJI = re.compile(r'[一-鿿々]')
@@ -40,7 +44,9 @@ tok = Tokenizer()
 def hira(s):
     return ''.join(chr(ord(c) - 0x60) if 'ァ' <= c <= 'ヶ' else c for c in s)
 
-def segment(text):
+def segment(text, local=()):
+    """`local`: the passage's own section words. Rules that would re-split
+    text already voiced elsewhere apply only to these."""
     raw = [(t.surface, hira(t.reading) if t.reading != '*' else t.surface,
             t.part_of_speech.split(',')[0], t.base_form) for t in tok.tokenize(text)]
     out, i = [], 0
@@ -61,7 +67,10 @@ def segment(text):
         #    vocab word it belongs to, falling back to its own base form. The
         #    vocab word wins because the analyser's base can be a different
         #    verb: 読み取れ is potential 読み取れる, but the word is 読み取る.
-        if pos in ('動詞', '形容詞') and surf != base and (KANJI.search(surf) or base in WORDS):
+        # 助動詞 too when its base is a word of this section: the analyser tags
+        # ござい (ござる) as an auxiliary. Section-local, so the ございます in
+        # other sections, whose audio is timed to their tokens, stays whole.
+        if (pos in ('動詞', '形容詞') or (pos == '助動詞' and base in local)) and surf != base and (KANJI.search(surf) or base in WORDS):
             def shared(a, b):
                 k = 0
                 while k < min(len(a), len(b)) and a[k] == b[k]:
@@ -362,6 +371,116 @@ PASSAGES = [
      'Yes. Your results from here on should help your hopes of promotion too.', '中村', None),
     ('ありがとうございます。具体的な計画を立てて、がんばります。', "Thank you. I'll make a concrete plan and work hard.", '木村', None),
   ]),
+  # ─── Chapter 3 ─────────────────────────────────────────────────────────────
+  dict(chapter=3, section=1, format='email', title='新製品の資料と価格について', lines=[
+    ('件名：新製品の資料と価格改定について', 'Subject: Materials for the new product, and the price revision', None, H),
+    ('宛先：ミナト商事 購買部 山田様', 'To: Mr Yamada, Purchasing, Minato Trading', None, H),
+    ('ミナト商事 山田様', 'Mr Yamada, Minato Trading', None, None),
+    ('いつもお世話になっております。サクラ電機の木村でございます。', 'Thank you for your continued business. This is Kimura from Sakura Electric.', None, None),
+    ('先日は、お電話をいただき、ありがとうございました。', 'Thank you for your call the other day.', None, None),
+    ('お電話で「御社の新製品の資料がほしい」とおっしゃっていた件について、ご連絡いたします。',
+     'I am writing about what you said on the phone, that you would like materials on our new product.', None, None),
+    ('わざわざお問い合わせいただき、心より感謝申し上げます。', 'Thank you very much for taking the trouble to ask.', None, None),
+    ('詳しくは、添付の資料をご確認ください。また、サンプルを一つさしあげたいと存じます。',
+     'For details, please see the attached materials. We would also like to give you a sample.', None, None),
+    ('ご質問のあった価格についてですが、材料の値上がりにより、来月から費用が上がる見込みです。これは、多くのメーカーで同じ状況でございます。',
+     'As for the price you asked about, material costs are rising, so prices are expected to go up from next month. Many manufacturers are in the same position.', None, None),
+    ('なお、先日のアンケートでは、貴社の売れ行きが特に好調だと伺いました。',
+     'In the recent survey, we heard that sales at your company are going particularly well.', None, None),
+    ('納期の件も、承知いたしました。これまでどおり守れるよう努めます。',
+     'We have also noted your request about the delivery date, and will do our best to keep to it as before.', None, None),
+    ('製品の保障の内容にも、変更はございません。', 'There is no change to the product warranty.', None, None),
+    ('また、先月の出荷の遅れでご迷惑をおかけしたことを、改めて謝罪いたします。',
+     'We would also like to apologise again for the trouble caused by last month\'s late shipment.', None, None),
+    ('担当の中村も、ぜひ一度ごあいさつに伺いたいと申しております。', 'Nakamura, who looks after your account, would also like to visit and greet you.', None, None),
+    ('打ち合わせは、弊社の会議室にお呼びすることもできますので、ご都合をお知らせください。',
+     'We could also invite you to our meeting room for the discussion, so please let us know what suits you.', None, None),
+    ('今後とも、なにぶんよろしくお願い申し上げます。', 'We look forward to working with you.', None, None),
+    ('サクラ電機 営業部 木村', 'Kimura, Sales, Sakura Electric', None, S),
+  ]),
+  dict(chapter=3, section=2, format='meeting', title='販売数と人員配置について', lines=[
+    ('では、会議を始めます。資料の下記の事項を、順番に確認しましょう。', "Let's begin. We'll go through the items below in the materials in order.", '中村', None),
+    ('まず、販売数です。今年は、前年割れとなりました。', "First, sales volume. This year we fell below last year.", '佐藤', None),
+    ('原因は何ですか。', 'What was the cause?', '中村', None),
+    ('大型の店舗での集客が、思うようにできませんでした。', "We couldn't draw customers into the large stores as we had hoped.", '佐藤', None),
+    ('株主からも、説明を求められています。当社の製品の特長を、もっと伝える必要がありますね。',
+     "Shareholders are asking for an explanation too. We need to get our products' strengths across better.", '中村', None),
+    ('はい。来月から、新しい取り引き先への納入も始まります。', 'Yes. Deliveries to a new business partner also start next month.', '木村', None),
+    ('いいですね。次に、人の配置についてです。適材適所を考えて、来年度の業務を決めたいと思います。',
+     "Good. Next, staffing. I'd like to plan next year's work with the right person in the right place.", '中村', None),
+    ('経理部では、事務の仕事が増えて、人が足りないそうです。', "I hear Accounting has more office work and isn't staffed enough.", '木村', None),
+    ('経理の経験がある人を、社外から採用することも考えましょう。', "Let's also consider hiring someone with accounting experience from outside.", '中村', None),
+    ('面接は、来月行う予定です。', "Interviews are planned for next month.", '佐藤', None),
+    ('新しく入る人には、先輩や同僚がしっかり教えることが大切ですね。', "It's important that senior staff and colleagues teach new people properly.", '木村', None),
+    ('そのとおりです。当社には、創立のころから続く慣習もあるので、早めに伝えましょう。',
+     "Exactly. We have customs that go back to when the company was founded, so let's pass those on early.", '中村', None),
+    ('それから、営業はほとんど外出しているので、連絡の方法も決めておきたいです。',
+     "Also, sales staff are out of the office most of the time, so I'd like to settle how we keep in touch.", '佐藤', None),
+    ('わかりました。では、次の会議までに、案をまとめてください。', 'All right. Please put together a proposal by the next meeting.', '中村', None),
+  ]),
+  dict(chapter=3, section=3, format='chat', title='議事録と提案書', lines=[
+    ('木村さん、昨日の交渉の議事録、できましたか。', "Kimura, are the minutes from yesterday's negotiation ready?", '田中課長', None),
+    ('はい。先方は最初、価格に難色を示していましたが、最後は意見が一致しました。',
+     'Yes. At first they were reluctant about the price, but in the end we agreed.', '木村', None),
+    ('よかった。何度も話し合って、やっと契約にこぎつけましたね。', 'Good. After all those discussions, we finally got to a contract.', '田中課長', None),
+    ('はい。最後は、部長が判断をくだしてくださいました。', 'Yes. In the end the department manager made the call.', '木村', None),
+    ('議事録には、結論と、先方からの要求を分けて書いてください。', "In the minutes, please keep the conclusion and their demands separate.", '田中課長', None),
+    ('わかりました。電話で受けた内容も、復唱して確認したものだけ書きます。',
+     "Understood. For what came by phone, I'll only include what I read back and confirmed.", '木村', None),
+    ('それから、来月の株主総会の件です。今年は、創立三十年の記念の会として開催されます。',
+     "Next, about next month's shareholders' meeting. This year it's being held to mark our 30th anniversary.", '田中課長', None),
+    ('総会の議事の進め方も、確認が必要ですね。', "We'll need to check how the meeting's proceedings will run as well.", '木村', None),
+    ('はい。それと、私がプレゼンテーションをするので、提案書の図表を作ってもらえますか。',
+     "Yes. Also, I'm giving the presentation, so could you make the charts for the proposal?", '田中課長', None),
+    ('承知しました。提案の趣旨が伝わるように、まとめます。', "Certainly. I'll put them together so the point of the proposal comes across.", '木村', None),
+    ('ありがとう。部長から、前回の資料は字が多いと指摘がありました。', 'Thanks. The department manager pointed out the last materials had too much text.', '田中課長', None),
+    ('気をつけます。あと、セミナーの申込書に間違いがあったので、訂正して出し直しました。',
+     "I'll be careful. Also, there was a mistake on the seminar application form, so I corrected it and sent it again.", '木村', None),
+    ('申込の締め切りは、明日でしたね。メールの件名に「訂正」と入れましたか。',
+     "The application deadline is tomorrow, isn't it? Did you put 'Correction' in the email's subject line?", '田中課長', None),
+    ('はい。記書きの部分も直しました。そういえば、新しいオフィスに移るといううわさを聞きましたが、本当ですか。',
+     "Yes, and I fixed the itemised section too. By the way, I heard a rumour we're moving to a new office. Is it true?", '木村', None),
+    ('まだ決まっていませんよ。', "Nothing's been decided yet.", '田中課長', None),
+  ]),
+  dict(chapter=3, section=4, format='conversation', title='売り上げとお客様の調査', lines=[
+    ('木村さん、今月の売り上げのグラフを見ましたか。', "Kimura, have you seen this month's sales graph?", '中村', None),
+    ('はい。目標は、ある程度達成できましたね。', 'Yes. We reached our target to some extent.', '木村', None),
+    ('ええ、おおむね予測どおりでした。ことに、週末の売り上げが伸びました。', 'Yes, it was mostly as forecast. Weekend sales in particular went up.', '中村', None),
+    ('過去三か月と比べても、いい結果です。', "It's a good result compared with the past three months, too.", '木村', None),
+    ('現在、お客様の満足度の調査を実施しています。', "We're currently running a customer satisfaction survey.", '中村', None),
+    ('アンケートには、なにやら不自然な回答もありました。同じ答えが、何十件も続いているんです。',
+     'Some of the answers look somehow odd. The same answer goes on for dozens of responses.', '木村', None),
+    ('それは、普通ではありませんね。個人の回答かどうか、確認しましょう。', "That's not normal. Let's check whether they're from individuals.", '中村', None),
+    ('はい。せっかくの調査なので、的確なデータにしたいです。', "Yes. Since we've gone to the trouble of a survey, I want the data to be accurate.", '木村', None),
+    ('そうですね。サービスの向上のために、スタッフ一人一人の努力も大切です。', "Right. Each staff member's effort matters for improving our service, too.", '中村', None),
+    ('店の外に、商品を持ち出して売るのはどうでしょう。', 'How about taking products outside the shop to sell?', '木村', None),
+    ('いい考えですね。互いに、意見を出し合いましょう。', "Good idea. Let's share our ideas with each other.", '中村', None),
+    ('やりたいことを、リストにまとめておきます。', "I'll put the things we want to do into a list.", '木村', None),
+    ('ありがとう。今日の会議で、イベントの日時を決定しましょう。', "Thanks. Let's decide the date and time of the event at today's meeting.", '中村', None),
+    ('はい。売り場の配置も、イベントに合わせて変えますね。', "OK. I'll change the shop-floor layout to match the event too.", '木村', None),
+  ]),
+  dict(chapter=3, section=5, format='phone', title='地域イベントの準備', lines=[
+    ('はい、木村です。', 'Hello, Kimura speaking.', '木村', None),
+    ('中村です。今、現地に着きました。本日の作業の流れを、確認させてください。',
+     "It's Nakamura. I've just arrived on site. Let me check how today's work will go.", '中村', None),
+    ('はい。高齢の方が多い地域なので、まず住民の方に、体験してもらう予定です。',
+     "Sure. There are many elderly people in the area, so first we'll have residents try it out.", '木村', None),
+    ('わかりました。新たなアプリを使う会でしたね。', "I see. It's the session for the new app, right?", '中村', None),
+    ('はい。日常的にスマホを使わない方でも、わかるように説明します。', "Yes. We'll explain it so that even people who don't use smartphones day to day can follow.", '木村', None),
+    ('公式のサイトには、指定の会場が書いてありますか。', 'Does the official website give the designated venue?', '中村', None),
+    ('はい。ただ、雨の場合は混乱を避けるために、日程を一日早めることになりました。',
+     "Yes. But to avoid confusion if it rains, we've decided to bring the schedule forward a day.", '木村', None),
+    ('え、それは今の資料と矛盾しますね。', "Oh, that contradicts the current materials.", '中村', None),
+    ('すみません、すぐ直します。それから、説明の時間は三十分に限ることにしました。',
+     "Sorry, I'll fix it right away. Also, we've decided to limit the explanation to thirty minutes.", '木村', None),
+    ('いい対策ですね。長いと、他人の話を聞くのは疲れますから。', "Good measure. Listening to someone else talk for a long time is tiring.", '中村', None),
+    ('はい。この会は、いわば地域とのつながりそのものだと思います。', "Yes. This session is, so to speak, our connection with the community itself.", '木村', None),
+    ('そうですね。参加者の声から、次の企画のヒントを得ることも、大切な要素です。',
+     "True. Getting ideas for the next project from participants is an important part of it, too.", '中村', None),
+    ('どうしても人が足りないときは、私が受付を引き受けます。', "If we really are short of people, I'll take on reception.", '木村', None),
+    ('ありがとう。では、準備にとりかかります。チームのみんなで、しっかり取り組みましょう。',
+     "Thanks. I'll get started on the preparations then. Let's all work on this properly as a team.", '中村', None),
+  ]),
 ]
 
 # ─── Build ───────────────────────────────────────────────────────────────────
@@ -375,6 +494,8 @@ for w in VOCAB:
 HIRA = re.compile(r'^[\u3040-\u309f]+$')
 
 def lookup(text, words):  # mirrors SectionReader.lookup for formatted passages
+    if len(text) == 1 and HIRA.match(text):  # a lone particle is never a stem
+        return None
     return next((w for w in words if w == text
                  or (w.startswith(text) and HIRA.match(w[len(text):]))), None)
 
@@ -394,7 +515,7 @@ for p in PASSAGES:
     out.append(f"    title: {ts_str(p['title'])},")
     sents = []
     for jp, en, sp, kind in p['lines']:
-        seg = segment(jp)
+        seg = segment(jp, words)
         for x in seg:
             hit = lookup(x['t'], words)
             if hit and x.get('lex'):
@@ -422,4 +543,4 @@ if '--review' in sys.argv:
     for p in PASSAGES:
         print(f"\n=== {p['chapter']}-{p['section']} ===")
         for jp, *_ in p['lines']:
-            print(' '.join(f"{x['t']}({x['r']})" if x.get('r') else x['t'] for x in segment(jp)))
+            print(' '.join(f"{x['t']}({x['r']})" if x.get('r') else x['t'] for x in segment(jp, section_words[(p['chapter'], p['section'])])))

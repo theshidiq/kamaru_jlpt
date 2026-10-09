@@ -16,6 +16,11 @@ const LESSONS: { level: JlptLevel; chapter: number; section: number; id: string;
   { level: 'BJT', chapter: 2, section: 3, id: 'bjt-2-3', minutes: 7 },
   { level: 'BJT', chapter: 2, section: 4, id: 'bjt-2-4', minutes: 7 },
   { level: 'BJT', chapter: 2, section: 5, id: 'bjt-2-5', minutes: 7 },
+  { level: 'BJT', chapter: 3, section: 1, id: 'bjt-3-1', minutes: 8 },
+  { level: 'BJT', chapter: 3, section: 2, id: 'bjt-3-2', minutes: 7 },
+  { level: 'BJT', chapter: 3, section: 3, id: 'bjt-3-3', minutes: 8 },
+  { level: 'BJT', chapter: 3, section: 4, id: 'bjt-3-4', minutes: 7 },
+  { level: 'BJT', chapter: 3, section: 5, id: 'bjt-3-5', minutes: 7 },
 ]
 
 export function lessonFor(level: JlptLevel, chapter: number, section: number) {

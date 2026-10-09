@@ -1,0 +1,708 @@
+{
+ "id": "bjt-3-3",
+ "level": "BJT",
+ "chapter": 3,
+ "section": 3,
+ "title": "会議と書類の言葉",
+ "titleEn": "Meetings & paperwork",
+ "label": "BJT · 第13課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "tanaka": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "田中課長",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "tanaka",
+  "kimura"
+ ],
+ "blocks": {
+  "nego": {
+   "jp": "交渉と結論",
+   "en": "Negotiation & conclusions",
+   "scene": "meeting"
+  },
+  "meet": {
+   "jp": "会議と発表",
+   "en": "Meetings & presentations",
+   "scene": "training"
+  },
+  "doc": {
+   "jp": "書類",
+   "en": "Documents",
+   "scene": "office"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "議事録"
+ ],
+ "screen": {
+  "subject": "交渉 議事録（案）",
+  "line": "結論：契約にこぎつける"
+ },
+ "readings": {
+  "第十三課": "だいじゅうさんか",
+  "賛成": "さんせい",
+  "全員": "ぜんいん",
+  "命令": "めいれい",
+  "苦労": "くろう",
+  "たどり着く": "たどりつく",
+  "会員": "かいいん",
+  "番号": "ばんごう",
+  "申し入れる": "もうしいれる",
+  "住所": "じゅうしょ",
+  "締め切り": "しめきり",
+  "記": "き",
+  "二階": "にかい",
+  "五人": "ごにん",
+  "十年前": "じゅうねんまえ",
+  "五十年": "ごじゅうねん",
+  "五時": "ごじ",
+  "一万台": "いちまんだい",
+  "三か月": "さんかげつ",
+  "三日間": "みっかかん",
+  "九時": "くじ",
+  "一時間": "いちじかん",
+  "二十人": "にじゅうにん",
+  "三十年": "さんじゅうねん",
+  "何十件": "なんじっけん",
+  "三十分": "さんじゅっぷん",
+  "一日": "いちにち"
+ },
+ "speakKana": [
+  "第十三課",
+  "二階",
+  "五人",
+  "十年前",
+  "五十年",
+  "五時",
+  "一万台",
+  "三か月",
+  "三日間",
+  "九時",
+  "一時間",
+  "二十人",
+  "三十年",
+  "何十件",
+  "三十分",
+  "一日"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第十三課。会議と書類の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 13: 25 words — meetings & paperwork."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、課長と部下のチャットを聞いてみましょう。",
+     "en": "First, let's listen to an office chat between a section chief and a team member."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "office",
+   "lines": [
+    {
+     "sp": "tanaka",
+     "jp": "木村さん、昨日の交渉の議事録、できましたか。",
+     "en": "Kimura, are the minutes from yesterday's negotiation ready?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。先方は最初、価格に難色を示していましたが、最後は意見が一致しました。",
+     "en": "Yes. At first they were reluctant about the price, but in the end we agreed."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "よかった。何度も話し合って、やっと契約にこぎつけましたね。",
+     "en": "Good. After all those discussions, we finally got to a contract."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。最後は、部長が判断をくだしてくださいました。",
+     "en": "Yes. In the end the department manager made the call."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "議事録には、結論と、先方からの要求を分けて書いてください。",
+     "en": "In the minutes, please keep the conclusion and their demands separate."
+    },
+    {
+     "sp": "kimura",
+     "jp": "わかりました。電話で受けた内容も、復唱して確認したものだけ書きます。",
+     "en": "Understood. For what came by phone, I'll only include what I read back and confirmed."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "それから、来月の株主総会の件です。今年は、創立三十年の記念の会として開催されます。",
+     "en": "Next, about next month's shareholders' meeting. This year it's being held to mark our 30th anniversary."
+    },
+    {
+     "sp": "kimura",
+     "jp": "総会の議事の進め方も、確認が必要ですね。",
+     "en": "We'll need to check how the meeting's proceedings will run as well."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "はい。それと、私がプレゼンテーションをするので、提案書の図表を作ってもらえますか。",
+     "en": "Yes. Also, I'm giving the presentation, so could you make the charts for the proposal?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "承知しました。提案の趣旨が伝わるように、まとめます。",
+     "en": "Certainly. I'll put them together so the point of the proposal comes across."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "ありがとう。部長から、前回の資料は字が多いと指摘がありました。",
+     "en": "Thanks. The department manager pointed out the last materials had too much text."
+    },
+    {
+     "sp": "kimura",
+     "jp": "気をつけます。あと、セミナーの申込書に間違いがあったので、訂正して出し直しました。",
+     "en": "I'll be careful. Also, there was a mistake on the seminar application form, so I corrected it and sent it again."
+    },
+    {
+     "sp": "tanaka",
+     "jp": "申込の締め切りは、明日でしたね。メールの件名に「訂正」と入れましたか。",
+     "en": "The application deadline is tomorrow, isn't it? Did you put 'Correction' in the email's subject line?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。記書きの部分も直しました。そういえば、新しいオフィスに移るといううわさを聞きましたが、本当ですか。",
+     "en": "Yes, and I fixed the itemised section too. By the way, I heard a rumour we're moving to a new office. Is it true?"
+    },
+    {
+     "sp": "tanaka",
+     "jp": "まだ決まっていませんよ。",
+     "en": "Nothing's been decided yet."
+    }
+   ],
+   "label": {
+    "jp": "チャット",
+    "en": "Office chat"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "nego",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、交渉と結論の言葉です。",
+     "en": "Now let's go through today's words one by one. First: negotiation & conclusions."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "交渉",
+   "explain": {
+    "jp": "条件などについて、相手と話し合うことです。",
+    "en": "Discussing terms with the other side."
+   },
+   "example": {
+    "jp": "価格について、取引先と交渉しました。",
+    "en": "We negotiated the price with the client."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "話し合う",
+   "explain": {
+    "jp": "お互いに、意見を出して話すことです。",
+    "en": "Talking things over and sharing views."
+   },
+   "example": {
+    "jp": "チームで、新しい計画を話し合いました。",
+    "en": "The team discussed the new plan."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "難色",
+   "explain": {
+    "jp": "賛成しない様子のことです。難色を示す、のように使います。",
+    "en": "Showing reluctance, as in 難色を示す."
+   },
+   "example": {
+    "jp": "部長は、その案に難色を示しました。",
+    "en": "The department manager was reluctant about that proposal."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "一致",
+   "explain": {
+    "jp": "二つ以上のものが、同じになることです。",
+    "en": "Two or more things coming out the same."
+   },
+   "example": {
+    "jp": "全員の意見が、一致しました。",
+    "en": "Everyone agreed."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "結論",
+   "explain": {
+    "jp": "話し合いなどの、最後の考えです。",
+    "en": "The final view reached in a discussion."
+   },
+   "example": {
+    "jp": "会議の結論は、来週出します。",
+    "en": "We'll reach the meeting's conclusion next week."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "くだす",
+   "explain": {
+    "jp": "判断や命令を、出すことです。",
+    "en": "Handing down a decision or order."
+   },
+   "example": {
+    "jp": "社長が、最後の判断をくだしました。",
+    "en": "The president made the final decision."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "こぎつける",
+   "explain": {
+    "jp": "苦労して、目標までたどり着くことです。",
+    "en": "Managing to reach a goal after much effort."
+   },
+   "example": {
+    "jp": "三か月かけて、やっと契約にこぎつけました。",
+    "en": "After three months we finally got to a contract."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "要求",
+   "explain": {
+    "jp": "強く、求めることです。",
+    "en": "Demanding something firmly."
+   },
+   "example": {
+    "jp": "お客様は、早い対応を要求しています。",
+    "en": "The customer is demanding a quick response."
+   }
+  },
+  {
+   "type": "word",
+   "block": "nego",
+   "word": "指摘",
+   "explain": {
+    "jp": "問題点などを、示して言うことです。",
+    "en": "Pointing out a problem."
+   },
+   "example": {
+    "jp": "先輩に、資料の間違いを指摘されました。",
+    "en": "A senior colleague pointed out a mistake in my materials."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "meet",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、会議と発表の言葉です。",
+     "en": "Next: meetings & presentations."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "総会",
+   "explain": {
+    "jp": "会員などが、全員集まる会です。",
+    "en": "A meeting of all members."
+   },
+   "example": {
+    "jp": "来月、株主総会が開かれます。",
+    "en": "The shareholders' meeting is next month."
+   }
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "議事",
+   "explain": {
+    "jp": "会議で、話し合うことです。",
+    "en": "What a meeting discusses; its proceedings."
+   },
+   "example": {
+    "jp": "議事の進め方を、確認します。",
+    "en": "We'll check how the proceedings will run."
+   }
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "議事録",
+   "explain": {
+    "jp": "会議の内容を、書いて残したものです。",
+    "en": "A written record of a meeting."
+   },
+   "example": {
+    "jp": "会議のあとで、議事録を作ります。",
+    "en": "I'll write up the minutes after the meeting."
+   }
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "開催",
+   "explain": {
+    "jp": "会や行事を、開くことです。",
+    "en": "Holding a meeting or event."
+   },
+   "example": {
+    "jp": "展示会は、三日間開催されます。",
+    "en": "The trade show runs for three days."
+   }
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "記念",
+   "explain": {
+    "jp": "出来事を、思い出として残すことです。",
+    "en": "Marking an event so it is remembered."
+   },
+   "example": {
+    "jp": "創立記念のパーティーが、あります。",
+    "en": "There's a party to mark the company's founding."
+   }
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "プレゼンテーション",
+   "explain": {
+    "jp": "計画などを、人の前で説明することです。",
+    "en": "Explaining a plan in front of people."
+   },
+   "example": {
+    "jp": "明日、新しい企画のプレゼンテーションをします。",
+    "en": "I'm presenting a new project tomorrow."
+   }
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "復唱",
+   "explain": {
+    "jp": "聞いた言葉を、くり返して言うことです。",
+    "en": "Repeating back what you heard."
+   },
+   "example": {
+    "jp": "電話番号を、復唱して確認します。",
+    "en": "I'll read the phone number back to confirm it."
+   }
+  },
+  {
+   "type": "word",
+   "block": "meet",
+   "word": "うわさ",
+   "explain": {
+    "jp": "本当かどうかわからない、人の話です。",
+    "en": "Talk that may or may not be true."
+   },
+   "example": {
+    "jp": "新しい部長が来るといううわさです。",
+    "en": "There's a rumour that a new department manager is coming."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "doc",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、書類の言葉です。",
+     "en": "Last: documents."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "提案書",
+   "explain": {
+    "jp": "提案の内容を、書いた書類です。",
+    "en": "A document setting out a proposal."
+   },
+   "example": {
+    "jp": "お客様に、提案書を送りました。",
+    "en": "We sent the proposal to the customer."
+   }
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "図表",
+   "explain": {
+    "jp": "図や表のことです。",
+    "en": "Charts and tables."
+   },
+   "example": {
+    "jp": "図表を使うと、わかりやすくなります。",
+    "en": "Charts and tables make things easier to follow."
+   }
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "趣旨",
+   "explain": {
+    "jp": "話や文章の、大切なねらいです。",
+    "en": "The main aim of a talk or text."
+   },
+   "example": {
+    "jp": "会議の趣旨を、最初に説明します。",
+    "en": "I'll explain the purpose of the meeting first."
+   }
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "申込",
+   "explain": {
+    "jp": "参加などを、申し入れることです。",
+    "en": "Applying, for example to take part."
+   },
+   "example": {
+    "jp": "セミナーの申込は、明日までです。",
+    "en": "Applications for the seminar close tomorrow."
+   }
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "申込書",
+   "explain": {
+    "jp": "申込のために、書く書類です。",
+    "en": "The form you fill in to apply."
+   },
+   "example": {
+    "jp": "申込書に、名前と住所を書きます。",
+    "en": "Write your name and address on the application form."
+   }
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "訂正",
+   "explain": {
+    "jp": "間違いを、正しく直すことです。",
+    "en": "Correcting a mistake."
+   },
+   "example": {
+    "jp": "資料の日付を、訂正しました。",
+    "en": "I corrected the date on the materials."
+   }
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "件名",
+   "explain": {
+    "jp": "メールなどの、内容を表す題名です。",
+    "en": "The title that says what an email is about."
+   },
+   "example": {
+    "jp": "メールの件名は、わかりやすく書きましょう。",
+    "en": "Make your email subject lines clear."
+   }
+  },
+  {
+   "type": "word",
+   "block": "doc",
+   "word": "記書き",
+   "explain": {
+    "jp": "書類で、記の下に、大切な点を並べて書く部分です。",
+    "en": "The itemised part of a document, under the heading 記."
+   },
+   "example": {
+    "jp": "日時と場所は、記書きにまとめます。",
+    "en": "The date, time and place go in the itemised section."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "部長は、その案に（　　）を示しました。",
+   "promptEn": "The department manager showed ___ about that proposal.",
+   "choices": [
+    "一致",
+    "難色",
+    "趣旨",
+    "記念"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。部長は、その案に難色を示しました。",
+    "en": "The answer is 2: 難色, reluctance."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "会議の内容を、書いて残したものは？",
+   "promptEn": "What is a written record of a meeting called?",
+   "choices": [
+    "議事",
+    "総会",
+    "議事録",
+    "件名"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。会議の内容を、書いて残したものを、何と言いますか。",
+    "en": "Question 2. What is a written record of a meeting called?"
+   },
+   "reveal": {
+    "jp": "正解は三番、議事録です。",
+    "en": "The answer is 3: 議事録."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "三か月かけて、やっと契約に（　　）。",
+   "promptEn": "After three months we finally ___ a contract.",
+   "choices": [
+    "くだしました",
+    "話し合いました",
+    "指摘しました",
+    "こぎつけました"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。三か月かけて、やっと契約にこぎつけました。",
+    "en": "The answer is 4: こぎつけました, managed to reach."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "電話番号を、（　　）して確認します。",
+   "promptEn": "I'll ___ the phone number to confirm it.",
+   "choices": [
+    "復唱",
+    "訂正",
+    "交渉",
+    "開催"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。電話番号を、復唱して確認します。",
+    "en": "The answer is 1: 復唱, read back."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "資料の日付を、（　　）しました。",
+   "promptEn": "I ___ the date on the materials.",
+   "choices": [
+    "申込",
+    "訂正",
+    "要求",
+    "うわさ"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。資料の日付を、訂正しました。",
+    "en": "The answer is 2: 訂正, corrected."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、会議と書類の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: meetings & paperwork."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

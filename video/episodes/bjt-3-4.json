@@ -1,0 +1,707 @@
+{
+ "id": "bjt-3-4",
+ "level": "BJT",
+ "chapter": 3,
+ "section": 4,
+ "title": "調査とデータの言葉",
+ "titleEn": "Surveys & data",
+ "label": "BJT · 第14課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "nakamura": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "中村",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "nakamura",
+  "kimura"
+ ],
+ "blocks": {
+  "data": {
+   "jp": "数字を読む",
+   "en": "Reading the numbers",
+   "scene": "meeting"
+  },
+  "degree": {
+   "jp": "どのくらい",
+   "en": "How much",
+   "scene": "office"
+  },
+  "work": {
+   "jp": "力を合わせる",
+   "en": "Working together",
+   "scene": "store"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "おおむね"
+ ],
+ "screen": {
+  "subject": "今月の売り上げ",
+  "line": "目標：ある程度達成"
+ },
+ "readings": {
+  "第十四課": "だいじゅうよんか",
+  "満足度": "まんぞくど",
+  "避難訓練": "ひなんくんれん",
+  "完全": "かんぜん",
+  "慣れました": "なれました",
+  "順調": "じゅんちょう",
+  "夏": "なつ",
+  "自然": "しぜん",
+  "特別": "とくべつ",
+  "消えて": "きえて",
+  "助け合いましょう": "たすけあいましょう",
+  "都合": "つごう",
+  "参加者": "さんかしゃ",
+  "日にち": "ひにち",
+  "週末": "しゅうまつ",
+  "二階": "にかい",
+  "五人": "ごにん",
+  "十年前": "じゅうねんまえ",
+  "五十年": "ごじゅうねん",
+  "五時": "ごじ",
+  "一万台": "いちまんだい",
+  "三か月": "さんかげつ",
+  "三日間": "みっかかん",
+  "九時": "くじ",
+  "一時間": "いちじかん",
+  "二十人": "にじゅうにん",
+  "三十年": "さんじゅうねん",
+  "何十件": "なんじっけん",
+  "三十分": "さんじゅっぷん",
+  "一日": "いちにち",
+  "一人": "ひとり"
+ },
+ "speakKana": [
+  "第十四課",
+  "二階",
+  "五人",
+  "十年前",
+  "五十年",
+  "五時",
+  "一万台",
+  "三か月",
+  "三日間",
+  "九時",
+  "一時間",
+  "二十人",
+  "三十年",
+  "何十件",
+  "三十分",
+  "一日"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第十四課。調査とデータの言葉を、二十五個勉強します。",
+     "en": "Today is lesson 14: 25 words — surveys & data."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、閉店後の店での会話を聞いてみましょう。",
+     "en": "First, let's listen to a conversation in the shop after closing."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "store",
+   "ambience": "store",
+   "lines": [
+    {
+     "sp": "nakamura",
+     "jp": "木村さん、今月の売り上げのグラフを見ましたか。",
+     "en": "Kimura, have you seen this month's sales graph?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。目標は、ある程度達成できましたね。",
+     "en": "Yes. We reached our target to some extent."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "ええ、おおむね予測どおりでした。ことに、週末の売り上げが伸びました。",
+     "en": "Yes, it was mostly as forecast. Weekend sales in particular went up."
+    },
+    {
+     "sp": "kimura",
+     "jp": "過去三か月と比べても、いい結果です。",
+     "en": "It's a good result compared with the past three months, too."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "現在、お客様の満足度の調査を実施しています。",
+     "en": "We're currently running a customer satisfaction survey."
+    },
+    {
+     "sp": "kimura",
+     "jp": "アンケートには、なにやら不自然な回答もありました。同じ答えが、何十件も続いているんです。",
+     "en": "Some of the answers look somehow odd. The same answer goes on for dozens of responses."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "それは、普通ではありませんね。個人の回答かどうか、確認しましょう。",
+     "en": "That's not normal. Let's check whether they're from individuals."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。せっかくの調査なので、的確なデータにしたいです。",
+     "en": "Yes. Since we've gone to the trouble of a survey, I want the data to be accurate."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "そうですね。サービスの向上のために、スタッフ一人一人の努力も大切です。",
+     "en": "Right. Each staff member's effort matters for improving our service, too."
+    },
+    {
+     "sp": "kimura",
+     "jp": "店の外に、商品を持ち出して売るのはどうでしょう。",
+     "en": "How about taking products outside the shop to sell?"
+    },
+    {
+     "sp": "nakamura",
+     "jp": "いい考えですね。互いに、意見を出し合いましょう。",
+     "en": "Good idea. Let's share our ideas with each other."
+    },
+    {
+     "sp": "kimura",
+     "jp": "やりたいことを、リストにまとめておきます。",
+     "en": "I'll put the things we want to do into a list."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "ありがとう。今日の会議で、イベントの日時を決定しましょう。",
+     "en": "Thanks. Let's decide the date and time of the event at today's meeting."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。売り場の配置も、イベントに合わせて変えますね。",
+     "en": "OK. I'll change the shop-floor layout to match the event too."
+    }
+   ],
+   "label": {
+    "jp": "店で",
+    "en": "At the shop"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "data",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、数字を読むの言葉です。",
+     "en": "Now let's go through today's words one by one. First: reading the numbers."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "グラフ",
+   "explain": {
+    "jp": "数字の変化を、図で表したものです。",
+    "en": "A picture showing how numbers change."
+   },
+   "example": {
+    "jp": "売り上げを、グラフにまとめました。",
+    "en": "I put the sales into a graph."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "予測",
+   "explain": {
+    "jp": "これから先のことを、前もって考えることです。",
+    "en": "Working out in advance what will happen."
+   },
+   "example": {
+    "jp": "来月の売り上げを、予測します。",
+    "en": "I'll forecast next month's sales."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "達成",
+   "explain": {
+    "jp": "目標を、やりとげることです。",
+    "en": "Achieving a goal."
+   },
+   "example": {
+    "jp": "チームで、今年の目標を達成しました。",
+    "en": "The team achieved this year's goal."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "過去",
+   "explain": {
+    "jp": "過ぎた時のことです。",
+    "en": "Time that has gone by."
+   },
+   "example": {
+    "jp": "過去のデータと、比べてみましょう。",
+    "en": "Let's compare it with past data."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "現在",
+   "explain": {
+    "jp": "今、この時のことです。",
+    "en": "Now; the present."
+   },
+   "example": {
+    "jp": "現在、会議中です。",
+    "en": "We're in a meeting at the moment."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "調査",
+   "explain": {
+    "jp": "よく調べることです。",
+    "en": "Looking into something carefully."
+   },
+   "example": {
+    "jp": "お客様の満足度を、調査しました。",
+    "en": "We surveyed customer satisfaction."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "実施",
+   "explain": {
+    "jp": "計画などを、実際に行うことです。",
+    "en": "Actually carrying out a plan."
+   },
+   "example": {
+    "jp": "来週、避難訓練を実施します。",
+    "en": "We'll hold an evacuation drill next week."
+   }
+  },
+  {
+   "type": "word",
+   "block": "data",
+   "word": "的確",
+   "explain": {
+    "jp": "間違いがなく、ぴったり合っていることです。",
+    "en": "Exactly right, with no mistakes."
+   },
+   "example": {
+    "jp": "先輩は、いつも的確なアドバイスをくれます。",
+    "en": "My senior colleague always gives spot-on advice."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "degree",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、どのくらいの言葉です。",
+     "en": "Next: how much."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "ある程度",
+   "explain": {
+    "jp": "完全ではないが、かなり、という意味です。",
+    "en": "Not completely, but quite a lot."
+   },
+   "example": {
+    "jp": "仕事には、ある程度慣れました。",
+    "en": "I've got used to the job to some extent."
+   }
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "おおむね",
+   "explain": {
+    "jp": "だいたい、という意味です。",
+    "en": "Mostly; on the whole."
+   },
+   "example": {
+    "jp": "計画は、おおむね順調です。",
+    "en": "The plan is mostly on track."
+   }
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "ことに",
+   "explain": {
+    "jp": "特に、という意味です。",
+    "en": "Especially."
+   },
+   "example": {
+    "jp": "今年の夏は、ことに暑いです。",
+    "en": "This summer is especially hot."
+   }
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "なにやら",
+   "explain": {
+    "jp": "何かはっきりしないが、という意味です。",
+    "en": "Something or other; somehow."
+   },
+   "example": {
+    "jp": "会議室から、なにやら大きな声が聞こえます。",
+    "en": "Some loud voices are coming from the meeting room."
+   }
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "不自然",
+   "explain": {
+    "jp": "自然ではなく、おかしいことです。",
+    "en": "Not natural; odd."
+   },
+   "example": {
+    "jp": "この日本語は、少し不自然です。",
+    "en": "This Japanese sounds a little unnatural."
+   }
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "普通",
+   "explain": {
+    "jp": "ほかと同じで、特別ではないことです。",
+    "en": "Ordinary, nothing special."
+   },
+   "example": {
+    "jp": "普通は、九時に会社に着きます。",
+    "en": "I usually get to the office at nine."
+   }
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "せっかく",
+   "explain": {
+    "jp": "わざわざ、苦労してしたのに、という気持ちの言葉です。",
+    "en": "Said of effort that was made on purpose, often wasted."
+   },
+   "example": {
+    "jp": "せっかく作った資料が、消えてしまいました。",
+    "en": "The materials I worked so hard on were deleted."
+   }
+  },
+  {
+   "type": "word",
+   "block": "degree",
+   "word": "今日",
+   "explain": {
+    "jp": "今の日のことです。",
+    "en": "This day."
+   },
+   "example": {
+    "jp": "今日は、午後から会議があります。",
+    "en": "Today I have a meeting from the afternoon."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "work",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、力を合わせるの言葉です。",
+     "en": "Last: working together."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "個人",
+   "explain": {
+    "jp": "一人一人の、人のことです。",
+    "en": "Each individual person."
+   },
+   "example": {
+    "jp": "これは、個人の意見です。",
+    "en": "This is my personal opinion."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "努力",
+   "explain": {
+    "jp": "目標のために、がんばることです。",
+    "en": "Working hard towards a goal."
+   },
+   "example": {
+    "jp": "毎日の努力が、結果につながりました。",
+    "en": "Daily effort led to results."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "向上",
+   "explain": {
+    "jp": "よくなって、高まることです。",
+    "en": "Getting better; improving."
+   },
+   "example": {
+    "jp": "研修で、日本語の力が向上しました。",
+    "en": "My Japanese improved through the training."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "互いに",
+   "explain": {
+    "jp": "どちらも相手に、という意味です。",
+    "en": "Each other."
+   },
+   "example": {
+    "jp": "互いに、助け合いましょう。",
+    "en": "Let's help each other."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "合わせる",
+   "explain": {
+    "jp": "二つ以上のものを、一つにしたり、そろえたりすることです。",
+    "en": "Putting things together or matching them up."
+   },
+   "example": {
+    "jp": "お客様の都合に、時間を合わせます。",
+    "en": "We'll fit the time to the customer's schedule."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "持ち出す",
+   "explain": {
+    "jp": "中にある物を、外へ持って出ることです。話を持ち出す、とも言います。",
+    "en": "Taking something outside; also bringing up a topic."
+   },
+   "example": {
+    "jp": "会社の資料を、外に持ち出さないでください。",
+    "en": "Please don't take company documents outside."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "リスト",
+   "explain": {
+    "jp": "名前などを、並べて書いた表です。",
+    "en": "Names or items written out in a row."
+   },
+   "example": {
+    "jp": "参加者のリストを、作りました。",
+    "en": "I made a list of participants."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "日時",
+   "explain": {
+    "jp": "日にちと、時間です。",
+    "en": "The date and time."
+   },
+   "example": {
+    "jp": "会議の日時を、メールで知らせます。",
+    "en": "I'll email the meeting's date and time."
+   }
+  },
+  {
+   "type": "word",
+   "block": "work",
+   "word": "決定",
+   "explain": {
+    "jp": "はっきりと、決めることです。",
+    "en": "Deciding something firmly."
+   },
+   "example": {
+    "jp": "新しい店の場所が、決定しました。",
+    "en": "The new store's location has been decided."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "チームで、今年の目標を（　　）しました。",
+   "promptEn": "The team ___ this year's goal.",
+   "choices": [
+    "予測",
+    "調査",
+    "達成",
+    "過去"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。チームで、今年の目標を達成しました。",
+    "en": "The answer is 3: 達成, achieved."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "計画は、（　　）順調です。",
+   "promptEn": "The plan is ___ on track.",
+   "choices": [
+    "おおむね",
+    "せっかく",
+    "なにやら",
+    "互いに"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。計画は、おおむね順調です。",
+    "en": "The answer is 1: おおむね, mostly."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "この日本語は、少し（　　）です。",
+   "promptEn": "This Japanese sounds a little ___.",
+   "choices": [
+    "的確",
+    "不自然",
+    "普通",
+    "個人"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。この日本語は、少し不自然です。",
+    "en": "The answer is 2: 不自然, unnatural."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "（　　）作った資料が、消えてしまいました。",
+   "promptEn": "The materials I ___ worked on were deleted.",
+   "choices": [
+    "ことに",
+    "ある程度",
+    "現在",
+    "せっかく"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。せっかく作った資料が、消えてしまいました。",
+    "en": "The answer is 4: せっかく, that I took such trouble over."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "会議の（　　）を、メールで知らせます。",
+   "promptEn": "I'll email the meeting's ___.",
+   "choices": [
+    "グラフ",
+    "日時",
+    "努力",
+    "向上"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。会議の日時を、メールで知らせます。",
+    "en": "The answer is 2: 日時, date and time."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、調査とデータの言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: surveys & data."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}
