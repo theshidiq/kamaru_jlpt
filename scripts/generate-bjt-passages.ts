@@ -35,11 +35,15 @@ const SPEAKER_VOICE: Record<string, string> = {
   '田中課長': 'KJje3wzepLiSIQjVGCB6',  // Riku: calm, middle-aged
   '中村': 'KJje3wzepLiSIQjVGCB6',
   '木村': 'gHBfNp2PWSyFgpPlzCOd',      // Sakura
+  '小林': 'gHBfNp2PWSyFgpPlzCOd',
+  '山田': 'KJje3wzepLiSIQjVGCB6',
+  '佐藤': 'iIeTr6tHs1VoWSqmCths',      // Sushio: casual, younger male
 }
 // Tokens the voice should read from kana. The display keeps the kanji; timing
 // maps the spoken span back onto the token, so the highlight is unaffected.
 const SPEAK_AS: Record<string, string> = {
   '何か所': 'なんかしょ', '聴読解': 'ちょうどっかい', 'BJT': 'ビージェーティー',
+  '十か所': 'じゅっかしょ', '十日': 'とおか', '三十分': 'さんじゅっぷん', '三冊': 'さんさつ', '三人': 'さんにん', 'IT': 'アイティー',
 }
 // Pauses between lines, ms. A change of speaker gets a beat longer, and the
 // header / signature of a document stand apart from its body.

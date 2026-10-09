@@ -1,0 +1,706 @@
+{
+ "id": "bjt-2-1",
+ "level": "BJT",
+ "chapter": 2,
+ "section": 1,
+ "title": "展示会と敬語の言葉",
+ "titleEn": "Trade shows & keigo",
+ "label": "BJT · 第6課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "nakamura": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "中村",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "nakamura",
+  "kimura"
+ ],
+ "blocks": {
+  "keigo": {
+   "jp": "敬語と接客",
+   "en": "Keigo & service",
+   "scene": "store"
+  },
+  "order": {
+   "jp": "注文と契約",
+   "en": "Orders & contracts",
+   "scene": "office"
+  },
+  "product": {
+   "jp": "製品と店舗",
+   "en": "Products & stores",
+   "scene": "store"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "使い分け"
+ ],
+ "screen": {
+  "subject": "展示会 準備リスト",
+  "line": "在庫・出荷日程を確認"
+ },
+ "readings": {
+  "第六課": "だいろっか",
+  "態度": "たいど",
+  "礼儀": "れいぎ",
+  "作法": "さほう",
+  "名刺交換": "めいしこうかん",
+  "席": "せき",
+  "参ります": "まいります",
+  "敬って": "うやまって",
+  "正式": "せいしき",
+  "倉庫": "そうこ",
+  "品": "しな",
+  "料金": "りょうきん",
+  "紹介": "しょうかい",
+  "技術": "ぎじゅつ",
+  "器具": "きぐ",
+  "最新": "さいしん",
+  "仕組み": "しくみ",
+  "取り入れる": "とりいれる",
+  "駅前": "えきまえ",
+  "営業": "えいぎょう",
+  "大阪": "おおさか",
+  "二年": "にねん",
+  "三年": "さんねん",
+  "十人": "じゅうにん",
+  "四月": "しがつ",
+  "一時間": "いちじかん",
+  "九時": "くじ",
+  "三人": "さんにん",
+  "十年後": "じゅうねんご",
+  "一割": "いちわり",
+  "三十分": "さんじゅっぷん",
+  "二つ": "ふたつ",
+  "方": "かた",
+  "十か所": "じゅっかしょ"
+ },
+ "speakKana": [
+  "第六課",
+  "二年",
+  "三年",
+  "十人",
+  "四月",
+  "一時間",
+  "九時",
+  "三人",
+  "十年後",
+  "一割",
+  "三十分",
+  "二つ"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第六課。展示会と敬語の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 6: 25 words — trade shows & keigo."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、展示会の前の日の会話を聞いてみましょう。",
+     "en": "First, let's listen to a conversation the day before a trade show."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "store",
+   "ambience": "store",
+   "lines": [
+    {
+     "sp": "nakamura",
+     "jp": "木村さん、明日の展示会、準備はどうですか。",
+     "en": "Kimura, how are the preparations for tomorrow's trade show?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい、弊社の新しい機器の展示は、ほぼ終わりました。",
+     "en": "Our new equipment display is almost finished."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "ありがとう。開発部が二年かけて企画した製品だから、たくさんの方にご来場いただきたいですね。",
+     "en": "Thanks. Development spent two years planning this product, so we want lots of people to come."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。ただ、お客様への言葉づかいが少し心配です。",
+     "en": "Yes. I'm a little worried about how I speak to visitors, though."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "大切なのはマナーと、丁寧な言葉の使い分けです。お客様の行動には尊敬語を使いましょう。",
+     "en": "What matters is manners, and choosing the right polite words. Use respectful language for what the customer does."
+    },
+    {
+     "sp": "kimura",
+     "jp": "「少々お待ちください」や「よろしいでしょうか」のような表現ですね。",
+     "en": "Expressions like 少々お待ちください and よろしいでしょうか."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "そうです。自分のことは、「ご案内いたします」のように言います。",
+     "en": "Right. For your own actions, say things like ご案内いたします."
+    },
+    {
+     "sp": "kimura",
+     "jp": "わかりました。アンケートのご記入も、お願いしてみます。",
+     "en": "Understood. I'll also ask them to fill in the survey."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "いいですね。ご注文の相談があったら、在庫と出荷の日程を確認してから答えてください。",
+     "en": "Good. If someone asks about an order, check the stock and shipping dates before you answer."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。生産が追いつかない場合は、どうしますか。",
+     "en": "OK. What if production can't keep up?"
+    },
+    {
+     "sp": "nakamura",
+     "jp": "そのときは、私に連絡してください。来月、価格の改定もあるので、契約の話は私がします。",
+     "en": "Then contact me. Prices are being revised next month, so I'll handle any contract talks."
+    },
+    {
+     "sp": "kimura",
+     "jp": "承知しました。導入を考えている店舗の方も、来られるそうですね。",
+     "en": "Understood. I hear people from shops thinking of adopting it are coming too."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "ええ。来年、新店舗を十か所開く会社もあるので、大きなチャンスです。",
+     "en": "Yes. One company is opening ten new stores next year, so it's a big chance."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい、がんばります。",
+     "en": "Yes, I'll do my best."
+    }
+   ],
+   "label": {
+    "jp": "展示会場で",
+    "en": "At the trade show"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "keigo",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、敬語と接客の言葉です。",
+     "en": "Now let's go through today's words one by one. First: keigo & service."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "尊敬語",
+   "explain": {
+    "jp": "相手の行動を、高めて言う敬語です。",
+    "en": "Keigo that raises the other person's actions."
+   },
+   "example": {
+    "jp": "おっしゃる、いらっしゃるは、尊敬語です。",
+    "en": "おっしゃる and いらっしゃる are respectful language."
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "丁寧",
+   "explain": {
+    "jp": "言葉や態度が、礼儀正しいことです。",
+    "en": "Polite in words and manner."
+   },
+   "example": {
+    "jp": "お客様には、丁寧に説明しましょう。",
+    "en": "Explain things politely to customers."
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "使い分け",
+   "explain": {
+    "jp": "場面に合わせて、言葉などを選んで使うことです。",
+    "en": "Choosing the right words for the situation."
+   },
+   "example": {
+    "jp": "敬語の使い分けは、少し難しいです。",
+    "en": "Choosing the right keigo is a little difficult."
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "マナー",
+   "explain": {
+    "jp": "人と接するときの、礼儀や作法です。",
+    "en": "Courtesy and etiquette when dealing with people."
+   },
+   "example": {
+    "jp": "名刺交換のマナーを、練習しました。",
+    "en": "We practised business-card etiquette."
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "いたす",
+   "explain": {
+    "jp": "するの謙譲語です。",
+    "en": "Humble form of する (to do)."
+   },
+   "example": {
+    "jp": "資料は、私がご用意いたします。",
+    "en": "I'll prepare the materials."
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "よろしい",
+   "explain": {
+    "jp": "いい、の丁寧な言い方です。",
+    "en": "The polite way to say いい (good)."
+   },
+   "example": {
+    "jp": "こちらの席で、よろしいでしょうか。",
+    "en": "Would this seat be all right?"
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "少々",
+   "explain": {
+    "jp": "少し、の丁寧な言い方です。",
+    "en": "The polite way to say 少し (a little)."
+   },
+   "example": {
+    "jp": "少々、お時間をいただけますか。",
+    "en": "Could I have a moment of your time?"
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "お待ち",
+   "explain": {
+    "jp": "待つ、の丁寧な形です。お待ちください、のように使います。",
+    "en": "Polite form of 待つ (to wait), as in お待ちください."
+   },
+   "example": {
+    "jp": "担当者が参りますので、こちらでお待ちください。",
+    "en": "The person in charge is coming, so please wait here."
+   }
+  },
+  {
+   "type": "word",
+   "block": "keigo",
+   "word": "ご来場",
+   "explain": {
+    "jp": "会場に来ることを、敬って言う言葉です。",
+    "en": "A respectful way to say someone has come to a venue."
+   },
+   "example": {
+    "jp": "本日は、ご来場いただき、ありがとうございます。",
+    "en": "Thank you for coming today."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "order",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、注文と契約の言葉です。",
+     "en": "Next: orders & contracts."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "ご注文",
+   "explain": {
+    "jp": "注文の、丁寧な言い方です。",
+    "en": "The polite way to say 注文 (order)."
+   },
+   "example": {
+    "jp": "ご注文は、お決まりですか。",
+    "en": "Are you ready to order?"
+   }
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "ご記入",
+   "explain": {
+    "jp": "書き込むことを、丁寧に言う言葉です。",
+    "en": "A polite way to say filling something in."
+   },
+   "example": {
+    "jp": "こちらに、お名前をご記入ください。",
+    "en": "Please write your name here."
+   }
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "契約",
+   "explain": {
+    "jp": "会社や人が、正式に約束することです。",
+    "en": "A formal agreement between companies or people."
+   },
+   "example": {
+    "jp": "来月、新しい取引先と契約します。",
+    "en": "Next month we'll sign a contract with a new client."
+   }
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "在庫",
+   "explain": {
+    "jp": "店や倉庫にある、売るための商品です。",
+    "en": "Goods kept in a shop or warehouse for sale."
+   },
+   "example": {
+    "jp": "この商品は、在庫がありません。",
+    "en": "This product is out of stock."
+   }
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "出荷",
+   "explain": {
+    "jp": "商品を、お客様へ送り出すことです。",
+    "en": "Sending goods out to customers."
+   },
+   "example": {
+    "jp": "ご注文の品は、明日出荷します。",
+    "en": "Your order ships tomorrow."
+   }
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "生産",
+   "explain": {
+    "jp": "工場などで、物を作ることです。",
+    "en": "Making things, for example in a factory."
+   },
+   "example": {
+    "jp": "新しい工場で、生産を始めました。",
+    "en": "Production has started at the new factory."
+   }
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "改定",
+   "explain": {
+    "jp": "決まりや値段を、新しく決め直すことです。",
+    "en": "Setting rules or prices anew."
+   },
+   "example": {
+    "jp": "四月に、料金が改定されます。",
+    "en": "Fees will be revised in April."
+   }
+  },
+  {
+   "type": "word",
+   "block": "order",
+   "word": "弊社",
+   "explain": {
+    "jp": "自分の会社を、へりくだって言う言葉です。",
+    "en": "A humble way to refer to your own company."
+   },
+   "example": {
+    "jp": "弊社の新製品を、ご紹介いたします。",
+    "en": "Let me introduce our company's new product."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "product",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、製品と店舗の言葉です。",
+     "en": "Last: products & stores."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "開発",
+   "explain": {
+    "jp": "新しい技術や製品を、作り出すことです。",
+    "en": "Creating new technology or products."
+   },
+   "example": {
+    "jp": "三年かけて、新しいアプリを開発しました。",
+    "en": "We spent three years developing a new app."
+   }
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "企画",
+   "explain": {
+    "jp": "新しい計画を、考えて立てることです。",
+    "en": "Coming up with a new plan."
+   },
+   "example": {
+    "jp": "若い社員が、イベントを企画しました。",
+    "en": "Young employees planned the event."
+   }
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "機器",
+   "explain": {
+    "jp": "機械や器具のことです。",
+    "en": "Machines and equipment."
+   },
+   "example": {
+    "jp": "最新の医療機器を、取り入れました。",
+    "en": "We brought in the latest medical equipment."
+   }
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "展示",
+   "explain": {
+    "jp": "物を並べて、多くの人に見せることです。",
+    "en": "Laying things out to show many people."
+   },
+   "example": {
+    "jp": "ロビーに、新製品を展示しています。",
+    "en": "The new product is on display in the lobby."
+   }
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "展示会",
+   "explain": {
+    "jp": "商品などを展示して、紹介する会です。",
+    "en": "An event where products are displayed and introduced."
+   },
+   "example": {
+    "jp": "来週、東京で展示会が開かれます。",
+    "en": "A trade show is being held in Tokyo next week."
+   }
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "導入",
+   "explain": {
+    "jp": "新しい仕組みや機械を、取り入れることです。",
+    "en": "Bringing in a new system or machine."
+   },
+   "example": {
+    "jp": "来年、新しいシステムを導入します。",
+    "en": "We'll introduce a new system next year."
+   }
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "店舗",
+   "explain": {
+    "jp": "商品を売る、お店のことです。",
+    "en": "A shop that sells goods."
+   },
+   "example": {
+    "jp": "駅前の店舗は、夜十時まで営業しています。",
+    "en": "The store by the station is open until 10 p.m."
+   }
+  },
+  {
+   "type": "word",
+   "block": "product",
+   "word": "新店舗",
+   "explain": {
+    "jp": "新しく開く、お店のことです。",
+    "en": "A newly opened shop."
+   },
+   "example": {
+    "jp": "来月、大阪に新店舗がオープンします。",
+    "en": "A new store opens in Osaka next month."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "こちらに、お名前を（　　）ください。",
+   "promptEn": "Please ___ your name here.",
+   "choices": [
+    "ご来場",
+    "ご注文",
+    "ご記入",
+    "お待ち"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。こちらに、お名前をご記入ください。",
+    "en": "The answer is 3: ご記入, please write."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "「する」の謙譲語は、どれですか。",
+   "promptEn": "Which is the humble form of する?",
+   "choices": [
+    "いたす",
+    "おっしゃる",
+    "よろしい",
+    "いらっしゃる"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第二問。するの謙譲語は、どれですか。",
+    "en": "Question 2. Which is the humble form of する?"
+   },
+   "reveal": {
+    "jp": "正解は一番、いたすです。",
+    "en": "The answer is 1: いたす."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "この商品は、（　　）がありません。",
+   "promptEn": "This product is out of ___.",
+   "choices": [
+    "契約",
+    "在庫",
+    "展示",
+    "企画"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。この商品は、在庫がありません。",
+    "en": "The answer is 2: 在庫, out of stock."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "自分の会社を、へりくだって言う言葉は？",
+   "promptEn": "Which word humbly refers to your own company?",
+   "choices": [
+    "店舗",
+    "新店舗",
+    "機器",
+    "弊社"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第四問。自分の会社を、へりくだって言う言葉は、どれですか。",
+    "en": "Question 4. Which word humbly refers to your own company?"
+   },
+   "reveal": {
+    "jp": "正解は四番、弊社です。",
+    "en": "The answer is 4: 弊社."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "来年、新しいシステムを（　　）します。",
+   "promptEn": "Next year we'll ___ a new system.",
+   "choices": [
+    "出荷",
+    "導入",
+    "丁寧",
+    "マナー"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。来年、新しいシステムを導入します。",
+    "en": "The answer is 2: 導入, introduce."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、展示会と敬語の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: trade shows & keigo."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

@@ -19,6 +19,7 @@ const LABEL: Record<PassageFormat, { en: string; id: string; icon: string }> = {
   chat:    { en: 'Office chat',  id: 'Chat kantor',    icon: '💬' },
   phone:   { en: 'Phone call',   id: 'Telepon',        icon: '📞' },
   meeting: { en: 'Meeting',      id: 'Rapat',          icon: '🗣️' },
+  conversation: { en: 'Conversation', id: 'Percakapan', icon: '👥' },
   memo:    { en: 'Report',       id: 'Laporan',        icon: '📝' },
   notice:  { en: 'Notice',       id: 'Pengumuman',     icon: '📢' },
 }
@@ -84,7 +85,7 @@ export function FormattedPassage({ format, sentences, renderTokens, showEnglish,
     )
   }
 
-  if (format === 'phone' || format === 'meeting') {
+  if (format === 'phone' || format === 'meeting' || format === 'conversation') {
     const speakers = [...new Set(sentences.map(s => s.speaker).filter(Boolean))] as string[]
     const tone = ['text-indigo-600 dark:text-indigo-400', 'text-rose-600 dark:text-rose-400', 'text-emerald-600 dark:text-emerald-400']
     return (

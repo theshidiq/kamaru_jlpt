@@ -1,0 +1,713 @@
+{
+ "id": "bjt-2-2",
+ "level": "BJT",
+ "chapter": 2,
+ "section": 2,
+ "title": "社内文書の言葉",
+ "titleEn": "Internal documents",
+ "label": "BJT · 第7課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "riku": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "例文"
+  },
+  "sakura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "例文"
+  }
+ },
+ "exampleVoices": [
+  "riku",
+  "sakura"
+ ],
+ "blocks": {
+  "org": {
+   "jp": "会社の組織",
+   "en": "Company organisation",
+   "scene": "office"
+  },
+  "paper": {
+   "jp": "書類と手続き",
+   "en": "Papers & procedures",
+   "scene": "office"
+  },
+  "plan": {
+   "jp": "計画と人",
+   "en": "Plans & people",
+   "scene": "meeting"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "精算書"
+ ],
+ "screen": {
+  "subject": "社内セミナーと精算書について",
+  "line": "精算書：日付と標題を必ず記入"
+ },
+ "readings": {
+  "第七課": "だいななか",
+  "分野": "ぶんや",
+  "自動車": "じどうしゃ",
+  "世界": "せかい",
+  "月曜日": "げつようび",
+  "本社": "ほんしゃ",
+  "事務所": "じむしょ",
+  "事務": "じむ",
+  "備品": "びひん",
+  "部署": "ぶしょ",
+  "名刺": "めいし",
+  "役員": "やくいん",
+  "出席": "しゅっせき",
+  "提出": "ていしゅつ",
+  "計算": "けいさん",
+  "整理": "せいり",
+  "出張": "しゅっちょう",
+  "交通費": "こうつうひ",
+  "金曜日": "きんようび",
+  "題名": "だいめい",
+  "年月日": "ねんがっぴ",
+  "右上": "みぎうえ",
+  "契約書": "けいやくしょ",
+  "行事": "ぎょうじ",
+  "説明書": "せつめいしょ",
+  "専門": "せんもん",
+  "参加": "さんか",
+  "都合": "つごう",
+  "延ばす": "のばす",
+  "一人": "ひとり",
+  "二年": "にねん",
+  "三年": "さんねん",
+  "十人": "じゅうにん",
+  "四月": "しがつ",
+  "一時間": "いちじかん",
+  "九時": "くじ",
+  "三人": "さんにん",
+  "十年後": "じゅうねんご",
+  "一割": "いちわり",
+  "三十分": "さんじゅっぷん",
+  "二つ": "ふたつ",
+  "方": "かた",
+  "十日": "とおか"
+ },
+ "speakKana": [
+  "第七課",
+  "二年",
+  "三年",
+  "十人",
+  "四月",
+  "一時間",
+  "九時",
+  "三人",
+  "十年後",
+  "一割",
+  "三十分",
+  "二つ"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第七課。社内文書の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 7: 25 words — internal documents."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、総務部から届いたメールを聞いてみましょう。",
+     "en": "First, let's listen to an email from General Affairs."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "件名：社内セミナーと精算書の新しい運用について",
+     "en": "Subject: The in-house seminar and the new expense-form procedure"
+    },
+    {
+     "sp": "host",
+     "jp": "宛先：各支店 スタッフ各位",
+     "en": "To: All staff at every branch"
+    },
+    {
+     "sp": "host",
+     "jp": "いつもお疲れさまです。総務部の佐藤です。",
+     "en": "Thank you for your hard work. This is Sato from General Affairs."
+    },
+    {
+     "sp": "host",
+     "jp": "来月十日に、新入社員と若手スタッフを対象にした社内セミナーを開きます。",
+     "en": "On the 10th of next month we'll hold an in-house seminar for new employees and junior staff."
+    },
+    {
+     "sp": "host",
+     "jp": "講師には、IT産業の企業で広報を担当していた方をお招きします。",
+     "en": "Our lecturer previously handled PR at a company in the IT industry."
+    },
+    {
+     "sp": "host",
+     "jp": "当日は、前年に好評だった広告案の作り方も紹介する予定です。",
+     "en": "On the day, they'll also show how to put together an advertising proposal, which was popular last year."
+    },
+    {
+     "sp": "host",
+     "jp": "また、常務と部長からも、今後の方針についてお話があります。",
+     "en": "The managing director and the department managers will also talk about our plans going forward."
+    },
+    {
+     "sp": "host",
+     "jp": "次に、交通費の精算についてお知らせします。今月から、精算書の運用が新しくなりました。",
+     "en": "Next, about settling travel expenses. From this month, expense forms are handled in a new way."
+    },
+    {
+     "sp": "host",
+     "jp": "精算書には、必ず日付と標題を入れてください。書き方は、総務のマニュアルにまとめてあります。",
+     "en": "Always put the date and a title on your expense form. How to fill it in is in the General Affairs manual."
+    },
+    {
+     "sp": "host",
+     "jp": "先方に送る案内状も、同じマニュアルの形式で作成してください。",
+     "en": "Please also prepare invitation letters to clients in the same format as the manual."
+    },
+    {
+     "sp": "host",
+     "jp": "文言を修正するときは、意図が変わらないように注意してください。",
+     "en": "When you change the wording, take care that the intended meaning doesn't change."
+    },
+    {
+     "sp": "host",
+     "jp": "なお、急ぎでない申請は、今月の受け付けを見送ることがあります。",
+     "en": "Note that requests that are not urgent may be held over this month."
+    },
+    {
+     "sp": "host",
+     "jp": "ご不明な点は、総務部までご連絡ください。",
+     "en": "If anything is unclear, please contact General Affairs."
+    },
+    {
+     "sp": "host",
+     "jp": "総務部 佐藤",
+     "en": "Sato, General Affairs"
+    }
+   ],
+   "label": {
+    "jp": "メール",
+    "en": "Email"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "org",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、会社の組織の言葉です。",
+     "en": "Now let's go through today's words one by one. First: company organisation."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "企業",
+   "explain": {
+    "jp": "お金をもうけるために、仕事をする会社などです。",
+    "en": "A company that does business to make money."
+   },
+   "example": {
+    "jp": "この地域には、大きな企業が多いです。",
+    "en": "There are many large companies in this area."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "産業",
+   "explain": {
+    "jp": "物やサービスを作る、仕事の分野です。",
+    "en": "A field of work that makes goods or services."
+   },
+   "example": {
+    "jp": "日本の自動車産業は、世界で有名です。",
+    "en": "Japan's car industry is famous worldwide."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "社内",
+   "explain": {
+    "jp": "会社の中、という意味です。",
+    "en": "Inside the company."
+   },
+   "example": {
+    "jp": "社内の会議は、毎週月曜日です。",
+    "en": "The in-house meeting is every Monday."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "支店",
+   "explain": {
+    "jp": "本社とは別の場所にある、会社の店や事務所です。",
+    "en": "A company office or shop away from head office."
+   },
+   "example": {
+    "jp": "来月から、大阪支店で働きます。",
+    "en": "I'll work at the Osaka branch from next month."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "総務",
+   "explain": {
+    "jp": "会社全体の、いろいろな事務の仕事です。",
+    "en": "General administration for the whole company."
+   },
+   "example": {
+    "jp": "備品の注文は、総務が担当しています。",
+    "en": "General Affairs handles ordering supplies."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "総務部",
+   "explain": {
+    "jp": "総務の仕事をする部署です。",
+    "en": "The department that does general administration."
+   },
+   "example": {
+    "jp": "名刺は、総務部に頼んでください。",
+    "en": "Ask General Affairs for business cards."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "常務",
+   "explain": {
+    "jp": "会社の、上のほうの役員の一人です。",
+    "en": "One of the senior executives of a company."
+   },
+   "example": {
+    "jp": "常務が、会議に出席されます。",
+    "en": "The managing director will attend the meeting."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "部長",
+   "explain": {
+    "jp": "会社の、部のリーダーです。",
+    "en": "The head of a department."
+   },
+   "example": {
+    "jp": "部長に、報告書を提出しました。",
+    "en": "I submitted the report to the department manager."
+   }
+  },
+  {
+   "type": "word",
+   "block": "org",
+   "word": "スタッフ",
+   "explain": {
+    "jp": "一緒に仕事をする人たちです。",
+    "en": "The people you work with."
+   },
+   "example": {
+    "jp": "イベントには、十人のスタッフが必要です。",
+    "en": "The event needs ten staff."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "paper",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、書類と手続きの言葉です。",
+     "en": "Next: papers & procedures."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "精算",
+   "explain": {
+    "jp": "使ったお金を、計算して整理することです。",
+    "en": "Working out and settling money that was spent."
+   },
+   "example": {
+    "jp": "出張の交通費を、精算しました。",
+    "en": "I settled my travel expenses for the business trip."
+   }
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "精算書",
+   "explain": {
+    "jp": "精算のために書く書類です。",
+    "en": "The form you fill in to settle expenses."
+   },
+   "example": {
+    "jp": "精算書は、金曜日までに出してください。",
+    "en": "Hand in your expense form by Friday."
+   }
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "標題",
+   "explain": {
+    "jp": "書類や文章の、題名のことです。",
+    "en": "The title of a document or text."
+   },
+   "example": {
+    "jp": "メールの標題は、短くまとめましょう。",
+    "en": "Keep email subject lines short."
+   }
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "日付",
+   "explain": {
+    "jp": "その日の、年月日のことです。",
+    "en": "The year, month and day."
+   },
+   "example": {
+    "jp": "書類の右上に、日付を書きます。",
+    "en": "Write the date in the top right of the document."
+   }
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "文言",
+   "explain": {
+    "jp": "文書の中の、言葉や言い方です。",
+    "en": "The wording in a document."
+   },
+   "example": {
+    "jp": "契約書の文言を、もう一度確認します。",
+    "en": "I'll check the contract's wording again."
+   }
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "修正",
+   "explain": {
+    "jp": "間違いや足りない所を、直すことです。",
+    "en": "Fixing mistakes or gaps."
+   },
+   "example": {
+    "jp": "資料の数字を、修正しました。",
+    "en": "I corrected the figures in the materials."
+   }
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "案内状",
+   "explain": {
+    "jp": "行事や会のことを知らせる、手紙です。",
+    "en": "A letter announcing an event or gathering."
+   },
+   "example": {
+    "jp": "取引先に、展示会の案内状を送りました。",
+    "en": "We sent clients an invitation to the trade show."
+   }
+  },
+  {
+   "type": "word",
+   "block": "paper",
+   "word": "マニュアル",
+   "explain": {
+    "jp": "仕事のやり方を、まとめた説明書です。",
+    "en": "A guide that sets out how to do the work."
+   },
+   "example": {
+    "jp": "新しいスタッフは、まずマニュアルを読みます。",
+    "en": "New staff read the manual first."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "plan",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、計画と人の言葉です。",
+     "en": "Last: plans & people."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "運用",
+   "explain": {
+    "jp": "決まりや仕組みを、実際に使って動かすことです。",
+    "en": "Putting rules or systems into actual use."
+   },
+   "example": {
+    "jp": "新しいルールの運用が、始まりました。",
+    "en": "The new rules have come into use."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "前年",
+   "explain": {
+    "jp": "その前の年のことです。",
+    "en": "The year before."
+   },
+   "example": {
+    "jp": "売り上げは、前年より一割増えました。",
+    "en": "Sales rose 10% on the previous year."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "広告案",
+   "explain": {
+    "jp": "広告の、案や計画です。",
+    "en": "A draft or plan for an advertisement."
+   },
+   "example": {
+    "jp": "三つの広告案から、一つを選びます。",
+    "en": "We'll choose one of the three ad proposals."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "新入",
+   "explain": {
+    "jp": "新しく入ることです。新入社員のように使います。",
+    "en": "Newly joining, as in 新入社員 (new employee)."
+   },
+   "example": {
+    "jp": "四月に、新入社員が十人入ります。",
+    "en": "Ten new employees join in April."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "セミナー",
+   "explain": {
+    "jp": "専門の話を聞いて学ぶ、勉強会です。",
+    "en": "A session for learning from an expert."
+   },
+   "example": {
+    "jp": "来週、マーケティングのセミナーに参加します。",
+    "en": "I'm attending a marketing seminar next week."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "先方",
+   "explain": {
+    "jp": "相手の会社や人のことです。",
+    "en": "The other company or person."
+   },
+   "example": {
+    "jp": "先方の都合を、確認しておきます。",
+    "en": "I'll check what suits the other party."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "意図",
+   "explain": {
+    "jp": "こうしたい、という考えやねらいです。",
+    "en": "What someone means to do; the aim."
+   },
+   "example": {
+    "jp": "質問の意図が、よくわかりませんでした。",
+    "en": "I didn't quite get what the question was after."
+   }
+  },
+  {
+   "type": "word",
+   "block": "plan",
+   "word": "見送る",
+   "explain": {
+    "jp": "出かける人を、送ることです。また、計画を先に延ばす意味もあります。",
+    "en": "Seeing someone off; also putting a plan off."
+   },
+   "example": {
+    "jp": "予算が足りないので、今回は見送ります。",
+    "en": "The budget is short, so we'll pass this time."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "出張の交通費を、（　　）しました。",
+   "promptEn": "I ___ my travel expenses.",
+   "choices": [
+    "標題",
+    "精算",
+    "支店",
+    "意図"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。出張の交通費を、精算しました。",
+    "en": "The answer is 2: 精算, settled."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "書類の右上に、（　　）を書きます。",
+   "promptEn": "Write the ___ in the top right of the document.",
+   "choices": [
+    "日付",
+    "文言",
+    "産業",
+    "常務"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。書類の右上に、日付を書きます。",
+    "en": "The answer is 1: 日付, the date."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "相手の会社や人のことを、何と言いますか。",
+   "promptEn": "What do you call the other company or person?",
+   "choices": [
+    "社内",
+    "前年",
+    "総務",
+    "先方"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第三問。相手の会社や人のことを、何と言いますか。",
+    "en": "Question 3. What do you call the other company or person?"
+   },
+   "reveal": {
+    "jp": "正解は四番、先方です。",
+    "en": "The answer is 4: 先方."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "予算が足りないので、今回は（　　）。",
+   "promptEn": "The budget is short, so this time we will ___.",
+   "choices": [
+    "修正します",
+    "運用します",
+    "見送ります",
+    "精算します"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。予算が足りないので、今回は見送ります。",
+    "en": "The answer is 3: 見送ります, pass."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "仕事のやり方を、まとめた説明書は？",
+   "promptEn": "Which is a guide setting out how to do the work?",
+   "choices": [
+    "セミナー",
+    "マニュアル",
+    "案内状",
+    "スタッフ"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。仕事のやり方を、まとめた説明書は、どれですか。",
+    "en": "Question 5. Which is a guide setting out how to do the work?"
+   },
+   "reveal": {
+    "jp": "正解は二番、マニュアルです。",
+    "en": "The answer is 2: マニュアル."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、社内文書の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: internal documents."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

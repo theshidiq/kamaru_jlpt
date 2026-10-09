@@ -1,0 +1,700 @@
+{
+ "id": "bjt-2-3",
+ "level": "BJT",
+ "chapter": 2,
+ "section": 3,
+ "title": "電話と商談の言葉",
+ "titleEn": "Phone calls & negotiations",
+ "label": "BJT · 第8課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "yamada": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "山田",
+   "cast": "boss"
+  },
+  "kobayashi": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "小林",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "yamada",
+  "kobayashi"
+ ],
+ "blocks": {
+  "deal": {
+   "jp": "商談と打ち合わせ",
+   "en": "Deals & meetings",
+   "scene": "meeting"
+  },
+  "it": {
+   "jp": "システムとデータ",
+   "en": "Systems & data",
+   "scene": "office"
+  },
+  "value": {
+   "jp": "大切なこと",
+   "en": "What matters",
+   "scene": "meeting"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "打ち合わせ"
+ ],
+ "screen": {
+  "subject": "お見積もり（修正版）",
+  "line": "使用料に保守費用を含む"
+ },
+ "readings": {
+  "第八課": "だいはっか",
+  "予約": "よやく",
+  "用事": "ようじ",
+  "意思": "いし",
+  "組み合わさった": "くみあわさった",
+  "取り込む": "とりこむ",
+  "打ち込む": "うちこむ",
+  "組み立てる": "くみたてる",
+  "発表": "はっぴょう",
+  "丸": "まる",
+  "税金": "ぜいきん",
+  "料金": "りょうきん",
+  "品質": "ひんしつ",
+  "得": "とく",
+  "方法": "ほうほう",
+  "治す": "なおす",
+  "十時": "じゅうじ",
+  "二年": "にねん",
+  "三年": "さんねん",
+  "十人": "じゅうにん",
+  "四月": "しがつ",
+  "一時間": "いちじかん",
+  "九時": "くじ",
+  "三人": "さんにん",
+  "十年後": "じゅうねんご",
+  "一割": "いちわり",
+  "三十分": "さんじゅっぷん",
+  "二つ": "ふたつ"
+ },
+ "speakKana": [
+  "第八課",
+  "二年",
+  "三年",
+  "十人",
+  "四月",
+  "一時間",
+  "九時",
+  "三人",
+  "十年後",
+  "一割",
+  "三十分",
+  "二つ"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第八課。電話と商談の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 8: 25 words — phone calls & negotiations."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、取引先との電話を聞いてみましょう。",
+     "en": "First, let's listen to a phone call with a client."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "office",
+   "lines": [
+    {
+     "sp": "kobayashi",
+     "jp": "お電話ありがとうございます。ミナト医療の小林です。",
+     "en": "Thank you for calling. This is Kobayashi at Minato Medical."
+    },
+    {
+     "sp": "yamada",
+     "jp": "いつもお世話になっております。サクラシステムの山田です。先日はありがとうございました。",
+     "en": "Thank you as always. This is Yamada from Sakura Systems. Thank you for the other day."
+    },
+    {
+     "sp": "kobayashi",
+     "jp": "こちらこそ。今日は、どのようなご用件でしょうか。",
+     "en": "Likewise. What can I do for you today?"
+    },
+    {
+     "sp": "yamada",
+     "jp": "先日ご提示した見積もりについて、一部修正がありまして、至急お伝えしたいと思いました。",
+     "en": "There's a change to part of the quote we gave you the other day, and I wanted to let you know right away."
+    },
+    {
+     "sp": "kobayashi",
+     "jp": "そうですか。どの部分でしょうか。",
+     "en": "I see. Which part?"
+    },
+    {
+     "sp": "yamada",
+     "jp": "新しいシステムの使用料に、保守の費用を含む形に変えました。",
+     "en": "We've changed the fee for the new system so that it includes maintenance."
+    },
+    {
+     "sp": "kobayashi",
+     "jp": "なるほど。資料は、もうダウンロードできますか。",
+     "en": "I see. Can I download the materials already?"
+    },
+    {
+     "sp": "yamada",
+     "jp": "はい、すでにサイトに上げてあります。パスワードを入力して、ご覧ください。",
+     "en": "Yes, they're already on the site. Please enter the password to view them."
+    },
+    {
+     "sp": "kobayashi",
+     "jp": "ありがとうございます。社内では、導入の効果とメリットを重視していますので、その点の報告もいただけますか。",
+     "en": "Thank you. Internally we place weight on the effects and benefits of adopting it, so could you report on that too?"
+    },
+    {
+     "sp": "yamada",
+     "jp": "もちろんです。構成と効果をまとめた資料を、次の打ち合わせでご説明します。",
+     "en": "Of course. I'll explain the setup and the effects at our next meeting, with materials summarising them."
+    },
+    {
+     "sp": "kobayashi",
+     "jp": "それから、該当する部署の担当者が、工場の見学を希望しています。",
+     "en": "Also, the person in charge in the relevant department would like to tour the factory."
+    },
+    {
+     "sp": "yamada",
+     "jp": "承知しました。見学のあとで、会食の席もご用意いたします。",
+     "en": "Certainly. We'll arrange a meal together after the tour as well."
+    },
+    {
+     "sp": "kobayashi",
+     "jp": "助かります。意思の疎通がしっかりできると、商談も進めやすいですね。",
+     "en": "That helps. When we understand each other well, the negotiations go more smoothly."
+    },
+    {
+     "sp": "yamada",
+     "jp": "はい。お客様のレベルに合わせた説明を意識して、準備いたします。",
+     "en": "Yes. I'll prepare with your team's level in mind."
+    }
+   ],
+   "label": {
+    "jp": "電話",
+    "en": "Phone call"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "deal",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、商談と打ち合わせの言葉です。",
+     "en": "Now let's go through today's words one by one. First: deals & meetings."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "商談",
+   "explain": {
+    "jp": "商売についての、話し合いです。",
+    "en": "A business discussion."
+   },
+   "example": {
+    "jp": "午後、取引先と商談があります。",
+    "en": "I have a business meeting with a client this afternoon."
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "会食",
+   "explain": {
+    "jp": "仕事の相手と、一緒に食事をすることです。",
+    "en": "Eating together with business contacts."
+   },
+   "example": {
+    "jp": "取引先との会食で、レストランを予約しました。",
+    "en": "I booked a restaurant for a dinner with clients."
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "打ち合わせ",
+   "explain": {
+    "jp": "前もって、相談して決めることです。",
+    "en": "Discussing and settling things in advance."
+   },
+   "example": {
+    "jp": "明日の十時から、打ち合わせをしましょう。",
+    "en": "Let's have a meeting tomorrow at ten."
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "提示",
+   "explain": {
+    "jp": "相手に、条件などを出して見せることです。",
+    "en": "Putting terms in front of someone."
+   },
+   "example": {
+    "jp": "先方に、新しい価格を提示しました。",
+    "en": "We presented the new price to the other party."
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "用件",
+   "explain": {
+    "jp": "伝えたい、用事の内容です。",
+    "en": "The business you have come or called about."
+   },
+   "example": {
+    "jp": "ご用件を、お伺いします。",
+    "en": "May I ask what this is about?"
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "先日",
+   "explain": {
+    "jp": "この間、少し前の日のことです。",
+    "en": "The other day."
+   },
+   "example": {
+    "jp": "先日は、ありがとうございました。",
+    "en": "Thank you for the other day."
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "疎通",
+   "explain": {
+    "jp": "考えや気持ちが、相手に通じることです。",
+    "en": "Thoughts or feelings getting through to someone."
+   },
+   "example": {
+    "jp": "チームでは、意思の疎通が大切です。",
+    "en": "Mutual understanding matters in a team."
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "見学",
+   "explain": {
+    "jp": "実際に見て、学ぶことです。",
+    "en": "Learning by seeing for yourself."
+   },
+   "example": {
+    "jp": "新入社員が、工場を見学しました。",
+    "en": "The new employees toured the factory."
+   }
+  },
+  {
+   "type": "word",
+   "block": "deal",
+   "word": "報告",
+   "explain": {
+    "jp": "仕事の結果などを、知らせることです。",
+    "en": "Letting someone know the results of work."
+   },
+   "example": {
+    "jp": "会議の内容を、部長に報告します。",
+    "en": "I'll report what was said in the meeting to the department manager."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "it",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、システムとデータの言葉です。",
+     "en": "Next: systems & data."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "システム",
+   "explain": {
+    "jp": "いくつかの部分が、組み合わさった仕組みです。",
+    "en": "A setup made of several parts working together."
+   },
+   "example": {
+    "jp": "来月から、新しい予約システムを使います。",
+    "en": "We'll use a new booking system from next month."
+   }
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "ダウンロード",
+   "explain": {
+    "jp": "インターネットから、データを取り込むことです。",
+    "en": "Getting data from the internet."
+   },
+   "example": {
+    "jp": "資料は、こちらからダウンロードできます。",
+    "en": "You can download the materials here."
+   }
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "入力",
+   "explain": {
+    "jp": "パソコンなどに、文字やデータを打ち込むことです。",
+    "en": "Typing text or data into a computer."
+   },
+   "example": {
+    "jp": "お名前を、ローマ字で入力してください。",
+    "en": "Please enter your name in roman letters."
+   }
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "使用",
+   "explain": {
+    "jp": "物を、使うことです。",
+    "en": "Using something."
+   },
+   "example": {
+    "jp": "この会議室は、午後、使用できません。",
+    "en": "This meeting room can't be used this afternoon."
+   }
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "構成",
+   "explain": {
+    "jp": "いくつかの部分で、全体を組み立てることです。",
+    "en": "How a whole is put together from its parts."
+   },
+   "example": {
+    "jp": "発表の構成を、もう一度考えます。",
+    "en": "I'll rethink how the presentation is structured."
+   }
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "該当",
+   "explain": {
+    "jp": "条件などに、当てはまることです。",
+    "en": "Fitting a condition."
+   },
+   "example": {
+    "jp": "該当する項目に、丸をつけてください。",
+    "en": "Circle the items that apply."
+   }
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "含む",
+   "explain": {
+    "jp": "中に、入っていることです。",
+    "en": "Having something inside; including."
+   },
+   "example": {
+    "jp": "料金には、税金が含まれています。",
+    "en": "Tax is included in the price."
+   }
+  },
+  {
+   "type": "word",
+   "block": "it",
+   "word": "一部",
+   "explain": {
+    "jp": "全体の中の、少しの部分です。",
+    "en": "A small part of the whole."
+   },
+   "example": {
+    "jp": "資料の一部を、修正しました。",
+    "en": "I revised part of the materials."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "value",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、大切なことの言葉です。",
+     "en": "Last: what matters."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "至急",
+   "explain": {
+    "jp": "とても急いで、という意味です。",
+    "en": "Very urgently."
+   },
+   "example": {
+    "jp": "至急、お電話をいただけますか。",
+    "en": "Could you call me urgently?"
+   }
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "すでに",
+   "explain": {
+    "jp": "もう、前に、という意味です。",
+    "en": "Already."
+   },
+   "example": {
+    "jp": "その書類は、すでに送りました。",
+    "en": "I've already sent that document."
+   }
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "重視",
+   "explain": {
+    "jp": "特に大切だと、考えることです。",
+    "en": "Treating something as especially important."
+   },
+   "example": {
+    "jp": "弊社は、品質を重視しています。",
+    "en": "Our company puts quality first."
+   }
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "意識",
+   "explain": {
+    "jp": "あることに、気をつけて考えることです。",
+    "en": "Paying attention to something."
+   },
+   "example": {
+    "jp": "お客様の気持ちを、意識して話します。",
+    "en": "I speak with the customer's feelings in mind."
+   }
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "効果",
+   "explain": {
+    "jp": "あることをして、よい結果が出ることです。",
+    "en": "A good result coming from something you did."
+   },
+   "example": {
+    "jp": "広告の効果が、すぐに出ました。",
+    "en": "The ad had an effect right away."
+   }
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "メリット",
+   "explain": {
+    "jp": "よい点、得になる点です。",
+    "en": "A good point; an advantage."
+   },
+   "example": {
+    "jp": "この方法のメリットは、早いことです。",
+    "en": "The advantage of this method is that it is fast."
+   }
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "レベル",
+   "explain": {
+    "jp": "程度や、高さのことです。",
+    "en": "A degree or standard."
+   },
+   "example": {
+    "jp": "研修は、日本語のレベルで、クラスを分けます。",
+    "en": "The training splits classes by Japanese level."
+   }
+  },
+  {
+   "type": "word",
+   "block": "value",
+   "word": "医療",
+   "explain": {
+    "jp": "病気やけがを、治すことです。",
+    "en": "Treating illness and injury."
+   },
+   "example": {
+    "jp": "この会社は、医療の機器を作っています。",
+    "en": "This company makes medical equipment."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "ご（　　）を、お伺いします。",
+   "promptEn": "May I ask your ___?",
+   "choices": [
+    "提示",
+    "用件",
+    "疎通",
+    "構成"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。ご用件を、お伺いします。",
+    "en": "The answer is 2: 用件, what it is about."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "料金には、税金が（　　）います。",
+   "promptEn": "Tax is ___ in the price.",
+   "choices": [
+    "含まれて",
+    "使用して",
+    "入力して",
+    "該当して"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。料金には、税金が含まれています。",
+    "en": "The answer is 1: 含まれて, included."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "仕事の相手と、一緒に食事をすることは？",
+   "promptEn": "What is eating together with business contacts called?",
+   "choices": [
+    "商談",
+    "見学",
+    "会食",
+    "報告"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第三問。仕事の相手と、一緒に食事をすることを、何と言いますか。",
+    "en": "Question 3. What is eating together with business contacts called?"
+   },
+   "reveal": {
+    "jp": "正解は三番、会食です。",
+    "en": "The answer is 3: 会食."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "（　　）、お電話をいただけますか。",
+   "promptEn": "Could you call me ___?",
+   "choices": [
+    "すでに",
+    "一部",
+    "先日",
+    "至急"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。至急、お電話をいただけますか。",
+    "en": "The answer is 4: 至急, urgently."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "よい点、得になる点のことは？",
+   "promptEn": "Which word means a good point or advantage?",
+   "choices": [
+    "メリット",
+    "レベル",
+    "システム",
+    "ダウンロード"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第五問。よい点、得になる点のことを、何と言いますか。",
+    "en": "Question 5. Which word means a good point or advantage?"
+   },
+   "reveal": {
+    "jp": "正解は一番、メリットです。",
+    "en": "The answer is 1: メリット."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、電話と商談の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: phone calls & negotiations."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

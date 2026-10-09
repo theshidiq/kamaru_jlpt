@@ -1,0 +1,709 @@
+{
+ "id": "bjt-2-4",
+ "level": "BJT",
+ "chapter": 2,
+ "section": 4,
+ "title": "分析と学習の言葉",
+ "titleEn": "Analysis & learning",
+ "label": "BJT · 第9課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "sato": {
+   "id": "iIeTr6tHs1VoWSqmCths",
+   "name": "佐藤",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "sato",
+  "kimura"
+ ],
+ "blocks": {
+  "study": {
+   "jp": "学ぶこと",
+   "en": "Learning",
+   "scene": "training"
+  },
+  "analysis": {
+   "jp": "調べてわかる",
+   "en": "Analysing",
+   "scene": "meeting"
+  },
+  "where": {
+   "jp": "場所と動き",
+   "en": "Places & movement",
+   "scene": "office"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "分析"
+ ],
+ "screen": {
+  "subject": "学習アプリ 利用分析",
+  "line": "前半のレッスンで離脱が多い"
+ },
+ "readings": {
+  "第九課": "だいきゅうか",
+  "身につける": "みにつける",
+  "教わったり": "おそわったり",
+  "先輩": "せんぱい",
+  "目当て": "めあて",
+  "支払い": "しはらい",
+  "服装": "ふくそう",
+  "普通": "ふつう",
+  "細かく": "こまかく",
+  "機械": "きかい",
+  "温度": "おんど",
+  "流れ": "ながれ",
+  "半分": "はんぶん",
+  "調査": "ちょうさ",
+  "原因": "げんいん",
+  "見込み": "みこみ",
+  "様子": "ようす",
+  "留めて": "とめて",
+  "区切られた": "くぎられた",
+  "範囲": "はんい",
+  "土地": "とち",
+  "雪": "ゆき",
+  "線": "せん",
+  "言語": "げんご",
+  "地図": "ちず",
+  "道": "みち",
+  "二年": "にねん",
+  "三年": "さんねん",
+  "十人": "じゅうにん",
+  "四月": "しがつ",
+  "一時間": "いちじかん",
+  "九時": "くじ",
+  "三人": "さんにん",
+  "十年後": "じゅうねんご",
+  "一割": "いちわり",
+  "三十分": "さんじゅっぷん",
+  "二つ": "ふたつ"
+ },
+ "speakKana": [
+  "第九課",
+  "二年",
+  "三年",
+  "十人",
+  "四月",
+  "一時間",
+  "九時",
+  "三人",
+  "十年後",
+  "一割",
+  "三十分",
+  "二つ"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第九課。分析と学習の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 9: 25 words — analysis & learning."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、カフェでの二人の会話を聞いてみましょう。",
+     "en": "First, let's listen to two colleagues talking in a café."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "cafe",
+   "lines": [
+    {
+     "sp": "sato",
+     "jp": "木村さん、この前の学習アプリの分析、もう終わりましたか。",
+     "en": "Kimura, have you finished analysing that learning app yet?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。全体の結果を見ると、前半のレッスンでやめてしまう人が多いことが、明らかになりました。",
+     "en": "Yes. Looking at the overall results, it's clear that many people quit during the first half of the lessons."
+    },
+    {
+     "sp": "sato",
+     "jp": "単に、問題が難しいからでしょうか。",
+     "en": "Is it simply that the questions are hard?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "それだけではないと思います。利用者に理由を尋ねると、設定がわかりにくいという声もありました。",
+     "en": "I don't think that's all. When we asked users why, some said the settings were hard to understand."
+    },
+    {
+     "sp": "sato",
+     "jp": "なるほど。どの箇所を指して、わかりにくいと言っているんですか。",
+     "en": "I see. Which part are they pointing to when they say that?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "最初に、学ぶ目的とレベルを選ぶ画面です。",
+     "en": "The first screen, where you choose your reason for learning and your level."
+    },
+    {
+     "sp": "sato",
+     "jp": "そこで迷うと、別の画面に移動しても、問題が生じやすいですね。",
+     "en": "If you get lost there, problems tend to come up even after you move to another screen."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。それから、地域によっても結果が違いました。",
+     "en": "Yes. And the results also differed by region."
+    },
+    {
+     "sp": "sato",
+     "jp": "一般のやり方を、すべての地域に当てはめるのは難しいですね。",
+     "en": "It's hard to apply the usual approach to every region."
+    },
+    {
+     "sp": "kimura",
+     "jp": "ええ。対象によって、ふさわしい方式は、それぞれ違うと思います。",
+     "en": "Right. I think the suitable approach is different for each group."
+    },
+    {
+     "sp": "sato",
+     "jp": "学習の時間は、どう測定しましたか。",
+     "en": "How did you measure study time?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "アプリの記録を使いました。ただ、特定の利用者の記録が多いので、留意が必要です。",
+     "en": "We used the app's records. But a lot of them come from particular users, so we need to keep that in mind."
+    },
+    {
+     "sp": "sato",
+     "jp": "ほかにも、気をつけるべき事柄はありますか。",
+     "en": "Is there anything else to watch out for?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "数字だけでは、本当の理由がわからない可能性があります。次は、直接話を聞いてみます。",
+     "en": "The numbers alone may not show the real reason. Next, I'll talk to people directly."
+    }
+   ],
+   "label": {
+    "jp": "カフェで",
+    "en": "At a café"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "study",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、学ぶことの言葉です。",
+     "en": "Now let's go through today's words one by one. First: learning."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "学習",
+   "explain": {
+    "jp": "知識や技術を、勉強して身につけることです。",
+    "en": "Studying to gain knowledge or skills."
+   },
+   "example": {
+    "jp": "毎日、三十分の学習を続けています。",
+    "en": "I keep up thirty minutes of study a day."
+   }
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "学ぶ",
+   "explain": {
+    "jp": "教わったり、まねたりして、知ることです。",
+    "en": "Coming to know something by being taught or copying."
+   },
+   "example": {
+    "jp": "先輩から、仕事のやり方を学びました。",
+    "en": "I learned how to do the job from a senior colleague."
+   }
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "対象",
+   "explain": {
+    "jp": "あることの、目当てになるものです。",
+    "en": "What something is aimed at."
+   },
+   "example": {
+    "jp": "このセミナーは、新入社員が対象です。",
+    "en": "This seminar is for new employees."
+   }
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "方式",
+   "explain": {
+    "jp": "決まった、やり方や形式です。",
+    "en": "A set way or format."
+   },
+   "example": {
+    "jp": "支払いの方式を、選んでください。",
+    "en": "Please choose a payment method."
+   }
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "ふさわしい",
+   "explain": {
+    "jp": "その場や人に、よく合っていることです。",
+    "en": "Well suited to the occasion or person."
+   },
+   "example": {
+    "jp": "会議には、ふさわしい服装で来てください。",
+    "en": "Please come to the meeting appropriately dressed."
+   }
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "それぞれ",
+   "explain": {
+    "jp": "一人一人、一つ一つ、という意味です。",
+    "en": "Each one, individually."
+   },
+   "example": {
+    "jp": "それぞれの意見を、聞いてみましょう。",
+    "en": "Let's hear what each person thinks."
+   }
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "一般",
+   "explain": {
+    "jp": "広く、普通であることです。",
+    "en": "Widespread and ordinary."
+   },
+   "example": {
+    "jp": "このサービスは、一般の人も使えます。",
+    "en": "The general public can use this service too."
+   }
+  },
+  {
+   "type": "word",
+   "block": "study",
+   "word": "当てはめる",
+   "explain": {
+    "jp": "あるものを、ほかのものに合わせて使うことです。",
+    "en": "Applying one thing to fit another."
+   },
+   "example": {
+    "jp": "この方法を、ほかの店にも当てはめてみます。",
+    "en": "We'll try applying this method to other shops too."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "analysis",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、調べてわかるの言葉です。",
+     "en": "Next: analysing."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "分析",
+   "explain": {
+    "jp": "細かく分けて、よく調べることです。",
+    "en": "Breaking something down to study it closely."
+   },
+   "example": {
+    "jp": "売り上げのデータを、分析しました。",
+    "en": "I analysed the sales data."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "測定",
+   "explain": {
+    "jp": "機械などで、量や大きさを測ることです。",
+    "en": "Measuring amount or size, for example with a machine."
+   },
+   "example": {
+    "jp": "部屋の温度を、測定します。",
+    "en": "I'll measure the room temperature."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "全体",
+   "explain": {
+    "jp": "あるものの、すべてです。",
+    "en": "All of something."
+   },
+   "example": {
+    "jp": "全体の流れを、先に説明します。",
+    "en": "I'll explain the overall flow first."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "前半",
+   "explain": {
+    "jp": "全体を二つに分けた、前の半分です。",
+    "en": "The first of two halves."
+   },
+   "example": {
+    "jp": "会議の前半は、報告です。",
+    "en": "The first half of the meeting is reports."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "明らか",
+   "explain": {
+    "jp": "はっきりしていて、よくわかることです。",
+    "en": "Clear and plain to see."
+   },
+   "example": {
+    "jp": "調査の結果、原因が明らかになりました。",
+    "en": "The investigation made the cause clear."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "特定",
+   "explain": {
+    "jp": "特に、それと決めることです。",
+    "en": "Pinning down one particular thing."
+   },
+   "example": {
+    "jp": "特定のお客様だけに、メールを送ります。",
+    "en": "We'll email only certain customers."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "可能性",
+   "explain": {
+    "jp": "そうなるかもしれない、見込みです。",
+    "en": "The chance that something may happen."
+   },
+   "example": {
+    "jp": "明日は、雨の可能性があります。",
+    "en": "There is a chance of rain tomorrow."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "事柄",
+   "explain": {
+    "jp": "物事の、内容や様子です。",
+    "en": "A matter, and what it involves."
+   },
+   "example": {
+    "jp": "大切な事柄は、メモしておきましょう。",
+    "en": "Make a note of important matters."
+   }
+  },
+  {
+   "type": "word",
+   "block": "analysis",
+   "word": "留意",
+   "explain": {
+    "jp": "心に留めて、気をつけることです。",
+    "en": "Keeping something in mind and taking care."
+   },
+   "example": {
+    "jp": "次の点に、留意してください。",
+    "en": "Please bear the following points in mind."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "where",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、場所と動きの言葉です。",
+     "en": "Last: places & movement."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "地域",
+   "explain": {
+    "jp": "区切られた、ある範囲の土地です。",
+    "en": "A defined area of land."
+   },
+   "example": {
+    "jp": "この地域では、雪が多いです。",
+    "en": "It snows a lot in this area."
+   }
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "箇所",
+   "explain": {
+    "jp": "全体の中の、ある所です。",
+    "en": "A particular spot within the whole."
+   },
+   "example": {
+    "jp": "間違っている箇所に、線を引いてください。",
+    "en": "Underline the places that are wrong."
+   }
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "設定",
+   "explain": {
+    "jp": "機械などの条件を、決めておくことです。",
+    "en": "Setting up how a device works."
+   },
+   "example": {
+    "jp": "スマホの言語の設定を、変えました。",
+    "en": "I changed my phone's language setting."
+   }
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "移動",
+   "explain": {
+    "jp": "場所を、変えることです。",
+    "en": "Changing places."
+   },
+   "example": {
+    "jp": "会議室に、移動しましょう。",
+    "en": "Let's move to the meeting room."
+   }
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "指す",
+   "explain": {
+    "jp": "指などで、それとわかるように示すことです。",
+    "en": "Showing something clearly, for example with a finger."
+   },
+   "example": {
+    "jp": "地図の、この場所を指してください。",
+    "en": "Point to this place on the map."
+   }
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "尋ねる",
+   "explain": {
+    "jp": "わからないことを、人に聞くことです。",
+    "en": "Asking someone about something you don't know."
+   },
+   "example": {
+    "jp": "駅への道を、尋ねました。",
+    "en": "I asked the way to the station."
+   }
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "生じる",
+   "explain": {
+    "jp": "物事が、起こることです。",
+    "en": "Coming about; arising."
+   },
+   "example": {
+    "jp": "新しい問題が、生じました。",
+    "en": "A new problem has arisen."
+   }
+  },
+  {
+   "type": "word",
+   "block": "where",
+   "word": "単に",
+   "explain": {
+    "jp": "ただ、それだけ、という意味です。",
+    "en": "Merely; only that."
+   },
+   "example": {
+    "jp": "これは、単に私の意見です。",
+    "en": "This is merely my opinion."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "売り上げのデータを、（　　）しました。",
+   "promptEn": "I ___ the sales data.",
+   "choices": [
+    "地域",
+    "分析",
+    "事柄",
+    "前半"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。売り上げのデータを、分析しました。",
+    "en": "The answer is 2: 分析, analysed."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "このセミナーは、新入社員が（　　）です。",
+   "promptEn": "This seminar ___ new employees.",
+   "choices": [
+    "方式",
+    "箇所",
+    "対象",
+    "設定"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 2. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は三番。このセミナーは、新入社員が対象です。",
+    "en": "The answer is 3: 対象, is aimed at."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "わからないことを、人に聞くことは？",
+   "promptEn": "Which means asking someone about something?",
+   "choices": [
+    "指す",
+    "学ぶ",
+    "生じる",
+    "尋ねる"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第三問。わからないことを、人に聞くことを、何と言いますか。",
+    "en": "Question 3. Which means asking someone about something?"
+   },
+   "reveal": {
+    "jp": "正解は四番、尋ねるです。",
+    "en": "The answer is 4: 尋ねる."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "会議には、（　　）服装で来てください。",
+   "promptEn": "Please come to the meeting in ___ clothes.",
+   "choices": [
+    "ふさわしい",
+    "明らか",
+    "それぞれ",
+    "単に"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。会議には、ふさわしい服装で来てください。",
+    "en": "The answer is 1: ふさわしい, appropriate."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "調査の結果、原因が（　　）になりました。",
+   "promptEn": "The investigation made the cause ___.",
+   "choices": [
+    "特定",
+    "明らか",
+    "一般",
+    "全体"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。調査の結果、原因が明らかになりました。",
+    "en": "The answer is 2: 明らか, clear."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、分析と学習の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: analysis & learning."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}

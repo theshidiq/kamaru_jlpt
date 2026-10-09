@@ -21,7 +21,7 @@ export interface PassageSentence {
  * JLPT ones. Both kinds can have audio: BJT texts are voiced line by line by
  * scripts/generate-bjt-passages.ts, one voice per speaker.
  */
-export type PassageFormat = 'email' | 'chat' | 'phone' | 'meeting' | 'memo' | 'notice' | 'letter'
+export type PassageFormat = 'email' | 'chat' | 'phone' | 'meeting' | 'conversation' | 'memo' | 'notice' | 'letter'
 
 export interface SectionPassage {
   level: JlptLevel

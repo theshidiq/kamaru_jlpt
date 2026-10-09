@@ -1,0 +1,698 @@
+{
+ "id": "bjt-2-5",
+ "level": "BJT",
+ "chapter": 2,
+ "section": 5,
+ "title": "目標と結果の言葉",
+ "titleEn": "Goals & results",
+ "label": "BJT · 第10課",
+ "voices": {
+  "host": {
+   "id": "tTLw7unlQfMjcUKIUVzS",
+   "name": "ナレーター"
+  },
+  "nakamura": {
+   "id": "KJje3wzepLiSIQjVGCB6",
+   "name": "中村",
+   "cast": "boss"
+  },
+  "kimura": {
+   "id": "gHBfNp2PWSyFgpPlzCOd",
+   "name": "木村",
+   "cast": "staff"
+  }
+ },
+ "exampleVoices": [
+  "nakamura",
+  "kimura"
+ ],
+ "blocks": {
+  "test": {
+   "jp": "テストと採点",
+   "en": "Tests & scoring",
+   "scene": "training"
+  },
+  "solve": {
+   "jp": "問題を解決する",
+   "en": "Solving problems",
+   "scene": "meeting"
+  },
+  "future": {
+   "jp": "これから",
+   "en": "Looking ahead",
+   "scene": "office"
+  },
+  "quiz": {
+   "jp": "確認クイズ",
+   "en": "Quiz",
+   "scene": "office"
+  }
+ },
+ "short": [
+  "手段"
+ ],
+ "screen": {
+  "subject": "BJT模擬テスト 採点結果",
+  "line": "聴解：会話の設問が低い"
+ },
+ "readings": {
+  "第十課": "だいじゅっか",
+  "度合い": "どあい",
+  "片付ける": "かたづける",
+  "お互い": "おたがい",
+  "願う": "ねがう",
+  "日時": "にちじ",
+  "思い浮かべる": "おもいうかべる",
+  "真ん中": "まんなか",
+  "影響": "えいきょう",
+  "渡す": "わたす",
+  "望ましい": "のぞましい",
+  "印象": "いんしょう",
+  "計画": "けいかく",
+  "二年": "にねん",
+  "三年": "さんねん",
+  "十人": "じゅうにん",
+  "四月": "しがつ",
+  "一時間": "いちじかん",
+  "九時": "くじ",
+  "三人": "さんにん",
+  "十年後": "じゅうねんご",
+  "一割": "いちわり",
+  "三十分": "さんじゅっぷん",
+  "二つ": "ふたつ",
+  "一日": "いちにち",
+  "三冊": "さんさつ"
+ },
+ "speakKana": [
+  "第十課",
+  "二年",
+  "三年",
+  "十人",
+  "四月",
+  "一時間",
+  "九時",
+  "三人",
+  "十年後",
+  "一割",
+  "三十分",
+  "二つ"
+ ],
+ "segments": [
+  {
+   "type": "intro",
+   "scene": "office",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "こんにちは。華丸のビジネス日本語です。",
+     "en": "Hello, and welcome to Kamaru Business Japanese."
+    },
+    {
+     "sp": "host",
+     "jp": "今日は第十課。目標と結果の言葉を、二十五個勉強します。",
+     "en": "Today is lesson 10: 25 words — goals & results."
+    },
+    {
+     "sp": "host",
+     "jp": "まずは、駅から会社へ歩きながらの会話を聞いてみましょう。",
+     "en": "First, let's listen to a conversation on the walk from the station."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "scene": "office",
+   "ambience": "station",
+   "lines": [
+    {
+     "sp": "nakamura",
+     "jp": "木村さん、おはようございます。先週のBJTの模擬テスト、採点の結果が出ましたよ。",
+     "en": "Good morning, Kimura. The scores for last week's BJT mock test are out."
+    },
+    {
+     "sp": "kimura",
+     "jp": "おはようございます。どうでしたか。想像より悪くなければいいんですが。",
+     "en": "Good morning. How was it? I hope it's not worse than I imagined."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "全体的には、悪くありません。ただ、聴解の設問で、点数が低い部分がありました。",
+     "en": "On the whole, not bad. But some of the listening questions scored low."
+    },
+    {
+     "sp": "kimura",
+     "jp": "そうですか。具体例を一つ挙げてもらえますか。",
+     "en": "I see. Could you give me one concrete example?"
+    },
+    {
+     "sp": "nakamura",
+     "jp": "会話に三人以上が登場する問題です。誰の発話か、わからなくなったようですね。",
+     "en": "Questions where three or more people appear in the conversation. It seems you lost track of who said what."
+    },
+    {
+     "sp": "kimura",
+     "jp": "確かに、現実の会議と同様に、話す人が多いと難しいです。",
+     "en": "True. Just like real meetings, it's hard when lots of people are talking."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "解決の手段として、毎朝ニュースを聞く活動を、開始したらどうでしょう。",
+     "en": "As a way to fix it, how about starting to listen to the news every morning?"
+    },
+    {
+     "sp": "kimura",
+     "jp": "いい考えですね。一日三十分程度なら、続けられそうです。",
+     "en": "Good idea. Around thirty minutes a day, I think I can keep that up."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "それから、留意点を一つ挙げると、基本的な敬語も、もう一度確認しておくといいですね。",
+     "en": "And one point to note: it's worth reviewing basic keigo again too."
+    },
+    {
+     "sp": "kimura",
+     "jp": "はい。本番の前に、ほかに関連する練習はありますか。",
+     "en": "OK. Is there any other related practice before the real test?"
+    },
+    {
+     "sp": "nakamura",
+     "jp": "ビジネスの場面を中心にした問題集が、候補として三冊あります。",
+     "en": "There are three candidate workbooks that focus on business situations."
+    },
+    {
+     "sp": "kimura",
+     "jp": "一般的な問題集より、そちらのほうが好ましいですね。",
+     "en": "Those sound better than general workbooks."
+    },
+    {
+     "sp": "nakamura",
+     "jp": "ええ。今後の結果は、昇進の希望にも、よい影響を与えると思いますよ。",
+     "en": "Yes. Your results from here on should help your hopes of promotion too."
+    },
+    {
+     "sp": "kimura",
+     "jp": "ありがとうございます。具体的な計画を立てて、がんばります。",
+     "en": "Thank you. I'll make a concrete plan and work hard."
+    }
+   ],
+   "label": {
+    "jp": "駅で",
+    "en": "At the station"
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "test",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "では、今日の言葉を一つずつ見ていきましょう。まずは、テストと採点の言葉です。",
+     "en": "Now let's go through today's words one by one. First: tests & scoring."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "設問",
+   "explain": {
+    "jp": "テストなどで、出される問題です。",
+    "en": "A question set in a test."
+   },
+   "example": {
+    "jp": "次の設問に、答えてください。",
+    "en": "Answer the following question."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "採点",
+   "explain": {
+    "jp": "答えを見て、点数をつけることです。",
+    "en": "Looking at answers and giving marks."
+   },
+   "example": {
+    "jp": "先生が、テストを採点しています。",
+    "en": "The teacher is marking the tests."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "発話",
+   "explain": {
+    "jp": "言葉を、声に出して話すことです。",
+    "en": "Saying words out loud."
+   },
+   "example": {
+    "jp": "この問題では、最後の発話をよく聞いてください。",
+    "en": "In this question, listen carefully to the last thing said."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "登場",
+   "explain": {
+    "jp": "話や場面に、人や物が出てくることです。",
+    "en": "A person or thing appearing in a story or scene."
+   },
+   "example": {
+    "jp": "この会話には、三人が登場します。",
+    "en": "Three people appear in this conversation."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "程度",
+   "explain": {
+    "jp": "どのくらいか、という度合いです。",
+    "en": "How much; the extent."
+   },
+   "example": {
+    "jp": "一時間程度で、終わります。",
+    "en": "It'll take about an hour."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "候補",
+   "explain": {
+    "jp": "選ばれる前の、いくつかの対象です。",
+    "en": "The options before one is chosen."
+   },
+   "example": {
+    "jp": "会場の候補を、三つ選びました。",
+    "en": "We picked three candidate venues."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "一般的",
+   "explain": {
+    "jp": "広く、普通に見られることです。",
+    "en": "Widely seen; typical."
+   },
+   "example": {
+    "jp": "これは、一般的なやり方です。",
+    "en": "This is the usual way to do it."
+   }
+  },
+  {
+   "type": "word",
+   "block": "test",
+   "word": "基本的",
+   "explain": {
+    "jp": "物事の、基本になっていることです。",
+    "en": "Forming the basis of something."
+   },
+   "example": {
+    "jp": "まず、基本的なルールを説明します。",
+    "en": "First I'll explain the basic rules."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "solve",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "次は、問題を解決するの言葉です。",
+     "en": "Next: solving problems."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "解決",
+   "explain": {
+    "jp": "問題を、うまく片付けることです。",
+    "en": "Sorting a problem out."
+   },
+   "example": {
+    "jp": "話し合って、問題を解決しました。",
+    "en": "We talked it through and solved the problem."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "手段",
+   "explain": {
+    "jp": "目的のための、やり方です。",
+    "en": "A way of reaching a goal."
+   },
+   "example": {
+    "jp": "連絡の手段は、メールがいちばん多いです。",
+    "en": "Email is the most common way we get in touch."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "活動",
+   "explain": {
+    "jp": "目的を持って、動くことです。",
+    "en": "Doing things for a purpose."
+   },
+   "example": {
+    "jp": "会社で、ボランティア活動をしています。",
+    "en": "We do volunteer work through the company."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "開始",
+   "explain": {
+    "jp": "物事を、始めることです。",
+    "en": "Starting something."
+   },
+   "example": {
+    "jp": "試験は、九時に開始します。",
+    "en": "The exam starts at nine."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "関連",
+   "explain": {
+    "jp": "お互いに、つながりがあることです。",
+    "en": "Being connected with each other."
+   },
+   "example": {
+    "jp": "関連する資料も、送ってください。",
+    "en": "Please send the related materials too."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "具体",
+   "explain": {
+    "jp": "形があって、はっきりしていることです。具体例のように使います。",
+    "en": "Being concrete and clear, as in 具体例 (concrete example)."
+   },
+   "example": {
+    "jp": "具体例を、一つ挙げてください。",
+    "en": "Give me one concrete example."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "具体的",
+   "explain": {
+    "jp": "はっきりと、細かいことです。",
+    "en": "Clear and detailed."
+   },
+   "example": {
+    "jp": "もっと具体的に、説明してください。",
+    "en": "Please explain more specifically."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "同様",
+   "explain": {
+    "jp": "同じような様子です。",
+    "en": "The same kind; similar."
+   },
+   "example": {
+    "jp": "今年も、前年と同様に、セミナーを開きます。",
+    "en": "As last year, we'll hold a seminar this year too."
+   }
+  },
+  {
+   "type": "word",
+   "block": "solve",
+   "word": "留意点",
+   "explain": {
+    "jp": "気をつけるべき点です。",
+    "en": "A point to take care over."
+   },
+   "example": {
+    "jp": "メールを書くときの、留意点をまとめました。",
+    "en": "I put together points to watch when writing emails."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "future",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後は、これからの言葉です。",
+     "en": "Last: looking ahead."
+    }
+   ]
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "希望",
+   "explain": {
+    "jp": "こうなってほしい、と願うことです。",
+    "en": "Wishing for something to happen."
+   },
+   "example": {
+    "jp": "ご希望の日時を、教えてください。",
+    "en": "Please tell us the date and time you would like."
+   }
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "今後",
+   "explain": {
+    "jp": "これから先、のことです。",
+    "en": "From now on."
+   },
+   "example": {
+    "jp": "今後とも、よろしくお願いいたします。",
+    "en": "We look forward to working with you from here on."
+   }
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "現実",
+   "explain": {
+    "jp": "実際に、起きていることです。",
+    "en": "What is actually happening."
+   },
+   "example": {
+    "jp": "現実は、計画どおりにいきません。",
+    "en": "Reality doesn't go to plan."
+   }
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "想像",
+   "explain": {
+    "jp": "実際にはないことを、心の中で思い浮かべることです。",
+    "en": "Picturing in your mind something that is not there."
+   },
+   "example": {
+    "jp": "十年後の自分を、想像してみましょう。",
+    "en": "Let's imagine ourselves ten years from now."
+   }
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "中心",
+   "explain": {
+    "jp": "物事の、真ん中や大切な所です。",
+    "en": "The middle or key part of something."
+   },
+   "example": {
+    "jp": "若い社員を中心に、チームを作ります。",
+    "en": "We'll build the team around younger staff."
+   }
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "挙げる",
+   "explain": {
+    "jp": "例などを、示すことです。",
+    "en": "Giving an example, for instance."
+   },
+   "example": {
+    "jp": "例を、二つ挙げてください。",
+    "en": "Give two examples."
+   }
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "与える",
+   "explain": {
+    "jp": "相手に、物や影響を渡すことです。",
+    "en": "Giving something, or an effect, to someone."
+   },
+   "example": {
+    "jp": "この結果は、計画に大きな影響を与えました。",
+    "en": "This result had a big effect on the plan."
+   }
+  },
+  {
+   "type": "word",
+   "block": "future",
+   "word": "好ましい",
+   "explain": {
+    "jp": "感じがよくて、望ましいことです。",
+    "en": "Pleasing and desirable."
+   },
+   "example": {
+    "jp": "明るいあいさつは、好ましい印象になります。",
+    "en": "A cheerful greeting makes a good impression."
+   }
+  },
+  {
+   "type": "bridge",
+   "block": "quiz",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "最後に、クイズで確認しましょう。答えを、一から四の中から選んでください。",
+     "en": "Finally, let's check with a quiz. Choose the answer from 1 to 4."
+    }
+   ]
+  },
+  {
+   "type": "quiz",
+   "n": 1,
+   "prompt": "試験は、九時に（　　）します。",
+   "promptEn": "The exam ___ at nine.",
+   "choices": [
+    "活動",
+    "開始",
+    "登場",
+    "採点"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第一問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 1. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。試験は、九時に開始します。",
+    "en": "The answer is 2: 開始, starts."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 2,
+   "prompt": "答えを見て、点数をつけることは？",
+   "promptEn": "What is looking at answers and giving marks called?",
+   "choices": [
+    "設問",
+    "発話",
+    "採点",
+    "候補"
+   ],
+   "answer": 2,
+   "ask": {
+    "jp": "第二問。答えを見て、点数をつけることを、何と言いますか。",
+    "en": "Question 2. What is looking at answers and giving marks called?"
+   },
+   "reveal": {
+    "jp": "正解は三番、採点です。",
+    "en": "The answer is 3: 採点."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 3,
+   "prompt": "一時間（　　）で、終わります。",
+   "promptEn": "It'll be over in ___ an hour.",
+   "choices": [
+    "手段",
+    "関連",
+    "中心",
+    "程度"
+   ],
+   "answer": 3,
+   "ask": {
+    "jp": "第三問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 3. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は四番。一時間程度で、終わります。",
+    "en": "The answer is 4: 程度, about."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 4,
+   "prompt": "例を、二つ（　　）ください。",
+   "promptEn": "___ two examples.",
+   "choices": [
+    "挙げて",
+    "与えて",
+    "想像して",
+    "解決して"
+   ],
+   "answer": 0,
+   "ask": {
+    "jp": "第四問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 4. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は一番。例を、二つ挙げてください。",
+    "en": "The answer is 1: 挙げて, give."
+   }
+  },
+  {
+   "type": "quiz",
+   "n": 5,
+   "prompt": "今年も、前年と（　　）に、セミナーを開きます。",
+   "promptEn": "This year too we'll hold a seminar, ___ last year.",
+   "choices": [
+    "具体的",
+    "同様",
+    "基本的",
+    "一般的"
+   ],
+   "answer": 1,
+   "ask": {
+    "jp": "第五問。かっこに入る言葉はどれでしょう。",
+    "en": "Question 5. Which word goes in the brackets?"
+   },
+   "reveal": {
+    "jp": "正解は二番。今年も、前年と同様に、セミナーを開きます。",
+    "en": "The answer is 2: 同様, the same as."
+   }
+  },
+  {
+   "type": "outro",
+   "lines": [
+    {
+     "sp": "host",
+     "jp": "今日は、目標と結果の言葉を、二十五個勉強しました。",
+     "en": "Today we studied 25 words: goals & results."
+    },
+    {
+     "sp": "host",
+     "jp": "アプリの単語リストでも、もう一度確認してみてください。",
+     "en": "Review them again in the app's word list."
+    },
+    {
+     "sp": "host",
+     "jp": "お疲れさまでした。また次の課で会いましょう。",
+     "en": "Good work today. See you in the next lesson."
+    }
+   ]
+  }
+ ]
+}
