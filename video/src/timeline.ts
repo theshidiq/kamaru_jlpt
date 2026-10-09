@@ -14,6 +14,7 @@ export type Segment = {
   type: 'intro' | 'scene' | 'bridge' | 'word' | 'quiz' | 'outro'
   block?: string; scene?: string
   label?: { jp: string; en: string } // the reading part: 会議, 報告書, お知らせ… (default 会話)
+  ambience?: string // its place sound: office, meeting, training, cafe, store, station
   word?: string; reading?: string; meaning?: string; alsoIn?: string | null; index?: number; total?: number
   n?: number; prompt?: Omit<Unit, 'start' | 'end'>[]; promptEn?: string; choices?: string[]; answer?: number
   lines: Line[]

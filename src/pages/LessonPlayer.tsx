@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useNavigate, useParams } from 'react-router-dom'
-import { RiPauseFill, RiPlayFill, RiReplay10Line, RiForward10Line, RiBookReadLine, RiHeadphoneLine, RiArrowLeftSLine, RiArrowRightSLine } from '@remixicon/react'
+import { RiPauseFill, RiPlayFill, RiReplay10Line, RiForward10Line, RiBookReadLine, RiHeadphoneLine, RiArrowLeftSLine, RiArrowRightSLine, RiMusic2Line } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
@@ -13,6 +13,7 @@ import type { Lesson, LessonLine, LessonPart, LessonSegment } from '@/types/less
 import type { WordStatus } from '@/types/user'
 
 const SPEEDS = [0.75, 1, 1.25] as const
+const SOUND_KEY = 'kamaru.lessonSound'
 const BUILD_ID = __BUILD_ID__
 const STATUS_NEXT: Record<WordStatus, WordStatus> = { new: 'learning', learning: 'known', known: 'new' }
 const CAST_CHIP: Record<string, string> = {
@@ -88,6 +89,13 @@ function LessonPage() {
   const [furigana, setFurigana] = useState(true)
   const [english, setEnglish] = useState(true)
   const [answers, setAnswers] = useState<Record<number, number>>({})
+  // Music & effects: a second mix of the same lesson. On by default; the
+  // choice is a per-device preference.
+  const [soundOn, setSoundOn] = useState(() => {
+    try { return localStorage.getItem(SOUND_KEY) !== 'off' } catch { return true }
+  })
+  // Where to pick up after switching between the two mixes.
+  const resumeRef = useRef<{ t: number; play: boolean } | null>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
@@ -148,6 +156,13 @@ function LessonPage() {
     if (!a) return
     if (a.paused) a.play().catch(() => {})
     else a.pause()
+  }
+  function toggleSound() {
+    const a = audioRef.current
+    resumeRef.current = a ? { t: a.currentTime, play: !a.paused } : null
+    const next = !soundOn
+    setSoundOn(next)
+    try { localStorage.setItem(SOUND_KEY, next ? 'on' : 'off') } catch { /* private mode: keep it for this visit */ }
   }
   function seek(ms: number, play = true) {
     const a = audioRef.current
@@ -341,8 +356,16 @@ function LessonPage() {
 
       <audio
         ref={audioRef}
-        src={audioUrl(lesson.audioUrl)}
+        src={audioUrl(soundOn && lesson.soundUrl ? lesson.soundUrl : lesson.audioUrl)}
         preload="auto"
+        // A new src starts at 0 and at the default rate: restore both, and keep
+        // playing if it was, so the switch is seamless.
+        onLoadedMetadata={() => {
+          const a = audioRef.current, r = resumeRef.current
+          if (!a) return
+          a.playbackRate = rate
+          if (r) { a.currentTime = r.t; if (r.play) a.play().catch(() => {}); resumeRef.current = null }
+        }}
         onTimeUpdate={() => audioRef.current && setNowMs(audioRef.current.currentTime * 1000)}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
@@ -398,7 +421,20 @@ function LessonPage() {
                   <button onClick={() => seek(nowMs - 10000, playing)} aria-label="-10s" className="p-1.5 text-gray-600 dark:text-gray-300"><RiReplay10Line size={22} /></button>
                   <button onClick={() => seek(nowMs + 10000, playing)} aria-label="+10s" className="p-1.5 text-gray-600 dark:text-gray-300"><RiForward10Line size={22} /></button>
                 </div>
-                <div className="flex w-24 justify-end">
+                <div className="flex w-24 justify-end gap-1">
+                  {lesson.soundUrl && (
+                    <button
+                      onClick={toggleSound}
+                      aria-pressed={soundOn}
+                      aria-label={t('lessonSound', lang)}
+                      title={t('lessonSound', lang)}
+                      className={`flex items-center justify-center h-8 w-8 rounded-md border ${soundOn
+                        ? 'bg-indigo-600 border-indigo-600 text-white'
+                        : 'border-gray-200 dark:border-gray-700 text-gray-400 dark:text-gray-500'}`}
+                    >
+                      <RiMusic2Line size={16} />
+                    </button>
+                  )}
                   <button
                     onClick={() => setRate(r => SPEEDS[(SPEEDS.indexOf(r as typeof SPEEDS[number]) + 1) % SPEEDS.length])}
                     className="text-xs font-semibold px-2 py-1.5 rounded-md border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 tabular-nums"

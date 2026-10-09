@@ -517,6 +517,7 @@
     "jp": "会議",
     "en": "Meeting"
    },
+   "ambience": "meeting",
    "lines": [
     {
      "sp": "nakamura",

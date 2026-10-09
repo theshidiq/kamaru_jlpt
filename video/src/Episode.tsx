@@ -1,5 +1,6 @@
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion'
 import { DEFAULT_SCREEN, FOCUS, ScreenTextContext } from './art/scenes'
+import { SoundLayer, type SoundMode } from './sound'
 import { lineAt, type Episode as Ep, type Segment } from './timeline'
 import { Chip, FONT, INDIGO, Karaoke, Ruby, SceneFill, SpeakerChip, useClock, usePop, WordCard, WordLines } from './ui'
 
@@ -189,7 +190,8 @@ function Outro({ seg, words }: { seg: Segment; words: Segment[] }) {
   )
 }
 
-export const Episode = ({ ep }: { ep: Ep & { durationMs: number } }) => {
+/** `voices: false` renders the sound bed alone, for the app's mix (export-app.ts). */
+export const Episode = ({ ep, sound = 'off', voices = true }: { ep: Ep & { durationMs: number }; sound?: SoundMode; voices?: boolean }) => {
   const frame = useCurrentFrame()
   const { fps } = useVideoConfig()
   const f = (ms: number) => Math.round((ms / 1000) * fps)
@@ -210,7 +212,8 @@ export const Episode = ({ ep }: { ep: Ep & { durationMs: number } }) => {
         </Sequence>
       ))}
       </ScreenTextContext.Provider>
-      <Voices ep={ep} />
+      {voices && <Voices ep={ep} />}
+      <SoundLayer ep={ep} mode={sound} />
       <div style={{ position: 'absolute', left: 0, bottom: 0, height: 6, width: `${(frame / f(ep.durationMs)) * 100}%`, background: '#fcd34d' }} />
     </AbsoluteFill>
   )

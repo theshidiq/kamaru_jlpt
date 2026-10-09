@@ -145,7 +145,8 @@
      "jp": "わかりました。すぐに直して、もう一度お送りします。",
      "en": "Understood. I'll fix it right away and send it again."
     }
-   ]
+   ],
+   "ambience": "office"
   },
   {
    "type": "bridge",

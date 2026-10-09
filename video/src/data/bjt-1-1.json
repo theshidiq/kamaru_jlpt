@@ -498,6 +498,7 @@
   {
    "type": "scene",
    "scene": "office",
+   "ambience": "office",
    "lines": [
     {
      "sp": "nakamura",

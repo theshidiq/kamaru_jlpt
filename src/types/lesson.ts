@@ -38,6 +38,8 @@ export interface Lesson {
   label: string
   durationMs: number
   audioUrl: string
+  /** the same audio with music, effects and the place sound under it */
+  soundUrl?: string
   blocks: Record<string, { jp: string; en: string }>
   segments: LessonSegment[]
 }

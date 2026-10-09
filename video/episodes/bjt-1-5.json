@@ -186,7 +186,8 @@
      "jp": "人事部",
      "en": "Human Resources"
     }
-   ]
+   ],
+   "ambience": "office"
   },
   {
    "type": "bridge",

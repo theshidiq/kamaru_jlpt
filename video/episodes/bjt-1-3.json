@@ -181,7 +181,8 @@
      "jp": "もちろんです。効果を数字で示すことができれば、部長への報告もしやすいですね。",
      "en": "Of course. If we can show the results in numbers, reporting to the manager will be easier too."
     }
-   ]
+   ],
+   "ambience": "meeting"
   },
   {
    "type": "bridge",

@@ -199,7 +199,8 @@
      "jp": "承知いたしました。",
      "en": "Understood."
     }
-   ]
+   ],
+   "ambience": "office"
   },
   {
    "type": "bridge",
