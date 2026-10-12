@@ -287,12 +287,15 @@ function LessonPage() {
       )
     }
     if (s.type === 'quiz') {
-      const [, reveal] = s.lines
+      // In the order it is heard: the narrator's question, then the prompt
+      // and choices, then (once answered or revealed) the answer.
+      const [ask, reveal] = s.lines
       const mine = answers[s.n ?? 0]
       const shown = mine !== undefined || (reveal && nowMs >= reveal.at)
       return (
         <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 md:p-5 shadow-sm">
           <span className="inline-block text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200">第{s.n}問</span>
+          {ask && <div className="mt-2"><LineText {...lineProps(ask)} /></div>}
           <p className="font-jp text-lg md:text-xl font-semibold leading-loose text-gray-900 dark:text-white mt-2">
             {s.prompt?.map((u, i) => <Parts key={i} parts={u.parts} furigana={furigana} />)}
           </p>
@@ -316,9 +319,7 @@ function LessonPage() {
             })}
           </div>
           {!shown && <p className="text-[11px] text-gray-400 mt-2">{t('lessonQuizHint', lang)}</p>}
-          <div className="mt-2 space-y-1">
-            {s.lines.map(l => (l.role !== 'reveal' || shown) && <LineText key={l.id} {...lineProps(l)} />)}
-          </div>
+          {reveal && shown && <div className="mt-2"><LineText {...lineProps(reveal)} /></div>}
         </div>
       )
     }
