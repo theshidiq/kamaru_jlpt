@@ -31,3 +31,6 @@ public/audio/
 
 # Video project (video/): renders are rebuilt with `npm run render`
 video/out/
+
+# Python env for the content scripts (janome): see docs/content-pipeline.md
+.venv-content/
