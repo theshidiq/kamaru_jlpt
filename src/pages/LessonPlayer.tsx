@@ -3,6 +3,8 @@ import { createPortal } from 'react-dom'
 import { useNavigate, useParams } from 'react-router-dom'
 import { RiPauseFill, RiPlayFill, RiReplay10Line, RiForward10Line, RiBookReadLine, RiHeadphoneLine, RiArrowLeftSLine, RiArrowRightSLine, RiMusic2Line } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
+import { AudioBar } from '@/components/AudioBar'
+import { AUDIO_BAR_PAD, clock } from '@/lib/audioBar'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
@@ -21,10 +23,6 @@ const CAST_CHIP: Record<string, string> = {
   staff: 'bg-pink-100 text-pink-800 dark:bg-pink-900/40 dark:text-pink-200',
 }
 
-function clock(ms: number) {
-  const s = Math.max(0, Math.floor(ms / 1000))
-  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`
-}
 
 function Parts({ parts, furigana }: { parts: LessonPart[]; furigana: boolean }) {
   return (
@@ -328,8 +326,8 @@ function LessonPage() {
   }
 
   return (
-    <PageWrapper>
-      <div className="pb-32">
+    <PageWrapper className={AUDIO_BAR_PAD}>
+      <div className="pb-32 md:pb-8">
         <button onClick={() => navigate(-1)} className="text-sm text-gray-500 dark:text-gray-400 mb-3">{t('back', lang)}</button>
         <p className="flex items-center gap-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400">
           <RiHeadphoneLine size={14} />{t('lesson', lang)} · {lesson.label}
@@ -373,13 +371,34 @@ function LessonPage() {
         onEnded={() => setPlaying(false)}
       />
 
-      {/* Portalled: PageWrapper animates with a transform, which would make it
+      {/* Desktop: every control in one bar under the navbar. */}
+      <AudioBar
+        playing={playing}
+        onToggle={toggle}
+        nowMs={nowMs}
+        durationMs={lesson.durationMs}
+        onSeek={ms => seek(ms, playing)}
+        onSkip={d => seek(nowMs + d, playing)}
+        rate={rate}
+        rates={SPEEDS}
+        onRate={setRate}
+        furigana={furigana}
+        onFurigana={() => setFurigana(v => !v)}
+        english={english}
+        onEnglish={() => setEnglish(v => !v)}
+        sound={lesson.soundUrl ? { on: soundOn, toggle: toggleSound, label: t('lessonSound', lang) } : undefined}
+        title={`${lesson.label.replace('BJT · ', '')} · ${lesson.title}`}
+        labels={{ play: t('playAudio', lang), pause: t('pause', lang), furigana: t('furigana', lang), restart: t('restart', lang) }}
+      />
+
+      {/* Phones: thumb-side play group and the bottom position bar.
+          Portalled: PageWrapper animates with a transform, which would make it
           the containing block for position: fixed. */}
       {createPortal(
         <>
           {/* Play/pause and the furigana / English toggles on the right edge,
               where the thumb rests: the same group as the passage reader's. */}
-          <div className="fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2">
+          <div className="md:hidden fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2">
             <button
               onClick={toggle}
               aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
@@ -407,8 +426,9 @@ function LessonPage() {
             ))}
           </div>
 
-          {/* Position bar: seek, ±10s and speed. Play lives on the side. */}
-          <div className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur pb-[env(safe-area-inset-bottom)]">
+          {/* Position bar: seek, ±10s and speed. Play lives on the side.
+              Phones only: desktop has everything in AudioBar at the top. */}
+          <div className="md:hidden fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur pb-[env(safe-area-inset-bottom)]">
             <div className="max-w-5xl mx-auto px-4 pt-2 pb-2.5">
               <input
                 type="range" min={0} max={lesson.durationMs} step={100} value={Math.min(nowMs, lesson.durationMs)}

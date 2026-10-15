@@ -1,4 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { useAutoHideNav, useNavStore } from '@/hooks/useAutoHideNav'
 import { useAppStore } from '@/store/useAppStore'
 import { supabase } from '@/lib/supabase'
 import { useState, useRef, useEffect } from 'react'
@@ -17,6 +18,11 @@ export function Navbar() {
   const lang = preferredLanguage
   const navigate = useNavigate()
   const location = useLocation()
+  // On the audio pages the desktop navbar steps aside while scrolling down,
+  // leaving the top of the screen to the audio bar (AudioBar).
+  const autoHide = /^\/(read|lesson)\//.test(location.pathname)
+  useAutoHideNav(autoHide)
+  const navHidden = useNavStore(s => s.hidden) && autoHide
   const [menuOpen, setMenuOpen] = useState(false)
   const [resetting, setResetting] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
@@ -122,7 +128,11 @@ export function Navbar() {
   return (
     <>
       {/* Top nav bar */}
-      <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
+      <nav
+        className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm transition-transform duration-200 ease-out"
+        style={navHidden ? { transform: 'translateY(-100%)' } : undefined}
+        inert={navHidden || undefined}
+      >
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-14 gap-4">
           {/* Hamburger (mobile) */}
           <button

@@ -161,6 +161,14 @@ section is the furthest completed + 1, per level (`usePlanSection`).
 - **Caching:** R2's `r2.dev` sends no Cache-Control, so every fetch carries
   `?v=__BUILD_ID__`. New audio appears after a deploy.
 - **Media Session** gives lock-screen controls on the Lesson page.
+- **Desktop controls:** `AudioBar` (`src/components/AudioBar.tsx`) holds
+  every control in one row under the navbar on both audio pages. On those
+  routes the navbar hides while scrolling down and returns on any scroll up
+  (`useAutoHideNav`), and the bar moves to the top. Space plays/pauses.
+  Phones keep the thumb-side buttons and the bottom bar.
+  - Hidden documents get no scroll events, so in a background browser pane
+    test the behaviour by calling `dispatchEvent(new Event('scroll'))`
+    after each scroll.
 
 ---
 

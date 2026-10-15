@@ -3,6 +3,8 @@ import { createPortal } from 'react-dom'
 import { useParams, useNavigate } from 'react-router-dom'
 import { RiPlayFill, RiPauseFill, RiRestartLine, RiArrowLeftSLine, RiArrowRightSLine, RiBookReadLine, RiHeadphoneLine } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
+import { AudioBar } from '@/components/AudioBar'
+import { AUDIO_BAR_PAD } from '@/lib/audioBar'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
@@ -136,6 +138,21 @@ export function SectionReader() {
     else { a.pause(); setPlaying(false) }
   }
 
+  function restart() {
+    const a = audioRef.current
+    if (!a) return
+    a.currentTime = 0
+    a.play().catch(() => {})
+    setPlaying(true)
+  }
+
+  function seekTo(ms: number) {
+    const a = audioRef.current
+    if (!a) return
+    a.currentTime = Math.max(0, ms) / 1000
+    setNowMs(Math.max(0, ms))
+  }
+
   function playSentence(si: number) {
     const a = audioRef.current
     if (!a || !audio) return
@@ -245,10 +262,31 @@ export function SectionReader() {
   }
 
   return (
-    <PageWrapper>
+    <PageWrapper className={audio ? AUDIO_BAR_PAD : ''}>
       <button onClick={() => navigate(-1)} className="text-sm text-gray-500 dark:text-gray-400 mb-3">
         {t('back', lang)}
       </button>
+
+      {/* Desktop: every audio control in one bar under the navbar. */}
+      {audio && (
+        <AudioBar
+          playing={playing}
+          onToggle={toggle}
+          nowMs={nowMs}
+          durationMs={audio.durationMs}
+          onSeek={seekTo}
+          onRestart={restart}
+          rate={rate}
+          rates={SPEEDS}
+          onRate={setRate}
+          furigana={showFurigana}
+          onFurigana={() => setShowFurigana(v => !v)}
+          english={showEnglish}
+          onEnglish={() => setShowEnglish(v => !v)}
+          title={passage.title}
+          labels={{ play: t('playAudio', lang), pause: t('pause', lang), furigana: t('furigana', lang), restart: t('restart', lang) }}
+        />
+      )}
 
       <p className="flex items-center gap-1 text-xs font-semibold text-rose-600 dark:text-rose-400">
         <RiBookReadLine size={14} />
@@ -271,8 +309,8 @@ export function SectionReader() {
 
       {sectionNav('top')}
 
-      {/* Controls */}
-      <div ref={controlsRef} className="flex flex-wrap items-center gap-2 mb-5">
+      {/* Controls. On desktop, AudioBar takes over whenever there is audio. */}
+      <div ref={controlsRef} className={`flex flex-wrap items-center gap-2 mb-5 ${audio ? 'md:hidden' : ''}`}>
         {audio && (
           <>
             <button
@@ -283,7 +321,7 @@ export function SectionReader() {
               {playing ? t('pause', lang) : t('playAudio', lang)}
             </button>
             <button
-              onClick={() => { const a = audioRef.current; if (a) { a.currentTime = 0; a.play().catch(() => {}); setPlaying(true) } }}
+              onClick={restart}
               className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800"
               title={t('restart', lang)}
             >
@@ -390,7 +428,7 @@ export function SectionReader() {
         // holding the phone — and clear of the mobile tab bar without needing
         // to reason about its height. z-50 matches the bar so nothing here is
         // painted behind it.
-        <div className="fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2">
+        <div className="md:hidden fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2">
           <button
             onClick={toggle}
             aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
