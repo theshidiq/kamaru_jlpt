@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Player, type PlayerRef } from '@remotion/player'
-import { RiMusic2Line } from '@remixicon/react'
+import { RiFullscreenExitLine, RiFullscreenLine, RiMusic2Line } from '@remixicon/react'
 import { AppEpisode } from '@video/AppEpisode'
 import { useAppStore } from '@/store/useAppStore'
 import { audioUrl } from '@/lib/assets'
@@ -11,7 +11,8 @@ import type { Lesson } from '@/types/lesson'
 import type { WordStatus } from '@/types/user'
 
 const FPS = 30
-const SPEEDS = [0.75, 1, 1.25] as const
+const SPEEDS = [0.75, 1, 1.25]
+const NARROW = '(max-width: 639px)'
 const SOUND_KEY = 'kamaru.lessonSound' // shared with the Lesson page
 const STATUS_NEXT: Record<WordStatus, WordStatus> = { new: 'learning', learning: 'known', known: 'new' }
 
@@ -24,6 +25,9 @@ const STATUS_NEXT: Record<WordStatus, WordStatus> = { new: 'learning', learning:
  *   instead carries on without answering.
  * - Tapping a studied word in the subtitles pauses and opens it below.
  * - あ, EN, sound and speed apply instantly, because the text is drawn live.
+ *   They sit in the player's own control bar, so they stay at hand in
+ *   fullscreen. Fullscreen is taken by our wrapper rather than the Player,
+ *   so the word card can show over the video there too.
  */
 export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson; onEnded?: () => void }) {
   const { vocab, wordStatuses, setWordStatus, preferredLanguage: lang } = useAppStore()
@@ -37,6 +41,26 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
   })
   const [answers, setAnswers] = useState<Record<number, number>>({})
   const [word, setWord] = useState<string | null>(null)
+  const box = useRef<HTMLDivElement>(null)
+  const [fullscreen, setFullscreen] = useState(false)
+  useEffect(() => {
+    const on = () => setFullscreen(document.fullscreenElement === box.current && !!box.current)
+    document.addEventListener('fullscreenchange', on)
+    return () => document.removeEventListener('fullscreenchange', on)
+  }, [])
+  // Phones have volume buttons; dropping the slider keeps the bar on one line.
+  const [narrow, setNarrow] = useState(() => window.matchMedia(NARROW).matches)
+  useEffect(() => {
+    const mq = window.matchMedia(NARROW)
+    const on = () => setNarrow(mq.matches)
+    mq.addEventListener('change', on)
+    return () => mq.removeEventListener('change', on)
+  }, [])
+  const canFullscreen = typeof document !== 'undefined' && document.fullscreenEnabled
+  function toggleFullscreen() {
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {})
+    else box.current?.requestFullscreen().catch(() => {})
+  }
 
   // Where each quiz waits, on the lesson clock (ms).
   const quizzes = useMemo(() => ep.segments.filter(s => s.type === 'quiz').map(s => {
@@ -85,71 +109,86 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
   const picked = word ? vocab.find(v => v.wordClean === word) : null
   const status: WordStatus = picked ? (wordStatuses[picked.wordClean] ?? 'new') : 'new'
 
-  const toggleCls = (on: boolean) =>
-    `flex items-center justify-center h-9 min-w-9 px-2.5 rounded-lg border text-xs font-bold transition-colors ${on
-      ? 'bg-indigo-600 border-indigo-600 text-white'
-      : 'border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'}`
+  // Sized like the Player's own buttons, white on its dark control bar.
+  const barBtn = (on: boolean) =>
+    `flex items-center justify-center h-7 min-w-7 px-1.5 rounded-md text-xs font-bold transition-colors ${on
+      ? 'bg-white text-indigo-900'
+      : 'text-white/80 hover:bg-white/15'}`
+  const toggleSound = () => setSoundOn(v => {
+    const n = !v
+    try { localStorage.setItem(SOUND_KEY, n ? 'on' : 'off') } catch { /* private mode */ }
+    return n
+  })
+  const renderControls = useCallback(() => (
+    <div className="flex items-center gap-0.5 sm:gap-1 mr-1">
+      <button type="button" onClick={() => setFurigana(v => !v)} aria-pressed={furigana} title={t('furigana', lang)} className={barBtn(furigana)}>あ</button>
+      <button type="button" onClick={() => setEnglish(v => !v)} aria-pressed={english} title="EN" className={barBtn(english)}>EN</button>
+      {lesson.soundUrl && (
+        <button type="button" onClick={toggleSound} aria-pressed={soundOn} title={t('lessonSound', lang)} className={barBtn(soundOn)}>
+          <RiMusic2Line size={15} />
+        </button>
+      )}
+      {/* One button cycling the speeds, so the bar still fits a phone */}
+      <button type="button" onClick={() => setRate(r => SPEEDS[(SPEEDS.indexOf(r) + 1) % SPEEDS.length])} title="Speed"
+        className={`${barBtn(false)} tabular-nums w-11`}>{rate}×</button>
+      {canFullscreen && (
+        <button type="button" onClick={toggleFullscreen} aria-label={fullscreen ? 'Exit fullscreen' : 'Fullscreen'} title={fullscreen ? 'Exit fullscreen' : 'Fullscreen'} className={barBtn(false)}>
+          {fullscreen ? <RiFullscreenExitLine size={17} /> : <RiFullscreenLine size={17} />}
+        </button>
+      )}
+    </div>
+  ), [furigana, english, soundOn, rate, fullscreen, lang, lesson.soundUrl, canFullscreen])
+
+  const card = picked && (
+    <div className={`flex items-start justify-between gap-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 ${
+      fullscreen ? 'absolute top-4 right-4 w-80 shadow-2xl z-10' : 'mt-3'}`}>
+      <div>
+        {picked.furigana && <p className="font-jp text-xs text-indigo-500 dark:text-indigo-400">{picked.furigana}</p>}
+        <p className="font-jp text-2xl font-bold text-gray-900 dark:text-white">{picked.wordClean}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mt-0.5">{getMeaning(picked, lang)}</p>
+      </div>
+      <div className="flex flex-col items-end gap-2">
+        <button
+          onClick={() => setWordStatus(picked.wordClean, STATUS_NEXT[status], picked.chapter, picked.section)}
+          className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${
+            status === 'known' ? 'bg-green-50 border-green-300 text-green-700 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300'
+            : status === 'learning' ? 'bg-amber-50 border-amber-300 text-amber-700 dark:bg-amber-900/30 dark:border-amber-700 dark:text-amber-300'
+            : 'border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400'}`}
+        >{t(status, lang)}</button>
+        <button onClick={() => { setWord(null); player.current?.play() }} className="text-xs text-indigo-600 dark:text-indigo-400 font-medium whitespace-nowrap">
+          {t('videoResume', lang)} ▶
+        </button>
+      </div>
+    </div>
+  )
 
   return (
     <div>
-      <div className="rounded-xl overflow-hidden shadow-lg bg-indigo-950">
-        <Player
-          ref={player}
-          component={AppEpisode}
-          inputProps={{ ep, audioSrc: src, interaction }}
-          durationInFrames={Math.ceil((ep.durationMs / 1000) * FPS)}
-          fps={FPS}
-          compositionWidth={1920}
-          compositionHeight={1080}
-          style={{ width: '100%', aspectRatio: '16 / 9' }}
-          controls
-          clickToPlay={false}
-          doubleClickToFullscreen
-          playbackRate={rate}
-          acknowledgeRemotionLicense
-        />
-      </div>
-
-      <div className="flex flex-wrap items-center gap-2 mt-3">
-        <button onClick={() => setFurigana(v => !v)} aria-pressed={furigana} title={t('furigana', lang)} className={toggleCls(furigana)}>あ</button>
-        <button onClick={() => setEnglish(v => !v)} aria-pressed={english} title="EN" className={toggleCls(english)}>EN</button>
-        {lesson.soundUrl && (
-          <button
-            onClick={() => setSoundOn(v => { const n = !v; try { localStorage.setItem(SOUND_KEY, n ? 'on' : 'off') } catch { /* private mode */ } return n })}
-            aria-pressed={soundOn} title={t('lessonSound', lang)} className={toggleCls(soundOn)}
-          ><RiMusic2Line size={16} /></button>
-        )}
-        <div className="flex items-center rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
-          {SPEEDS.map(r => (
-            <button key={r} onClick={() => setRate(r)}
-              className={`text-xs font-semibold px-2.5 py-2 tabular-nums ${rate === r ? 'bg-indigo-600 text-white' : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
-            >{r}×</button>
-          ))}
+      <div ref={box} className={fullscreen ? 'relative flex items-center justify-center bg-black' : 'relative'}>
+        <div className={fullscreen ? '' : 'rounded-xl overflow-hidden shadow-lg bg-indigo-950'}
+          style={fullscreen ? { width: 'min(100vw, calc(100vh * 16 / 9))' } : undefined}>
+          <Player
+            ref={player}
+            component={AppEpisode}
+            inputProps={{ ep, audioSrc: src, interaction }}
+            durationInFrames={Math.ceil((ep.durationMs / 1000) * FPS)}
+            fps={FPS}
+            compositionWidth={1920}
+            compositionHeight={1080}
+            style={{ width: '100%', aspectRatio: '16 / 9' }}
+            controls
+            clickToPlay={false}
+            allowFullscreen={false}
+            showVolumeControls={!narrow}
+            renderCustomControls={renderControls}
+            playbackRate={rate}
+            acknowledgeRemotionLicense
+          />
         </div>
-        <span className="text-xs text-gray-400 dark:text-gray-500 ml-auto">{t('videoHint', lang)}</span>
+        {fullscreen && card}
       </div>
-
-      {picked && (
-        <div className="mt-3 flex items-start justify-between gap-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4">
-          <div>
-            {picked.furigana && <p className="font-jp text-xs text-indigo-500 dark:text-indigo-400">{picked.furigana}</p>}
-            <p className="font-jp text-2xl font-bold text-gray-900 dark:text-white">{picked.wordClean}</p>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-0.5">{getMeaning(picked, lang)}</p>
-          </div>
-          <div className="flex flex-col items-end gap-2">
-            <button
-              onClick={() => setWordStatus(picked.wordClean, STATUS_NEXT[status], picked.chapter, picked.section)}
-              className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${
-                status === 'known' ? 'bg-green-50 border-green-300 text-green-700 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300'
-                : status === 'learning' ? 'bg-amber-50 border-amber-300 text-amber-700 dark:bg-amber-900/30 dark:border-amber-700 dark:text-amber-300'
-                : 'border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400'}`}
-            >{t(status, lang)}</button>
-            <button onClick={() => { setWord(null); player.current?.play() }} className="text-xs text-indigo-600 dark:text-indigo-400 font-medium">
-              {t('videoResume', lang)} ▶
-            </button>
-          </div>
-        </div>
-      )}
+      <p className="text-xs text-gray-400 dark:text-gray-500 mt-2 text-right">{t('videoHint', lang)}</p>
+      {!fullscreen && card}
     </div>
   )
 }

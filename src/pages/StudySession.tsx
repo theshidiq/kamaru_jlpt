@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import toast from 'react-hot-toast'
 import {
-  RiCheckDoubleLine, RiCheckLine, RiPlayCircleLine, RiBookReadLine, RiStackLine, RiQuestionLine, RiFlagLine, RiArrowRightLine,
+  RiCheckDoubleLine, RiCheckLine, RiMenuFoldLine, RiMenuUnfoldLine, RiPlayCircleLine, RiBookReadLine, RiStackLine, RiQuestionLine, RiFlagLine, RiArrowRightLine,
 } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { SectionReaderView } from '@/pages/SectionReader'
@@ -31,6 +31,7 @@ import type { WordStatus } from '@/types/user'
 const InteractiveLesson = lazy(() => import('@/components/video/InteractiveLesson'))
 
 const BUILD_ID = __BUILD_ID__
+const MENU_KEY = 'kamaru.journeyMenu'
 const STATUS_COLORS: Record<WordStatus, string> = {
   known: 'bg-green-100 text-green-700',
   learning: 'bg-amber-100 text-amber-700',
@@ -77,6 +78,14 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
     const d = loadJourney(id)
     return steps.find(s => !d[s.id])?.id ?? 'finish'
   })
+  // Desktop step list, which can be folded away (as on Coursera) to give
+  // the step the full width. Remembered per device.
+  const [menuOpen, setMenuOpen] = useState(() => {
+    try { return localStorage.getItem(MENU_KEY) !== 'closed' } catch { return true }
+  })
+  function toggleMenu() {
+    setMenuOpen(o => { try { localStorage.setItem(MENU_KEY, o ? 'closed' : 'open') } catch { /* private mode */ } return !o })
+  }
   const index = steps.findIndex(s => s.id === current)
   const next = steps[index + 1]
   const doneCount = steps.filter(s => s.id !== 'finish' && done[s.id]).length
@@ -134,8 +143,8 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
 
   return (
     // The Read Along step shows its desktop audio bar under the navbar.
-    <PageWrapper className={current === 'read' ? AUDIO_BAR_PAD : ''}>
-      <div className="mb-5">
+    <PageWrapper wide className={current === 'read' ? AUDIO_BAR_PAD : ''}>
+      <div className="mb-4">
         <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">{t('todayStudy', lang)}</p>
         <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
           {t('chapter', lang)} {ch} · {t('section', lang)} {sec}
@@ -149,14 +158,26 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
         </div>
       </div>
 
-      <div className="lg:grid lg:grid-cols-[240px_1fr] lg:gap-6 items-start">
+      <div className={menuOpen ? 'lg:grid lg:grid-cols-[220px_1fr] lg:gap-6 items-start' : ''}>
         {/* Steps: a sidebar on large screens */}
-        <nav aria-label={t('journeySteps', lang)} className={`hidden lg:block lg:sticky ${current === 'read' ? 'lg:top-32' : 'lg:top-20'} bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-2`}>
-          {steps.map(stepRow)}
-        </nav>
-        {/* ...and a numbered stepper above the step on smaller ones */}
-        <nav aria-label={t('journeySteps', lang)} className="lg:hidden mb-4">
-          <ol className="flex items-center">
+        {menuOpen && (
+          <nav aria-label={t('journeySteps', lang)} className={`hidden lg:block lg:sticky ${current === 'read' ? 'lg:top-32' : 'lg:top-20'} bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-2`}>
+            {steps.map(stepRow)}
+            <button onClick={toggleMenu} className="w-full flex items-center gap-2 mt-1 px-3 py-2 rounded-lg text-xs font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+              <RiMenuFoldLine size={15} />{t('journeyHideMenu', lang)}
+            </button>
+          </nav>
+        )}
+        {/* ...and a numbered stepper above the step on smaller ones, or when the menu is folded */}
+        <nav aria-label={t('journeySteps', lang)} className={`mb-3 flex items-center gap-3 ${menuOpen ? 'lg:hidden' : ''}`}>
+          {!menuOpen && (
+            <button onClick={toggleMenu} aria-label={t('journeyShowMenu', lang)} title={t('journeyShowMenu', lang)}
+              className="hidden lg:flex shrink-0 items-center justify-center h-9 w-9 rounded-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800">
+              <RiMenuUnfoldLine size={18} />
+            </button>
+          )}
+          <div className="flex-1 min-w-0">
+          <ol className="flex items-center lg:max-w-md">
             {steps.map((s, i) => {
               const isCur = s.id === current, isDone = !!done[s.id]
               return (
@@ -177,6 +198,7 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
             {index + 1}. {steps[index]?.title}
             {steps[index]?.meta && <span className="font-normal text-gray-400 dark:text-gray-500"> · {steps[index].meta}</span>}
           </p>
+          </div>
         </nav>
 
         <section className="min-w-0">
