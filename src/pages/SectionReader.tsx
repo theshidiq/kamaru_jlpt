@@ -21,13 +21,30 @@ const SPEEDS = [0.5, 0.75, 1, 1.25] as const
 /** Cache key for the passage manifest; replaced at build time. */
 const BUILD_ID = __BUILD_ID__
 
+/** Inside Today's Study the reader is a step of the journey, not a page. */
+function EmbedWrap({ children }: { children: React.ReactNode; className?: string }) {
+  return <div>{children}</div>
+}
+
 export function SectionReader() {
   const { chapter, section } = useParams()
+  return <SectionReaderView chapter={Number(chapter)} section={Number(section)} />
+}
+
+/**
+ * Read Along for one section. `embedded` (Today's Study) drops the page
+ * chrome — back button, section Prev/Next, the Lesson link — and reports the
+ * end of the audio through `onEnded`.
+ */
+export function SectionReaderView({ chapter, section, embedded = false, onEnded }: {
+  chapter: number; section: number; embedded?: boolean; onEnded?: () => void
+}) {
   const navigate = useNavigate()
   const { user, vocab, preferredLanguage: lang, wordStatuses, setWordStatus } = useAppStore()
   const level = user?.jlpt_level ?? DEFAULT_LEVEL
+  const Wrap = embedded ? EmbedWrap : PageWrapper
 
-  const ch = Number(chapter), sec = Number(section)
+  const ch = chapter, sec = section
   const passage = useMemo(
     () => PASSAGE_BANK[level].find(p => p.chapter === ch && p.section === sec),
     [level, ch, sec],
@@ -262,10 +279,12 @@ export function SectionReader() {
   }
 
   return (
-    <PageWrapper className={audio ? AUDIO_BAR_PAD : ''}>
-      <button onClick={() => navigate(-1)} className="text-sm text-gray-500 dark:text-gray-400 mb-3">
-        {t('back', lang)}
-      </button>
+    <Wrap className={audio ? AUDIO_BAR_PAD : ''}>
+      {!embedded && (
+        <button onClick={() => navigate(-1)} className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+          {t('back', lang)}
+        </button>
+      )}
 
       {/* Desktop: every audio control in one bar under the navbar. */}
       {audio && (
@@ -297,7 +316,7 @@ export function SectionReader() {
         {t('chapter', lang)} {ch} · {t('section', lang)} {sec} · {passage.targetWords.length} {t('words', lang)}
       </p>
 
-      {lesson && (
+      {lesson && !embedded && (
         <button
           onClick={() => navigate(`/lesson/${ch}/${sec}`)}
           className="flex items-center gap-1.5 text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-4 -mt-2"
@@ -307,7 +326,7 @@ export function SectionReader() {
         </button>
       )}
 
-      {sectionNav('top')}
+      {!embedded && sectionNav('top')}
 
       {/* Controls. On desktop, AudioBar takes over whenever there is audio. */}
       <div ref={controlsRef} className={`flex flex-wrap items-center gap-2 mb-5 ${audio ? 'md:hidden' : ''}`}>
@@ -376,7 +395,7 @@ export function SectionReader() {
           // Coarse fallback; the rAF loop above drives this during playback.
           onTimeUpdate={() => audioRef.current && setNowMs(audioRef.current.currentTime * 1000)}
           onLoadedMetadata={() => { setPlaying(false); setNowMs(0) }}
-          onEnded={() => setPlaying(false)}
+          onEnded={() => { setPlaying(false); onEnded?.() }}
           onPause={() => setPlaying(false)}
         />
       )}
@@ -501,7 +520,7 @@ export function SectionReader() {
         <p className="text-xs text-gray-400 mt-4">{t('readerNoAudio', lang)}</p>
       )}
 
-      {sectionNav('bottom')}
-    </PageWrapper>
+      {!embedded && sectionNav('bottom')}
+    </Wrap>
   )
 }

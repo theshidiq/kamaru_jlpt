@@ -106,7 +106,10 @@ export function QuizRunner({ questions, onComplete, timeLimit, showExplanations 
     if (index + 1 >= questions.length) {
       finishQuiz(finalResults)
     } else {
-      setIndex(i => i + 1)
+      // From this click's question, not i => i + 1: during the exit animation
+      // the outgoing question's Next is still clickable, and a double tap
+      // would otherwise skip a question or run past the last one.
+      setIndex(index + 1)
       setSelected(null)
       setQuestionStart(Date.now())
       setPhase('active')

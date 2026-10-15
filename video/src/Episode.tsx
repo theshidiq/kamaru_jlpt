@@ -1,6 +1,7 @@
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion'
 import { DEFAULT_SCREEN, FOCUS, ScreenTextContext } from './art/scenes'
 import { SoundLayer, type SoundMode } from './sound'
+import { useInteraction } from './interaction'
 import { lineAt, type Episode as Ep, type Segment } from './timeline'
 import { Chip, FONT, INDIGO, Karaoke, Ruby, SceneFill, SpeakerChip, useClock, usePop, WordCard, WordLines } from './ui'
 
@@ -128,7 +129,11 @@ function Word({ seg, ep }: { seg: Segment; ep: Ep }) {
 function Quiz({ seg, of }: { seg: Segment; of: number }) {
   const { ms, global } = useClock(seg)
   const [ask, reveal] = seg.lines
-  const revealed = ms >= reveal.at
+  // Live in the app the tiles are buttons: picking one reveals the answer
+  // straight away, with a wrong pick marked.
+  const { answers, onAnswer } = useInteraction()
+  const picked = answers?.[seg.n ?? 0]
+  const revealed = ms >= reveal.at || picked !== undefined
   const thinkStart = ask.at + ask.durationMs
   const left = interpolate(ms, [thinkStart, reveal.at], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
   const secs = Math.ceil(((reveal.at - ms) / 1000))
@@ -145,13 +150,15 @@ function Quiz({ seg, of }: { seg: Segment; of: number }) {
         <p style={{ fontSize: 30, margin: '4px 0 0', color: '#c7d2fe', fontStyle: 'italic' }}>{seg.promptEn}</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginTop: 34 }}>
           {seg.choices?.map((c, i) => {
-            const right = i === seg.answer
+            const right = i === seg.answer, wrongPick = revealed && picked === i && !right
+            const canPick = !!onAnswer && !revealed
             return (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 26, padding: '22px 34px', borderRadius: 24, fontSize: 50, fontWeight: 700,
-                background: revealed && right ? '#10b981' : 'rgba(255,255,255,0.1)', border: `3px solid ${revealed && right ? '#6ee7b7' : 'rgba(255,255,255,0.22)'}`,
-                opacity: revealed && !right ? 0.35 : 1 }}>
+              <div key={i} onClick={canPick ? () => onAnswer!(seg.n ?? 0, i) : undefined} style={{ display: 'flex', alignItems: 'center', gap: 26, padding: '22px 34px', borderRadius: 24, fontSize: 50, fontWeight: 700,
+                background: revealed && right ? '#10b981' : wrongPick ? '#e11d48' : 'rgba(255,255,255,0.1)',
+                border: `3px solid ${revealed && right ? '#6ee7b7' : wrongPick ? '#fda4af' : 'rgba(255,255,255,0.22)'}`,
+                opacity: revealed && !right && !wrongPick ? 0.35 : 1, cursor: canPick ? 'pointer' : undefined }}>
                 <span style={{ width: 62, height: 62, borderRadius: 31, background: revealed && right ? '#fff' : 'rgba(255,255,255,0.18)', color: revealed && right ? '#047857' : 'white',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 34 }}>{revealed && right ? '✓' : i + 1}</span>
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 34 }}>{revealed && right ? '✓' : wrongPick ? '✕' : i + 1}</span>
                 {c}
               </div>
             )

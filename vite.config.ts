@@ -29,7 +29,15 @@ export default defineConfig(({ mode }) => {
     define: { __BUILD_ID__: JSON.stringify(Date.now().toString(36)) },
     plugins: [react(), dropLocalAudio(env.VITE_AUDIO_BASE_URL)],
     resolve: {
-      alias: { '@': path.resolve(__dirname, './src') },
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+        // The lesson video's components, played live in the app (Remotion
+        // Player). They live in the video project; dedupe keeps them on the
+        // app's copy of React and Remotion, as two copies break hooks and
+        // the Player's context.
+        '@video': path.resolve(__dirname, './video/src'),
+      },
+      dedupe: ['react', 'react-dom', 'remotion'],
     },
     server: {
       port: 1997,

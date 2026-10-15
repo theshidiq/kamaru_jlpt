@@ -214,7 +214,10 @@ A bad line: delete its `.json` in `video/public/audio/bjt-N-s/` and re-run
 2. `src/lib/lessons.ts`: add `{ level: 'BJT', chapter: N, section: s, id: 'bjt-N-s', minutes: 7 }`
    rows. This makes the Lesson cards, the Dashboard card and Prev/Next
    appear.
-3. Export (voice-only + with-sound MP3 + timeline JSON, ~2 min each):
+3. Export (voice-only + with-sound MP3 + timeline JSON, ~2 min each). The
+   JSON also carries what the app's interactive video needs (`dur`,
+   `scene`, `blocks`, `screen`). To refresh only the JSON (seconds, MP3s
+   untouched), add `--json-only`, then upload just the `.json`:
    ```bash
    (cd video && npx tsc --noEmit -p . && for s in 1 2 3 4 5; do npx tsx scripts/export-app.ts bjt-N-$s || break; done)
    for s in 1 2 3 4 5; do for f in bjt-N-$s.mp3 bjt-N-$s-sound.mp3 bjt-N-$s.json; do
@@ -228,6 +231,7 @@ A bad line: delete its `.json` in `video/public/audio/bjt-N-s/` and re-run
    without account" (Lanjut tanpa akun) → pick BJT):
    - `/read/N/1…5`: audio plays, words light up, a tapped word opens the right entry
    - `/lesson/N/1`: the reading-part label, all three blocks, 25 words, the sound switch
+   - `/study` with the plan on this chapter: the Watch step plays the video
    - Prev/Next from the previous chapter's last lesson into this one
 
 ### 6. Commit and push

@@ -18,9 +18,10 @@ export function Navbar() {
   const lang = preferredLanguage
   const navigate = useNavigate()
   const location = useLocation()
-  // On the audio pages the desktop navbar steps aside while scrolling down,
-  // leaving the top of the screen to the audio bar (AudioBar).
-  const autoHide = /^\/(read|lesson)\//.test(location.pathname)
+  // On the audio pages (and the Today's Study journey, which embeds them) the
+  // desktop navbar steps aside while scrolling down, leaving the top of the
+  // screen to the audio bar (AudioBar).
+  const autoHide = /^\/(read\/|lesson\/|study$)/.test(location.pathname)
   useAutoHideNav(autoHide)
   const navHidden = useNavStore(s => s.hidden) && autoHide
   const [menuOpen, setMenuOpen] = useState(false)

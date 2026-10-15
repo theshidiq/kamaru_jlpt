@@ -82,7 +82,7 @@ docs/               # content-pipeline.md (content handbook), commercial-strateg
 | `/` | Dashboard | Plan section, Read Along / Lesson cards, stats |
 | `/vocab` | VocabBrowser | Browse all words |
 | `/vocab/:chapter/:section` | VocabSection | Word list + Read Along / Lesson cards |
-| `/study` | StudySession | Today's flashcard study |
+| `/study` | StudySession | **Today's Study journey** for the plan section: Watch (interactive video) → Read Along → Flashcards → Mini quiz → Finish |
 | `/read/:chapter/:section` | SectionReader | **Read Along**: passage with audio and word highlighting |
 | `/lesson/:chapter/:section` | LessonPlayer | **Lesson**: full narrated lesson, quiz, sound on/off |
 | `/quiz` | QuizHub | Quiz type picker |
@@ -169,6 +169,23 @@ section is the furthest completed + 1, per level (`usePlanSection`).
   - Hidden documents get no scroll events, so in a background browser pane
     test the behaviour by calling `dispatchEvent(new Event('scroll'))`
     after each scroll.
+- **Interactive video (the Watch step of `/study`):** the Remotion Player
+  (`@remotion/player`) draws the video project's own `Episode` live over
+  the Lesson's existing MP3, so nothing is rendered or voiced for it.
+  - `src/components/video/InteractiveLesson.tsx` (lazy-loaded, its own
+    ~360 KB chunk). `@video/*` resolves to `video/src/*`; Vite dedupes
+    React and Remotion so both projects share one copy.
+  - `src/lib/lessonVideo.ts` turns the lesson JSON into the episode shape.
+    It needs the video fields that `export-app.ts` writes (`dur`, `scene`,
+    `blocks`, `screen`); older JSON without them falls back to a link to
+    `/lesson`.
+  - Interaction goes through `video/src/interaction.ts` (a context):
+    furigana/EN toggles, word taps, and quiz answers. MP4 renders use the
+    defaults, so they are unchanged.
+  - The quiz pauses at each question's thinking time until answered;
+    answering jumps to the reveal.
+- **Journey progress** is per section in localStorage (`src/lib/journey.ts`).
+  Finish saves the daily session, which advances the plan, as before.
 
 ---
 

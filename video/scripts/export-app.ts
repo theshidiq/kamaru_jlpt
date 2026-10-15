@@ -7,6 +7,8 @@
  * Writes ../public/audio/lessons/<id>.mp3 (voice only), <id>-sound.mp3 (with
  * music, effects and the place sound) and <id>.json (served from R2 like the
  * passage audio; upload with wrangler). --no-sound skips the sound version.
+ * --json-only rewrites just the timeline, leaving both MP3s as they are
+ * (for a change to the JSON's shape, without re-rendering any audio).
  *
  * The sound bed is rendered by Remotion from the same SoundLayer as the
  * video, with the voices off, then laid under the voice file here: rendering
@@ -26,7 +28,8 @@ import { schedule } from '../src/timeline'
 const VIDEO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const ROOT = path.dirname(VIDEO)
 const id = process.argv[2]
-const withSound = !process.argv.includes('--no-sound')
+const jsonOnly = process.argv.includes('--json-only')
+const withSound = !process.argv.includes('--no-sound') && !jsonOnly
 if (!id) { console.error('usage: npx tsx scripts/export-app.ts <episode-id>'); process.exit(1) }
 
 const raw = JSON.parse(fs.readFileSync(path.join(VIDEO, 'src', 'data', `${id}.json`), 'utf-8'))
@@ -42,7 +45,7 @@ const filter = clips.map((c, i) => `[${i}:a]adelay=${Math.round(c.at)}:all=1[a${
   ';' + clips.map((_, i) => `[a${i}]`).join('') +
   `amix=inputs=${clips.length}:normalize=0:dropout_transition=0,apad=whole_dur=${(ep.durationMs / 1000).toFixed(3)}[out]`
 const mp3 = path.join(outDir, `${id}.mp3`)
-execFileSync('ffmpeg', ['-v', 'error', '-y', ...inputs, '-filter_complex', filter, '-map', '[out]',
+if (!jsonOnly) execFileSync('ffmpeg', ['-v', 'error', '-y', ...inputs, '-filter_complex', filter, '-map', '[out]',
   '-ac', '1', '-ar', '44100', '-b:a', '64k', mp3])
 
 // The sound version: Remotion renders the bed alone (no frames are drawn for
@@ -65,20 +68,24 @@ if (withSound) {
 const lesson = {
   id, level: raw.level, chapter: raw.chapter, section: raw.section,
   title: ep.title, titleEn: ep.titleEn, label: ep.label, durationMs: ep.durationMs,
-  blocks: Object.fromEntries(Object.entries(ep.blocks).map(([k, b]) => [k, { jp: b.jp, en: b.en }])),
+  // Each block's scene, the monitor text, and each segment's length and
+  // scene let the app play the lesson as an interactive video.
+  blocks: ep.blocks,
+  ...(ep.screen ? { screen: ep.screen } : {}),
   audioUrl: `/audio/lessons/${id}.mp3`,
-  ...(withSound ? { soundUrl: `/audio/lessons/${id}-sound.mp3` } : {}),
+  ...(fs.existsSync(soundMp3) ? { soundUrl: `/audio/lessons/${id}-sound.mp3` } : {}),
   // Line times become absolute; unit times stay relative to their line.
-  segments: ep.segments.map(({ lines, dur: _dur, scene: _scene, ...s }) => ({
+  segments: ep.segments.map(({ lines, ...s }) => ({
     ...s,
-    prompt: s.prompt?.map(u => ({ parts: u.parts })),
+    prompt: s.prompt?.map(u => ({ t: u.t, parts: u.parts })),
     lines: lines.map(({ audio: _a, at, units, ...l }) => ({
       ...l, at: s.at + at,
-      units: units.map(u => ({ parts: u.parts, start: u.start, end: u.end, ...(u.word ? { word: u.word } : {}) })),
+      units: units.map(u => ({ t: u.t, parts: u.parts, start: u.start, end: u.end, ...(u.word ? { word: u.word } : {}) })),
     })),
   })),
 }
 fs.writeFileSync(path.join(outDir, `${id}.json`), JSON.stringify(lesson))
 const kb = (f: string) => Math.round(fs.statSync(f).size / 1024)
 if (withSound) console.log(`wrote public/audio/lessons/${id}-sound.mp3 (${kb(soundMp3)} KB)`)
-console.log(`wrote public/audio/lessons/${id}.mp3 (${kb(mp3)} KB, ${(ep.durationMs / 60000).toFixed(1)} min) and ${id}.json (${kb(path.join(outDir, `${id}.json`))} KB)`)
+if (jsonOnly) console.log(`wrote public/audio/lessons/${id}.json (${kb(path.join(outDir, `${id}.json`))} KB), audio untouched`)
+else console.log(`wrote public/audio/lessons/${id}.mp3 (${kb(mp3)} KB, ${(ep.durationMs / 60000).toFixed(1)} min) and ${id}.json (${kb(path.join(outDir, `${id}.json`))} KB)`)

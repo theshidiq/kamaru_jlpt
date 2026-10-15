@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react'
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion'
 import { SCENES } from './art/scenes'
+import { useInteraction } from './interaction'
 import type { Line, Segment, Unit } from './timeline'
 
 export const FONT = "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif"
@@ -16,12 +17,15 @@ export function useClock(seg: Segment) {
   return { frame, fps, ms: (frame / fps) * 1000, global: frame + Math.round((seg.at / 1000) * fps) }
 }
 
-export function Ruby({ units, rt, highlight }: { units: Pick<Unit, 'parts'>[]; rt: number; highlight?: (i: number) => CSSProperties }) {
+export function Ruby({ units, rt, highlight, onUnit }: {
+  units: Pick<Unit, 'parts'>[]; rt: number; highlight?: (i: number) => CSSProperties; onUnit?: (i: number) => void
+}) {
+  const { furigana } = useInteraction()
   return (
     <>
       {units.map((u, i) => (
-        <span key={i} style={highlight?.(i)}>
-          {u.parts.map((p, k) => p.r
+        <span key={i} style={highlight?.(i)} onClick={onUnit ? () => onUnit(i) : undefined}>
+          {u.parts.map((p, k) => p.r && furigana
             ? <ruby key={k}>{p.t}<rt style={{ fontSize: rt, color: 'inherit', opacity: 0.8 }}>{p.r}</rt></ruby>
             : <span key={k}>{p.t}</span>)}
         </span>
@@ -35,10 +39,11 @@ export function Karaoke({ line, ms, size, en, dark = false }: { line: Line; ms: 
   const t = ms - line.at
   const enIn = interpolate(t, [300, 700], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
   const base = dark ? '#111827' : '#ffffff'
+  const { english, onWord } = useInteraction()
   return (
     <div>
       <p style={{ fontSize: size, lineHeight: 1.9, margin: 0, fontWeight: 600, color: base }}>
-        <Ruby units={line.units} rt={size * 0.46} highlight={i => {
+        <Ruby units={line.units} rt={size * 0.46} onUnit={onWord ? i => { const w = line.units[i].word; if (w) onWord(w) } : undefined} highlight={i => {
           // Punctuation is timed like any unit but never lit: a yellow box
           // around 。 reads as a glitch, not as the voice's position.
           const u = line.units[i], done = u.end <= t, now = u.start <= t && t < u.end && !PUNCT.test(u.t)
@@ -49,10 +54,12 @@ export function Karaoke({ line, ms, size, en, dark = false }: { line: Line; ms: 
             borderRadius: 8, padding: now ? '0 3px' : 0,
             textDecoration: u.word ? `underline dotted ${dark ? '#818cf8' : '#a5b4fc'}` : 'none',
             textUnderlineOffset: size * 0.24, textDecorationThickness: 4,
+            // live in the app, a studied word can be tapped to look it up
+            cursor: u.word && onWord ? 'pointer' : undefined,
           }
         }} />
       </p>
-      <p style={{ fontSize: en, margin: `${size * 0.2}px 0 0`, lineHeight: 1.4, fontStyle: 'italic', opacity: 0.85 * enIn, color: dark ? '#4b5563' : '#e0e7ff' }}>{line.en}</p>
+      {english && <p style={{ fontSize: en, margin: `${size * 0.2}px 0 0`, lineHeight: 1.4, fontStyle: 'italic', opacity: 0.85 * enIn, color: dark ? '#4b5563' : '#e0e7ff' }}>{line.en}</p>}
     </div>
   )
 }
