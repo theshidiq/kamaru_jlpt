@@ -198,7 +198,7 @@ export const PASSAGES_BJT: SectionPassage[] = [
       { seg: [{ t: '学習', r: 'がくしゅう' }, { t: 'の' }, { t: '時間', r: 'じかん' }, { t: 'は、どう' }, { t: '測定', r: 'そくてい' }, { t: 'しましたか。' }], en: 'How did you measure study time?', speaker: '佐藤' },
       { seg: [{ t: 'アプリの' }, { t: '記録', r: 'きろく' }, { t: 'を' }, { t: '使い', r: 'つかい' }, { t: 'ました。ただ、' }, { t: '特定', r: 'とくてい' }, { t: 'の' }, { t: '利用', r: 'りよう' }, { t: '者', r: 'しゃ' }, { t: 'の' }, { t: '記録', r: 'きろく' }, { t: 'が' }, { t: '多い', r: 'おおい' }, { t: 'ので、' }, { t: '留意', r: 'りゅうい' }, { t: 'が' }, { t: '必要', r: 'ひつよう' }, { t: 'です。' }], en: 'We used the app\'s records. But a lot of them come from particular users, so we need to keep that in mind.', speaker: '木村' },
       { seg: [{ t: 'ほかにも、' }, { t: '気', r: 'き' }, { t: 'をつけるべき' }, { t: '事柄', r: 'ことがら' }, { t: 'はありますか。' }], en: 'Is there anything else to watch out for?', speaker: '佐藤' },
-      { seg: [{ t: '数字', r: 'すうじ' }, { t: 'だけでは、' }, { t: '本当', r: 'ほんとう' }, { t: 'の' }, { t: '理由', r: 'りゆう' }, { t: 'がわからない' }, { t: '可能性', r: 'かのうせい' }, { t: 'があります。' }, { t: '次', r: 'つぎ' }, { t: 'は、' }, { t: '直接', r: 'ちょくせつ' }, { t: '話', r: 'ばなし' }, { t: 'を' }, { t: '聞', r: 'き' }, { t: 'いてみます。' }], en: 'The numbers alone may not show the real reason. Next, I\'ll talk to people directly.', speaker: '木村' },
+      { seg: [{ t: '数字', r: 'すうじ' }, { t: 'だけでは、' }, { t: '本当', r: 'ほんとう' }, { t: 'の' }, { t: '理由', r: 'りゆう' }, { t: 'がわからない' }, { t: '可能性', r: 'かのうせい' }, { t: 'があります。' }, { t: '次', r: 'つぎ' }, { t: 'は、' }, { t: '直接', r: 'ちょくせつ' }, { t: '話', r: 'はなし' }, { t: 'を' }, { t: '聞', r: 'き' }, { t: 'いてみます。' }], en: 'The numbers alone may not show the real reason. Next, I\'ll talk to people directly.', speaker: '木村' },
     ],
   },
   {

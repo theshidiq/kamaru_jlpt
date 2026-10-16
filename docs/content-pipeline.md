@@ -14,12 +14,12 @@ that pace.
 
 ## Status (update this table after every chapter)
 
-| Chapter | Words | Read Along | Lesson (app, with sound) | Video |
-|---|---|---|---|---|
-| 1 | 1–125 | ✅ 1-1 … 1-5 | ✅ 第1課–第5課 | ✅ 1-1 … 1-5 (1-1, 1-2 in the old layout) |
-| 2 | 126–250 | ✅ | ✅ 第6課–第10課 | — later |
-| 3 | 251–375 | ✅ | ✅ 第11課–第15課 | — later |
-| 4–13 | 376–1573 | — | — | — |
+| Chapter | Words | Read Along | 2nd passage (text) | Lesson (app, with sound) | Video |
+|---|---|---|---|---|---|
+| 1 | 1–125 | ✅ 1-1 … 1-5 | ✅ | ✅ 第1課–第5課 | ✅ 1-1 … 1-5 (1-1, 1-2 in the old layout) |
+| 2 | 126–250 | ✅ | ✅ | ✅ 第6課–第10課 | — later |
+| 3 | 251–375 | ✅ | ✅ | ✅ 第11課–第15課 | — later |
+| 4–13 | 376–1573 | — | — | — | — |
 
 - **Next:** chapter 4 (sections 4-1 … 4-5).
 - The list has **1,573 words in 63 sections**: chapters 1–12 have 5 sections
@@ -119,6 +119,21 @@ oddly: ござい is an auxiliary, and 指し matched 指し示す. The splitter 
 the script handle the known cases. If you change a rule, keep it scoped so
 earlier chapters stay unchanged; `local` (the section's own words) exists
 for that.
+
+### 2b. Write the second passages (text only)
+Today's Study plays the Lesson first, which already reads the Read Along
+passage, so its Read Along step shows a **second passage** instead: the
+same topic and the same 25 words, told from another angle (the reply, the
+follow-up, the report afterwards). It is never voiced, so it costs nothing.
+
+Add five entries to `PASSAGES_ALT` in `scripts/bjt_passages_alt.py`, with the
+same rules as step 2 (all 25 words, ~14–17 lines, correct keigo, a format
+that suits the angle). `build-bjt-passages.py` builds them into
+`src/lib/passages_bjt_alt.ts` and prints the same checks, marked `alt`:
+every `alt N-x … tappable 25/25`, and no `unintended tap`. With no audio to
+hear, check the furigana in `--review` closely: numbers and counters
+(十個 じゅうこ, 一回 いちかい) are the usual misreads, so reword or add them
+to `READING_FIX`.
 
 ### 3. Voice the Read Along
 ```bash
@@ -238,7 +253,8 @@ A bad line: delete its `.json` in `video/public/audio/bjt-N-s/` and re-run
 Commit only what you made (the repo has unrelated untracked files:
 `.vite/`, `*.pptx`, `*.docx`, `kamaru_qrcode.png`):
 ```bash
-git add scripts/build-bjt-passages.py scripts/generate-bjt-passages.ts src/lib/passages_bjt.ts \
+git add scripts/build-bjt-passages.py scripts/bjt_passages_alt.py scripts/generate-bjt-passages.ts \
+  src/lib/passages_bjt.ts src/lib/passages_bjt_alt.ts \
   src/lib/lessons.ts audio-src/passages video/episodes video/lessons video/src/data \
   video/public/audio video/src/Root.tsx docs/content-pipeline.md
 git commit   # message ending with: Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
@@ -296,6 +312,7 @@ voice), and the place sound under the reading part (~16 dB below). Logic:
 | BJT vocab | `public/bjt_vocab.json` | yes |
 | Passage texts (source) | `scripts/build-bjt-passages.py` | yes |
 | Passage tokens (generated, do not hand-edit) | `src/lib/passages_bjt.ts` | yes |
+| Second passages (source → generated) | `scripts/bjt_passages_alt.py` → `src/lib/passages_bjt_alt.ts` | yes |
 | Read Along clips | `audio-src/passages/bjt-N-s/NN.{mp3,json}` | yes (the backup) |
 | Read Along audio + manifest | `public/audio/passages/` → R2 `audio/passages/` | no (R2) |
 | Lesson content | `video/lessons/bjt-chN.py` → `video/episodes/bjt-N-s.json` | yes |
