@@ -694,3 +694,21 @@ export function Gear({ x, y, r = 26, color = '#94a3b8' }: { x: number; y: number
     </g>
   )
 }
+
+/** A shopfront with an awning; x: left, y: ground. */
+export function Storefront({ x, y, w = 220, h = 190, color = '#f97316', open }: { x: number; y: number; w?: number; h?: number; color?: string; open?: boolean }) {
+  const stripes = Math.round(w / 28)
+  return (
+    <g>
+      <rect x={x} y={y - h} width={w} height={h} fill="#f8fafc" stroke="#cbd5e1" strokeWidth="2" />
+      <rect x={x - 6} y={y - h - 14} width={w + 12} height="22" rx="4" fill={shade(color, 0.8)} />
+      {Array.from({ length: stripes }, (_, i) => (
+        <path key={i} d={`M ${x - 6 + i * ((w + 12) / stripes)} ${y - h + 8} l ${(w + 12) / stripes} 0 l 0 22 q ${-(w + 12) / stripes / 2} 12 ${-(w + 12) / stripes} 0 Z`} fill={i % 2 ? '#fff' : color} />
+      ))}
+      <rect x={x + 16} y={y - h + 50} width={w * 0.5} height={h - 60} fill="#bae6fd" stroke="#94a3b8" strokeWidth="3" />
+      <rect x={x + w * 0.62} y={y - h + 60} width={w * 0.3} height={h - 60} fill={shade(color, 0.7)} />
+      <circle cx={x + w * 0.66} cy={y - h / 2 + 30} r="3" fill="#fde68a" />
+      {open && <rect x={x + 16 + w * 0.12} y={y - h + 70} width={w * 0.26} height="20" rx="4" fill={C.green} />}
+    </g>
+  )
+}

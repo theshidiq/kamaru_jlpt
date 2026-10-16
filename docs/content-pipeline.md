@@ -16,8 +16,8 @@ that pace.
 
 | Chapter | Words | Read Along | 2nd passage (text) | Lesson (app, with sound) | Card pictures | Video |
 |---|---|---|---|---|---|---|
-| 1 | 1–125 | ✅ 1-1 … 1-5 | ✅ | ✅ 第1課–第5課 | ✅ | ✅ 1-1 … 1-5 (1-1, 1-2 in the old layout) |
-| 2 | 126–250 | ✅ | ✅ | ✅ 第6課–第10課 | — | — later |
+| 1 | 1–125 | ✅ 1-1 … 1-5 | ✅ | ✅ 第1課–第5課 | ✅ | ✅ real footage (SNS) |
+| 2 | 126–250 | ✅ | ✅ | ✅ 第6課–第10課 | ✅ | ✅ real footage (SNS) |
 | 3 | 251–375 | ✅ | ✅ | ✅ 第11課–第15課 | — | — later |
 | 4–13 | 376–1573 | — | — | — | — | — |
 
