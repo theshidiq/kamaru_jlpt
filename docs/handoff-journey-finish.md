@@ -2,6 +2,12 @@
 
 From the content session, 2026-10-16. For the software session.
 
+**Status: done** (software session, 2026-10-16). Finish step removed; the
+last step saves and opens the next section. `daily_sessions` gained `level`
+and a per-section unique key
+(`supabase/migrations/20261016_daily_sessions_level_and_per_section.sql`);
+the Progress heatmap now shades by sections per day.
+
 ## What Kamal asked
 "No need this page, also continue to section 2". The Finish step ("How was
 today's session? Easy / Okay / Hard → Complete!") should go. Finishing a

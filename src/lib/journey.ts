@@ -1,11 +1,11 @@
 /**
  * Today's Study is a journey of steps for one section: watch the lesson,
- * read along, flashcards, mini quiz, finish. Which steps are done is kept
- * per section on this device, so leaving and coming back resumes where you
- * were. Finishing the journey still saves the daily session as before,
- * which is what advances the plan.
+ * read along, flashcards, mini quiz. Which steps are done is kept per
+ * section on this device, so leaving and coming back resumes where you were.
+ * Completing the last step saves the daily session, which is what advances
+ * the plan. (Older entries may still hold a `finish` flag; it is ignored.)
  */
-export type JourneyStep = 'watch' | 'read' | 'cards' | 'quiz' | 'finish'
+export type JourneyStep = 'watch' | 'read' | 'cards' | 'quiz'
 
 const KEY = 'kamaru.journey'
 

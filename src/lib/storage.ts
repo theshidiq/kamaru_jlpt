@@ -212,11 +212,12 @@ export const localStore: ProgressStore = {
 
   async upsertDailySession(_userId, session) {
     const all = read<DailySession[]>(LS_KEYS.dailySessions, [])
-    // One session per day per level. Keyed on the level too so that studying
-    // BJT and N2 on the same day keeps both, since the plan for each level is
-    // derived from its own completed sections.
+    // One session per section per day (and level): studying 1-1 and then 1-2
+    // on the same day keeps both, and so does BJT next to N2. Redoing the same
+    // section that day replaces its row. Matches the Supabase unique key.
     const rest = all.filter(
-      s => !(s.session_date === session.session_date && (s.level ?? null) === (session.level ?? null)),
+      s => !(s.session_date === session.session_date && (s.level ?? null) === (session.level ?? null)
+        && s.chapter === session.chapter && s.section === session.section),
     )
     rest.unshift({
       session_date: session.session_date,
@@ -306,8 +307,8 @@ export const supabaseStore: ProgressStore = {
 
   async upsertDailySession(userId, session) {
     await withFallback(
-      // daily_sessions has no level column, so it is left out rather than
-      // sent to a table that would reject the whole row.
+      // Unique per user, day, level and section (see
+      // supabase/migrations/20261016_daily_sessions_level_and_per_section.sql).
       () => supabase.from('daily_sessions').upsert(
         {
           user_id: userId,
@@ -316,8 +317,9 @@ export const supabaseStore: ProgressStore = {
           section: session.section,
           self_rating: session.self_rating,
           completed_at: session.completed_at,
+          level: session.level ?? null,
         },
-        { onConflict: 'user_id,session_date' },
+        { onConflict: 'user_id,session_date,level,chapter,section' },
       ),
       () => localStore.upsertDailySession(userId, session),
     )
@@ -327,11 +329,13 @@ export const supabaseStore: ProgressStore = {
     try {
       const { data, error } = await supabase
         .from('daily_sessions')
-        .select('session_date, self_rating, chapter, section')
+        .select('session_date, self_rating, chapter, section, level')
         .eq('user_id', userId)
         .order('session_date', { ascending: false })
       if (error) throw error
-      return data ?? []
+      // Rows from before levels were recorded have none (null): leave the key
+      // out, so usePlanSection counts them as JLPT, as before.
+      return (data ?? []).map(({ level, ...s }) => (level ? { ...s, level } : s))
     } catch {
       return localStore.getSessions(userId)
     }

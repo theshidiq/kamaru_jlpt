@@ -11,22 +11,24 @@ import { RiFireLine, RiTrophyLine, RiBookOpenLine, RiBarChart2Line } from '@remi
 import type { RemixiconComponentType } from '@remixicon/react'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
 
-function HeatmapCalendar({ sessions, lang }: { sessions: { session_date: string; self_rating: string | null }[]; lang: 'id' | 'en' }) {
-  const sessionMap = new Map(sessions.map(s => [s.session_date, s.self_rating]))
+/**
+ * The last six weeks, shaded by how many sections were completed each day
+ * (Today's Study saves one session per section, often two a day).
+ */
+function HeatmapCalendar({ sessions, lang }: { sessions: { session_date: string }[]; lang: 'id' | 'en' }) {
+  const counts = new Map<string, number>()
+  for (const s of sessions) counts.set(s.session_date, (counts.get(s.session_date) ?? 0) + 1)
   const today = new Date()
-  const days: { date: string; rating: string | null }[] = []
+  const days: { date: string; n: number }[] = []
   for (let i = 41; i >= 0; i--) {
     const d = new Date(today)
     d.setDate(today.getDate() - i)
     const key = d.toISOString().split('T')[0]
-    days.push({ date: key, rating: sessionMap.get(key) ?? null })
+    days.push({ date: key, n: counts.get(key) ?? 0 })
   }
 
-  const colorMap: Record<string, string> = {
-    easy: 'bg-green-400',
-    okay: 'bg-blue-400',
-    hard: 'bg-amber-400',
-  }
+  const shade = (n: number) =>
+    n >= 3 ? 'bg-indigo-700' : n === 2 ? 'bg-indigo-500' : n === 1 ? 'bg-indigo-300' : 'bg-gray-200 dark:bg-gray-700'
 
   return (
     <div>
@@ -34,15 +36,18 @@ function HeatmapCalendar({ sessions, lang }: { sessions: { session_date: string;
         {days.map(d => (
           <div
             key={d.date}
-            title={d.date + (d.rating ? ` (${d.rating})` : '')}
-            className={`w-5 h-5 rounded-sm ${d.rating ? colorMap[d.rating] ?? 'bg-indigo-400' : 'bg-gray-200 dark:bg-gray-700'}`}
+            title={d.date + (d.n ? ` · ${t('heatmapSections', lang, { n: d.n })}` : '')}
+            className={`w-5 h-5 rounded-sm ${shade(d.n)}`}
           />
         ))}
       </div>
       <div className="flex gap-3 mt-2 text-xs text-gray-400">
-        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-green-400 rounded-sm inline-block" /> {t('easy', lang)}</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-blue-400 rounded-sm inline-block" /> {t('okay', lang)}</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 bg-amber-400 rounded-sm inline-block" /> {t('hard', lang)}</span>
+        {[1, 2, 3].map(n => (
+          <span key={n} className="flex items-center gap-1">
+            <span className={`w-3 h-3 rounded-sm inline-block ${shade(n)}`} />
+            {t('heatmapSections', lang, { n: n === 3 ? '3+' : n })}
+          </span>
+        ))}
       </div>
     </div>
   )

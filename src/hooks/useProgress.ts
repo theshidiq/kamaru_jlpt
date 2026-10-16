@@ -1,5 +1,6 @@
 import type { JlptLevel } from '@/types/user'
 import { useState, useEffect } from 'react'
+import { create } from 'zustand'
 import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 
@@ -31,7 +32,17 @@ export interface ProgressData {
   loading: boolean
 }
 
+/**
+ * Bumped after saving a session, so every useProgress() reloads: the plan
+ * section (usePlanSection) then moves on without a page reload.
+ */
+const useProgressVersion = create<{ v: number }>(() => ({ v: 0 }))
+export function refreshProgress() {
+  useProgressVersion.setState(s => ({ v: s.v + 1 }))
+}
+
 export function useProgress(): ProgressData {
+  const version = useProgressVersion(s => s.v)
   const { user } = useAppStore()
   const [data, setData] = useState<ProgressData>({
     streak: 0,
@@ -59,8 +70,10 @@ export function useProgress(): ProgressData {
       const today = new Date()
       today.setHours(0, 0, 0, 0)
 
-      const sortedDates = [...sessions]
-        .map(s => new Date(s.session_date))
+      // One entry per day: two sections studied on the same day are one day
+      // of the streak, not a gap.
+      const sortedDates = [...new Set(sessions.map(s => s.session_date))]
+        .map(d => new Date(d))
         .sort((a, b) => b.getTime() - a.getTime())
 
       for (let i = 0; i < sortedDates.length; i++) {
@@ -88,7 +101,7 @@ export function useProgress(): ProgressData {
     }
 
     fetchProgress()
-  }, [user])
+  }, [user, version])
 
   return data
 }

@@ -84,7 +84,7 @@ docs/               # content-pipeline.md (content handbook), commercial-strateg
 | `/` | Dashboard | Plan section, Read Along / Lesson cards, stats |
 | `/vocab` | VocabBrowser | Browse all words |
 | `/vocab/:chapter/:section` | VocabSection | Word list + Read Along / Lesson cards |
-| `/study` | StudySession | **Today's Study journey** for the plan section: Watch (interactive video) → Read Along → Flashcards → Mini quiz → Finish |
+| `/study` | StudySession | **Today's Study journey** for the plan section: Watch (interactive video) → Read Along → Flashcards → Mini quiz, then straight on to the next section |
 | `/read/:chapter/:section` | SectionReader | **Read Along**: passage with audio and word highlighting |
 | `/lesson/:chapter/:section` | LessonPlayer | **Lesson**: full narrated lesson, quiz, sound on/off |
 | `/quiz` | QuizHub | Quiz type picker |
@@ -198,7 +198,9 @@ section is the furthest completed + 1, per level (`usePlanSection`).
   sink in) and preload the current and next card's.
   A word without an entry keeps the plain card.
 - **Journey progress** is per section in localStorage (`src/lib/journey.ts`).
-  Finish saves the daily session, which advances the plan, as before.
+  There is no Finish step: completing the last step (the Mini quiz) saves
+  the daily session (no rating), which advances the plan, and
+  `refreshProgress()` makes the journey carry on with the next section.
 
 ---
 
@@ -217,7 +219,10 @@ quiz_attempts (user_id, quiz_type, chapter, section, score, total,
 mock_exam_attempts (user_id, vocab_score, grammar_score, reading_score,
                     total_scaled, passed, created_at)
 
-daily_sessions (user_id, chapter, section, completed_at)
+daily_sessions (user_id, session_date, chapter, section, level, self_rating, completed_at)
+-- one row per section per day: UNIQUE NULLS NOT DISTINCT (user_id, session_date, level, chapter, section)
+-- level is null on old rows; usePlanSection counts those as JLPT, not BJT
+-- migrations: supabase/migrations/
 ```
 
 ---

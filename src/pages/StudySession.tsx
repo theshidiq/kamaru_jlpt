@@ -1,9 +1,9 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import toast from 'react-hot-toast'
 import {
-  RiCheckDoubleLine, RiCheckLine, RiMenuFoldLine, RiMenuUnfoldLine, RiPlayCircleLine, RiBookReadLine, RiStackLine, RiQuestionLine, RiFlagLine, RiArrowRightLine,
+  RiCheckLine, RiMenuFoldLine, RiMenuUnfoldLine, RiPlayCircleLine, RiBookReadLine, RiStackLine, RiQuestionLine, RiArrowRightLine,
 } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { SectionReaderView } from '@/pages/SectionReader'
@@ -13,7 +13,8 @@ import { storeFor } from '@/lib/storage'
 import { useAppStore } from '@/store/useAppStore'
 import { useVocab } from '@/hooks/useVocab'
 import { usePlanSection } from '@/hooks/usePlanSection'
-import { getSection, getMeaning, DEFAULT_LEVEL } from '@/lib/vocab'
+import { refreshProgress } from '@/hooks/useProgress'
+import { getSection, getMeaning, DEFAULT_LEVEL, LEVEL_CONFIG } from '@/lib/vocab'
 import { generateVocabQuiz } from '@/lib/quiz'
 import { lessonFor } from '@/lib/lessons'
 import { PASSAGE_BANK, altPassageFor } from '@/lib/passages'
@@ -38,25 +39,32 @@ const STATUS_COLORS: Record<WordStatus, string> = {
   learning: 'bg-amber-100 text-amber-700',
   new: 'bg-gray-100 text-gray-500',
 }
-const ICON = { watch: RiPlayCircleLine, read: RiBookReadLine, cards: RiStackLine, quiz: RiQuestionLine, finish: RiFlagLine }
+const ICON = { watch: RiPlayCircleLine, read: RiBookReadLine, cards: RiStackLine, quiz: RiQuestionLine }
 
 /**
  * Today's Study, as a learning journey for the plan's section, like a
  * Coursera module: watch the lesson (interactive video), read along,
- * flashcards, a mini quiz, then finish. Steps the section has no content
- * for are left out. Progress is kept per section, and Finish saves the day's
- * session as before, which advances the plan.
+ * flashcards, then a mini quiz. Steps the section has no content for are
+ * left out. Progress is kept per section. Completing the last step saves the
+ * day's session, which advances the plan, and the journey carries straight
+ * on with the next section (Kamal studies two a day).
  */
 export function StudySession() {
-  const { chapter, section } = usePlanSection()
+  const { chapter, section, index, totalSections } = usePlanSection()
   const { user } = useAppStore()
   const level = user?.jlpt_level ?? DEFAULT_LEVEL
+  const per = LEVEL_CONFIG[level].sectionsPerChapter
+  const upNext = index + 1 < totalSections
+    ? { chapter: Math.floor((index + 1) / per) + 1, section: ((index + 1) % per) + 1 }
+    : null
   // Keyed so the journey's own state starts fresh when the plan resolves to
   // (or moves on to) another section.
-  return <Journey key={`${level}-${chapter}-${section}`} chapter={chapter} section={section} />
+  return <Journey key={`${level}-${chapter}-${section}`} chapter={chapter} section={section} upNext={upNext} />
 }
 
-function Journey({ chapter: ch, section: sec }: { chapter: number; section: number }) {
+function Journey({ chapter: ch, section: sec, upNext }: {
+  chapter: number; section: number; upNext: { chapter: number; section: number } | null
+}) {
   const navigate = useNavigate()
   const { vocab } = useVocab()
   const { user, preferredLanguage: lang } = useAppStore()
@@ -74,13 +82,12 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
     ...(hasPassage ? [{ id: 'read' as const, title: t('readTitle', lang), meta: t('readAlongMinutes', lang) }] : []),
     { id: 'cards', title: t('journeyCards', lang), meta: `${words.length} ${t('words', lang)}` },
     { id: 'quiz', title: t('miniQuiz', lang), meta: t('journeyQuestions', lang, { n: 5 }) },
-    { id: 'finish', title: t('journeyFinish', lang), meta: '' },
   ]
 
   const [done, setDone] = useState(() => loadJourney(id))
   const [current, setCurrent] = useState<JourneyStep>(() => {
     const d = loadJourney(id)
-    return steps.find(s => !d[s.id])?.id ?? 'finish'
+    return steps.find(s => !d[s.id])?.id ?? steps[steps.length - 1].id
   })
   // Desktop step list, which can be folded away (as on Coursera) to give
   // the step the full width. Remembered per device.
@@ -92,8 +99,8 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
   }
   const index = steps.findIndex(s => s.id === current)
   const next = steps[index + 1]
-  const doneCount = steps.filter(s => s.id !== 'finish' && done[s.id]).length
-  const total = steps.length - 1
+  const doneCount = steps.filter(s => done[s.id]).length
+  const total = steps.length
 
   function markDone(step: JourneyStep) {
     setDone(d => { const n = { ...d, [step]: true as const }; saveJourney(id, n); return n })
@@ -105,7 +112,36 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
   function completeAndNext() {
     markDone(current)
     if (next) go(next.id)
+    else finishSection()
   }
+
+  // The last step done: save the section, which moves the plan on. Every
+  // useProgress() then reloads, StudySession re-keys to the next section,
+  // and its journey opens at the first step. Reaching the end counts, even
+  // with a step skipped, as Finish did before.
+  const saving = useRef(false)
+  async function finishSection() {
+    if (!user || saving.current) return
+    saving.current = true
+    try {
+      await storeFor(user).upsertDailySession(user.id, {
+        session_date: new Date().toISOString().split('T')[0],
+        chapter: ch, section: sec, self_rating: null,
+        completed_at: new Date().toISOString(),
+        level,
+      })
+      toast.success(upNext
+        ? t('sectionDoneNext', lang, { ch: upNext.chapter, sec: upNext.section })
+        : t('sectionDone', lang))
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      refreshProgress()
+    } catch {
+      toast.error(lang === 'id' ? 'Gagal menyimpan' : 'Failed to save')
+    } finally {
+      saving.current = false
+    }
+  }
+  const lastLabel = upNext ? t('journeyNextSection', lang, { ch: upNext.chapter, sec: upNext.section }) : t('journeyMarkDone', lang)
 
   // The lesson timeline, for the video step.
   const [lesson, setLesson] = useState<Lesson | null>(null)
@@ -223,22 +259,20 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
                   ) : (
                     <div className="aspect-video rounded-xl bg-indigo-950/90 animate-pulse" />
                   )}
-                  <StepFooter onDone={completeAndNext} doneLabel={next ? t('journeyNext', lang, { step: next.title }) : t('journeyMarkDone', lang)} />
+                  <StepFooter onDone={completeAndNext} doneLabel={next ? t('journeyNext', lang, { step: next.title }) : lastLabel} />
                 </div>
               )}
 
               {current === 'read' && (
                 <div>
                   <SectionReaderView chapter={ch} section={sec} embedded variant="alt" onEnded={() => markDone('read')} />
-                  <StepFooter onDone={completeAndNext} doneLabel={next ? t('journeyNext', lang, { step: next.title }) : t('journeyMarkDone', lang)} />
+                  <StepFooter onDone={completeAndNext} doneLabel={next ? t('journeyNext', lang, { step: next.title }) : lastLabel} />
                 </div>
               )}
 
               {current === 'cards' && <Flashcards words={words} onDone={completeAndNext} />}
 
-              {current === 'quiz' && <MiniQuiz vocab={vocab} chapter={ch} section={sec} onDone={completeAndNext} />}
-
-              {current === 'finish' && <Finish chapter={ch} section={sec} onSaved={() => { markDone('finish'); navigate('/') }} />}
+              {current === 'quiz' && <MiniQuiz vocab={vocab} chapter={ch} section={sec} onDone={completeAndNext} doneLabel={lastLabel} />}
             </motion.div>
           </AnimatePresence>
         </section>
@@ -317,7 +351,9 @@ function Flashcards({ words, onDone }: { words: VocabWord[]; onDone: () => void 
   )
 }
 
-function MiniQuiz({ vocab, chapter, section, onDone }: { vocab: VocabWord[]; chapter: number; section: number; onDone: () => void }) {
+function MiniQuiz({ vocab, chapter, section, onDone, doneLabel }: {
+  vocab: VocabWord[]; chapter: number; section: number; onDone: () => void; doneLabel: string
+}) {
   const { user, preferredLanguage: lang } = useAppStore()
   const [questions, setQuestions] = useState<QuizQuestion[]>(() => generateVocabQuiz(vocab, chapter, section, 5, lang))
   const [results, setResults] = useState<QuizResult[] | null>(null)
@@ -357,54 +393,8 @@ function MiniQuiz({ vocab, chapter, section, onDone }: { vocab: VocabWord[]; cha
         }}
       />
       <div className="text-center mt-4">
-        <button onClick={onDone} className="px-6 py-2.5 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 font-semibold">{t('finishSession', lang)}</button>
+        <button onClick={onDone} className="px-6 py-2.5 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 font-semibold">{doneLabel} →</button>
       </div>
-    </div>
-  )
-}
-
-function Finish({ chapter, section, onSaved }: { chapter: number; section: number; onSaved: () => void }) {
-  const { user, preferredLanguage: lang } = useAppStore()
-  const [rating, setRating] = useState<'easy' | 'okay' | 'hard' | null>(null)
-  const [saving, setSaving] = useState(false)
-
-  async function complete() {
-    if (!user || !rating) return
-    setSaving(true)
-    try {
-      await storeFor(user).upsertDailySession(user.id, {
-        session_date: new Date().toISOString().split('T')[0],
-        chapter, section, self_rating: rating,
-        completed_at: new Date().toISOString(),
-        level: user.jlpt_level ?? DEFAULT_LEVEL,
-      })
-      toast.success(lang === 'id' ? 'Sesi selesai! Hebat 🎉' : 'Session complete! Well done 🎉')
-      onSaved()
-    } catch {
-      toast.error(lang === 'id' ? 'Gagal menyimpan' : 'Failed to save')
-    } finally {
-      setSaving(false)
-    }
-  }
-
-  return (
-    <div className="max-w-md mx-auto text-center py-6 md:py-8">
-      <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{t('howWasSession', lang)}</h2>
-      <p className="text-gray-500 text-sm mb-6 md:mb-8">{t('beHonest', lang)}</p>
-      <div className="flex justify-center gap-3 mb-6 md:mb-8">
-        {([['easy', 'bg-green-500'], ['okay', 'bg-blue-500'], ['hard', 'bg-red-500']] as const).map(([val, color]) => (
-          <button key={val} onClick={() => setRating(val)}
-            className={`flex flex-col items-center gap-2 flex-1 py-4 rounded-2xl border-2 transition-all min-h-[80px] ${
-              rating === val ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-950' : 'border-gray-200 dark:border-gray-700 hover:border-indigo-300'}`}>
-            <span className={`w-5 h-5 rounded-full ${color}`} />
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t(val, lang)}</span>
-          </button>
-        ))}
-      </div>
-      <button disabled={!rating || saving} onClick={complete}
-        className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 text-white font-bold py-4 rounded-xl transition-colors min-h-[52px] text-base">
-        {saving ? t('saving', lang) : <span className="flex items-center justify-center gap-1.5"><RiCheckDoubleLine size={18} />{t('complete', lang)}</span>}
-      </button>
     </div>
   )
 }
