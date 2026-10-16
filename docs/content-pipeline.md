@@ -14,12 +14,12 @@ that pace.
 
 ## Status (update this table after every chapter)
 
-| Chapter | Words | Read Along | 2nd passage (text) | Lesson (app, with sound) | Video |
-|---|---|---|---|---|---|
-| 1 | 1–125 | ✅ 1-1 … 1-5 | ✅ | ✅ 第1課–第5課 | ✅ 1-1 … 1-5 (1-1, 1-2 in the old layout) |
-| 2 | 126–250 | ✅ | ✅ | ✅ 第6課–第10課 | — later |
-| 3 | 251–375 | ✅ | ✅ | ✅ 第11課–第15課 | — later |
-| 4–13 | 376–1573 | — | — | — | — |
+| Chapter | Words | Read Along | 2nd passage (text) | Lesson (app, with sound) | Card pictures | Video |
+|---|---|---|---|---|---|---|
+| 1 | 1–125 | ✅ 1-1 … 1-5 | ✅ | ✅ 第1課–第5課 | ✅ | ✅ 1-1 … 1-5 (1-1, 1-2 in the old layout) |
+| 2 | 126–250 | ✅ | ✅ | ✅ 第6課–第10課 | — | — later |
+| 3 | 251–375 | ✅ | ✅ | ✅ 第11課–第15課 | — | — later |
+| 4–13 | 376–1573 | — | — | — | — | — |
 
 - **Next:** chapter 4 (sections 4-1 … 4-5).
 - The list has **1,573 words in 63 sections**: chapters 1–12 have 5 sections
@@ -134,6 +134,23 @@ every `alt N-x … tappable 25/25`, and no `unintended tap`. With no audio to
 hear, check the furigana in `--review` closely: numbers and counters
 (十個 じゅうこ, 一回 いちかい) are the usual misreads, so reword or add them
 to `READING_FIX`.
+
+### 2c. Draw the flashcard pictures (no credits)
+One small scene per word, shown on the flashcards. Drawn in code, in the
+Lesson video's style: `video/src/art/words/kit.tsx` has the card, the
+people (`P` with a `cast`, `Bow`), and props (documents, boxes, charts,
+bubbles, buildings, ◯/✕…). Create `video/src/art/words/bjt-N-s.tsx` exporting
+`SCENES: { <word>: () => <Card>…</Card> }` for all 25 words (copy a chapter 1
+file), then:
+```bash
+cd video && npx tsc --noEmit -p . && npx tsx scripts/render-word-art.tsx N-1 N-2 N-3 N-4 N-5
+```
+It fails if a word has no scene. It writes `public/art/words/bjt-N-s/NN.svg`
+and adds the words to `public/art/words/manifest.json`. Look at every
+picture before committing (`qlmanage -t -s 480 -o <dir> <svgs>` makes PNGs,
+then `ffmpeg … tile=5x5` gives a sheet). Look for figures hidden behind
+desks, labels that overflow, and props covering faces. Rules: never write
+the word itself in its picture, and keep numbers and Latin text short.
 
 ### 3. Voice the Read Along
 ```bash
@@ -312,6 +329,7 @@ voice), and the place sound under the reading part (~16 dB below). Logic:
 | BJT vocab | `public/bjt_vocab.json` | yes |
 | Passage texts (source) | `scripts/build-bjt-passages.py` | yes |
 | Passage tokens (generated, do not hand-edit) | `src/lib/passages_bjt.ts` | yes |
+| Card pictures (source → generated) | `video/src/art/words/` → `public/art/words/` | yes |
 | Second passages (source → generated) | `scripts/bjt_passages_alt.py` → `src/lib/passages_bjt_alt.ts` | yes |
 | Read Along clips | `audio-src/passages/bjt-N-s/NN.{mp3,json}` | yes (the backup) |
 | Read Along audio + manifest | `public/audio/passages/` → R2 `audio/passages/` | no (R2) |
