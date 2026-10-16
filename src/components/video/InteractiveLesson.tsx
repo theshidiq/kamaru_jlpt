@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Player, type PlayerRef } from '@remotion/player'
 import { RiFullscreenExitLine, RiFullscreenLine, RiMusic2Line } from '@remixicon/react'
 import { AppEpisode } from '@video/AppEpisode'
@@ -14,6 +14,25 @@ const FPS = 30
 const SPEEDS = [0.75, 1, 1.25]
 const NARROW = '(max-width: 639px)'
 const SOUND_KEY = 'kamaru.lessonSound' // shared with the Lesson page
+// The Fullscreen API, falling back to the webkit-prefixed one (iPad Safari).
+type WebkitDoc = Document & { webkitFullscreenElement?: Element | null; webkitExitFullscreen?: () => void }
+type WebkitEl = HTMLElement & { webkitRequestFullscreen?: () => void }
+function fsElement() {
+  return document.fullscreenElement ?? (document as WebkitDoc).webkitFullscreenElement ?? null
+}
+function requestFs(el: HTMLElement): Promise<void> {
+  const req = el.requestFullscreen ?? (el as WebkitEl).webkitRequestFullscreen
+  if (!req) return Promise.reject(new Error('no fullscreen'))
+  // The prefixed call returns nothing, and some embedded browsers leave the
+  // promise pending forever; settle on whether it actually took.
+  Promise.resolve(req.call(el)).catch(() => {})
+  return new Promise((resolve, reject) => setTimeout(() => (fsElement() === el ? resolve() : reject(new Error('refused'))), 600))
+}
+function exitFs() {
+  if (document.exitFullscreen) document.exitFullscreen().catch(() => {})
+  else (document as WebkitDoc).webkitExitFullscreen?.()
+}
+
 const STATUS_NEXT: Record<WordStatus, WordStatus> = { new: 'learning', learning: 'known', known: 'new' }
 
 /**
@@ -27,6 +46,9 @@ const STATUS_NEXT: Record<WordStatus, WordStatus> = { new: 'learning', learning:
  * - あ, EN, sound and speed apply instantly, because the text is drawn live.
  *   They sit in the player's own control bar, so they stay at hand in
  *   fullscreen. Fullscreen is taken by our wrapper rather than the Player,
+ *   via the webkit-prefixed API where that is all there is (iPad Safari).
+ *   Without the API (iPhone) or if it is refused, the wrapper instead
+ *   covers the window ("fill" mode), so the button always does something.
  *   so the word card can show over the video there too.
  */
 export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson; onEnded?: () => void }) {
@@ -42,12 +64,35 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
   const [answers, setAnswers] = useState<Record<number, number>>({})
   const [word, setWord] = useState<string | null>(null)
   const box = useRef<HTMLDivElement>(null)
-  const [fullscreen, setFullscreen] = useState(false)
+  const [native, setNative] = useState(false)
+  const [fill, setFill] = useState(false)
+  const fullscreen = native || fill
   useEffect(() => {
-    const on = () => setFullscreen(document.fullscreenElement === box.current && !!box.current)
+    const on = () => setNative(!!box.current && fsElement() === box.current)
     document.addEventListener('fullscreenchange', on)
-    return () => document.removeEventListener('fullscreenchange', on)
+    document.addEventListener('webkitfullscreenchange', on)
+    return () => {
+      document.removeEventListener('fullscreenchange', on)
+      document.removeEventListener('webkitfullscreenchange', on)
+    }
   }, [])
+  // Fill mode: Escape leaves it, and the page behind does not scroll.
+  useEffect(() => {
+    if (!fill) return
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setFill(false) }
+    window.addEventListener('keydown', onKey)
+    const overflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => { window.removeEventListener('keydown', onKey); document.body.style.overflow = overflow }
+  }, [fill])
+  function toggleFullscreen() {
+    if (fill) { setFill(false); return }
+    if (fsElement()) { exitFs(); return }
+    const el = box.current
+    if (!el) return
+    requestFs(el).catch(() => setFill(true))
+  }
+
   // Phones have volume buttons; dropping the slider keeps the bar on one line.
   const [narrow, setNarrow] = useState(() => window.matchMedia(NARROW).matches)
   useEffect(() => {
@@ -56,11 +101,6 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
     mq.addEventListener('change', on)
     return () => mq.removeEventListener('change', on)
   }, [])
-  const canFullscreen = typeof document !== 'undefined' && document.fullscreenEnabled
-  function toggleFullscreen() {
-    if (document.fullscreenElement) document.exitFullscreen().catch(() => {})
-    else box.current?.requestFullscreen().catch(() => {})
-  }
 
   // Where each quiz waits, on the lesson clock (ms).
   const quizzes = useMemo(() => ep.segments.filter(s => s.type === 'quiz').map(s => {
@@ -119,7 +159,8 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
     try { localStorage.setItem(SOUND_KEY, n ? 'on' : 'off') } catch { /* private mode */ }
     return n
   })
-  const renderControls = useCallback(() => (
+  // Re-created each render, which the Player picks up as a new prop.
+  const renderControls = () => (
     <div className="flex items-center gap-0.5 sm:gap-1 mr-1">
       <button type="button" onClick={() => setFurigana(v => !v)} aria-pressed={furigana} title={t('furigana', lang)} className={barBtn(furigana)}>あ</button>
       <button type="button" onClick={() => setEnglish(v => !v)} aria-pressed={english} title="EN" className={barBtn(english)}>EN</button>
@@ -131,13 +172,11 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
       {/* One button cycling the speeds, so the bar still fits a phone */}
       <button type="button" onClick={() => setRate(r => SPEEDS[(SPEEDS.indexOf(r) + 1) % SPEEDS.length])} title="Speed"
         className={`${barBtn(false)} tabular-nums w-11`}>{rate}×</button>
-      {canFullscreen && (
-        <button type="button" onClick={toggleFullscreen} aria-label={fullscreen ? 'Exit fullscreen' : 'Fullscreen'} title={fullscreen ? 'Exit fullscreen' : 'Fullscreen'} className={barBtn(false)}>
-          {fullscreen ? <RiFullscreenExitLine size={17} /> : <RiFullscreenLine size={17} />}
-        </button>
-      )}
+      <button type="button" onClick={toggleFullscreen} aria-label={fullscreen ? 'Exit fullscreen' : 'Fullscreen'} title={fullscreen ? 'Exit fullscreen' : 'Fullscreen'} className={barBtn(false)}>
+        {fullscreen ? <RiFullscreenExitLine size={17} /> : <RiFullscreenLine size={17} />}
+      </button>
     </div>
-  ), [furigana, english, soundOn, rate, fullscreen, lang, lesson.soundUrl, canFullscreen])
+  )
 
   const card = picked && (
     <div className={`flex items-start justify-between gap-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 ${
@@ -164,9 +203,11 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
 
   return (
     <div>
-      <div ref={box} className={fullscreen ? 'relative flex items-center justify-center bg-black' : 'relative'}>
+      {/* Fill mode is position: fixed inside PageWrapper, which is safe here:
+          its entrance transform has ended (to none) before anyone can tap. */}
+      <div ref={box} className={fill ? 'fixed inset-0 z-[70] flex items-center justify-center bg-black' : native ? 'relative flex items-center justify-center bg-black' : 'relative'}>
         <div className={fullscreen ? '' : 'rounded-xl overflow-hidden shadow-lg bg-indigo-950'}
-          style={fullscreen ? { width: 'min(100vw, calc(100vh * 16 / 9))' } : undefined}>
+          style={fullscreen ? { width: 'min(100vw, calc(100dvh * 16 / 9))' } : undefined}>
           <Player
             ref={player}
             component={AppEpisode}
