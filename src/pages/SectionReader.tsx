@@ -8,7 +8,7 @@ import { AUDIO_BAR_PAD } from '@/lib/audioBar'
 import { useAppStore } from '@/store/useAppStore'
 import { t } from '@/lib/i18n'
 import { DEFAULT_LEVEL } from '@/lib/vocab'
-import { PASSAGE_BANK } from '@/lib/passages'
+import { PASSAGE_BANK, altPassageFor } from '@/lib/passages'
 import { audioUrl } from '@/lib/assets'
 import { saveLastRead } from '@/lib/storage'
 import { lessonFor } from '@/lib/lessons'
@@ -35,9 +35,13 @@ export function SectionReader() {
  * Read Along for one section. `embedded` (Today's Study) drops the page
  * chrome — back button, section Prev/Next, the Lesson link — and reports the
  * end of the audio through `onEnded`.
+ *
+ * `variant="alt"` shows the section's second passage when it has one (else
+ * the first). It is text only: the manifest is not consulted, as the first
+ * passage's entry shares the id and its timings would not match.
  */
-export function SectionReaderView({ chapter, section, embedded = false, onEnded }: {
-  chapter: number; section: number; embedded?: boolean; onEnded?: () => void
+export function SectionReaderView({ chapter, section, embedded = false, variant = 'main', onEnded }: {
+  chapter: number; section: number; embedded?: boolean; variant?: 'main' | 'alt'; onEnded?: () => void
 }) {
   const navigate = useNavigate()
   const { user, vocab, preferredLanguage: lang, wordStatuses, setWordStatus } = useAppStore()
@@ -45,10 +49,15 @@ export function SectionReaderView({ chapter, section, embedded = false, onEnded 
   const Wrap = embedded ? EmbedWrap : PageWrapper
 
   const ch = chapter, sec = section
-  const passage = useMemo(
-    () => PASSAGE_BANK[level].find(p => p.chapter === ch && p.section === sec),
-    [level, ch, sec],
+  const alt = useMemo(
+    () => (variant === 'alt' ? altPassageFor(level, ch, sec) : undefined),
+    [variant, level, ch, sec],
   )
+  const passage = useMemo(
+    () => alt ?? PASSAGE_BANK[level].find(p => p.chapter === ch && p.section === sec),
+    [alt, level, ch, sec],
+  )
+  const isAlt = !!alt
 
   // Neighbouring sections in reading order across the whole level, so Next
   // rolls from chapter 1 section 5 into chapter 2 section 1 rather than
@@ -86,6 +95,7 @@ export function SectionReaderView({ chapter, section, embedded = false, onEnded 
     // resume here. Recorded on open rather than on play: opening a section is
     // already the intent to read it.
     saveLastRead({ level, chapter: ch, section: sec, at: new Date().toISOString() })
+    if (isAlt) return
 
     fetch(audioUrl(`/audio/passages/manifest.json?v=${BUILD_ID}`))
       .then(r => r.json())
@@ -94,7 +104,7 @@ export function SectionReaderView({ chapter, section, embedded = false, onEnded 
         setAudio(m.entries.find(e => e.id === id) ?? null)
       })
       .catch(() => setAudio(null))
-  }, [level, ch, sec])
+  }, [level, ch, sec, isAlt])
 
   // Which token is being spoken right now
   // Held while paused too: pausing mid-sentence to shadow a line is the main
@@ -309,7 +319,7 @@ export function SectionReaderView({ chapter, section, embedded = false, onEnded 
 
       <p className="flex items-center gap-1 text-xs font-semibold text-rose-600 dark:text-rose-400">
         <RiBookReadLine size={14} />
-        {t('readTitle', lang)}{audio && ` · ${Math.floor(audio.durationMs / 60000)}:${String(Math.floor(audio.durationMs / 1000) % 60).padStart(2, '0')}`}
+        {t('readTitle', lang)}{isAlt && ' · 2'}{audio && ` · ${Math.floor(audio.durationMs / 60000)}:${String(Math.floor(audio.durationMs / 1000) % 60).padStart(2, '0')}`}
       </p>
       <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white font-jp">{passage.title}</h1>
       <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
@@ -442,19 +452,23 @@ export function SectionReaderView({ chapter, section, embedded = false, onEnded 
           and a transformed ancestor becomes the containing block for
           position: fixed — inside it, top-1/2 resolves against the full page
           height rather than the viewport. */}
-      {audio && controlsHidden && !detail && createPortal(
+      {controlsHidden && !detail && createPortal(
         // Vertically centred on the right edge, where the thumb rests while
         // holding the phone — and clear of the mobile tab bar without needing
         // to reason about its height. z-50 matches the bar so nothing here is
         // painted behind it.
-        <div className="md:hidden fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2">
-          <button
-            onClick={toggle}
-            aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
-            className="flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
-          >
-            {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
-          </button>
+        // On desktop AudioBar holds these whenever there is audio; a
+        // text-only passage has no bar, so the pair shows there too.
+        <div className={`${audio ? 'md:hidden' : ''} fixed top-1/2 -translate-y-1/2 right-5 z-50 flex flex-col items-center gap-2`}>
+          {audio && (
+            <button
+              onClick={toggle}
+              aria-label={playing ? t('pause', lang) : t('playAudio', lang)}
+              className="flex items-center justify-center h-14 w-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-xl transition-colors"
+            >
+              {playing ? <RiPauseFill size={26} /> : <RiPlayFill size={26} />}
+            </button>
+          )}
 
           {/* The same furigana / English toggles as the inline control bar, so they
               stay reachable once it has scrolled away. Smaller and muted, so
@@ -516,7 +530,7 @@ export function SectionReaderView({ chapter, section, embedded = false, onEnded 
         </div>
       )}
 
-      {!audio && !passage.format && (
+      {!audio && !isAlt && !passage.format && (
         <p className="text-xs text-gray-400 mt-4">{t('readerNoAudio', lang)}</p>
       )}
 

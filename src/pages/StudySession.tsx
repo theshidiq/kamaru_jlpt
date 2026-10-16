@@ -16,7 +16,7 @@ import { usePlanSection } from '@/hooks/usePlanSection'
 import { getSection, getMeaning, DEFAULT_LEVEL } from '@/lib/vocab'
 import { generateVocabQuiz } from '@/lib/quiz'
 import { lessonFor } from '@/lib/lessons'
-import { PASSAGE_BANK } from '@/lib/passages'
+import { PASSAGE_BANK, altPassageFor } from '@/lib/passages'
 import { audioUrl } from '@/lib/assets'
 import { hasVideo } from '@/lib/lessonVideo'
 import { AUDIO_BAR_PAD } from '@/lib/audioBar'
@@ -65,6 +65,9 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
 
   const entry = lessonFor(level, ch, sec)
   const hasPassage = PASSAGE_BANK[level].some(p => p.chapter === ch && p.section === sec)
+  // After the Lesson has read the first passage aloud, Read Along shows the
+  // second one when the section has it: text only, no audio bar.
+  const readAlt = !!altPassageFor(level, ch, sec)
   const steps: { id: JourneyStep; title: string; meta: string }[] = [
     ...(entry ? [{ id: 'watch' as const, title: t('journeyWatch', lang), meta: t('journeyMinutes', lang, { n: entry.minutes }) }] : []),
     ...(hasPassage ? [{ id: 'read' as const, title: t('readTitle', lang), meta: t('readAlongMinutes', lang) }] : []),
@@ -142,8 +145,9 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
   }
 
   return (
-    // The Read Along step shows its desktop audio bar under the navbar.
-    <PageWrapper wide className={current === 'read' ? AUDIO_BAR_PAD : ''}>
+    // The Read Along step shows its desktop audio bar under the navbar (the
+    // first passage only; the second is text only).
+    <PageWrapper wide className={current === 'read' && !readAlt ? AUDIO_BAR_PAD : ''}>
       <div className="mb-4">
         <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">{t('todayStudy', lang)}</p>
         <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
@@ -161,7 +165,7 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
       <div className={menuOpen ? 'lg:grid lg:grid-cols-[220px_1fr] lg:gap-6 items-start' : ''}>
         {/* Steps: a sidebar on large screens */}
         {menuOpen && (
-          <nav aria-label={t('journeySteps', lang)} className={`hidden lg:block lg:sticky ${current === 'read' ? 'lg:top-32' : 'lg:top-20'} bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-2`}>
+          <nav aria-label={t('journeySteps', lang)} className={`hidden lg:block lg:sticky ${current === 'read' && !readAlt ? 'lg:top-32' : 'lg:top-20'} bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-2`}>
             {steps.map(stepRow)}
             <button onClick={toggleMenu} className="w-full flex items-center gap-2 mt-1 px-3 py-2 rounded-lg text-xs font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 dark:hover:text-gray-300">
               <RiMenuFoldLine size={15} />{t('journeyHideMenu', lang)}
@@ -224,7 +228,7 @@ function Journey({ chapter: ch, section: sec }: { chapter: number; section: numb
 
               {current === 'read' && (
                 <div>
-                  <SectionReaderView chapter={ch} section={sec} embedded onEnded={() => markDone('read')} />
+                  <SectionReaderView chapter={ch} section={sec} embedded variant="alt" onEnded={() => markDone('read')} />
                   <StepFooter onDone={completeAndNext} doneLabel={next ? t('journeyNext', lang, { step: next.title }) : t('journeyMarkDone', lang)} />
                 </div>
               )}

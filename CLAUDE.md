@@ -184,6 +184,11 @@ section is the furthest completed + 1, per level (`usePlanSection`).
     defaults, so they are unchanged.
   - The quiz pauses at each question's thinking time until answered;
     answering jumps to the reveal.
+- **Journey Read step** shows the section's second passage (`altPassageFor`,
+  `src/lib/passages_bjt_alt.ts`, text only) via `SectionReaderView
+  variant="alt"`, since the Lesson already reads the first one aloud. It
+  skips the audio manifest; あ/EN float at the side once the inline bar
+  scrolls away. `/read` and the Lesson keep the first passage.
 - **Journey progress** is per section in localStorage (`src/lib/journey.ts`).
   Finish saves the daily session, which advances the plan, as before.
 

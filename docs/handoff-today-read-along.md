@@ -2,6 +2,8 @@
 
 From the content session, 2026-10-16. For the software session.
 
+**Status: done** (software session, 2026-10-16). See "Journey Read step" in CLAUDE.md.
+
 ## Why
 In `/study` the Watch step plays the Lesson, whose reading part is the Read
 Along passage word for word. The Read Along step then shows that same
