@@ -22,12 +22,12 @@ const RATE = 0.75 // slower reads calmer behind text, and stretches 6–8 s clip
 const XFADE = 15 // frames
 // Seconds, measured with ffprobe. Keep in step with public/bg/.
 const CLIPS: Record<string, [string, number][]> = {
-  office: [['office-1', 7.8], ['office-2', 6.43]],
-  meeting: [['meeting-1', 8.77], ['meeting-2', 5.7]],
-  cafe: [['cafe-1', 17.08], ['cafe-2', 16.76]],
-  store: [['store-1', 23.85], ['store-2', 10.2]],
-  training: [['training-1', 9.04], ['training-2', 8.57]],
-  station: [['station-1', 12.36], ['station-2', 21.6]],
+  office: [['office-1', 7.8], ['office-3', 12.97], ['office-2', 6.43], ['office-4', 7.9], ['office-5', 8.9]],
+  meeting: [['meeting-1', 8.77], ['meeting-3', 10.53], ['meeting-2', 5.7], ['meeting-4', 7.33], ['meeting-5', 11.1]],
+  cafe: [['cafe-1', 17.08], ['cafe-5', 6], ['cafe-2', 16.76]],
+  store: [['store-1', 23.85], ['store-3', 8.09], ['store-2', 10.2], ['store-4', 3.8], ['store-5', 7.67]],
+  training: [['training-1', 9.04], ['training-3', 10.63], ['training-2', 8.57], ['training-4', 11.36], ['training-5', 16.63]],
+  station: [['station-1', 12.36], ['station-3', 21.8], ['station-2', 21.6], ['station-4', 12.6], ['station-5', 28.1]],
 }
 
 /** The place a segment shows, and the group it belongs to (one run each). */
@@ -42,13 +42,16 @@ type Run = { place: string; from: number; dur: number; offset: number }
 
 function runs(ep: Episode, f: (ms: number) => number): Run[] {
   const out: (Run & { group: string })[] = []
+  // Start each lesson at a different clip, so videos posted side by side
+  // don't all open on the same shot.
+  const seed = [...ep.id].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7)
   const used: Record<string, number> = {}
   for (const s of ep.segments) {
     const [place, group] = placeOf(s, ep)
     const last = out[out.length - 1]
     if (last && last.group === group && last.place === place) { last.dur = f(s.at + s.dur) - last.from; continue }
     // the next clip of this place, so back-to-back runs of one place differ
-    out.push({ place, group, from: f(s.at), dur: f(s.at + s.dur) - f(s.at), offset: used[place] ?? 0 })
+    out.push({ place, group, from: f(s.at), dur: f(s.at + s.dur) - f(s.at), offset: (used[place] ?? 0) + seed })
     used[place] = (used[place] ?? 0) + 1
   }
   return out

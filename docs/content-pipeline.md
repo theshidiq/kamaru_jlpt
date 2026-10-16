@@ -310,8 +310,9 @@ committed clips are for.
 
 ### Background footage (lesson video)
 The lesson video shows real footage behind the text: free Pexels stock clips
-(no attribution needed), two per place, in `video/src/bg.tsx` (`CLIPS`, with
-durations). The 1080p originals are in `video/public/bg/` for MP4 renders, and
+(no attribution needed), five per place (three for the café), in
+`video/src/bg.tsx` (`CLIPS`, with durations). Each lesson starts at a different
+clip (seeded by its id). The 1080p originals are in `video/public/bg/` for MP4 renders, and
 960×540 web copies (~7 MB in all) are in `video/public/bg-web/`. Neither folder is
 committed. The web copies are uploaded to R2 `audio/bg/`, which is where the app's
 interactive lesson (`AppEpisode`) loads them from. To add or swap a clip:
