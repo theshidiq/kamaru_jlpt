@@ -20,6 +20,7 @@ import { PASSAGE_BANK, altPassageFor } from '@/lib/passages'
 import { audioUrl } from '@/lib/assets'
 import { hasVideo } from '@/lib/lessonVideo'
 import { AUDIO_BAR_PAD } from '@/lib/audioBar'
+import { useWordArt, preloadArt } from '@/hooks/useWordArt'
 import { loadJourney, saveJourney, type JourneyStep } from '@/lib/journey'
 import { t } from '@/lib/i18n'
 import type { Lesson } from '@/types/lesson'
@@ -261,6 +262,10 @@ function Flashcards({ words, onDone }: { words: VocabWord[]; onDone: () => void 
   const [cardIndex, setCardIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const w = words[cardIndex]
+  const art = useWordArt()
+  const pic = art(w?.wordClean)
+  // This card's picture and the next one's, so a flip shows them at once.
+  useEffect(() => { preloadArt([pic, art(words[cardIndex + 1]?.wordClean)]) })
   return (
     <div>
       <div className="text-center mb-2"><span className="text-sm text-gray-400">{cardIndex + 1} / {words.length}</span></div>
@@ -278,7 +283,8 @@ function Flashcards({ words, onDone }: { words: VocabWord[]; onDone: () => void 
             </motion.div>
           ) : (
             <motion.div key="back" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="bg-indigo-600 rounded-2xl p-8 md:p-10 text-center shadow-lg min-h-[200px] md:min-h-[180px] flex flex-col items-center justify-center">
+              className={`bg-indigo-600 rounded-2xl ${pic ? 'p-6 md:p-8' : 'p-8 md:p-10'} text-center shadow-lg min-h-[200px] md:min-h-[180px] flex flex-col items-center justify-center`}>
+              {pic && <img src={pic} alt="" loading="lazy" className="w-full max-w-[240px] aspect-[3/2] rounded-xl mb-4 shadow-md" />}
               {w?.furigana && <p className="text-indigo-200 text-sm mb-1">{w.furigana}</p>}
               <p className="text-white text-2xl font-bold">{w ? getMeaning(w, lang) : ''}</p>
             </motion.div>

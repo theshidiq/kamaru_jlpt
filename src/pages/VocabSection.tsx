@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo } from 'react'
+import { useState, useRef, useMemo, useEffect } from 'react'
 import { useParams, Link, useSearchParams, useNavigate } from 'react-router-dom'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { useVocab } from '@/hooks/useVocab'
@@ -9,6 +9,7 @@ import { PASSAGE_BANK } from '@/lib/passages'
 import { lessonFor } from '@/lib/lessons'
 import { RiBookReadLine, RiHeadphoneLine } from '@remixicon/react'
 import { ListenCard } from '@/components/ListenCard'
+import { useWordArt, preloadArt } from '@/hooks/useWordArt'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { WordStatus } from '@/types/user'
 
@@ -133,6 +134,12 @@ export function VocabSection() {
   const hasPassage = PASSAGE_BANK[level].some(p => p.chapter === ch && p.section === sec)
   const lesson = lessonFor(level, ch, sec)
   const shuffledWords = useMemo(() => [...words].sort(() => Math.random() - 0.5), [ch, sec, words.length])
+  const art = useWordArt()
+  // This card's picture and the next one's, so flipping and moving on show
+  // them at once.
+  useEffect(() => {
+    if (view === 'flashcard') preloadArt([art(shuffledWords[cardIndex]?.wordClean), art(shuffledWords[cardIndex + 1]?.wordClean)])
+  })
 
   if (isLoading) return <PageWrapper><div className="text-center py-10 text-gray-400">Loading...</div></PageWrapper>
   if (!words.length) return <PageWrapper><div className="text-center py-10 text-gray-400">No words in this section</div></PageWrapper>
@@ -453,10 +460,13 @@ export function VocabSection() {
                   exit={{ opacity: 0 }}
                   className="absolute inset-0 bg-indigo-600 rounded-2xl flex flex-col items-center justify-center p-6 shadow-lg"
                 >
-                  {currentWord.furigana && (
-                    <p className="text-indigo-200 text-lg mb-2 font-jp">{currentWord.furigana}</p>
+                  {art(currentWord.wordClean) && (
+                    <img src={art(currentWord.wordClean)} alt="" loading="lazy" className="h-28 md:h-36 aspect-[3/2] rounded-xl mb-3 shadow-md" />
                   )}
-                  <p className="text-white text-3xl font-bold text-center px-4">{getMeaning(currentWord, lang)}</p>
+                  {currentWord.furigana && (
+                    <p className={`text-indigo-200 font-jp ${art(currentWord.wordClean) ? 'text-base mb-1' : 'text-lg mb-2'}`}>{currentWord.furigana}</p>
+                  )}
+                  <p className={`text-white font-bold text-center px-4 ${art(currentWord.wordClean) ? 'text-xl md:text-2xl' : 'text-3xl'}`}>{getMeaning(currentWord, lang)}</p>
                 </motion.div>
               )}
             </AnimatePresence>
