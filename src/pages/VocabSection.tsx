@@ -437,12 +437,16 @@ export function VocabSection() {
                   exit={{ opacity: 0 }}
                   className="absolute inset-0 bg-white dark:bg-gray-800 rounded-2xl border-2 border-indigo-300 dark:border-indigo-700 flex flex-col items-center justify-center p-6 shadow-lg"
                 >
-                  <p className="font-jp text-5xl font-bold text-gray-900 dark:text-white">{currentWord.wordClean}</p>
+                  {/* The picture on both sides: on the front it helps the word sink in */}
+                  {art(currentWord.wordClean) && (
+                    <img src={art(currentWord.wordClean)} alt="" loading="lazy" className="h-28 md:h-36 aspect-[3/2] rounded-xl mb-3 shadow-md" />
+                  )}
+                  <p className={`font-jp font-bold text-gray-900 dark:text-white ${art(currentWord.wordClean) ? 'text-4xl md:text-5xl' : 'text-5xl'}`}>{currentWord.wordClean}</p>
                   {currentWord.isSuruVerb && <span className="mt-2 text-xs text-indigo-400">{t('suruVerb', lang)}</span>}
                   {showHint && currentWord.furigana && (
                     <p className="mt-2 text-sm text-indigo-500 dark:text-indigo-400 font-jp">{currentWord.furigana}</p>
                   )}
-                  <p className="mt-4 text-xs text-gray-400">{t('tapToFlip', lang)}</p>
+                  <p className={`${art(currentWord.wordClean) ? 'mt-2' : 'mt-4'} text-xs text-gray-400`}>{t('tapToFlip', lang)}</p>
                   {currentWord.furigana && (
                     <button
                       onClick={e => { e.stopPropagation(); setShowHint(v => !v) }}

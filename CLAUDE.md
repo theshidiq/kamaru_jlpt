@@ -192,7 +192,8 @@ section is the furthest completed + 1, per level (`usePlanSection`).
 - **Flashcard pictures:** `public/art/words/<id>/<NN>.svg` with
   `public/art/words/manifest.json` (`wordClean` → file), served with the
   app, not R2. `useWordArt()` loads the manifest once; both flashcard views
-  show the picture on the back and preload the current and next card's.
+  show the picture on both sides (front by request: it helps the word
+  sink in) and preload the current and next card's.
   A word without an entry keeps the plain card.
 - **Journey progress** is per section in localStorage (`src/lib/journey.ts`).
   Finish saves the daily session, which advances the plan, as before.

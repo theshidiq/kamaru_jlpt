@@ -3,7 +3,7 @@
 From the content session, 2026-10-16. For the software session.
 
 **Status: done** (software session, 2026-10-16). `src/hooks/useWordArt.ts`;
-picture on the back of the card, in Today's Study and in the section
+picture on both sides of the card (front added at Kamal's request), in Today's Study and in the section
 flashcard view (`/flashcard` → `/vocab/:ch/:sec?view=flashcard`).
 
 ## Why

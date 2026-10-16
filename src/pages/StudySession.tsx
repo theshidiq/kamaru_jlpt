@@ -276,7 +276,9 @@ function Flashcards({ words, onDone }: { words: VocabWord[]; onDone: () => void 
         <AnimatePresence mode="wait">
           {!flipped ? (
             <motion.div key="front" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="bg-white dark:bg-gray-800 rounded-2xl border-2 border-indigo-300 dark:border-indigo-700 p-8 md:p-10 text-center shadow-lg min-h-[200px] md:min-h-[180px] flex flex-col items-center justify-center">
+              className={`bg-white dark:bg-gray-800 rounded-2xl border-2 border-indigo-300 dark:border-indigo-700 ${pic ? 'p-6 md:p-8' : 'p-8 md:p-10'} text-center shadow-lg min-h-[200px] md:min-h-[180px] flex flex-col items-center justify-center`}>
+              {/* The picture on both sides: on the front it helps the word sink in */}
+              {pic && <img src={pic} alt="" loading="lazy" className="w-full max-w-[240px] aspect-[3/2] rounded-xl mb-4 shadow-md" />}
               <p className="font-jp text-4xl font-bold text-gray-900 dark:text-white">{w?.wordClean}</p>
               {w?.isSuruVerb && <span className="mt-2 text-xs text-indigo-400">{t('suruVerb', lang)}</span>}
               <p className="mt-4 text-sm text-gray-400">{t('tapToFlip', lang)}</p>
