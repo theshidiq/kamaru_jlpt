@@ -36,6 +36,8 @@ about 2 sections a day, plus a small friend group. BJT content comes first.
     bundled into the app.
 - **Scene illustrations:** programmatic SVG (`src/components/scenes/` for
   the quiz; `video/src/art/` for videos). No AI images.
+- **Lesson video backgrounds:** real stock footage (Pexels), served from R2
+  `audio/bg/`; see the handbook's "Background footage". Still no AI images.
 - **Video:** a separate Remotion project in `video/` (own `package.json`;
   ignored by the root lint and build).
 

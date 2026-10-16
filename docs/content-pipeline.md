@@ -308,6 +308,18 @@ them as pinyin and drop っ. v3 never reads the same text the same way
 twice, so **never regenerate a line just to check it**; that is what the
 committed clips are for.
 
+### Background footage (lesson video)
+The lesson video shows real footage behind the text: free Pexels stock clips
+(no attribution needed), two per place, in `video/src/bg.tsx` (`CLIPS`, with
+durations). The 1080p originals are in `video/public/bg/` for MP4 renders, and
+960×540 web copies (~7 MB in all) are in `video/public/bg-web/`. Neither folder is
+committed. The web copies are uploaded to R2 `audio/bg/`, which is where the app's
+interactive lesson (`AppEpisode`) loads them from. To add or swap a clip:
+download it to `bg/`, then make the web copy with
+`ffmpeg -i bg/X.mp4 -an -vf scale=960:540,fps=24 -c:v libx264 -crf 30 -movflags +faststart bg-web/X.mp4`,
+upload it, and update `CLIPS`. Clips must have no readable text and no
+talking faces close up. SNS renders: `--props='{"bg":"video","sound":"music"}'`.
+
 ### Places (ambience)
 `office`, `meeting`, `training`, `cafe`, `store` (shop/crowd), `station`.
 Files: `video/public/sfx/amb-<place>.mp3`, all levelled by

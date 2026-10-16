@@ -1,5 +1,6 @@
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion'
 import { DEFAULT_SCREEN, FOCUS, ScreenTextContext } from './art/scenes'
+import { BgContext, BgTrack, useBg, type BgMode, type BgSrc } from './bg'
 import { SoundLayer, type SoundMode } from './sound'
 import { useInteraction } from './interaction'
 import { lineAt, type Episode as Ep, type Segment } from './timeline'
@@ -43,9 +44,10 @@ function Band({ seg, ms }: { seg: Segment; ms: number }) {
 }
 
 function Picture({ scene, frame, speaker, shade = 0 }: { scene: string; frame: number; speaker?: string; shade?: number }) {
+  const bg = useBg()
   return (
     <div style={{ position: 'absolute', top: 0, left: 0, width: W, height: PIC, overflow: 'hidden' }}>
-      <SceneFill scene={scene} frame={frame} speaker={speaker} />
+      {bg === 'svg' && <SceneFill scene={scene} frame={frame} speaker={speaker} />}
       <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(180deg, rgba(30,27,75,${0.55 + shade}) 0%, rgba(30,27,75,${shade}) 26%, rgba(30,27,75,${shade}) 86%, ${INDIGO} 100%)` }} />
     </div>
   )
@@ -101,11 +103,12 @@ function Word({ seg, ep }: { seg: Segment; ep: Ep }) {
   const { ms, global, fps } = useClock(seg)
   const fade = interpolate(ms, [0, (8 / fps) * 1000], [0, 1], { extrapolateRight: 'clamp' })
   const b = ep.blocks[seg.block ?? '']
+  const bg = useBg()
   return (
     <>
       {/* the block's scene, sliced into the right-hand window */}
       <div style={{ position: 'absolute', left: 1100, top: 0, width: 820, height: 1080, overflow: 'hidden' }}>
-        <SceneFill scene={b.scene} frame={global} zoom={false} focus={FOCUS[b.scene]} width={820} />
+        {bg === 'svg' && <SceneFill scene={b.scene} frame={global} zoom={false} focus={FOCUS[b.scene]} width={820} />}
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(90deg, ${INDIGO} 0%, rgba(30,27,75,0) 22%)` }} />
       </div>
       <div style={{ position: 'absolute', left: 0, top: 0, width: 1100, height: 1080, background: `linear-gradient(160deg, ${INDIGO} 0%, #312e81 70%, #3b2a86 100%)` }} />
@@ -198,7 +201,7 @@ function Outro({ seg, words }: { seg: Segment; words: Segment[] }) {
 }
 
 /** `voices: false` renders the sound bed alone, for the app's mix (export-app.ts). */
-export const Episode = ({ ep, sound = 'off', voices = true }: { ep: Ep & { durationMs: number }; sound?: SoundMode; voices?: boolean }) => {
+export const Episode = ({ ep, sound = 'off', voices = true, bg = 'svg', bgSrc }: { ep: Ep & { durationMs: number }; sound?: SoundMode; voices?: boolean; bg?: BgMode; bgSrc?: BgSrc }) => {
   const frame = useCurrentFrame()
   const { fps } = useVideoConfig()
   const f = (ms: number) => Math.round((ms / 1000) * fps)
@@ -207,6 +210,8 @@ export const Episode = ({ ep, sound = 'off', voices = true }: { ep: Ep & { durat
   const count = (block?: string) => block === 'quiz' ? quizzes : words.filter(w => w.block === block).length
   return (
     <AbsoluteFill style={{ background: INDIGO, fontFamily: FONT, color: 'white' }}>
+      {bg === 'video' && <BgTrack ep={ep} src={bgSrc} />}
+      <BgContext.Provider value={bg}>
       <ScreenTextContext.Provider value={ep.screen ?? DEFAULT_SCREEN}>
       {ep.segments.map((s, i) => (
         <Sequence key={i} from={f(s.at)} durationInFrames={f(s.dur)}>
@@ -219,6 +224,7 @@ export const Episode = ({ ep, sound = 'off', voices = true }: { ep: Ep & { durat
         </Sequence>
       ))}
       </ScreenTextContext.Provider>
+      </BgContext.Provider>
       {voices && <Voices ep={ep} />}
       <SoundLayer ep={ep} mode={sound} />
       <div style={{ position: 'absolute', left: 0, bottom: 0, height: 6, width: `${(frame / f(ep.durationMs)) * 100}%`, background: '#fcd34d' }} />
