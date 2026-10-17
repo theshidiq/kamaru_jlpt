@@ -201,6 +201,8 @@ section is the furthest completed + 1, per level (`usePlanSection`).
   There is no Finish step: completing the last step (the Mini quiz) saves
   the daily session (no rating), which advances the plan, and
   `refreshProgress()` makes the journey carry on with the next section.
+  Prev / Next in the header open any section (`/study?c=1&s=3`, across
+  chapters); without parameters it is the plan's section.
 
 ---
 

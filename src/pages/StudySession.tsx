@@ -1,9 +1,9 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import toast from 'react-hot-toast'
 import {
-  RiCheckLine, RiMenuFoldLine, RiMenuUnfoldLine, RiPlayCircleLine, RiBookReadLine, RiStackLine, RiQuestionLine, RiArrowRightLine,
+  RiCheckLine, RiMenuFoldLine, RiMenuUnfoldLine, RiPlayCircleLine, RiBookReadLine, RiStackLine, RiQuestionLine, RiArrowRightLine, RiArrowLeftSLine, RiArrowRightSLine,
 } from '@remixicon/react'
 import { PageWrapper } from '@/components/layout/PageWrapper'
 import { SectionReaderView } from '@/pages/SectionReader'
@@ -48,23 +48,48 @@ const ICON = { watch: RiPlayCircleLine, read: RiBookReadLine, cards: RiStackLine
  * left out. Progress is kept per section. Completing the last step saves the
  * day's session, which advances the plan, and the journey carries straight
  * on with the next section (Kamal studies two a day).
+ *
+ * Any other section can be opened with Prev / Next (`/study?c=1&s=3`);
+ * without those parameters it is the plan's section.
  */
+type Sec = { chapter: number; section: number }
+
 export function StudySession() {
-  const { chapter, section, index, totalSections } = usePlanSection()
+  const plan = usePlanSection()
   const { user } = useAppStore()
   const level = user?.jlpt_level ?? DEFAULT_LEVEL
   const per = LEVEL_CONFIG[level].sectionsPerChapter
-  const upNext = index + 1 < totalSections
-    ? { chapter: Math.floor((index + 1) / per) + 1, section: ((index + 1) % per) + 1 }
-    : null
+  const [params] = useSearchParams()
+  const navigate = useNavigate()
+
+  const at = (i: number): Sec | null =>
+    i >= 0 && i < plan.totalSections ? { chapter: Math.floor(i / per) + 1, section: (i % per) + 1 } : null
+  // A section from the address, if it is a real one; else the plan's.
+  const c = Number(params.get('c')), s = Number(params.get('s'))
+  const asked = c >= 1 && s >= 1 && s <= per ? (c - 1) * per + (s - 1) : -1
+  const index = at(asked) ? asked : plan.index
+  const { chapter, section } = at(index)!
+  const nav = {
+    isPlan: index === plan.index,
+    plan: { chapter: plan.chapter, section: plan.section },
+    prev: at(index - 1),
+    next: at(index + 1),
+    open: (to: Sec) => {
+      const isPlanSec = to.chapter === plan.chapter && to.section === plan.section
+      navigate(isPlanSec ? '/study' : `/study?c=${to.chapter}&s=${to.section}`)
+      window.scrollTo({ top: 0 })
+    },
+  }
   // Keyed so the journey's own state starts fresh when the plan resolves to
   // (or moves on to) another section.
-  return <Journey key={`${level}-${chapter}-${section}`} chapter={chapter} section={section} upNext={upNext} />
+  return <Journey key={`${level}-${chapter}-${section}`} chapter={chapter} section={section} nav={nav} />
 }
 
-function Journey({ chapter: ch, section: sec, upNext }: {
-  chapter: number; section: number; upNext: { chapter: number; section: number } | null
+function Journey({ chapter: ch, section: sec, nav }: {
+  chapter: number; section: number
+  nav: { isPlan: boolean; plan: Sec; prev: Sec | null; next: Sec | null; open: (to: Sec) => void }
 }) {
+  const upNext = nav.next
   const navigate = useNavigate()
   const { vocab } = useVocab()
   const { user, preferredLanguage: lang } = useAppStore()
@@ -135,6 +160,9 @@ function Journey({ chapter: ch, section: sec, upNext }: {
         : t('sectionDone', lang))
       window.scrollTo({ top: 0, behavior: 'smooth' })
       refreshProgress()
+      // Today's section moves on by itself once the plan reloads; a section
+      // opened with Prev / Next carries on to the one after it.
+      if (!nav.isPlan && upNext) nav.open(upNext)
     } catch {
       toast.error(lang === 'id' ? 'Gagal menyimpan' : 'Failed to save')
     } finally {
@@ -186,11 +214,39 @@ function Journey({ chapter: ch, section: sec, upNext }: {
     // first passage only; the second is text only).
     <PageWrapper wide className={current === 'read' && !readAlt ? AUDIO_BAR_PAD : ''}>
       <div className="mb-4">
-        <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">{t('todayStudy', lang)}</p>
-        <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
-          {t('chapter', lang)} {ch} · {t('section', lang)} {sec}
-          {words[0]?.section_title && <span className="text-sm md:text-base font-normal text-gray-500 dark:text-gray-400"> · {words[0].section_title}</span>}
-        </h1>
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+              {t('todayStudy', lang)}
+              {!nav.isPlan && (
+                <button onClick={() => nav.open(nav.plan)} className="block sm:inline sm:ml-2 font-medium text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-2">
+                  {t('journeyBackToToday', lang, { ch: nav.plan.chapter, sec: nav.plan.section })}
+                </button>
+              )}
+            </p>
+            <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
+              {t('chapter', lang)} {ch} · {t('section', lang)} {sec}
+              {words[0]?.section_title && <span className="text-sm md:text-base font-normal text-gray-500 dark:text-gray-400"> · {words[0].section_title}</span>}
+            </h1>
+          </div>
+          {/* Previous / next section, across chapters (1-5 → 2-1) */}
+          <div className="shrink-0 flex items-center gap-1 mt-1">
+            {([['prev', nav.prev, RiArrowLeftSLine], ['next', nav.next, RiArrowRightSLine]] as const).map(([dir, to, Icon]) => (
+              <button
+                key={dir}
+                onClick={() => to && nav.open(to)}
+                disabled={!to}
+                aria-label={t(dir === 'prev' ? 'journeyPrevSection' : 'journeyNextSectionShort', lang)}
+                title={to ? `${t(dir === 'prev' ? 'journeyPrevSection' : 'journeyNextSectionShort', lang)}: ${to.chapter}-${to.section}` : undefined}
+                className={`flex items-center gap-0.5 h-9 rounded-lg border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 disabled:opacity-30 disabled:pointer-events-none ${dir === 'prev' ? 'pl-1 pr-2.5' : 'pl-2.5 pr-1'}`}
+              >
+                {dir === 'prev' && <Icon size={18} />}
+                <span className="tabular-nums">{to ? `${to.chapter}-${to.section}` : '–'}</span>
+                {dir === 'next' && <Icon size={18} />}
+              </button>
+            ))}
+          </div>
+        </div>
         <div className="flex items-center gap-3 mt-2">
           <div className="flex-1 max-w-sm bg-gray-200 dark:bg-gray-700 rounded-full h-2">
             <div className="bg-green-500 rounded-full h-2 transition-all" style={{ width: `${(doneCount / total) * 100}%` }} />
