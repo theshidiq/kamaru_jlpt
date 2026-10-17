@@ -186,6 +186,10 @@ section is the furthest completed + 1, per level (`usePlanSection`).
     defaults, so they are unchanged.
   - The quiz pauses at each question's thinking time until answered;
     answering jumps to the reveal.
+  - YouTube-style taps on the picture (`onPictureTap`): tap = play/pause,
+    double tap on the left/right third = -/+10 s (more taps add 10 s),
+    double tap in the middle = fullscreen. Taps on a pointer-cursor element
+    (word, quiz answer) or the control bar are left alone.
 - **Journey Read step** shows the section's second passage (`altPassageFor`,
   `src/lib/passages_bjt_alt.ts`, text only) via `SectionReaderView
   variant="alt"`, since the Lesson already reads the first one aloud. It

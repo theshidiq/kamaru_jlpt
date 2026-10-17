@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Player, type PlayerRef } from '@remotion/player'
-import { RiFullscreenExitLine, RiFullscreenLine, RiMusic2Line } from '@remixicon/react'
+import { motion } from 'framer-motion'
+import { RiFullscreenExitLine, RiFullscreenLine, RiMusic2Line, RiPauseFill, RiPlayFill, RiRewindFill, RiSpeedFill } from '@remixicon/react'
 import { AppEpisode } from '@video/AppEpisode'
 import { useAppStore } from '@/store/useAppStore'
 import { audioUrl } from '@/lib/assets'
@@ -13,6 +14,11 @@ import type { WordStatus } from '@/types/user'
 const FPS = 30
 const SPEEDS = [0.75, 1, 1.25]
 const NARROW = '(max-width: 639px)'
+/** Two taps closer than this are a double tap. */
+const TAP_MS = 280
+/** After a side double tap, further taps there keep skipping for this long. */
+const SKIP_MS = 700
+type Zone = 'back' | 'mid' | 'fwd'
 const SOUND_KEY = 'kamaru.lessonSound' // shared with the Lesson page
 // The Fullscreen API, falling back to the webkit-prefixed one (iPad Safari).
 type WebkitDoc = Document & { webkitFullscreenElement?: Element | null; webkitExitFullscreen?: () => void }
@@ -43,6 +49,9 @@ const STATUS_NEXT: Record<WordStatus, WordStatus> = { new: 'learning', learning:
  *   picking an answer jumps to the narrator's reveal. Pressing play
  *   instead carries on without answering.
  * - Tapping a studied word in the subtitles pauses and opens it below.
+ * - Taps on the picture work as on YouTube: one tap plays or pauses, a
+ *   double tap on the left or right third skips 10 s (each further tap adds
+ *   10 s), and a double tap in the middle toggles fullscreen.
  * - あ, EN, sound and speed apply instantly, because the text is drawn live.
  *   They sit in the player's own control bar, so they stay at hand in
  *   fullscreen. Fullscreen is taken by our wrapper rather than the Player,
@@ -149,6 +158,70 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
   const picked = word ? vocab.find(v => v.wordClean === word) : null
   const status: WordStatus = picked ? (wordStatuses[picked.wordClean] ?? 'new') : 'new'
 
+  // ── Taps on the picture ──
+  const frames = Math.ceil((ep.durationMs / 1000) * FPS)
+  const tap = useRef<{ t: number; zone: Zone; timer?: number; skipping?: Zone }>({ t: 0, zone: 'mid' })
+  const [flash, setFlash] = useState<{ kind: 'play' | 'pause' | Exclude<Zone, 'mid'>; secs: number; id: number } | null>(null)
+  const flashTimer = useRef<number | undefined>(undefined)
+  function show(kind: 'play' | 'pause' | 'back' | 'fwd', secs = 0) {
+    // Skips on the same side add up (10 s, 20 s, …) while the taps continue.
+    setFlash(f => ({ kind, secs: f && f.kind === kind ? f.secs + secs : secs, id: Date.now() }))
+    window.clearTimeout(flashTimer.current)
+    flashTimer.current = window.setTimeout(() => setFlash(null), 700)
+  }
+  function togglePlay() {
+    const p = player.current
+    if (!p) return
+    const playing = p.isPlaying()
+    if (playing) p.pause()
+    else p.play()
+    show(playing ? 'pause' : 'play')
+  }
+  function skip(zone: 'back' | 'fwd') {
+    const p = player.current
+    if (!p) return
+    const to = p.getCurrentFrame() + (zone === 'back' ? -10 : 10) * FPS
+    p.seekTo(Math.max(0, Math.min(to, frames - 1)))
+    show(zone, 10)
+  }
+  function onPictureTap(e: React.MouseEvent<HTMLDivElement>) {
+    const el = e.target as HTMLElement
+    // Only the picture itself: the control bar sits outside the composition
+    // element, and words and quiz answers (pointer cursor) have their own taps.
+    if (!el.closest('.__remotion-player') || getComputedStyle(el).cursor === 'pointer') return
+    const r = e.currentTarget.getBoundingClientRect()
+    const x = (e.clientX - r.left) / r.width
+    const zone: Zone = x < 0.35 ? 'back' : x > 0.65 ? 'fwd' : 'mid'
+    const now = performance.now()
+    const s = tap.current
+    if (zone !== 'mid' && s.skipping === zone && now - s.t < SKIP_MS) {
+      s.t = now
+      skip(zone)
+      return
+    }
+    if (now - s.t < TAP_MS && s.zone === zone) {
+      window.clearTimeout(s.timer)
+      s.t = now
+      if (zone === 'mid') {
+        // The first tap already toggled playback; put it back, as YouTube does.
+        togglePlay()
+        toggleFullscreen()
+      } else {
+        s.skipping = zone
+        skip(zone)
+      }
+      return
+    }
+    s.t = now
+    s.zone = zone
+    s.skipping = undefined
+    // In the middle a tap acts at once; on the sides it waits a moment, in
+    // case it is the first of a double tap.
+    if (zone === 'mid') togglePlay()
+    else s.timer = window.setTimeout(togglePlay, TAP_MS)
+  }
+  const FlashIcon = flash ? { play: RiPlayFill, pause: RiPauseFill, back: RiRewindFill, fwd: RiSpeedFill }[flash.kind] : null
+
   // Sized like the Player's own buttons, white on its dark control bar.
   const barBtn = (on: boolean) =>
     `flex items-center justify-center h-7 min-w-7 px-1.5 rounded-md text-xs font-bold transition-colors ${on
@@ -206,13 +279,15 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
       {/* Fill mode is position: fixed inside PageWrapper, which is safe here:
           its entrance transform has ended (to none) before anyone can tap. */}
       <div ref={box} className={fill ? 'fixed inset-0 z-[70] flex items-center justify-center bg-black' : native ? 'relative flex items-center justify-center bg-black' : 'relative'}>
-        <div className={fullscreen ? '' : 'rounded-xl overflow-hidden shadow-lg bg-indigo-950'}
-          style={fullscreen ? { width: 'min(100vw, calc(100dvh * 16 / 9))' } : undefined}>
+        <div className={`relative select-none ${fullscreen ? '' : 'rounded-xl overflow-hidden shadow-lg bg-indigo-950'}`}
+          // manipulation: no double-tap zoom on phones, so double taps reach us
+          style={{ touchAction: 'manipulation', ...(fullscreen ? { width: 'min(100vw, calc(100dvh * 16 / 9))' } : {}) }}
+          onClick={onPictureTap}>
           <Player
             ref={player}
             component={AppEpisode}
             inputProps={{ ep, audioSrc: src, interaction }}
-            durationInFrames={Math.ceil((ep.durationMs / 1000) * FPS)}
+            durationInFrames={frames}
             fps={FPS}
             compositionWidth={1920}
             compositionHeight={1080}
@@ -225,6 +300,21 @@ export default function InteractiveLesson({ lesson, onEnded }: { lesson: Lesson;
             playbackRate={rate}
             acknowledgeRemotionLicense
           />
+          {flash && FlashIcon && (
+            <div className={`pointer-events-none absolute top-0 bottom-12 flex items-center justify-center ${
+              flash.kind === 'back' ? 'left-0 w-1/3' : flash.kind === 'fwd' ? 'right-0 w-1/3' : 'inset-x-0'}`}>
+              <motion.span
+                key={flash.id}
+                initial={{ opacity: 1, scale: 0.85 }}
+                animate={{ opacity: 0, scale: 1.1 }}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+                className="flex flex-col items-center justify-center h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-black/45 text-white"
+              >
+                <FlashIcon size={28} />
+                {flash.secs > 0 && <span className="text-[11px] font-semibold tabular-nums">{flash.secs}s</span>}
+              </motion.span>
+            </div>
+          )}
         </div>
         {fullscreen && card}
       </div>
