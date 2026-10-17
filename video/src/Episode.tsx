@@ -4,7 +4,7 @@ import { BgContext, BgTrack, useBg, type BgMode, type BgSrc } from './bg'
 import { SoundLayer, type SoundMode } from './sound'
 import { useInteraction } from './interaction'
 import { lineAt, type Episode as Ep, type Segment } from './timeline'
-import { Chip, FONT, INDIGO, Karaoke, Ruby, SceneFill, SpeakerChip, useClock, usePop, WordCard, WordLines } from './ui'
+import { Chip, FitColumn, FONT, INDIGO, Karaoke, Ruby, SceneFill, SpeakerChip, useClock, usePop, WordCard, WordLines } from './ui'
 
 // The picture takes the top PIC px; the spoken line gets the band below it,
 // sized so it reads from across a room, not just up close.
@@ -112,7 +112,8 @@ function Word({ seg, ep }: { seg: Segment; ep: Ep }) {
         <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(90deg, ${INDIGO} 0%, rgba(30,27,75,0) 22%)` }} />
       </div>
       <div style={{ position: 'absolute', left: 0, top: 0, width: 1100, height: 1080, background: `linear-gradient(160deg, ${INDIGO} 0%, #312e81 70%, #3b2a86 100%)` }} />
-      <div style={{ position: 'absolute', left: 80, top: 56, width: 940, display: 'flex', flexDirection: 'column', gap: 34, opacity: fade }}>
+      <div style={{ position: 'absolute', left: 80, top: 56, width: 940, opacity: fade }}>
+        <FitColumn width={940} height={1080 - 56 - 44}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Chip size={26}>{b.jp} · {b.en}</Chip>
           <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
@@ -124,6 +125,7 @@ function Word({ seg, ep }: { seg: Segment; ep: Ep }) {
         </div>
         <WordCard seg={seg} />
         <WordLines seg={seg} ms={ms} size={48} en={30} />
+        </FitColumn>
       </div>
     </>
   )

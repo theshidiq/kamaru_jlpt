@@ -1,5 +1,5 @@
-import type { CSSProperties } from 'react'
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion'
+import { useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
+import { continueRender, delayRender, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion'
 import { SCENES } from './art/scenes'
 import { useInteraction } from './interaction'
 import type { Line, Segment, Unit } from './timeline'
@@ -113,7 +113,8 @@ export function WordCard({ seg, scale = 1 }: { seg: Segment; scale?: number }) {
   const k = (n: number) => n * scale
   const word = seg.word ?? ''
   // Long katakana (コミュニケーション) shrinks further, so the meaning keeps its room.
-  const wordSize = k([170, 170, 170, 150, 124, 104, 88, 76, 62, 54][Math.min(word.length, 9)])
+  // The word never takes more than ~460 px, so the meaning keeps a readable column.
+  const wordSize = k(Math.min([170, 170, 170, 150, 124, 104, 88, 76, 62, 54][Math.min(word.length, 9)], 460 / Math.max(word.length, 1)))
   // One long English word (communication) cannot wrap, so it gets a smaller size.
   const longWord = Math.max(...(seg.meaning ?? '').split(/[\s/;,]+/).map(t => t.length)) > 11
   return (
@@ -132,6 +133,33 @@ export function WordCard({ seg, scale = 1 }: { seg: Segment; scale?: number }) {
           </div>
         )}
       </div>
+    </div>
+  )
+}
+
+/**
+ * A column that shrinks to fit `height`. The word view's lines take their
+ * space before they appear, so the column's height is fixed for the whole
+ * word; it is measured once (and again if it changes, e.g. the app's EN
+ * toggle), and scaled down only when it would run off the frame.
+ */
+export function FitColumn({ height, width, children }: { height: number; width: number; children: ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [scale, setScale] = useState(1)
+  const [handle] = useState(() => delayRender('fit the word column'))
+  useLayoutEffect(() => {
+    const el = ref.current
+    const fit = () => { const h = el?.offsetHeight ?? 0; setScale(h > height ? height / h : 1) }
+    fit()
+    continueRender(handle)
+    if (!el || typeof ResizeObserver === 'undefined') return
+    const ro = new ResizeObserver(fit)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [height, handle])
+  return (
+    <div style={{ transform: `scale(${scale})`, transformOrigin: 'top left', width }}>
+      <div ref={ref} style={{ width, display: 'flex', flexDirection: 'column', gap: 34 }}>{children}</div>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import { DEFAULT_SCREEN, ScreenTextContext } from './art/scenes'
 import { AbsoluteFill, Sequence, useCurrentFrame, useVideoConfig } from 'remotion'
 import { Voices } from './Episode'
 import { lineAt, type Episode as Ep, type Segment } from './timeline'
-import { Chip, FONT, INDIGO, Karaoke, SceneFill, SpeakerChip, useClock, WordCard, WordLines } from './ui'
+import { Chip, FitColumn, FONT, INDIGO, Karaoke, SceneFill, SpeakerChip, useClock, WordCard, WordLines } from './ui'
 
 /** Portrait 1080×1920 teaser: the conversation, then a couple of its words. */
 function Picture({ scene, frame, speaker }: { scene: string; frame: number; speaker?: string }) {
@@ -33,8 +33,12 @@ function WordBeat({ seg, ep }: { seg: Segment; ep: Ep }) {
   return (
     <>
       <Picture scene={ep.blocks[seg.block ?? '']?.scene ?? 'office'} frame={global} />
-      <div style={{ position: 'absolute', top: 780, left: 56, right: 56 }}><WordCard seg={seg} scale={0.9} /></div>
-      <div style={{ position: 'absolute', top: 1130, left: 70, right: 70 }}><WordLines seg={seg} ms={ms} size={46} en={29} /></div>
+      <div style={{ position: 'absolute', top: 780, left: 56 }}>
+        <FitColumn width={968} height={1920 - 780 - 70}>
+          <WordCard seg={seg} scale={0.9} />
+          <div style={{ padding: '6px 14px 0' }}><WordLines seg={seg} ms={ms} size={46} en={29} /></div>
+        </FitColumn>
+      </div>
     </>
   )
 }
