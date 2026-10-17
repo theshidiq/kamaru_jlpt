@@ -22,12 +22,12 @@ const RATE = 0.75 // slower reads calmer behind text, and stretches 6–8 s clip
 const XFADE = 15 // frames
 // Seconds, measured with ffprobe. Keep in step with public/bg/.
 const CLIPS: Record<string, [string, number][]> = {
-  office: [['office-1', 7.8], ['office-3', 12.97], ['office-2', 6.43], ['office-4', 7.9], ['office-5', 8.9]],
-  meeting: [['meeting-1', 8.77], ['meeting-3', 10.53], ['meeting-2', 5.7], ['meeting-4', 7.33], ['meeting-5', 11.1]],
-  cafe: [['cafe-1', 17.08], ['cafe-5', 6], ['cafe-2', 16.76]],
-  store: [['store-1', 23.85], ['store-3', 8.09], ['store-2', 10.2], ['store-4', 3.8], ['store-5', 7.67]],
-  training: [['training-1', 9.04], ['training-3', 10.63], ['training-2', 8.57], ['training-4', 11.36], ['training-5', 16.63]],
-  station: [['station-1', 12.36], ['station-3', 21.8], ['station-2', 21.6], ['station-4', 12.6], ['station-5', 28.1]],
+  office: [['office-1', 7.8], ['office-3', 12.97], ['office-2', 6.43], ['office-4', 7.9], ['office-5', 8.9], ['office-6', 20.14], ['office-7', 22.53], ['office-8', 17.92], ['office-9', 7.11]],
+  meeting: [['meeting-1', 8.77], ['meeting-3', 10.53], ['meeting-2', 5.7], ['meeting-4', 7.33], ['meeting-5', 11.1], ['meeting-6', 13.76], ['meeting-7', 14.0], ['meeting-8', 19.08], ['meeting-9', 13.52]],
+  cafe: [['cafe-1', 17.08], ['cafe-5', 6], ['cafe-2', 16.76], ['cafe-6', 30.02], ['cafe-7', 38.46], ['cafe-8', 10.28], ['cafe-9', 7.6]],
+  store: [['store-1', 23.85], ['store-3', 8.09], ['store-2', 10.2], ['store-4', 3.8], ['store-5', 7.67], ['store-6', 11.37], ['store-7', 7.87], ['store-8', 15.0], ['store-9', 14.91]],
+  training: [['training-1', 9.04], ['training-3', 10.63], ['training-2', 8.57], ['training-4', 11.36], ['training-5', 16.63], ['training-6', 7.84], ['training-7', 11.6], ['training-8', 19.88], ['training-9', 7.08]],
+  station: [['station-1', 12.36], ['station-3', 21.8], ['station-2', 21.6], ['station-4', 12.6], ['station-5', 28.1], ['station-6', 13.08], ['station-7', 28.39], ['station-8', 15.0], ['station-9', 38.75]],
 }
 
 /** The place a segment shows, and the group it belongs to (one run each). */
