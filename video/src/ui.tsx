@@ -112,7 +112,10 @@ export function WordCard({ seg, scale = 1 }: { seg: Segment; scale?: number }) {
   const pop = usePop()
   const k = (n: number) => n * scale
   const word = seg.word ?? ''
-  const wordSize = k([170, 170, 170, 150, 124, 104][Math.min(word.length, 5)])
+  // Long katakana (コミュニケーション) shrinks further, so the meaning keeps its room.
+  const wordSize = k([170, 170, 170, 150, 124, 104, 88, 76, 62, 54][Math.min(word.length, 9)])
+  // One long English word (communication) cannot wrap, so it gets a smaller size.
+  const longWord = Math.max(...(seg.meaning ?? '').split(/[\s/;,]+/).map(t => t.length)) > 11
   return (
     <div style={{ background: 'white', color: '#111827', borderRadius: k(36), padding: `${k(30)}px ${k(46)}px`, display: 'flex', alignItems: 'center', gap: k(44),
       boxShadow: '0 30px 70px rgba(0,0,0,0.35)', opacity: pop, transform: `translateY(${(1 - pop) * 30}px) scale(${0.92 + 0.08 * pop})`, transformOrigin: 'left center' }}>
@@ -120,9 +123,9 @@ export function WordCard({ seg, scale = 1 }: { seg: Segment; scale?: number }) {
         <div style={{ fontSize: k(42), color: '#6366f1', minHeight: k(50) }}>{seg.reading}</div>
         <div style={{ fontSize: wordSize, fontWeight: 800, lineHeight: 1.08 }}>{word}</div>
       </div>
-      <div style={{ borderLeft: '4px solid #e5e7eb', paddingLeft: k(40) }}>
+      <div style={{ borderLeft: '4px solid #e5e7eb', paddingLeft: k(40), minWidth: k(230) }}>
         <div style={{ fontSize: k(24), fontWeight: 700, color: '#6366f1', letterSpacing: 3 }}>MEANING</div>
-        <div style={{ fontSize: k(40), color: '#374151', marginTop: k(10), lineHeight: 1.3 }}>{seg.meaning}</div>
+        <div style={{ fontSize: k(longWord ? 32 : 40), color: '#374151', marginTop: k(10), lineHeight: 1.3 }}>{seg.meaning}</div>
         {seg.alsoIn && (
           <div style={{ display: 'inline-block', marginTop: k(16), fontSize: k(22), fontWeight: 700, color: '#047857', background: '#d1fae5', borderRadius: 999, padding: `${k(4)}px ${k(16)}px` }}>
             Also JLPT {seg.alsoIn}
